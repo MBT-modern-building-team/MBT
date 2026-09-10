@@ -1,0 +1,935 @@
+{% load i18n %}
+<!doctype html>
+<html class="no-js" lang="{{ LANGUAGE_CODE }}">
+
+    {% include 'partials/head.html' %}
+
+<body>
+    <!--********************************
+   	Code Start From Here 
+	******************************** -->
+
+    <!--==============================
+    Search
+    ==============================-->
+    {% include 'partials/popupBox.html' %}
+
+    <!--==============================
+    SideMenu
+    ==============================-->
+    {% include 'partials/sidemenu.html' %}
+
+    <!--==============================
+    Mobile Menu
+    ============================== -->
+    {% include 'partials/mobileMenu.html' %}
+
+    <!--==============================
+	Header Area
+    ==============================-->
+    {% include 'partials/header.html' %}
+
+    <!--==============================
+    Hero Area
+    ==============================-->
+   <!--==============================
+    Hero Area
+    ==============================-->
+    <div class="hero-wrapper hero-3" id="hero">
+        <div class="hero-bg-3-1 bg-mask" style="-webkit-mask-image: url('/static/img/hero/hero_bg_mask_3_1.webp'); mask-image: url('/static/img/hero/hero_bg_mask_3_1.webp'); mask-size: 100% 100%; mask-repeat: no-repeat; -webkit-mask-size: 100% 100%; -webkit-mask-repeat: no-repeat;">
+            <img src="{{ photos.home_hero_bg }}" fetchpriority="high" alt="Background" width="1920" height="1080" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <!-- Film w tle hero: najpierw z CMS (site.hero_video), potem stały plik 'strona mbt.mov'.
+                 Film renderuje się WEWNĄTRZ diva hero-bg-3-1, dzięki czemu maska CSS
+                 (data-mask-src) wycina trójkątny kształt w prawym dolnym rogu.
+                 Jeśli brak pliku — zostaje zdjęcie (data-bg-src). Autoplay, pętla, bez dźwięku. -->
+            <video class="hero-video-bg lazy-video" autoplay muted loop playsinline preload="none" aria-hidden="true"
+                   poster="{{ photos.home_hero_bg }}"
+                   data-src-webm="{% if site.hero_video_webm %}{{ site.hero_video_webm }}{% else %}/static/img/hero/strona_mbt.webm{% endif %}"
+                   data-src-mp4="{% if site.hero_video %}{{ site.hero_video }}{% else %}/static/img/hero/strona_mbt.mp4{% endif %}">
+                Twoja przeglądarka nie obsługuje wideo w tle.
+            </video>
+            <script>
+            // 'load' odpala się dopiero gdy cała strona (w tym zdjęcia i css) się w pełni załaduje
+            window.addEventListener("load", function() {
+                var video = document.querySelector('video.lazy-video');
+                
+                if (video && window.innerWidth > 768) {
+                    // Tworzymy źródła i dodajemy do odtwarzacza
+                    var sourceWebM = document.createElement('source');
+                    sourceWebM.src = video.getAttribute('data-src-webm');
+                    sourceWebM.type = 'video/webm';
+                    
+                    var sourceMP4 = document.createElement('source');
+                    sourceMP4.src = video.getAttribute('data-src-mp4');
+                    sourceMP4.type = 'video/mp4';
+                    
+                    video.appendChild(sourceWebM);
+                    video.appendChild(sourceMP4);
+                    
+                    // Rozpoczynamy pobieranie w tle
+                    video.load();
+                    
+                    // Czekamy, aż pobierze się na tyle duży fragment, by płynnie odtworzyć
+                    video.addEventListener('canplaythrough', function() {
+                        var playPromise = video.play();
+                        if (playPromise !== undefined) {
+                            playPromise.catch(function(e) {
+                                console.warn("Autoplay zablokowany: ", e);
+                            });
+                        }
+                    });
+                }
+            });
+            </script>
+        </div>
+        <div class="hero-shadow-text">mbt</div>
+        
+        <div class="container">
+            <div class="hero-style3">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="hero-subtitle"><img src="/static/img/mbt/icon-white.svg" alt="img" width="24" height="24"> {{ site.hero_subtitle }}</span>
+                        <h1 class="hero-title">{{ site.hero_title1 }}</h1>
+                        <h1 class="hero-title style2">{{ site.hero_title2 }}</h1>
+                        <p class="hero-text">{{ site.hero_text|safe }}</p>
+                        <a href="{% url 'contact' %}" class="btn mbt-cta">{% trans 'Wyceń projekt' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="hero-shape1-1 shape-mockup movingX">
+            <img src="/static/img/hero/hero_shape_1_1.webp" alt="img" width="412" height="221" fetchpriority="high" decoding="async">
+        </div>
+        <div class="hero-experience-wrap" style="background-color: var(--white-color); bottom: 30px; z-index: 99;">
+            <div class="mbt-news-box">
+                <div class="mbt-news-head">
+                    <span class="mbt-news-badge"><i class="ri-flashlight-line"></i> {% trans 'AKTUALNOŚCI' %}</span>
+                    <a class="mbt-news-all" href="{% url 'blog' %}" title="Wszystkie aktualności"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <div class="mbt-news-slides">
+                    {% for art in articles|slice:":3" %}
+                    <div class="mbt-news-slide{% if forloop.first %} active{% endif %}" data-idx="{{ forloop.counter0 }}">
+                        <h2 class="mbt-news-title"><a href="{% url 'articleDetail' art.slug %}">{{ art.title }}</a></h2>
+                        {% if art.excerpt_plain %}
+                        <p class="mbt-news-excerpt">{{ art.excerpt_plain|truncatechars:110 }}</p>
+                        {% endif %}
+                        <a class="mbt-news-more" href="{% url 'articleDetail' art.slug %}">{% trans 'Czytaj więcej' %} <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="mbt-news-dots">
+                    {% for art in articles|slice:":3" %}
+                    <button type="button" class="mbt-news-dot{% if forloop.first %} active{% endif %}" data-idx="{{ forloop.counter0 }}" aria-label="Aktualność {{ forloop.counter }}"></button>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======== / Hero Section ========-->
+
+    <!--==============================
+    About Area  
+    ==============================-->
+    <div class="about-area-3 space overflow-hidden">
+        <div class="container">
+            <div class="row gy-80 gx-100 align-items-start">                
+                <div class="col-xl-7">
+                    <div class="about-wrap3">
+                        <div class="title-area mb-25">
+                            <span class="sub-title text-theme">O NAS <i class="ri-arrow-right-down-line"></i></span>
+                            <h2 class="sec-title">{% blocktranslate %}Poznaj nas <strong>bliżej</strong>{% endblocktranslate %}</h2>
+                            <p class="sec-text">{% blocktranslate %}Nasze wartości wyrażają się w nazwie Modern Building Team. Stawiamy na nowoczesność w myśleniu, zarządzaniu i relacjach.{% endblocktranslate %}</p>
+                            
+                        </div>
+                        <div class="checklist mb-35">
+                            <ul>
+                                <li><img src="/static/img/icon/about-checklsit-icon1-1.svg" alt="img" width="20" height="20" loading="lazy">{% trans 'Generalne wykonawstwo „pod klucz” — od projektu aż po dach' %}
+                                </li>
+                                <li><img src="/static/img/icon/about-checklsit-icon1-1.svg" alt="img" width="20" height="20" loading="lazy">{% trans 'Hale magazynowe, produkcyjne i usługowe' %}</li>
+                                <li><img src="/static/img/icon/about-checklsit-icon1-1.svg" alt="img" width="20" height="20" loading="lazy">{% trans 'Wsparcie inwestorskie na każdym etapie' %}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-8">
+                    <div class="about-thumb3 mb-30"> 
+                        <div class="about-img-2 bg-mask" style="-webkit-mask-image: url('/static/img/normal/about_mask3-2.png'); mask-image: url('/static/img/normal/about_mask3-2.png');">
+                            <img src="{% if photos.home_o_nas_zespol == '/static/img/mbt/o-nas-zespol.jpg' %}/static/img/mbt/o-nas-zespol.webp{% else %}{{ photos.home_o_nas_zespol }}{% endif %}" width="687" height="459" alt="Zespół MBT" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <p>{% blocktranslate %}Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby angażowania dodatkowych zasobów.{% endblocktranslate %}</p>
+                    <div class="btn-group mt-35">
+                        <a href="{% url 'about' %}" class="btn mbt-blue">{% trans 'Dowiedz się więcej' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!--==============================
+    Why Choose Area 03  
+    ==============================-->
+    <div class="why-area-3 space-top overflow-hidden">
+        <div class="why-sec-bg3-1" data-bg-src="{{ photos.home_bg_why }}"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title-area text-center">
+                        <span class="sub-title text-theme">Oferta <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">Oferta, czyli co możemy dla Ciebie zrobić</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-50">
+                <div class="col-xl-4">
+                    <ul class="why-tab-wrap nav nav-pills" role=tablist>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="why-pill-1-tab" data-bs-toggle="pill" data-bs-target="#why-pill-1" type="button" role="tab" aria-controls="why-pill-1" aria-selected="true">{% trans 'Projektowanie' %} <i class="ri-arrow-right-down-line"></i></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="why-pill-2-tab" data-bs-toggle="pill" data-bs-target="#why-pill-2" type="button" role="tab" aria-controls="why-pill-2" aria-selected="false">{% trans 'Wykonawstwo' %} <i class="ri-arrow-right-down-line"></i></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="why-pill-3-tab" data-bs-toggle="pill" data-bs-target="#why-pill-3" type="button" role="tab" aria-controls="why-pill-3" aria-selected="false">{% trans 'Wsparcie inwestorskie' %} <i class="ri-arrow-right-down-line"></i></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="why-pill-4-tab" data-bs-toggle="pill" data-bs-target="#why-pill-4" type="button" role="tab" aria-controls="why-pill-4" aria-selected="false">{% trans 'Generalne Wykonawstwo' %} <i class="ri-arrow-right-down-line"></i></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-8">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="why-pill-1" role="tabpanel" aria-labelledby="why-pill-1-tab">
+                            <div class="row gx-80 gy-40 align-items-start">
+                                <div class="col-lg-5">
+                                    <div class="why-thumb-wrap3-1">
+                                        <div class="why-tab-thumb">
+                                            <img src="/static/img/mbt/oferta-projektowanie.svg" alt="img" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                        </div>
+                                        <div class="why-text-wrap">
+                                            <h3 class="title">Oferta</h3>
+                                            <hr class="line">
+                                            <div class="number">01</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="why-content-wrap">
+                                        <h3 class="title">{% trans 'O tej usłudze' %}</h3>
+                                        <h4 class="subtitle">{% trans 'Projektowanie' %}</h4>
+                                        <p class="text">{% blocktranslate %}Przy projektowaniu realizowanych obiektów w sposób szczególny uwzględniamy funkcjonalność, optymalne rozwiązania w zakresie posadowienia, konstrukcji i instalacji oraz estetykę obiektu.{% endblocktranslate %}</p>
+                                        <div class="checklist mb-35">
+                                            <ul>
+                                                <li><img src="/static/img/icon/about-checklsit-icon1-1.svg" alt="img" width="20" height="20">{% trans 'Funkcjonalność i estetyka obiektu' %}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group mt-35">
+                                            <a href="{% url 'service' %}" class="btn style3">{% trans 'Więcej szczegółów' %} <i class="ri-arrow-right-up-line"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="why-pill-2" role="tabpanel" aria-labelledby="why-pill-2-tab">
+                            <div class="row gx-80 gy-40 align-items-start">
+                                <div class="col-lg-5">
+                                    <div class="why-thumb-wrap3-1">
+                                        <div class="why-tab-thumb">
+                                            <img src="/static/img/mbt/oferta-wykonastwo.svg" alt="img" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                        </div>
+                                        <div class="why-text-wrap">
+                                            <h3 class="title">Oferta</h3>
+                                            <hr class="line">
+                                            <div class="number">02</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="why-content-wrap">
+                                        <h3 class="title">{% trans 'O tej usłudze' %}</h3>
+                                        <h4 class="subtitle">{% trans 'Wykonawstwo' %}</h4>
+                                        <p class="text">{% blocktranslate %}Specjalizujemy się w realizacji hal magazynowych, produkcyjnych i usługowych. Zapewniamy pełny układ komunikacyjny i obiekty inżynierskie.{% endblocktranslate %}</p>
+                                        <div class="checklist mb-35">
+                                            <ul>
+                                                <li><img src="/static/img/icon/about-checklsit-icon1-1.svg" alt="img" width="20" height="20">{% trans 'Hale magazynowe, produkcyjne i usługowe' %}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group mt-35">
+                                            <a href="{% url 'service' %}" class="btn style3">{% trans 'Więcej szczegółów' %} <i class="ri-arrow-right-up-line"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="why-pill-3" role="tabpanel" aria-labelledby="why-pill-3-tab">
+                            <div class="row gx-80 gy-40 align-items-start">
+                                <div class="col-lg-5">
+                                    <div class="why-thumb-wrap3-1">
+                                        <div class="why-tab-thumb">
+                                            <img src="/static/img/mbt/oferta-wsparcie.svg" alt="img" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                        </div>
+                                        <div class="why-text-wrap">
+                                            <h3 class="title">Oferta</h3>
+                                            <hr class="line">
+                                            <div class="number">03</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="why-content-wrap">
+                                        <h3 class="title">{% trans 'O tej usłudze' %}</h3>
+                                        <h4 class="subtitle">{% trans 'Wsparcie inwestorskie' %}</h4>
+                                        <p class="text">{% blocktranslate %}Oferujemy wsparcie na każdym etapie inwestycji: wskazanie dogodnej lokalizacji, wsparcie przy zakupie nieruchomości, proces projektowy od koncepcji do pozwolenia na budowę oraz procedowanie i wykonanie przyłączy.{% endblocktranslate %}</p>
+                                        <div class="checklist mb-35">
+                                            <ul>
+                                                <li><img src="/static/img/icon/about-checklsit-icon1-1.svg" alt="img" width="20" height="20">{% trans 'Od koncepcji do pozwolenia na budowę' %}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group mt-35">
+                                            <a href="{% url 'service' %}" class="btn style3">{% trans 'Więcej szczegółów' %} <i class="ri-arrow-right-up-line"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="why-pill-4" role="tabpanel" aria-labelledby="why-pill-4-tab">
+                            <div class="row gx-80 gy-40 align-items-start">
+                                <div class="col-lg-5">
+                                    <div class="why-thumb-wrap3-1">
+                                        <div class="why-tab-thumb">
+                                            {% if photos.home_att8 %}
+                                            <img src="{{ photos.home_att8 }}" alt="Generalne Wykonawstwo" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                            {% else %}
+                                            <img src="/static/img/mbt/oferta-generalne.svg" alt="Generalne Wykonawstwo" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                            {% endif %}
+                                        </div>
+                                        <div class="why-text-wrap">
+                                            <h3 class="title">Oferta</h3>
+                                            <hr class="line">
+                                            <div class="number">04</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="why-content-wrap">
+                                        <h3 class="title">{% trans 'O tej usłudze' %}</h3>
+                                        <h4 class="subtitle">Generalne Wykonawstwo</h4>
+                                        <p class="text">Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi standardami — centra logistyczne, biurowce, parki handlowe, magazyny oraz self storage.</p>
+                                        <div class="checklist mb-35">
+                                            <ul>
+                                                <li><img src="/static/img/icon/about-checklsit-icon1-1.svg" alt="img" width="20" height="20" loading="lazy">Hale produkcyjne, magazyny, obiekty komercyjne
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group mt-35">
+                                            <a href="{% url 'generalContracting' %}" class="btn style3">{% trans 'Więcej szczegółów' %} <i class="ri-arrow-right-up-line"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+    Process Area  
+    ==============================-->
+    <section class="process-area-2 space overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-between align-items-center gy-40">
+                <div class="col-lg-6">
+                    <div class="title-area text-md-start text-center">
+                        <span class="sub-title text-theme">Dlaczego MBT? <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Dlaczego warto nas wybrać' %}</h2>
+                    </div>
+                    <div class="process-thumb2-1">
+                        <img src="{% if photos.home_o_nas_2 == '/static/img/mbt/o-nas-2.jpg' %}/static/img/mbt/o-nas-2.webp{% else %}{{ photos.home_o_nas_2 }}{% endif %}" width="687" height="436" alt="O MBT" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="process-grid-list style2">
+                        <div class="process-grid-list-bg-text">
+                            MBT
+                        </div>
+                        <div class="process-grid">
+                            <div class="process-grid-number" aria-hidden="true">01</div>
+                            <div class="process-grid-details">
+                                <h3 class="process-grid-title">{% trans 'Gruntowna realizacja' %}</h3>
+                                <p class="process-grid-text">{% blocktranslate %}Obsługujemy cały proces budowy, od koncepcji po oddanie gotowego obiektu.{% endblocktranslate %}</p>
+                            </div>
+                        </div>
+                        <div class="process-grid">
+                            <div class="process-grid-number" aria-hidden="true">02</div>
+                            <div class="process-grid-details">
+                                <h3 class="process-grid-title">{% trans 'Terminowość i elastyczność' %}</h3>
+                                <p class="process-grid-text">{% blocktranslate %}Realizujemy Twoje projekty zgodnie z harmonogramem, nawet przy zmianach.{% endblocktranslate %}</p>
+                            </div>
+                        </div>
+                        <div class="process-grid">
+                            <div class="process-grid-number" aria-hidden="true">03</div>
+                            <div class="process-grid-details">
+                                <h3 class="process-grid-title">{% trans 'Odpowiedzialne projektowanie' %}</h3>
+                                <p class="process-grid-text">{% blocktranslate %}Projektujemy z uwzględnieniem funkcjonalności, estetyki i optymalnych rozwiązań.{% endblocktranslate %}</p>
+                            </div>
+                        </div>
+                        <div class="process-grid">
+                            <div class="process-grid-number" aria-hidden="true">04</div>
+                            <div class="process-grid-details">
+                                <h3 class="process-grid-title">{% trans 'Optymalizacja kosztów' %}</h3>
+                                <p class="process-grid-text">{% blocktranslate %}Dzięki inteligentnej unifikacji osiągamy znaczne oszczędności finansowe.{% endblocktranslate %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section> 
+
+    <!--==============================
+    Interactive Map Area  
+    ==============================-->
+    <div class="map-area space-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="title-area text-center">
+                        <span class="sub-title text-theme">{% trans 'Mapa inwestycji' %} <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Gdzie budujemy' %}</h2>
+                        <p class="sec-text">{% trans 'Nasze realizacje na terenie całej Polski' %}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 text-center" id="interactive-map-container">
+                    <div class="interactive-map-wrapper" style="position: relative; max-width: 800px; margin: 0 auto; background-color: #13487F; border-radius: 20px; padding: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+                        <!-- Ozdobny gradient / glow z tyłu -->
+                        <div style="position: absolute; top: 50%; left: 50%; width: 60%; height: 60%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); transform: translate(-50%, -50%); z-index: 0; pointer-events: none;"></div>
+                        
+                        <img src="/static/img/mbt/mapa-polska-hq.webp" alt="Mapa Polski" style="width: 100%; height: auto; display: block; position: relative; z-index: 1;" width="608" height="553" loading="lazy">
+                        
+                        <!-- Warstwa z pinezkami -->
+                        <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; z-index: 2;" id="pins-layer">
+                            {% for p in projects %}
+                                {% if p.latitude and p.longitude %}
+                                <div class="map-pin" data-lat="{{ p.latitude|stringformat:'.6f' }}" data-lng="{{ p.longitude|stringformat:'.6f' }}" style="position: absolute; width: 16px; height: 16px; background: #FF5A00; border-radius: 50%; transform: translate(-50%, -50%); cursor: pointer; border: 2px solid white;">
+                                    <!-- Wewnętrzna kropka glow -->
+                                    <div style="width: 100%; height: 100%; background: #FF5A00; border-radius: 50%; filter: blur(2px); opacity: 0.8; position: absolute; top: 0; left: 0; pointer-events: none;"></div>
+                                    <!-- Tooltip (hidden by default) -->
+                                    <div class="map-tooltip" style="display: none; position: absolute; bottom: 100%; left: 50%; transform: translate(-50%, -20px); background: white; color: black; padding: 12px; border-radius: 12px; width: 240px; text-align: left; box-shadow: 0 15px 35px rgba(0,0,0,0.25); z-index: 100; opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease;">
+                                        <!-- Mały trójkącik pod dymkiem -->
+                                        <div style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid white;"></div>
+                                        <div style="overflow: hidden; border-radius: 8px; margin-bottom: 12px; background-color: {% if 'Fiołka' in p.title %}#13487F{% else %}#ffffff{% endif %}; padding: 8px; display: flex; align-items: center; justify-content: center; height: 140px;">
+                                            <img src="{{ p.logo|default:p.hero }}" alt="{{ p.title }}" width="200" height="200" style="max-width: 100%; max-height: 100%; object-fit: contain; transform: scale(1); transition: transform 0.4s ease;" class="tooltip-img">
+                                        </div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #13487F; line-height: 1.3; font-weight: 700;">{{ p.title }}</h3>
+                                        <a href="{% url 'realizacjaDetail' p.slug %}" style="color: #FF5A00; font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; text-transform: uppercase; letter-spacing: 0.5px;">{% trans 'Zobacz projekt' %} <i class="ri-arrow-right-line"></i></a>
+                                    </div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .map-pin::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #FF5A00;
+        transform: translate(-50%, -50%) scale(1);
+        animation: pulse-pin 2s infinite;
+        pointer-events: none;
+        z-index: -1;
+        will-change: transform, opacity;
+    }
+    @keyframes pulse-pin {
+        0% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+        70% { transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
+        100% { transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
+    }
+    .map-pin:hover {
+        z-index: 99 !important;
+    }
+    .map-pin:hover .map-tooltip {
+        opacity: 1 !important;
+        transform: translate(-50%, -15px) !important;
+    }
+    .map-pin:hover .tooltip-img {
+        transform: scale(1.05) !important;
+    }
+    </style>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Kalibracja ramki mapy. Dopasowana do marginesów pliku mapa-polska-hq.webp
+        // (Trzeba sprawdzić, czy plik PDF miał inne marginesy niż PNG z google my maps)
+        const mapBounds = {
+            north: 55.05,  // Góra obrazka (szerokość geogr.)
+            south: 48.8,   // Dół obrazka
+            west: 13.8,    // Lewa strona obrazka (długość geogr.)
+            east: 24.5     // Prawa strona obrazka
+        };
+
+        const pins = document.querySelectorAll('.map-pin');
+        pins.forEach(pin => {
+            const lat = parseFloat(pin.getAttribute('data-lat').replace(',', '.'));
+            const lng = parseFloat(pin.getAttribute('data-lng').replace(',', '.'));
+            
+            // X% = współrzędna od lewej do prawej
+            let xPercent = (lng - mapBounds.west) / (mapBounds.east - mapBounds.west) * 100;
+            
+            // Y% = współrzędna z góry na dół
+            let yPercent = (mapBounds.north - lat) / (mapBounds.north - mapBounds.south) * 100;
+            
+            pin.style.left = xPercent + '%';
+            pin.style.top = yPercent + '%';
+
+            pin.addEventListener('mouseenter', () => {
+                pin.querySelector('.map-tooltip').style.display = 'block';
+                pin.style.transform = 'translate(-50%, -50%) scale(1.2)';
+                pin.style.transition = 'transform 0.2s';
+                pin.style.zIndex = '100';
+            });
+            pin.addEventListener('mouseleave', () => {
+                pin.querySelector('.map-tooltip').style.display = 'none';
+                pin.style.transform = 'translate(-50%, -50%) scale(1)';
+                pin.style.zIndex = '';
+            });
+        });
+    });
+    </script>
+
+    <!--==============================
+    Portfolio Area  
+    ==============================-->
+    <div class="portfolio-area-3 space-bottom space-top">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7">
+                    <div class="title-area text-lg-start text-center">
+                        <span class="sub-title text-theme">{% trans 'Nasze realizacje' %} <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Zobacz efekty naszej pracy' %}</h2>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="sec-btn">
+                        <a href="{% url 'project' %}" class="btn mbt-blue">{% trans 'Zobacz wszystkie realizacje' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-40 justify-content-center mt-50">
+                {% for p in projects|slice:":6" %}
+                <div class="col-md-6 col-lg-4 mbt-project-item {% if p.type == 'realizacja-zrealizow' %}completed{% else %}in-progress{% endif %}">
+                    <div class="portfolio-card style2">
+                        <div class="portfolio-card-thumb">
+                            <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" decoding="async" width="800" height="533" class="{% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}">
+                            <a class="icon-btn popup-image" href="{{ p.hero }}" aria-label="{% trans 'Zobacz' %}: {{ p.title }}"><i class="ri-eye-line" aria-hidden="true"></i></a>
+                            <span class="mbt-project-badge">{% trans p.status %}</span>
+                        </div>
+                        <div class="portfolio-card-details">
+                            <span class="portfolio-card-subtitle">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne wykonawstwo' %}{% endif %}</span>
+                            <h3 class="portfolio-card-title"><a href="{% url 'realizacjaDetail' p.slug %}">{{ p.title }}</a></h3>
+                            <p class="portofolio-card-text">{% if p.czas %}{% trans "Czas realizacji:" %} {% trans p.czas %}{% else %}{% trans 'Realizacja pod klucz' %}{% endif %}</p>
+                            <a href="{% url 'realizacjaDetail' p.slug %}" class="btn-with-icon" aria-label="{% trans 'Zobacz pełen opis realizacji' %} {{ p.title }}">
+                                {% trans 'Zobacz pełen opis' %}
+                                <span class="btn-icon">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+    <!--==============================
+    Contact Area  
+    ==============================-->
+    <section class="contact-area-2 space-bottom overflow-hidden">        
+        <div class="container">
+            <div class="contact-wrap2 space overflow-hidden" data-bg-src="{{ photos.home_bg_contact }}">
+                <div class="section-animation-shape1-1 shape-mockup animation-infinite" data-top="0" data-left="0" data-bg-src="/static/img/shape/global-line-shape1.png"></div>
+                <div class="row gy-60 justify-content-center text-center">
+                    <div class="col-xl-10">
+                        <div class="title-area mb-4">
+                            <span class="sub-title text-theme">{% trans "Nasi Handlowcy" %} <i class="ri-arrow-right-down-line"></i></span>
+                            <h2 class="sec-title text-white" style="color: #ffffff;">{% trans "Zadzwoń do nas bezpośrednio" %}</h2>
+                            
+                            <a href="tel:{{ site.phone_href }}" class="btn style2 mt-4" style="font-size: 28px; padding: 15px 40px;">
+                                <i class="ri-phone-fill me-2"></i> {{ site.phone }}
+                            </a>
+                        </div>
+                        
+                        <div class="row gy-4 justify-content-center mt-5">
+                            {% for rep in sales_reps %}
+                            <div class="col-md-6 col-lg-3">
+                                <div class="team-card bg-white p-4 rounded text-center">
+                                    {% if rep.photo %}
+                                    <img src="{{ rep.photo }}" alt="{{ rep.name }}" width="300" height="300" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover; width: 100%;">
+                                    {% endif %}
+                                    <h3 class="mb-1" style="font-size: 1.5rem;">{{ rep.name }}</h3>
+                                    <p class="text-theme mb-3">{{ rep.position }}</p>
+                                    {% if rep.phone %}
+                                    <div class="mb-3">
+                                        <a href="tel:{{ rep.phone|cut:' ' }}" class="btn style2 w-100" style="font-size: 20px; padding: 12px 10px;">
+                                            <i class="ri-phone-fill me-1"></i> {{ rep.phone }}
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                    <a href="mailto:{{ rep.email }}" class="text-body" style="font-size: 15px;"><i class="ri-mail-line"></i> {{ rep.email }}</a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>   
+
+    <!--==============================
+    Testimonial Area  
+    ==============================-->
+    <div class="testimonial-area-3 overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7">
+                    <div class="title-area text-lg-start text-center">
+                        <span class="sub-title text-theme">Opinie klientów <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Opinie naszych klientów' %}</h2>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="sec-btn btn-wrap">
+                        <div class="client-group-thumb">
+                            <img src="{{ photos.home_client_group }}" alt="img" style="max-height: 80px; width: auto;" width="200" height="80" loading="lazy">
+                        </div>
+                        <div class="testi-counter-wrap">
+                            <h3 class="testi-counter-number"><span class="counter-number">100</span>%</h3>
+                            <p class="testi-counter-text">Zadowolonych klientów</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row global-carousel testi-slider3 slider-shadow" data-slide-show="3" data-lg-slide-show="2" data-dots="true" data-xl-dots="true" data-ml-dots="true" data-center-mode="true" data-xl-center-mode="true" data-ml-center-mode="true">
+                {% for r in references %}
+                <div class="col-lg-4">
+                    <div class="testi-card style3">
+                        <div class="testi-card-thumb">
+                            {% if r.logo %}
+                            <img src="{{ r.logo }}" alt="{{ r.firma }}" class="mbt-testi-logo" width="100" height="100" loading="lazy">
+                            {% else %}
+                            <img src="{{ photos.home_testi_2 }}" alt="{{ r.firma }}" width="60" height="60" loading="lazy">
+                            {% endif %}
+                            <div class="media-body">
+                                <h3 class="testi-card_title">{{ r.firma }}</h3>
+                                <div class="testi-card_review">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>                                       
+                        </div>  
+                        <div class="testi-card_content">
+                            <p class="testi-card_text">{{ r.tresc|striptags }}</p>
+                            <div class="testi-card-profile">
+                                <span class="testi-profile-title" style="display:block; font-weight:600; font-size:1.1em; margin-bottom:5px;">{{ r.osoba }}</span>
+                                <span class="testi-profile-desig">/ {{ r.firma }}{% if r.stanowisko %}, {{ r.stanowisko }}{% endif %}</span>                                                                       
+                            </div>
+                        </div>                        
+                        <div class="quote-icon">
+                            <img src="/static/img/icon/quote3.svg" alt="img" width="40" height="40" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>         
+        </div>
+    </div>
+
+    <!--==============================
+    Client Area  
+    ==============================-->
+    <div class="client-area-2 text-center space overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center mb-40">
+                <div class="col-lg-6">
+                    <div class="title-area text-center">
+                        <span class="sub-title text-theme">Zaufali nam <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Te marki nam zaufały' %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row global-carousel client-slider2" data-slide-show="5" data-lg-slide-show="4" data-md-slide-show="3" data-sm-slide-show="2">
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-bater.svg" alt="Bater" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-browar-zamkowy.svg" alt="Browar Zamkowy" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-canpack.svg" alt="Canpack" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-cdr.svg" alt="CDR" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-dl-invest-group.svg" alt="DL Invest Group" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-epco.svg" alt="Epco" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-euro-trade.svg" alt="Euro-Trade" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-euronova.svg" alt="Euronova" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-herz.svg" alt="Herz" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-huber-suhner.svg" alt="Huber+Suhner" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-kompania-piwowarska.svg" alt="Kompania Piwowarska" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-less-mess-storage.svg" alt="Less Mess Storage" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-pumar.svg" alt="Pumar" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-stainless-steel-engineering.svg" alt="Stainless Steel Engineering" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-sutco-polska.svg" alt="Sutco Polska" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-toto.svg" alt="TOTO" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-bater.svg" alt="Bater" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-canpack.svg" alt="Canpack" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-euro-trade.svg" alt="Euro-Trade" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="client-logo">
+                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-herz.svg" alt="Herz" width="150" height="80" loading="lazy"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    {% if awards %}
+    <!--==============================
+    Wyróżnienia i partnerstwa
+    ==============================-->
+    <div class="awards-area text-center space-bottom overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center mb-40">
+                <div class="col-lg-6">
+                    <div class="title-area text-center">
+                        <span class="sub-title text-theme">{% trans 'Nasze osiągnięcia' %} <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Wyróżnienia i partnerstwa' %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center gy-4">
+                {% for award in awards %}
+                <div class="col-auto px-4">
+                    <img src="{{ award.image }}" alt="{{ award.name }}" width="300" height="120" style="max-height: 120px; width: auto; object-fit: contain;">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div> 
+    {% endif %}
+
+    <!--==============================
+    Team Area  
+    ==============================-->
+    <div class="team-area-2 space-bottom">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-7 col-md-7">
+                    <div class="title-area text-md-start text-center">
+                        <span class="sub-title text-theme">Zespół <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Poznaj nasz zespół' %}</h2>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <div class="sec-btn">
+                        <a href="{% url 'about' %}" class="btn mbt-blue">{% trans 'Zobacz cały zespół' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row gy-30 justify-content-center">
+                {% for w in workers|slice:":8" %}
+                <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                    {% include 'partials/workerGalleryCard.html' %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+    CTA Area 03  
+    ==============================-->
+    <div class="cta-area-3">
+        <div class="container">
+            <div class="cta-wrap3 text-center" data-bg-src="{{ photos.home_bg_cta }}" data-overlay="title" data-opacity="6">
+                <div class="title-area mb-30">
+                    <span class="sub-title text-white">Od 20 lat z pasją budujemy Wasze biznesy <i class="ri-arrow-right-down-line"></i></span>
+                    <h2 class="cta-title style2">{% trans 'Twój Generalny' %}</h2>
+                    <h3 class="cta-title text-white">{% trans 'Wykonawca' %}</h3>
+                </div>
+                <div class="btn-wrap justify-content-center">
+                    <a href="{% url 'contact' %}" class="btn mbt-cta">{% trans 'Wyceń projekt' %} <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+    Blog Area  
+    ==============================-->
+    <section class="blog-area-2 space">
+        <div class="section-animation-shape1-1 shape-mockup animation-infinite" data-top="0" data-bg-src="/static/img/shape/global-line-shape1.png">
+        </div>
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <div class="title-area text-lg-start text-center">
+                        <span class="sub-title text-theme">Aktualności <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% trans 'Nasze najnowsze wpisy na blogu' %}</h2>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <div class="sec-btn">
+                        <a href="{% url 'blog' %}" class="btn mbt-blue">{% trans 'Zobacz wszystkie wpisy' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row global-carousel blog-slider slider-shadow" data-slide-show="3" data-lg-slide-show="2" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1" data-dots="false">
+                {% for a in articles %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card style2">
+                        <div class="blog-img">
+                            {% if a.image %}
+                            <img src="{{ a.image }}" alt="{{ a.title }}" width="800" height="600">
+                            {% else %}
+                            <img src="{{ photos.home_realizacja }}" alt="{{ a.title }}" width="800" height="600">
+                            {% endif %}
+                            <div class="blog-date">
+                                <a href="{% url 'articleDetail' a.slug %}"><span>MBT</span>ART</a>
+                                <div class="year">2026</div>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="{% url 'blog' %}">Przez MBT</a>
+                                <a href="{% url 'blog' %}">Budownictwo</a>
+                            </div>
+                            <h3 class="blog-title"><a href="{% url 'articleDetail' a.slug %}">{{ a.title|truncatechars:60 }}</a></h3>
+                            <p class="blog-text">{{ a.excerpt_plain|truncatechars:110 }}</p>
+                            <a href="{% url 'articleDetail' a.slug %}" class="btn style2">{% trans 'Czytaj więcej' %} <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>   
+
+    <!--==============================
+        Footer Area
+    ==============================-->
+    {% include 'partials/footer.html' %}
+
+    <!--********************************
+	Code End  Here 
+	******************************** -->
+
+    <!-- Scroll To Top -->
+    {% include 'partials/scrollTop.html' %}
+
+    <!--==============================
+    All Js File
+    ============================== -->
+    {% include 'partials/script.html' %}
+
+</body>
+
+</html><!-- ANTIGRAVITY TEST -->

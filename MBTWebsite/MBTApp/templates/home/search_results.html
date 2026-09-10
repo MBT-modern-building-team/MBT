@@ -1,0 +1,72 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+    <section class="space-top space-extra-bottom">
+        <div class="container">
+            <div class="title-area text-center mb-50">
+                <span class="sub-title text-theme">{% trans "Wyniki wyszukiwania" %} <i class="ri-arrow-right-down-line"></i></span>
+                <h2 class="sec-title">{% blocktranslate %}Szukana fraza: <strong>{{ query }}</strong>{% endblocktranslate %}</h2>
+            </div>
+            
+            {% if projects %}
+            <h3 class="mb-4">{% trans "Realizacje" %} ({{ projects|length }})</h3>
+            <div class="row gy-40 justify-content-center mb-5">
+                {% for p in projects %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="{{ p.hero }}" alt="{{ p.title }}">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title"><a href="{% url 'realizacjaDetail' p.slug %}">{{ p.title }}</a></h3>
+                            <a href="{% url 'realizacjaDetail' p.slug %}" class="btn mbt-blue mt-3">{% trans "Szczegóły" %} <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if articles %}
+            <h3 class="mb-4">{% trans "Artykuły" %} ({{ articles|length }})</h3>
+            <div class="row gy-40 justify-content-center mb-5">
+                {% for a in articles %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="{{ a.image|default:photos.home_realizacja }}" alt="{{ a.title }}">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title"><a href="{% url 'articleDetail' a.slug %}">{{ a.title }}</a></h3>
+                            <p class="blog-text">{{ a.excerpt_plain|truncatechars:130 }}</p>
+                            <a href="{% url 'articleDetail' a.slug %}" class="btn mbt-blue">{% trans "Czytaj więcej" %} <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if jobs %}
+            <h3 class="mb-4">{% trans "Kariera" %} ({{ jobs|length }})</h3>
+            <div class="row gy-40 justify-content-center mb-5">
+                {% for j in jobs %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card p-4 shadow-sm">
+                        <h3 class="project-title"><a href="{% url 'careerDetail' j.slug %}">{{ j.title }}</a></h3>
+                        <a href="{% url 'careerDetail' j.slug %}" class="btn mbt-blue mt-3">{% trans "Aplikuj" %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if not projects and not articles and not jobs %}
+            <div class="text-center">
+                <p class="sec-text">{% trans "Brak wyników dla podanej frazy." %}</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+{% endblock content %}

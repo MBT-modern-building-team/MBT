@@ -1,0 +1,285 @@
+{% load i18n %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="utf-8">
+    <title>{% trans "Oznakowanie budowy" %} | MBT</title>
+    <link rel="stylesheet" href="/static/css/mbt-override.css?v=20260830-blog-date">
+    <style>
+        body { background: #f5f5f7; margin: 0; padding: 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .ozn-container { max-width: 1200px; margin: 0 auto; }
+        .ozn-header { background: white; padding: 1.25rem 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+        .ozn-header h1 { margin: 0; font-size: 1.35rem; color: #1d1d1f; }
+        .ozn-header .user { color: #6e6e73; font-size: 0.9rem; }
+        .ozn-header .actions a { background: #f5f5f7; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; color: #1d1d1f; margin-left: 0.5rem; font-size: 0.9rem; }
+        .ozn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.5rem; }
+        .ozn-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 1.5rem; }
+        .ozn-card h2 { margin: 0 0 0.25rem; font-size: 1.1rem; color: #1d1d1f; }
+        .ozn-card .size { font-size: 0.85rem; color: #6e6e73; margin-bottom: 1rem; }
+        .ozn-preview { background: #f5f5f7; border-radius: 8px; padding: 1rem; min-height: 180px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden; }
+        .ozn-preview img { max-width: 100%; max-height: 240px; object-fit: contain; }
+        .ozn-preview-empty { color: #a1a1a6; font-size: 0.9rem; text-align: center; }
+        .form-row { display: flex; gap: 0.5rem; align-items: stretch; margin-bottom: 0.5rem; }
+        .file-input-wrap { flex: 1; position: relative; overflow: hidden; }
+        .file-input-wrap input[type=file] { position: absolute; opacity: 0; inset: 0; width: 100%; cursor: pointer; }
+        .file-label { display: block; padding: 0.6rem 1rem; background: #f5f5f7; border-radius: 8px; border: 1px dashed #d2d2d7; text-align: center; cursor: pointer; font-size: 0.9rem; color: #6e6e73; }
+        .btn { padding: 0.6rem 1.25rem; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; font-size: 0.95rem; text-decoration: none; display: inline-block; text-align: center; }
+        .btn-blue { background: #2563EB; color: white; }
+        .btn-blue:hover { background: #1d4ed8; }
+        .btn-cta { background: #FF6B35; color: white; }
+        .btn-cta:hover { background: #e85a25; }
+        .btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+        .ozn-history { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 1.5rem; margin-top: 1.5rem; }
+        .ozn-history h2 { margin-top: 0; font-size: 1.1rem; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #f0f0f0; }
+        th { color: #6e6e73; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="ozn-container">
+        <div class="ozn-header">
+            <div>
+                <h1>{% trans "Oznakowanie budowy" %}</h1>
+                <div class="user">{{ request.user.email }} · {% trans "kierownik" %}</div>
+            </div>
+            <div class="actions">
+                <a href="{% url 'oznakowanie_change_password' %}">{% trans "Zmień hasło" %}</a>
+                <a href="{% url 'oznakowanie_logout' %}">{% trans "Wyloguj" %}</a>
+                <a href="/">← {% trans "Strona główna" %}</a>
+            </div>
+        </div>
+
+        {% if messages %}
+            {% for m in messages %}
+                <div style="background:#dbeafe; padding:0.85rem 1rem; border-radius:8px; margin-bottom:1rem; color:#1e40af;">{{ m }}</div>
+            {% endfor %}
+        {% endif %}
+
+        <div class="ozn-history" style="background:#e0f2fe; margin-bottom: 2rem;">
+            <h2>{% trans "Instrukcja korzystania z generatora" %}</h2>
+            <ol style="margin: 0; padding-left: 1.5rem; line-height: 1.6; color: #1d1d1f;">
+                <li>{% trans "Wybierz odpowiedni baner z poniższych sekcji." %}</li>
+                <li>{% trans "W przypadku banerów personalizowanych kliknij" %} <strong>{% trans "Wybierz logo" %}</strong> {% trans "i wgraj logo Inwestora (obsługiwane formaty: PNG, JPG, WEBP, SVG)." %}</li>
+                <li>{% trans "Kliknij" %} <strong>{% trans "Podgląd" %}</strong>, {% trans "aby sprawdzić, czy logo dobrze się komponuje i nie jest przycięte." %}</li>
+                <li>{% trans "Jeśli wszystko się zgadza, kliknij" %} <strong>{% trans "Pobierz gotowy plik do druku" %}</strong> — {% trans "plik PDF zostanie wygenerowany w odpowiednim rozmiarze." %}</li>
+                <li>{% trans "Przekaż wygenerowany plik bezpośrednio do drukarni." %}</li>
+            </ol>
+        </div>
+
+        <h2 style="margin-top: 2rem; color: #1d1d1f;">{% trans "Banery Ogólne (bez logo inwestora)" %}</h2>
+        <div class="ozn-grid">
+            {% for t in general_templates %}
+            <div class="ozn-card">
+                <h2>{{ t.title }}</h2>
+                <div class="size">{{ t.get_size_display }}</div>
+                <div class="ozn-preview">
+                    {% if ".pdf" in t.template_image.name|lower %}
+                        <iframe src="{{ t.template_image.url }}#view=Fit&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="240" style="border:none; pointer-events:none; overflow:hidden;"></iframe>
+                    {% else %}
+                        <img src="{{ t.template_image.url }}" alt="Podgląd">
+                    {% endif %}
+                </div>
+                <div style="display:flex; gap:0.5rem;">
+                    <a class="btn btn-cta" style="flex:1" href="{% url 'oznakowanie_download' t.slug %}">{% trans "Pobierz baner" %}</a>
+                </div>
+            </div>
+            {% empty %}
+            <p style="color:#6e6e73;">{% trans "Brak dostępnych banerów ogólnych." %}</p>
+            {% endfor %}
+        </div>
+
+        <h2 style="margin-top: 3rem; color: #1d1d1f;">{% trans "Banery Personalizowane (z logo inwestora)" %}</h2>
+        <div class="ozn-grid">
+            {% for t in personalized_templates %}
+            <div class="ozn-card">
+                <h2>{{ t.title }}</h2>
+                <div class="size">{{ t.get_size_display }}</div>
+
+                <div class="ozn-preview" id="preview-{{ t.slug }}">
+                    <div class="ozn-preview-empty">{% trans "Wgraj logo aby zobaczyć podgląd" %}</div>
+                </div>
+
+                <form class="logo-form" data-slug="{{ t.slug }}" method="POST" action="/admin-budowa/pobierz/{{ t.slug }}/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% if t.size == '600x200_billboard' %}
+                    <div class="form-row" style="margin-bottom: 0.5rem;">
+                        <input type="text" name="billboard_text" placeholder="Wartość (np. TWÓJ BIZNES)" style="flex:1; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+                    </div>
+                    {% endif %}
+                    <div class="form-row">
+                        <div class="file-input-wrap">
+                            <span class="file-label">📁 {% trans "Wybierz logo" %}</span>
+                            <input type="file" name="logo" accept="image/png,image/jpeg,image/svg+xml,image/webp" required>
+                        </div>
+                        <button type="button" class="btn btn-blue btn-preview">Podgląd</button>
+                    </div>
+                    <div style="display:flex; gap:0.5rem; margin-top:0.5rem;">
+                        <button type="submit" class="btn btn-cta" style="flex:1; width:100%;">{% trans "Pobierz baner" %}</button>
+                    </div>
+                </form>
+            </div>
+            {% empty %}
+            <p style="color:#6e6e73;">{% trans "Brak dostępnych banerów personalizowanych." %}</p>
+            {% endfor %}
+        </div>
+
+        
+        <h2 style="margin-top: 3rem; color: #1d1d1f;">{% trans "Tablice Budowlane (Generatory)" %}</h2>
+        <div class="ozn-grid">
+            <!-- TABLICA BIOZ -->
+            <div class="ozn-card">
+                <h2>Tablica (Ogłoszenie) BIOZ</h2>
+                <div class="size">70 x 70 cm</div>
+
+                <div class="ozn-preview" id="preview-bioz">
+                    <div class="ozn-preview-empty">Wypełnij formularz i kliknij Podgląd</div>
+                </div>
+
+                <form class="board-form" data-type="bioz" method="POST" action="{% url 'board_download' 'bioz' %}">
+                    {% csrf_token %}
+                    <div class="form-row" style="flex-direction: column; align-items: stretch; gap: 0.5rem; margin-top: 1rem;">
+                        <input type="text" name="rozpoczecie" placeholder="ROZPOCZĘCIE ROBÓT" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="zakonczenie" placeholder="ZAKOŃCZENIE ROBÓT" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="maks_prac" placeholder="MAKS. LICZBA PRACOWNIKÓW NA BUDOWIE" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="plan_bioz" placeholder="PLAN BEZPIECZEŃSTWA ZNAJDUJE SIĘ..." required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                    </div>
+                    <div style="display:flex; gap:0.5rem; margin-top:1rem;">
+                        <button type="button" class="btn btn-blue btn-preview-board">Podgląd</button>
+                        <button type="submit" class="btn btn-cta" style="flex:1;">Pobierz PDF</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- TABLICA INFORMACYJNA -->
+            <div class="ozn-card">
+                <h2>Tablica Informacyjna</h2>
+                <div class="size">70 x 103 cm</div>
+
+                <div class="ozn-preview" id="preview-informacyjna">
+                    <div class="ozn-preview-empty">Wypełnij formularz i kliknij Podgląd</div>
+                </div>
+
+                <form class="board-form" data-type="informacyjna" method="POST" action="{% url 'board_download' 'informacyjna' %}">
+                    {% csrf_token %}
+                    <div class="form-row" style="flex-direction: column; align-items: stretch; gap: 0.5rem; margin-top: 1rem;">
+                        <input type="text" name="budowa" placeholder="BUDOWA" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="adres" placeholder="ADRES" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="data_pozwolenia" placeholder="DATA I NR POZWOLENIA/ZGŁOSZ." required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="organ" placeholder="ORGAN WYD. DEC./ROZP.ZGŁOSZ." required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="nadzor" placeholder="NADZÓR BUDOWLANY" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="inwestor" placeholder="INWESTOR" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                        <input type="text" name="kierownik" placeholder="KIEROWNIK BUDOWY" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+                    </div>
+                    <div style="display:flex; gap:0.5rem; margin-top:1rem;">
+                        <button type="button" class="btn btn-blue btn-preview-board">Podgląd</button>
+                        <button type="submit" class="btn btn-cta" style="flex:1;">Pobierz PDF</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if my_downloads %}
+        <div class="ozn-history">
+            <h2>{% trans "Historia pobrań" %}</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>{% trans "Szablon" %}</th>
+                        <th>{% trans "Data" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for d in my_downloads %}
+                    <tr>
+                        <td>{{ d.template_title_snapshot }}</td>
+                        <td>{{ d.downloaded_at|date:"Y-m-d H:i" }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+    (function() {
+        document.querySelectorAll('.logo-form').forEach(function(form) {
+            const slug = form.dataset.slug;
+            const previewBtn = form.querySelector('.btn-preview');
+            const previewBox = document.getElementById('preview-' + slug);
+            
+            
+            // Dodana logika dla formularzy tablic budowlanych
+            document.querySelectorAll('.board-form').forEach(function(form) {
+                const bType = form.dataset.type;
+                const previewBtn = form.querySelector('.btn-preview-board');
+                const previewBox = document.getElementById('preview-' + bType);
+                
+                previewBtn.addEventListener('click', function() {
+                    const fd = new FormData(form);
+                    previewBox.innerHTML = '<div class="ozn-preview-empty">Generowanie...</div>';
+                    
+                    fetch('/admin-budowa/tablice/' + bType + '/podglad/', {
+                        method: 'POST',
+                        body: fd,
+                    })
+                    .then(r => {
+                        if (!r.ok) throw new Error('Błąd podglądu');
+                        return r.blob();
+                    })
+                    .then(blob => {
+                        const url = URL.createObjectURL(blob);
+                        previewBox.innerHTML = '<iframe src="' + url + '#toolbar=0&navpanes=0&scrollbar=0&view=Fit" width="100%" height="300" frameborder="0"></iframe>';
+                    })
+                    .catch(err => {
+                        previewBox.innerHTML = '<div class="ozn-preview-empty">Błąd generowania podglądu.</div>';
+                    });
+                });
+            });
+
+            // Preview logic
+            previewBtn.addEventListener('click', function() {
+                const fileInput = form.querySelector('input[type="file"]');
+                if (!fileInput.files.length) {
+                    alert('Wybierz najpierw plik logo!');
+                    return;
+                }
+                const fd = new FormData(form);
+                previewBox.innerHTML = '<div class="ozn-preview-empty">Ładowanie podglądu...</div>';
+                
+                fetch('/admin-budowa/podglad/' + slug + '/', {
+                    method: 'POST',
+                    body: fd,
+                })
+                .then(r => {
+                    if (!r.ok) throw new Error('Błąd podglądu');
+                    return r.blob();
+                })
+                .then(blob => {
+                    const url = URL.createObjectURL(blob);
+                    if (blob.type === 'application/pdf') {
+                        previewBox.innerHTML = '<iframe src="' + url + '#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="240" frameborder="0"></iframe>';
+                    } else {
+                        previewBox.innerHTML = '<img src="' + url + '" alt="Podgląd">';
+                    }
+                })
+                .catch(err => {
+                    previewBox.innerHTML = '<div class="ozn-preview-empty">Błąd generowania podglądu.</div>';
+                });
+            });
+            
+            // File input label update
+            form.querySelector('input[type="file"]').addEventListener('change', function(e) {
+                const label = form.querySelector('.file-label');
+                if (this.files.length) {
+                    label.textContent = 'Wybrano: ' + this.files[0].name;
+                } else {
+                    label.textContent = '📁 Wybierz logo';
+                }
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

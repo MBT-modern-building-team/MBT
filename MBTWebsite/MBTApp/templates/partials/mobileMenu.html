@@ -1,0 +1,40 @@
+{% load i18n %}
+<div class="mobile-menu-wrapper" role="dialog" aria-modal="true" aria-label="Menu mobilne">
+    <div class="mobile-menu-area">
+        <div class="mobile-logo">
+            <a href="{% url 'index' %}"><img src="/static/img/mbt/logo-with-name.svg" alt="MBT Modern Building Team" width="150" height="50" loading="lazy"></a>
+            <button class="menu-toggle"><i class="ri-close-line"></i></button>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="{% url 'about' %}">{% trans 'O nas' %}</a></li>
+                <li><a href="{% url 'generalContracting' %}">{% trans 'Generalne Wykonawstwo' %}</a></li>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'service' %}">{% trans 'Oferta' %}</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'halePrzemyslowe' %}">{% trans 'Hale Przemysłowe' %}</a></li>
+                        <li><a href="{% url 'haleMagazynowe' %}">{% trans 'Hale Magazynowe' %}</a></li>
+                        <li><a href="{% url 'obiektyKomercyjne' %}">{% trans 'Obiekty Komercyjne' %}</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'project' %}">{% trans 'Realizacje' %}</a></li>
+                <li><a href="{% url 'blog' %}">{% trans 'Blog' %}</a></li>
+                <li><a href="{% url 'career' %}">{% trans 'Kariera' %}</a></li>
+                <li><a href="{% url 'contact' %}">{% trans 'Kontakt' %}</a></li>
+            </ul>
+        </div>
+        <!-- Wybór języka na mobile -->
+        <div style="padding: 15px 30px; border-top: 1px solid #f0f0f0;">
+            <div style="font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 0.5px;">{% trans 'Wybierz język' %}</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                {% get_current_language as CURRENT_LANGUAGE %}
+                {% for lang in site_languages %}
+                <a href="{{ lang.url }}" class="mbt-lang-btn" style="padding: 6px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; text-decoration: none; border: 1px solid {% if lang.code == CURRENT_LANGUAGE %}var(--theme-color, #0D6EFD){% else %}#e5e5e5{% endif %}; color: {% if lang.code == CURRENT_LANGUAGE %}#fff{% else %}#191C20{% endif %}; background: {% if lang.code == CURRENT_LANGUAGE %}var(--theme-color, #0D6EFD){% else %}#fff{% endif %};">{{ lang.code|upper }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div style="padding:15px 30px 30px;">
+            <a href="{% url 'contact' %}" class="btn mbt-cta w-100" style="justify-content:center;">{% trans "Wyceń projekt" %} <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+    </div>
+</div>

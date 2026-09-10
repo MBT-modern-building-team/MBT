@@ -1,0 +1,87 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <!--==============================
+    Blog Details — artykuł MBT
+    ==============================-->
+    <section class="blog-details space-top space-extra-bottom">
+        <div class="container">
+            <div class="row gx-60 gy-40">
+                <div class="col-lg-8">
+                    {% if article %}
+                    <div class="blog-card style2 mb-40">
+                        <div class="blog-img">
+                            {% if article.image %}
+                            <img src="{{ article.image }}" alt="{{ article.title }}" width="800" height="600">
+                            {% else %}
+                            <img src="{{ photos.home_realizacja }}" alt="{{ article.title }}" width="800" height="600">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="title-area mb-30">
+                        <span class="sub-title text-theme">Artykuł <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{{ article.title }}</h2>
+                        <div class="blog-meta mb-20">
+                            <a href="{% url 'blog' %}">Przez MBT</a>
+                            <a href="{% url 'blog' %}">Budownictwo</a>
+                        </div>
+                    </div>
+                    <div class="mbt-article-body" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% for para in article.paras %}
+                        <p style="margin-bottom:18px;">{{ para }}</p>
+                        {% empty %}
+                        <p style="margin-bottom:18px;">{{ article.text }}</p>
+                        {% endfor %}
+                    </div>
+                    {% if article.gallery %}
+                    <div class="mbt-detail-gallery mt-40" style="margin-top:40px;">
+                        <div class="title-area mb-30">
+                            <span class="sub-title text-theme">{% trans "Galeria" %} <i class="ri-arrow-right-down-line"></i></span>
+                            <h2 class="sec-title h3">{% trans "Zdjęcia z artykułu" %}</h2>
+                        </div>
+                        <div class="row gy-30">
+                            {% for img in article.gallery %}
+                            <div class="col-md-6 col-lg-6">
+                                <div class="mbt-detail-img">
+                                    <a class="popup-image d-block" href="{{ img }}">
+                                        <img src="{{ img }}" alt="{{ article.title }} — zdjęcie {{ forloop.counter }}" loading="lazy" width="800" height="600" style="width:100%; border-radius:10px;">
+                                    </a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="mt-40">
+                        <a href="{% url 'contact' %}" class="btn mbt-cta">Porozmawiajmy o Twoim projekcie <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    {% else %}
+                    <div class="title-area">
+                        <h2 class="sec-title">Artykuł nie istnieje</h2>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="mbt-sidebar-card" style="background:var(--smoke-color);border:1px solid var(--border-color);border-radius:8px;padding:30px;">
+                        <h4 style="font-family:var(--title-font);margin-bottom:20px;">Inne artykuły</h4>
+                        <ul style="list-style:none;padding:0;margin:0;">
+                            {% for a in articles %}
+                            <li style="padding:12px 0;border-bottom:1px solid var(--border-color);">
+                                <a href="{% url 'articleDetail' a.slug %}" style="color:var(--title-color);font-weight:600;font-size:14px;text-decoration:none;line-height:1.4;display:block;">{{ a.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--border-color);">
+                            <p style="color:var(--body-color);font-size:13px;line-height:1.6;margin:0 0 12px;">Szukasz generalnego wykonawcy? Sprawdź nasze realizacje.</p>
+                            <a href="{% url 'project' %}" style="color:var(--theme-color);font-weight:700;text-decoration:none;">Zobacz realizacje →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

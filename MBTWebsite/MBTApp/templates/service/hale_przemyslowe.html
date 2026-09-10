@@ -1,0 +1,187 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block title %}Generalny Wykonawca Hal Przemysłowych i Produkcyjnych | MBT{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="gw-hero" style="background-image:url('{{ photos.hale_przemyslowe_hero }}');">
+    <div class="gw-hero-kenburns" style="background-image:url('{{ photos.hale_przemyslowe_hero }}');"></div>
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <div class="gw-hero-content">
+                    <span class="gw-hero-badge wow animate__animated animate__fadeInDown">{% trans 'Generalny Wykonawca' %}</span>
+                    <h1 class="gw-hero-title wow animate__animated animate__fadeInUp">{% blocktranslate %}Generalne wykonawstwo hal przemysłowych{% endblocktranslate %}</h1>
+                    <p class="gw-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        {% blocktranslate %}Budujemy obiekty, w których technologia dyktuje warunki. Dostarczamy bezkompromisową jakość dla sektora produkcyjnego.{% endblocktranslate %}
+                    </p>
+                    <div class="gw-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="#wyzwania" class="btn mbt-cta">{% trans 'Poznaj nasze rozwiązania' %} <i class="ri-arrow-down-line"></i></a>
+                        <a href="{% url 'contact' %}" class="btn gw-btn-outline">{% trans 'Skonsultuj projekt' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wprowadzenie -->
+<section class="gw-about space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gx-60 gy-40">
+            <div class="col-lg-6">
+                <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
+                    <div class="gw-about-img-main">
+                        <img src="{{ photos.hale_przemyslowe_1 }}" alt="Hala przemysłowa">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-about-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Precyzja i technologia' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Hala przemysłowa to nie tylko <strong>ściany i dach</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}W MBT doskonale wiemy, że obiekt produkcyjny to precyzyjnie zaprojektowana obudowa dla skomplikowanych procesów technologicznych. Pełnimy funkcję Generalnego Wykonawcy dla zakładów produkcyjnych, przetwórni oraz zaawansowanych technologicznie parków maszynowych.{% endblocktranslate %}
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Rozumiemy, że w przemyśle każda wibracja, spadek napięcia czy niedoskonałość posadzki przekłada się na realne straty finansowe Inwestora. Dlatego budujemy z zegarmistrzowską precyzją, opierając się na ścisłej koordynacji branżowej i nowoczesnych systemach BIM.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wyzwania inżynieryjne -->
+<section id="wyzwania" class="gw-specs space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Rozwiązania szyte na miarę' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Wyzwania inżynieryjne, na które <strong>odpowiadamy</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);max-width:680px;margin:0 auto;">
+                Zapewniamy pełną gotowość na wymagania nowoczesnego przemysłu i standardy Przemysłu 4.0.
+            </p>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-spec-icon"><i class="ri-pulse-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Fundamentowanie pod obciążenia dynamiczne' %}</h3>
+                        <p>{% trans 'Park maszynowy wymaga szczególnego podejścia do podłoża. Projektujemy i wykonujemy wzmocnione fundamenty oraz posadzki przemysłowe odporne na drgania, wibracje i punktowe, ekstremalne naciski generowane przez ciężkie urządzenia produkcyjne (prasy, obrabiarki CNC).' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="gw-spec-icon"><i class="ri-tools-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Hale suwnicowe i konstrukcje ciężkie' %}</h3>
+                        <p>{% trans 'Realizujemy obiekty wyposażone w rozbudowaną infrastrukturę dźwignicową. Wykonujemy wytrzymałe konstrukcje stalowe lub żelbetowe przystosowane do bezpiecznego montażu i pracy suwnic o wysokim udźwigu, gwarantując bezpieczny, płynny transport wewnątrzzakładowy ciężkich gabarytów.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="gw-spec-icon"><i class="ri-settings-4-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Zaawansowane instalacje technologiczne' %}</h3>
+                        <p>{% trans 'Hala produkcyjna żyje dzięki instalacjom. Zapewniamy kompleksową koordynację i montaż sieci niezbędnych do utrzymania ciągłości procesów: od instalacji sprężonego powietrza i gazów technicznych, przez układy chłodzenia, wysokowydajną wentylację, systemy odpylania, aż po rygorystyczne zabezpieczenia PPOŻ (tryskacze, klapy dymowe).' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="gw-spec-icon"><i class="ri-building-4-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Integracja stref roboczych i biurowych' %}</h3>
+                        <p>{% trans 'Współczesny przemysł to także nowoczesne zaplecze inżynieryjne i administracyjne. Płynnie łączymy surową przestrzeń halową z komfortowym, nowoczesnym biurowcem (np. inwestycja dla firmy ATT w Kokotowie). Zapewniamy odpowiednią izolację akustyczną, termiczną oraz nowoczesny fit-out przestrzeni biurowej.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ekologia i ESG w przemyśle (Rozszerzenie) -->
+<section class="gw-esg space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gy-40">
+            <div class="col-lg-5 order-lg-2">
+                <div class="gw-esg-media wow animate__animated animate__fadeInRight">
+                    <img src="{{ photos.hale_przemyslowe_2 }}" alt="Ekologiczna hala przemysłowa">
+                    <div class="gw-esg-leaf"><i class="ri-leaf-line"></i></div>
+                </div>
+            </div>
+            <div class="col-lg-7 order-lg-1">
+                <div class="gw-esg-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Nowoczesne standardy' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Energooszczędność i standardy <strong>Przemysłu 4.0</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Rozumiemy wyzwania związane z transformacją energetyczną. Optymalizujemy obiekty przemysłowe pod kątem redukcji śladu węglowego i kosztów operacyjnych (OPEX). Stosujemy innowacyjne rozwiązania i pomagamy w osiągnięciu rygorystycznych certyfikacji BREEAM.{% endblocktranslate %}
+                    </p>
+                    <div class="row gy-3 mt-4">
+                        <div class="col-md-6">
+                            <div class="gw-esg-item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                <i class="ri-sun-line"></i>
+                                <div><strong>{% trans 'Gotowość pod instalacje OZE' %}</strong><span>{% trans 'Projektujemy konstrukcję dachu pod duże obciążenia instalacji fotowoltaicznych.' %}</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gw-esg-item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                                <i class="ri-lightbulb-flash-line"></i>
+                                <div><strong>{% trans 'Inteligentne zarządzanie budynkiem (BMS)' %}</strong><span>{% trans 'Automatyka sterująca oświetleniem, temperaturą i wentylacją.' %}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="space-top space-extra-bottom overflow-hidden">
+    <div class="container text-center">
+        <div class="gw-why-card gw-why-card-cta d-inline-block" style="max-width: 800px; padding: 60px;">
+            <h3 class="mb-3" style="font-size: 32px;">{% trans 'Gotowy do startu produkcji?' %}</h3>
+            <p style="font-size: 18px; margin-bottom: 30px;">{% trans 'Przejmiemy na siebie cały proces budowlany, abyś Ty mógł skupić się na kalibracji maszyn. Zbudujmy razem Twój nowy zakład.' %}</p>
+            <a href="{% url 'contact' %}" class="btn mbt-cta" style="font-size: 18px; padding: 15px 40px;">
+                {% trans 'Skonsultuj swój projekt z inżynierem MBT' %} <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Realizacje -->
+<section class="gw-projects space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Dowód naszych kompetencji' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Ostatnie <strong>realizacje</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            {% for p in completed %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="gw-project-img">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <div class="gw-project-overlay">
+                            <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
+                        </div>
+                    </div>
+                    <div class="gw-project-body">
+                        <span class="gw-project-tag">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne Wykonawstwo' %}{% endif %}</span>
+                        <h3>{{ p.title }}</h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

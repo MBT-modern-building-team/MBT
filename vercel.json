@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "MBTWebsite/MBTApp/static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.py",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.fontshare.com; style-src 'self' 'unsafe-inline' https://api.fontshare.com https://fonts.googleapis.com; font-src 'self' https://cdn.fontshare.com https://fonts.gstatic.com data:; img-src 'self' data: https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev https://media.mbt.pl; media-src 'self' https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev https://media.mbt.pl; connect-src 'self' https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev https://media.mbt.pl; frame-src 'self' https://www.google.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+      }
+    }
+  ]
+}

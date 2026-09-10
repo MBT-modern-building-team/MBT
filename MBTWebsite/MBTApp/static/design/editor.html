@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>MBT — Edytor CSS headera (na żywo)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Noto Sans", system-ui, sans-serif; background: #1a1f2b; color: #e8ecf4; height: 100vh; overflow: hidden; }
+  #app { display: flex; height: 100vh; }
+
+  /* ---- Panel edytora ---- */
+  #editor { width: 420px; min-width: 340px; background: #222836; border-right: 2px solid #3a4254; display: flex; flex-direction: column; }
+  #editor header { padding: 14px 16px; background: #0f2440; border-bottom: 1px solid #2c3646; }
+  #editor header h1 { font-size: 15px; color: #fff; }
+  #editor header p { font-size: 11px; color: #9fb0cc; margin-top: 2px; }
+
+  .editor-section { padding: 12px 16px; border-bottom: 1px solid #2f3646; }
+  .editor-section label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8fa0bd; margin-bottom: 8px; }
+  .editor-section select, .editor-section input[type=range] { width: 100%; }
+
+  /* szerokosc symulacji */
+  #widthRow { display: flex; align-items: center; gap: 10px; }
+  #widthRow input[type=range] { flex: 1; }
+  #widthVal { font-size: 13px; font-weight: 700; color: #f26522; min-width: 62px; text-align: right; }
+  .zoom-hint { font-size: 10px; color: #6f7f9b; margin-top: 6px; line-height: 1.5; }
+
+  /* presety */
+  #presets { display: flex; flex-wrap: wrap; gap: 6px; }
+  #presets button { background: #2c3446; color: #c9d4e8; border: 1px solid #3a4254; border-radius: 4px; padding: 5px 9px; font-size: 11px; cursor: pointer; }
+  #presets button:hover { background: #37415a; border-color: #f26522; color: #fff; }
+
+  /* textarea CSS */
+  #cssWrap { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+  #cssLabel { padding: 12px 16px 6px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8fa0bd; display: flex; justify-content: space-between; }
+  #cssLabel button { background: none; border: none; color: #f26522; font-size: 11px; cursor: pointer; }
+  #css { flex: 1; width: 100%; background: #181d29; color: #d7e0f0; border: none; padding: 12px 14px; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 12px; line-height: 1.55; resize: none; outline: none; tab-size: 2; }
+  #status { padding: 8px 16px; font-size: 11px; color: #6f7f9b; border-top: 1px solid #2f3646; }
+  #status .ok { color: #4ade80; }
+  #status .err { color: #f87171; }
+
+  /* ---- Panel podgladu ---- */
+  #preview { flex: 1; display: flex; flex-direction: column; background: #c8ccd4; }
+  #previewBar { height: 34px; background: #0f2440; color: #9fb0cc; display: flex; align-items: center; padding: 0 14px; gap: 10px; font-size: 12px; }
+  #previewBar b { color: #fff; }
+  #frameWrap { flex: 1; overflow: auto; display: flex; justify-content: center; background: #b6bac4; padding: 12px 0; }
+  iframe { background: #fff; border: none; box-shadow: 0 4px 24px rgba(0,0,0,.35); height: 100%; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ================= EDYTOR ================= -->
+  <div id="editor">
+    <header>
+      <h1>🎨 MBT — Edytor CSS headera</h1>
+      <p>Zmień CSS po lewej → strona po prawej aktualizuje się na żywo.</p>
+    </header>
+
+    <div class="editor-section">
+      <label>Szerokość podglądu (symulacja zoomu)</label>
+      <div id="widthRow">
+        <span style="font-size:10px;color:#6f7f9b;">100%&nbsp;←</span>
+        <input type="range" id="width" min="1200" max="2600" step="10" value="1440">
+        <span id="widthVal">1440px</span>
+      </div>
+      <div class="zoom-hint">
+        💡 Na ekranie ~1440px: 100% ≈ <b>1440px</b> · 90% ≈ <b>1600px</b> · 75% ≈ <b>1920px</b>.<br>
+        Ustaw suwak na 1440, żeby zobaczyć problem z 100% zoomu.
+      </div>
+    </div>
+
+    <div class="editor-section">
+      <label>Szybkie testy</label>
+      <div id="presets">
+        <button data-preset="compact">🔧 Ściśnij 1400–1600</button>
+        <button data-preset="hide-phone">📵 Ukryj telefon</button>
+        <button data-preset="hide-cta">👻 Ukryj CTA</button>
+        <button data-preset="smaller-logo">📉 Mniejsze logo</button>
+        <button data-preset="reset">↺ Resetuj</button>
+      </div>
+    </div>
+
+    <div id="cssWrap">
+      <div id="cssLabel">
+        <span>CSS (wklejany do mbt-override.css)</span>
+        <button id="copyBtn">📋 Kopiuj</button>
+      </div>
+      <textarea id="css" spellcheck="false"></textarea>
+    </div>
+    <div id="status">Gotowe — edytuj CSS i obserwuj podgląd.</div>
+  </div>
+
+  <!-- ================= PODGLAD ================= -->
+  <div id="preview">
+    <div id="previewBar">
+      <b>MBT — strona główna</b>
+      <span>|</span>
+      <span>iframe szerokość: <b id="frameW">1440</b>px</span>
+    </div>
+    <div id="frameWrap">
+      <iframe id="frame" src="/"></iframe>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var frame = document.getElementById('frame');
+  var cssEl = document.getElementById('css');
+  var widthEl = document.getElementById('width');
+  var widthVal = document.getElementById('widthVal');
+  var frameW = document.getElementById('frameW');
+  var statusEl = document.getElementById('status');
+
+  // ---------- domyślny CSS (obecny stan mbt-override) ----------
+  var DEFAULT_CSS = [
+    '/* ===== EDYTUJ SWOJE ZMIANY TUTAJ ===== */',
+    '/* Aplikują się na żywo na stronie po prawej. */',
+    '',
+    '/* --- Logo: w całości w headerze --- */',
+    '.header-layout1 .header-navbar-logo {',
+    '  margin-top: 0;',
+    '  padding: 14px 0;',
+    '  position: absolute;',
+    '  top: 50%;',
+    '  transform: translateY(-50%);',
+    '  z-index: 3;',
+    '}',
+    '.header-layout1 .header-navbar-logo img {',
+    '  max-height: 56px;',
+    '  width: auto;',
+    '}',
+    '',
+    '/* ===== TWOJE EKSPERYMENTY (1400–1600px) ===== */',
+    '@media (min-width: 1400px) and (max-width: 1600px) {',
+    '  /* tu wklejaj swoje poprawki... */',
+    '}',
+    ''
+  ].join('\n');
+
+  // ---------- presety ----------
+  var PRESETS = {
+    compact: [
+      '/* Ściśnięty header dla 1400–1600px */',
+      '@media (min-width: 1400px) and (max-width: 1600px) {',
+      '  .header-layout1 .header-navbar-logo { padding-left: 20px; }',
+      '  .header-layout1 .header-navbar-logo img { max-height: 44px; }',
+      '  .header-layout1 .main-menu { margin-left: 0; }',
+      '  .header-layout1 .main-menu > ul > li > a { padding: 34.5px 14px; }',
+      '  .header-layout1 .header-button { margin-right: 10px; }',
+      '  .header-layout1 .header-button .btn { padding: 12px 16px; font-size: 13px; }',
+      '  .header-layout1 .navbar-right-desc { padding: 0 15px; }',
+      '}'
+    ].join('\n'),
+    'hide-phone': [
+      '/* Ukryj blok telefonu przy 1400–1600px */',
+      '@media (min-width: 1400px) and (max-width: 1600px) {',
+      '  .header-layout1 .navbar-right-desc { display: none !important; }',
+      '}'
+    ].join('\n'),
+    'hide-cta': [
+      '/* Ukryj przycisk Wyceń projekt przy 1400–1600px */',
+      '@media (min-width: 1400px) and (max-width: 1600px) {',
+      '  .header-layout1 .header-button .btn { display: none !important; }',
+      '}'
+    ].join('\n'),
+    'smaller-logo': [
+      '/* Mniejsze logo w całym zakresie */',
+      '.header-layout1 .header-navbar-logo img { max-height: 40px; }'
+    ].join('\n')
+  };
+
+  // ---------- aplikowanie CSS do iframe ----------
+  var lastError = null;
+  function applyCss() {
+    var css = cssEl.value;
+    try {
+      var doc = frame.contentDocument;
+      if (!doc) throw new Error('iframe niedostępny');
+      var existing = doc.getElementById('mbt-live-css');
+      if (existing) existing.remove();
+      var style = doc.createElement('style');
+      style.id = 'mbt-live-css';
+      style.textContent = css;
+      doc.head.appendChild(style);
+      statusEl.innerHTML = '<span class="ok">✓ CSS zastosowany na żywo</span>';
+      lastError = null;
+    } catch (e) {
+      statusEl.innerHTML = '<span class="err">✗ ' + e.message + '</span>';
+      lastError = e.message;
+    }
+  }
+
+  // debounce
+  var timer = null;
+  cssEl.addEventListener('input', function () {
+    clearTimeout(timer);
+    timer = setTimeout(applyCss, 120);
+  });
+
+  // ---------- szerokość iframe ----------
+  function setWidth() {
+    var w = parseInt(widthEl.value, 10);
+    widthVal.textContent = w + 'px';
+    frameW.textContent = w;
+    frame.style.width = w + 'px';
+  }
+  widthEl.addEventListener('input', setWidth);
+
+  // ---------- presety ----------
+  document.getElementById('presets').addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn || !btn.dataset.preset) return;
+    var name = btn.dataset.preset;
+    if (name === 'reset') {
+      cssEl.value = DEFAULT_CSS;
+    } else if (PRESETS[name]) {
+      cssEl.value = PRESETS[name] + '\n\n' + cssEl.value;
+    }
+    applyCss();
+  });
+
+  // ---------- kopiowanie ----------
+  document.getElementById('copyBtn').addEventListener('click', function () {
+    navigator.clipboard.writeText(cssEl.value).then(function () {
+      statusEl.innerHTML = '<span class="ok">✓ CSS skopiowany — wklej do MBTApp/static/css/mbt-override.css</span>';
+    }).catch(function () {
+      cssEl.select();
+      document.execCommand('copy');
+      statusEl.innerHTML = '<span class="ok">✓ CSS skopiowany (wybrano do Ctrl+C)</span>';
+    });
+  });
+
+  // ---------- start ----------
+  cssEl.value = DEFAULT_CSS;
+  setWidth();
+  frame.addEventListener('load', function () {
+    applyCss();
+    // ponów aplikację po chwili (lazy-load strony)
+    setTimeout(applyCss, 400);
+    setTimeout(applyCss, 1200);
+  });
+
+})();
+</script>
+</body>
+</html>

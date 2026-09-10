@@ -1,0 +1,147 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block title %}Parki handlowe - Generalny Wykonawca | MBT{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="gw-hero" style="background-image:url('{{ photos.gw_hero }}');">
+    <div class="gw-hero-kenburns" style="background-image:url('{{ photos.gw_hero }}');"></div>
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <div class="gw-hero-content">
+                    <span class="gw-hero-badge wow animate__animated animate__fadeInDown">{% trans 'Generalny Wykonawca' %}</span>
+                    <h1 class="gw-hero-title wow animate__animated animate__fadeInUp">{% blocktranslate %}Parki handlowe{% endblocktranslate %}</h1>
+                    <p class="gw-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        {% blocktranslate %}Budujemy nowoczesne i wielofunkcyjne parki handlowe dostosowane do dynamicznie zmieniających się potrzeb rynku retail.{% endblocktranslate %}
+                    </p>
+                    <div class="gw-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="#wyzwania" class="btn mbt-cta">{% trans 'Poznaj nasze rozwiązania' %} <i class="ri-arrow-down-line"></i></a>
+                        <a href="{% url 'contact' %}" class="btn gw-btn-outline">{% trans 'Skonsultuj projekt' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wprowadzenie -->
+<section class="gw-about space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gx-60 gy-40">
+            <div class="col-lg-6">
+                <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
+                    <div class="gw-about-img-main">
+                        <img src="{{ photos.gw_3 }}" alt="Parki handlowe">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-about-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Precyzja i technologia' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Funkcjonalność dla najemców i klientów{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Parki handlowe (retail parki) zyskują na popularności dzięki swojej wygodzie i dostępności. Projektujemy i realizujemy te obiekty z naciskiem na maksymalną użyteczność, optymalny przepływ ruchu oraz atrakcyjną wizualnie architekturę zewnętrzną.{% endblocktranslate %}
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Nasze obiekty komercyjne charakteryzują się elastycznością, co pozwala na bezproblemową adaptację lokali pod różnych operatorów spożywczych, drogeryjnych czy odzieżowych.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wyzwania inżynieryjne -->
+<section id="wyzwania" class="gw-specs space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Rozwiązania szyte na miarę' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Kluczowe aspekty <strong>naszej realizacji</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Szybkie tempo realizacji' %}</h3>
+                        <p>{% trans 'Stosujemy technologie prefabrykowane pozwalające na błyskawiczne wznoszenie konstrukcji, aby Inwestor mógł szybciej komercjalizować obiekt.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Optymalizacja układu drogowego' %}</h3>
+                        <p>{% trans 'Dokładne zaplanowanie dróg dojazdowych, stref dostaw i dużych parkingów to klucz do sukcesu parku handlowego.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Bezproblemowy podział na lokale' %}</h3>
+                        <p>{% trans 'Systemy instalacyjne i konstrukcyjne są projektowane modułowo, ułatwiając przyszłe zmiany aranżacji i wielkości lokali.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Reprezentacyjna elewacja' %}</h3>
+                        <p>{% trans 'Dbamy o nowoczesny design i widoczność logotypów najemców, stosując wysokiej klasy materiały elewacyjne.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="space-top space-extra-bottom overflow-hidden">
+    <div class="container text-center">
+        <div class="gw-why-card gw-why-card-cta d-inline-block" style="max-width: 800px; padding: 60px;">
+            <h3 class="mb-3" style="font-size: 32px;">{% trans 'Gotowy do startu inwestycji?' %}</h3>
+            <p style="font-size: 18px; margin-bottom: 30px;">{% trans 'Przejmiemy na siebie cały proces budowlany. Zbudujmy razem Twój nowy obiekt.' %}</p>
+            <a href="{% url 'contact' %}" class="btn mbt-cta" style="font-size: 18px; padding: 15px 40px;">
+                {% trans 'Skonsultuj swój projekt z inżynierem MBT' %} <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Realizacje -->
+<section class="gw-projects space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Dowód naszych kompetencji' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Ostatnie <strong>realizacje</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            {% for p in completed %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="gw-project-img">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <div class="gw-project-overlay">
+                            <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
+                        </div>
+                    </div>
+                    <div class="gw-project-body">
+                        <span class="gw-project-tag">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne Wykonawstwo' %}{% endif %}</span>
+                        <h3>{{ p.title }}</h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    {% if project %}
+    <!-- Hero: zdjęcie główne przyciemnione 40% czernią -->
+    <section class="mbt-detail-hero" style="background-image:url('{{ project.hero }}');">
+        <div class="mbt-detail-hero-overlay"></div>
+        <div class="container">
+            <div class="mbt-detail-hero-content">
+                <span class="mbt-detail-hero-badge">{% trans project.status %}</span>
+                <h1 class="mbt-detail-hero-title">{{ project.title }}</h1>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="{% url 'index' %}"><i class="ri-home-4-fill"></i> HOME</a></li>
+                <li><a href="{% url 'project' %}">REALIZACJE</a></li>
+                <li class="active">{{ project.title }}</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-details space-top space-extra-bottom">
+        <div class="container">
+
+            <!-- Opis + specyfikacja (opis NAD galerią) -->
+            <div class="row gx-60 gy-40">
+                <div class="col-lg-8">
+                    <div class="title-area mb-30">
+                        <span class="sub-title text-theme">{% trans project.status %} <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{{ project.title }}</h2>
+                    </div>
+                    <div class="mbt-detail-content">
+                        {% for para in project.opis_paras %}
+                        <p style="color:var(--body-color);font-size:16px;line-height:1.8;margin-bottom:18px;">{{ para }}</p>
+                        {% empty %}
+                        <p style="color:var(--body-color);font-size:16px;line-height:1.8;">{% blocktranslate with formula=project.formula|default:"generalnego wykonawstwa" %}Realizacja prowadzona przez MBT Modern Building Team w formule {{ formula }}.{% endblocktranslate %}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mbt-detail-sidebar">
+                        <div class="mbt-sidebar-card" style="background:var(--smoke-color);border:1px solid var(--border-color);border-radius:8px;padding:30px;">
+                            <h4 style="font-family:var(--title-font);margin-bottom:20px;">{% trans 'Specyfikacja' %}</h4>
+                            <ul style="list-style:none;padding:0;margin:0;">
+                                <li style="padding:10px 0;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;gap:16px;">
+                                    <span style="color:var(--body-color);">{% trans "Status" %}</span>
+                                    <strong>{% trans project.status %}</strong>
+                                </li>
+                                {% if project.czas %}
+                                <li style="padding:10px 0;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;gap:16px;">
+                                    <span style="color:var(--body-color);">{% trans "Czas realizacji:" %}</span>
+                                    <strong>{% trans project.czas %}</strong>
+                                </li>
+                                {% endif %}
+                                {% if project.formula %}
+                                <li style="padding:10px 0;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;gap:16px;">
+                                    <span style="color:var(--body-color);">{% trans "Formuła" %}</span>
+                                    <strong>{% trans project.formula %}</strong>
+                                </li>
+                                {% endif %}
+                                <li style="padding:10px 0;display:flex;justify-content:space-between;gap:16px;">
+                                    <span style="color:var(--body-color);">{% trans "Wykonawca" %}</span>
+                                    <strong>MBT</strong>
+                                </li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn mbt-cta w-100 mt-30" style="justify-content:center;margin-top:24px;">{% trans "Wyceń podobny projekt" %} <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galeria: klasyczna, równa siatka 3 kolumny w stylu MBT -->
+            {% if project.gallery %}
+            <div class="mbt-detail-gallery mt-60" style="margin-top:60px;">
+                <div class="title-area mb-30">
+                    <span class="sub-title text-theme">{% trans "Galeria" %} <i class="ri-arrow-right-down-line"></i></span>
+                    <h2 class="sec-title">{% trans "Zdjęcia z realizacji" %}</h2>
+                </div>
+                <div class="row gy-30">
+                    {% for img in project.gallery %}
+                    <div class="col-md-6 col-lg-4">
+                        <div class="mbt-detail-img">
+                            <a class="popup-image d-block" href="{{ img }}">
+                                <img src="{{ img }}" alt="{{ project.title }} — zdjęcie {{ forloop.counter }}" loading="lazy" width="1024" height="683">
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+
+    {% else %}
+    <div class="breadcumb-wrapper" data-bg-src="{{ photos.bg_breadcrumb }}">
+        <div class="container">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">{% trans 'Realizacja' %}</h1>
+            </div>
+        </div>
+    </div>
+    <section class="space-top space-extra-bottom">
+        <div class="container">
+            <div class="title-area text-center">
+                <h2 class="sec-title">{% trans 'Realizacja' %}</h2>
+                <p class="sec-text">{% trans "Szczegóły realizacji są dostępne wkrótce." %}</p>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+{% endblock content %}

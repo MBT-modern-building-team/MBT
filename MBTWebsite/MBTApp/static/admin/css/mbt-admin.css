@@ -1,0 +1,308 @@
+/* ============================================================
+   MBT Admin — styl panelu zarządzania (granat #0f2440 / pomarańcz #f26522)
+   Kolory zgodne z designem www.mbt.pl (Modern Building Team).
+   ============================================================ */
+
+:root {
+  --mbt-navy: #0f2440;
+  --mbt-navy-2: #16335c;
+  --mbt-orange: #f26522;
+  --mbt-orange-dark: #d95415;
+  --mbt-light: #f4f6f9;
+}
+
+/* ---- Nagłówek admina ---- */
+#header {
+  background: linear-gradient(90deg, var(--mbt-navy) 0%, var(--mbt-navy-2) 100%);
+  color: #fff;
+  padding: 14px 30px;
+  height: auto;
+}
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+#branding h1 .mbt-admin-badge {
+  display: inline-block;
+  background: var(--mbt-orange);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+#user-tools a:focus, #user-tools a:hover {
+  border-bottom-color: var(--mbt-orange);
+}
+
+/* ---- Przyciski ---- */
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+  background: var(--mbt-orange);
+  border: none;
+  border-radius: 4px;
+}
+.button:hover, input[type=submit]:hover, input[type=button]:hover,
+.submit-row input:hover, a.button:hover, .button:focus, input[type=submit]:focus {
+  background: var(--mbt-orange-dark);
+}
+.button.default, input[type=submit].default, .submit-row input.default {
+  background: var(--mbt-navy);
+}
+.button.default:hover, input[type=submit].default:hover {
+  background: var(--mbt-navy-2);
+}
+
+/* ---- Moduły na stronie głównej ---- */
+.module h2, .module caption, .inline-group h2 {
+  background: var(--mbt-navy);
+  color: #fff;
+  font-size: 14px;
+}
+.module {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e3e8ef;
+}
+#content-main .module table {
+  border: none;
+}
+
+/* ---- Linki ---- */
+a:link, a:visited {
+  color: var(--mbt-navy-2);
+}
+#content-main a:focus, #content-main a:hover {
+  color: var(--mbt-orange);
+}
+.object-tools a:link, .object-tools a:visited {
+  background: var(--mbt-orange);
+  border-radius: 4px;
+}
+.object-tools a:focus, .object-tools a:hover {
+  background: var(--mbt-orange-dark);
+}
+
+/* ---- Breadcrumbs ---- */
+div.breadcrumbs {
+  background: var(--mbt-navy-2);
+  color: #c9d4e5;
+  padding: 10px 30px;
+}
+div.breadcrumbs a:focus, div.breadcrumbs a:hover {
+  color: var(--mbt-orange);
+}
+
+/* ---- Formularze: pola uploadu ---- */
+.mbt-upload, .mbt-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px;
+  border: 1px dashed #b9c4d4;
+  border-radius: 6px;
+  background: #fafbfd;
+  max-width: 640px;
+}
+.mbt-upload-preview {
+  width: 140px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid #e3e8ef;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mbt-upload-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.mbt-upload-video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+.mbt-upload-empty {
+  color: #98a2b3;
+  font-size: 12px;
+}
+.mbt-upload-controls {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.mbt-upload-btn {
+  display: inline-block;
+  background: var(--mbt-orange);
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+.mbt-upload-btn:hover {
+  background: var(--mbt-orange-dark);
+}
+.mbt-upload-btn input[type=file] {
+  display: none;
+}
+.mbt-upload-hint {
+  color: #98a2b3;
+  font-size: 12px;
+}
+.mbt-upload-url {
+  max-width: 380px;
+}
+.mbt-gallery-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+.mbt-gallery-thumb {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e3e8ef;
+}
+.mbt-gallery-thumb-new {
+  border: 2px solid var(--mbt-orange);
+}
+.mbt-gallery-thumb-wrap {
+  position: relative;
+  display: inline-flex;
+  cursor: grab;
+  border: 1px solid #e3e8ef;
+  border-radius: 4px;
+  padding: 2px;
+  background: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.mbt-gallery-thumb-wrap:hover {
+  box-shadow: 0 4px 10px rgba(15, 30, 60, 0.15);
+}
+.mbt-gallery-thumb-wrap.mbt-dragging {
+  opacity: 0.4;
+  transform: scale(0.95);
+}
+.mbt-gallery-thumb-wrap .mbt-gallery-thumb {
+  border: 0;
+}
+.mbt-gallery-drag-handle {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #5a6577;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-radius: 50%;
+  cursor: grab;
+  user-select: none;
+}
+.mbt-gallery-remove {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: #d9534f;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+.mbt-gallery-remove:hover {
+  background: #c9302c;
+}
+.mbt-gallery-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.mbt-gallery-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0c4a6e;
+  background: #e0f2fe;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+.mbt-upload-progress {
+  margin: 8px 0;
+  height: 18px;
+  background: #eef2f6;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+.mbt-upload-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #f2a900, #e8762d);
+  border-radius: 9px;
+  transition: width 0.15s ease;
+}
+.mbt-upload-progress-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+.mbt-upload-done {
+  margin: 8px 0;
+  padding: 6px 12px;
+  background: #d1fae5;
+  border: 1px solid #34d399;
+  border-radius: 6px;
+  color: #065f46;
+  font-size: 13px;
+  font-weight: 600;
+}
+.mbt-gallery-thumbs:has(.mbt-gallery-thumb-wrap) {
+  padding: 4px;
+  border: 1px dashed #e3e8ef;
+  border-radius: 6px;
+  min-height: 72px;
+}
+.mbt-gallery-json {
+  font-size: 11px;
+  color: #5a6577;
+}
+
+/* ---- Login ---- */
+.login #header {
+  border-radius: 8px 8px 0 0;
+}
+.login #content {
+  padding: 0;
+}

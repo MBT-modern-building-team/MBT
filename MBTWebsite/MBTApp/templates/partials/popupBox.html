@@ -1,0 +1,8 @@
+{% load i18n %}
+<div class="popup-search-box" role="dialog" aria-modal="true" aria-label="Wyszukiwarka">
+    <button class="searchClose"><i class="ri-close-line"></i></button>
+    <form action="{% url 'search' %}" method="GET">
+        <input type="text" name="q" placeholder="{% trans 'Szukaj...' %}">
+        <button type="submit"><i class="ri-search-line"></i></button>
+    </form>
+</div>

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Django
+db.sqlite3*
+*.sqlite3
+logs/
+media/
+staticfiles/
+static_collected/
+
+# Środowisko / sekrety — NIGDY nie commituj
+.env
+.env.*
+!.env.example
+
+# Vercel / node
+.vercel/
+node_modules/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Skrypty: migracyjne z sekretami R2 NIGDY nie commituj;
+# gen_mbt_data.py jest CZYSTY (bez sekretów) — commitowany.
+scripts/*
+!scripts/gen_mbt_data.py

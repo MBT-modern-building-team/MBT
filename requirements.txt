@@ -1,0 +1,12 @@
+Django==5.1.0
+python-dotenv==1.0.1
+asgiref==3.8.1
+sqlparse==0.5.1
+dj-database-url==2.2.0
+psycopg[binary]==3.3.4
+boto3==1.42.89
+django-storages==1.14.5
+Pillow==12.3.0
+pypdf==4.3.1
+reportlab==4.2.2
+whitenoise==6.7.0

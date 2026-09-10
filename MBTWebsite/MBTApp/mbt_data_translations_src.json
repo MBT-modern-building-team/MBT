@@ -1,0 +1,249 @@
+{
+  "projects": [
+    {
+      "title": "BTS Development Park Zielona góra",
+      "type": "realizacja-w-trakcie",
+      "status": "W trakcie realizacji",
+      "slug": "bts-development-park-zielona-gora",
+      "czas": "",
+      "formula": "",
+      "opis": "Jako Generalny Wykonawca realizujemy nowoczesny obiekt dla BTS Development Park. Docelowo cały kompleks zaoferuje 10 000 m² zaawansowanej powierzchni biznesowej, przeznaczonej pod działalność produkcyjną, magazynową i logistyczną.\r\n\r\nInwestycja została zaprojektowana z myślą o maksymalnej elastyczności. Przestrzeń pozwala na podział na 4 niezależne moduły o powierzchni od 850 m² do 3 330 m². Takie rozwiązanie umożliwia precyzyjne dopasowanie układu funkcjonalnego do indywidualnych potrzeb operacyjnych przyszłych najemców.\r\n\r\nObecnie nasze prace na placu budowy koncentrują się na sprawnej realizacji pierwszej z hal. Zgodnie ze standardami MBT, kładziemy maksymalny nacisk na precyzyjne wykonanie każdego detalu technicznego oraz rygorystyczne przestrzeganie założonego harmonogramu inwestycji.",
+      "logo": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/399402210852.svg",
+      "gallery": [],
+      "hero": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/b04e4b92e0f0.svg"
+    },
+    {
+      "title": "BYD Dąbrowscy - Bytom",
+      "type": "realizacja-w-trakcie",
+      "status": "W trakcie realizacji",
+      "slug": "byd-dabrowscy-bytom",
+      "czas": "",
+      "formula": "",
+      "opis": "Realizujemy budowę nowoczesnego obiektu dealerskiego dla marki BYD, na zlecenie Grupy Dąbrowscy. Inwestycja obejmuje stworzenie kompleksowego salonu samochodowego nowej generacji.\r\n\r\nCała nowoczesna przestrzeń została zaprojektowana od podstaw, w rygorystycznej zgodności z najnowszym, globalnym standardem architektonicznym i wizualnym marki – BYD CI 7.\r\n\r\nZakres realizacji obejmuje:\r\n\r\nNowoczesną salę sprzedaży (Showroom): Reprezentacyjna przestrzeń ekspozycyjna, dostosowana do najwyższych standardów prezentacji pojazdów oraz obsługi klienta.\r\n\r\nZaawansowany serwis motoryzacyjny: Technologicznie przystosowana hala warsztatowa, przygotowana do specjalistycznej diagnostyki i naprawy pojazdów elektrycznych oraz hybrydowych.\r\n\r\nKompleksową obsługę posprzedażową: W pełni zintegrowane zaplecze dedykowane doradcom serwisowym, zapewniające sprawną realizację usług (after-sales) w komfortowych warunkach.\r\n\r\nNaszym zadaniem jest precyzyjne wykonanie obiektu, który zapewni Inwestorowi optymalne warunki operacyjne oraz w pełni odda innowacyjny charakter marki BYD.",
+      "logo": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/a491138f9a7b.webp",
+      "gallery": [],
+      "hero": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/125d6a00ce04.webp"
+    },
+    {
+      "title": "Bater - Gliwice",
+      "type": "realizacja-w-trakcie",
+      "status": "W trakcie realizacji",
+      "slug": "bater-gliwice",
+      "czas": "",
+      "formula": "",
+      "opis": "Kubatura całkowita nowego obiektu wynosi 28 342 m³ Budynek biurowy dwukondygnacyjny, z wydzieloną kondygnacją magazynową oraz antresolą magazynową nad częścią produkcyjną, a także z powierzchnią biurowo-socjalną na drugiej kondygnacji Zagospodarowanie terenu wokół nowego obiektu Konstrukcja: posadowienie „mieszane” (bezpośrednie oraz w części pośrednie) konstrukcja nośna obiektu „mieszana” (prefabrykowane żelbetowe słupy, elementy murowe oraz stalowa konstrukcja dachu) obudowa obiektu „mieszana” ( tradycyjna murowa obudowa z płyty warstwowej ,w części biurowej fasada szklana) pokrycie dachu płytami z wełny skalnej i membraną PVC W naszych mediach społecznościowych znajdują się fotorelacje, aktualizowane na bieżąco.",
+      "logo": "/static/img/mbt/logo2-76e5c8f9.png",
+      "gallery": [],
+      "hero": "/static/img/mbt/logo2-76e5c8f9.png"
+    },
+    {
+      "title": "Browar Lech - Poznań",
+      "type": "realizacja-zrealizow",
+      "status": "Zrealizowane",
+      "slug": "kompania-piwowarska",
+      "czas": "",
+      "formula": "Wybuduj",
+      "opis": "Budowa Magazynu Aromatów z infrastrukturą techniczną i drogową na terenie Lech Browary Wielkopolski dla Kompanii Piwowarskiej.\r\n\r\n•  Hala wyposażona w zaawansowane instalacje sanitarne, elektryczne i techniczne \r\n•  Zagospodarowanie terenu wraz z przebudową istniejącej infrastruktury \r\n•  Praca w wysokim reżimie BHP na terenie działającego zakładu przemysłowego \r\n•  Powierzchnia zabudowy budynku 722 m2",
+      "logo": "/static/img/mbt/realizacje-kompania-piwowarska-logo-c686aab0.png",
+      "gallery": [],
+      "hero": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/95014a152c55.webp"
+    }
+  ],
+  "workers": [
+    {
+      "name": "Michał  Swoboda",
+      "position": "Kierownik Projektu",
+      "opis": "Od pierwszych konstrukcji z piasku po wielkoskalowe inwestycje – budownictwo zawsze było częścią mojego świata. Jako Kierownik Projektu łączę techniczne podejście z praktycznym doświadczeniem. Lubię, gdy praca łączy ludzi, a wspólny wysiłek przekłada się na realny, trwały efekt, który zostaje na lata.",
+      "photo": "/static/img/mbt/O-nas-Michal-Swoboda-scaled-e1769718309917-1c973d48.jpg",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Tomasz Kalisz",
+      "position": "Prezes Zarządu",
+      "opis": "Jestem inżynierem z wykształcenia i liderem z 15-letnim doświadczeniem w realizacji wymagających projektów budowlanych w Polsce i za granicą, specjalizując się w budownictwie infrastrukturalnym i przemysłowym. W 2018 roku, wspólnie z Jackiem, założyłem MBT Modern Building Team – firmę skupiającą się na dostarczaniu niezawodnych rozwiązań w najbardziej skomplikowanych projektach. Relacje oparte na szczerości i przejrzystości stanowią dla mnie fundament skutecznej współpracy z inwestorami i zespołem.",
+      "photo": "/static/img/mbt/Bez-nazwy---kopia-5aee5d92.png",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Jacek Lewandowski",
+      "position": "Wiceprezes",
+      "opis": "Od 2003 roku działam w branży budowlanej i mimo braku wykształcenia inżynierskiego, swobodnie poruszam się w jej realiach. Jestem handlowcem i negocjatorem z natury, zawsze znajduję sposób, by osiągnąć cel. Cenię relacje oparte na zaufaniu i wzajemnym szacunku. Wierzę, że każde doświadczenie w życiu ma sens, celebruję sukcesy i wyciągam wnioski z porażek.",
+      "photo": "/static/img/mbt/Projekt-bez-nazwy-7-95f5eaf2.png",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Karol Pinoczek",
+      "position": "Dyrektor Handlowy",
+      "opis": "Jestem Dyrektorem Handlowym z  dziesięcioletnim doświadczeniem w branży. Budownictwo jest moją pasją, a praca z ludźmi spełnieniem zawodowych ambicji i fantastyczną przygodą.",
+      "photo": "",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Jakub Walczak",
+      "position": "Dyrektor Działu Realizacji",
+      "opis": "Jestem inżynierem, który zdobył doświadczenie, przechodząc przez wszystkie szczeble kariery, aby teraz dzielić się nim z zespołem i stale się rozwijać. Każdy dzień to dla mnie okazja do pracy nad ambitnymi projektami, które stanowią prawdziwe wyzwanie.",
+      "photo": "/static/img/mbt/Projekt-bez-nazwy-12-2a515545.png",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Krzysztof Filipowski",
+      "position": "Dyrektor ds. finansowych",
+      "opis": "Jestem odpowiedzialny za finanse firmy, koncentrując się na jej stabilnym rozwoju. Moim celem jest maksymalizacja efektywności zarządzania zasobami finansowymi, by wspierać dalszy wzrost.",
+      "photo": "/static/img/mbt/3-152bc7d6.png",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Piotr Burda",
+      "position": "Kierownik Działu Ofertowego",
+      "opis": "Zarządzam zespołem ofertowym, łącząc wiedzę techniczną z doświadczeniem w projektach budowlanych. Tworzę precyzyjne oferty, dopasowane do wymagań klienta i warunków rynkowych.\n\n",
+      "photo": "/static/img/mbt/Projekt-bez-nazwy-2-ef2befd0.png",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Katarzyna  Knabel",
+      "position": "Kierownik ds. przygotowania produkcji",
+      "opis": "Zarządzam zespołem Działu Przygotowania Produkcji, który ściśle współpracuje z Działem Realizacji projektów budowlanych realizowanych przez MBT.\nJako inżynier, łączę techniczne myślenie z dobrą organizacją i zdolnościami komunikacyjnymi. Jestem typem lidera, prowadzę swój zespół z pełnym wsparciem, dzieląc się swoim doświadczeniem. Jednocześnie sama stale się rozwijam. \nMawiają o mnie: „Sprawy niemożliwe załatwia od ręki, na cuda trzeba poczekać.”\n",
+      "photo": "/static/img/mbt/O-nas-Katarzyna-Knabel-scaled-e1769718370116-2340d047.jpg",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Amelia  Mzyk",
+      "position": "Zastępca Dyrektora Działu Realizacji ds. finansowych",
+      "opis": "Jestem inżynierem budownictwa, od ponad 20 lat związana z finansami i controllingiem. \nW obecnej roli łącze analityczne myślenie z praktycznym podejściem do projektów.\nWierzę, że kluczem do sukcesu są ludzie, wspólne wartości i współpraca, aby osiągnąć założony cel.\n",
+      "photo": "/static/img/mbt/o-nas-Amelia-Mzyk-scaled-e1769717176779-5c63eb5f.jpg",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Marek Latoś",
+      "position": "Project Manager",
+      "opis": "Mam 20 lat doświadczenia w branży budowlanej, zbieram doświadczenie zarówno w sektorze przemysłowym, jak i w sektorze kubaturowym. Zarządzam inwestycjami prywatnymi i publicznymi, wykorzystując wiedzę techniczną i formalną.",
+      "photo": "/static/img/mbt/Projekt-bez-nazwy-14-9b985d19.png",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Dariusz  Kudełko",
+      "position": "Kierownik Projektu",
+      "opis": "Jestem inżynierem budownictwa związanym z wykonawstwem od 2015 roku. Przeszedłem wszystkie etapy – od Inżyniera Budowy po Kierownika Projektu, realizując obiekty mieszkaniowe i przemysłowe, takie jak zakłady produkcyjne, oczyszczalnie ścieków oraz rafinerie. W pracy stawiam na jakość, terminowość i dopracowanie każdego szczegółu.",
+      "photo": "/static/img/mbt/O-nas-Dariusz-Kudelko-scaled-b05be7e3.jpeg",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "name": "Bartłomiej Potuczko",
+      "position": "Project Manager",
+      "opis": "Pracuję w budownictwie od ponad dekady, realizując projekty przemysłowe, drogowe i konserwatorskie. Szybko się adaptuję i wprowadzam nowatorskie rozwiązania.",
+      "photo": "/static/img/mbt/Projekt-bez-nazwy-9-5d2bde70.png",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Inżynier Budowy",
+      "slug": "inzynier-budowy-m-k-generalny-wykonawca",
+      "text": "Twój zakres obowiązków ✓ analiza dokumentacji projektowej, ✓ realizacja zadań powierzonych przez Kierownika Budowy, ✓ koordynacja prac Podwykonawców i Dostawców na budowie, ✓ sporządzanie raportów, protokołów i rozliczeń, ✓ wykonywanie odbiorów robót. Nasze wymagania ✓ wykształcenie techniczne (ukończone lub w trakcie) np. Budownictwo, Architektura, Inżynieria Środowiska, ✓ biegła obsługa pakietu MS Office i AutoCAD, ✓ umiejętność pracy w zespole, ✓ chęć do nauki i zdobywania doświadczenia na budowie. To oferujemy ✓ stabilne zatrudnienie w oparciu o umowę o pracę lub B2B, ✓ atrakcyjne wynagrodzenie adekwatne do podejmowanych zadań, ✓ wsparcie doświadczonej kadry zarządzającej, ✓ możliwość rozwoju i pracy przy unikatowych projektach dla czołowych i prestiżowych Inwestorów na polskim rynku, ✓ szkolenia i kursy podnoszące kwalifikacje, ✓ możliwość korzystania z samochodu służbowego, ✓ prywatną opiekę medyczną Medicover, ✓ ubezpieczenie grupowe WARTA, ✓ spotkania integracyjne, ✓ brak dress code’u, ✓ kawa / herbata. Aplikuj na to stanowisko Proces rekrutacji prowadzimy w systemie eRecruiter. Kliknij poniższy przycisk, aby wypełnić formularz. Przejdź do formularza aplikacji"
+    },
+    {
+      "title": "Kierownik Budowy",
+      "slug": "kierownik-budowy",
+      "text": "Twój zakres obowiązków ✓ tworzenie harmonogramów i raportów, ✓ kierowanie i koordynacja procesami budowy na każdym jej etapie, ✓ nadzorowanie jakości i terminowości wykonywanych robót budowlanych, ✓ przywództwo zespołowi Inżynierów i Kierowników Robót, ✓ czynny udział w procesie negocjacji i kontraktacji Podwykonawców i Dostawców, ✓ prowadzenie uzgodnień z Inwestorem i Podwykonawcami, ✓ sporządzanie protokołów i rozliczeń budowy. Nasze wymagania ✓ wykształcenie wyższe techniczne, ✓ uprawnienia budowlane bez ograniczeń do kierowania robotami budowlanymi, ✓ min. 2-letnie doświadczenie zawodowe na stanowisku Kierownika Budowy w branży budownictwa przemysłowego, ✓ umiejętność czytania dokumentacji technicznej, ✓ dobra znajomość AutoCAD oraz MS Office (MS Excel, MS Project), ✓ dyspozycyjność, ✓ umiejętność pracy w zespole, komunikatywność, ✓ bardzo dobra organizacja pracy, zaangażowanie i samodzielność w wykonywaniu zadań. To oferujemy ✓ stabilne zatrudnienie w oparciu o umowę o pracę lub B2B, ✓ atrakcyjne wynagrodzenie adekwatne do podejmowanych zadań, ✓ wsparcie doświadczonej kadry zarządzającej, ✓ możliwość rozwoju i pracy przy unikatowych projektach dla czołowych i prestiżowych Inwestorów na polskim rynku, ✓ szkolenia i kursy podnoszące kwalifikacje, ✓ możliwość korzystania z samochodu służbowego, ✓ prywatną opiekę medyczną Medicover, ✓ ubezpieczenie grupowe WARTA, ✓ spotkania integracyjne, ✓ brak dress code’u, ✓ kawa / herbata. Aplikuj na to stanowisko Proces rekrutacji prowadzimy w systemie eRecruiter. Kliknij poniższy przycisk, aby wypełnić formularz. Przejdź do formularza aplikacji"
+    },
+    {
+      "title": "Kierownik Robót",
+      "slug": "kierownik-robot",
+      "text": "Twój zakres obowiązków ✓ tworzenie harmonogramów i raportów, ✓ kierowanie i koordynacja procesami budowy na każdym jej etapie, ✓ nadzorowanie jakości i terminowości wykonywanych robót budowlanych, ✓ przywództwo zespołowi Inżynierów, ✓ czynny udział w procesie negocjacji i kontraktacji Podwykonawców i Dostawców, ✓ prowadzenie uzgodnień z Inwestorem i Podwykonawcami, ✓ sporządzanie protokołów i rozliczeń budowy. Nasze wymagania ✓ wykształcenie wyższe techniczne, ✓ uprawnienia budowlane bez ograniczeń do kierowania robotami budowlanymi, ✓ minimum roczne doświadczenie na stanowisku Kierownika Robót, ✓ umiejętność czytania dokumentacji technicznej, ✓ dobra znajomość AutoCAD oraz MS Office (MS Excel, MS Project), ✓ dyspozycyjność, ✓ umiejętność pracy w zespole, komunikatywność, ✓ bardzo dobra organizacja pracy, zaangażowanie i samodzielność w wykonywaniu zadań. To oferujemy ✓ stabilne zatrudnienie w oparciu o umowę o pracę lub B2B, ✓ atrakcyjne wynagrodzenie adekwatne do podejmowanych zadań, ✓ wsparcie doświadczonej kadry zarządzającej, ✓ możliwość rozwoju i pracy przy unikatowych projektach dla czołowych i prestiżowych Inwestorów na polskim rynku, ✓ szkolenia i kursy podnoszące kwalifikacje, ✓ możliwość korzystania z samochodu służbowego, ✓ prywatną opiekę medyczną Medicover, ✓ ubezpieczenie grupowe WARTA, ✓ spotkania integracyjne, Aplikuj na to stanowisko Proces rekrutacji prowadzimy w systemie eRecruiter. Kliknij poniższy przycisk, aby wypełnić formularz. Przejdź do formularza aplikacji"
+    },
+    {
+      "title": "Kosztorysant / Specjalista ds. ofert",
+      "slug": "kosztorysant-specjalista-ds-ofert",
+      "text": "Twój zakres obowiązków ✓ analiza dokumentacji projektowej, ✓ przedmiarowanie robót, ✓ opracowywanie i prowadzenie dokumentacji ofertowej, ✓ pozyskiwanie i analiza ofert od podwykonawców/dostawców, ✓ przygotowywanie zestawień i porównań ofert, ✓ przygotowywanie kosztorysów/wycen zgodnie z dokumentacją projektową. Nasze wymagania ✓ wykształcenie wyższe lub w trakcie – budownictwo, architektura, inżynieria środowiska lub pokrewne, ✓ doświadczenie na porównywalnym stanowisku przy ofertowaniu lub kontraktowaniu robót dla budowy obiektów przemysłowych, ✓ znajomość pakietu MS Office (biegła obsługa MS Excel), ✓ umiejętność czytania rysunków i dokumentacji technicznej, ✓ samodzielność, zaangażowanie i dobra organizacja pracy. To oferujemy ✓ stabilne zatrudnienie w oparciu o umowę o pracę lub B2B, ✓ atrakcyjne wynagrodzenie adekwatne do podejmowanych zadań, ✓ wsparcie doświadczonej kadry zarządzającej, ✓ możliwość rozwoju i pracy przy unikatowych projektach dla czołowych i prestiżowych Inwestorów na polskim rynku, ✓ szkolenia i kursy podnoszące kwalifikacje, ✓ możliwość korzystania z samochodu służbowego, ✓ prywatną opiekę medyczną Medicover, ✓ ubezpieczenie grupowe WARTA, ✓ spotkania integracyjne, ✓ brak dress code’u, ✓ kawa / herbata. Aplikuj na to stanowisko Proces rekrutacji prowadzimy w systemie eRecruiter. Kliknij poniższy przycisk, aby wypełnić formularz. Przejdź do formularza aplikacji"
+    },
+    {
+      "title": "Manager ds. handlowych",
+      "slug": "manager-ds-handlowych",
+      "text": "Twój zakres obowiązków ✓ aktywne pozyskiwanie nowych klientów w sektorze budowlanym, ✓ analiza rynku inwestycji przemysłowych, magazynowych i usługowych, ✓ budowanie i utrzymywanie długofalowych relacji z potencjalnymi klientami, ✓ identyfikacja nowych szans sprzedażowych i zdobywanie kontaktów biznesowych, ✓ reprezentowanie firmy na targach, konferencjach i wydarzeniach branżowych, ✓ ścisła współpraca z działem marketingu w zakresie działań wizerunkowych i lead generation, ✓ współtworzenie strategii PR i sprzedażowej wraz z Dyrektorem Handlowym, ✓ przygotowywanie ofert, prezentacji oraz materiałów handlowych. Nasze wymagania ✓ doświadczenie w pracy na stanowisku o podobnym charakterze, ✓ znajomość rynku budowlanego, ✓ wykształcenie techniczne, ✓ znajomość rynku nieruchomości komercyjnych (hale przemysłowe, magazyny, obiekty usługowe), ✓ wysoko rozwinięte umiejętności komunikacyjne i negocjacyjne, ✓ proaktywność, samodzielność i umiejętność budowania relacji biznesowych, ✓ nastawienie na realizację celów sprzedażowych, ✓ umiejętność reprezentowania firmy w kontaktach z klientami oraz podczas wydarzeń branżowych, ✓ prawo jazdy kat. B, ✓ gotowość do krótkoterminowych wyjazdów. To oferujemy ✓ stabilne zatrudnienie w oparciu o umowę o pracę lub B2B, ✓ atrakcyjne wynagrodzenie adekwatne do podejmowanych zadań (stała podstawa wynagrodzenia), ✓ wsparcie doświadczonej kadry zarządzającej, ✓ możliwość rozwoju i pracy przy unikatowych projektach dla czołowych i prestiżowych Inwestorów na polskim rynku, ✓ certyfikowane szkolenia i kursy podnoszące kwalifikacje, ✓ samochód służbowy, ✓ możliwość pracy hybrydowej, ✓ prywatną opiekę medyczną Medicover, ✓ ubezpieczenia grupowe WARTA, ✓ spotkania integracyjne, ✓ brak dress code’u, ✓ kawa / herbata w biurze. Aplikuj na to stanowisko Proces rekrutacji prowadzimy w systemie eRecruiter. Kliknij poniższy przycisk, aby wypełnić formularz. Przejdź do formularza aplikacji"
+    },
+    {
+      "title": "Młodszy specjalista ds. HR",
+      "slug": "oferta-pracy-specjalista-ds-hr",
+      "text": "Twój zakres obowiązków ✓ prowadzenie procesów rekrutacyjnych, ✓ wsparcie procesu onboardingu (przygotowanie umów i dokumentów związanych z zatrudnieniem, koordynacja badań lekarskich, szkoleń BHP oraz działań związanych z przygotowaniem stanowiska pracy), ✓ prowadzenie i aktualizacja akt osobowych zgodnie z obowiązującymi przepisami, ✓ monitorowanie terminów ważności badań lekarskich i szkoleń BHP, ✓ prowadzenie i aktualizacja dokumentacji systemu zarządzania jakością, ✓ wsparcie w organizacji szkoleń oraz wydarzeń integracyjnych, ✓ organizacja szkoleń i kursów, wydarzeń integracyjnych, ✓ bieżąca obsługa spraw pracowniczych i procesów HR Nasze wymagania ✓ minimum roczne doświadczenie w obszarze kadr/HR, ✓ podstawowa znajomość prawa pracy, ✓ bardzo dobra organizacja pracy własnej, ✓ samodzielność i odpowiedzialność w realizacji powierzonych zadań, ✓ dokładność i dbałość o szczegóły, ✓ rozwinięte umiejętności komunikacyjne, ✓ dodatkowym atutem będą ukończone kursy lub szkolenia z zakresu kadr i płac To oferujemy ✓ stabilne zatrudnienie w oparciu o umowę o pracę, ✓ możliwość rozwoju, ✓ szkolenia i kursy podnoszące kwalifikacje, ✓ przyjazną atmosferę, ✓ bardzo dobre warunki pracy w nowoczesnym biurze z zapleczem kuchenno-socjalnym, ✓ pracę od poniedziałku do piątku, w godzinach 8:00 - 16:00, ✓ prywatną opiekę medyczną Medicover, ubezpieczenie grupowe WARTA. Aplikuj na to stanowisko Proces rekrutacji prowadzimy w systemie eRecruiter. Kliknij poniższy przycisk, aby wypełnić formularz. Przejdź do formularza aplikacji"
+    },
+    {
+      "title": "Praktyka/Staż",
+      "slug": "p2253",
+      "text": "Twój zakres obowiązków ✓ wsparcie zespołu w codziennych zadaniach projektowych i realizacyjnych, ✓ pomoc w analizie dokumentacji technicznej i rysunków, ✓ udział w przygotowywaniu zestawień, przedmiarów i zapytań ofertowych, ✓ zapoznanie się z procesami budowlanymi i specyfiką pracy w generalnym wykonawstwie, ✓ współpraca z inżynierami i kierownikami przy bieżących projektach. Nasze wymagania ✓ status studenta lub absolwenta (preferowane kierunki: budownictwo, architektura, inżynieria środowiska lub pokrewne), ✓ chęć do nauki, zaangażowanie i proaktywne podejście do powierzonych zadań, ✓ podstawowa znajomość rysunku technicznego oraz pakietu MS Office i AutoCAD, ✓ umiejętność pracy w zespole i dobra organizacja czasu, ✓ dyspozycyjność w wymiarze minimum 3-4 dni w tygodniu. To oferujemy ✓ płatny staż lub praktykę studencką z możliwością dłuższego zatrudnienia po ich zakończeniu, ✓ elastyczne godziny pracy, które bez problemu pogodzisz z planem zajęć na uczelni, ✓ dedykowanego opiekuna, który podzieli się praktyczną wiedzą i doświadczeniem, ✓ zdobycie pierwszego doświadczenia przy dużych inwestycjach komercyjnych i przemysłowych, ✓ przyjazną atmosferę pracy i brak dress code’u, ✓ nielimitowaną kawę i herbatę w biurze. Proces rekrutacji prowadzimy w systemie eRecruiter. Kliknij poniższy przycisk, aby wypełnić formularz. Przejdź do formularza"
+    }
+  ],
+  "references": [
+    {
+      "firma": "Browar Zamkowy Sp. z o.o.",
+      "osoba": "Mariusz Dudek",
+      "stanowisko": "Prezes Zarządu",
+      "tresc": "Powierzone prace zostały wykonane zgodnie ze sztuką budowlaną, w pełni profesjonalnie i w wyznaczonych harmonogramem terminach. Właściwie dobrana kadra oraz poziom jej zarządzania przyczynił się w znacznej mierze do sukcesu całego procesu inwestycyjnego. Rekomenduję firmę MBT Modern Building Team Sp. z o.o. jako rzetelną i w pełni przygotowaną do prowadzenia inwestycji budowlanych w formule Generalnego Wykonawstwa."
+    },
+    {
+      "firma": "Canpack",
+      "osoba": "Rafał Starzyk",
+      "stanowisko": "Investment Operations Specjalist",
+      "tresc": "Powierzone prace zostały wykonane zgodnie z projektem, sztuką budowlaną, w wyznaczonych w umowie i aneksach do umowy terminach."
+    },
+    {
+      "firma": "EURONOVA",
+      "osoba": "Piotr Kowalski",
+      "stanowisko": "Prezes Zarządu",
+      "tresc": "Powierzone prace zostały wykonane zgodnie ze sztuką budowlaną, w pełni profesjonalnie i w wyznaczonych harmonogramem terminach. Właściwie dobrana kadra oraz poziom jej zarządzania przyczynił się w znacznej mierze do sukcesu całego procesu inwestycyjnego. Rekomenduję firmę MBT Modern Building Team Sp. z o.o. jako rzetelną i w pełni przygotowaną do prowadzenia inwestycji budowlanych w formule Generalnego Wykonawstwa."
+    },
+    {
+      "firma": "Euro-Trade",
+      "osoba": "Rafał Goliński",
+      "stanowisko": "Pełnomocnik Spółki",
+      "tresc": "Właściwie dobrana kadra oraz poziom jej zarządzania przyczynił się w znacznej mierze do sukcesu całego procesu inwestycyjnego. Rekomenduję firmę MBT Modern Building Team spółkę z ograniczoną odpowiedzialnością jako rzetelną i w pełni przygotowaną do prowadzenia inwestycji budowlanych w formule Generalnego Wykonawstwa."
+    },
+    {
+      "firma": "HERZ Armatury i Systemy grzewcze Sp. z o.o.",
+      "osoba": "Piotr Skudlarski",
+      "stanowisko": "Wiceprezes Zarządu",
+      "tresc": "Powierzone prace zostały wykonane zgodnie ze sztuką budowlaną, w pełni profesjonalnie i w wyznaczonych harmonogramem terminach. Rekomenduję firmę MBT Modern Building Team Sp. z o.o. jako rzetelną i w pełni przygotowaną do prowadzenia inwestycji budowlanych w formule Generalnego Wykonawstwa."
+    },
+    {
+      "firma": "Sutco Polska",
+      "osoba": "Michał Kopiec",
+      "stanowisko": "Prokurent",
+      "tresc": "Potwierdzamy, że firma MBT Modern Building Team Sp. z o.o wywiązała się z powierzonych zadań profesjonalnie, a prace w ramach projektu wykonane zostały zgodnie z ustalonym harmonogramem terminowym. Możemy polecić firmę MBT Modern Building Team Sp. z o.o jako rzetelnego wykonawcę inwestycji budowlanych w formule generalnego wykonawstwa."
+    },
+    {
+      "firma": "TOTO Hair Company",
+      "osoba": "Robert Tomczyk",
+      "stanowisko": "Prezes",
+      "tresc": "Powierzone prace zostały zrealizowane zgodnie ze sztuką budowlaną, w pełni profesjonalnie i w wyznaczonych harmonogramem terminach. Właściwie dobrana kadra oraz poziom jej zarządzania przyczynił się w znacznej mierze do sukcesu całego procesu inwestycyjnego.\n\nRekomenduję firmę MBT Modern Building Team Sp. z o.o. jako rzetelną i w pełni przygotowaną do prowadzenia inwestycji budowlanych w formule Generalnego Wykonawstwa."
+    }
+  ],
+  "articles": [
+    {
+      "title": "Optymalizacja i kontrola robót ziemnych w procesie inwestycyjnym. Wykorzystanie technologii 3D i UAV przez MBT",
+      "slug": "optymalizacja-robot-ziemnych-uav-3d",
+      "excerpt": "Wprowadzenie &nbsp;Roboty ziemne stanowią inicjalny i jeden z najbardziej krytycznych etapów każdej inwestycji kubaturowej. Błędy w szacowaniu objętości mas ziemnych na etapie przygotowawczym prowadzą do znacznych odchyl",
+      "text": "Wprowadzenie &nbsp;Roboty ziemne stanowią inicjalny i jeden z najbardziej krytycznych etapów każdej inwestycji kubaturowej. Błędy w szacowaniu objętości mas ziemnych na etapie przygotowawczym prowadzą do znacznych odchyleń w budżecie inwestycyjnym. Z tego względu firma MBT (Modern Building Team) z powodzeniem wykorzystuje zaawansowane technologie geodezyjne i informatyczne. Wdrożenie precyzyjnych procedur pomiarowych pozwala na zminimalizowanie ryzyka błędu oraz optymalne zabezpieczenie interesów finansowych Inwestora. Inwentaryzacja terenu i pozyskiwanie danych przestrzennych &nbsp;Proces weryfikacji ilościowej robót ziemnych w MBT rozpoczyna się od szczegółowej inwentaryzacji geodezyjnej stanu istniejącego. Podstawą działań jest stabilizacja osnowy geodezyjnej oraz wykonanie precyzyjnych pomiarów za pomocą satelitarnych systemów pozycjonowania (GNSS/GPS). W celu uzyskania maksymalnej gęstości danych pomiarowych wykorzystujemy bezzałogowe statki powietrzne (UAV). Fotogrametria niskiego pułapu umożliwia wygenerowanie dokładnej chmury punktów, która odzwierciedla rzeźbę terenu ze znacznie wyższą rozdzielczością niż tradycyjne pomiary siatkowe. Przetwarzanie danych i cyfrowe modelowanie terenu (DTM) &nbsp;Surowe dane pozyskane podczas nalotów fotogrametrycznych podlegają obróbce w specjalistycznym oprogramowaniu, takim jak DJI Terra. Wygenerowana chmura punktów jest następnie eksportowana do środowiska inżynieryjnego Trimble Business Center. Na tym etapie specjaliści MBT tworzą numeryczny model terenu (DTM) stanu istniejącego. Następnie model ten jest nakładany na projekt zagospodarowania terenu (PZT) oraz projekt architektoniczno-budowlany opracowany w środowisku CAD. Przestrzenne nałożenie na siebie tych dwóch składowych umożliwia weryfikację rzędnych projektowanych względem rzędnych rzeczywistych. Bilans mas ziemnych i optymalizacja kosztów &nbsp;Kluczowym wynikiem opisanego procesu jest precyzyjny bilans mas ziemnych. Oprogramowanie generuje dokładne przekroje oraz oblicza rzeczywistą objętość wykopów i nasypów z dokładnością do ułamków metrów sześciennych. Posiadanie tak precyzyjnych danych przed rozpoczęciem fizycznych prac na budowie pozwala MBT na: Optymalizację logistyki: Dokładne zaplanowanie ilości niezbędnych jednostek transportowych do wywozu urobku lub przywozu materiału zasypowego. Minimalizację kosztów: Identyfikację możliwości zbilansowania mas ziemnych w obrębie samej działki inwestycyjnej (wykorzystanie materiału z wykopu do makroniwelacji w innym sektorze). Transparentność finansową: Przedstawienie Inwestorowi jednoznacznych, bezspornych danych ilościowych, które stanowią podstawę do rozliczeń z podwykonawcami. Podsumowanie &nbsp;Wykorzystanie technologii skaningu przestrzennego, pomiarów satelitarnych oraz oprogramowania inżynieryjnego stanowi istotny element operacyjny MBT. Takie podejście gwarantuje pełną kontrolę nad zakresem robót ziemnych, terminowością ich wykonania oraz budżetem, zapewniając Inwestorowi bezpieczeństwo na najwcześniejszym etapie realizacji projektu.",
+      "image": ""
+    },
+    {
+      "title": "Zielone światło dla Twojej inwestycji. Jak MBT realizuje budowy w rygorystycznym standardzie BREEAM?",
+      "slug": "generalny-wykonawca-breeam",
+      "excerpt": "eszcze dekadę temu certyfikaty ekologiczne w budownictwie były traktowane jako drogi dodatek wizerunkowy dla największych korporacji. Dziś to rynkowy standard. Wymogi raportowania ESG, naciski ze strony funduszy finansuj",
+      "text": "Jeszcze dekadę temu certyfikaty ekologiczne w budownictwie były traktowane jako drogi dodatek wizerunkowy dla największych korporacji. Dziś to rynkowy standard. Wymogi raportowania ESG, naciski ze strony funduszy finansujących inwestycje oraz oczekiwania świadomych najemców sprawiły, że \"zielone budownictwo\" to po prostu twardy biznes. W MBT Modern Building Team doskonale to rozumiemy. Posiadamy udokumentowane doświadczenie i wdrożone procedury, które pozwalają nam jako Generalnemu Wykonawcy sprawnie przeprowadzić Inwestora przez rygorystyczny proces certyfikacji BREEAM. &nbsp;BREEAM to nie tylko panele na dachu. To filozofia budowania &nbsp;Wielu Inwestorom zrównoważone budownictwo kojarzy się wyłącznie z fotowoltaiką i pompami ciepła. Tymczasem BREEAM (Building Research Establishment Environmental Assessment Method) to jeden z najbardziej wymagających, wielokryterialnych systemów oceny budynków na świecie. Ocenie podlega nie tylko sam gotowy obiekt, ale w ogromnej mierze&nbsp; proces jego powstawania . I to właśnie tutaj kluczowa staje się rola wykwalifikowanego Generalnego Wykonawcy, takiego jak MBT. Nawet najlepiej zaprojektowany, \"zielony\" budynek nie uzyska wysokiej oceny (np. na poziomie&nbsp; Excellent &nbsp;czy&nbsp; Very Good ), jeśli na etapie budowy wykonawca nie dopilnuje odpowiednich standardów. &nbsp;Rola MBT na placu budowy. Jak zdobywamy punkty dla Twojej inwestycji? &nbsp;Realizacja obiektu pod certyfikację BREEAM wymaga od nas, jako Generalnego Wykonawcy, żelaznej dyscypliny, precyzyjnego planowania i zaawansowanego raportowania. Na czym dokładnie się skupiamy? Zarządzanie odpadami (Waste Management): &nbsp;Na naszych budowach w standardzie BREEAM nic nie trafia przypadkowo do jednego kontenera. Wdrażamy rygorystyczne plany gospodarki odpadami, dbając o to, by maksymalny procent gruzu, stali, drewna czy plastiku trafił do recyklingu, a nie na wysypisko. Świadomy łańcuch dostaw: &nbsp;Certyfikat wymaga stosowania materiałów o udokumentowanym, niskim śladzie węglowym. W MBT pilnujemy, by dostarczane na budowę drewno posiadało certyfikaty FSC, a wbudowywane materiały (beton, stal, izolacje) miały odpowiednie deklaracje środowiskowe (EPD). Preferujemy też lokalnych dostawców, by ograniczyć emisję z transportu. Ochrona środowiska na placu budowy: &nbsp;Monitorujemy i minimalizujemy zużycie wody oraz energii elektrycznej podczas samych prac budowlanych. Zabezpieczamy lokalną florę i faunę, zapobiegamy zanieczyszczeniu wód gruntowych i dbamy o to, by nasz plac budowy nie był uciążliwy dla sąsiadów (redukcja hałasu i zapylenia). Jakość powietrza (Indoor Air Quality): &nbsp;Dbamy o to, by używane przez nas farby, kleje i uszczelniacze charakteryzowały się niską emisją lotnych związków organicznych (LZO/VOC), co przekłada się na zdrowie przyszłych użytkowników budynku. &nbsp;Współpraca z Asesorem to nasz chleb powszedni &nbsp;Zdobycie certyfikatu to gra zespołowa. W MBT nie traktujemy wizyt Asesora BREEAM jako uciążliwej kontroli, ale jako partnerską współpracę. Nasi Kierownicy Budów i Inżynierowie doskonale znają wymogi dokumentacyjne. Kompletujemy karty materiałowe, wykonujemy raporty fotograficzne z kluczowych etapów (tzw.&nbsp; evidence ) i na bieżąco dostarczamy dane niezbędne do uzyskania punktów certyfikacyjnych. Zdejmujemy ten obowiązek z barków Inwestora. &nbsp;Dlaczego warto budować w BREEAM z MBT? &nbsp;Wybór Generalnego Wykonawcy, który \"uczy się\" certyfikacji dopiero na Twoim obiekcie, to ogromne ryzyko utraty punktów i wydłużenia procesu. Stawiając na MBT, zyskujesz partnera, dla którego segregacja odpadów, kontrola łańcucha dostaw i zielona inżynieria to standard operacyjny. Budynki certyfikowane w BREEAM to wyższa wartość rynkowa nieruchomości, niższe koszty eksploatacji (OPEX) i magnes na prestiżowych najemców. Chcesz, aby Twoja nowa hala produkcyjna, magazyn czy park handlowy spełniały najwyższe standardy ESG?&nbsp;&nbsp; Porozmawiajmy o tym, jak MBT może zrealizować Twój projekt zgodnie z wymogami BREEAM. &nbsp;Skontaktuj się z naszym zespołem doradczym!",
+      "image": "/static/img/mbt/breem-e659b8f2.jpg"
+    },
+    {
+      "title": "Koszt budowy hali przemysłowej w 2026 roku. Czy ceny wreszcie wyhamowały? Raport Inwestora.",
+      "slug": "koszt-budowy-hali-przemyslowej-w-2026-roku-czy-ceny-wreszcie-wyhamowaly-raport-inwestora",
+      "excerpt": "Początek roku to moment, w którym każdy Inwestor – od dyrektora logistyki po właściciela firmy produkcyjnej – zadaje sobie jedno pytanie: \"Czy to dobry moment na budowę?\". Po burzliwym okresie inflacji, rok 2026 przynosi",
+      "text": "Początek roku to moment, w którym każdy Inwestor – od dyrektora logistyki po właściciela firmy produkcyjnej – zadaje sobie jedno pytanie: \"Czy to dobry moment na budowę?\". Po burzliwym okresie inflacji, rok 2026 przynosi na rynku budowlanym nowe otwarcie. Jako Generalny Wykonawca widzimy wyraźny trend: to nie jest rok \"tanich budów\", to rok \"mądrych budów\". Ile realnie kosztuje postawienie hali w Polsce w 2026 roku i gdzie szukać oszczędności, które nie zagrażają jakości? Oto analiza ekspertów MBT Modern Building Team. 1. Stal, beton i ludzie – co steruje ceną w 2026? Jeszcze dwa lata temu wyceny ofertowe były ważne przez 24 godziny. Dziś rynek surowców wchodzi w fazę stabilizacji, ale zmienia się struktura kosztów: Materiały (Stal/Beton): Ceny stali konstrukcyjnej ustabilizowały się, choć pozostają na wysokim poziomie. Nie widzimy już jednak drastycznych skoków z miesiąca na miesiąc, co pozwala na bezpieczniejsze planowanie budżetów w systemie ryczałtowym (Lump Sum). Robocizna i Energia: To tutaj w 2026 roku widać największą presję. Wzrost płacy minimalnej oraz kosztów energii sprawia, że proces budowlany drożeje. Wniosek MBT: Jeśli liczysz na spadek cen materiałów – możesz się przeliczyć. Oszczędności trzeba szukać w optymalizacji projektu , a nie w czekaniu na \"lepsze czasy\". 2. Ukryty zabójca budżetu: Geotechnika Najczęstszy błąd Inwestorów w 2025 roku? Zakup \"taniej działki\", która okazywała się \"inwestycyjnym bagnem\". W MBT wyceniamy dziesiątki zapytań miesięcznie i widzimy prostą zależność: im tańszy grunt w lokalizacji miejskiej (Last Mile), tym droższa inżynieria podziemna. Tradycyjna wymiana gruntu przy obecnych cenach paliwa i transportu to finansowe samobójstwo. Rozwiązanie MBT: W projektach realizowanych m.in. na Śląsku czy w Warszawie, stosujemy zaawansowane metody wzmocnienia podłoża (np. kolumny betonowe, stabilizacja spoiwami). Dzięki temu potrafimy zredukować koszty posadowienia nawet o 15-20% względem tradycyjnych metod. Rada Eksperta: Nigdy nie podpisuj aktu notarialnego na działkę bez wykonania badań geotechnicznych i konsultacji z Generalnym Wykonawcą. To, co zaoszczędzisz na metrze kwadratowym ziemi, możesz wydać podwójnie na beton w fundamentach. 3. System \"Zaprojektuj i Wybuduj\" – polisa na niepewność W 2026 roku model tradycyjny (osobno Projektant, osobno Wykonawca) staje się ryzykowny. Dlaczego? Bo projekt zrobiony w styczniu, w czerwcu może być już nieopłacalny do realizacji ze względu na dostępność materiałów. System \"Design &amp; Build\" (Zaprojektuj i Wybuduj) , w którym specjalizuje się MBT, pozwala na: Value Engineering: Nasi inżynierowie i kosztorysanci pracują razem od pierwszego dnia. Jeśli stal drożeje – przeprojektowujemy ustrój na żelbetowy lub hybrydowy. Gwarancję Ceny: Przejmując odpowiedzialność za projekt, bierzemy na siebie ryzyko błędów w dokumentacji. Inwestor otrzymuje cenę ryczałtową i śpi spokojnie. 4. Nie buduj \"po taniości\", buduj tanio w eksploatacji (OPEX) Koszt budowy (CAPEX) to tylko wierzchołek góry lodowej. Prawdziwe koszty zaczynają się po odbiorze kluczy. W 2026 roku standardem stają się hale przygotowane pod certyfikację BREEAM i wyposażone w inteligentne systemy zarządzania energią. W MBT nie pytamy tylko \"jaką dużą halę chcesz?\". Pytamy: \"ile chcesz płacić za jej ogrzanie?\". Lepsza izolacja dachu, świetliki optymalizujące dostęp światła dziennego czy przygotowanie dachu pod fotowoltaikę – to inwestycje, które zwracają się w 3-5 lat. Podsumowanie: Jak bezpiecznie zaplanować budżet? Budowa hali w 2026 roku wymaga partnera, a nie tylko wykonawcy. Wymaga firmy, która rozumie geotechnikę, umie żonglować technologiami i dowiezie termin bez wymówek. Planujesz inwestycję? Nie zgaduj kosztów. Skontaktuj się z działem handlowym MBT. Przygotujemy dla Ciebie Wstępną Analizę Inwestycyjną , która pokaże realne koszty i potencjalne ryzyka Twojej budowy.",
+      "image": "/static/img/mbt/hala-1024x672-eb7144c9.jpg"
+    },
+    {
+      "title": "Ekspresowa budowa hali produkcyjnej ATT w Kokotowie – rekord prędkości i niezrównana jakość dzięki odpowiedniemu planowaniu i analizie gruntowej",
+      "slug": "ekspresowa-budowa-hali-produkcyjnej-att-w-kokotowie-rekord-predkosci-i-niezrownana-jakosc-dzieki-odpowiedniemu-planowaniu-i-analizie-gruntowej",
+      "excerpt": "Z satysfakcją informujemy o rozpoczęciu budowy nowoczesnej hali produkcyjnej ATT w Kokotowie – inwestycji, która stanowi dla nas kolejny dowód na to, że precyzyjne planowanie i rzetelne rozpoznanie warunków gruntowych są",
+      "text": "Z satysfakcją informujemy o rozpoczęciu budowy nowoczesnej hali produkcyjnej ATT w Kokotowie – inwestycji, która stanowi dla nas kolejny dowód na to, że precyzyjne planowanie i rzetelne rozpoznanie warunków gruntowych są fundamentami sukcesu każdej budowy. Planowanie jako kluczowy etap każdej inwestycji budowlanej Nasze podejście opiera się na przekonaniu, że im lepiej rozplanujemy każdy etap budowy, tym bardziej efektywnie i bezpiecznie przebiegnie jej realizacja. Szczegółowe rozpoznanie i analiza warunków gruntowo-wodnych pozwalają nam na wykrycie wszelkich potencjalnych trudności, które mogą wpłynąć na stabilność i trwałość budowli. Jest to szczególnie istotne w dużych inwestycjach przemysłowych, gdzie nawet minimalne błędy mogą mieć znaczące konsekwencje. Weryfikacja badań z etapu przetargu i analiza terenu Jednym z kluczowych momentów naszej pracy jest weryfikacja badań gruntowych, wykonanych na etapie przetargu, gdyż rzeczywiste warunki mogą różnić się od wstępnych założeń. Tylko dokładne sprawdzenie gruntu, przeprowadzone po wejściu na plac budowy, pozwala odpowiednio dopasować technologię, która zagwarantuje optymalne rozwiązanie dla fundamentów. Takie podejście jest szczególnie istotne w przypadku inwestycji o dużej powierzchni, jak hala produkcyjna ATT, ponieważ błędne oszacowanie warunków gruntowych może wpłynąć na stabilność całej konstrukcji i generować koszty na etapie użytkowania obiektu. Dobór technologii i wzmocnienie podłoża – solidna podstawa dla długowiecznej konstrukcji Nasze analizy wykazały, że teren przeznaczony pod budowę wymaga wzmocnienia, co umożliwia zastosowanie specjalistycznego sprzętu, takiego jak palownica. Dzięki temu już na etapie fundamentowania zapewniamy konstrukcji stabilność i odporność na obciążenia użytkowe. Prawidłowy dobór technologii posadowienia fundamentów jest podstawą, na której opiera się cała konstrukcja budynku. Zastosowanie zaawansowanych metod fundamentowania pozwala nam zagwarantować trwałość i bezpieczeństwo hali ATT, eliminując potencjalne zagrożenia konstrukcyjne w przyszłości. Kolejne etapy – żelbet, sieci zewnętrzne i prefabrykaty Po odpowiednim przygotowaniu fundamentów przechodzimy do robót żelbetowych i montażu sieci zewnętrznych. Równocześnie przystępujemy do etapu prefabrykacji i montażu głównej konstrukcji, dachu i obudowy hali. Przemyślana kolejność prac oraz precyzyjne wykonanie każdego z etapów są możliwe dzięki dokładnemu zaplanowaniu i analizie technicznej, a także przygotowaniu zespołu do wdrożenia najnowszych rozwiązań technologicznych. Wysokie standardy jakości i bezpieczeństwa – nasza obietnica dla inwestorów Nasz zespół ekspertów czuwa nad każdym etapem realizacji, dbając o to, by każdy szczegół odpowiadał najwyższym standardom jakości i bezpieczeństwa. Jako liderzy w branży budowlanej kładziemy nacisk na zapewnienie, że projektowane i realizowane przez nas rozwiązania są bezpieczne i długotrwałe. Każdy etap inwestycji jest nadzorowany z najwyższą starannością, co przekłada się na jakość całej konstrukcji. Wyjątkowy projekt, zaawansowana technologia i precyzyjne planowanie – z dumą podejmujemy każde wyzwanie Budowa hali produkcyjnej ATT to przykład inwestycji, w której najważniejsze są nie tylko tempo realizacji, ale także jakość każdego etapu. Dzięki doświadczeniu i dokładnemu rozpoznaniu terenu budowy, możemy dostosować najlepsze technologie do specyficznych wymagań projektu, zapewniając naszym klientom pewność solidnej i bezpiecznej konstrukcji.",
+      "image": ""
+    }
+  ]
+}

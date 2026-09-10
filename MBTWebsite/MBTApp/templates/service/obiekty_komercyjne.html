@@ -1,0 +1,175 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block title %}Budowa Parków Handlowych i Salonów Samochodowych | MBT{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="gw-hero" style="background-image:url('{{ photos.obiekty_komercyjne_hero }}');">
+    <div class="gw-hero-kenburns" style="background-image:url('{{ photos.obiekty_komercyjne_hero }}');"></div>
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <div class="gw-hero-content">
+                    <span class="gw-hero-badge wow animate__animated animate__fadeInDown">{% trans 'Retail & Automotive' %}</span>
+                    <h1 class="gw-hero-title wow animate__animated animate__fadeInUp">{% blocktranslate %}Budowa obiektów komercyjnych{% endblocktranslate %}</h1>
+                    <p class="gw-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        {% blocktranslate %}Architektura, która sprzedaje. Łączymy rygorystyczne standardy identyfikacji wizualnej marek z maksymalną wielofunkcyjnością użytkową.{% endblocktranslate %}
+                    </p>
+                    <div class="gw-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="#specyfika" class="btn mbt-cta">{% trans 'Poznaj nasze podejście' %} <i class="ri-arrow-down-line"></i></a>
+                        <a href="{% url 'contact' %}" class="btn gw-btn-outline">{% trans 'Zapytaj o wycenę' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wprowadzenie -->
+<section class="gw-about space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gx-60 gy-40">
+            <div class="col-lg-6">
+                <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
+                    <div class="gw-about-img-main">
+                        <img src="{{ photos.obiekty_komercyjne_1 }}" alt="Obiekty komercyjne">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-about-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Generalne Wykonawstwo B2B & B2C' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Budujemy <strong>z myślą o Twoim kliencie</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Budownictwo komercyjne to specyficzna gałąź inżynierii. Tutaj estetyka, prestiż lokalizacji i doskonałe wrażenia użytkownika końcowego (Customer Experience) są równie ważne co stabilność konstrukcji.{% endblocktranslate %}
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Jako sprawdzony Generalny Wykonawca mamy na koncie realizacje nowoczesnych parków handlowych, wielkopowierzchniowych obiektów usługowych, dyskontów spożywczych, a także stacji dealerskich nowej generacji. Znamy rynek i jego restrykcyjne wymagania.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Co wyróżnia nasze realizacje -->
+<section id="specyfika" class="gw-specs space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Prestiż i funkcjonalność' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Co wyróżnia nasze realizacje w <strong>sektorze komercyjnym?</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-spec-icon"><i class="ri-car-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Automotive: Rygorystyczne standardy (Corporate Identity)' %}</h3>
+                        <p>{% trans 'Budowa salonu i serwisu to praca z niezwykle restrykcyjnymi wytycznymi globalnych marek (np. standard CI 7). Obiekty te wymagają bezbłędnego połączenia przestrzeni reprezentacyjnej (jasne, designerskie showroomy) z ciężką przestrzenią warsztatową (wyciągi spalin, infrastruktura podnosząca, wzmocniona instalacja pod ładowarki EV). Z powodzeniem zrealizowaliśmy m.in. salon dla marki BYD (Grupa Dąbrowscy).' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="gw-spec-icon"><i class="ri-store-2-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Multi-use: Parki handlowe i elastyczne przestrzenie' %}</h3>
+                        <p>{% trans 'Budujemy obiekty wielkopowierzchniowe przeznaczone na wynajem. Projektujemy elastyczne konstrukcje umożliwiające łatwy podział na niezależne moduły. Przykładem jest kompleks Fabryka Park, oraz inwestycja zarządzana przez firmę Scallier. Jesteśmy przygotowani na równoległe prowadzenie prac pod różnorodne fit-outy najemców (np. placówki medyczne Medicover czy wielkopowierzchniowe kluby fitness).' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="gw-spec-icon"><i class="ri-hard-hat-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Zarządzanie logistyką w trudnym otoczeniu' %}</h3>
+                        <p>{% trans 'Często realizujemy rozbudowy istniejących już kompleksów w centrach miast lub kolejne etapy parków handlowych. Mamy wypracowane precyzyjne procedury BHP, które pozwalają nam bezpiecznie prowadzić zaawansowane prace ciężkim sprzętem w bezpośrednim sąsiedztwie czynnych sklepów, minimalizując uciążliwość robót dla klientów detalicznych.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="gw-spec-icon"><i class="ri-layout-masonry-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Nowoczesne fasady i wykończenia premium' %}</h3>
+                        <p>{% trans 'W budownictwie komercyjnym zwykła płyta warstwowa to czasem za mało. Tam, gdzie wymaga tego projekt i prestiż marki, montujemy wielkoformatowe przeszklenia aluminiowe, efektowne elewacje wentylowane, systemy z siatki cięto-ciągnionej oraz projektujemy zaawansowane, wielobarwne iluminacje świetlne elewacji budynków.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FIT-OUT (Rozszerzenie) -->
+<section class="gw-why space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gy-40">
+            <div class="col-lg-6">
+                <div class="gw-why-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Prace wykończeniowe' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Kompleksowy <strong>Fit-Out</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Nie tylko oddajemy bryłę budynku. Bierzemy na siebie pełną odpowiedzialność za aranżację i wykończenie wnętrz komercyjnych "pod klucz". Koordynujemy prace wykończeniowe zgodnie z precyzyjnymi projektami architektów wnętrz i brandbookami najemców.{% endblocktranslate %}
+                    </p>
+                    <ul class="gw-why-checklist mt-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Koordynacja wielobranżowa instalacji wewnątrz lokalu' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Wykończenia w standardzie premium (szkło, beton architektoniczny, forniry)' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Systemy akustyczne i oświetlenie ekspozycyjne' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Terminowe oddanie lokalu gotowego do zatowarowania' %}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-about-img-wrap wow animate__animated animate__fadeInRight" style="padding: 0;">
+                    <img src="{{ photos.obiekty_komercyjne_2 }}" alt="Wnętrza komercyjne MBT" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="space-top space-extra-bottom overflow-hidden" style="background:var(--smoke-color);">
+    <div class="container text-center">
+        <div class="gw-why-card gw-why-card-cta d-inline-block" style="max-width: 800px; padding: 60px;">
+            <h3 class="mb-3" style="font-size: 32px;">{% trans 'Otwierasz nową lokalizację dla swojego biznesu?' %}</h3>
+            <p style="font-size: 18px; margin-bottom: 30px;">{% trans 'Powierz budowę inżynierom, którzy rozumieją rynek komercyjny. Zbudujemy obiekt, który przyciągnie klientów i wyeksponuje Twoją markę.' %}</p>
+            <a href="{% url 'contact' %}" class="btn mbt-cta" style="font-size: 18px; padding: 15px 40px;">
+                {% trans 'Zapytaj o wycenę i harmonogram' %} <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Realizacje -->
+<section class="gw-projects space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Retail w naszym wykonaniu' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Ostatnie <strong>realizacje</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            {% for p in completed %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="gw-project-img">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <div class="gw-project-overlay">
+                            <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
+                        </div>
+                    </div>
+                    <div class="gw-project-body">
+                        <span class="gw-project-tag">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne Wykonawstwo' %}{% endif %}</span>
+                        <h3>{{ p.title }}</h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

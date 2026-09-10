@@ -1,0 +1,208 @@
+<script defer src="/static/js/vendor/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider -->
+<script defer src="/static/js/slick.min.js"></script>
+<!-- Range Slider -->
+<script defer src="/static/js/jquery-ui.min.js"></script>
+<!-- Bootstrap -->
+<script defer src="/static/js/bootstrap.min.js"></script>
+<!-- Magnific Popup -->
+<script defer src="/static/js/jquery.magnific-popup.min.js"></script>
+<!-- Counter Up -->
+<script defer src="/static/js/jquery.counterup.min.js"></script>
+<!-- Marquee -->
+<script defer src="/static/js/jquery.marquee.min.js"></script>
+<!-- Isotope Filter -->
+<script defer src="/static/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/static/js/isotope.pkgd.min.js"></script>
+<!-- Nice Select -->
+<script defer src="/static/js/nice-select.min.js"></script>
+<!-- WOW -->
+<script defer src="/static/js/wow.min.js"></script>
+<script defer src="/static/js/waypoints.min.js"></script>
+
+<!-- Main Js File -->
+<script defer src="/static/js/main.min.js"></script>
+
+<!-- Liczniki: animacja tylko gdy widoczne (IntersectionObserver — brak layout shift) -->
+<script>
+    (function () {
+        function animateCounter(el) {
+            var target = parseInt(el.textContent.replace(/[^\d]/g, ''), 10) || 0;
+            if (target === 0) return;
+            var duration = 1000;
+            var start = null;
+            function step(ts) {
+                if (!start) start = ts;
+                var progress = Math.min((ts - start) / duration, 1);
+                el.textContent = Math.floor(progress * target);
+                if (progress < 1) requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+        }
+
+        var counters = document.querySelectorAll('.counter-number, .counter');
+        if (!('IntersectionObserver' in window)) {
+            counters.forEach(function (c) { animateCounter(c); });
+            return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+        counters.forEach(function (c) { io.observe(c); });
+    })();
+</script>
+
+<!-- Language switcher (MBT header) -->
+<script>
+    document.addEventListener('click', function (e) {
+        var lang = document.getElementById('mbtLangHeader');
+        if (!lang) return;
+        if (lang.contains(e.target)) {
+            e.stopPropagation();
+            lang.classList.toggle('is-open');
+        } else {
+            lang.classList.remove('is-open');
+        }
+    });
+</script>
+
+<!-- Scroll progress bar (GW landing) -->
+<script>
+    (function () {
+        var bar = document.getElementById('gwScrollProgress');
+        if (!bar) return;
+        var ticking = false;
+        function update() {
+            var h = document.documentElement;
+            var max = h.scrollHeight - h.clientHeight;
+            var pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+            bar.style.width = pct + '%';
+            ticking = false;
+        }
+        window.addEventListener('scroll', function () {
+            if (!ticking) { ticking = true; requestAnimationFrame(update); }
+        }, { passive: true });
+        update();
+    })();
+</script>
+
+<!-- 3D TILT na kartach specjalizacji (tylko na GW) -->
+<script>
+    (function () {
+        var cards = document.querySelectorAll('.gw-spec-card:not(.gw-spec-cta)');
+        if (!cards.length || !('ontouchstart' in window)) {
+            // desktop only — tilt nie działa na dotyku
+        }
+        if (!cards.length) return;
+        cards.forEach(function (card) {
+            card.classList.add('gw-tilt');
+        });
+        var root = document.querySelector('.gw-specs');
+        if (!root) return;
+        root.addEventListener('mousemove', function (e) {
+            var target = e.target.closest('.gw-spec-card.gw-tilt');
+            if (!target) return;
+            var rect = target.getBoundingClientRect();
+            var px = (e.clientX - rect.left) / rect.width - 0.5;
+            var py = (e.clientY - rect.top) / rect.height - 0.5;
+            target.style.transform = 'perspective(800px) rotateY(' + (px * 8) + 'deg) rotateX(' + (-py * 8) + 'deg) translateY(-6px)';
+        });
+        root.addEventListener('mouseleave', function (e) {
+            var target = e.target.closest('.gw-spec-card.gw-tilt');
+            if (target) target.style.transform = '';
+        });
+    })();
+</script>
+
+<!-- Aktualności na stronie głównej — rotacja co 10s -->
+<script>
+    (function () {
+        var box = document.querySelector('.mbt-news-box');
+        if (!box) return;
+        var slides = box.querySelectorAll('.mbt-news-slide');
+        var dots = box.querySelectorAll('.mbt-news-dot');
+        if (slides.length < 2) return;
+        var current = 0;
+        var timer = null;
+
+        function show(idx) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = idx;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
+        }
+
+        function next() {
+            show((current + 1) % slides.length);
+        }
+
+        function restart() {
+            if (timer) clearInterval(timer);
+            timer = setInterval(next, 10000); // co 10 sekund
+        }
+
+        dots.forEach(function (dot, i) {
+            dot.addEventListener('click', function () {
+                show(i);
+                restart();
+            });
+        });
+
+        restart();
+    })();
+</script>
+
+<!-- Karuzela "Zobacz jak pracujemy" — auto-przewijanie co 4s -->
+<script>
+    (function () {
+        var slider = document.querySelector('.mbt-work-slider');
+        if (!slider) return;
+        var slides = slider.querySelectorAll('.mbt-work-slide');
+        if (slides.length < 2) return;
+        var dotsWrap = slider.querySelector('.mbt-work-dots');
+        var current = 0;
+        var timer = null;
+
+        slides.forEach(function (_, i) {
+            var d = document.createElement('button');
+            d.type = 'button';
+            d.className = 'mbt-work-dot' + (i === 0 ? ' active' : '');
+            d.setAttribute('aria-label', 'Zdjęcie ' + (i + 1));
+            d.addEventListener('click', function () {
+                show(i);
+                restart();
+            });
+            dotsWrap.appendChild(d);
+        });
+        var dots = dotsWrap.querySelectorAll('.mbt-work-dot');
+
+        function show(idx) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = idx;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
+        }
+
+        function next() { show((current + 1) % slides.length); }
+        function prev() { show((current - 1 + slides.length) % slides.length); }
+
+        function restart() {
+            if (timer) clearInterval(timer);
+            timer = setInterval(next, 4000); // co 4 sekundy
+        }
+
+        var prevBtn = slider.querySelector('.mbt-work-arrow.prev');
+        var nextBtn = slider.querySelector('.mbt-work-arrow.next');
+        if (prevBtn) prevBtn.addEventListener('click', function () { prev(); restart(); });
+        if (nextBtn) nextBtn.addEventListener('click', function () { next(); restart(); });
+
+        restart();
+    })();
+</script>

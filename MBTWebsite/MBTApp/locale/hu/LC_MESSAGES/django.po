@@ -1,0 +1,1730 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "AKTUALNOŚCI"
+msgstr "HÍREK"
+
+msgid "Adres e-mail"
+msgstr "E-mail cím"
+
+msgid "Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu."
+msgstr "Elemezzük az Ön igényeit, üzleti vízióját és a helyszín adottságait."
+
+msgid "BLOG"
+msgstr "BLOG"
+
+msgid "Biuro w Zabrzu"
+msgstr "Zabrzei iroda"
+
+msgid "Biurowiec"
+msgstr "Irodaház"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Budujemy obiekty dla <strong>sektora B2B</strong>"
+msgstr "<strong>B2B szektor</strong> számára építünk"
+
+msgid "Budujemy:"
+msgstr "Amit építünk:"
+
+msgid "Centra logistyczne i magazyny"
+msgstr "Logisztikai központok és raktárak"
+
+msgid ""
+"Centralny punkt kontaktu. Synchronizacja dostaw, nadzór nad ekipami i pełna "
+"koordynacja harmonogramu."
+msgstr ""
+"Egy központi kapcsolattartó. Szinkronizált szállítások, csapatfelügyelet és "
+
+msgid "Co zyskujesz, wybierając <strong>nasz zespół</strong>"
+msgstr "Amit <strong>csapatunk</strong> választásával nyer"
+
+msgid "Czytaj więcej"
+msgstr "Read more"
+
+msgid "Dane firmy"
+msgstr "Céges adatok"
+
+msgid "Dlaczego warto wybrać MBT?"
+msgstr "Miért válassza az MBT-t?"
+
+msgid "Dowiedz się więcej"
+msgstr "Tudjon meg többet"
+
+msgid ""
+"Fotowoltaika, systemy retencji wody, stacje ładowania EV oraz obiekty zgodne"
+" z certyfikacją BREEAM."
+msgstr ""
+"Napelemek, vízvisszatartó rendszerek, EV-töltőállomások és BREEAM-tanúsított"
+" "
+
+msgid "GEN. WYKONAWSTWO"
+msgstr "ÁLTALÁNOS KIVITELEZÉS"
+
+msgid "Generalne Wykonawstwo"
+msgstr "Generálkivitelezés"
+
+msgid "Generalne Wykonawstwo<br>Inwestycji Budowlanych"
+msgstr "Generálkivitelezés<br>építési beruházások"
+
+msgid "Generalny Wykonawca"
+msgstr "Generálkivitelező"
+
+msgid "Gwarancja i serwis pozakupowy"
+msgstr "Garancia és vevőszolgálat"
+
+msgid "HOME"
+msgstr "FŐOLDAL"
+
+msgid "Hala magazynowa"
+msgstr "Raktárcsarnok"
+
+msgid "Hala produkcyjna"
+msgstr "Termelőcsarnok"
+
+msgid "Hale przemysłowe i produkcyjne"
+msgstr "Ipari és termelőcsarnokok"
+
+msgid "Imię i nazwisko"
+msgstr "Teljes név"
+
+msgid "Inne"
+msgstr "Egyéb"
+
+msgid "Inżynierska precyzja i optymalizacja"
+msgstr "Mérnöki precizitás és optimalizálás"
+
+msgid "JESTEŚMY DOSTĘPNI"
+msgstr "ELÉRHETŐEK VAGYUNK"
+
+msgid "Jak wygląda proces współpracy?"
+msgstr "Hogyan zajlik az együttműködés?"
+
+msgid "Jeden partner, pełna odpowiedzialność"
+msgstr "Egy partner, teljes felelősség"
+
+msgid ""
+"Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> "
+"Budujemy hale magazynowe, produkcyjne i usługowe pod klucz."
+msgstr ""
+"Egy csapat — teljes kivitelezés. <strong>A tervezéstől a tetőig!</strong> "
+"Kulcsra "
+
+msgid "KARIERA"
+msgstr "KARRIER"
+
+msgid "KONTAKT"
+msgstr "KAPCSOLAT"
+
+msgid "Kariera"
+msgstr "Karrier"
+
+msgid "Kontakt"
+msgstr "Kapcsolat"
+
+msgid "Masz inny typ inwestycji?"
+msgstr "Más típusú beruházása van?"
+
+msgid "Masz projekt w głowie?"
+msgstr "Van egy projekt a fejében?"
+
+msgid "Napisz do nas!"
+msgstr "Írj nekünk!"
+
+msgid "Nasza Realizacja"
+msgstr "A mi megvalósításunk"
+
+msgid ""
+"Nasza opieka nie kończy się w dniu oddania kluczy — kompleksowa obsługa "
+"gwarancyjna i wsparcie serwisowe."
+msgstr ""
+"Gondoskodásunk nem ér véget a kulcsátadás napján — átfogó garanciális "
+"ellátás "
+
+msgid "Nasze najnowsze wpisy na blogu"
+msgstr "Legújabb blogbejegyzéseink"
+
+msgid "Nasze specjalizacje"
+msgstr "Szakterületeink"
+
+msgid ""
+"Nawigujemy przez proces administracyjny, koordynujemy dokumentację "
+"powykonawczą i asystujemy przy pozwoleniach."
+msgstr ""
+"Végigvezetjük az adminisztrációs folyamaton, koordináljuk a megvalósulási "
+"dokumentációt "
+
+msgid ""
+"Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i nowoczesny"
+" design elewacji."
+msgstr ""
+"Modern bevásárlóparkok, többfunkciós (multi-use) kialakítással és korszerű "
+
+msgid ""
+"Nowoczesne przestrzenie magazynowe wysokiego składowania o zoptymalizowanej "
+"przepustowości."
+msgstr "Korszerű magasraktári terek optimalizált áteresztőképességgel."
+
+msgid "Numer telefonu"
+msgstr "Telefonszám"
+
+msgid "O NAS"
+msgstr "RÓLUNK"
+
+msgid "O firmie"
+msgstr "A cégről"
+
+msgid "O nas"
+msgstr "Rólunk"
+
+msgid "OFERTA"
+msgstr "KÍNÁLAT"
+
+msgid ""
+"Obiekty dealerskie nowej generacji spełniające globalne standardy "
+"identyfikacji wizualnej marek motoryzacyjnych."
+msgstr ""
+"Új generációs márkakereskedések, amelyek megfelelnek a globális autómárka-"
+"vizuális "
+
+msgid ""
+"Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale "
+"z suwnicami i zaawansowanym parkiem maszynowym."
+msgstr ""
+"Szigorú technológiai követelményekre szabott csarnokok — beleértve a "
+"darupályás "
+
+msgid "Obiekty handlowe i usługowe"
+msgstr "Kereskedelmi és szolgáltató létesítmények"
+
+msgid ""
+"Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów"
+" ergonomii pracy."
+msgstr ""
+"Kereskedelmi ingatlanok és fit-out munkák a legmagasabb ergonómiai "
+"sztenderdek "
+
+msgid "Obserwuj nas"
+msgstr "Kövess minket"
+
+msgid "Od 20 lat z pasją budujemy Wasze biznesy"
+msgstr "20 éve szenvedéllyel építjük az Önök vállalkozásait"
+
+msgid "Od koncepcji do <strong>oddania kluczy</strong>"
+msgstr "A koncepciótól a <strong>kulcsátadásig</strong>"
+
+msgid "Odbiór i Użytkowanie"
+msgstr "Átadás és használat"
+
+msgid "Oddział — Kraków"
+msgstr "Fióktelep – Krakkó"
+
+msgid "Oferta"
+msgstr "Ajánlat"
+
+msgid "Opinie naszych klientów"
+msgstr "Mit mondanak ügyfeleink"
+
+msgid "Opisz swój projekt..."
+msgstr "Írja le a projektjét..."
+
+msgid ""
+"Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny "
+"budżet."
+msgstr ""
+"Optimális mérnöki megoldások, precíz ütemezés és átlátható költségvetés."
+
+msgid "Polityka <strong>prywatności</strong>"
+msgstr "<strong>Adatvédelmi</strong> irányelvek"
+
+msgid "Pon-Pt:"
+msgstr "H-P:"
+
+msgid "Porozmawiaj z nami"
+msgstr "Beszéljen velünk"
+
+msgid "Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu."
+msgstr ""
+"Beszéljünk róla — megtaláljuk az optimális formulát az Ön projektjéhez."
+
+msgid "Portfolio"
+msgstr "Portfólió"
+
+msgid "Poznaj nas <strong>bliżej</strong>"
+msgstr "Ismerjen meg minket <strong>közelebbről</strong>"
+
+msgid "Poznaj nasz zespół"
+msgstr "Ismerje meg csapatunkat"
+
+msgid ""
+"Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie."
+msgstr "Alapozás, szerkezetállítás, installációk és befejező munkák."
+
+msgid "Projektowanie"
+msgstr "Tervezés"
+
+msgid "Projektowanie i Kosztorys"
+msgstr "Tervezés és költségvetés"
+
+msgid "Przestrzenie biurowe"
+msgstr "Irodák"
+
+msgid "Przydatne linki"
+msgstr "Hasznos linkek"
+
+msgid "REALIZACJE"
+msgstr "REFERENCIÁK"
+
+msgid "Realizacja Budowy"
+msgstr "Kivitelezés"
+
+msgid "Realizacje"
+msgstr "Projektek"
+
+msgid "Regulamin"
+msgstr "Szabályzat"
+
+msgid "Rodzaj inwestycji"
+msgstr "Beruházás típusa"
+
+msgid "Rozpoznanie i Koncepcja"
+msgstr "Feltárás és koncepció"
+
+msgid "Salony samochodowe (Automotive)"
+msgstr "Autószalonok (Automotive)"
+
+msgid "Siedziba"
+msgstr "Székhely"
+
+msgid ""
+"Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów w jakości"
+" materiałów i bezpieczeństwie."
+msgstr ""
+"Olyan megoldásokat keresünk, amelyek csökkentik a költségeket és az időt — "
+
+msgid "Te marki nam zaufały"
+msgstr "Ezek a márkák bíztak bennünk"
+
+msgid "Technologia i innowacje"
+msgstr "Technológia és innováció"
+
+msgid "Telefon"
+msgstr "Telefon"
+
+msgid ""
+"Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego "
+"obiektu."
+msgstr ""
+"Végső tesztek, teljes dokumentáció és a biztonságos, kész létesítmény "
+"átadása."
+
+msgid "Twoja Wizja"
+msgstr "Az Ön víziója"
+
+msgid ""
+"Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację "
+"zróżnicowanych obiektów."
+msgstr ""
+"Csapatunk sokrétű tapasztalata lehetővé teszi, hogy változatos jellegű "
+"létesítményeket "
+
+msgid "Wolność od formalności"
+msgstr "Szabaduljon meg a formalitásoktól"
+
+msgid "Wpisz swój e-mail..."
+msgstr "Írja be e-mail címét..."
+
+msgid "Wsparcie inwestorskie"
+msgstr "Beruházói támogatás"
+
+msgid "Wszelkie prawa zastrzeżone"
+msgstr "Minden jog fenntartva"
+
+msgid ""
+"Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy "
+"detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi "
+"standardami."
+msgstr ""
+"Válasszon megbízható partnert, aki mérnöki precizitással felel a projekt "
+"minden "
+
+msgid "Wyceń projekt"
+msgstr "Árak projektet"
+
+msgid "Wykonawstwo"
+msgstr "Kivitelezés"
+
+msgid "Wyślij zapytanie"
+msgstr "Kérés elküldése"
+
+msgid "ZAPISZ SIĘ"
+msgstr "FELIRATKOZÁS"
+
+msgid "Zapytaj o wycenę"
+msgstr "Kérjen árajánlatot"
+
+msgid "Zobacz cały zespół"
+msgstr "Teljes csapat megtekintése"
+
+msgid "Zobacz efekty naszej pracy"
+msgstr "Tekintse meg munkánk eredményeit"
+
+msgid "Zobacz realizacje"
+msgstr "Referenciák megtekintése"
+
+msgid "Zobacz wszystkie realizacje"
+msgstr "Összes referencia megtekintése"
+
+msgid "Zobacz wszystkie wpisy"
+msgstr "Összes bejegyzés megtekintése"
+
+msgid "Zrównoważone budownictwo"
+msgstr "Fenntartható építés"
+
+msgid "centra logistyczne"
+msgstr "logisztikai központok"
+
+msgid "hale produkcyjne"
+msgstr "ipari csarnokok"
+
+msgid "język"
+msgstr "nyelv"
+
+msgid "lat doświadczenia"
+msgstr "év tapasztalat"
+
+msgid "parki handlowe"
+msgstr "bevásárlóparkok"
+
+msgid "biurowce"
+msgstr "irodák"
+
+msgid "salony samochodowe"
+msgstr "autószalonok"
+
+msgid "zrealizowanych inwestycji"
+msgstr "megvalósított beruházás"
+
+msgid "Oferta MBT"
+msgstr "MBT ajánlat"
+
+msgid ""
+"Nie tylko generalne wykonawstwo — <strong>wybierz zakres, którego "
+"potrzebujesz</strong>"
+msgstr ""
+"Nem csak generálkivitelezés — <strong>válassza ki a szükséges "
+"terjedelmet</strong>"
+
+msgid ""
+"Możemy zaprojektować, wybudować, a nawet pomóc tylko w pozwoleniach i "
+"formalnościach. Zamów u nas wyłącznie projekt, wyłącznie budowę lub pełne "
+"wsparcie inwestorskie — wszystko w jednym miejscu."
+msgstr ""
+"Tudunk tervezni, építeni, vagy akár csak az engedélyekben és formalitásokban"
+" "
+
+msgid "lat na rynku"
+msgstr "év a piacon"
+
+msgid "realizacji"
+msgstr "referencia"
+
+msgid "m² powierzchni"
+msgstr "m² alapterület"
+
+msgid "Budowa hali MBT"
+msgstr "MBT csarnoképítés"
+
+msgid "Terminowość"
+msgstr "Határidőre"
+
+msgid "gwarantowana umową"
+msgstr "szerződésben garantálva"
+
+msgid "Zakres usług"
+msgstr "Szolgáltatási kör"
+
+msgid "Wybierz <strong>tylko to, czego potrzebujesz</strong>"
+msgstr "Csak azt válassza, <strong>amire szüksége van</strong>"
+
+msgid ""
+"Nie musisz zamawiać wszystkiego naraz. Projekt, budowa i formalności "
+"działają u nas również jako osobne usługi — dopasuj zakres do swojego etapu "
+"inwestycji."
+msgstr ""
+"Nem kell mindent egyszerre megrendelnie. A tervezés, az építés és az "
+"adminisztráció "
+
+msgid "Tylko projekt"
+msgstr "Csak tervezés"
+
+msgid ""
+"Specjaliści z referencjami i wieloletnim doświadczeniem. Radzimy sobie z "
+"projektami wielobranżowymi — od instalacji, przez uzgodnienia z gestorami "
+"sieci, po ochronę pożarową i konstrukcję."
+msgstr ""
+"Referenciákkal és többéves tapasztalattal rendelkező szakemberek. Vállaljuk "
+
+msgid "Trudne warunki gruntowe i wzmocnienia gruntu"
+msgstr "Nehéz talajviszonyok és talajszilárdítás"
+
+msgid "Modelowanie BIM — projektowe i wykonawcze"
+msgstr "BIM modellezés — tervezési és kivitelezési"
+
+msgid "Wsparcie przy certyfikacji BREEAM"
+msgstr "Támogatás a BREEAM tanúsításhoz"
+
+msgid "Tylko budowa"
+msgstr "Csak építés"
+
+msgid ""
+"Pełna realizacja inwestycji — od przejęcia placu budowy do przekazania "
+"kluczy. Wykonujemy roboty ziemne, fundamentowe, konstrukcje, instalacje i "
+"wykończenia."
+msgstr ""
+"Teljes körű projektmegvalósítás — a munkaterület átvételétől a "
+"kulcsátadásig. "
+
+msgid "Zjazdy, przyłącza mediów i instalacje OZE"
+msgstr "Behajtók, közművek és OZE berendezések"
+
+msgid "Odbiory, pozwolenie na użytkowanie i klucze"
+msgstr "Átvételek, használatbavételi engedély és kulcsok"
+
+msgid "Tylko formalności"
+msgstr "Csak formalitások"
+
+msgid ""
+"Pomagamy od samego początku — od wyboru lokalizacji, przez przygotowanie "
+"materiałów do decyzji kredytowej, aż po pozwolenie na budowę i zakup "
+"działki."
+msgstr ""
+"A legelejétől segítünk — a helyszín kiválasztásától és a hitelbírálati "
+"anyagok "
+
+msgid "Wybór lokalizacji i wsparcie przy zakupie działki"
+msgstr "Helyszínválasztás és telekvásárlási támogatás"
+
+msgid "Pozwolenie na budowę — projekt gotowy lub od zera"
+msgstr "Építési engedély — kész tervvel vagy a nulláról"
+
+msgid "Negocjacje, scalanie działek i badania gruntu"
+msgstr "Egyeztetések, telekösszevonás és talajvizsgálatok"
+
+msgid "Elastyczny zakres współpracy"
+msgstr "Rugalmas együttműködési keretek"
+
+msgid "Zamów <strong>dokładnie to, czego potrzebujesz</strong>"
+msgstr "Pontosan <strong>azt rendelje, amire szüksége van</strong>"
+
+msgid ""
+"Jesteś na etapie projektu, budowy, a może szukasz kogoś, kto załatwi "
+"pozwolenia? Wszystko możesz zamówić osobno — albo razem, jako pełne "
+"generalne wykonawstwo."
+msgstr ""
+"Tervezési fázisban van, épít, vagy esetleg valakit keres az engedélyek "
+"intézésére? "
+
+msgid ""
+"Potrzebujesz gotowej dokumentacji projektowej? Zaprojektujemy halę, magazyn "
+"lub obiekt usługowy — z uzgodnieniami i pozwoleniem na budowę."
+msgstr ""
+"Kész tervezési dokumentációra van szüksége? Tervezünk csarnokot, raktárt "
+"vagy "
+
+msgid "Zapytaj o projekt"
+msgstr "Érdeklődés a tervezésről"
+
+msgid ""
+"Masz już projekt? Wybudujemy obiekt zgodnie z dokumentacją — od fundamentów "
+"po wykończenie i odbiory."
+msgstr ""
+"Már van terve? Megépítjük az objektumot a dokumentáció szerint — az "
+"alapozástól "
+
+msgid "Zapytaj o budowę"
+msgstr "Érdeklődés az építésről"
+
+msgid ""
+"Nie chcesz tracić czasu na urzędy? Przejmiemy pozwolenia, uzgodnienia, "
+"odbiory i dokumentację powykonawczą."
+msgstr ""
+"Nem akar hivatalokban időt tölteni? Átvesszük az engedélyeket, "
+"egyeztetéseket, "
+
+msgid "Zapytaj o wsparcie"
+msgstr "Érdeklődés a támogatásról"
+
+msgid "Pełne generalne wykonawstwo"
+msgstr "Teljes generálkivitelezés"
+
+msgid ""
+"Projekt + budowa + formalności w jednym kontrakcie. Jeden partner, pełna "
+"odpowiedzialność, zero pośredników."
+msgstr ""
+"Tervezés + építés + formalitások egy szerződésben. Egy partner, teljes "
+"felelősség, "
+
+msgid "Zobacz stronę GW"
+msgstr "Generálkivitelezés oldal megtekintése"
+
+msgid "Formuły współpracy"
+msgstr "Együttműködési formulák"
+
+msgid "Dopasowujemy się do <strong>Twoich potrzeb</strong>"
+msgstr "Alkalmazkodunk <strong>az Ön igényeihez</strong>"
+
+msgid "Projektuj-Buduj"
+msgstr "Tervezz-Építs"
+
+msgid ""
+"Jeden kontrakt obejmuje projekt i wykonanie. Szybka realizacja, jedna "
+"odpowiedzialność, optymalizacja kosztów na etapie projektowania."
+msgstr ""
+"Egy szerződés fedi a tervezést és a kivitelezést. Gyors megvalósítás, "
+"egyetlen "
+
+msgid ""
+"Przejmujemy pełną odpowiedzialność za proces budowlany — koordynacja, "
+"harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu."
+msgstr ""
+"Mi vállaljuk a teljes felelősséget az építési folyamatért — koordináció, "
+"ütemezés, "
+
+msgid "Optymalizuj-Buduj"
+msgstr "Optimalizálj-Építs"
+
+msgid ""
+"Analizujemy istniejący projekt pod kątem kosztów i czasu, proponujemy "
+"oszczędności bez kompromisów jakościowych, a następnie budujemy."
+msgstr ""
+"Elemezzük a meglévő tervet költség és idő szempontjából, javasolunk "
+"megtakarításokat "
+
+msgid "Branże"
+msgstr "Iparágak"
+
+msgid "Budujemy dla <strong>każdej branży</strong>"
+msgstr "Minden <strong>iparág</strong> számára építünk"
+
+msgid "Hale produkcyjne"
+msgstr "Termelőcsarnokok"
+
+msgid "Logistyka"
+msgstr "Logisztika"
+
+msgid "Retail"
+msgstr "Retail"
+
+msgid "Automotive"
+msgstr "Automotive"
+
+msgid "Biura"
+msgstr "Irodák"
+
+msgid "Eko / BREEAM"
+msgstr "Eco / BREEAM"
+
+msgid "Dlaczego MBT?"
+msgstr "Miért az MBT?"
+
+msgid "Możesz na nas liczyć <strong>na każdym etapie</strong>"
+msgstr "Minden <strong>szakaszban</strong> számíthat ránk"
+
+msgid "Realizacja MBT"
+msgstr "MBT referencia"
+
+msgid "Terminowość i elastyczność"
+msgstr "Határidő és rugalmasság"
+
+msgid "Realizujemy zgodnie z harmonogramem, reagując na zmiany."
+msgstr ""
+"Az ütemezés szerint dolgozunk, és rugalmasan reagálunk a változásokra."
+
+msgid "Optymalizacja kosztów"
+msgstr "Költségoptimalizálás"
+
+msgid "Oszczędności bez rezygnacji z jakości i funkcji."
+msgstr "Megtakarítások a minőség és a funkció feladása nélkül."
+
+msgid "Uczciwość i transparentność"
+msgstr "Őszinteség és átláthatóság"
+
+msgid "Pełna, przejrzysta specyfikacja w każdej ofercie."
+msgstr "Teljes, átlátható specifikáció minden ajánlatban."
+
+msgid "Jeden zespół, pełna odpowiedzialność"
+msgstr "Egy csapat, teljes felelősség"
+
+msgid "Bez pośredników — od projektu po odbiór."
+msgstr "Nincsenek közvetítők — a tervezéstől az átadásig."
+
+msgid "Proces współpracy"
+msgstr "Együttműködés folyamata"
+
+msgid "Jak pracujemy <strong>krok po kroku</strong>"
+msgstr "Így dolgozunk <strong>lépésről lépésre</strong>"
+
+msgid "Analiza i koncepcja"
+msgstr "Elemzés és koncepció"
+
+msgid ""
+"Poznajemy Twoje potrzeby, analizujemy teren i przygotowujemy wstępną "
+"koncepcję wraz z szacunkiem kosztów."
+msgstr ""
+"Megismerjük az Ön igényeit, elemezzük a helyszínt, és előkészítünk egy "
+"kezdeti "
+
+msgid "Projekt i oferta"
+msgstr "Terv és ajánlat"
+
+msgid ""
+"Przygotowujemy projekt, harmonogram i transparentny kosztorys. Negocjujemy i"
+" ustalamy szczegóły umowy."
+msgstr ""
+"Elkészítjük a tervet, az ütemezést és az átlátható költségvetést. Tárgyalunk"
+" "
+
+msgid "Realizacja"
+msgstr "Kivitelezés"
+
+msgid ""
+"Budujemy — fundamenty, konstrukcja, instalacje, wykończenie. Na bieżąco "
+"raportujemy postęp prac."
+msgstr ""
+"Építünk — alapok, szerkezet, installációk, befejezés. Folyamatosan jelentjük"
+" "
+
+msgid "Odbiór i klucze"
+msgstr "Átadás és kulcsok"
+
+msgid ""
+"Testy końcowe, komplet dokumentacji, pozwolenie na użytkowanie i przekazanie"
+" gotowego obiektu."
+msgstr ""
+"Végső tesztek, teljes dokumentáció, használatbavételi engedély és a kész "
+"létesítmény "
+
+msgid "Nasze obiekty <strong>mówią za nas</strong>"
+msgstr "Épületeink <strong>önmagukért beszélnek</strong>"
+
+msgid "Zobacz realizację"
+msgstr "Referencia megtekintése"
+
+msgid "Masz pytania o swoją inwestycję?"
+msgstr "Kérdései vannak a beruházásával kapcsolatban?"
+
+msgid ""
+"Porozmawiajmy o Twoim projekcie — przygotujemy wycenę i doradzimy najlepszą "
+"formułę."
+msgstr ""
+"Beszéljünk a projektjéről — készítünk árajánlatot és tanácsot adunk a "
+"legjobb "
+
+msgid "Skontaktuj się"
+msgstr "Vegye fel velünk a kapcsolatot"
+
+msgid "O tej usłudze"
+msgstr "Erről a szolgáltatásról"
+
+msgid ""
+"Przy projektowaniu realizowanych obiektów w sposób szczególny uwzględniamy "
+"funkcjonalność, optymalne rozwiązania w zakresie posadowienia, konstrukcji i"
+" instalacji oraz estetykę obiektu."
+msgstr ""
+"Az általunk megvalósított épületek tervezésénél kiemelt figyelmet fordítunk "
+
+msgid "Funkcjonalność i estetyka obiektu"
+msgstr "A létesítmény funkcionalitása és esztétikája"
+
+msgid ""
+"Specjalizujemy się w realizacji hal magazynowych, produkcyjnych i "
+"usługowych. Zapewniamy pełny układ komunikacyjny i obiekty inżynierskie."
+msgstr ""
+"Raktár-, termelő- és szolgáltatócsarnokok megvalósítására specializálódtunk."
+" "
+
+msgid ""
+"Oferujemy wsparcie na każdym etapie inwestycji: wskazanie dogodnej "
+"lokalizacji, wsparcie przy zakupie nieruchomości, proces projektowy od "
+"koncepcji do pozwolenia na budowę oraz procedowanie i wykonanie przyłączy."
+msgstr ""
+"Minden szakaszban támogatást nyújtunk: kedvező lokáció kiválasztása, "
+"ingatlanvásárlási "
+
+msgid "Od koncepcji do pozwolenia na budowę"
+msgstr "A koncepciótól az építési engedélyig"
+
+msgid "Hale produkcyjne, logistyka, obiekty komercyjne"
+msgstr "Gyártócsarnokok, logisztika, kereskedelmi épületek"
+
+msgid "Więcej szczegółów"
+msgstr "Több részlet"
+
+msgid ""
+"Przejmujemy pełną odpowiedzialność za Twój <strong>proces budowlany</strong>"
+msgstr ""
+"Mi vállaljuk a teljes felelősséget az Ön <strong>építési "
+"folyamatáért</strong>"
+
+msgid ""
+"Tworzymy obiekty, które nie tylko optymalizują procesy biznesowe, ale są "
+"również przyjazne dla środowiska i oszczędne w eksploatacji. Pomagamy w "
+"realizacji wymogów środowiskowych i asystujemy w procesach uzyskiwania "
+"certyfikatów, takich jak BREEAM."
+msgstr ""
+"Olyan létesítményeket hozunk létre, amelyek nemcsak optimalizálják az üzleti"
+" "
+
+msgid "Inżynierowie z <strong>pasją do budowania</strong>"
+msgstr "Mérnökök, akiket <strong>az építés szenvedélye</strong> hajt"
+
+msgid ""
+"Przejmujemy pełną odpowiedzialność za cały proces budowlany — koordynację, "
+"harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu zamiast "
+"dziesiątek firm."
+msgstr ""
+"Mi vállaljuk a teljes felelősséget az építési folyamatért — koordináció, "
+"ütemezés, "
+
+msgid "Skontaktuj się z <strong>nami</strong>"
+msgstr "Vegye fel a kapcsolatot <strong>velünk</strong>"
+
+msgid "Twój plac budowy"
+msgstr "Az Ön építési területe"
+
+msgid "Zza kulis"
+msgstr "A színfalak mögött"
+
+msgid ""
+"Projektujemy z uwzględnieniem funkcjonalności, estetyki i optymalnych "
+"rozwiązań."
+msgstr ""
+"Tervezésünkben a funkcionalitás, az esztétika és az optimális megoldások "
+"érvényesülnek."
+
+msgid ""
+"Menadżerowie Projektu, Kierownicy, Inżynierowie i Projektanci — to ludzie "
+"stanowią o sile firmy."
+msgstr ""
+"Projektmenedzserek, helyszíni vezetők, mérnökök és tervezők — ők alkotják "
+"csapatunk "
+
+msgid "Zobacz pełen opis"
+msgstr "Teljes leírás megtekintése"
+
+msgid "Specyfikacja"
+msgstr "Specifikáció"
+
+msgid "Status"
+msgstr "Státusz"
+
+msgid "Czas realizacji"
+msgstr "Megvalósítás időtartama"
+
+msgid "Formuła"
+msgstr "Együttműködés formája"
+
+msgid "Wykonawca"
+msgstr "Kivitelező"
+
+msgid "Wyceń podobny projekt"
+msgstr "Kérjen árajánlatot hasonló projekthez"
+
+msgid "Galeria"
+msgstr "Galéria"
+
+msgid "Zdjęcia z realizacji"
+msgstr "Projektfotók"
+
+msgid "Szczegóły realizacji są dostępne wkrótce."
+msgstr "A projekt részletei hamarosan elérhetők."
+
+msgid "Aktualności i <strong>artykuły</strong>"
+msgstr "Hírek és <strong>cikkek</strong>"
+
+msgid "Dołącz do <strong>MBT</strong>"
+msgstr "Csatlakozzon az <strong>MBT-hez</strong>"
+
+msgid "Poznaj ludzi, którzy tworzą MBT"
+msgstr "Ismerje meg az MBT-t építő embereket"
+
+msgid "Aplikuj — napisz do nas"
+msgstr "Jelentkezzen — írjon nekünk"
+
+msgid ""
+"Realizacja prowadzona przez MBT Modern Building Team w formule generalnego "
+"wykonawstwa."
+msgstr ""
+"A projektet az MBT Modern Building Team generálkivitelezésben valósította "
+"meg."
+
+msgid "0 wypadków"
+msgstr "0 baleset"
+
+msgid "1. Administrator danych"
+msgstr "1. Adatkezelő"
+
+msgid "2. Zakres przetwarzania danych"
+msgstr "2. Adatfeldolgozás terjedelme"
+
+msgid "3. Podstawa prawna"
+msgstr "3. Jogalap"
+
+msgid "4. Okres przechowywania"
+msgstr "4. Tárolási időszak"
+
+msgid "5. Prawa osób, których dane dotyczą"
+msgstr "5. Az érintettek jogai"
+
+msgid "6. Kontakt"
+msgstr "6. Kapcsolat"
+
+msgid "7. Pliki cookies"
+msgstr "7. Cookie-k"
+
+msgid "AUTOMOTIVE"
+msgstr "AUTOMOTIVE"
+
+msgid ""
+"Aby odpowiedzieć na te wyzwania, stworzyliśmy MBT – firmę, która stawia na "
+"głębokie zrozumienie potrzeb klientów."
+msgstr ""
+"Ezen kihívásokra válaszul hoztuk létre az MBT-t — egy olyan vállalatot, "
+"amely "
+
+msgid "Aktualności wkrótce."
+msgstr "Hírek hamarosan."
+
+msgid "Audyty i inspekcje procesów"
+msgstr "Folyamatauditok és -ellenőrzések"
+
+msgid "BIURA"
+msgstr "IRODÁK"
+
+msgid "BREEAM — zielone budownictwo"
+msgstr "BREEAM — zöld építés"
+
+msgid "Bezpieczeństwo BHP"
+msgstr "Munkabiztonság"
+
+msgid "Bezpieczeństwo na budowie MBT"
+msgstr "Biztonság az MBT építkezésein"
+
+msgid ""
+"Bieżący, wideo-fotograficzny podgląd postępów prac. Jako Inwestor masz pełną"
+" transparentność i kontrolę, bez wychodzenia z biura."
+msgstr ""
+"Folyamatos videós és fotós betekintés a munkálatokba. Beruházóként Ön teljes"
+" "
+
+msgid "Brak dostępnych szablonów. Poproś administratora o dodanie."
+msgstr ""
+"Nincsenek elérhető sablonok. Kérje az adminisztrátort, hogy adjon hozzá."
+
+msgid "Centrum logistyczne / magazyn"
+msgstr "Logisztikai központ / raktár"
+
+msgid "Certyfikacja BREEAM"
+msgstr "BREEAM tanúsítás"
+
+msgid "Cyfrowe zarządzanie projektami"
+msgstr "Digitális projektmenedzsment"
+
+msgid "Cykliczne szkolenia zespołu"
+msgstr "Rendszeres csapatképzés"
+
+msgid "Czy realizujecie obiekty zgodne z certyfikacją BREEAM?"
+msgstr "Valósítanak meg BREEAM-tanúsított létesítményeket?"
+
+msgid "Czy zajmujecie się uzyskaniem pozwoleń i formalnościami?"
+msgstr "Önök intézik az engedélyeket és a formalitásokat?"
+
+msgid "Czym różni się generalny wykonawca od pojedynczych podwykonawców?"
+msgstr "Miben más a generálkivitelező, mint az egyes alvállalkozók?"
+
+msgid "Data"
+msgstr "Dátum"
+
+msgid "Dlaczego warto nas wybrać"
+msgstr "Miért válasszon minket"
+
+msgid "ESG / Zielone budownictwo"
+msgstr "ESG / Zöld építés"
+
+msgid "Elektromobilność"
+msgstr "Elektromobilitás"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Gospodarka wodna"
+msgstr "Vízgazdálkodás"
+
+msgid "Gruntowna realizacja"
+msgstr "Alapos kivitelezés"
+
+msgid ""
+"Gruntowna realizacja — od koncepcji po oddanie gotowego obiektu, zawsze "
+"zgodnie z harmonogramem."
+msgstr ""
+"Alapos kivitelezés — a koncepciótól a kész épület átadásáig, mindig az "
+"ütemezés "
+
+msgid "HALE PRODUKCYJNE"
+msgstr "IPARI CSARNOKOK"
+
+msgid "Hala przemysłowa / produkcyjna"
+msgstr "Ipari / termelőcsarnok"
+
+msgid "Hasło"
+msgstr "Jelszó"
+
+msgid "Historia pobrań"
+msgstr "Letöltési előzmények"
+
+msgid "Ile trwa realizacja inwestycji w formule generalnego wykonawstwa?"
+msgstr "Mennyi ideig tart egy generálkivitelezéses projekt?"
+
+msgid "Informacje"
+msgstr "Információk"
+
+msgid "Infrastruktura pod stacje szybkiego ładowania pojazdów EV."
+msgstr "Infrastruktúra EV gyorstöltő állomásokhoz."
+
+msgid "Instalacje OZE"
+msgstr "OZE berendezések"
+
+msgid "Jesteś kierownikiem MBT?"
+msgstr "Ön MBT építésvezető?"
+
+msgid ""
+"Jeśli konto o podanym emailu istnieje, administrator otrzymał informację o "
+"konieczności zresetowania hasła. Skontaktujemy się wkrótce."
+msgstr ""
+"Ha létezik fiók a megadott e-mail címmel, az adminisztrátor megkapta a "
+"jelszó-visszaállításról "
+
+msgid "Każda budowa pod obserwacją"
+msgstr "Minden építkezés megfigyelés alatt"
+
+msgid "Kompleksowa realizacja — od A do Z"
+msgstr "Teljes körű kivitelezés — A-tól Z-ig"
+
+msgid ""
+"Kompleksowe zarządzanie projektami budowlanymi z głębokim zrozumieniem "
+"potrzeb inwestorów."
+msgstr ""
+"Átfogó építési projektmenedzsment a beruházói igények mély megértésével."
+
+msgid "LOGISTYKA"
+msgstr "LOGISZTIKA"
+
+msgid "Lat doświadczenia"
+msgstr "Év tapasztalat"
+
+msgid "Ludzie MBT"
+msgstr "MBT csapattagok"
+
+msgid "MAGAZYNY"
+msgstr "RAKTÁRAK"
+
+msgid "Masz pytania dotyczące swojej inwestycji?"
+msgstr "Kérdései vannak a beruházásával kapcsolatban?"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Monitoring placu budowy 24/7"
+msgstr "24/7 építési terület felügyelet"
+
+msgid "Monitoring z powietrza (Drony)"
+msgstr "Légi megfigyelés (drónok)"
+
+msgid "Nasza misja"
+msgstr "Küldetésünk"
+
+msgid "Nasza wizja"
+msgstr "Jövőképünk"
+
+msgid "Nasze inwestycje"
+msgstr "Referenciáink"
+
+msgid "Nasze realizacje"
+msgstr "Projektjeink"
+
+msgid "Nowe hasło"
+msgstr "Új jelszó"
+
+msgid ""
+"Nowoczesne oprogramowanie do zarządzania budową. Harmonogramy, raporty i "
+"obieg dokumentacji aktualizowane w czasie rzeczywistym."
+msgstr ""
+"Korszerű építésvezető szoftver. Ütemezések, jelentések és dokumentumáramlás "
+
+msgid "OZNAKOWANIE"
+msgstr "JELÖLÉSEK"
+
+msgid "Obiekt handlowy / usługowy"
+msgstr "Kereskedelmi / szolgáltató létesítmény"
+
+msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
+msgstr "A szigorú tanúsítási követelményeknek megfelelő létesítmények."
+
+msgid ""
+"Od 20 lat z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
+"projektu aż po dach!"
+msgstr ""
+"20 éve szenvedéllyel építjük az Önök vállalkozásait. Egy csapat — teljes "
+"kivitelezés. "
+
+msgid "Odpowiedzialne projektowanie"
+msgstr "Felelős tervezés"
+
+msgid "Opinie klientów"
+msgstr "Ügyfélvélemények"
+
+msgid "Oznakowanie budowy"
+msgstr "Építkezés jelölése"
+
+msgid "Oznakowanie budowy — Panel kierownika"
+msgstr "Építkezés jelölése — Építésvezetői panel"
+
+msgid "Pierwsze logowanie — ustaw swoje hasło."
+msgstr "Első bejelentkezés — állítsa be a jelszavát."
+
+msgid "Pobieraj banery reklamowe i informacyjne na budowę — z Twoim logo."
+msgstr ""
+"Töltsön le reklám- és információs bannereket az építkezéshez — az Ön "
+"logójával."
+
+msgid "Pobierz baner"
+msgstr "Banner letöltése"
+
+msgid "Podaj email — administrator zresetuje hasło i prześle tymczasowe."
+msgstr ""
+"Adja meg az e-mail címét — az adminisztrátor visszaállítja a jelszót és küld"
+" "
+
+msgid "Powrót do logowania"
+msgstr "Vissza a bejelentkezéshez"
+
+msgid "Powrót na stronę główną"
+msgstr "Vissza a főoldalra"
+
+msgid "Powtórz hasło"
+msgstr "Jelszó megismétlése"
+
+msgid "Prosto z placu budowy"
+msgstr "Egyenesen az építkezésről"
+
+msgid "Prośba wysłana"
+msgstr "Kérés elküldve"
+
+msgid "Przestrzeń biurowa"
+msgstr "Iroda"
+
+msgid "Przez MBT"
+msgstr "Az MBT-től"
+
+msgid "RETAIL"
+msgstr "RETAIL"
+
+msgid "Raportowanie w czasie rzeczywistym"
+msgstr "Valós idejű jelentés"
+
+msgid "Salon samochodowy"
+msgstr "Autószalon"
+
+msgid "Sprawdź oferty pracy"
+msgstr "Állásajánlatok megtekintése"
+
+msgid "Strona główna"
+msgstr "Főoldal"
+
+msgid "Systemy retencji i wykorzystania wody deszczowej (szara woda)."
+msgstr "Esővíz-visszatartó és -hasznosító rendszerek (szürkevíz)."
+
+msgid "Szablon"
+msgstr "Sablon"
+
+msgid "Szablony banerów są w trakcie przygotowywania."
+msgstr "A banner-sablonok előkészítés alatt állnak."
+
+msgid "Szukaj"
+msgstr "Keresés"
+
+msgid "Terminowość i Elastyczność"
+msgstr "Pontosság és rugalmasság"
+
+msgid "Trwałe relacje"
+msgstr "Tartós kapcsolatok"
+
+msgid "Wgraj"
+msgstr "Feltöltés"
+
+msgid "Wgraj logo aby zobaczyć podgląd"
+msgstr "Töltsön fel egy logót az előnézethez"
+
+msgid "Więcej"
+msgstr "Több"
+
+msgid "Wnętrze hali"
+msgstr "Csarnok belső"
+
+msgid "Wolisz porozmawiać od razu?"
+msgstr "Szívesebben beszélne most?"
+
+msgid "Wybierz logo"
+msgstr "Logo kiválasztása"
+
+msgid ""
+"Wydajne systemy fotowoltaiczne na dachach obiektów wielkopowierzchniowych."
+msgstr ""
+"Nagy teljesítményű napelemes rendszerek nagy alapterületű épületek tetején."
+
+msgid "Wykwalifikowane kadry BHP"
+msgstr "Képzett munkabiztonsági szakemberek"
+
+msgid "Wyloguj"
+msgstr "Kijelentkezés"
+
+msgid "Wyślij prośbę"
+msgstr "Kérés elküldése"
+
+msgid "Wyślij zapytanie o wycenę"
+msgstr "Árajánlatkérés elküldése"
+
+msgid "Zadzwoń do nas"
+msgstr "Hívjon minket"
+
+msgid "Zaloguj się"
+msgstr "Bejelentkezés"
+
+msgid "Zaloguj się, aby pobrać banery z wgranym logo."
+msgstr ""
+"Jelentkezzen be, hogy letölthesse a feltöltött logóval ellátott bannereket."
+
+msgid ""
+"Zaloguj się, aby wgrać swoje logo i pobrać banery przygotowane pod druk."
+msgstr ""
+"Jelentkezzen be, töltse fel a logóját, és töltse le a nyomdára kész "
+"bannereket."
+
+msgid ""
+"Zanim wbijemy pierwszą łopatę, wznosimy Twój obiekt w środowisku cyfrowym. "
+"Modelowanie daje pełną kontrolę nad kolizjami projektowymi i pilnuje "
+"budżetu."
+msgstr ""
+"Mielőtt az első lapát földbe kerül, digitális környezetben építjük fel az Ön"
+" "
+
+msgid "Zapisz hasło"
+msgstr "Jelszó mentése"
+
+msgid "Zapomniałem hasła"
+msgstr "Elfelejtett jelszó"
+
+msgid "Zapomniałeś hasła?"
+msgstr "Elfelejtette a jelszavát?"
+
+msgid ""
+"Założyciele MBT — Jacek Lewandowski i Tomasz Kalisz — zgromadzili zespół "
+"złożony z Menadżerów Projektu, Kierowników, Inżynierów i Projektantów, "
+"wiedząc, że to ludzie stanowią o sile firmy."
+msgstr ""
+"Az MBT alapítói — Jacek Lewandowski és Tomasz Kalisz — projektvezetőkből, "
+"építésvezetőkből, "
+
+msgid "Zespół"
+msgstr "Csapat"
+
+msgid "Zespół MBT"
+msgstr "MBT csapat"
+
+msgid "Zespół specjalistów"
+msgstr "Szakértői csapat"
+
+msgid "Zmień hasło"
+msgstr "Jelszó módosítása"
+
+msgid "Zobacz jak pracujemy"
+msgstr "Nézze meg, hogyan dolgozunk"
+
+msgid "Zobacz wszystkie aktualności"
+msgstr "Összes hír megtekintése"
+
+msgid "kierownik"
+msgstr "építésvezető"
+
+msgid "min. 8 znaków"
+msgstr "min. 8 karakter"
+
+msgid "m² wybudowanych hal"
+msgstr "m² megépített csarnok"
+
+msgid "oddanych „pod kluczem"
+msgstr "„kulcsrakész\" átadva"
+
+msgid "95% projektów w BIM"
+msgstr "A projektek 95%-a BIM-ben"
+
+msgid ""
+"<strong>Menadżerowie Projektu, Kierownicy, Inżynierowie i "
+"Projektanci</strong> — to ludzie stanowią o sile firmy."
+msgstr ""
+"<strong>A projektvezetők, építésvezetők, mérnökök és tervezők</strong> — ők "
+
+msgid ""
+"<strong>Obsługujemy cały proces budowy</strong>, od koncepcji po oddanie "
+"gotowego obiektu."
+msgstr ""
+"<strong>A teljes építési folyamatot lebonyolítjuk</strong>, a koncepciótól "
+
+msgid ""
+"Administratorem danych osobowych jest MBT Modern Building Team Sp. z o.o. z "
+"siedzibą w Katowicach, ul. Jankego 176/1A, 40-663 Katowice, NIP: 9542788822,"
+" REGON: 369557780, KRS: 0000720424."
+msgstr ""
+"A személyes adatok kezelője az MBT Modern Building Team Sp. z o.o., "
+"székhelye: "
+
+msgid "Bezkompromisowe podejście do <strong>bezpieczeństwa</strong>"
+msgstr "Kompromiszszumentes megközelítés a <strong>biztonság</strong> terén"
+
+msgid "Budujemy z wykorzystaniem <strong>nowoczesnych technologii</strong>"
+msgstr "<strong>korszerű technológiával</strong> építünk"
+
+msgid ""
+"Czas zależy od skali i specyfiki obiektu — zwykle od kilku do kilkunastu "
+"miesięcy. Na etapie wyceny otrzymasz precyzyjny harmonogram dopasowany do "
+"Twoich potrzeb biznesowych."
+msgstr ""
+"Az időtartam a létesítmény méretétől és sajátosságaitól függ — általában "
+"néhány "
+
+msgid ""
+"Dane osobowe przechowywane są przez okres niezbędny do realizacji celu "
+"przetwarzania, a po jego zakończeniu — przez okres wymagany przepisami prawa"
+" lub do przedawnienia roszczeń."
+msgstr ""
+"A személyes adatokat az adatkezelés céljának megvalósításához szükséges "
+"ideig, "
+
+msgid ""
+"Dzięki inteligentnej unifikacji osiągamy znaczne <strong>oszczędności "
+"finansowe</strong> bez zmiany ilości materiałów."
+msgstr ""
+"Az intelligens egységesítésnek köszönhetően jelentős <strong>pénzügyi "
+"megtakarítást</strong> "
+
+msgid ""
+"Dzięki inteligentnej unifikacji osiągamy znaczne oszczędności finansowe."
+msgstr ""
+"Intelligens egységesítéssel jelentős pénzügyi megtakarításokat érünk el."
+
+msgid "Generalne wykonawstwo „pod klucz” — od projektu aż po dach"
+msgstr "Generálkivitelezés „kulcsra kész\" — a tervezéstől a tetőig"
+
+msgid "Hale magazynowe, produkcyjne i usługowe"
+msgstr "Raktár-, termelő- és szolgáltatócsarnokok"
+
+msgid ""
+"Inwestycje realizowane z inżynierską precyzją wymagają najlepszych narzędzi."
+" W MBT korzystamy z zaawansowanych rozwiązań cyfrowych, aby optymalizować "
+"czas i koszty Twojej budowy."
+msgstr ""
+"A mérnöki precizitással megvalósított beruházások a legjobb eszközöket "
+"igénylik. "
+
+msgid ""
+"Jako doświadczony Generalny Wykonawca działamy w modelu, który zdejmuje z "
+"barków Inwestora ciężar koordynacji setek procesów. Nasza praca to nie tylko"
+" wznoszenie murów i montaż konstrukcji — to przede wszystkim zarządzanie "
+"procesem inwestycyjnym."
+msgstr ""
+"Tapasztalt generálkivitelezőként olyan modellben dolgozunk, amely leveszi a "
+
+msgid ""
+"Jesteśmy w ciągłym ruchu. Śledź postępy prac na naszych kluczowych budowach "
+"i bądź na bieżąco z życiem zespołu MBT."
+msgstr ""
+"Folyamatosan mozgásban vagyunk. Kövesse a munkát kulcsfontosságú "
+"építkezéseinken, "
+
+msgid "MBT stawia na <strong>zrównoważone budownictwo</strong>"
+msgstr "Az MBT a <strong>fenntartható építésre</strong> törekszik"
+
+msgid "Najczęściej zadawane <strong>pytania</strong>"
+msgstr "Gyakran ismételt <strong>kérdések</strong>"
+
+msgid "Napisz do nas — odpowiemy w ciągu 24 godzin."
+msgstr "Írjon nekünk — 24 órán belül válaszolunk."
+
+msgid ""
+"Nasz zespół to ludzie, którzy <strong>potrafią współpracować</strong> z Tobą"
+" i partnerami biznesowymi."
+msgstr ""
+"Csapatunk olyan emberekből áll, akik <strong>képesek együttműködni</strong> "
+
+msgid "Nasze <strong>aktualności</strong>"
+msgstr "<strong>Híreink</strong>"
+
+msgid ""
+"Nasze wartości wyrażają się w nazwie Modern Building Team. Stawiamy na "
+"nowoczesność w myśleniu, zarządzaniu i relacjach."
+msgstr ""
+"Értékeink a nevünkben élnek — Modern Building Team. A modern gondolkodásban,"
+" "
+
+msgid ""
+"Niezależnie od tego, czy planujesz centrum logistyczne, park handlowy czy "
+"salon samochodowy — jesteśmy gotowi na nowe inżynieryjne wyzwania."
+msgstr ""
+"Akár logisztikai központot, akár bevásárlóparkot vagy autószalont tervez — "
+
+msgid ""
+"Obsługujemy cały proces budowy, od koncepcji po oddanie gotowego obiektu."
+msgstr ""
+"Az építkezés teljes folyamatát kezeljük, a koncepciótól a kész létesítmény "
+
+msgid ""
+"Odpowiadamy za przygotowanie harmonogramu, opracowanie szczegółowego "
+"kosztorysu, zarządzanie podwykonawcami, aż po finalne przekazanie w pełni "
+"funkcjonalnego obiektu, gotowego do prowadzenia biznesu."
+msgstr ""
+"Felelünk az ütemezés elkészítéséért, a részletes költségvetés "
+"kidolgozásáért, "
+
+msgid ""
+"Plac budowy to skomplikowany, żywy organizm. W MBT kultura bezpieczeństwa to"
+" absolutny fundament naszej pracy. Przestrzegamy najbardziej rygorystycznych"
+" norm BHP, stale szkolimy nasz zespół i audytujemy procesy. Dla nas "
+"bezpieczna budowa, to terminowa budowa."
+msgstr ""
+"Az építkezés bonyolult, élő szervezet. Az MBT-nél a biztonsági kultúra "
+"munkánk "
+
+msgid ""
+"Podstawą przetwarzania danych jest art. 6 ust. 1 lit. a RODO (zgoda) oraz "
+"art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora "
+"polegający na obsłudze zapytań i komunikacji z klientami)."
+msgstr ""
+"Az adatkezelés jogalapja a GDPR 6. cikk (1) bekezdésének a) pontja "
+"(hozzájárulás), "
+
+msgid "Polityka prywatności"
+msgstr "Adatvédelmi irányelvek"
+
+msgid ""
+"Pracując z inwestorami i partnerami biznesowymi, zauważyliśmy, że wiele firm"
+" boryka się z trudnościami w kompleksowym zarządzaniu projektami "
+"budowlanymi. Z jednej strony brakuje im specjalistów, którzy posiadają "
+"wszechstronne doświadczenie, a z drugiej, firmy budowlane obecne na rynku "
+"często nie rozumieją specyficznych potrzeb inwestorów."
+msgstr ""
+"A beruházókkal és üzleti partnerekkel végzett munka során észrevettük, hogy "
+
+msgid ""
+"Profesjonalizm, precyzja i pełne zaangażowanie — dzień po dniu na Twojej "
+"budowie."
+msgstr ""
+"Professzionalizmus, precizitás és teljes elkötelezettség — nap nap után az "
+
+msgid ""
+"Projektujemy z uwzględnieniem <strong>funkcjonalności, estetyki i "
+"optymalnych rozwiązań</strong>."
+msgstr ""
+"Terveinknél figyelembe vesszük a <strong>funkcionalitást, az esztétikát és "
+
+msgid ""
+"Przetwarzamy dane osobowe podane dobrowolnie w formularzu kontaktowym „Wyceń"
+" projekt\" — w szczególności imię i nazwisko, adres e-mail, numer telefonu, "
+"nazwę firmy oraz treść wiadomości, w celu odpowiedzi na zapytanie i "
+"przygotowania wyceny."
+msgstr ""
+"Az „Árajánlat kérése\" kapcsolati űrlapon önkéntesen megadott személyes "
+"adatokat "
+
+msgid ""
+"Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, "
+"ograniczenia przetwarzania, przenoszenia danych, wniesienia sprzeciwu oraz "
+"cofnięcia zgody w dowolnym momencie. Masz również prawo wniesienia skargi do"
+" Prezesa Urzędu Ochrony Danych Osobowych."
+msgstr ""
+"Önnek joga van az adatokhoz való hozzáféréshez, azok helyesbítéséhez, "
+"törléséhez, "
+
+msgid ""
+"Realizacja prowadzona przez MBT Modern Building Team w formule {{ "
+"project.formula|default:\"generalnego wykonawstwa\" }}."
+msgstr ""
+"Az MBT Modern Building Team által vezetett projekt a {{ "
+"project.formula|default:\"generálkivitelezés\" "
+
+msgid ""
+"Realizujemy Twoje projekty <strong>zgodnie z harmonogramem</strong>, nawet "
+"przy zmianach."
+msgstr ""
+"Az Ön projektjeit <strong>az ütemezésnek megfelelően</strong> valósítjuk "
+"meg, "
+
+msgid ""
+"Realizujemy Twoje projekty zgodnie z harmonogramem, nawet przy zmianach."
+msgstr ""
+"Projektjeit az ütemezés szerint valósítjuk meg, akár változások mellett is."
+
+msgid ""
+"Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania "
+"oraz analizy ruchu. Szczegółowe informacje znajdują się w polityce plików "
+"cookies."
+msgstr ""
+"Az oldal cookie-kat használ a megfelelő működés biztosítása és a forgalom "
+"elemzése "
+
+msgid ""
+"Tak — nawigujemy przez proces administracyjny, koordynujemy dokumentację "
+"powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU)."
+msgstr ""
+"Igen — végigvezetjük az adminisztrációs folyamaton, koordináljuk a "
+"megvalósulási "
+
+msgid ""
+"Tak — wdrażamy zrównoważone technologie (fotowoltaika, retencja wody, stacje"
+" EV) i realizujemy obiekty zgodne z wymogami certyfikacji BREEAM."
+msgstr ""
+"Igen — fenntartható technológiákat vezetünk be (napelemek, vízvisszatartás, "
+
+msgid ""
+"Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji "
+"realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby "
+"angażowania dodatkowych zasobów."
+msgstr ""
+"Olyan szakembergárdát alkotunk, amely gondoskodással és együttműködési "
+"készséggel "
+
+msgid ""
+"We wszystkich sprawach dotyczących przetwarzania danych osobowych możesz "
+"skontaktować się z nami pod adresem e-mail: <a href=\"mailto:biuro@mbt.pl\" "
+"style=\"color:var(--theme-color);\">biuro@mbt.pl</a> lub pisemnie na adres "
+"siedziby spółki."
+msgstr ""
+"A személyes adatok kezelésével kapcsolatos minden ügyben az alábbi e-mail "
+"címen "
+
+msgid "Wsparcie inwestorskie na każdym etapie"
+msgstr "Beruházói támogatás minden szakaszban"
+
+msgid ""
+"Za każdą zrealizowaną halą stoi zgrany zespół ekspertów. MBT to grupa "
+"doświadczonych inżynierów, kierowników budów i wykwalifikowanych "
+"specjalistów, dla których nie ma wyzwań niemożliwych. Budujemy nie tylko "
+"obiekty, ale i trwałe relacje."
+msgstr ""
+"Minden megvalósított csarnok mögött összeszokott szakembergárda áll. Az MBT "
+
+msgid "Zobacz, co już <strong>zbudowaliśmy</strong>"
+msgstr "Nézze meg, mit <strong>építettünk már</strong>"
+
+msgid "Zostaw dane kontaktowe, a nasi eksperci <strong>oddzwonią</strong>"
+msgstr ""
+"Hagyja meg elérhetőségeit, és szakértőink <strong>visszahívják</strong>"
+
+msgid "1 rok"
+msgstr "1 év"
+
+msgid "10 Miesięcy"
+msgstr "10 Hónap"
+
+msgid "10 miesięcy"
+msgstr "10 hónap"
+
+msgid "11 miesięcy"
+msgstr "11 hónap"
+
+msgid "13 miesięcy"
+msgstr "13 hónap"
+
+msgid "14 miesięcy"
+msgstr "14 hónap"
+
+msgid "16 miesięcy"
+msgstr "16 hónap"
+
+msgid "6 miesięcy"
+msgstr "6 hónap"
+
+msgid "8 miesięcy"
+msgstr "8 hónap"
+
+msgid "9 miesięcy"
+msgstr "9 hónap"
+
+msgid "Buduj"
+msgstr "Kivitelezés"
+
+msgid "Generalne wykonawstwo"
+msgstr "Generálkivitelezés"
+
+msgid ""
+"Hale magazynowe, produkcyjne i usługowe realizowane pod klucz — od projektu "
+"aż po dach."
+msgstr ""
+"Raktár-, termelési és szolgáltató csarnokok kulcsrakész megvalósítása — a "
+"tervezéstől "
+
+msgid "Obiekt na posadowieniu bezpośrednim"
+msgstr "Szerkezet közvetlen alapozáson"
+
+msgid "Projektuj-wybuduj"
+msgstr "Tervezés és kivitelezés"
+
+msgid "Realizacja pod klucz"
+msgstr "Kulcsrakész megvalósítás"
+
+msgid "W trakcie Realizacji"
+msgstr "Kivitelezés alatt"
+
+msgid "W trakcie realizacji"
+msgstr "Kivitelezés alatt"
+
+msgid "Wszystkie"
+msgstr "Összes"
+
+msgid "Wybuduj"
+msgstr "Kivitelezés"
+
+msgid "Zaprojektuj i wybuduj"
+msgstr "Tervezés és kivitelezés"
+
+msgid "Zaprojektuj-wybuduj"
+msgstr "Tervezés és kivitelezés"
+
+msgid "Zrealizowane"
+msgstr "Megvalósítva"
+
+msgid "zaprojektuj - wybuduj"
+msgstr "Tervezés és kivitelezés"
+
+msgid "Czas realizacji:"
+msgstr "Megvalósítás időtartama:"
+
+msgid "Biuro — Zabrze"
+msgstr "Iroda — Zabrze"
+
+msgid "Siedziba — Katowice"
+msgstr "Központ — Katowice"
+
+msgid "Trzy biura — jeden zespół gotowy na Twoje wyzwania budowlane."
+msgstr "Három iroda — egy csapat készen az Ön építési kihívásaira."
+
+msgid "Adres Twojej inwestycji"
+msgstr "Az Ön projektjének címe"
+
+msgid "Biuro MBT w Zabrzu"
+msgstr "MBT iroda Zabrze-ben"
+
+msgid "Siedziba MBT w Katowicach"
+msgstr "MBT központ Katowice-ben"
+
+msgid "Oddział MBT w Krakowie"
+msgstr "MBT fióktelep Kraków-ban"
+
+msgid "Plac budowy — Twoja inwestycja"
+msgstr "Építési terület — az Ön befektetése"
+
+msgid ""
+"Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, "
+"magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i "
+"ofertę!"
+msgstr ""
+"Megbízható generálkivitelezőt keres? Az MBT raktárakat, termelési és "
+"kereskedelmi "
+
+msgid "Generalny Wykonawca Hal i Obiektów Przemysłowych"
+msgstr "Generálkivitelező ipari csarnokokhoz és létesítményekhez"
+
+msgid "generalny wykonawca"
+msgstr "generálkivitelező"
+
+msgid "hale magazynowe"
+msgstr "raktárak"
+
+msgid "obiekty przemysłowe"
+msgstr "ipari létesítmények"
+
+msgid "budowa pod klucz"
+msgstr "kulcsrakész építés"
+
+msgid "Realizacja nie istnieje"
+msgstr "A projekt nem található"
+
+msgid "Oferta nie istnieje"
+msgstr "A pozíció nem található"
+
+msgid "Artykuł nie istnieje"
+msgstr "A cikk nem található"
+
+msgid ""
+"Jesteśmy zespołem specjalistów, którzy dzięki trosce i umiejętności "
+"kooperacji realizują wspólne cele. Szukamy ludzi z pasją do budownictwa."
+msgstr ""
+"Olyan szakemberekből álló csapat vagyunk, akik gondoskodással és "
+"együttműködési készséggel érnek el közös célokat. Szenvedélyes, építőipar "
+"iránt érdeklődő embereket keresünk."
+
+msgid "Praca w MBT"
+msgstr "Munka az MBT-nél"
+
+msgid "Zobacz ofertę"
+msgstr "Ajánlat megtekintése"
+
+msgid ""
+"Wiedza z rynku budownictwa przemysłowego — prosto od naszych specjalistów."
+msgstr "Tudás az ipari építőipar piacáról — egyenesen szakértőinktől."
+
+msgid "Budownictwo"
+msgstr "Építőipar"
+
+msgid "Praca MBT na budowie"
+msgstr "MBT munka az építkezésen"
+
+msgid "Poprzednie zdjęcie"
+msgstr "Előző fotó"
+
+msgid "Następne zdjęcie"
+msgstr "Következő fotó"
+
+msgid "Oferta, czyli co możemy dla Ciebie zrobić"
+msgstr "Ajánlatunk — mit tehetünk Önért"
+
+msgid "Nasz zespół — pracownicy"
+msgstr "Csapatunk — munkatársak"
+
+msgid ""
+"Nie znalazłeś oferty dla siebie? Wyślij CV — zawsze rozważamy nowe talenty."
+msgstr ""
+"Nem talál megfelelő pozíciót? Küldje el önéletrajzát — mindig figyelembe "
+"veszünk új tehetségeket."
+
+msgid "Zadowolonych klientów"
+msgstr "Elégedett ügyfelek"
+
+msgid "Gdzie budujemy?"
+msgstr "Hol építünk?"
+
+msgid "Zobacz nasze inwestycje na interaktywnej mapie Polski"
+msgstr "Tekintse meg beruházásainkat Lengyelország interaktív térképén"
+
+msgid "Zobacz projekt"
+msgstr "Projekt megtekintése"
+
+msgid "GENERALNE WYKONAWSTWO"
+msgstr "FŐVÁLLALKOZÁS"

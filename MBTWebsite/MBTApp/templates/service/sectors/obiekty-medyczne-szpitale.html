@@ -1,0 +1,147 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block title %}Obiekty medyczne (szpitale) - Generalny Wykonawca | MBT{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="gw-hero" style="background-image:url('{{ photos.gw_hero }}');">
+    <div class="gw-hero-kenburns" style="background-image:url('{{ photos.gw_hero }}');"></div>
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <div class="gw-hero-content">
+                    <span class="gw-hero-badge wow animate__animated animate__fadeInDown">{% trans 'Generalny Wykonawca' %}</span>
+                    <h1 class="gw-hero-title wow animate__animated animate__fadeInUp">{% blocktranslate %}Obiekty medyczne (szpitale){% endblocktranslate %}</h1>
+                    <p class="gw-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        {% blocktranslate %}Specjalistyczne placówki ochrony zdrowia, szpitale i przychodnie budowane z myślą o najwyższych rygorach higienicznych.{% endblocktranslate %}
+                    </p>
+                    <div class="gw-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="#wyzwania" class="btn mbt-cta">{% trans 'Poznaj nasze rozwiązania' %} <i class="ri-arrow-down-line"></i></a>
+                        <a href="{% url 'contact' %}" class="btn gw-btn-outline">{% trans 'Skonsultuj projekt' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wprowadzenie -->
+<section class="gw-about space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gx-60 gy-40">
+            <div class="col-lg-6">
+                <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
+                    <div class="gw-about-img-main">
+                        <img src="{{ photos.gw_3 }}" alt="Obiekty medyczne (szpitale)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-about-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Precyzja i technologia' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Budownictwo, które ratuje życie{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Budowa szpitala czy kliniki to jedno z najbardziej wymagających zadań inżynieryjnych. Oprócz tradycyjnych instalacji, obiekt musi zostać wyposażony w sieć gazów medycznych, sale operacyjne w klasie czystości, izolatki oraz specjalistyczne układy zasilania gwarantowanego.{% endblocktranslate %}
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}MBT posiada wiedzę i odpowiednie partnerstwa branżowe, aby sprostać rygorystycznym wytycznym sanitarnym oraz wymaganiom stacji SANEPID. Rozumiemy, że w obiektach medycznych margines błędu wynosi zero.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wyzwania inżynieryjne -->
+<section id="wyzwania" class="gw-specs space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Rozwiązania szyte na miarę' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Kluczowe aspekty <strong>naszej realizacji</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Gazy medyczne' %}</h3>
+                        <p>{% trans 'Kompleksowa koordynacja instalacji rurociągów dla tlenu, podtlenku azotu i sprężonego powietrza medycznego z systemami monitoringu.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Sale operacyjne (Clean Rooms)' %}</h3>
+                        <p>{% trans 'Wykonywanie sal w systemach modułowych, z nawiewami laminarnymi i najwyższej klasy higienicznej wykończeniami.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Zasilanie gwarantowane (IT)' %}</h3>
+                        <p>{% trans 'Projektowanie niezawodnych układów zasilania z agregatami prądotwórczymi i systemami UPS dla sal operacyjnych i oddziałów IT.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="gw-spec-icon"><i class="ri-check-double-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Osłony przed promieniowaniem' %}</h3>
+                        <p>{% trans 'Zabezpieczanie ścian i stropów pracowni rentgenowskich (RTG/TK) warstwami ołowiu lub specjalnymi tynkami barytowymi.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="space-top space-extra-bottom overflow-hidden">
+    <div class="container text-center">
+        <div class="gw-why-card gw-why-card-cta d-inline-block" style="max-width: 800px; padding: 60px;">
+            <h3 class="mb-3" style="font-size: 32px;">{% trans 'Gotowy do startu inwestycji?' %}</h3>
+            <p style="font-size: 18px; margin-bottom: 30px;">{% trans 'Przejmiemy na siebie cały proces budowlany. Zbudujmy razem Twój nowy obiekt.' %}</p>
+            <a href="{% url 'contact' %}" class="btn mbt-cta" style="font-size: 18px; padding: 15px 40px;">
+                {% trans 'Skonsultuj swój projekt z inżynierem MBT' %} <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Realizacje -->
+<section class="gw-projects space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Dowód naszych kompetencji' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Ostatnie <strong>realizacje</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            {% for p in completed %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="gw-project-img">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <div class="gw-project-overlay">
+                            <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
+                        </div>
+                    </div>
+                    <div class="gw-project-body">
+                        <span class="gw-project-tag">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne Wykonawstwo' %}{% endif %}</span>
+                        <h3>{{ p.title }}</h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <section class="project-page space-top space-extra-bottom">
+        <div class="container">
+
+            <!-- Filtry: Zrealizowane / W trakcie realizacji -->
+            <div class="mbt-project-filters text-center mb-50">
+                <div class="title-area mb-30">
+                    <span class="sub-title text-theme">{% trans 'Realizacje' %} <i class="ri-arrow-right-down-line"></i></span>
+                    <h2 class="sec-title">{% trans 'Zobacz efekty naszej pracy' %}</h2>
+                    <p class="sec-text" style="color:var(--body-color);">{% blocktranslate %}Hale magazynowe, produkcyjne i usługowe realizowane pod klucz — od projektu aż po dach.{% endblocktranslate %}</p>
+                </div>
+                <div class="mbt-filter-buttons">
+                    <a href="{% url 'project' %}?filter=all" class="btn mbt-filter-btn {% if current_filter == 'all' %}active{% endif %}">{% trans 'Wszystkie' %}</a>
+                    <a href="{% url 'project' %}?filter=completed" class="btn mbt-filter-btn {% if current_filter == 'completed' %}active{% endif %}">{% trans 'Zrealizowane' %}</a>
+                    <a href="{% url 'project' %}?filter=in-progress" class="btn mbt-filter-btn {% if current_filter == 'in-progress' %}active{% endif %}">{% trans 'W trakcie realizacji' %}</a>
+                </div>
+            </div>
+
+            <div class="row gy-40 justify-content-center" id="mbtProjectGrid">
+                {% for p in projects %}
+                <div class="col-md-6 col-lg-4 mbt-project-item {% if p.type == 'realizacja-zrealizow' %}completed{% else %}in-progress{% endif %}">
+                    <div class="portfolio-card style2">
+                        <div class="portfolio-card-thumb">
+                            <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" decoding="async" width="800" height="533" class="{% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}">
+                            <span class="portfolio-card-number" aria-hidden="true">{{ forloop.counter0|add:page_obj.start_index }}</span>
+                            <a class="icon-btn popup-image" href="{{ p.hero }}" aria-label="{% trans 'Zobacz' %}: {{ p.title }}"><i class="ri-eye-line" aria-hidden="true"></i></a>
+                            <span class="mbt-project-badge">{% trans p.status %}</span>
+                        </div>
+                        <div class="portfolio-card-details">
+                            <span class="portfolio-card-subtitle">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne wykonawstwo' %}{% endif %}</span>
+                            <h3 class="portfolio-card-title"><a href="{% url 'realizacjaDetail' p.slug %}">{{ p.title }}</a></h3>
+                            <p class="portofolio-card-text">{% if p.czas %}{% trans "Czas realizacji:" %} {% trans p.czas %}{% else %}{% trans 'Realizacja pod klucz' %}{% endif %}</p>
+                            <a href="{% url 'realizacjaDetail' p.slug %}" class="btn-with-icon">
+                                {% trans 'Zobacz pełen opis' %}
+                                <span class="btn-icon">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if is_paginated %}
+            <div class="pagination justify-content-center" style="margin-top:60px;">
+                <ul>
+                    {% if page_obj.has_previous %}
+                    <li><a href="{% url 'projectPage' page_obj.previous_page_number %}?filter={{ current_filter }}"><i class="ri-arrow-left-line"></i></a></li>
+                    {% endif %}
+                    {% for num in page_obj.paginator.page_range %}
+                    <li><a class="{% if num == page_obj.number %}active{% endif %}" href="{% url 'projectPage' num %}?filter={{ current_filter }}">0{{ num }}</a></li>
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                    <li><a href="{% url 'projectPage' page_obj.next_page_number %}?filter={{ current_filter }}"><i class="ri-arrow-right-line"></i></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+
+
+
+{% endblock content %}

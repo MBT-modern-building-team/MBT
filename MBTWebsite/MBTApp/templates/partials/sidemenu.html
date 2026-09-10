@@ -1,0 +1,41 @@
+    {% load i18n %}
+<div class="sidemenu-wrapper" role="dialog" aria-modal="true" aria-label="Menu boczne">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="ri-close-line"></i></button>
+            <div class="widget widget-about footer-widget">
+                <div class="footer-logo">
+                    <a href="{% url 'index' %}"><img src="/static/img/mbt/logo-with-name.svg" alt="MBT Modern Building Team" width=\"150\" height=\"50\" loading=\"lazy\" width="190" height="60"></a>
+                </div>
+                <p class="about-text mb-4">{% trans 'Od 20 lat z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od projektu aż po dach!' %}</p>
+                
+                <p class="footer-text">
+                    <a href="tel:+48881444333"><i class="ri-phone-line me-2"></i>+48 881 444 333</a>
+                </p>
+                <p class="contact-text"><i class="ri-map-pin-line me-2"></i>Roosevelta 81, 41-800 Zabrze</p>
+                <p class="footer-text"><a href="mailto:biuro@mbt.pl"><i class="ri-mail-line me-2"></i>biuro@mbt.pl</a></p>
+                <div class="social-btn style3 mt-30">
+                    <a href="https://www.linkedin.com/company/modern-building-team/" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://www.youtube.com/@MBTModernBuildingTeamSp.zo.o." aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                    <a href="https://www.facebook.com/mbtmodernbuildingteam" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                </div>
+                <div class="recent-post-wrap mt-40">
+                    {% for a in articles|slice:":3" %}
+                    <div class="recent-post">
+                        <div class="media-img">
+                            {% if a.image %}
+                            <a href="{% url 'articleDetail' a.slug %}"><img src="{{ a.image }}" alt="{{ a.title }}" width="150" height="150"></a>
+                            {% endif %}
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="{% url 'articleDetail' a.slug %}">{{ a.title|truncatechars:42 }}</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="{% url 'blog' %}">{% trans 'Przez MBT' %}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,57 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <section class="career-details space-top space-extra-bottom">
+        <div class="container">
+            <div class="row gx-60 gy-40">
+                <div class="col-lg-8">
+                    <div class="title-area mb-30">
+                        <span class="sub-title text-theme">Oferta pracy <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{{ job.title }}</h2>
+                    </div>
+
+                    <div class="mbt-job-offer" style="background:var(--smoke-color);border:1px solid var(--border-color);border-radius:8px;padding:36px 32px;">
+                        {% for line in job.lines %}
+                            {% if line.type == 'item' %}
+                            <div style="padding:10px 0; border-bottom:1px solid var(--border-color); display: flex; align-items: flex-start;">
+                                <span style="color:var(--theme-color);font-weight:bold;margin-right:12px;">✓</span>
+                                <p style="color:var(--body-color);font-size:15px;line-height:1.7;margin:0;">{{ line.text }}</p>
+                            </div>
+                            {% else %}
+                            <div style="padding: 24px 0 10px 0;">
+                                <h4 style="font-size: 18px; margin:0; color:var(--title-color);">{{ line.text }}</h4>
+                            </div>
+                            {% endif %}
+                        {% empty %}
+                        <p style="color:var(--body-color);font-size:15px;line-height:1.7;">{{ job.text }}</p>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mt-40">
+                        <a href="{% url 'contact' %}" class="btn mbt-cta">{% trans 'Aplikuj — napisz do nas' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="mbt-sidebar-card" style="background:var(--smoke-color);border:1px solid var(--border-color);border-radius:8px;padding:30px;">
+                        <h4 style="font-family:var(--title-font);margin-bottom:20px;">Inne oferty</h4>
+                        <ul style="list-style:none;padding:0;margin:0;">
+                            {% for j in jobs %}
+                            <li style="padding:12px 0;border-bottom:1px solid var(--border-color);">
+                                <a href="{% url 'careerDetail' j.slug %}" style="color:var(--title-color);font-weight:600;font-size:15px;text-decoration:none;transition:color .2s;">{{ j.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--border-color);">
+                            <p style="color:var(--body-color);font-size:13px;line-height:1.6;margin:0 0 12px;">{% trans "Nie znalazłeś oferty dla siebie? Wyślij CV — zawsze rozważamy nowe talenty." %}</p>
+                            <a href="mailto:biuro@mbt.pl" style="color:var(--theme-color);font-weight:700;text-decoration:none;">biuro@mbt.pl</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

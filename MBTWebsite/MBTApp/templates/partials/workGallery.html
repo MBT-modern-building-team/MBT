@@ -1,0 +1,25 @@
+<!--==============================
+    Zobacz jak pracujemy — karuzela zdjęć (partial: home + kariera)
+    ==============================-->
+{% load i18n %}
+<section class="mbt-work-gallery">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme">{% trans "Zza kulis" %} <i class="ri-arrow-right-down-line"></i></span>
+            <h2 class="sec-title">{% trans 'Zobacz jak pracujemy' %}</h2>
+            <p class="sec-text" style="color:var(--body-color);">{% blocktranslate %}Profesjonalizm, precyzja i pełne zaangażowanie — dzień po dniu na Twojej budowie.{% endblocktranslate %}</p>
+        </div>
+        <div class="mbt-work-slider">
+            <div class="mbt-work-track">
+                {% for img_url in photos.work_gallery %}
+                <div class="mbt-work-slide">
+                    <img src="{{ img_url }}" alt="{% trans 'Praca MBT na budowie' %}" width="600" height="400" loading="lazy">
+                </div>
+                {% endfor %}
+            </div>
+            <button type="button" class="mbt-work-arrow prev" aria-label="{% trans 'Poprzednie zdjęcie' %}"><i class="ri-arrow-left-line"></i></button>
+            <button type="button" class="mbt-work-arrow next" aria-label="{% trans 'Następne zdjęcie' %}"><i class="ri-arrow-right-line"></i></button>
+            <div class="mbt-work-dots"></div>
+        </div>
+    </div>
+</section>

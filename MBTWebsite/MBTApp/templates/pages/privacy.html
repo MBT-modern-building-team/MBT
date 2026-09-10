@@ -1,0 +1,41 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <section class="privacy-page space-top space-extra-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="title-area mb-40">
+                        <span class="sub-title text-theme">{% trans 'Informacje' %} <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title">{% blocktranslate %}Polityka <strong>prywatności</strong>{% endblocktranslate %}</h2>
+                    </div>
+                    <div class="mbt-privacy-content" style="color:var(--body-color);font-size:15px;line-height:1.8;">
+                        <h4 style="font-family:var(--title-font);color:var(--title-color);margin:30px 0 12px;">{% trans '1. Administrator danych' %}</h4>
+                        <p>{% blocktranslate %}Administratorem danych osobowych jest MBT Modern Building Team Sp. z o.o. z siedzibą w Katowicach, ul. Jankego 176/1A, 40-663 Katowice, NIP: 9542788822, REGON: 369557780, KRS: 0000720424.{% endblocktranslate %}</p>
+
+                        <h4 style="font-family:var(--title-font);color:var(--title-color);margin:30px 0 12px;">{% trans '2. Zakres przetwarzania danych' %}</h4>
+                        <p>{% blocktranslate %}Przetwarzamy dane osobowe podane dobrowolnie w formularzu kontaktowym „Wyceń projekt" — w szczególności imię i nazwisko, adres e-mail, numer telefonu, nazwę firmy oraz treść wiadomości, w celu odpowiedzi na zapytanie i przygotowania wyceny.{% endblocktranslate %}</p>
+
+                        <h4 style="font-family:var(--title-font);color:var(--title-color);margin:30px 0 12px;">{% trans '3. Podstawa prawna' %}</h4>
+                        <p>{% blocktranslate %}Podstawą przetwarzania danych jest art. 6 ust. 1 lit. a RODO (zgoda) oraz art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora polegający na obsłudze zapytań i komunikacji z klientami).{% endblocktranslate %}</p>
+
+                        <h4 style="font-family:var(--title-font);color:var(--title-color);margin:30px 0 12px;">{% trans '4. Okres przechowywania' %}</h4>
+                        <p>{% blocktranslate %}Dane osobowe przechowywane są przez okres niezbędny do realizacji celu przetwarzania, a po jego zakończeniu — przez okres wymagany przepisami prawa lub do przedawnienia roszczeń.{% endblocktranslate %}</p>
+
+                        <h4 style="font-family:var(--title-font);color:var(--title-color);margin:30px 0 12px;">{% trans '5. Prawa osób, których dane dotyczą' %}</h4>
+                        <p>{% blocktranslate %}Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych, wniesienia sprzeciwu oraz cofnięcia zgody w dowolnym momencie. Masz również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych.{% endblocktranslate %}</p>
+
+                        <h4 style="font-family:var(--title-font);color:var(--title-color);margin:30px 0 12px;">{% trans '6. Kontakt' %}</h4>
+                        <p>{% blocktranslate %}We wszystkich sprawach dotyczących przetwarzania danych osobowych możesz skontaktować się z nami pod adresem e-mail: <a href="mailto:biuro@mbt.pl" style="color:var(--theme-color);">biuro@mbt.pl</a> lub pisemnie na adres siedziby spółki.{% endblocktranslate %}</p>
+
+                        <h4 style="font-family:var(--title-font);color:var(--title-color);margin:30px 0 12px;">{% trans '7. Pliki cookies' %}</h4>
+                        <p>{% blocktranslate %}Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania oraz analizy ruchu. Szczegółowe informacje znajdują się w polityce plików cookies.{% endblocktranslate %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

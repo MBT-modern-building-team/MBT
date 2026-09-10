@@ -1,0 +1,21 @@
+{% load i18n static %}
+<div class="mbt-upload">
+  <div class="mbt-upload-preview">
+    {% if widget.current_url %}
+      <img src="{{ widget.current_url }}" alt="podgląd" class="mbt-upload-img">
+    {% else %}
+      <span class="mbt-upload-empty">Brak zdjęcia</span>
+    {% endif %}
+  </div>
+  <div class="mbt-upload-controls">
+    <label class="mbt-upload-btn">
+      Wybierz plik…
+      <input type="file" name="{{ widget.file_name }}" accept="image/*" class="mbt-upload-file" data-preview="1"
+             data-crop="{{ widget.data_crop }}"
+             {% if widget.data_aspect_ratio %}data-aspect-ratio="{{ widget.data_aspect_ratio }}"{% endif %}>
+    </label>
+    <span class="mbt-upload-hint">lub wklej URL:</span>
+    <input type="text" name="{{ widget.name }}" value="{{ widget.current_url|default:'' }}"
+           class="mbt-upload-url vTextField" data-url-input="1">
+  </div>
+</div>

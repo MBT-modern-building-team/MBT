@@ -1,0 +1,33 @@
+{% load i18n static %}
+<div class="mbt-gallery">
+  <div class="mbt-gallery-head">
+    <span class="mbt-gallery-count" data-count="0">0 zdjęć</span>
+  </div>
+  <div class="mbt-gallery-thumbs" data-sortable="1">
+    {% for url in widget.gallery_urls %}
+      <div class="mbt-gallery-thumb-wrap" draggable="true" data-url="{{ url }}">
+        <img src="{{ url }}" alt="" class="mbt-gallery-thumb">
+        <span class="mbt-gallery-drag-handle">⠿</span>
+        <button type="button" class="mbt-gallery-remove" title="Usuń zdjęcie">×</button>
+      </div>
+    {% empty %}
+      <span class="mbt-upload-empty">Brak zdjęć — wybierz pliki poniżej</span>
+    {% endfor %}
+  </div>
+  <div class="mbt-upload-controls">
+    <label class="mbt-upload-btn">
+      Dodaj zdjęcia…
+      <input type="file" name="{{ widget.file_name }}" accept="image/*" multiple
+             class="mbt-upload-file" data-gallery="1">
+    </label>
+    <span class="mbt-upload-hint">Przeciągaj miniatury, aby zmienić kolejność. Nowe pliki dodasz przyciskiem obok.</span>
+  </div>
+  <div class="mbt-upload-progress" hidden>
+    <div class="mbt-upload-progress-bar"></div>
+    <span class="mbt-upload-progress-text">Przygotowywanie…</span>
+  </div>
+  <div class="mbt-upload-done" hidden>✓ Zdjęcia wybrane — kliknij „Zapisz", aby wgrać je na serwer.</div>
+  <textarea name="{{ widget.name }}" rows="3" class="vLargeTextField mbt-gallery-json"
+            data-json="1" style="width:100%;font-family:monospace;font-size:12px;">{{ widget.value|default:'' }}</textarea>
+  <p class="help">Kolejność zdjęć = kolejność na stronie. Zmienisz ją przeciągając miniatury (drag &amp; drop).</p>
+</div>

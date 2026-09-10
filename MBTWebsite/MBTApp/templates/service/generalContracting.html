@@ -1,0 +1,674 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+
+<!-- Pasek postępu scrolla (premium animacja) -->
+<div id="gwScrollProgress"></div>
+
+<!-- ============================================================
+     LANDING: GENERALNE WYKONAWSTWO (Google Ads)
+     Inspiracje: adamietz.pl, atlasward.pl, promus.com.pl, pekabex.com
+     ============================================================ -->
+
+<!-- ============ HERO — pełnoekranowe zdjęcie z animacją Ken Burns ============ -->
+<section class="gw-hero" style="background-image:url('{{ photos.gw_hero }}');">
+    <div class="gw-hero-kenburns" style="background-image:url('{{ photos.gw_hero }}');"></div>
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <div class="gw-hero-content">
+                    <span class="gw-hero-badge wow animate__animated animate__fadeInDown">{% trans 'Generalny Wykonawca' %}</span>
+                    <h1 class="gw-hero-title wow animate__animated animate__fadeInUp">{% blocktranslate %}Generalne Wykonawstwo<br>Inwestycji Budowlanych{% endblocktranslate %}</h1>
+                    <p class="gw-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        {% blocktranslate %}Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi standardami.{% endblocktranslate %}
+                    </p>
+                    <div class="gw-hero-rotator wow animate__animated animate__fadeInUp" data-wow-delay="0.22s">
+                        <span class="gw-rotator-label">{% trans 'Budujemy:' %}</span>
+                        <span class="gw-rotator-words">
+                            <span class="gw-rotator-word active">{% trans 'hale produkcyjne' %}</span>
+                            <span class="gw-rotator-word">{% trans 'centra logistyczne' %}</span>
+                            <span class="gw-rotator-word">{% trans 'self storage' %}</span>
+                            <span class="gw-rotator-word">{% trans 'parki handlowe' %}</span>
+                            <span class="gw-rotator-word">{% trans 'biurowce' %}</span>
+                        </span>
+                    </div>
+                    <div class="gw-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="#gw-wycena" class="btn mbt-cta">{% trans 'Zapytaj o wycenę' %} <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="#gw-realizacje" class="btn gw-btn-outline">{% trans 'Zobacz realizacje' %} <i class="ri-arrow-down-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ MARQUEE — przewijany pasek branż ============ -->
+<div class="gw-marquee">
+    <div class="gw-marquee-track">
+        <ul class="gw-marquee-group">
+            <li><span>{% trans 'HALE PRODUKCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'MAGAZYNY' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'LOGISTYKA' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'RETAIL' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'SELF STORAGE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'BIURA I BIUROWCE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'CENTRA LOGISTYCZNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'PARKI HANDLOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'CENTRA DYSTRYBUCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'OBIEKTY PRZEMYSŁOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'ZAKŁADY PRODUKCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'SALONY SAMOCHODOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'SERWISY MOTORYZACYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'OBIEKTY KOMERCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'OBIEKTY USŁUGOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'PRZESTRZENIE FIT-OUT' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'GENERALNE WYKONAWSTWO' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'HALE STALOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'KONSTRUKCJE ŻELBETOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+        </ul>
+        <ul class="gw-marquee-group" aria-hidden="true">
+            <li><span>{% trans 'HALE PRODUKCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'MAGAZYNY' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'LOGISTYKA' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'RETAIL' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'SELF STORAGE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'BIURA I BIUROWCE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'CENTRA LOGISTYCZNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'PARKI HANDLOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'CENTRA DYSTRYBUCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'OBIEKTY PRZEMYSŁOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'ZAKŁADY PRODUKCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'SALONY SAMOCHODOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'SERWISY MOTORYZACYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'OBIEKTY KOMERCYJNE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'OBIEKTY USŁUGOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'PRZESTRZENIE FIT-OUT' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'GENERALNE WYKONAWSTWO' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'HALE STALOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+            <li><span>{% trans 'KONSTRUKCJE ŻELBETOWE' %}</span><i class="ri-arrow-right-up-line"></i></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ============ KOMPLEKSOWA REALIZACJA — zdjęcie + tekst ============ -->
+<section class="gw-about space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gx-60 gy-40">
+            <div class="col-lg-6">
+                <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
+                    <div class="gw-about-img-main">
+                        <img src="{{ photos.gw_1 }}" alt="Hala produkcyjna MBT">
+                        <div class="gw-about-img-badge">
+                            <span class="gw-about-badge-num">20</span>
+                            <span class="gw-about-badge-text">lat na rynku<br>budowlanym</span>
+                        </div>
+                    </div>
+                    <img src="{{ photos.gw_2 }}" alt="{% trans 'Wnętrze hali' %}" class="gw-about-img-small">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-about-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Kompleksowa realizacja — od A do Z' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Przejmujemy pełną odpowiedzialność za Twój <strong>proces budowlany</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Jako doświadczony Generalny Wykonawca działamy w modelu, który zdejmuje z barków Inwestora ciężar koordynacji setek procesów. Nasza praca to nie tylko wznoszenie murów i montaż konstrukcji — to przede wszystkim zarządzanie procesem inwestycyjnym.{% endblocktranslate %}
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Odpowiadamy za przygotowanie harmonogramu, opracowanie szczegółowego kosztorysu, zarządzanie podwykonawcami, aż po finalne przekazanie w pełni funkcjonalnego obiektu, gotowego do prowadzenia biznesu.{% endblocktranslate %}
+                    </p>
+                    <div class="row gy-3 mt-4">
+                        <div class="col-sm-6">
+                            <div class="gw-check-item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <span>{% trans 'Jeden partner, pełna odpowiedzialność' %}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="gw-check-item wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <span>{% trans 'Inżynierska precyzja i optymalizacja' %}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="gw-check-item wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <span>{% trans 'Wolność od formalności' %}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="gw-check-item wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <span>{% trans 'Gwarancja i serwis pozakupowy' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SPECJALIZACJE — 5 kart z ikonami i zdjęciami ============ -->
+<section class="gw-specs space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Nasze specjalizacje' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Budujemy obiekty dla <strong>sektora B2B</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);max-width:680px;margin:0 auto;">{% trans 'Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację zróżnicowanych obiektów.' %}</p>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            {% for s in sectors %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{{ s.url }}" style="display:block; text-decoration:none; color:inherit;" class="gw-spec-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-spec-img">
+                        <img src="{{ s.image }}" alt="{{ s.title }}">
+                    </div>
+                    <div class="gw-spec-icon"><i class="{{ s.icon }}"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{{ s.title }}</h3>
+                        <p>{{ s.opis }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-spec-card gw-spec-cta wow animate__animated animate__fadeInUp">
+                    <div class="gw-spec-body" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:100%;min-height:220px;">
+                        <div class="gw-spec-icon" style="position:static;margin-bottom:20px;"><i class="ri-chat-smile-3-line"></i></div>
+                        <h3>{% trans 'Masz inny typ inwestycji?' %}</h3>
+                        <p>{% trans 'Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu.' %}</p>
+                        <a href="#gw-wycena" class="btn mbt-cta mt-3">{% trans 'Porozmawiaj z nami' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ DLACZEGO MBT — 6 kluczowych korzyści ============ -->
+<section class="gw-why space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Dlaczego warto wybrać MBT?' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Co zyskujesz, wybierając <strong>nasz zespół</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s" style="color:var(--body-color);max-width:680px;margin:0 auto;">
+                {% blocktranslate %}Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym.{% endblocktranslate %}
+            </p>
+        </div>
+        <div class="row gy-30">
+            <!-- Karta 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp">
+                    <span class="gw-why-number">01</span>
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-team-fill"></i></div>
+                        <span class="gw-why-badge">{% trans '1 Kontrakt' %}</span>
+                    </div>
+                    <h3>{% trans 'Jeden partner, pełna odpowiedzialność' %}</h3>
+                    <p>{% trans 'Centralny punkt kontaktu dla całej inwestycji. Pełna synchronizacja dostaw, nadzór nad wszystkimi branżami i gwarancja dotrzymania harmonogramu.' %}</p>
+                    <ul class="gw-why-checklist">
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Dedykowany Project Manager' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Brak rozmytej odpowiedzialności' %}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Karta 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <span class="gw-why-number">02</span>
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-compass-3-fill"></i></div>
+                        <span class="gw-why-badge">{% trans 'Optymalizacja' %}</span>
+                    </div>
+                    <h3>{% trans 'Inżynierska precyzja i optymalizacja' %}</h3>
+                    <p>{% trans 'Szukamy mądrych oszczędności (Value Engineering) — optymalizujemy konstrukcję i materiały bez kompromisów jakościowych i bezpieczeństwa.' %}</p>
+                    <ul class="gw-why-checklist">
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Analiza alternatywnych rozwiązań' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Brak nieprzewidzianych dopłat' %}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Karta 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <span class="gw-why-number">03</span>
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-file-shield-fill"></i></div>
+                        <span class="gw-why-badge">{% trans '0 Formalności' %}</span>
+                    </div>
+                    <h3>{% trans 'Wolność od procedur i formalności' %}</h3>
+                    <p>{% trans 'Przeprowadzamy inwestycję przez cały proces administracyjny: pozwolenia na budowę, decyzje środowiskowe, uzgodnienia PSP/SANEPID i odbiory.' %}</p>
+                    <ul class="gw-why-checklist">
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Kompletna dokumentacja powykonawcza' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Pewne i sprawne odbiory obiektu' %}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Karta 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <span class="gw-why-number">04</span>
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-leaf-fill"></i></div>
+                        <span class="gw-why-badge">{% trans 'BREEAM & ESG' %}</span>
+                    </div>
+                    <h3>{% trans 'Zrównoważone budownictwo' %}</h3>
+                    <p>{% trans 'Projektujemy i wdrażamy technologie obniżające koszty eksploatacji: fotowoltaikę, pompy ciepła, retencję wody oraz certyfikację BREEAM.' %}</p>
+                    <ul class="gw-why-checklist">
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Niższe rachunki za energię obiektu' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Spełnienie wymogów środowiskowych' %}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Karta 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <span class="gw-why-number">05</span>
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-shield-star-fill"></i></div>
+                        <span class="gw-why-badge">{% trans 'Gwarancja' %}</span>
+                    </div>
+                    <h3>{% trans 'Gwarancja i serwis pozakupowy' %}</h3>
+                    <p>{% trans 'Nasza opieka nie kończy się w dniu oddania kluczy. Zapewniamy kompleksową obsługę gwarancyjną, szybki czas reakcji i stały serwis.' %}</p>
+                    <ul class="gw-why-checklist">
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Dedykowana opieka posprzedażowa' %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> {% trans 'Okresowe przeglądy techniczne' %}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Karta 6 — Wyróżniony CTA -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-why-card gw-why-card-cta wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-shake-hands-fill"></i></div>
+                        <span class="gw-why-badge gw-badge-cta">{% trans 'Konsultacja 0 zł' %}</span>
+                    </div>
+                    <h3>{% trans 'Planujesz nową inwestycję?' %}</h3>
+                    <p>{% trans 'Skonsultuj swoją koncepcję z naszymi inżynierami. Bezpłatnie przeanalizujemy możliwości optymalizacji kosztów i harmonogramu budowy.' %}</p>
+                    <a href="#gw-wycena" class="btn mbt-cta w-100 mt-2" style="justify-content:center;">
+                        {% trans 'Wyceń swój projekt' %} <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PROCES WSPÓŁPRACY — 4 kroki ============ -->
+<section class="gw-process space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Jak wygląda proces współpracy?' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Od koncepcji do <strong>oddania kluczy</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            <div class="col-md-6 col-lg-3">
+                <div class="gw-step wow animate__animated animate__fadeInUp">
+                    <span class="gw-step-num">01</span>
+                    <div class="gw-step-icon"><i class="ri-search-eye-line"></i></div>
+                    <h3>{% trans 'Rozpoznanie i Koncepcja' %}</h3>
+                    <p>{% trans 'Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu.' %}</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="gw-step wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <span class="gw-step-num">02</span>
+                    <div class="gw-step-icon"><i class="ri-draft-line"></i></div>
+                    <h3>{% trans 'Projektowanie i Kosztorys' %}</h3>
+                    <p>{% trans 'Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny budżet.' %}</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="gw-step wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <span class="gw-step-num">03</span>
+                    <div class="gw-step-icon"><i class="ri-hammer-line"></i></div>
+                    <h3>{% trans 'Realizacja Budowy' %}</h3>
+                    <p>{% trans 'Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie.' %}</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="gw-step wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <span class="gw-step-num">04</span>
+                    <div class="gw-step-icon"><i class="ri-key-2-line"></i></div>
+                    <h3>{% trans 'Odbiór i Użytkowanie' %}</h3>
+                    <p>{% trans 'Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego obiektu.' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ TECHNOLOGIA I INNOWACJE — ciemne tło ============ -->
+<section class="gw-tech space-top space-extra-bottom">
+    <div class="gw-tech-bg-glow"></div>
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Technologia i innowacje' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" style="color:#fff;">{% blocktranslate %}Budujemy z wykorzystaniem <strong>nowoczesnych technologii</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:rgba(255,255,255,.75);max-width:680px;margin:0 auto;">{% blocktranslate %}Inwestycje realizowane z inżynierską precyzją wymagają najlepszych narzędzi. W MBT korzystamy z zaawansowanych rozwiązań cyfrowych, aby optymalizować czas i koszty Twojej budowy.{% endblocktranslate %}</p>
+        </div>
+        <div class="row gy-30">
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-tech-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-tech-icon"><i class="ri-cpu-line"></i></div>
+                    <h3>BIM (Building Information Modeling)</h3>
+                    <p>{% trans 'Zanim wbijemy pierwszą łopatę, wznosimy Twój obiekt w środowisku cyfrowym. Modelowanie daje pełną kontrolę nad kolizjami projektowymi i pilnuje budżetu.' %}</p>
+                    <div class="gw-tech-bar"><span style="width:95%;"></span></div>
+                    <small>{% trans '95% projektów w BIM' %}</small>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-tech-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="gw-tech-icon"><i class="ri-plane-line"></i></div>
+                    <h3>{% trans 'Monitoring z powietrza (Drony)' %}</h3>
+                    <p>{% trans 'Bieżący, wideo-fotograficzny podgląd postępów prac. Jako Inwestor masz pełną transparentność i kontrolę, bez wychodzenia z biura.' %}</p>
+                    <div class="gw-tech-bar"><span style="width:100%;"></span></div>
+                    <small>{% trans 'Każda budowa pod obserwacją' %}</small>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gw-tech-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="gw-tech-icon"><i class="ri-dashboard-3-line"></i></div>
+                    <h3>{% trans 'Cyfrowe zarządzanie projektami' %}</h3>
+                    <p>{% trans 'Nowoczesne oprogramowanie do zarządzania budową. Harmonogramy, raporty i obieg dokumentacji aktualizowane w czasie rzeczywistym.' %}</p>
+                    <div class="gw-tech-bar"><span style="width:90%;"></span></div>
+                    <small>{% trans 'Raportowanie w czasie rzeczywistym' %}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ Z ŻYCIA BUDOWY — aktualności (blog) ============ -->
+<section class="gw-news space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Prosto z placu budowy' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Nasze <strong>aktualności</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);max-width:680px;margin:0 auto;">{% blocktranslate %}Jesteśmy w ciągłym ruchu. Śledź postępy prac na naszych kluczowych budowach i bądź na bieżąco z życiem zespołu MBT.{% endblocktranslate %}</p>
+        </div>
+        <div class="row gy-30">
+            {% for a in articles %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'articleDetail' a.slug %}" class="gw-news-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="gw-news-img">
+                        {% if a.image %}<img src="{{ a.image }}" alt="{{ a.title }}" loading="lazy">{% else %}<img src="{{ photos.gw_11 }}" alt="{{ a.title }}" loading="lazy">{% endif %}
+                        {% if a.published %}<div class="gw-news-date"><i class="ri-calendar-line"></i> {{ a.published|date:"d.m.Y" }}</div>{% endif %}
+                    </div>
+                    <div class="gw-news-body">
+                        <h3>{{ a.title }}</h3>
+                        <span class="gw-news-more">{% trans 'Czytaj więcej' %} <i class="ri-arrow-right-up-line"></i></span>
+                    </div>
+                </a>
+            </div>
+            {% empty %}
+            <div class="col-12 text-center">
+                <p style="color:var(--body-color);">{% trans 'Aktualności wkrótce.' %}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center mt-50 wow animate__animated animate__fadeInUp">
+            <a href="{% url 'blog' %}" class="btn mbt-cta">{% trans 'Zobacz wszystkie aktualności' %} <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ ESG / ZIELONE BUDOWNICTWO — jasne tło, zielone akcenty ============ -->
+<section class="gw-esg space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="row align-items-center gy-40">
+            <div class="col-lg-5">
+                <div class="gw-esg-media wow animate__animated animate__fadeInLeft">
+                    <img src="{{ photos.gw_10 }}" alt="{% trans 'BREEAM — zielone budownictwo' %}">
+                    <div class="gw-esg-leaf"><i class="ri-leaf-line"></i></div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="gw-esg-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'ESG / Zielone budownictwo' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}MBT stawia na <strong>zrównoważone budownictwo</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">{% blocktranslate %}Tworzymy obiekty, które nie tylko optymalizują procesy biznesowe, ale są również przyjazne dla środowiska i oszczędne w eksploatacji. Pomagamy w realizacji wymogów środowiskowych i asystujemy w procesach uzyskiwania certyfikatów, takich jak BREEAM.{% endblocktranslate %}</p>
+                    <div class="row gy-3 mt-4">
+                        <div class="col-md-6">
+                            <div class="gw-esg-item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                <i class="ri-sun-line"></i>
+                                <div><strong>{% trans 'Instalacje OZE' %}</strong><span>{% trans 'Wydajne systemy fotowoltaiczne na dachach obiektów wielkopowierzchniowych.' %}</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gw-esg-item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                                <i class="ri-water-flash-line"></i>
+                                <div><strong>{% trans 'Gospodarka wodna' %}</strong><span>{% trans 'Systemy retencji i wykorzystania wody deszczowej (szara woda).' %}</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gw-esg-item wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                                <i class="ri-flashlight-line"></i>
+                                <div><strong>{% trans 'Elektromobilność' %}</strong><span>{% trans 'Infrastruktura pod stacje szybkiego ładowania pojazdów EV.' %}</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gw-esg-item wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                                <i class="ri-award-line"></i>
+                                <div><strong>{% trans 'Certyfikacja BREEAM' %}</strong><span>{% trans 'Obiekty zgodne z rygorystycznymi wymogami certyfikacji.' %}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ BEZPIECZEŃSTWO BHP ============ -->
+<section class="gw-bhp space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gy-40">
+            <div class="col-lg-6">
+                <div class="gw-bhp-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Bezpieczeństwo BHP' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Bezkompromisowe podejście do <strong>bezpieczeństwa</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">{% blocktranslate %}Plac budowy to skomplikowany, żywy organizm. W MBT kultura bezpieczeństwa to absolutny fundament naszej pracy. Przestrzegamy najbardziej rygorystycznych norm BHP, stale szkolimy nasz zespół i audytujemy procesy. Dla nas bezpieczna budowa, to terminowa budowa.{% endblocktranslate %}</p>
+                    <div class="row gy-3 mt-4">
+                        <div class="col-sm-6">
+                            <div class="gw-bhp-item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                <i class="ri-vidicon-line"></i>
+                                <span>{% trans 'Monitoring placu budowy 24/7' %}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="gw-bhp-item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                                <i class="ri-graduation-cap-line"></i>
+                                <span>{% trans 'Cykliczne szkolenia zespołu' %}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="gw-bhp-item wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                                <i class="ri-task-line"></i>
+                                <span>{% trans 'Audyty i inspekcje procesów' %}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="gw-bhp-item wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                                <i class="ri-shield-user-line"></i>
+                                <span>{% trans 'Wykwalifikowane kadry BHP' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-bhp-media wow animate__animated animate__fadeInRight">
+                    <img src="{{ photos.gw_9 }}" alt="{% trans 'Bezpieczeństwo na budowie MBT' %}">
+                    <div class="gw-bhp-badge"><i class="ri-shield-check-line"></i> {% trans '0 wypadków' %}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ LUDZIE MBT / KARIERA ============ -->
+<section class="gw-people space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="row align-items-center gy-40">
+            <div class="col-lg-6">
+                <div class="gw-people-media wow animate__animated animate__fadeInLeft">
+                    <img src="{{ photos.gw_5 }}" alt="{% trans 'Zespół MBT' %}">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-people-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Kariera' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Inżynierowie z <strong>pasją do budowania</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">{% blocktranslate %}Za każdą zrealizowaną halą stoi zgrany zespół ekspertów. MBT to grupa doświadczonych inżynierów, kierowników budów i wykwalifikowanych specjalistów, dla których nie ma wyzwań niemożliwych. Budujemy nie tylko obiekty, ale i trwałe relacje.{% endblocktranslate %}</p>
+                    <div class="gw-people-cta wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="{% url 'career' %}" class="btn mbt-cta">{% trans 'Sprawdź oferty pracy' %} <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="{% url 'about' %}" class="btn-with-icon" style="color:var(--theme-color);font-weight:600;">{% trans 'Poznaj nasz zespół' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ REALIZACJE — galeria z animacjami ============ -->
+<section class="gw-projects space-top space-extra-bottom" id="gw-realizacje">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Nasze inwestycje' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Zobacz, co już <strong>zbudowaliśmy</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            {% for p in completed %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="gw-project-img">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <div class="gw-project-overlay">
+                            <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
+                        </div>
+                    </div>
+                    <div class="gw-project-body">
+                        <span class="gw-project-tag">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne Wykonawstwo' %}{% endif %}</span>
+                        <h3>{{ p.title }}</h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center mt-50 wow animate__animated animate__fadeInUp">
+            <a href="{% url 'project' %}" class="btn mbt-cta">{% trans 'Zobacz wszystkie realizacje' %} <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CTA + NASI HANDLOWCY ============ -->
+<section class="contact-area-2 space-top space-extra-bottom overflow-hidden" id="gw-wycena">
+    <div class="container">
+        <div class="contact-wrap2 space overflow-hidden" data-bg-src="{{ photos.home_bg_contact }}">
+            <div class="section-animation-shape1-1 shape-mockup animation-infinite" data-top="0" data-left="0" data-bg-src="/static/img/shape/global-line-shape1.png"></div>
+            <div class="row gy-60 justify-content-center text-center">
+                <div class="col-xl-10">
+                    <div class="title-area mb-4">
+                        <span class="sub-title text-theme">{% trans "Nasi Handlowcy" %} <i class="ri-arrow-right-down-line"></i></span>
+                        <h2 class="sec-title text-white" style="color: #ffffff;">{% trans "Zadzwoń do nas bezpośrednio" %}</h2>
+                        
+                        <a href="tel:{{ site.phone_href }}" class="btn style2 mt-4" style="font-size: 28px; padding: 15px 40px;">
+                            <i class="ri-phone-fill me-2"></i> {{ site.phone }}
+                        </a>
+                    </div>
+                    
+                    <div class="row gy-4 justify-content-center mt-5">
+                        {% for rep in sales_reps %}
+                        <div class="col-md-6 col-lg-3">
+                            <div class="team-card bg-white p-4 rounded text-center">
+                                {% if rep.photo %}
+                                <img src="{{ rep.photo }}" alt="{{ rep.name }}" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover; width: 100%;">
+                                {% endif %}
+                                <h4 class="mb-1">{{ rep.name }}</h4>
+                                <p class="text-theme mb-3">{{ rep.position }}</p>
+                                {% if rep.phone %}
+                                <div class="mb-3">
+                                    <a href="tel:{{ rep.phone|cut:' ' }}" class="btn style2 w-100" style="font-size: 20px; padding: 12px 10px;">
+                                        <i class="ri-phone-fill me-1"></i> {{ rep.phone }}
+                                    </a>
+                                </div>
+                                {% endif %}
+                                <a href="mailto:{{ rep.email }}" class="text-body" style="font-size: 15px;"><i class="ri-mail-line"></i> {{ rep.email }}</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="gw-faq space-top space-extra-bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="title-area text-center mb-50">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">FAQ</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Najczęściej zadawane <strong>pytania</strong>{% endblocktranslate %}</h2>
+                </div>
+                <div class="accordion gw-accordion" id="gwFaq">
+                    <div class="accordion-item wow animate__animated animate__fadeInUp">
+                        <h2 class="accordion-header" id="gwFaqH1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#gwFaqC1" aria-expanded="true" aria-controls="gwFaqC1">
+                                {% trans 'Czym różni się generalny wykonawca od pojedynczych podwykonawców?' %}
+                            </button>
+                        </h2>
+                        <div id="gwFaqC1" class="accordion-collapse collapse show" aria-labelledby="gwFaqH1" data-bs-parent="#gwFaq">
+                            <div class="accordion-body">{% blocktranslate %}Przejmujemy pełną odpowiedzialność za cały proces budowlany — koordynację, harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu zamiast dziesiątek firm.{% endblocktranslate %}</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                        <h2 class="accordion-header" id="gwFaqH2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gwFaqC2" aria-expanded="false" aria-controls="gwFaqC2">
+                                {% trans 'Ile trwa realizacja inwestycji w formule generalnego wykonawstwa?' %}
+                            </button>
+                        </h2>
+                        <div id="gwFaqC2" class="accordion-collapse collapse" aria-labelledby="gwFaqH2" data-bs-parent="#gwFaq">
+                            <div class="accordion-body">{% blocktranslate %}Czas zależy od skali i specyfiki obiektu — zwykle od kilku do kilkunastu miesięcy. Na etapie wyceny otrzymasz precyzyjny harmonogram dopasowany do Twoich potrzeb biznesowych.{% endblocktranslate %}</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="accordion-header" id="gwFaqH3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gwFaqC3" aria-expanded="false" aria-controls="gwFaqC3">
+                                {% trans 'Czy zajmujecie się uzyskaniem pozwoleń i formalnościami?' %}
+                            </button>
+                        </h2>
+                        <div id="gwFaqC3" class="accordion-collapse collapse" aria-labelledby="gwFaqH3" data-bs-parent="#gwFaq">
+                            <div class="accordion-body">{% blocktranslate %}Tak — nawigujemy przez proces administracyjny, koordynujemy dokumentację powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU).{% endblocktranslate %}</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="accordion-header" id="gwFaqH4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gwFaqC4" aria-expanded="false" aria-controls="gwFaqC4">
+                                {% trans 'Czy realizujecie obiekty zgodne z certyfikacją BREEAM?' %}
+                            </button>
+                        </h2>
+                        <div id="gwFaqC4" class="accordion-collapse collapse" aria-labelledby="gwFaqH4" data-bs-parent="#gwFaq">
+                            <div class="accordion-body">{% blocktranslate %}Tak — wdrażamy zrównoważone technologie (fotowoltaika, retencja wody, stacje EV) i realizujemy obiekty zgodne z wymogami certyfikacji BREEAM.{% endblocktranslate %}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

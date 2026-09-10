@@ -1,0 +1,132 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <!--==============================
+    Contact Page Area — biura MBT
+    ==============================-->
+    <section class="contact-page-area space">
+        <div class="container">
+            <div class="title-area text-center mb-50">
+                <span class="sub-title text-theme">{% trans "Kontakt" %} <i class="ri-arrow-right-down-line"></i></span>
+                <h2 class="sec-title">{% blocktranslate %}Skontaktuj się z <strong>nami</strong>{% endblocktranslate %}</h2>
+                <p class="sec-text" style="color:var(--body-color);">{% trans "Trzy biura — jeden zespół gotowy na Twoje wyzwania budowlane." %}</p>
+            </div>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-page-card bg-smoke h-100">
+                        <div class="contact-page-card-details">
+                            <h4 class="contact-page-card_title">{% trans "Biuro — Zabrze" %}</h4>
+                            <div class="contact-page-card-text"><i class="ri-map-pin-line"></i><span>{{ site.office_zabrze }}</span></div>
+                            <div class="contact-page-card-text"><i class="ri-phone-line"></i><a class="contact-page-card_link" href="tel:{{ site.phone_href }}">{{ site.phone }}</a></div>
+                            <div class="contact-page-card-text"><i class="ri-mail-line"></i><a class="contact-page-card_link" href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+                            <div class="contact-page-card-text"><i class="ri-time-line"></i>{{ site.hours }}</div>
+                            <div class="mt-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.3629707727046!2d18.767779977127237!3d50.29565407156298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47113343164f2aad%3A0xebc2f273806ef1ea!2sMBT%20Modern%20Building%20Team%20Sp.%20z%20o.o.%20GENERALNY%20WYKONAWCA%20INWESTYCJI!5e1!3m2!1spl!2spl!4v1788163556401!5m2!1spl!2spl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </div>
+                        </div>
+                        <div class="contact-page-card-thumb mt-auto">
+                            <img src="{{ site.office_zabrze_photo|default:'/static/img/mbt/o-nas-1.jpg' }}" alt="{% trans 'Biuro MBT w Zabrzu' %}" width="921" height="584">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-page-card bg-smoke h-100">
+                        <div class="contact-page-card-details">
+                            <h4 class="contact-page-card_title">{% trans "Oddział — Kraków" %}</h4>
+                            <div class="contact-page-card-text"><i class="ri-map-pin-line"></i><span>{{ site.office_krakow }}</span></div>
+                            <div class="contact-page-card-text"><i class="ri-phone-line"></i><a class="contact-page-card_link" href="tel:{{ site.phone_href }}">{{ site.phone }}</a></div>
+                            <div class="contact-page-card-text"><i class="ri-mail-line"></i><a class="contact-page-card_link" href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+                            <div class="contact-page-card-text"><i class="ri-time-line"></i>{{ site.hours }}</div>
+                            <div class="mt-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.7762324533865!2d19.898349259580815!3d50.00869499823167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165d6d396c2859%3A0xab90ecc5e499be43!2sMBT%20Modern%20Building%20Team%20Sp.%20z%20o.o.%20Generalny%20wykonawca%20inwestycji%20Odzia%C5%82%20Krak%C3%B3w!5e1!3m2!1spl!2spl!4v1788163588486!5m2!1spl!2spl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </div>
+                        </div>
+                        <div class="contact-page-card-thumb mt-auto">
+                            <img src="{{ site.office_krakow_photo|default:'/static/img/mbt/o-nas-2.jpg' }}" alt="{% trans 'Oddział MBT w Krakowie' %}" width="921" height="584">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-page-card bg-smoke h-100">
+                        <div class="contact-page-card-details">
+                            <h4 class="contact-page-card_title">{% trans "Twój plac budowy" %}</h4>
+                            <div class="contact-page-card-text"><i class="ri-map-pin-line"></i><span>{% if site.office_site_adres %}{{ site.office_site_adres }}{% else %}{% trans "Adres Twojej inwestycji" %}{% endif %}</span></div>
+                            <div class="contact-page-card-text"><i class="ri-phone-line"></i><a class="contact-page-card_link" href="tel:{{ site.phone_href }}">{{ site.phone }}</a></div>
+                            <div class="contact-page-card-text"><i class="ri-mail-line"></i><a class="contact-page-card_link" href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+                            <div class="contact-page-card-text"><i class="ri-time-line"></i>{{ site.hours }}</div>
+                            {% if site.office_site_gallery %}
+                            <div class="mt-4">
+                                <div class="global-carousel" data-slide-show="1" data-autoplay="true" data-speed="1000" data-autoplay-speed="4000" data-dots="false" data-arrows="false">
+                                    {% for img_url in site.office_site_gallery %}
+                                    <div>
+                                        <img src="{{ img_url }}" alt="{% trans 'Plac budowy' %}" style="width: 100%; height: 250px; object-fit: cover;">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="contact-page-card-thumb mt-auto">
+                            <img src="{{ site.office_site_photo|default:'/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg' }}" alt="{% trans 'Plac budowy — Twoja inwestycja' %}" width="921" height="584">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/workGallery.html' %}
+
+    <!--==============================
+    Contact Area — Wyceń projekt
+    ==============================-->
+    <section class="contact-area-2 space-bottom overflow-hidden">
+        <div class="container">
+            <div class="contact-wrap2 space overflow-hidden" data-bg-src="{{ photos.home_bg_contact }}">
+                <div class="section-animation-shape1-1 shape-mockup animation-infinite" data-top="0" data-left="0" data-bg-src="/static/img/shape/global-line-shape1.png"></div>
+                <div class="row gy-60 justify-content-center text-center">
+                    <div class="col-xl-10">
+                        <div class="title-area mb-4">
+                            <span class="sub-title text-theme">{% trans "Nasi Handlowcy" %} <i class="ri-arrow-right-down-line"></i></span>
+                            <h2 class="sec-title text-white" style="color: #ffffff;">{% trans "Zadzwoń do nas bezpośrednio" %}</h2>
+                            
+                            <a href="tel:{{ site.phone_href }}" class="btn style2 mt-4" style="font-size: 28px; padding: 15px 40px;">
+                                <i class="ri-phone-fill me-2"></i> {{ site.phone }}
+                            </a>
+                        </div>
+                        
+                        <div class="row gy-4 justify-content-center mt-5">
+                            {% for rep in sales_reps %}
+                            <div class="col-md-6 col-lg-3">
+                                <div class="team-card bg-white p-4 rounded text-center">
+                                    {% if rep.photo %}
+                                    <img src="{{ rep.photo }}" alt="{{ rep.name }}" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover; width: 100%;">
+                                    {% endif %}
+                                    <h4 class="mb-1">{{ rep.name }}</h4>
+                                    <p class="text-theme mb-3">{{ rep.position }}</p>
+                                    {% if rep.phone %}
+                                    <div class="mb-3">
+                                        <a href="tel:{{ rep.phone|cut:' ' }}" class="btn style2 w-100" style="font-size: 20px; padding: 12px 10px;">
+                                            <i class="ri-phone-fill me-1"></i> {{ rep.phone }}
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                    <a href="mailto:{{ rep.email }}" class="text-body" style="font-size: 15px;"><i class="ri-mail-line"></i> {{ rep.email }}</a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+{% endblock content %}

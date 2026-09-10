@@ -1,0 +1,38 @@
+{% load i18n %}
+<!doctype html>
+<html class="no-js" lang="{{ LANGUAGE_CODE }}">
+
+    {% include 'partials/head.html' %}
+    {% block extra_head %}{% endblock %}
+
+<body>
+
+    {% include 'partials/popupBox.html' %}
+
+    {% include 'partials/sidemenu.html' %}
+    
+    {% include 'partials/mobileMenu.html' %}
+
+    {% include 'partials/header.html' %}
+
+    {% if not breadcrumb %}
+        {% include 'partials/breadcrumb.html' %}
+    {% endif %}
+
+    {% block content %}
+    
+    {% endblock %}
+
+    {% if not footer %}
+        {% include 'partials/footer.html' %}
+    {% endif %}
+
+    <!-- Scroll To Top -->
+    {% include 'partials/scrollTop.html' %}
+
+    <!-- Jquery -->
+    {% include 'partials/script.html' %}
+
+</body>
+
+</html>

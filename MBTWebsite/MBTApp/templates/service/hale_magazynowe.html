@@ -1,0 +1,189 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block title %}Budowa Hal Magazynowych i Logistycznych | Generalny Wykonawca MBT{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="gw-hero" style="background-image:url('{{ photos.hale_magazynowe_hero }}');">
+    <div class="gw-hero-kenburns" style="background-image:url('{{ photos.hale_magazynowe_hero }}');"></div>
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <div class="gw-hero-content">
+                    <span class="gw-hero-badge wow animate__animated animate__fadeInDown">{% trans 'Magazyny i Logistyka' %}</span>
+                    <h1 class="gw-hero-title wow animate__animated animate__fadeInUp">{% blocktranslate %}Budowa hal magazynowych i centrów logistycznych{% endblocktranslate %}</h1>
+                    <p class="gw-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        {% blocktranslate %}Tworzymy przestrzeń zoptymalizowaną pod kątem sprawnego łańcucha dostaw, wysokiego składowania i maksymalnej przepustowości.{% endblocktranslate %}
+                    </p>
+                    <div class="gw-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="#rozwiazania" class="btn mbt-cta">{% trans 'Sprawdź co budujemy' %} <i class="ri-arrow-down-line"></i></a>
+                        <a href="{% url 'contact' %}" class="btn gw-btn-outline">{% trans 'Wyceń swój magazyn' %} <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wprowadzenie -->
+<section class="gw-about space-top space-extra-bottom">
+    <div class="container">
+        <div class="row align-items-center gx-60 gy-40">
+            <div class="col-lg-6">
+                <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
+                    <div class="gw-about-img-main">
+                        <img src="{{ photos.hale_magazynowe_1 }}" alt="Centrum Logistyczne">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gw-about-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Infrastruktura TSL' %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Gdy w biznesie liczy się <strong>czas i kubatura</strong>{% endblocktranslate %}</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Dla branży TSL (Transport, Spedycja, Logistyka) oraz dystrybutorów (FMCG) bezawaryjność infrastruktury to podstawa. MBT jako Generalny Wykonawca wznosi nowoczesne hale magazynowe, zaawansowane parki logistyczne oraz dedykowane obiekty w formule BTS (Build-to-Suit).{% endblocktranslate %}
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" style="color:var(--body-color);font-size:16px;line-height:1.8;">
+                        {% blocktranslate %}Realizujemy inwestycje o różnych skalach – od potężnych hubów dystrybucyjnych po elastyczne parki magazynowe. Przykładem naszych kompetencji jest wieloetapowy projekt dla BTS Development Park, gdzie stworzyliśmy kompleks z podziałem na niezależne moduły o elastycznym metrażu, gotowe do adaptacji.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Kluczowe elementy -->
+<section id="rozwiazania" class="gw-specs space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Technologia na straży wydajności' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Elementy, które decydują o <strong>skutecznej logistyce</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-spec-icon"><i class="ri-timer-flash-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Szybkość realizacji i duże rozpiętości' %}</h3>
+                        <p>{% trans 'Dzięki wykorzystaniu nowoczesnych prefabrykatów żelbetowych oraz lekkich, ale wytrzymałych konstrukcji stalowych dachu (ustrój mieszany), błyskawicznie wznosimy obiekty o ogromnej kubaturze i minimalnej liczbie słupów wewnętrznych. Daje to inwestorom maksymalną swobodę w aranżacji regałów. Takie rozwiązania wdrożyliśmy m.in. dla Grupy Raben, firmy Wessper czy hurtowni Warmet.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="gw-spec-icon"><i class="ri-shape-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Posadzki bezspoinowe najwyższej klasy' %}</h3>
+                        <p>{% trans 'W magazynach wysokiego składowania posadzka to absolutny fundament sukcesu. Wylewamy zaawansowane technologicznie płyty posadzkowe o podwyższonej odporności na ścieranie i najwyższych parametrach płaskości, bezwzględnie wymaganych do bezpiecznej i szybkiej pracy nowoczesnych wózków systemowych (VNA).' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="gw-spec-icon"><i class="ri-truck-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Architektura przeładunkowa (Cross-docking)' %}</h3>
+                        <p>{% trans 'Odpowiadamy za kompleksowe zagospodarowanie terenu wokół hali. Realizujemy zoptymalizowane strefy dokowe z precyzyjnymi rampami hydraulicznymi i naprowadzaczami. Budujemy przestronne place manewrowe dla samochodów ciężarowych (TIR) odporne na głębokie koleinowanie, a także bezpieczne drogi pożarowe.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="gw-spec-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="gw-spec-icon"><i class="ri-leaf-line"></i></div>
+                    <div class="gw-spec-body">
+                        <h3>{% trans 'Optymalizacja kosztów utrzymania (OZE)' %}</h3>
+                        <p>{% trans 'Projektujemy obiekty pod kątem maksymalnej redukcji kosztów operacyjnych. Wdrażamy systemy doświetlenia światłem naturalnym (pasma świetlne, świetliki na dachu), wprowadzamy wzmocnienia pod farmy fotowoltaiczne oraz projektujemy zaawansowane systemy retencji wód opadowych.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bezpieczeństwo i standardy (Rozszerzenie) -->
+<section class="gw-why space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Rygorystyczne normy' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Ochrona przeciwpożarowa i <strong>bezpieczeństwo mienia</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s" style="color:var(--body-color);max-width:680px;margin:0 auto;">
+                {% blocktranslate %}Magazynujemy wielomilionowe wartości. Zabezpieczenie ładunków przed pożarem to kluczowy element procesu projektowego.{% endblocktranslate %}
+            </p>
+        </div>
+        <div class="row gy-30">
+            <div class="col-md-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp">
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-fire-fill"></i></div>
+                    </div>
+                    <h3>{% trans 'Zaawansowane PPOŻ' %}</h3>
+                    <p>{% trans 'Instalujemy wydajne systemy tryskaczowe (ESFR), klapy dymowe oraz kurtyny pożarowe, precyzyjnie dzieląc halę na strefy pożarowe, zgodnie z rygorystycznymi wytycznymi.' %}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-shield-keyhole-fill"></i></div>
+                    </div>
+                    <h3>{% trans 'Kontrola Dostępu (KD)' %}</h3>
+                    <p>{% trans 'Wdrażamy inteligentne systemy zarządzania dostępem do obiektu i poszczególnych stref, integrując je z monitoringiem CCTV i systemami SSWiN.' %}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gw-why-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="gw-why-top">
+                        <div class="gw-why-icon"><i class="ri-settings-5-fill"></i></div>
+                    </div>
+                    <h3>{% trans 'Smart Warehousing' %}</h3>
+                    <p>{% trans 'Zapewniamy odpowiednią infrastrukturę prądową i sieciową do obsługi automatyki magazynowej, robotów samojezdnych (AGV) oraz systemów zarządzania magazynem (WMS).' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="space-top space-extra-bottom overflow-hidden" style="background:var(--smoke-color);">
+    <div class="container text-center">
+        <div class="gw-why-card gw-why-card-cta d-inline-block" style="max-width: 800px; padding: 60px;">
+            <h3 class="mb-3" style="font-size: 32px;">{% trans 'Zoptymalizuj swój łańcuch dostaw' %}</h3>
+            <p style="font-size: 18px; margin-bottom: 30px;">{% trans 'Zbudujemy magazyn, który przyspieszy Twoją dystrybucję. Pokaż nam swój biznesplan, a my dostarczymy obiekt, który sprosta Twoim ambicjom.' %}</p>
+            <a href="{% url 'contact' %}" class="btn mbt-cta" style="font-size: 18px; padding: 15px 40px;">
+                {% trans 'Porozmawiajmy o parametrach Twojej hali' %} <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Realizacje -->
+<section class="gw-projects space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans 'Logistyka w praktyce' %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Ostatnie <strong>realizacje</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            {% for p in completed %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="gw-project-img">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <div class="gw-project-overlay">
+                            <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
+                        </div>
+                    </div>
+                    <div class="gw-project-body">
+                        <span class="gw-project-tag">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne Wykonawstwo' %}{% endif %}</span>
+                        <h3>{{ p.title }}</h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

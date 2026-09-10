@@ -1,0 +1,426 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MBT 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-17\n"
+"PO-Revision-Date: 2026-08-17\n"
+"Last-Translator: \n"
+"Language-Team: pl\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "AKTUALNOŚCI"
+msgstr "AKTUALNOŚCI"
+
+msgid "Adres e-mail"
+msgstr "Adres e-mail"
+
+msgid "Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu."
+msgstr ""
+"Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu."
+
+msgid "BLOG"
+msgstr "BLOG"
+
+msgid "Biuro w Zabrzu"
+msgstr "Biuro w Zabrzu"
+
+msgid "Biurowiec"
+msgstr "Biurowiec"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Budujemy obiekty dla <strong>sektora B2B</strong>"
+msgstr "Budujemy obiekty dla <strong>sektora B2B</strong>"
+
+msgid "Budujemy:"
+msgstr "Budujemy:"
+
+msgid "Centra logistyczne i magazyny"
+msgstr "Centra logistyczne i magazyny"
+
+msgid ""
+"Centralny punkt kontaktu. Synchronizacja dostaw, nadzór nad ekipami i pełna "
+"koordynacja harmonogramu."
+msgstr ""
+"Centralny punkt kontaktu. Synchronizacja dostaw, nadzór nad ekipami i pełna "
+"koordynacja harmonogramu."
+
+msgid "Co zyskujesz, wybierając <strong>nasz zespół</strong>"
+msgstr "Co zyskujesz, wybierając <strong>nasz zespół</strong>"
+
+msgid "Czytaj więcej"
+msgstr "Czytaj więcej"
+
+msgid "Dane firmy"
+msgstr "Dane firmy"
+
+msgid "Dlaczego warto wybrać MBT?"
+msgstr "Dlaczego warto wybrać MBT?"
+
+msgid "Dowiedz się więcej"
+msgstr "Dowiedz się więcej"
+
+msgid ""
+"Fotowoltaika, systemy retencji wody, stacje ładowania EV oraz obiekty zgodne"
+" z certyfikacją BREEAM."
+msgstr ""
+"Fotowoltaika, systemy retencji wody, stacje ładowania EV oraz obiekty zgodne"
+" z certyfikacją BREEAM."
+
+msgid "GEN. WYKONAWSTWO"
+msgstr "GEN. WYKONAWSTWO"
+
+msgid "Generalne Wykonawstwo"
+msgstr "Generalne Wykonawstwo"
+
+msgid "Generalne Wykonawstwo<br>Inwestycji Budowlanych"
+msgstr "Generalne Wykonawstwo<br>Inwestycji Budowlanych"
+
+msgid "Generalny Wykonawca"
+msgstr "Generalny Wykonawca"
+
+msgid "Gwarancja i serwis pozakupowy"
+msgstr "Gwarancja i serwis pozakupowy"
+
+msgid "HOME"
+msgstr "HOME"
+
+msgid "Hala magazynowa"
+msgstr "Hala magazynowa"
+
+msgid "Hala produkcyjna"
+msgstr "Hala produkcyjna"
+
+msgid "Hale przemysłowe i produkcyjne"
+msgstr "Hale przemysłowe i produkcyjne"
+
+msgid "Imię i nazwisko"
+msgstr "Imię i nazwisko"
+
+msgid "Inne"
+msgstr "Inne"
+
+msgid "Inżynierska precyzja i optymalizacja"
+msgstr "Inżynierska precyzja i optymalizacja"
+
+msgid "JESTEŚMY DOSTĘPNI"
+msgstr "JESTEŚMY DOSTĘPNI"
+
+msgid "Jak wygląda proces współpracy?"
+msgstr "Jak wygląda proces współpracy?"
+
+msgid "Jeden partner, pełna odpowiedzialność"
+msgstr "Jeden partner, pełna odpowiedzialność"
+
+msgid ""
+"Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> "
+"Budujemy hale magazynowe, produkcyjne i usługowe pod klucz."
+msgstr ""
+"Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> "
+"Budujemy hale magazynowe, produkcyjne i usługowe pod klucz."
+
+msgid "KARIERA"
+msgstr "KARIERA"
+
+msgid "KONTAKT"
+msgstr "KONTAKT"
+
+msgid "Kariera"
+msgstr "Kariera"
+
+msgid "Kontakt"
+msgstr "Kontakt"
+
+msgid "Masz inny typ inwestycji?"
+msgstr "Masz inny typ inwestycji?"
+
+msgid "Masz projekt w głowie?"
+msgstr "Masz projekt w głowie?"
+
+msgid "Napisz do nas!"
+msgstr "Napisz do nas!"
+
+msgid "Nasza Realizacja"
+msgstr "Nasza Realizacja"
+
+msgid ""
+"Nasza opieka nie kończy się w dniu oddania kluczy — kompleksowa obsługa "
+"gwarancyjna i wsparcie serwisowe."
+msgstr ""
+"Nasza opieka nie kończy się w dniu oddania kluczy — kompleksowa obsługa "
+"gwarancyjna i wsparcie serwisowe."
+
+msgid "Nasze najnowsze wpisy na blogu"
+msgstr "Nasze najnowsze wpisy na blogu"
+
+msgid "Nasze specjalizacje"
+msgstr "Nasze specjalizacje"
+
+msgid ""
+"Nawigujemy przez proces administracyjny, koordynujemy dokumentację "
+"powykonawczą i asystujemy przy pozwoleniach."
+msgstr ""
+"Nawigujemy przez proces administracyjny, koordynujemy dokumentację "
+"powykonawczą i asystujemy przy pozwoleniach."
+
+msgid ""
+"Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i nowoczesny"
+" design elewacji."
+msgstr ""
+"Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i nowoczesny"
+" design elewacji."
+
+msgid ""
+"Nowoczesne przestrzenie magazynowe wysokiego składowania o zoptymalizowanej "
+"przepustowości."
+msgstr ""
+"Nowoczesne przestrzenie magazynowe wysokiego składowania o zoptymalizowanej "
+"przepustowości."
+
+msgid "Numer telefonu"
+msgstr "Numer telefonu"
+
+msgid "O NAS"
+msgstr "O NAS"
+
+msgid "O firmie"
+msgstr "O firmie"
+
+msgid "O nas"
+msgstr "O nas"
+
+msgid "OFERTA"
+msgstr "OFERTA"
+
+msgid ""
+"Obiekty dealerskie nowej generacji spełniające globalne standardy "
+"identyfikacji wizualnej marek motoryzacyjnych."
+msgstr ""
+"Obiekty dealerskie nowej generacji spełniające globalne standardy "
+"identyfikacji wizualnej marek motoryzacyjnych."
+
+msgid ""
+"Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale "
+"z suwnicami i zaawansowanym parkiem maszynowym."
+msgstr ""
+"Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale "
+"z suwnicami i zaawansowanym parkiem maszynowym."
+
+msgid "Obiekty handlowe i usługowe"
+msgstr "Obiekty handlowe i usługowe"
+
+msgid ""
+"Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów"
+" ergonomii pracy."
+msgstr ""
+"Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów"
+" ergonomii pracy."
+
+msgid "Obserwuj nas"
+msgstr "Obserwuj nas"
+
+msgid "Od 20 lat z pasją budujemy Wasze biznesy"
+msgstr "Od 20 lat z pasją budujemy Wasze biznesy"
+
+msgid "Od koncepcji do <strong>oddania kluczy</strong>"
+msgstr "Od koncepcji do <strong>oddania kluczy</strong>"
+
+msgid "Odbiór i Użytkowanie"
+msgstr "Odbiór i Użytkowanie"
+
+msgid "Oddział — Kraków"
+msgstr "Oddział — Kraków"
+
+msgid "Oferta"
+msgstr "Oferta"
+
+msgid "Opinie naszych klientów"
+msgstr "Opinie naszych klientów"
+
+msgid "Opisz swój projekt..."
+msgstr "Opisz swój projekt..."
+
+msgid ""
+"Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny "
+"budżet."
+msgstr ""
+"Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny "
+"budżet."
+
+msgid "Polityka prywatności"
+msgstr "Polityka prywatności"
+
+msgid "Pon-Pt:"
+msgstr "Pon-Pt:"
+
+msgid "Porozmawiaj z nami"
+msgstr "Porozmawiaj z nami"
+
+msgid "Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu."
+msgstr "Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu."
+
+msgid "Portfolio"
+msgstr "Portfolio"
+
+msgid "Poznaj nas <strong>bliżej</strong>"
+msgstr "Poznaj nas <strong>bliżej</strong>"
+
+msgid "Poznaj nasz zespół"
+msgstr "Poznaj nasz zespół"
+
+msgid ""
+"Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie."
+msgstr ""
+"Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie."
+
+msgid "Projektowanie"
+msgstr "Projektowanie"
+
+msgid "Projektowanie i Kosztorys"
+msgstr "Projektowanie i Kosztorys"
+
+msgid "Przestrzenie biurowe"
+msgstr "Przestrzenie biurowe"
+
+msgid "Przydatne linki"
+msgstr "Przydatne linki"
+
+msgid "REALIZACJE"
+msgstr "REALIZACJE"
+
+msgid "Realizacja Budowy"
+msgstr "Realizacja Budowy"
+
+msgid "Realizacje"
+msgstr "Realizacje"
+
+msgid "Regulamin"
+msgstr "Regulamin"
+
+msgid "Rodzaj inwestycji"
+msgstr "Rodzaj inwestycji"
+
+msgid "Rozpoznanie i Koncepcja"
+msgstr "Rozpoznanie i Koncepcja"
+
+msgid "Salony samochodowe (Automotive)"
+msgstr "Salony samochodowe (Automotive)"
+
+msgid "Siedziba"
+msgstr "Siedziba"
+
+msgid ""
+"Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów w jakości"
+" materiałów i bezpieczeństwie."
+msgstr ""
+"Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów w jakości"
+" materiałów i bezpieczeństwie."
+
+msgid "Te marki nam zaufały"
+msgstr "Te marki nam zaufały"
+
+msgid "Technologia i innowacje"
+msgstr "Technologia i innowacje"
+
+msgid "Telefon"
+msgstr "Telefon"
+
+msgid ""
+"Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego "
+"obiektu."
+msgstr ""
+"Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego "
+"obiektu."
+
+msgid "Twoja Wizja"
+msgstr "Twoja Wizja"
+
+msgid ""
+"Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację "
+"zróżnicowanych obiektów."
+msgstr ""
+"Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację "
+"zróżnicowanych obiektów."
+
+msgid "Wolność od formalności"
+msgstr "Wolność od formalności"
+
+msgid "Wpisz swój e-mail..."
+msgstr "Wpisz swój e-mail..."
+
+msgid "Wsparcie inwestorskie"
+msgstr "Wsparcie inwestorskie"
+
+msgid "Wszelkie prawa zastrzeżone"
+msgstr "Wszelkie prawa zastrzeżone"
+
+msgid ""
+"Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy "
+"detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi "
+"standardami."
+msgstr ""
+"Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy "
+"detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi "
+"standardami."
+
+msgid "Wyceń projekt"
+msgstr "Wyceń projekt"
+
+msgid "Wykonawstwo"
+msgstr "Wykonawstwo"
+
+msgid "Wyślij zapytanie"
+msgstr "Wyślij zapytanie"
+
+msgid "ZAPISZ SIĘ"
+msgstr "ZAPISZ SIĘ"
+
+msgid "Zapytaj o wycenę"
+msgstr "Zapytaj o wycenę"
+
+msgid "Zobacz cały zespół"
+msgstr "Zobacz cały zespół"
+
+msgid "Zobacz efekty naszej pracy"
+msgstr "Zobacz efekty naszej pracy"
+
+msgid "Zobacz realizacje"
+msgstr "Zobacz realizacje"
+
+msgid "Zobacz wszystkie realizacje"
+msgstr "Zobacz wszystkie realizacje"
+
+msgid "Zobacz wszystkie wpisy"
+msgstr "Zobacz wszystkie wpisy"
+
+msgid "Zrównoważone budownictwo"
+msgstr "Zrównoważone budownictwo"
+
+msgid "centra logistyczne"
+msgstr "centra logistyczne"
+
+msgid "hale produkcyjne"
+msgstr "hale produkcyjne"
+
+msgid "język"
+msgstr "język"
+
+msgid "lat doświadczenia"
+msgstr "lat doświadczenia"
+
+msgid "parki handlowe"
+msgstr "parki handlowe"
+
+msgid "biurowce"
+msgstr "biurowce"
+
+msgid "salony samochodowe"
+msgstr "salony samochodowe"
+
+msgid "zrealizowanych inwestycji"
+msgstr "zrealizowanych inwestycji"

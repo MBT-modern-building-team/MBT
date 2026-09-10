@@ -1,0 +1,14 @@
+{
+  "source": "manual",
+  "recipe": {
+    "name": "MBT Django (Construz)",
+    "kind": "django",
+    "bootstrap": [],
+    "build": [],
+    "test": [".venv/bin/python manage.py check"],
+    "start": ".venv/bin/python manage.py runserver 0.0.0.0:8765 --noreload",
+    "port": 8765,
+    "readinessPath": "/de/",
+    "evidence": ["Detected manage.py", "Using project-local venv: .venv/bin/python"]
+  }
+}

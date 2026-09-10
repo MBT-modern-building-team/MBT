@@ -1,0 +1,24 @@
+{% load i18n static %}
+<div class="mbt-upload">
+  <div class="mbt-upload-preview">
+    {% if widget.current_url %}
+      {% if widget.current_url|slice:"-4:"|lower == ".mp4" or widget.current_url|slice:"-5:"|lower == ".webm" or widget.current_url|slice:"-4:"|lower == ".mov" or widget.current_url|slice:"-4:"|lower == ".ogg" or widget.current_url|slice:"-4:"|lower == ".m4v" %}
+        <video src="{{ widget.current_url }}" class="mbt-upload-video" controls muted preload="metadata"></video>
+      {% else %}
+        <img src="{{ widget.current_url }}" alt="podgląd" class="mbt-upload-img">
+      {% endif %}
+    {% else %}
+      <span class="mbt-upload-empty">Brak filmu</span>
+    {% endif %}
+  </div>
+  <div class="mbt-upload-controls">
+    <label class="mbt-upload-btn">
+      Wybierz film…
+      <input type="file" name="{{ widget.file_name }}" accept="video/*" class="mbt-upload-file" data-preview="1">
+    </label>
+    <span class="mbt-upload-hint">lub wklej URL:</span>
+    <input type="text" name="{{ widget.name }}" value="{{ widget.current_url|default:'' }}"
+           class="mbt-upload-url vTextField" data-url-input="1">
+  </div>
+  <div class="mbt-upload-done" hidden>✓ Film wybrany — kliknij Zapisz, aby wgrać go na serwer</div>
+</div>

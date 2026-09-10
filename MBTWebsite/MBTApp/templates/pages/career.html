@@ -1,0 +1,55 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <section class="career-page space-top space-extra-bottom">
+        <div class="container">
+
+            <div class="title-area text-center mb-50">
+                <span class="sub-title text-theme">{% trans "Kariera" %} <i class="ri-arrow-right-down-line"></i></span>
+                <h2 class="sec-title">{% blocktranslate %}Dołącz do <strong>MBT</strong>{% endblocktranslate %}</h2>
+                <p class="sec-text" style="color:var(--body-color);max-width:640px;margin:0 auto;">{% trans "Jesteśmy zespołem specjalistów, którzy dzięki trosce i umiejętności kooperacji realizują wspólne cele. Szukamy ludzi z pasją do budownictwa." %}</p>
+            </div>
+
+            <div class="row gy-30 justify-content-center">
+                {% for job in jobs %}
+                <div class="col-md-6 col-lg-4">
+                    <a href="{% url 'careerDetail' job.slug %}" class="mbt-job-card d-block" style="background:var(--smoke-color);border:1px solid var(--border-color);border-radius:8px;padding:32px 28px;text-decoration:none;transition:all .3s ease;display:block;">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px;">
+                            <span class="mbt-job-icon" style="width:52px;height:52px;border-radius:10px;background:var(--theme-color);display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;"><i class="ri-briefcase-4-line"></i></span>
+                            <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--theme-color);">{% trans "Praca w MBT" %}</span>
+                        </div>
+                        <h3 style="font-family:var(--title-font);font-size:20px;line-height:1.35;margin:0 0 12px;color:var(--title-color);">{{ job.title }}</h3>
+                        <p style="color:var(--body-color);font-size:14px;margin:0 0 18px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{{ job.text|truncatechars:130 }}</p>
+                        <span class="btn-with-icon" style="color:var(--theme-color);font-weight:600;font-size:14px;">
+                            {% trans "Zobacz ofertę" %}
+                            <span class="btn-icon" style="width:34px;height:34px;border-radius:50%;background:var(--theme-color);color:#fff;display:inline-flex;align-items:center;justify-content:center;margin-left:8px;"><i class="ri-arrow-right-up-line"></i></span>
+                        </span>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if workers %}
+            <div class="mbt-career-team mt-80">
+                <div class="title-area text-center mb-40">
+                    <span class="sub-title text-theme">{% trans "Zespół" %} <i class="ri-arrow-right-down-line"></i></span>
+                    <h2 class="sec-title">{% trans 'Poznaj ludzi, którzy tworzą MBT' %}</h2>
+                </div>
+                <div class="row gy-30 justify-content-center">
+                    {% for w in workers %}
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                        {% include 'partials/workerGalleryCard.html' %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+
+    {% include 'partials/workGallery.html' %}
+
+{% endblock content %}

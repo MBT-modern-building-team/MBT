@@ -1,0 +1,398 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+
+<!-- ============================================================
+     OFERTA MBT — inny layout niż landing GW (jasny, split, timeline)
+     ============================================================ -->
+
+<!-- ============ HERO SPLIT — jasny, tekst + zdjęcie ============ -->
+<section class="of-hero">
+    <div class="of-hero-bg-shapes"></div>
+    <div class="container">
+        <div class="row align-items-center gy-40">
+            <div class="col-lg-6">
+                <div class="of-hero-content">
+                    <span class="of-hero-badge wow animate__animated animate__fadeInDown"><i class="ri-building-line"></i> {% trans "Oferta MBT" %}</span>
+                    <h1 class="of-hero-title wow animate__animated animate__fadeInUp">{% blocktranslate %}Nie tylko generalne wykonawstwo — <strong>wybierz zakres, którego potrzebujesz</strong>{% endblocktranslate %}</h1>
+                    <p class="of-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        {% blocktranslate %}Możemy zaprojektować, wybudować, a nawet pomóc tylko w pozwoleniach i formalnościach. Zamów u nas wyłącznie projekt, wyłącznie budowę lub pełne wsparcie inwestorskie — wszystko w jednym miejscu.{% endblocktranslate %}
+                    </p>
+                    <div class="of-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a href="#of-kontakt" class="btn mbt-cta">{% trans "Wyceń projekt" %} <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="#of-realizacje" class="btn of-btn-ghost">{% trans "Zobacz realizacje" %} <i class="ri-arrow-down-line"></i></a>
+                    </div>
+                    <div class="of-hero-mini-stats wow animate__animated animate__fadeInUp" data-wow-delay="0.45s">
+                        <div class="of-mini-stat">
+                            <span class="of-mini-num"><span class="counter">20</span>+</span>
+                            <span class="of-mini-label">{% trans "lat na rynku" %}</span>
+                        </div>
+                        <div class="of-mini-stat">
+                            <span class="of-mini-num"><span class="counter">33</span>+</span>
+                            <span class="of-mini-label">{% trans "realizacji" %}</span>
+                        </div>
+                        <div class="of-mini-stat">
+                            <span class="of-mini-num"><span class="counter">150</span>k+</span>
+                            <span class="of-mini-label">{% trans "m² powierzchni" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="of-hero-media wow animate__animated animate__fadeInRight">
+                    <div class="of-hero-media-main">
+                        <img src="{{ photos.service_2 }}" alt="{% trans 'Budowa hali MBT' %}">
+                        <div class="of-hero-media-frame"></div>
+                    </div>
+                    <div class="of-hero-media-card">
+                        <i class="ri-hammer-line"></i>
+                        <div>
+                            <strong>{% trans "Terminowość" %}</strong>
+                            <span>{% trans "gwarantowana umową" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ USŁUGI — 3 karty ============ -->
+<section class="of-services space-top space-extra-bottom" id="of-uslugi">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans "Nasza specjalizacja" %} <i class="ri-arrow-right-down-line"></i></span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Co dla Ciebie <strong>zbudujemy?</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);max-width:680px;margin:0 auto;">{% trans "Poznaj nasze główne obszary działania jako Generalnego Wykonawcy. Realizujemy obiekty na miarę Twojego biznesu." %}</p>
+        </div>
+        <div class="row gy-40 justify-content-center">
+            <!-- Hale Przemysłowe -->
+            <div class="col-md-6 col-lg-4">
+                <div class="of-service-card wow animate__animated animate__fadeInUp" style="cursor:pointer;" onclick="window.location.href='{% url 'halePrzemyslowe' %}'">
+                    <div class="of-service-card-top">
+                        <div class="of-service-icon">
+                            <i class="ri-building-2-line" style="font-size:40px;color:var(--theme-color);"></i>
+                        </div>
+                        <span class="of-service-num">01</span>
+                    </div>
+                    <span class="of-service-badge">{% trans "Przemysł" %}</span>
+                    <h3>{% trans "Hale Przemysłowe" %}</h3>
+                    <p>{% trans "Budujemy obiekty, w których technologia dyktuje warunki. Dostarczamy bezkompromisową jakość dla sektora produkcyjnego." %}</p>
+                    <ul>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Fundamentowanie pod obciążenia dynamiczne" %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Hale suwnicowe i konstrukcje ciężkie" %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Zaawansowane instalacje technologiczne" %}</li>
+                    </ul>
+                    <a href="{% url 'halePrzemyslowe' %}" class="btn-with-icon">{% trans "Dowiedz się więcej" %} <span class="btn-icon"><i class="ri-arrow-right-up-line"></i></span></a>
+                </div>
+            </div>
+            <!-- Hale Magazynowe -->
+            <div class="col-md-6 col-lg-4">
+                <div class="of-service-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" style="cursor:pointer;" onclick="window.location.href='{% url 'haleMagazynowe' %}'">
+                    <div class="of-service-card-top">
+                        <div class="of-service-icon">
+                            <i class="ri-archive-line" style="font-size:40px;color:var(--theme-color);"></i>
+                        </div>
+                        <span class="of-service-num">02</span>
+                    </div>
+                    <span class="of-service-badge">{% trans "Logistyka" %}</span>
+                    <h3>{% trans "Hale Magazynowe" %}</h3>
+                    <p>{% trans "Tworzymy przestrzeń zoptymalizowaną pod kątem sprawnego łańcucha dostaw, wysokiego składowania i maksymalnej przepustowości." %}</p>
+                    <ul>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Szybkość realizacji i duże rozpiętości" %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Posadzki bezspoinowe najwyższej klasy" %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Architektura przeładunkowa (Cross-docking)" %}</li>
+                    </ul>
+                    <a href="{% url 'haleMagazynowe' %}" class="btn-with-icon">{% trans "Dowiedz się więcej" %} <span class="btn-icon"><i class="ri-arrow-right-up-line"></i></span></a>
+                </div>
+            </div>
+            <!-- Obiekty Komercyjne -->
+            <div class="col-md-6 col-lg-4">
+                <div class="of-service-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="cursor:pointer;" onclick="window.location.href='{% url 'obiektyKomercyjne' %}'">
+                    <div class="of-service-card-top">
+                        <div class="of-service-icon">
+                            <i class="ri-shopping-bag-3-line" style="font-size:40px;color:var(--theme-color);"></i>
+                        </div>
+                        <span class="of-service-num">03</span>
+                    </div>
+                    <span class="of-service-badge">{% trans "Retail & Auto" %}</span>
+                    <h3>{% trans "Obiekty Komercyjne" %}</h3>
+                    <p>{% trans "Architektura, która sprzedaje. Łączymy rygorystyczne standardy identyfikacji wizualnej z wielofunkcyjnością użytkową." %}</p>
+                    <ul>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Rygorystyczne standardy marek (Corporate Identity)" %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Parki handlowe i elastyczne przestrzenie usługowe" %}</li>
+                        <li><i class="ri-checkbox-circle-fill"></i>{% trans "Nowoczesne fasady i wykończenia" %}</li>
+                    </ul>
+                    <a href="{% url 'obiektyKomercyjne' %}" class="btn-with-icon">{% trans "Dowiedz się więcej" %} <span class="btn-icon"><i class="ri-arrow-right-up-line"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ WYBIERZ SWÓJ ZAKRES — elastyczne opcje ============ -->
+<section class="of-scope space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans "Elastyczny zakres współpracy" %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Zamów <strong>dokładnie to, czego potrzebujesz</strong>{% endblocktranslate %}</h2>
+            <p class="sec-text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="color:var(--body-color);max-width:680px;margin:0 auto;">{% trans "Jesteś na etapie projektu, budowy, a może szukasz kogoś, kto załatwi pozwolenia? Wszystko możesz zamówić osobno — albo razem, jako pełne generalne wykonawstwo." %}</p>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="of-scope-card wow animate__animated animate__fadeInUp">
+                    <div class="of-scope-icon"><i class="ri-draft-line"></i></div>
+                    <h3>{% trans "Tylko projekt" %}</h3>
+                    <p>{% trans "Potrzebujesz gotowej dokumentacji projektowej? Zaprojektujemy halę, magazyn lub obiekt usługowy — z uzgodnieniami i pozwoleniem na budowę." %}</p>
+                    <a href="#of-kontakt" class="of-scope-link">{% trans "Zapytaj o projekt" %} <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="of-scope-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="of-scope-icon"><i class="ri-hammer-line"></i></div>
+                    <h3>{% trans "Tylko budowa" %}</h3>
+                    <p>{% trans "Masz już projekt? Wybudujemy obiekt zgodnie z dokumentacją — od fundamentów po wykończenie i odbiory." %}</p>
+                    <a href="#of-kontakt" class="of-scope-link">{% trans "Zapytaj o budowę" %} <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="of-scope-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="of-scope-icon"><i class="ri-file-list-3-line"></i></div>
+                    <h3>{% trans "Tylko formalności" %}</h3>
+                    <p>{% trans "Nie chcesz tracić czasu na urzędy? Przejmiemy pozwolenia, uzgodnienia, odbiory i dokumentację powykonawczą." %}</p>
+                    <a href="#of-kontakt" class="of-scope-link">{% trans "Zapytaj o wsparcie" %} <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="of-scope-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="of-scope-icon"><i class="ri-building-2-line"></i></div>
+                    <h3>{% trans "Pełne generalne wykonawstwo" %}</h3>
+                    <p>{% trans "Projekt + budowa + formalności w jednym kontrakcie. Jeden partner, pełna odpowiedzialność, zero pośredników." %}</p>
+                    <a href="{% url 'generalContracting' %}" class="of-scope-link">{% trans "Zobacz stronę GW" %} <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FORMUŁY WSPÓŁPRACY — 3 poziome pasy ============ -->
+<section class="of-formulas space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans "Formuły współpracy" %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Dopasowujemy się do <strong>Twoich potrzeb</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="of-formula-list">
+            <!-- Projektuj-Buduj -->
+            <div class="of-formula-row wow animate__animated animate__fadeInUp">
+                <div class="of-formula-icon"><i class="ri-draft-line"></i></div>
+                <div class="of-formula-body">
+                    <h3>{% trans "Projektuj-Buduj" %}</h3>
+                    <p>{% trans "Jeden kontrakt obejmuje projekt i wykonanie. Szybka realizacja, jedna odpowiedzialność, optymalizacja kosztów na etapie projektowania." %}</p>
+                </div>
+                <a href="#of-kontakt" class="of-formula-arrow"><i class="ri-arrow-right-line"></i></a>
+            </div>
+            <!-- Generalne Wykonawstwo -->
+            <div class="of-formula-row wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                <div class="of-formula-icon"><i class="ri-hammer-line"></i></div>
+                <div class="of-formula-body">
+                    <h3>{% trans "Generalne Wykonawstwo" %}</h3>
+                    <p>{% trans "Przejmujemy pełną odpowiedzialność za proces budowlany — koordynacja, harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu." %}</p>
+                </div>
+                <a href="{% url 'generalContracting' %}" class="of-formula-arrow"><i class="ri-arrow-right-up-line"></i></a>
+            </div>
+            <!-- Optymalizuj-Buduj -->
+            <div class="of-formula-row wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <div class="of-formula-icon"><i class="ri-line-chart-line"></i></div>
+                <div class="of-formula-body">
+                    <h3>{% trans "Optymalizuj-Buduj" %}</h3>
+                    <p>{% trans "Analizujemy istniejący projekt pod kątem kosztów i czasu, proponujemy oszczędności bez kompromisów jakościowych, a następnie budujemy." %}</p>
+                </div>
+                <a href="#of-kontakt" class="of-formula-arrow"><i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ BRANŻE — pasek ikon ============ -->
+<section class="of-industries space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans "Branże" %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Budujemy dla <strong>każdej branży</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="of-industry wow animate__animated animate__zoomIn">
+                    <div class="of-industry-icon"><i class="ri-building-2-line"></i></div>
+                    <span>{% trans "Hale produkcyjne" %}</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="of-industry wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+                    <div class="of-industry-icon"><i class="ri-tools-line"></i></div>
+                    <span>{% trans "Centra logistyczne" %}</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="of-industry wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <div class="of-industry-icon"><i class="ri-briefcase-4-line"></i></div>
+                    <span>{% trans "Biurowce" %}</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="of-industry wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                    <div class="of-industry-icon"><i class="ri-shopping-bag-3-line"></i></div>
+                    <span>{% trans "Parki handlowe" %}</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="of-industry wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                    <div class="of-industry-icon"><i class="ri-archive-line"></i></div>
+                    <span>{% trans "Magazyny" %}</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="of-industry wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                    <div class="of-industry-icon"><i class="ri-box-3-line"></i></div>
+                    <span>{% trans "Self Storage" %}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ DLACZEGO MBT — 2-kolumnowa lista z ikonami ============ -->
+<section class="of-why space-top space-extra-bottom" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="row align-items-center gy-40">
+            <div class="col-lg-5">
+                <div class="of-why-media wow animate__animated animate__fadeInLeft">
+                    <img src="{{ photos.service_1 }}" alt="{% trans 'Realizacja MBT' %}">
+                    <div class="of-why-badge">
+                        <span class="counter">20</span>
+                        <small>{% trans "lat doświadczenia" %}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="of-why-content">
+                    <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans "Dlaczego MBT?" %}</span>
+                    <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Możesz na nas liczyć <strong>na każdym etapie</strong>{% endblocktranslate %}</h2>
+                    <div class="row gy-3 mt-4">
+                        <div class="col-md-6">
+                            <div class="of-why-item wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                                <i class="ri-timer-line"></i>
+                                <div><strong>{% trans "Terminowość i elastyczność" %}</strong><span>{% trans "Realizujemy zgodnie z harmonogramem, reagując na zmiany." %}</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="of-why-item wow animate__animated animate__fadeInUp" data-wow-delay="0.25s">
+                                <i class="ri-money-dollar-circle-line"></i>
+                                <div><strong>{% trans "Optymalizacja kosztów" %}</strong><span>{% trans "Oszczędności bez rezygnacji z jakości i funkcji." %}</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="of-why-item wow animate__animated animate__fadeInUp" data-wow-delay="0.35s">
+                                <i class="ri-shield-check-line"></i>
+                                <div><strong>{% trans "Uczciwość i transparentność" %}</strong><span>{% trans "Pełna, przejrzysta specyfikacja w każdej ofercie." %}</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="of-why-item wow animate__animated animate__fadeInUp" data-wow-delay="0.45s">
+                                <i class="ri-team-line"></i>
+                                <div><strong>{% trans "Jeden zespół, pełna odpowiedzialność" %}</strong><span>{% trans "Bez pośredników — od projektu po odbiór." %}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PROCES — pionowy timeline ============ -->
+<section class="of-process space-top space-extra-bottom">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans "Proces współpracy" %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Jak pracujemy <strong>krok po kroku</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="of-timeline">
+            <div class="of-timeline-item wow animate__animated animate__fadeInUp">
+                <div class="of-timeline-num">01</div>
+                <div class="of-timeline-body">
+                    <h3>{% trans "Analiza i koncepcja" %}</h3>
+                    <p>{% trans "Poznajemy Twoje potrzeby, analizujemy teren i przygotowujemy wstępną koncepcję wraz z szacunkiem kosztów." %}</p>
+                </div>
+            </div>
+            <div class="of-timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                <div class="of-timeline-num">02</div>
+                <div class="of-timeline-body">
+                    <h3>{% trans "Projekt i oferta" %}</h3>
+                    <p>{% trans "Przygotowujemy projekt, harmonogram i transparentny kosztorys. Negocjujemy i ustalamy szczegóły umowy." %}</p>
+                </div>
+            </div>
+            <div class="of-timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <div class="of-timeline-num">03</div>
+                <div class="of-timeline-body">
+                    <h3>{% trans "Realizacja" %}</h3>
+                    <p>{% trans "Budujemy — fundamenty, konstrukcja, instalacje, wykończenie. Na bieżąco raportujemy postęp prac." %}</p>
+                </div>
+            </div>
+            <div class="of-timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                <div class="of-timeline-num">04</div>
+                <div class="of-timeline-body">
+                    <h3>{% trans "Odbiór i klucze" %}</h3>
+                    <p>{% trans "Testy końcowe, komplet dokumentacji, pozwolenie na użytkowanie i przekazanie gotowego obiektu." %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ REALIZACJE — pasek (inny układ niż GW) ============ -->
+<section class="of-projects space-top space-extra-bottom" id="of-realizacje" style="background:var(--smoke-color);">
+    <div class="container">
+        <div class="title-area text-center mb-50">
+            <span class="sub-title text-theme wow animate__animated animate__fadeInUp">{% trans "Realizacje" %}</span>
+            <h2 class="sec-title wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">{% blocktranslate %}Nasze obiekty <strong>mówią za nas</strong>{% endblocktranslate %}</h2>
+        </div>
+        <div class="row gy-30">
+            {% for p in completed %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url 'realizacjaDetail' p.slug %}" class="of-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
+                    <div class="of-project-img">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <span class="of-project-tag">{{ p.formula|default:'GW' }}</span>
+                    </div>
+                    <div class="of-project-body">
+                        <h3>{{ p.title }}</h3>
+                        <span class="of-project-link">{% trans "Zobacz realizację" %} <i class="ri-arrow-right-up-line"></i></span>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ============ CTA BAND — pomarańczowy pas (inny niż GW) ============ -->
+<section class="of-cta-band" id="of-kontakt">
+    <div class="container">
+        <div class="of-cta-band-inner wow animate__animated animate__fadeInUp">
+            <div class="of-cta-band-text">
+                <h2>{% trans "Masz pytania o swoją inwestycję?" %}</h2>
+                <p>{% trans "Porozmawiajmy o Twoim projekcie — przygotujemy wycenę i doradzimy najlepszą formułę." %}</p>
+            </div>
+            <div class="of-cta-band-actions">
+                <a href="tel:{{ site.phone_href }}" class="of-cta-phone"><i class="ri-phone-fill"></i> {{ site.phone }}</a>
+                <a href="{% url 'contact' %}" class="btn mbt-cta of-cta-btn">{% trans "Skontaktuj się" %} <i class="ri-arrow-right-up-line"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
