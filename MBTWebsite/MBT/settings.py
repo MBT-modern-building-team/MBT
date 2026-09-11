@@ -34,11 +34,14 @@ DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 # Uwaga: Django nie wspiera wildcardów w ALLOWED_HOSTS — każdą subdomenę
 # (np. admin.*) trzeba wpisać jawnie lub użyć '.' na początku wpisu,
 # co obejmuje daną domenę i jej subdomeny ('.vercel.app' obejmie admin.x.vercel.app).
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,.vercel.app').split(',')
 if DEBUG:
     ALLOWED_HOSTS = ['*']
+else:
+    if '.vercel.app' not in ALLOWED_HOSTS:
+        ALLOWED_HOSTS.append('.vercel.app')
 
-CSRF_TRUSTED_ORIGINS = ['https://nowa-strona-xi.vercel.app', 'https://*.vercel.app']
+CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 

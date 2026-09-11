@@ -206,3 +206,44 @@
         restart();
     })();
 </script>
+<!-- Naprawa dla Lighthouse: Ukryte slajdy (Slick) mają focusowalne linki -->
+<script>
+    (function () {
+        function fixSlickA11y() {
+            var hiddenSlides = document.querySelectorAll('.slick-slide[aria-hidden="true"]');
+            hiddenSlides.forEach(function(slide) {
+                var focusables = slide.querySelectorAll('a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                focusables.forEach(function(el) {
+                    el.setAttribute('tabindex', '-1');
+                });
+            });
+            var activeSlides = document.querySelectorAll('.slick-slide:not([aria-hidden="true"])');
+            activeSlides.forEach(function(slide) {
+                var focusables = slide.querySelectorAll('a, button, input, select, textarea');
+                focusables.forEach(function(el) {
+                    if (el.getAttribute('tabindex') === '-1' && !el.hasAttribute('data-no-tab')) {
+                        el.removeAttribute('tabindex');
+                    }
+                });
+            });
+        }
+        
+        var observer = new MutationObserver(function(mutations) {
+            var needsFix = false;
+            mutations.forEach(function(m) {
+                if (m.attributeName === 'aria-hidden' || m.attributeName === 'class') {
+                    needsFix = true;
+                }
+            });
+            if (needsFix) fixSlickA11y();
+        });
+        
+        window.addEventListener("load", function() {
+            var sliders = document.querySelectorAll('.slick-slider');
+            sliders.forEach(function(slider) {
+                observer.observe(slider, { attributes: true, subtree: true, attributeFilter: ['aria-hidden', 'class'] });
+            });
+            fixSlickA11y();
+        });
+    })();
+</script>

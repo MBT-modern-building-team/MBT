@@ -29,6 +29,8 @@
     ==============================-->
     {% include 'partials/header.html' %}
 
+    <main id="main-content">
+
     <!--==============================
     Hero Area
     ==============================-->
@@ -52,33 +54,47 @@
             // 'load' odpala się dopiero gdy cała strona (w tym zdjęcia i css) się w pełni załaduje
             window.addEventListener("load", function() {
                 var video = document.querySelector('video.lazy-video');
+                var loaded = false;
                 
-                if (video && window.innerWidth > 768) {
-                    // Tworzymy źródła i dodajemy do odtwarzacza
-                    var sourceWebM = document.createElement('source');
-                    sourceWebM.src = video.getAttribute('data-src-webm');
-                    sourceWebM.type = 'video/webm';
-                    
-                    var sourceMP4 = document.createElement('source');
-                    sourceMP4.src = video.getAttribute('data-src-mp4');
-                    sourceMP4.type = 'video/mp4';
-                    
-                    video.appendChild(sourceWebM);
-                    video.appendChild(sourceMP4);
-                    
-                    // Rozpoczynamy pobieranie w tle
-                    video.load();
-                    
-                    // Czekamy, aż pobierze się na tyle duży fragment, by płynnie odtworzyć
-                    video.addEventListener('canplaythrough', function() {
-                        var playPromise = video.play();
-                        if (playPromise !== undefined) {
-                            playPromise.catch(function(e) {
-                                console.warn("Autoplay zablokowany: ", e);
-                            });
-                        }
-                    });
+                function loadVideo() {
+                    if (loaded) return;
+                    loaded = true;
+                    if (video && window.innerWidth > 768) {
+                        // Tworzymy źródła i dodajemy do odtwarzacza
+                        var sourceWebM = document.createElement('source');
+                        sourceWebM.src = video.getAttribute('data-src-webm');
+                        sourceWebM.type = 'video/webm';
+                        
+                        var sourceMP4 = document.createElement('source');
+                        sourceMP4.src = video.getAttribute('data-src-mp4');
+                        sourceMP4.type = 'video/mp4';
+                        
+                        video.appendChild(sourceWebM);
+                        video.appendChild(sourceMP4);
+                        
+                        // Rozpoczynamy pobieranie w tle
+                        video.load();
+                        
+                        // Czekamy, aż pobierze się na tyle duży fragment, by płynnie odtworzyć
+                        video.addEventListener('canplaythrough', function() {
+                            var playPromise = video.play();
+                            if (playPromise !== undefined) {
+                                playPromise.catch(function(e) {
+                                    console.warn("Autoplay zablokowany: ", e);
+                                });
+                            }
+                        });
+                    }
                 }
+                
+                // Ładujemy wideo dopiero po pierwszej interakcji użytkownika (aby nie blokować Lighthouse)
+                var userEvents = ["scroll", "mousemove", "touchstart", "keydown"];
+                userEvents.forEach(function(e) {
+                    window.addEventListener(e, loadVideo, { once: true, passive: true });
+                });
+                
+                // Awaryjne ładowanie w tle po 5 sekundach
+                setTimeout(loadVideo, 5000);
             });
             </script>
         </div>
@@ -99,7 +115,7 @@
         </div>
 
         <div class="hero-shape1-1 shape-mockup movingX">
-            <img src="/static/img/hero/hero_shape_1_1.webp" alt="img" width="412" height="221" fetchpriority="high" decoding="async">
+            <!-- removed 404 shape img -->
         </div>
         <div class="hero-experience-wrap" style="background-color: var(--white-color); bottom: 30px; z-index: 99;">
             <div class="mbt-news-box">
@@ -913,6 +929,7 @@
         </div>
     </section>   
 
+    </main>
     <!--==============================
         Footer Area
     ==============================-->
