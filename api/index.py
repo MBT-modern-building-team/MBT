@@ -74,7 +74,9 @@ def _create_superuser():
     except Exception as e:
         print("Nie udalo sie utworzyc superusera (moze brak tabel w bazie?):", e)
 
-_create_superuser()
+# Zamieniamy wywołanie samego tworzenia usera na pełen bootstrap (z migracjami), 
+# żeby po podpięciu PostgreSQL na Vercel tabele same się stworzyły.
+_bootstrap()
 
 from MBT.wsgi import application
 

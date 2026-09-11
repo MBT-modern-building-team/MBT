@@ -106,11 +106,8 @@ def _projects_photo_dir():
 
 
 def _apply_folder_photos(project):
-    """Jeśli katalog projekty/<slug>/ ma zdjęcia, nadpisz hero/gallery.
-
-    - main.*  → hero (zdjęcie główne)
-    - 1.*, 2.*, ... → gallery w kolejności numerycznej (dowolne rozszerzenie)
-    Folder bez zdjęć / nieistniejący → dane z CMS zostają bez zmian.
+    """Jeśli katalog projekty/<slug>/ ma zdjęcia, użyj ich jako fallback dla hero/gallery.
+    Dane ustawione w CMS (baza danych) mają priorytet.
     """
     slug = (project.get("slug") or "").strip()
     if not slug:
@@ -128,36 +125,26 @@ def _apply_folder_photos(project):
 
     base = f"/static/img/mbt/projekty/{slug}/"
 
-    # zdjęcie główne: main.*
-    for f in photos:
-        if f.lower() in _MAIN_NAMES:
-            project["hero"] = base + f
-            break
+    # Jeśli CMS nie ma zdjęcia hero, szukaj w folderze
+    if not project.get("hero"):
+        for f in photos:
+            if f.lower() in _MAIN_NAMES:
+                project["hero"] = base + f
+                break
 
-    # galeria: N.* posortowane numerycznie
-    numbered = []
-    for f in photos:
-        stem = os.path.splitext(f)[0]
-        if stem.isdigit():
-            numbered.append((int(stem), f))
-    numbered.sort(key=lambda x: x[0])
-    if numbered:
-        project["gallery"] = [base + f for _, f in numbered]
+    # Jeśli CMS nie ma galerii, szukaj w folderze (pliki 1.jpg, 2.jpg...)
+    if not project.get("gallery"):
+        numbered = []
+        for f in photos:
+            stem = os.path.splitext(f)[0]
+            if stem.isdigit():
+                numbered.append((int(stem), f))
+        numbered.sort(key=lambda x: x[0])
+        if numbered:
+            project["gallery"] = [base + f for _, f in numbered]
 
     return project
 
-
-# ---------------------------------------------------------------------------
-# Pomocnicze: czy baza jest gotowa (tabele istnieją i mają dane)
-# ---------------------------------------------------------------------------
-
-def _apply_president_vision(project):
-    """Wizja prezesa: inwestycje 'w trakcie realizacji' nie mają zdjęć —
-    zdjęciem głównym jest logo firmy, galeria pusta."""
-    if project.get('type') == 'realizacja-w-trakcie':
-        project['hero'] = project.get('logo') or project.get('hero') or ''
-        project['gallery'] = []
-    return project
 
 
 # ---------------------------------------------------------------------------
@@ -184,11 +171,11 @@ def get_projects(lang='pl'):
                 'longitude': p.longitude,
                 'order': p.order,
             }
-            projects.append(_apply_folder_photos(_apply_president_vision(proj)))
+            projects.append(_apply_folder_photos(proj))
         if projects: return projects
     except Exception:
         pass
-    return [_apply_folder_photos(_apply_president_vision(_project_translate(dict(p), lang))) for p in mbt_data.PROJECTS]
+    return [_apply_folder_photos(_project_translate(dict(p), lang)) for p in mbt_data.PROJECTS]
 
 
 def get_project_by_slug(slug, lang='pl'):
@@ -209,7 +196,7 @@ def get_project_by_slug(slug, lang='pl'):
                 'latitude': p.latitude,
                 'longitude': p.longitude,
             }
-            return _apply_folder_photos(_apply_president_vision(proj))
+            return _apply_folder_photos(proj)
         except Project.DoesNotExist:
             return None
     except Exception:
@@ -217,7 +204,7 @@ def get_project_by_slug(slug, lang='pl'):
     for p in mbt_data.PROJECTS:
         if p['slug'] == slug:
             d = _project_translate(dict(p), lang)
-            return _apply_folder_photos(_apply_president_vision(d))
+            return _apply_folder_photos(d)
     return None
 
 

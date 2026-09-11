@@ -154,11 +154,17 @@ class SiteConfigAdmin(admin.ModelAdmin):
     )
 
     def has_add_permission(self, request):
-        # Tylko jeden rekord danych firmy
-        return not models.SiteConfig.objects.exists()
+        return False
 
     def has_delete_permission(self, request, obj=None):
         return False
+
+    def changelist_view(self, request, extra_context=None):
+        from django.shortcuts import redirect
+        from django.urls import reverse
+        obj, created = models.SiteConfig.objects.get_or_create(id=1)
+        url = reverse('admin:%s_%s_change' % (obj._meta.app_label, obj._meta.model_name), args=[obj.id])
+        return redirect(url)
 
 
 @admin.register(models.SitePhotos)
@@ -200,11 +206,17 @@ class SitePhotosAdmin(admin.ModelAdmin):
     )
 
     def has_add_permission(self, request):
-        # Tylko jeden rekord zdjęć strony
-        return not models.SitePhotos.objects.exists()
+        return False
 
     def has_delete_permission(self, request, obj=None):
         return False
+
+    def changelist_view(self, request, extra_context=None):
+        from django.shortcuts import redirect
+        from django.urls import reverse
+        obj, created = models.SitePhotos.objects.get_or_create(id=1)
+        url = reverse('admin:%s_%s_change' % (obj._meta.app_label, obj._meta.model_name), args=[obj.id])
+        return redirect(url)
 
 
 # ============================================================
