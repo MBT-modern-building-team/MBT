@@ -40,6 +40,10 @@ if DEBUG:
 else:
     if '.vercel.app' not in ALLOWED_HOSTS:
         ALLOWED_HOSTS.append('.vercel.app')
+    if '.mbt.pl' not in ALLOWED_HOSTS:
+        ALLOWED_HOSTS.append('.mbt.pl')
+    if 'mbt.pl' not in ALLOWED_HOSTS:
+        ALLOWED_HOSTS.append('mbt.pl')
 
 CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app', 'https://*.mbt.pl', 'https://mbt.pl']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
