@@ -223,6 +223,7 @@ class SiteConfig(models.Model):
     social_linkedin = models.URLField('LinkedIn', blank=True)
     social_youtube = models.URLField('YouTube', blank=True)
     social_facebook = models.URLField('Facebook', blank=True)
+    social_instagram = models.URLField('Instagram', blank=True)
 
     # Film w tle strony głównej (hero) — URL wgranego pliku wideo
     hero_video = models.CharField('Film w tle (strona główna)', max_length=500, blank=True,

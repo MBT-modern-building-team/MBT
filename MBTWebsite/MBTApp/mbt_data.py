@@ -44,7 +44,8 @@ SITE = {
     "counter_ontime_suffix": "%",
     "counter_ontime_label": "Terminowości",
     "counter_brands": "16",
-    "counter_brands_label": "Zaufanych marek"
+    "counter_brands_label": "Zaufanych marek",
+    "social_instagram": "https://www.instagram.com/modern.building.team/"
 }
 
 PROJECTS = [

@@ -150,7 +150,7 @@ class SiteConfigAdmin(admin.ModelAdmin):
         )}),
         ('Strona główna — film w tle', {'fields': ('hero_video',),
                                           'description': 'Opcjonalny film MP4 odtwarzany w pętli w tle sekcji hero (górny baner) strony głównej. Jeśli pole puste — pozostaje obecne zdjęcie.'}),
-        ('Social media', {'fields': ('social_linkedin', 'social_youtube', 'social_facebook')}),
+        ('Social media', {'fields': ('social_linkedin', 'social_youtube', 'social_facebook', 'social_instagram')}),
     )
 
     def has_add_permission(self, request):

@@ -466,6 +466,7 @@ def get_site(lang='pl'):
                 'social_linkedin': c.social_linkedin,
                 'social_youtube': c.social_youtube,
                 'social_facebook': c.social_facebook,
+                'social_instagram': c.social_instagram,
                 'hero_video': c.hero_video,
             }
     except Exception:
