@@ -23,11 +23,13 @@ class AdminSubdomainMiddleware:
 
         is_admin_path = path.startswith('/admin/') or path == '/admin'
         already_on_subdomain = host.startswith('admin.') or host.startswith('localhost') or host.startswith('127.0.0.1')
+        is_vercel_app = host.endswith('.vercel.app')
 
         if (
             not settings.DEBUG
             and is_admin_path
             and not already_on_subdomain
+            and not is_vercel_app
             and host
         ):
             return redirect(f'https://admin.{host}{path}')

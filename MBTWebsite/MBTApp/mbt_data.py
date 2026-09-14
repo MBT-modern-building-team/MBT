@@ -1871,7 +1871,7 @@ SECTORS = [
     "view_name": "#gw-wycena",
     "opis": "Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale z suwnicami i zaawansowanym parkiem maszynowym.",
     "icon": "ri-building-2-line",
-    "image": "/media/uploads/a8d6d2908191.jpg",
+    "image": "https://media.mbt.pl/uploads/a8d6d2908191.webp",
     "order": 0,
     "t_t": {},
     "t_o": {}
@@ -1882,7 +1882,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Produkcja, dostawa i montaż nowoczesnych konstrukcji stalowych pod wszelkiego rodzaju obiekty wielkopowierzchniowe.",
     "icon": "ri-tools-line",
-    "image": "/media/uploads/cfe86a26e478.jpg",
+    "image": "https://media.mbt.pl/uploads/cfe86a26e478.webp",
     "order": 1,
     "t_t": {},
     "t_o": {}
@@ -1893,7 +1893,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Realizacja trwałych i ognioodpornych konstrukcji żelbetowych, od fundamentów po skomplikowane stropy i słupy nośne.",
     "icon": "ri-building-4-line",
-    "image": "/media/uploads/5c4261182884.jpeg",
+    "image": "https://media.mbt.pl/uploads/5c4261182884.webp",
     "order": 2,
     "t_t": {},
     "t_o": {}
@@ -1915,7 +1915,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Nowoczesne parki handlowe i obiekty retail. Dbamy o wielofunkcyjność (multi-use) i nowoczesny design elewacji.",
     "icon": "ri-shopping-bag-3-line",
-    "image": "/media/uploads/eba049e8204f.jpg",
+    "image": "https://media.mbt.pl/uploads/eba049e8204f.webp",
     "order": 4,
     "t_t": {},
     "t_o": {}
@@ -1926,7 +1926,7 @@ SECTORS = [
     "view_name": "haleMagazynowe",
     "opis": "Przestrzenie magazynowe wysokiego składowania, dopasowane do specyfiki łańcucha dostaw i wymogów pożarowych.",
     "icon": "ri-archive-line",
-    "image": "/media/uploads/133184963a8c.jpg",
+    "image": "https://media.mbt.pl/uploads/133184963a8c.webp",
     "order": 5,
     "t_t": {},
     "t_o": {}
@@ -1959,7 +1959,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Specjalistyczne placówki ochrony zdrowia, szpitale i przychodnie budowane z myślą o pacjentach i personelu.",
     "icon": "ri-hospital-line",
-    "image": "/media/uploads/f43899b152f8.jpg",
+    "image": "https://media.mbt.pl/uploads/f43899b152f8.webp",
     "order": 8,
     "t_t": {},
     "t_o": {}
@@ -1981,7 +1981,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Nowoczesne salony sprzedaży i autoryzowane stacje obsługi pojazdów spełniające normy producentów.",
     "icon": "ri-car-line",
-    "image": "/media/uploads/a3fc2bc72cbe.jpg",
+    "image": "https://media.mbt.pl/uploads/a3fc2bc72cbe.webp",
     "order": 10,
     "t_t": {},
     "t_o": {}
@@ -1992,7 +1992,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Obiekty z kontrolowaną temperaturą i rygorystycznymi normami sanitarnymi.",
     "icon": "ri-temp-cold-line",
-    "image": "/media/uploads/4e0ab68864c3.jpg",
+    "image": "https://media.mbt.pl/uploads/4e0ab68864c3.webp",
     "order": 11,
     "t_t": {},
     "t_o": {}
@@ -2003,7 +2003,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Nowoczesne przestrzenie logistyczne dostosowane do szybkiej obsługi zamówień (sortownie, centra dystrybucyjne).",
     "icon": "ri-shopping-cart-2-line",
-    "image": "/media/uploads/6c56aa2fb100.jpg",
+    "image": "https://media.mbt.pl/uploads/6c56aa2fb100.webp",
     "order": 12,
     "t_t": {},
     "t_o": {}
@@ -2014,7 +2014,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Zaawansowane technologicznie obiekty badawcze wymagające precyzyjnych instalacji i warunków.",
     "icon": "ri-test-tube-line",
-    "image": "/media/uploads/a2862c2e44c5.jpg",
+    "image": "https://media.mbt.pl/uploads/a2862c2e44c5.webp",
     "order": 13,
     "t_t": {},
     "t_o": {}
@@ -2025,7 +2025,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Bezpieczne i wydajne energetycznie obiekty dla infrastruktury IT o podwyższonym standardzie zasilania.",
     "icon": "ri-server-line",
-    "image": "/media/uploads/e832f1a38f9f.jpg",
+    "image": "https://media.mbt.pl/uploads/e832f1a38f9f.webp",
     "order": 14,
     "t_t": {},
     "t_o": {}
@@ -2036,7 +2036,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Wielofunkcyjne obiekty sportowe, areny i hale zaprojektowane z myślą o masowych wydarzeniach.",
     "icon": "ri-basketball-line",
-    "image": "/media/uploads/d2c5e6b809e6.jpg",
+    "image": "https://media.mbt.pl/uploads/d2c5e6b809e6.webp",
     "order": 15,
     "t_t": {},
     "t_o": {}
@@ -2047,7 +2047,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Obiekty o podwyższonym rygorze bezpieczeństwa i specjalistycznych wymaganiach konstrukcyjnych.",
     "icon": "ri-shield-cross-line",
-    "image": "/media/uploads/46a252afa9c0.jpeg",
+    "image": "https://media.mbt.pl/uploads/46a252afa9c0.webp",
     "order": 16,
     "t_t": {},
     "t_o": {}
@@ -2058,7 +2058,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Ekologiczne zakłady przetwarzania odpadów i nowoczesne instalacje ochrony środowiska.",
     "icon": "ri-recycle-line",
-    "image": "/media/uploads/1648f91ebdc2.jpg",
+    "image": "https://media.mbt.pl/uploads/1648f91ebdc2.webp",
     "order": 17,
     "t_t": {},
     "t_o": {}
@@ -2069,7 +2069,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Przestrzenie komercyjne łączące funkcje handlowe, rozrywkowe i usługowe w atrakcyjnej formie.",
     "icon": "ri-shopping-bag-line",
-    "image": "/media/uploads/8815bdaf26e7.jpg",
+    "image": "https://media.mbt.pl/uploads/8815bdaf26e7.webp",
     "order": 18,
     "t_t": {},
     "t_o": {}
@@ -2102,7 +2102,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Atrakcyjne wizualnie lokale i pawilony handlowe dla różnorodnych branż.",
     "icon": "ri-store-3-line",
-    "image": "/media/uploads/b6991aad2996.jpg",
+    "image": "https://media.mbt.pl/uploads/b6991aad2996.webp",
     "order": 21,
     "t_t": {},
     "t_o": {}
@@ -2124,7 +2124,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Duże obiekty handlowe z zaawansowaną infrastrukturą towarzyszącą i przestronnymi parkingami.",
     "icon": "ri-shopping-basket-line",
-    "image": "/media/uploads/33a95c4212a6.jpg",
+    "image": "https://media.mbt.pl/uploads/33a95c4212a6.webp",
     "order": 23,
     "t_t": {},
     "t_o": {}
@@ -2146,7 +2146,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Nowoczesne lokale usługowe i handlowe elastycznie dostosowane do potrzeb przyszłych najemców.",
     "icon": "ri-storefront-line",
-    "image": "/media/uploads/ddb053ae7834.jpg",
+    "image": "https://media.mbt.pl/uploads/ddb053ae7834.webp",
     "order": 25,
     "t_t": {},
     "t_o": {}
@@ -2168,7 +2168,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Specjalistyczne obiekty produkcyjne dopasowane do unikalnych procesów technologicznych.",
     "icon": "ri-flask-line",
-    "image": "/media/uploads/ac71356f53de.jpg",
+    "image": "https://media.mbt.pl/uploads/ac71356f53de.webp",
     "order": 27,
     "t_t": {},
     "t_o": {}
@@ -2179,7 +2179,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Profesjonalnie utwardzone i odpowiednio przygotowane tereny pod bezpieczne składowanie materiałów.",
     "icon": "ri-map-pin-line",
-    "image": "/media/uploads/9ac4af006f93.jpg",
+    "image": "https://media.mbt.pl/uploads/9ac4af006f93.webp",
     "order": 28,
     "t_t": {},
     "t_o": {}
@@ -2201,7 +2201,7 @@ SECTORS = [
     "view_name": "sectorDetail",
     "opis": "Nowoczesne przestrzenie magazynowe projektowane specjalnie pod zautomatyzowane systemy logistyczne.",
     "icon": "ri-robot-line",
-    "image": "/media/uploads/04bfb07ae41b.jpg",
+    "image": "https://media.mbt.pl/uploads/04bfb07ae41b.webp",
     "order": 30,
     "t_t": {},
     "t_o": {}

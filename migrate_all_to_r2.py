@@ -7,7 +7,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MBT.settings')
 django.setup()
 
 from django.conf import settings
-from MBTApp.models import Project, Worker, SalesRepresentative, SitePhotos, SiteConfig, Award, Article, BannerTemplate
+from MBTApp.models import Project, Worker, SalesRepresentative, SitePhotos, SiteConfig, Award, Article, BannerTemplate, Sector
 from MBTApp.storage import _r2_configured, _upload_to_r2, _compress_image
 import boto3
 
@@ -143,6 +143,12 @@ for bt in BannerTemplate.objects.all():
         if new_url != bt.template_image.name:
             bt.template_image.name = new_url
             bt.save()
+
+print("--- Migrating Sectors ---")
+for s in Sector.objects.all():
+    if s.image and s.image.startswith('/media/'):
+        s.image = fix_url(s.image)
+        s.save()
 
 print("--- Done migrating media to R2! ---")
 print("Regenerating mbt_data.py...")

@@ -335,3 +335,4 @@ LOGIN_URL = '/admin-budowa/login/'
 LOGIN_REDIRECT_URL = '/admin-budowa/panel/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 WHITENOISE_USE_FINDERS = True
+WHITENOISE_MAX_AGE = 2592000

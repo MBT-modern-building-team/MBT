@@ -221,7 +221,7 @@
                                 <div class="col-lg-5">
                                     <div class="why-thumb-wrap3-1">
                                         <div class="why-tab-thumb">
-                                            <img src="/static/img/mbt/oferta-projektowanie.svg" alt="img" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                            <img src="/static/img/mbt/oferta-projektowanie.svg" alt="img" width="314" height="233" loading="lazy" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
                                         </div>
                                         <div class="why-text-wrap">
                                             <h3 class="title">Oferta</h3>
@@ -253,7 +253,7 @@
                                 <div class="col-lg-5">
                                     <div class="why-thumb-wrap3-1">
                                         <div class="why-tab-thumb">
-                                            <img src="/static/img/mbt/oferta-wykonastwo.svg" alt="img" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                            <img src="/static/img/mbt/oferta-wykonastwo.svg" alt="img" width="314" height="233" loading="lazy" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
                                         </div>
                                         <div class="why-text-wrap">
                                             <h3 class="title">Oferta</h3>
@@ -285,7 +285,7 @@
                                 <div class="col-lg-5">
                                     <div class="why-thumb-wrap3-1">
                                         <div class="why-tab-thumb">
-                                            <img src="/static/img/mbt/oferta-wsparcie.svg" alt="img" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                            <img src="/static/img/mbt/oferta-wsparcie.svg" alt="img" width="314" height="233" loading="lazy" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
                                         </div>
                                         <div class="why-text-wrap">
                                             <h3 class="title">Oferta</h3>
@@ -318,9 +318,9 @@
                                     <div class="why-thumb-wrap3-1">
                                         <div class="why-tab-thumb">
                                             {% if photos.home_att8 %}
-                                            <img src="{{ photos.home_att8 }}" alt="Generalne Wykonawstwo" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                            <img src="{{ photos.home_att8 }}" alt="Generalne Wykonawstwo" width="314" height="233" loading="lazy" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
                                             {% else %}
-                                            <img src="/static/img/mbt/oferta-generalne.svg" alt="Generalne Wykonawstwo" width="314" height="233" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
+                                            <img src="/static/img/mbt/oferta-generalne.svg" alt="Generalne Wykonawstwo" width="314" height="233" loading="lazy" style="max-width:260px; aspect-ratio: 314/233; object-fit:cover;">
                                             {% endif %}
                                         </div>
                                         <div class="why-text-wrap">
@@ -446,7 +446,7 @@
                                         <!-- Mały trójkącik pod dymkiem -->
                                         <div style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid white;"></div>
                                         <div style="overflow: hidden; border-radius: 8px; margin-bottom: 12px; background-color: {% if 'Fiołka' in p.title %}#13487F{% else %}#ffffff{% endif %}; padding: 8px; display: flex; align-items: center; justify-content: center; height: 140px;">
-                                            <img src="{{ p.logo|default:p.hero }}" alt="{{ p.title }}" width="200" height="200" style="max-width: 100%; max-height: 100%; object-fit: contain; transform: scale(1); transition: transform 0.4s ease;" class="tooltip-img">
+                                            <img src="{{ p.logo|default:p.hero }}" alt="{{ p.title }}" loading="lazy" width="200" height="200" style="max-width: 100%; max-height: 100%; object-fit: contain; transform: scale(1); transition: transform 0.4s ease;" class="tooltip-img">
                                         </div>
                                         <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #13487F; line-height: 1.3; font-weight: 700;">{{ p.title }}</h3>
                                         <a href="{% url 'realizacjaDetail' p.slug %}" style="color: #FF5A00; font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; text-transform: uppercase; letter-spacing: 0.5px;">{% trans 'Zobacz projekt' %} <i class="ri-arrow-right-line"></i></a>
@@ -603,7 +603,7 @@
                             <div class="col-md-6 col-lg-3">
                                 <div class="team-card bg-white p-4 rounded text-center">
                                     {% if rep.photo %}
-                                    <img src="{{ rep.photo }}" alt="{{ rep.name }}" width="300" height="300" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover; width: 100%;">
+                                    <img src="{{ rep.photo }}" alt="{{ rep.name }}" loading="lazy" width="300" height="300" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover; width: 100%;">
                                     {% endif %}
                                     <h3 class="mb-1" style="font-size: 1.5rem;">{{ rep.name }}</h3>
                                     <p class="text-theme mb-3">{{ rep.position }}</p>
@@ -823,7 +823,7 @@
             <div class="row justify-content-center align-items-center gy-4">
                 {% for award in awards %}
                 <div class="col-auto px-4">
-                    <img src="{{ award.image }}" alt="{{ award.name }}" width="300" height="120" style="max-height: 120px; width: auto; object-fit: contain;">
+                    <img src="{{ award.image }}" alt="{{ award.name }}" loading="lazy" width="300" height="120" style="max-height: 120px; width: auto; object-fit: contain;">
                 </div>
                 {% endfor %}
             </div>
@@ -904,9 +904,9 @@
                     <div class="blog-card style2">
                         <div class="blog-img">
                             {% if a.image %}
-                            <img src="{{ a.image }}" alt="{{ a.title }}" width="800" height="600">
+                            <img src="{{ a.image }}" alt="{{ a.title }}" width="800" height="600" loading="lazy">
                             {% else %}
-                            <img src="{{ photos.home_realizacja }}" alt="{{ a.title }}" width="800" height="600">
+                            <img src="{{ photos.home_realizacja }}" alt="{{ a.title }}" width="800" height="600" loading="lazy">
                             {% endif %}
                             <div class="blog-date">
                                 <a href="{% url 'articleDetail' a.slug %}"><span>MBT</span>ART</a>

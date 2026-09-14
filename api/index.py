@@ -74,9 +74,11 @@ def _create_superuser():
     except Exception as e:
         print("Nie udalo sie utworzyc superusera (moze brak tabel w bazie?):", e)
 
-# Zamieniamy wywołanie samego tworzenia usera na pełen bootstrap (z migracjami), 
-# żeby po podpięciu PostgreSQL na Vercel tabele same się stworzyły.
-_bootstrap()
+# UWAGA: Usunięto wywołanie _bootstrap() z poziomu modułu!
+# Vercel Serverless Functions restartują się bardzo często (cold starts).
+# Uruchamianie migracji (migrate) i siewu danych (import_mbt_data) 
+# przy każdym starcie modułu drastycznie spowalniało ładowanie strony (nawet o kilka sekund).
+# Migracje powinny być uruchamiane z konsoli lub poprzez dedykowany endpoint administracyjny.
 
 from MBT.wsgi import application
 
