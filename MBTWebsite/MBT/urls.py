@@ -11,6 +11,7 @@ from django.conf import settings
 from django.conf.urls import handler404, handler500
 from django.http import HttpResponse
 from django.shortcuts import redirect
+from django.views.generic import RedirectView
 import os
 
 def robots_txt_view(request):
@@ -57,6 +58,9 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('media/<path:path_str>', media_redirect_view),
     path('admin/', admin.site.urls),
+    # Przekierowanie z /pl/ na / (ponieważ polski jest domyślnym językiem bez prefiksu)
+    path('pl/', RedirectView.as_view(url='/', permanent=True)),
+    path('pl/<path:rest>', RedirectView.as_view(url='/%(rest)s', permanent=True)),
     # Przełącznik języka (name='set_language' dopasowuje {% url 'set_language' %})
     # umieszczony poza i18n_patterns, żeby przełącznik działał w każdym języku
     # i zachowywał bieżący URL (parametr next).
