@@ -1864,6 +1864,350 @@ ARTICLES = [
 }
 ]
 
+SECTORS = [
+    {
+    "title": "Hale przemysłowe i produkcyjne",
+    "slug": "",
+    "view_name": "#gw-wycena",
+    "opis": "Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale z suwnicami i zaawansowanym parkiem maszynowym.",
+    "icon": "ri-building-2-line",
+    "image": "/media/uploads/a8d6d2908191.jpg",
+    "order": 0,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Konstrukcje stalowe",
+    "slug": "konstrukcje-stalowe",
+    "view_name": "sectorDetail",
+    "opis": "Produkcja, dostawa i montaż nowoczesnych konstrukcji stalowych pod wszelkiego rodzaju obiekty wielkopowierzchniowe.",
+    "icon": "ri-tools-line",
+    "image": "/media/uploads/cfe86a26e478.jpg",
+    "order": 1,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Konstrukcje żelbetowe",
+    "slug": "konstrukcje-zelbetowe",
+    "view_name": "sectorDetail",
+    "opis": "Realizacja trwałych i ognioodpornych konstrukcji żelbetowych, od fundamentów po skomplikowane stropy i słupy nośne.",
+    "icon": "ri-building-4-line",
+    "image": "/media/uploads/5c4261182884.jpeg",
+    "order": 2,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Biurowce",
+    "slug": "biurowce",
+    "view_name": "sectorDetail",
+    "opis": "Nowoczesne obiekty biurowe oraz prace fit-out, dostosowane do najwyższych standardów ergonomii i certyfikacji BREEAM.",
+    "icon": "ri-briefcase-4-line",
+    "image": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/151dd278be86.webp",
+    "order": 3,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Parki handlowe",
+    "slug": "parki-handlowe",
+    "view_name": "sectorDetail",
+    "opis": "Nowoczesne parki handlowe i obiekty retail. Dbamy o wielofunkcyjność (multi-use) i nowoczesny design elewacji.",
+    "icon": "ri-shopping-bag-3-line",
+    "image": "/media/uploads/eba049e8204f.jpg",
+    "order": 4,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Magazyny",
+    "slug": "",
+    "view_name": "haleMagazynowe",
+    "opis": "Przestrzenie magazynowe wysokiego składowania, dopasowane do specyfiki łańcucha dostaw i wymogów pożarowych.",
+    "icon": "ri-archive-line",
+    "image": "/media/uploads/133184963a8c.jpg",
+    "order": 5,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Obiekty Self storage",
+    "slug": "obiekty-self-storage",
+    "view_name": "sectorDetail",
+    "opis": "Nowoczesne obiekty magazynowe z kontrolowanym dostępem, zróżnicowanymi boksami i wysokimi standardami bezpieczeństwa.",
+    "icon": "ri-box-3-line",
+    "image": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/ed67bb1b2b03.webp",
+    "order": 6,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Obiekty użyteczności publicznej",
+    "slug": "obiekty-uzytecznosci-publicznej",
+    "view_name": "sectorDetail",
+    "opis": "Budynki użyteczności publicznej realizowane zgodnie z najwyższymi standardami dostępności i bezpieczeństwa.",
+    "icon": "ri-government-line",
+    "image": "/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg",
+    "order": 7,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Obiekty medyczne (szpitale)",
+    "slug": "obiekty-medyczne-szpitale",
+    "view_name": "sectorDetail",
+    "opis": "Specjalistyczne placówki ochrony zdrowia, szpitale i przychodnie budowane z myślą o pacjentach i personelu.",
+    "icon": "ri-hospital-line",
+    "image": "/media/uploads/f43899b152f8.jpg",
+    "order": 8,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Mieszkaniówka",
+    "slug": "mieszkaniowka",
+    "view_name": "sectorDetail",
+    "opis": "Inwestycje deweloperskie i budynki wielorodzinne o wysokim standardzie wykończenia.",
+    "icon": "ri-home-8-line",
+    "image": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/4b52bd6eff86.webp",
+    "order": 9,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Salony samochodowe i Automotive",
+    "slug": "salony-samochodowe",
+    "view_name": "sectorDetail",
+    "opis": "Nowoczesne salony sprzedaży i autoryzowane stacje obsługi pojazdów spełniające normy producentów.",
+    "icon": "ri-car-line",
+    "image": "/media/uploads/a3fc2bc72cbe.jpg",
+    "order": 10,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Chłodnie i mroźnie (branża spożywcza)",
+    "slug": "chlodnie-mroznie",
+    "view_name": "sectorDetail",
+    "opis": "Obiekty z kontrolowaną temperaturą i rygorystycznymi normami sanitarnymi.",
+    "icon": "ri-temp-cold-line",
+    "image": "/media/uploads/4e0ab68864c3.jpg",
+    "order": 11,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Obiekty e-commerce",
+    "slug": "obiekty-e-commerce",
+    "view_name": "sectorDetail",
+    "opis": "Nowoczesne przestrzenie logistyczne dostosowane do szybkiej obsługi zamówień (sortownie, centra dystrybucyjne).",
+    "icon": "ri-shopping-cart-2-line",
+    "image": "/media/uploads/6c56aa2fb100.jpg",
+    "order": 12,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Centra R&D i Laboratoria",
+    "slug": "centra-badawczo-rozwojowe",
+    "view_name": "sectorDetail",
+    "opis": "Zaawansowane technologicznie obiekty badawcze wymagające precyzyjnych instalacji i warunków.",
+    "icon": "ri-test-tube-line",
+    "image": "/media/uploads/a2862c2e44c5.jpg",
+    "order": 13,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Data Center / Serwerownie",
+    "slug": "data-center",
+    "view_name": "sectorDetail",
+    "opis": "Bezpieczne i wydajne energetycznie obiekty dla infrastruktury IT o podwyższonym standardzie zasilania.",
+    "icon": "ri-server-line",
+    "image": "/media/uploads/e832f1a38f9f.jpg",
+    "order": 14,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Hale sportowe i widowiskowe",
+    "slug": "hale-sportowe",
+    "view_name": "sectorDetail",
+    "opis": "Wielofunkcyjne obiekty sportowe, areny i hale zaprojektowane z myślą o masowych wydarzeniach.",
+    "icon": "ri-basketball-line",
+    "image": "/media/uploads/d2c5e6b809e6.jpg",
+    "order": 15,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Obiekty branży militarnej",
+    "slug": "obiekty-militarne",
+    "view_name": "sectorDetail",
+    "opis": "Obiekty o podwyższonym rygorze bezpieczeństwa i specjalistycznych wymaganiach konstrukcyjnych.",
+    "icon": "ri-shield-cross-line",
+    "image": "/media/uploads/46a252afa9c0.jpeg",
+    "order": 16,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Zakłady recyklingu i gospodarka odpadami",
+    "slug": "zaklady-recyklingu",
+    "view_name": "sectorDetail",
+    "opis": "Ekologiczne zakłady przetwarzania odpadów i nowoczesne instalacje ochrony środowiska.",
+    "icon": "ri-recycle-line",
+    "image": "/media/uploads/1648f91ebdc2.jpg",
+    "order": 17,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Centra handlowe",
+    "slug": "centra-handlowe",
+    "view_name": "sectorDetail",
+    "opis": "Przestrzenie komercyjne łączące funkcje handlowe, rozrywkowe i usługowe w atrakcyjnej formie.",
+    "icon": "ri-shopping-bag-line",
+    "image": "/media/uploads/8815bdaf26e7.jpg",
+    "order": 18,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Markety",
+    "slug": "markety",
+    "view_name": "sectorDetail",
+    "opis": "Funkcjonalne obiekty handlowe o optymalnym układzie komunikacyjnym dla wygody klientów.",
+    "icon": "ri-store-2-line",
+    "image": "/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg",
+    "order": 19,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Markety budowlane",
+    "slug": "markety-budowlane",
+    "view_name": "sectorDetail",
+    "opis": "Wielkopowierzchniowe obiekty handlowe dostosowane konstrukcyjnie do asortymentu budowlanego.",
+    "icon": "ri-tools-line",
+    "image": "/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg",
+    "order": 20,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Sklepy stacjonarne",
+    "slug": "sklepy-stacjonarne",
+    "view_name": "sectorDetail",
+    "opis": "Atrakcyjne wizualnie lokale i pawilony handlowe dla różnorodnych branż.",
+    "icon": "ri-store-3-line",
+    "image": "/media/uploads/b6991aad2996.jpg",
+    "order": 21,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Galerie handlowe",
+    "slug": "galerie-handlowe",
+    "view_name": "sectorDetail",
+    "opis": "Prestiżowe obiekty handlowe o unikalnej architekturze i wysokim standardzie wykończenia.",
+    "icon": "ri-building-3-line",
+    "image": "https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/151dd278be86.webp",
+    "order": 22,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Hipermarkety",
+    "slug": "hipermarkety",
+    "view_name": "sectorDetail",
+    "opis": "Duże obiekty handlowe z zaawansowaną infrastrukturą towarzyszącą i przestronnymi parkingami.",
+    "icon": "ri-shopping-basket-line",
+    "image": "/media/uploads/33a95c4212a6.jpg",
+    "order": 23,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Nieruchomości komercyjne",
+    "slug": "nieruchomosci-komercyjne",
+    "view_name": "sectorDetail",
+    "opis": "Inwestycje w nieruchomości przeznaczone pod wynajem oraz różnorodną działalność biznesową.",
+    "icon": "ri-building-4-line",
+    "image": "/static/img/mbt/3-2-scaled-38947c85.jpg",
+    "order": 24,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Powierzchnie usługowo-handlowe",
+    "slug": "powierzchnie-uslugowo-handlowe",
+    "view_name": "sectorDetail",
+    "opis": "Nowoczesne lokale usługowe i handlowe elastycznie dostosowane do potrzeb przyszłych najemców.",
+    "icon": "ri-storefront-line",
+    "image": "/media/uploads/ddb053ae7834.jpg",
+    "order": 25,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Fabryki",
+    "slug": "fabryki",
+    "view_name": "sectorDetail",
+    "opis": "Zaawansowane zakłady przemysłowe i złożone linie produkcyjne dla różnych sektorów gospodarki.",
+    "icon": "ri-factory-line",
+    "image": "/static/img/mbt/hala-1024x672-eb7144c9.jpg",
+    "order": 26,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Wytwórnie",
+    "slug": "wytwornie",
+    "view_name": "sectorDetail",
+    "opis": "Specjalistyczne obiekty produkcyjne dopasowane do unikalnych procesów technologicznych.",
+    "icon": "ri-flask-line",
+    "image": "/media/uploads/ac71356f53de.jpg",
+    "order": 27,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Place składowe",
+    "slug": "place-skladowe",
+    "view_name": "sectorDetail",
+    "opis": "Profesjonalnie utwardzone i odpowiednio przygotowane tereny pod bezpieczne składowanie materiałów.",
+    "icon": "ri-map-pin-line",
+    "image": "/media/uploads/9ac4af006f93.jpg",
+    "order": 28,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Centra Biznesowe",
+    "slug": "centra-biznesowe",
+    "view_name": "sectorDetail",
+    "opis": "Kompleksy biurowe i prestiżowe przestrzenie do prowadzenia działalności korporacyjnej.",
+    "icon": "ri-briefcase-line",
+    "image": "/static/img/mbt/ZREALIZOWANE-ATT-3-scaled-b0f20287.jpg",
+    "order": 29,
+    "t_t": {},
+    "t_o": {}
+},
+    {
+    "title": "Magazyny automatyczne",
+    "slug": "magazyny-automatyczne",
+    "view_name": "sectorDetail",
+    "opis": "Nowoczesne przestrzenie magazynowe projektowane specjalnie pod zautomatyzowane systemy logistyczne.",
+    "icon": "ri-robot-line",
+    "image": "/media/uploads/04bfb07ae41b.jpg",
+    "order": 30,
+    "t_t": {},
+    "t_o": {}
+}
+]
+
 AWARDS = [
     {
     "name": "Gazele Biznesu",

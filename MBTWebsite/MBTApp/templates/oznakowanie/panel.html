@@ -182,22 +182,24 @@
         {% if my_downloads %}
         <div class="ozn-history">
             <h2>{% trans "Historia pobrań" %}</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>{% trans "Szablon" %}</th>
-                        <th>{% trans "Data" %}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for d in my_downloads %}
-                    <tr>
-                        <td>{{ d.template_title_snapshot }}</td>
-                        <td>{{ d.downloaded_at|date:"Y-m-d H:i" }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>{% trans "Szablon" %}</th>
+                            <th>{% trans "Data" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for d in my_downloads %}
+                        <tr>
+                            <td>{{ d.template_title_snapshot }}</td>
+                            <td>{{ d.downloaded_at|date:"Y-m-d H:i" }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
         {% endif %}
     </div>

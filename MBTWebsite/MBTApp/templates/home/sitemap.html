@@ -1,0 +1,103 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <div class="breadcumb-wrapper" data-bg-src="/static/img/bg/breadcumb-bg.jpg">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">{{ title }}</h1>
+                <div class="breadcumb-menu-wrap">
+                    <ul class="breadcumb-menu">
+                        <li><a href="{% url 'index' %}">{% trans "Strona główna" %}</a></li>
+                        <li>{{ subTitle }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="space">
+        <div class="container">
+            <div class="row gy-4">
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="widget widget_nav_menu">
+                        <h3 class="widget_title">{% trans 'Strony główne' %}</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="{% url 'index' %}">{% trans 'Strona główna' %}</a></li>
+                                <li><a href="{% url 'about' %}">{% trans 'O nas' %}</a></li>
+                                <li><a href="{% url 'service' %}">{% trans 'Oferta' %}</a></li>
+                                <li><a href="{% url 'project' %}">{% trans 'Realizacje' %}</a></li>
+                                <li><a href="{% url 'career' %}">{% trans 'Kariera' %}</a></li>
+                                <li><a href="{% url 'blog' %}">{% trans 'Aktualności' %}</a></li>
+                                <li><a href="{% url 'contact' %}">{% trans 'Kontakt' %}</a></li>
+                                <li><a href="{% url 'privacy' %}">{% trans 'Polityka prywatności' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="widget widget_nav_menu">
+                        <h3 class="widget_title">{% trans 'Oferta' %}</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="{% url 'generalContracting' %}">{% trans 'Generalne Wykonawstwo' %}</a></li>
+                                <li><a href="{% url 'halePrzemyslowe' %}">{% trans 'Hale Przemysłowe' %}</a></li>
+                                <li><a href="{% url 'haleMagazynowe' %}">{% trans 'Hale Magazynowe' %}</a></li>
+                                <li><a href="{% url 'obiektyKomercyjne' %}">{% trans 'Obiekty Komercyjne' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="widget widget_nav_menu">
+                        <h3 class="widget_title">{% trans 'Realizacje' %}</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                {% for project in projects %}
+                                <li><a href="{% url 'realizacjaDetail' project.slug %}">{{ project.title }}</a></li>
+                                {% empty %}
+                                <li>{% trans 'Brak realizacji' %}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="widget widget_nav_menu">
+                        <h3 class="widget_title">{% trans 'Aktualności i Kariera' %}</h3>
+                        
+                        <h4 class="mt-4 mb-3" style="font-size: 1.1rem;">{% trans 'Wpisy na blogu' %}</h4>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                {% for article in articles %}
+                                <li><a href="{% url 'articleDetail' article.slug %}">{{ article.title }}</a></li>
+                                {% empty %}
+                                <li>{% trans 'Brak wpisów' %}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <h4 class="mt-4 mb-3" style="font-size: 1.1rem;">{% trans 'Oferty pracy' %}</h4>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                {% for job in jobs %}
+                                <li><a href="{% url 'careerDetail' job.slug %}">{{ job.title }}</a></li>
+                                {% empty %}
+                                <li>{% trans 'Brak ofert' %}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

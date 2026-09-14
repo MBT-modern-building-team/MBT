@@ -5,6 +5,8 @@ from MBTApp.models import Article, Project, Job
 class StaticViewSitemap(Sitemap):
     priority = 0.8
     changefreq = 'weekly'
+    i18n = True
+    alternates = True
 
     def items(self):
         return [
@@ -20,6 +22,8 @@ class StaticViewSitemap(Sitemap):
 class ArticleSitemap(Sitemap):
     changefreq = 'weekly'
     priority = 0.7
+    i18n = True
+    alternates = True
 
     def items(self):
         return Article.objects.filter(published=True)
@@ -34,6 +38,8 @@ class ArticleSitemap(Sitemap):
 class ProjectSitemap(Sitemap):
     changefreq = 'monthly'
     priority = 0.7
+    i18n = True
+    alternates = True
 
     def items(self):
         return Project.objects.all()
@@ -45,6 +51,8 @@ class ProjectSitemap(Sitemap):
 class JobSitemap(Sitemap):
     changefreq = 'monthly'
     priority = 0.6
+    i18n = True
+    alternates = True
 
     def items(self):
         return Job.objects.all()

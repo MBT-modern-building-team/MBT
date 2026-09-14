@@ -5459,7 +5459,7 @@ ul.wp-block-latest-posts li:last-child {
 
 .simple-icon {
   border: none;
-  background-color: var(--theme-color);
+  background-color: transparent;
   color: var(--title-color);
   padding: 0;
   font-size: 22px;

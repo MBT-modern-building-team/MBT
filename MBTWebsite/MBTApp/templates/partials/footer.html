@@ -3,7 +3,7 @@
         <div class="container">
             <div class="footer-top-1">
                 <div class="footer-logo">
-                    <a href="{% url 'index' %}"><img src="/static/img/mbt/icon-white.svg" alt="MBT" width="auto" height="60" loading="lazy"></a>
+                    <a href="{% url 'index' %}"><img src="/static/img/mbt/icon-white.svg" alt="MBT" height="60" loading="lazy"></a>
                 </div>
                 <div class="subscribe-box">
                     <p class="subscribe-box_text">{{ site.tagline }}</p>
@@ -17,7 +17,7 @@
                 <div class="row justify-content-between">
                     <div class="col-md-6 col-xl-3">
                         <div class="widget widget-about footer-widget">
-                            <h3 class="widget_title">{% trans 'O firmie' %}</h3>
+                            <h2 class="widget_title">{% trans 'O firmie' %}</h2>
                             <p class="about-text">{{ site.about_short }}</p>
                             <h4 class="about-year">Od {{ site.founded }}</h4>
                             <h5 class="about-subtitle">{% trans 'JESTEŚMY DOSTĘPNI' %}</h5>
@@ -26,8 +26,8 @@
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">{% trans 'Przydatne linki' %}</h3>
-                            <div class="menu-all-pages-container grid-style">
+                            <h2 class="widget_title">{% trans 'Przydatne linki' %}</h2>
+                            <div class="menu-all-pages-container grid-style" style="user-select: none; -webkit-user-select: none;">
                                 <ul class="menu">
                                     <li><a href="{% url 'about' %}">{% trans 'O nas' %}</a></li>
                                     <li><a href="{% url 'service' %}">{% trans 'Oferta' %}</a></li>
@@ -46,25 +46,25 @@
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget footer-widget widget-contact">
-                            <h3 class="widget_title">{% trans 'Biuro w Zabrzu' %}</h3>
+                            <h2 class="widget_title">{% trans 'Biuro w Zabrzu' %}</h2>
                             <p class="contact-text">MBT Modern Building Team Sp. z o.o.<br>{{ site.office_zabrze }}</p>
-                            <h3 class="widget_title">{% trans 'Oddział — Kraków' %}</h3>
+                            <h2 class="widget_title">{% trans 'Oddział — Kraków' %}</h2>
                             <p class="contact-text">{{ site.office_krakow }}</p>
-                            <h3 class="widget_title">{% trans 'Adres e-mail' %}</h3> 
+                            <h2 class="widget_title">{% trans 'Adres e-mail' %}</h2> 
                             <p class="text-white footer-text">{% trans 'Napisz do nas!' %}</p>   
                             <p class="footer-text"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget footer-widget">
-                            <h3 class="widget_title">{% trans 'Telefon' %}</h3>
+                            <h2 class="widget_title">{% trans 'Telefon' %}</h2>
                             <p class="footer-text">
                                 <a href="tel:{{ site.phone_href }}">{{ site.phone }}</a>
                             </p>
-                            <h3 class="widget_title">{% trans 'Dane firmy' %}</h3>
+                            <h2 class="widget_title">{% trans 'Dane firmy' %}</h2>
                             <p class="footer-text">NIP: {{ site.nip }}<br>REGON: {{ site.regon }}<br>KRS: {{ site.krs }}</p>
 
-                            <h3 class="widget_title" style="margin-top: 15px;">{% trans 'Obserwuj nas' %}</h3>
+                            <h2 class="widget_title" style="margin-top: 15px;">{% trans 'Obserwuj nas' %}</h2>
                             <div class="social-btn style2">
                                 <a href="{{ site.social_linkedin }}" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
                                 <a href="{{ site.social_youtube }}" target="_blank" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>                           
@@ -82,6 +82,7 @@
                     <div class="col-auto align-self-center"><p class="copyright-text text-center">© {% now "Y" %} <a href="{% url 'index' %}">MBT Modern Building Team Sp. z o.o.</a>  |  {% trans 'Wszelkie prawa zastrzeżone' %}</p></div>
                     <div class="col-auto">
                         <div class="footer-links">
+                            <a href="{% url 'sitemap_html' %}">Mapa witryny</a>
                             <a href="{% url 'privacy' %}">Polityka prywatności i Regulamin</a>
                             <a href="{% url 'contact' %}">Kontakt</a>
                         </div>

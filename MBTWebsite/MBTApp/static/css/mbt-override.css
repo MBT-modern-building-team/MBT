@@ -153,6 +153,7 @@ body {
 /* ---------- Section headings: MBT style (bold accent word) ---------- */
 .sub-title.text-theme {
   color: var(--theme-color);
+  opacity: 1 !important;
   font-weight: 700;
   letter-spacing: 0.06em;
 }
@@ -187,6 +188,7 @@ body {
 /* Blue primary — matches MBT "Dowiedz się więcej" buttons (#4558FE) */
 .btn.mbt-blue {
   background-color: var(--theme-color);
+  opacity: 1 !important;
   color: var(--white-color);
 }
 
@@ -215,10 +217,12 @@ body {
 
 .main-menu > ul > li > a:hover {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 
 .main-menu > ul > li > a.active {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 
 .main-menu > ul > li > a.active::after {
@@ -296,9 +300,11 @@ body {
 .mbt-lang-menu li a:hover {
   background: var(--smoke-color);
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .mbt-lang-menu li a.is-active {
   background-color: var(--theme-color);
+  opacity: 1 !important;
   color: var(--white-color);
 }
 .mbt-lang-form {
@@ -326,6 +332,7 @@ body {
 }
 .mbt-lang-btn.is-active {
   background-color: var(--theme-color);
+  opacity: 1 !important;
   color: var(--white-color);
 }
 .mbt-lang-btn.is-active:hover {
@@ -401,6 +408,7 @@ body {
   font-weight: 600;
   margin-bottom: 2px;
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .mbt-branches-menu li a:hover {
   background: var(--smoke-color) !important;
@@ -428,7 +436,7 @@ body {
 
 /* ---------- Footer: MBT contact block ---------- */
 .footer-wrapper {
-  background-color: var(--title-color) !important;
+  background-color: var(--theme-color) !important;
   color: rgba(254, 254, 254, 0.8);
 }
 .footer-wrapper .widget_title {
@@ -447,6 +455,7 @@ body {
 .counter-card_number {
   font-family: var(--title-font);
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 
 /* Statyczne wymiary — brak layout shift przy animacji liczników */
@@ -522,7 +531,7 @@ body {
   font-family: var(--title-font);
   font-size: 14px;
   font-style: italic;
-  color: #C04A1F; /* pomarańczowe stanowisko, pociemnione dla kontrastu WCAG */
+  color: #9B3315; /* pomarańczowe stanowisko, pociemnione dla kontrastu WCAG */
   margin: 0 0 10px;
   line-height: 1.4;
 }
@@ -540,6 +549,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: var(--theme-color);
+  opacity: 1 !important;
   text-decoration: none;
   width: fit-content;
   padding: 5px 10px;
@@ -626,12 +636,15 @@ body {
 
 .mbt-filter-btn:hover {
   border-color: var(--theme-color);
+  opacity: 1 !important;
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 
 .mbt-filter-btn.active {
   background: var(--theme-color);
   border-color: var(--theme-color);
+  opacity: 1 !important;
   color: var(--white-color);
 }
 
@@ -913,6 +926,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   color: var(--theme-color);
+  opacity: 1 !important;
   line-height: 1.1;
 }
 .gw-stat-label {
@@ -998,6 +1012,7 @@ body {
 .gw-check-item i {
   font-size: 22px;
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .gw-check-item:hover i {
   color: #fff;
@@ -1142,6 +1157,7 @@ body {
   border-radius: 14px;
   background: linear-gradient(135deg, rgba(232, 118, 45, 0.12) 0%, rgba(232, 118, 45, 0.03) 100%);
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 26px;
   display: flex;
   align-items: center;
@@ -1158,6 +1174,7 @@ body {
   border-radius: 30px;
   background: rgba(232, 118, 45, 0.08);
   color: var(--theme-color);
+  opacity: 1 !important;
   border: 1px solid rgba(232, 118, 45, 0.15);
 }
 .gw-why-card h3 {
@@ -1202,6 +1219,7 @@ body {
 }
 .gw-why-checklist li i {
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 15px;
 }
 .gw-why-card:hover {
@@ -1222,9 +1240,11 @@ body {
   transform: scale(1.08) rotate(-4deg);
   box-shadow: 0 8px 20px rgba(232, 118, 45, 0.35);
   border-color: var(--theme-color);
+  opacity: 1 !important;
 }
 .gw-why-card:hover h3 {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 
 /* Wyróżniona karta CTA (ciemny gradient premium) */
@@ -1256,6 +1276,7 @@ body {
 .gw-why-card-cta:hover {
   transform: translateY(-8px);
   border-color: var(--theme-color);
+  opacity: 1 !important;
   box-shadow: 0 25px 50px rgba(11, 17, 32, 0.35), 0 0 0 1px rgba(232, 118, 45, 0.45);
 }
 .gw-why-card-cta:hover .gw-why-icon {
@@ -1290,6 +1311,7 @@ body {
 }
 .gw-step:hover .gw-step-num {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .gw-step-icon {
   width: 70px;
@@ -1298,6 +1320,7 @@ body {
   border-radius: 50%;
   background: var(--smoke-color);
   color: var(--theme-color);
+  opacity: 1 !important;
   border: 2px dashed var(--theme-color);
   font-size: 30px;
   display: flex;
@@ -1386,6 +1409,7 @@ body {
 .gw-project-tag {
   display: inline-block;
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1401,6 +1425,7 @@ body {
 }
 .gw-project-card:hover .gw-project-body h3 {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 
 /* --- CTA + FORMULARZ --- */
@@ -1431,6 +1456,7 @@ body {
   font-size: 28px;
   font-weight: 700;
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .gw-cta-phone:hover {
   color: var(--title-color);
@@ -1508,6 +1534,7 @@ body {
   gap: 8px;
   background: #fff;
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1526,6 +1553,7 @@ body {
 }
 .of-hero-title strong {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .of-hero-text {
   color: var(--body-color);
@@ -1551,7 +1579,9 @@ body {
 }
 .of-btn-ghost:hover {
   border-color: var(--theme-color);
+  opacity: 1 !important;
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .of-hero-mini-stats {
   display: flex;
@@ -1566,6 +1596,7 @@ body {
   font-size: 34px;
   font-weight: 700;
   color: var(--theme-color);
+  opacity: 1 !important;
   line-height: 1.1;
 }
 .of-mini-label {
@@ -1634,6 +1665,7 @@ body {
   display: inline-block;
   background: rgba(232, 118, 45, 0.12);
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1730,6 +1762,7 @@ body {
 }
 .of-service-card ul li i {
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 18px;
   margin-top: 2px;
 }
@@ -1751,6 +1784,7 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 20px 50px rgba(15, 30, 60, 0.14);
   border-color: var(--theme-color);
+  opacity: 1 !important;
 }
 .of-scope-icon {
   width: 72px;
@@ -1758,6 +1792,7 @@ body {
   border-radius: 50%;
   background: var(--smoke-color);
   color: var(--theme-color);
+  opacity: 1 !important;
   border: 2px dashed var(--theme-color);
   font-size: 30px;
   display: flex;
@@ -1786,6 +1821,7 @@ body {
 .of-scope-link {
   margin-top: auto;
   color: var(--theme-color);
+  opacity: 1 !important;
   font-weight: 600;
   font-size: 14px;
   display: inline-flex;
@@ -1809,6 +1845,7 @@ body {
 .of-scope-card-full:hover .of-scope-icon {
   background: var(--theme-color);
   border-color: var(--theme-color);
+  opacity: 1 !important;
 }
 
 /* --- FORMUŁY WSPÓŁPRACY: poziome pasy --- */
@@ -1839,6 +1876,7 @@ body {
   border-radius: 50%;
   background: var(--smoke-color);
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 28px;
   display: flex;
   align-items: center;
@@ -1879,6 +1917,7 @@ body {
 .of-formula-row:hover .of-formula-arrow {
   background: var(--theme-color);
   border-color: var(--theme-color);
+  opacity: 1 !important;
   color: #fff;
 }
 
@@ -1894,6 +1933,7 @@ body {
 }
 .of-industry:hover {
   border-color: var(--theme-color);
+  opacity: 1 !important;
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(232, 118, 45, 0.15);
 }
@@ -1904,6 +1944,7 @@ body {
   border-radius: 50%;
   background: var(--smoke-color);
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 26px;
   display: flex;
   align-items: center;
@@ -1967,12 +2008,14 @@ body {
 }
 .of-why-item:hover {
   border-color: var(--theme-color);
+  opacity: 1 !important;
   transform: translateY(-4px);
 }
 .of-why-item i {
   flex-shrink: 0;
   font-size: 28px;
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .of-why-item strong {
   display: block;
@@ -2013,6 +2056,7 @@ body {
 }
 .of-timeline-item:hover {
   border-color: var(--theme-color);
+  opacity: 1 !important;
   box-shadow: 0 12px 35px rgba(15, 30, 60, 0.1);
 }
 .of-timeline-num {
@@ -2098,6 +2142,7 @@ body {
 }
 .of-project-link {
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 14px;
   font-weight: 600;
   display: inline-flex;
@@ -2212,6 +2257,7 @@ body {
 .gw-tech-card:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: var(--theme-color);
+  opacity: 1 !important;
   transform: translateY(-8px);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
@@ -2331,6 +2377,7 @@ body {
 }
 .gw-news-more {
   color: var(--theme-color);
+  opacity: 1 !important;
   font-size: 14px;
   font-weight: 600;
   display: inline-flex;
@@ -2430,6 +2477,7 @@ body {
 .gw-bhp-item i {
   font-size: 24px;
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .gw-bhp-item:hover i {
   color: #fff;
@@ -2550,6 +2598,7 @@ body {
 }
 .mbt-detail-hero .breadcumb-menu li a:hover {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .mbt-detail-hero .breadcumb-menu li.active {
   color: #fff;
@@ -2603,6 +2652,7 @@ body {
 .mbt-news-all:hover {
   background: var(--theme-color);
   border-color: var(--theme-color);
+  opacity: 1 !important;
   color: #fff;
 }
 .mbt-news-slides {
@@ -2637,6 +2687,7 @@ body {
 }
 .mbt-news-title a:hover {
   color: var(--theme-color);
+  opacity: 1 !important;
 }
 .mbt-news-excerpt {
   color: var(--body-color);
@@ -2653,6 +2704,7 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--theme-color);
+  opacity: 1 !important;
   border-bottom: 2px solid var(--theme-color);
   padding-bottom: 2px;
   transition: gap .3s;
@@ -3035,4 +3087,42 @@ body {
 .blog-card.style4 .blog-img .blog-date a span {
     font-size: 22px !important;
     letter-spacing: -0.5px;
+}
+
+/* Fix mobile menu expand block covering text */
+.mobile-menu ul .menu-item-has-children > a .mean-expand-class,
+.mobile-menu ul .submenu-item-has-children > a .mean-expand-class {
+    background-color: transparent !important;
+    width: 50px !important;
+    color: var(--title-color) !important;
+}
+.mobile-menu ul .menu-item-has-children.active-class > a,
+.mobile-menu ul .submenu-item-has-children.active-class > a {
+    color: var(--theme-color) !important;
+}
+.mobile-menu ul .menu-item-has-children.active-class > a .mean-expand-class,
+.mobile-menu ul .submenu-item-has-children.active-class > a .mean-expand-class {
+    color: var(--theme-color) !important;
+}
+
+/* Fix process grid alignment on mobile */
+@media (max-width: 1199px) {
+    .process-grid-list .process-grid {
+        margin-left: 0 !important;
+    }
+}
+
+/* Fix horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+}
+
+.footer-widget,
+.footer-widget .widget {
+  background-color: transparent !important;
+}
+
+.footer-widget.widget_nav_menu a {
+  background-color: transparent !important;
+  text-decoration: none !important;
 }

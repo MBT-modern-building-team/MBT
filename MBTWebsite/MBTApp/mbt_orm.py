@@ -573,8 +573,39 @@ def get_sectors(lang='pl'):
                         'order': s.order,
                     })
                 return res
+
         except OperationalError:
             pass
     except Exception:
         pass
-    return []
+    
+    # Fallback to mbt_data
+    res = []
+    if hasattr(mbt_data, "SECTORS"):
+        for s in mbt_data.SECTORS:
+            title = _t(s.get("t_t"), lang, s.get("title"))
+            opis = _t(s.get("t_o"), lang, s.get("opis"))
+            resolved_url = s.get("view_name")
+            if resolved_url and not (resolved_url.startswith("#") or resolved_url.startswith("http") or resolved_url.startswith("/")):
+                try:
+                    from django.urls import reverse
+                    if s.get("slug"):
+                        resolved_url = reverse(resolved_url, args=[s.get("slug")])
+                    else:
+                        resolved_url = reverse(resolved_url)
+                except Exception:
+                    resolved_url = "#"
+            elif not resolved_url:
+                resolved_url = "#"
+
+            res.append({
+                "title": title,
+                "slug": s.get("slug"),
+                "view_name": s.get("view_name"),
+                "url": resolved_url,
+                "opis": opis,
+                "icon": s.get("icon"),
+                "image": s.get("image"),
+                "order": s.get("order"),
+            })
+    return res

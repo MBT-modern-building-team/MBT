@@ -22,6 +22,7 @@ urlpatterns = [
     path('sektor/<slug:slug>/', serviceViews.sectorDetail, name='sectorDetail'),
     path('kontakt/', homeViews.contact, name='contact'),
     path('szukaj/', homeViews.search, name='search'),
+    path('mapa-witryny/', homeViews.sitemap_html, name='sitemap_html'),
 
     # Blog / Artykuły
     path('blog/', newsViews.blog, name='blog'),

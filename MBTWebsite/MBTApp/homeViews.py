@@ -67,3 +67,15 @@ def search(request):
                 context['jobs'].append(j)
                 
     return render(request, 'home/search_results.html', context)
+
+
+def sitemap_html(request):
+    lang = request.LANGUAGE_CODE
+    context = {
+        'title': _('Mapa witryny'),
+        'subTitle': _('Mapa witryny'),
+        'projects': mbt_orm.get_projects(lang),
+        'articles': mbt_orm.get_articles(lang),
+        'jobs': mbt_orm.get_jobs(lang),
+    }
+    return render(request, 'home/sitemap.html', context)
