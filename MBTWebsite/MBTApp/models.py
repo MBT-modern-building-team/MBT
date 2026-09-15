@@ -182,7 +182,7 @@ class SiteConfig(models.Model):
     regon = models.CharField('REGON', max_length=20, default='369557780')
     krs = models.CharField('KRS', max_length=20, default='0000720424')
     founded = models.CharField('Rok założenia', max_length=10, default='2005')
-    tagline = models.CharField('Slogan', max_length=300, default='Od 20 lat z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od projektu aż po dach!')
+    tagline = models.CharField('Slogan', max_length=300, default='Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od projektu aż po dach!')
     about_short = models.TextField('Opis firmy (stopka)', default='MBT Modern Building Team — generalny wykonawca hal magazynowych, produkcyjnych i usługowych. Terminowa budowa obiektów przemysłowych pod klucz.')
 
     # Tłumaczenia t_* (JSON {lang: text}) — używane gdy DB dostępne
@@ -199,8 +199,8 @@ class SiteConfig(models.Model):
     t_office_katowice = models.JSONField('Siedziba Katowice — tłumaczenia', default=dict, blank=True)
     t_office_krakow = models.JSONField('Oddział Kraków — tłumaczenia', default=dict, blank=True)
 
-    counter_years = models.CharField('Licznik: lata', max_length=10, default='20')
-    counter_years_label = models.CharField('Licznik: lata (etykieta)', max_length=80, default='Lat doświadczenia')
+    counter_years = models.CharField('Licznik: lata', max_length=10, default='100%')
+    counter_years_label = models.CharField('Licznik: lata (etykieta)', max_length=80, default='Zaangażowania')
     counter_projects = models.CharField('Licznik: inwestycje', max_length=10, default='100')
     counter_projects_label = models.CharField('Licznik: inwestycje (etykieta)', max_length=80, default='Zrealizowanych inwestycji')
     counter_ontime = models.CharField('Licznik: terminowość', max_length=10, default='100')
@@ -210,7 +210,7 @@ class SiteConfig(models.Model):
     counter_brands_label = models.CharField('Licznik: marki (etykieta)', max_length=80, default='Zaufanych marek')
 
     # Hero (Strona główna)
-    hero_subtitle = models.CharField('Podtytuł hero', max_length=200, default='Od 20 lat z pasją budujemy Wasze biznesy')
+    hero_subtitle = models.CharField('Podtytuł hero', max_length=200, default='Z pasją budujemy Wasze biznesy')
     hero_title1 = models.CharField('Tytuł hero 1', max_length=200, default='Twój Generalny')
     hero_title2 = models.CharField('Tytuł hero 2', max_length=200, default='Wykonawca')
     hero_text = models.TextField('Tekst hero', default='Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> Budujemy hale magazynowe, produkcyjne i usługowe pod klucz.')

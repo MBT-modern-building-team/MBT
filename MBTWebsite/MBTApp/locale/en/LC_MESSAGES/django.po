@@ -212,7 +212,7 @@ msgstr ""
 msgid "Obserwuj nas"
 msgstr "Follow us"
 
-msgid "Od 20 lat z pasją budujemy Wasze biznesy"
+msgid "Z pasją budujemy Wasze biznesy"
 msgstr "For 20 years we have been building your businesses with passion"
 
 msgid "Od koncepcji do <strong>oddania kluczy</strong>"
@@ -899,7 +899,7 @@ msgstr ""
 "Comprehensive construction project management with deep understanding of "
 "investor "
 
-msgid "Lat doświadczenia"
+msgid "Zaangażowania"
 msgstr "Years of experience"
 
 msgid "Nasza misja"
@@ -1117,7 +1117,7 @@ msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
 msgstr "Buildings that meet strict certification requirements."
 
 msgid ""
-"Od 20 lat z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
+"Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
 "projektu aż po dach!"
 msgstr ""
 "For 20 years we have been building your businesses with passion. One team – "

@@ -224,8 +224,8 @@ msgstr ""
 msgid "Obserwuj nas"
 msgstr "Obserwuj nas"
 
-msgid "Od 20 lat z pasją budujemy Wasze biznesy"
-msgstr "Od 20 lat z pasją budujemy Wasze biznesy"
+msgid "Z pasją budujemy Wasze biznesy"
+msgstr "Z pasją budujemy Wasze biznesy"
 
 msgid "Od koncepcji do <strong>oddania kluczy</strong>"
 msgstr "Od koncepcji do <strong>oddania kluczy</strong>"

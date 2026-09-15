@@ -486,7 +486,7 @@ def get_site(lang='pl'):
         s['office_site_label'] = _gettext(s.get('office_site_label', ''))
         s['office_site_adres'] = _gettext(s.get('office_site_adres', ''))
         
-        s['hero_subtitle'] = _gettext('Od 20 lat z pasją budujemy Wasze biznesy')
+        s['hero_subtitle'] = _gettext('Z pasją budujemy Wasze biznesy')
         s['hero_title1'] = _gettext('Twój Generalny')
         s['hero_title2'] = _gettext('Wykonawca')
         s['hero_text'] = _gettext('Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> Budujemy hale magazynowe, produkcyjne i usługowe pod klucz.')

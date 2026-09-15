@@ -2924,23 +2924,24 @@ body {
    na desktop) — Y jest OK. Teraz przesuwam w prawo: right z 100px → 0px
    (bliżej prawej krawędzi). */
 .hero-3 .hero-shadow-text {
-  bottom: 170px;
-  right: 0px;
+  bottom: 270px;
+  right: -100px;
+  color: var(--white-color) !important;
 }
 @media (max-width: 1500px) {
-  .hero-3 .hero-shadow-text { bottom: 150px; right: -50px; }
+  .hero-3 .hero-shadow-text { bottom: 250px; right: -150px; }
 }
 @media (max-width: 1399px) {
-  .hero-3 .hero-shadow-text { bottom: 140px; right: -60px; }
+  .hero-3 .hero-shadow-text { bottom: 240px; right: -160px; }
 }
 @media (max-width: 1299px) {
-  .hero-3 .hero-shadow-text { bottom: 130px; right: -70px; }
+  .hero-3 .hero-shadow-text { bottom: 230px; right: -170px; }
 }
 @media (max-width: 1199px) {
-  .hero-3 .hero-shadow-text { bottom: 120px; right: -50px; }
+  .hero-3 .hero-shadow-text { bottom: 220px; right: -150px; }
 }
 @media (max-width: 991px) {
-  .hero-3 .hero-shadow-text { bottom: 110px; right: 0px; }
+  .hero-3 .hero-shadow-text { bottom: 210px; right: -100px; }
 }
 
 /* Contact page: equal-height cards (fix for Twój plac budowy being cropped) */

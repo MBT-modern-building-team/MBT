@@ -218,7 +218,7 @@ msgstr ""
 msgid "Obserwuj nas"
 msgstr "Слідкуйте за нами"
 
-msgid "Od 20 lat z pasją budujemy Wasze biznesy"
+msgid "Z pasją budujemy Wasze biznesy"
 msgstr "Вже 20 років ми з пристрастю будуємо ваш бізнес"
 
 msgid "Od koncepcji do <strong>oddania kluczy</strong>"
@@ -937,7 +937,7 @@ msgstr ""
 "Комплексне управління будівельними проектами з глибоким розумінням потреб "
 "інвесторів."
 
-msgid "Lat doświadczenia"
+msgid "Zaangażowania"
 msgstr "Років досвіду"
 
 msgid "Nasza misja"
@@ -1159,7 +1159,7 @@ msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
 msgstr "Об'єкти, що відповідають найсуворішим вимогам сертифікації."
 
 msgid ""
-"Od 20 lat z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
+"Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
 "projektu aż po dach!"
 msgstr ""
 "Вже 20 років ми з пристрастю будуємо ваш бізнес. Одна команда – повна "

@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='siteconfig',
             name='hero_subtitle',
-            field=models.CharField(default='Od 20 lat z pasją budujemy Wasze biznesy', max_length=200, verbose_name='Podtytuł hero'),
+            field=models.CharField(default='Z pasją budujemy Wasze biznesy', max_length=200, verbose_name='Podtytuł hero'),
         ),
         migrations.AddField(
             model_name='siteconfig',

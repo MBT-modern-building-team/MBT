@@ -216,7 +216,7 @@ msgstr ""
 msgid "Obserwuj nas"
 msgstr "Sledujte nás"
 
-msgid "Od 20 lat z pasją budujemy Wasze biznesy"
+msgid "Z pasją budujemy Wasze biznesy"
 msgstr "Už 20 rokov s vášňou staviame vaše podnikanie"
 
 msgid "Od koncepcji do <strong>oddania kluczy</strong>"
@@ -1021,7 +1021,7 @@ msgstr ""
 msgid "LOGISTYKA"
 msgstr "LOGISTIKA"
 
-msgid "Lat doświadczenia"
+msgid "Zaangażowania"
 msgstr "Rokov skúseností"
 
 msgid "Ludzie MBT"
@@ -1074,7 +1074,7 @@ msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
 msgstr "Objekty spĺňajúce prísne požiadavky certifikácie."
 
 msgid ""
-"Od 20 lat z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
+"Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
 "projektu aż po dach!"
 msgstr ""
 "Už 20 rokov s vášňou budujeme vaše podnikanie. Jeden tím — kompletná "
