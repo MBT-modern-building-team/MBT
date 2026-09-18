@@ -23,6 +23,8 @@ urlpatterns = [
     path('kontakt/', homeViews.contact, name='contact'),
     path('szukaj/', homeViews.search, name='search'),
     path('mapa-witryny/', homeViews.sitemap_html, name='sitemap_html'),
+    path('uroczysosc-rozpoczencia-inwestycji/', serviceViews.uroczystosc, name='uroczystosc'),
+    path('uroczystosc-rozpoczecia-inwestycji/', serviceViews.uroczystosc, name='uroczystosc_correct'),
 
     # Blog / Artykuły
     path('blog/', newsViews.blog, name='blog'),
