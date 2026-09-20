@@ -181,7 +181,7 @@ Uwagi dodatkowe:
             )
             messages.success(request, _("Dziękujemy! Twój formularz został pomyślnie wysłany. Skontaktujemy się z Tobą wkrótce."))
         except Exception as e:
-            messages.error(request, _(f"Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio. (Błąd: Brak konfiguracji SMTP na serwerze)"))
+            messages.error(request, _(f"Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio. (Szczegóły: {e})"))
 
     data = {
         'title': _('Uroczystość Rozpoczęcia Inwestycji'),
