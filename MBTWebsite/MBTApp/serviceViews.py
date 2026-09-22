@@ -190,3 +190,63 @@ Uwagi dodatkowe:
         'breadcrumb': True,
     }
     return render(request, "service/uroczystosc.html", data)
+
+import traceback
+
+def ankieta_wizerunek(request):
+    lang = request.LANGUAGE_CODE
+    
+    if request.method == 'POST':
+        company_name = request.POST.get('company_name', 'Nie podano')
+        person_name = request.POST.get('person_name', 'Nie podano')
+        
+        message_body = f"Wypełniono nową Ankietę Wizerunkową MBT:\n\n"
+        message_body += f"Firma: {company_name}\n"
+        message_body += f"Osoba: {person_name}\n\n"
+        message_body += "="*40 + "\n\n"
+        
+        # Sort questions by q_idx
+        q_keys = sorted([k for k in request.POST.keys() if k.startswith('q') and k.endswith('_title')], key=lambda x: int(x[1:].split('_')[0]))
+        
+        for title_key in q_keys:
+            q_idx = title_key.split('_')[0] # e.g. "q1"
+            q_title = request.POST.get(title_key, '')
+            
+            answers = request.POST.getlist(q_idx)
+            other = request.POST.get(f"{q_idx}_other", '').strip()
+            
+            if 'Inne' in answers and other:
+                answers.remove('Inne')
+                answers.append(f'Inne: {other}')
+                
+            if not answers:
+                ans_str = "Brak odpowiedzi"
+            else:
+                ans_str = ", ".join(answers)
+                
+            message_body += f"{q_title}\nOdp: {ans_str}\n\n"
+            
+        subject = f"Nowa Ankieta Wizerunkowa MBT - {company_name}"
+        recipient = 'm.dziubek@mbt.pl'
+        
+        try:
+            from django.core.mail import send_mail
+            from django.conf import settings
+            send_mail(
+                subject,
+                message_body,
+                settings.DEFAULT_FROM_EMAIL if hasattr(settings, 'DEFAULT_FROM_EMAIL') else 'no-reply@mbt.pl',
+                [recipient],
+                fail_silently=False,
+            )
+            messages.success(request, _("Dziękujemy! Twoja ankieta została wysłana i pomoże nam w dalszym rozwoju."))
+        except Exception as e:
+            messages.error(request, _(f"Wystąpił błąd podczas wysyłania ankiety. (Szczegóły: {e})"))
+
+    data = {
+        'title': _('Ankieta Wizerunkowa'),
+        'subTitle': _('Ankieta'),
+        'site': mbt_orm.get_site(lang),
+        'breadcrumb': True,
+    }
+    return render(request, "service/ankieta-wizerunek.html", data)
