@@ -171,7 +171,7 @@ Uwagi dodatkowe:
 {comments}
 """
         try:
-            recipient = settings.SITE_EMAIL if hasattr(settings, 'SITE_EMAIL') else 'biuro@mbt.pl'
+            recipient = 'm.dziubek@mbt.pl'
             send_mail(
                 subject,
                 message_body,
