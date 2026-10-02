@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import RedirectView
 from MBTApp import homeViews
 from MBTApp import newsViews
 from MBTApp import oznakowanieViews
@@ -42,6 +43,9 @@ urlpatterns = [
 
     # Polityka prywatności
     path('polityka-prywatnosci/', mbtViews.privacy, name='privacy'),
+    path('RODO/', mbtViews.rodo, name='rodo_upper'),
+    path('rodo/', mbtViews.rodo, name='rodo_lower'),
+
 
     # Oznakowanie budowy (panel kierownika)
     path('admin-budowa/', oznakowanieViews._panel_view, name='oznakowanie_public'),

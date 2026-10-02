@@ -113,3 +113,10 @@ def privacy(request):
         'subTitle': _('Polityka prywatności'),
     }
     return render(request, 'pages/privacy.html', data)
+
+def rodo(request):
+    data = {
+        'title': _('RODO'),
+        'subTitle': _('RODO'),
+    }
+    return render(request, 'pages/rodo.html', data)
