@@ -1,0 +1,169 @@
+{% load i18n %}
+{% load static %}
+<div class="sales-map-container mt-5 mb-5">
+    <div class="row align-items-center">
+        <div class="col-lg-7 text-center">
+            <h3 class="text-white mb-4">{% trans "Znajdź opiekuna dla swojego regionu" %}</h3>
+            <div id="poland-map-d3" style="width: 100%; max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 20px;">
+                <!-- D3 map will render here -->
+            </div>
+        </div>
+        <div class="col-lg-5 text-start mt-4 mt-lg-0">
+            <div id="sales-rep-info" class="team-card bg-white p-4 rounded d-none">
+                <img id="sales-rep-photo" src="" alt="" class="img-fluid rounded mb-3 d-none" style="max-height: 200px; object-fit: cover; width: 100%;">
+                <h4 id="sales-rep-name" class="mb-1"></h4>
+                <p id="sales-rep-position" class="text-theme mb-3"></p>
+                <div class="mb-3">
+                    <a id="sales-rep-phone-btn" href="#" class="btn style2 w-100" style="font-size: 20px; padding: 12px 10px;">
+                        <i class="ri-phone-fill me-1"></i> <span id="sales-rep-phone"></span>
+                    </a>
+                </div>
+                <a id="sales-rep-email-btn" href="#" class="text-body" style="font-size: 15px;"><i class="ri-mail-line"></i> <span id="sales-rep-email"></span></a>
+            </div>
+            <div id="sales-rep-placeholder" class="text-white text-center" style="opacity: 0.7; margin-top: 30px;">
+                <i class="ri-cursor-click-line" style="font-size: 3rem; display: block; margin-bottom: 10px;"></i>
+                <h4 class="text-white">{% trans "Wybierz województwo" %}</h4>
+                <p class="mt-2">{% trans "Kliknij na województwo na mapie, aby zobaczyć przypisanego handlowca." %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const geojsonDataUrl = "{% static 'poland.geojson' %}";
+
+    const width = 600;
+    const height = 600;
+    
+    const svg = d3.select("#poland-map-d3")
+        .append("svg")
+        .attr("viewBox", `0 0 ${width} ${height}`)
+        .style("width", "100%")
+        .style("height", "auto");
+
+    const projection = d3.geoMercator();
+    const path = d3.geoPath().projection(projection);
+
+    const podzialRegionow = {
+        "świętokrzyskie": "Jarosław Wawrzyk",
+        "małopolskie": "Jarosław Wawrzyk",
+        "podkarpackie": "Jarosław Wawrzyk",
+        "lubelskie": "Jarosław Wawrzyk",
+        "dolnośląskie": "Agnieszka Grzelak",
+        "wielkopolskie": "Agnieszka Grzelak",
+        "lubuskie": "Agnieszka Grzelak",
+        "śląskie": "Karol Pinoczek",
+        "opolskie": "Karol Pinoczek",
+        "łódzkie": "Karol Pinoczek",
+        "mazowieckie": "Marcin Kobryń",
+        "warmińsko-mazurskie": "Marcin Kobryń",
+        "podlaskie": "Marcin Kobryń",
+        "zachodniopomorskie": "Łukasz Liszka",
+        "pomorskie": "Łukasz Liszka",
+        "kujawsko-pomorskie": "Łukasz Liszka"
+    };
+
+    // Color palette for each rep
+    const colors = {
+        "Jarosław Wawrzyk": "#f39c12",
+        "Agnieszka Grzelak": "#3498db",
+        "Karol Pinoczek": "#2ecc71",
+        "Marcin Kobryń": "#9b59b6",
+        "Łukasz Liszka": "#e74c3c",
+        "default": "#95a5a6"
+    };
+
+    // Sales reps data passed from Django view
+    const salesRepsData = {
+        {% for rep in sales_reps %}
+        "{{ rep.name }}": {
+            "name": "{{ rep.name }}",
+            "position": "{{ rep.position }}",
+            "phone": "{{ rep.phone }}",
+            "phone_href": "tel:{{ rep.phone|cut:' ' }}",
+            "email": "{{ rep.email }}",
+            "photo": "{{ rep.photo|default:'' }}"
+        }{% if not forloop.last %},{% endif %}
+        {% endfor %}
+    };
+
+    d3.json(geojsonDataUrl).then(function(poland) {
+        // Fit projection to Poland
+        projection.fitSize([width, height], poland);
+
+        svg.selectAll("path")
+            .data(poland.features)
+            .enter()
+            .append("path")
+            .attr("d", path)
+            .attr("stroke", "#ffffff")
+            .attr("stroke-width", 1.5)
+            .attr("fill", function(d) {
+                const regionName = d.properties.name.toLowerCase();
+                const repName = podzialRegionow[regionName];
+                return repName && colors[repName] ? colors[repName] : colors["default"];
+            })
+            .style("cursor", "pointer")
+            .style("transition", "fill 0.2s, opacity 0.2s")
+            .on("mouseover", function(event, d) {
+                d3.select(this).style("opacity", 0.7);
+            })
+            .on("mouseout", function(event, d) {
+                d3.select(this).style("opacity", 1);
+            })
+            .on("click", function(event, d) {
+                const regionName = d.properties.name.toLowerCase();
+                const repName = podzialRegionow[regionName];
+                
+                if (repName && salesRepsData[repName]) {
+                    const rep = salesRepsData[repName];
+                    
+                    document.getElementById("sales-rep-name").innerText = rep.name + " (" + d.properties.name + ")";
+                    document.getElementById("sales-rep-position").innerText = rep.position;
+                    
+                    if (rep.phone) {
+                        document.getElementById("sales-rep-phone").innerText = rep.phone;
+                        document.getElementById("sales-rep-phone-btn").href = rep.phone_href;
+                        document.getElementById("sales-rep-phone-btn").parentElement.classList.remove("d-none");
+                    } else {
+                        document.getElementById("sales-rep-phone-btn").parentElement.classList.add("d-none");
+                    }
+                    
+                    document.getElementById("sales-rep-email").innerText = rep.email;
+                    document.getElementById("sales-rep-email-btn").href = "mailto:" + rep.email;
+                    
+                    const photoEl = document.getElementById("sales-rep-photo");
+                    if (rep.photo) {
+                        photoEl.src = rep.photo;
+                        photoEl.classList.remove("d-none");
+                    } else {
+                        photoEl.classList.add("d-none");
+                    }
+                    
+                    document.getElementById("sales-rep-placeholder").classList.add("d-none");
+                    document.getElementById("sales-rep-info").classList.remove("d-none");
+                }
+            });
+            
+            // Add labels (Voivodeship names)
+            svg.selectAll("text")
+                .data(poland.features)
+                .enter()
+                .append("text")
+                .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+                .attr("dy", ".35em")
+                .style("text-anchor", "middle")
+                .style("fill", "#fff")
+                .style("font-size", "10px")
+                .style("font-weight", "bold")
+                .style("pointer-events", "none")
+                .style("text-shadow", "0 0 3px #000")
+                .text(function(d) { return d.properties.name; });
+
+    }).catch(function(error) {
+        console.error("Error loading Poland GeoJSON:", error);
+    });
+});
+</script>

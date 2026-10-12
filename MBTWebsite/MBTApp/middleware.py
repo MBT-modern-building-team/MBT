@@ -14,26 +14,11 @@ from django.shortcuts import redirect
 
 
 class AdminSubdomainMiddleware:
+    """Zezwala na logowanie do panelu admina na domenie głównej (mbt.pl, www.mbt.pl) oraz subdomenach."""
     def __init__(self, get_response):
         self.get_response = get_response
 
     def __call__(self, request):
-        path = request.path
-        host = (request.get_host() or '').lower()
-
-        is_admin_path = path.startswith('/admin/') or path == '/admin'
-        already_on_subdomain = host.startswith('admin.') or host.startswith('localhost') or host.startswith('127.0.0.1')
-        is_vercel_app = host.endswith('.vercel.app')
-
-        if (
-            not settings.DEBUG
-            and is_admin_path
-            and not already_on_subdomain
-            and not is_vercel_app
-            and host
-        ):
-            return redirect(f'https://admin.{host}{path}')
-
         return self.get_response(request)
 
 class AutoLanguageMiddleware:

@@ -5839,6 +5839,13 @@ SALES_REPS = [{'email': 'a.grzelak@mbt.pl',
   'phone': '881 202\xa0167',
   'photo': '',
   'position': 'Dział Handlowy',
+  't_p': {}},
+ {'email': 'l.liszka@mbt.pl',
+  'name': 'Łukasz Liszka',
+  'order': 4,
+  'phone': '+48 881 202 306',
+  'photo': '',
+  'position': 'Manager ds. handlowych/Business Development Manager',
   't_p': {}}]
 
 SECTORS = [{'icon': 'ri-building-2-line',

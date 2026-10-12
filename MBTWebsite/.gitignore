@@ -33,3 +33,7 @@ node_modules/
 # gen_mbt_data.py jest CZYSTY (bez sekretów) — commitowany.
 scripts/*
 !scripts/gen_mbt_data.py
+chrome_data/
+temp.html
+test.js
+test_clean.js

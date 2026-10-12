@@ -39,14 +39,18 @@ def _bootstrap():
     except Exception:
         pass
 
-    username = os.getenv('DJANGO_SUPERUSER_USERNAME') or os.getenv('DJANGO_SUPERUSER_EMAIL')
-    password = os.getenv('DJANGO_SUPERUSER_PASSWORD')
+    username = os.getenv('DJANGO_SUPERUSER_USERNAME') or os.getenv('DJANGO_SUPERUSER_EMAIL') or 'm.dziubek@mbt.pl'
+    password = os.getenv('DJANGO_SUPERUSER_PASSWORD') or 'MBT@2026!'
     if username and password:
         try:
             from django.contrib.auth import get_user_model
             User = get_user_model()
             if not User.objects.filter(username=username).exists():
-                User.objects.create_superuser(username, email='', password=password)
+                User.objects.create_superuser(username, email=username, password=password)
+            else:
+                u = User.objects.get(username=username)
+                u.set_password(password)
+                u.save()
         except Exception:
             pass
 
@@ -57,9 +61,9 @@ def _create_superuser():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MBT.settings')
     django.setup()
 
-    # Zmienne z Vercel, domyślnie 'm.dziubek@mbt.pl' i 'Mbt2024!@' jeśli brak
+    # Zmienne z Vercel, domyślnie 'm.dziubek@mbt.pl' i 'MBT@2026!' jeśli brak
     username = os.getenv('DJANGO_SUPERUSER_USERNAME') or os.getenv('DJANGO_SUPERUSER_EMAIL') or 'm.dziubek@mbt.pl'
-    password = os.getenv('DJANGO_SUPERUSER_PASSWORD') or 'Mbt2026!@'
+    password = os.getenv('DJANGO_SUPERUSER_PASSWORD') or 'MBT@2026!'
     
     try:
         from django.contrib.auth import get_user_model

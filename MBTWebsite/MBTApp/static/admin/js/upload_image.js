@@ -201,6 +201,62 @@
     });
   });
 
+  /* --- Kompresja obrazu po stronie przeglądarki (Canvas) --- */
+  function compressImage(file, maxDim, quality, callback) {
+    if (!file || !file.type || !file.type.startsWith('image/') || file.type === 'image/svg+xml') {
+      return callback(file);
+    }
+
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      var img = new Image();
+      img.onload = function () {
+        var w = img.width;
+        var h = img.height;
+        var max = maxDim || 1920;
+        if (w > max || h > max) {
+          if (w > h) {
+            h = Math.round(h * (max / w));
+            w = max;
+          } else {
+            w = Math.round(w * (max / h));
+            h = max;
+          }
+        }
+        var canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        var ctx = canvas.getContext('2d');
+
+        // Wypełnij tło na biało w przypadku przezroczystości (konwersja na JPEG)
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(0, 0, w, h);
+        ctx.drawImage(img, 0, 0, w, h);
+
+        var outType = 'image/jpeg';
+        canvas.toBlob(function (blob) {
+          if (!blob) {
+            return callback(file);
+          }
+          var baseName = (file.name || 'image').replace(/\.[^/.]+$/, '');
+          var compressedFile = new File([blob], baseName + '.jpg', {
+            type: outType,
+            lastModified: Date.now()
+          });
+          callback(compressedFile);
+        }, outType, quality || 0.85);
+      };
+      img.onerror = function () {
+        callback(file);
+      };
+      img.src = e.target.result;
+    };
+    reader.onerror = function () {
+      callback(file);
+    };
+    reader.readAsDataURL(file);
+  }
+
   /* --- Cropper helper --- */
   function openCropper(file, aspectRatio, onCrop, onCancel) {
     var overlay = document.createElement('div');
@@ -276,14 +332,22 @@
 
     btnSave.addEventListener('click', function() {
       if (!cropper) return;
+      var baseName = (file.name || 'image').replace(/\.[^/.]+$/, '');
       cropper.getCroppedCanvas({
-        maxWidth: 2000,
-        maxHeight: 2000,
+        maxWidth: 1600,
+        maxHeight: 1600,
       }).toBlob(function(blob) {
-        var croppedFile = new File([blob], file.name, { type: file.type || 'image/jpeg' });
+        if (!blob) {
+          close();
+          return;
+        }
+        var croppedFile = new File([blob], baseName + '.jpg', {
+          type: 'image/jpeg',
+          lastModified: Date.now()
+        });
         close();
         onCrop(croppedFile);
-      }, file.type || 'image/jpeg', 0.9);
+      }, 'image/jpeg', 0.85);
     });
   }
 
@@ -298,19 +362,70 @@
       var aspectRatio = input.getAttribute('data-aspect-ratio');
       var isVideo = files[0].type.indexOf('video') === 0;
 
-      if (isCrop && typeof Cropper !== 'undefined' && !isVideo) {
-        openCropper(files[0], aspectRatio, function(croppedFile) {
+      if (input.dataset.gallery === '1') {
+        // Multi-upload galeria: automatyczna kompresja każdego zdjęcia
+        var fileList = Array.prototype.slice.call(files);
+        var compressedList = [];
+        var total = fileList.length;
+        var processed = 0;
+
+        fileList.forEach(function (f, idx) {
+          compressImage(f, 1920, 0.85, function (compFile) {
+            compressedList[idx] = compFile;
+            processed++;
+            if (processed === total) {
+              var dt = new DataTransfer();
+              compressedList.forEach(function (cf) { dt.items.add(cf); });
+              input.files = dt.files;
+              previewFiles(input);
+            }
+          });
+        });
+      } else if (isCrop && typeof Cropper !== 'undefined' && !isVideo) {
+        // Przed otwarciem croppera zoptymalizuj ewentualne ogromne pliki z aparatu
+        compressImage(files[0], 2400, 0.9, function (optFile) {
+          openCropper(optFile, aspectRatio, function (croppedFile) {
+            var dt = new DataTransfer();
+            dt.items.add(croppedFile);
+            input.files = dt.files;
+            previewFiles(input);
+          }, function () {
+            input.value = '';
+          });
+        });
+      } else if (!isVideo) {
+        // Pojedyncze zdjęcie bez croppera: automatyczna kompresja do 1920px JPEG
+        compressImage(files[0], 1920, 0.85, function (compressedFile) {
           var dt = new DataTransfer();
-          dt.items.add(croppedFile);
+          dt.items.add(compressedFile);
           input.files = dt.files;
           previewFiles(input);
-        }, function() {
-          // On cancel, clear the input
-          input.value = '';
         });
       } else {
+        // Wideo
         previewFiles(input);
       }
+    }
+  });
+
+  /* --- Zabezpieczenie przed limitem Vercel (4.5 MB) przy wysyłce formularza --- */
+  document.addEventListener('submit', function (e) {
+    var form = e.target;
+    if (!form || !form.querySelectorAll) return;
+    var fileInputs = form.querySelectorAll('input[type="file"]');
+    var totalBytes = 0;
+    fileInputs.forEach(function (inp) {
+      if (inp.files) {
+        for (var i = 0; i < inp.files.length; i++) {
+          totalBytes += inp.files[i].size || 0;
+        }
+      }
+    });
+    // 4.2 MB limit ostrzegawczy (Vercel payload limit to 4.5 MB)
+    if (totalBytes > 4.2 * 1024 * 1024) {
+      e.preventDefault();
+      alert('Rozmiar wybranych plików (' + (totalBytes / (1024 * 1024)).toFixed(1) + ' MB) przekracza dopuszczalny limit 4.5 MB na serwerze Vercel.\n\nProsimy o wybranie mniejszych plików lub zmniejszenie ich przed zapisem.');
+      return false;
     }
   });
 })();
