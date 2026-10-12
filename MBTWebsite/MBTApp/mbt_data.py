@@ -5823,7 +5823,7 @@ SALES_REPS = [{'email': 'a.grzelak@mbt.pl',
   'name': 'Karol Pinoczek',
   'order': 1,
   'phone': '881 202 784',
-  'photo': '',
+  'photo': '/static/img/mbt/O-nas-Karol-Pinoczek-scaled-e1769718455199-b48516a2.jpg',
   'position': 'Dział Handlowy',
   't_p': {}},
  {'email': 'm.kobryn@mbt.pl',
@@ -6674,7 +6674,7 @@ WORKERS = [{'linkedin': 'https://www.linkedin.com/in/tomasz-kalisz-28917386/',
           'branży. Budownictwo jest moją pasją, a praca z ludźmi spełnieniem '
           'zawodowych ambicji i fantastyczną przygodą.',
   'order': 13,
-  'photo': '',
+  'photo': '/static/img/mbt/O-nas-Karol-Pinoczek-scaled-e1769718455199-b48516a2.jpg',
   'position': 'Manager ds. handlowych',
   't_o': {'cs': 'Jsem obchodní ředitel s desetiletou zkušeností v oboru. '
                 'Stavitelství je mou vášní a práce s lidmi naplněním '
