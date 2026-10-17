@@ -57,6 +57,8 @@ urlpatterns = [
     path('robots.txt', robots_txt_view),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('media/<path:path_str>', media_redirect_view),
+    path('admin/mbtapp/', RedirectView.as_view(url='/admin/MBTApp/', permanent=False)),
+    path('admin/mbtapp/<path:rest>', RedirectView.as_view(url='/admin/MBTApp/%(rest)s', permanent=False)),
     path('admin/', admin.site.urls),
     # Przekierowanie z /pl/ na / (ponieważ polski jest domyślnym językiem bez prefiksu)
     path('pl/', RedirectView.as_view(url='/', permanent=True)),
