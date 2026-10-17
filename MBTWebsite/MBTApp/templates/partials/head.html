@@ -13,12 +13,21 @@
     <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}MBT Modern Building Team">
     <meta property="og:description" content="{% trans 'Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!' %}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ request.build_absolute_uri }}">
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    <meta property="og:url" content="https://mbt.pl{{ request.path }}">
+    <link rel="canonical" href="https://mbt.pl{{ request.path }}">
+
+    <!-- Multilingual Hreflang Alternates -->
+    {% for lang in site_languages %}
+    <link rel="alternate" hreflang="{{ lang.code }}" href="https://mbt.pl{{ lang.url }}">
+    {% endfor %}
+    {% if translate_urls.pl %}
+    <link rel="alternate" hreflang="x-default" href="https://mbt.pl{{ translate_urls.pl }}">
+    {% endif %}
+
     {% if photos and photos.home_hero_bg %}
-    <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ photos.home_hero_bg }}">
+    <meta property="og:image" content="{% if photos.home_hero_bg|slice:':4' == 'http' %}{{ photos.home_hero_bg }}{% else %}https://mbt.pl{{ photos.home_hero_bg }}{% endif %}">
     {% else %}
-    <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}/static/img/favicons/favicon.png">
+    <meta property="og:image" content="https://mbt.pl/static/img/favicons/favicon.png">
     {% endif %}
 
     <!-- Mobile Specific Metas -->

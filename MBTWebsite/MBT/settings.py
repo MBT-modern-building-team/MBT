@@ -71,6 +71,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'MBTApp.middleware.SeoRedirectMiddleware',
     'MBTApp.middleware.AdminSubdomainMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'MBTApp.middleware.AutoLanguageMiddleware',

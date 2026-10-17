@@ -1,0 +1,927 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBT Brand Book</title>
+    <style>
+        @font-face {
+            font-family: 'Technor';
+            src: local('Technor Regular'), local('Technor-Regular');
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'Technor';
+            src: local('Technor Medium'), local('Technor-Medium');
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'Technor';
+            src: local('Technor Bold'), local('Technor-Bold');
+            font-weight: bold;
+        }
+
+        :root {
+            --mbt-navy: #023E7C;
+            --mbt-orange: #ED7121;
+            --mbt-white: #FFFFFF;
+            --mbt-blue: #4456FE; /* dodatkowy */
+            --font-main: 'Technor', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: var(--font-main);
+            background-color: var(--mbt-white);
+            color: var(--mbt-navy);
+            overflow: hidden; /* Hide main scrollbar */
+        }
+
+        .presentation {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .slide {
+            height: 100vh;
+            width: 100%;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 6rem;
+            position: relative;
+            background-color: var(--mbt-white);
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Dekompozycje kolorystyczne dla poszczególnych układów */
+        .slide.bg-navy {
+            background-color: var(--mbt-navy);
+            color: var(--mbt-white);
+        }
+        .slide.bg-navy h1, .slide.bg-navy h2, .slide.bg-navy p, .slide.bg-navy li, .slide.bg-navy h3 {
+            color: var(--mbt-white);
+        }
+
+        .slide-header {
+            margin-bottom: 3rem;
+            border-bottom: 3px solid var(--mbt-orange);
+            padding-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .slide-header h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--mbt-navy);
+            margin: 0;
+        }
+        
+        .slide.bg-navy .slide-header {
+            border-bottom-color: var(--mbt-orange);
+        }
+        .slide.bg-navy .slide-header h2 {
+            color: var(--mbt-white);
+        }
+
+        .slide-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+
+        .two-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: var(--mbt-navy);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .slide.bg-navy h3 {
+            color: var(--mbt-orange);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--mbt-orange);
+            font-size: 2rem;
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+        }
+
+        /* Title Slide */
+        .slide-title {
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .slide-title .brand-logo {
+            font-size: 6rem;
+            font-weight: bold;
+            color: var(--mbt-orange);
+            line-height: 1;
+        }
+        
+        .slide-title h1 {
+            color: var(--mbt-white);
+            font-size: 3.5rem;
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+
+        .slide-title h2 {
+            color: var(--mbt-white);
+            opacity: 0.8;
+            font-size: 1.5rem;
+            font-weight: normal;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        .slide-footer {
+            position: absolute;
+            bottom: 2rem;
+            left: 6rem;
+            right: 6rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--mbt-navy);
+            opacity: 0.6;
+        }
+        .slide.bg-navy .slide-footer {
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* ToC Slide */
+        .toc-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 4rem;
+            row-gap: 1.5rem;
+        }
+        .toc-list li {
+            font-size: 1.4rem;
+            font-weight: 500;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        .toc-list li::before { display: none; }
+        .toc-list li span.num {
+            color: var(--mbt-orange);
+            font-weight: bold;
+            margin-right: 1rem;
+            font-size: 1.8rem;
+        }
+
+        /* Color boxes */
+        .color-palette {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .color-box {
+            flex: 1;
+            border-radius: 10px;
+            padding: 2rem;
+            color: white;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .color-box.navy { background-color: var(--mbt-navy); }
+        .color-box.orange { background-color: var(--mbt-orange); }
+        .color-box.white { background-color: var(--mbt-white); color: var(--mbt-navy); border: 2px solid #ddd; }
+        .color-box.blue { background-color: var(--mbt-blue); }
+        
+        .color-box strong { font-size: 1.2rem; display: block; margin-bottom: 0.5rem;}
+        .color-box span { font-size: 1rem; opacity: 0.9; }
+
+        /* Typography */
+        .typo-spec {
+            margin-top: 2rem;
+        }
+        .typo-spec h4 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        .font-technor { font-family: 'Technor', sans-serif; }
+        .typo-details {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border-top: 1px solid var(--mbt-navy);
+            padding-top: 1rem;
+            margin-top: 2rem;
+        }
+        .typo-details > div { margin-bottom: 1.5rem; }
+        .typo-label { font-weight: bold; color: var(--mbt-navy); }
+
+        .logo-placeholder {
+            background-color: white;
+            border: 2px dashed #ccc;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 4rem;
+            color: #999;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+        .placeholder-box {
+            background-color: rgba(2, 62, 124, 0.05); /* very light navy */
+            border: 1px dashed var(--mbt-navy);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            font-style: italic;
+            color: var(--mbt-navy);
+        }
+
+        .nav-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+            z-index: 100;
+        }
+        .nav-btn {
+            background-color: var(--mbt-navy);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        .nav-btn:hover {
+            background-color: var(--mbt-orange);
+        }
+        .pdf-btn {
+            width: auto;
+            border-radius: 25px;
+            padding: 0 1.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 1024px) {
+            .slide { padding: 3rem 2rem; }
+            .slide-header h2 { font-size: 2rem; }
+            .two-cols { grid-template-columns: 1fr; gap: 2rem; }
+            .toc-list { grid-template-columns: 1fr; }
+            .color-palette { flex-wrap: wrap; }
+            .color-box { min-width: calc(50% - 1rem); }
+        }
+
+        @media print {
+            @page {
+                size: 1920px 1080px;
+                margin: 0;
+            }
+            body, html {
+                width: 1920px !important;
+                height: auto !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: visible !important;
+                font-size: 16px !important; /* Force exact same rem calculation */
+            }
+            .nav-buttons {
+                display: none !important;
+            }
+            .presentation {
+                width: 1920px !important;
+                overflow: visible !important;
+                height: auto !important;
+                scroll-snap-type: none !important;
+            }
+            .slide {
+                width: 1920px !important;
+                height: 1080px !important;
+                page-break-after: always;
+                page-break-inside: avoid;
+                scroll-snap-align: none !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                overflow: hidden !important; /* Prevent ANY overflow from causing extra pages */
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="nav-buttons">
+        <a href="{% static 'MBT_Brand_Book.pdf' %}" download class="nav-btn pdf-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">Pobierz PDF</a>
+        <button class="nav-btn" onclick="scrollSlide(-1)">↑</button>
+        <button class="nav-btn" onclick="scrollSlide(1)">↓</button>
+    </div>
+
+    <div class="presentation" id="presentation">
+        
+        <!-- Slide 0: Okładka -->
+        <div class="slide bg-navy slide-title">
+            <div style="background-color: white; padding: 1.5rem 3rem; border-radius: 8px; display: inline-block;">
+                <img src="{% static 'img/mbt/mbt_logo_horizontal.png' %}" alt="MBT" height="70" style="display: block;">
+            </div>
+            <div style="font-size: 2rem; font-weight: 500; color: var(--mbt-white); margin-top: 3rem; letter-spacing: 2px;">MODERN BUILDING TEAM</div>
+            <hr style="border: 0; border-top: 2px solid var(--mbt-orange); width: 100px; margin: 3rem 0;">
+            <h1>BRAND BOOK</h1>
+            <h2>Księga Znaku i Wytyczne Marketingowo-Komunikacyjne</h2>
+            
+            <div class="slide-footer">
+                <div>Wersja robocza 1.0 · wrzesień 2026</div>
+                <div>www.mbt.pl</div>
+            </div>
+        </div>
+
+        <!-- Slide 1: Spis treści -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>Spis treści</h2>
+                <img src="{% static 'img/mbt/mbt_logo_horizontal.png' %}" alt="MBT" height="40">
+            </div>
+            <div class="slide-content">
+                <ul class="toc-list">
+                    <li><span class="num">01</span> O firmie MBT</li>
+                    <li><span class="num">02</span> Fundament marki</li>
+                    <li><span class="num">03</span> Ton komunikacji (Tone of Voice)</li>
+                    <li><span class="num">04</span> Grupa docelowa</li>
+                    <li><span class="num">05</span> Identyfikacja wizualna — księga znaku</li>
+                    <li><span class="num">06</span> Wytyczne wizualne — digital</li>
+                    <li><span class="num">07</span> Filary strategii contentowej</li>
+                    <li><span class="num">08</span> Materiały drukowane i OOH</li>
+                    <li><span class="num">09</span> Oznakowanie i branding placu budowy</li>
+                </ul>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 2 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 2: O firmie MBT -->
+        <div class="slide bg-gray">
+            <div class="slide-header">
+                <h2>1. O firmie MBT</h2>
+            </div>
+            <div class="slide-content two-cols">
+                <div>
+                    <h3>Kim jesteśmy</h3>
+                    <p>MBT (Modern Building Team) to doświadczony Generalny Wykonawca inwestycji budowlanych, działający na rynku od ponad 20 lat. Firma specjalizuje się w kompleksowej realizacji obiektów kubaturowych dla wymagającego sektora B2B.</p>
+                    <p>Zespół MBT przejmuje pełną odpowiedzialność za proces inwestycyjny — od optymalizacji projektu i przygotowania kosztorysu, przez rygorystyczne zarządzanie placem budowy i podwykonawcami, aż po finalne przekazanie obiektu do użytkowania (realizacja „pod klucz”).</p>
+
+                    <h3>Kluczowe wyróżniki</h3>
+                    <ul>
+                        <li>Inżynierska precyzja — ścisłe trzymanie się harmonogramów, budżetów i norm technicznych</li>
+                        <li>Nowoczesne technologie — środowisko BIM, cyfrowe zarządzanie projektem, monitoring dronami</li>
+                        <li>Zrównoważone budownictwo — zgodność z ESG i certyfikacją BREEAM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Główne obszary działalności</h3>
+                    <ul>
+                        <li><strong>Logistyka i Magazyny</strong> — hale wysokiego składowania, centra dystrybucyjne, obiekty typu BTS</li>
+                        <li><strong>Przemysł i Produkcja</strong> — zaawansowane technologicznie zakłady produkcyjne</li>
+                        <li><strong>Retail i Komercja</strong> — nowoczesne parki handlowe, obiekty multi-use</li>
+                        <li><strong>Automotive</strong> — kompleksowe salony samochodowe i autoryzowane stacje obsługi</li>
+                        <li><strong>Fit-out i Biura</strong> — aranżacje przestrzeni biurowych i komercyjnych</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 3 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Fundament marki -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>2. Fundament marki</h2>
+            </div>
+            <div class="slide-content">
+                <h3>Pozycjonowanie</h3>
+                <p>MBT komunikuje się jako <strong>partner inżynierski dla Inwestora</strong>, a nie wykonawca ograniczony do realizacji zleceń. Marka zdejmuje z klienta ciężar zarządzania budową, dając mu przestrzeń na prowadzenie własnego biznesu — to centralna obietnica marki, która powinna przewijać się we wszystkich materiałach, niezależnie od formatu.</p>
+                
+                <h3 style="margin-top: 3rem;">Misja i wartości</h3>
+                <div class="placeholder-box" style="min-height: 100px;">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 4 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Tone of Voice -->
+        <div class="slide bg-navy">
+            <div class="slide-header">
+                <h2>3. Ton komunikacji (Tone of Voice)</h2>
+            </div>
+            <div class="slide-content two-cols">
+                <div>
+                    <h3>Inżynierski konkret</h3>
+                    <p>Komunikacja musi być rzeczowa, profesjonalna i oparta na faktach. Unikamy pustych haseł marketingowych. Operujemy parametrami: metrami kwadratowymi, technologią, rozwiązaniami konstrukcyjnymi.</p>
+
+                    <h3>Transparentność</h3>
+                    <p>Język zorientowany na proces i rozwiązywanie problemów. Pokazujemy, jak pracujemy, a nie tylko co obiecujemy.</p>
+
+                    <h3>Partnerstwo B2B</h3>
+                    <p>Zwracamy się do Inwestora jak ekspert do eksperta. Zdejmujemy z niego ciężar zarządzania budową, dając mu przestrzeń na prowadzenie własnego biznesu.</p>
+                </div>
+                <div>
+                    <h3>Czego unikać</h3>
+                    <div style="background-color: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px; height: 100%;">
+                        <ul style="color: white;">
+                            <li>Pustych sloganów bez pokrycia w faktach i parametrach</li>
+                            <li>Nadmiernie emocjonalnego lub „lifestylowego” języka nieadekwatnego do sektora B2B</li>
+                            <li>Żargonu marketingowego zastępującego konkretne dane techniczne</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 5 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Grupa docelowa -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>4. Grupa docelowa</h2>
+            </div>
+            <div class="slide-content">
+                <ul>
+                    <li><strong>Inwestorzy prywatni i instytucjonalni</strong></li>
+                    <li><strong>Dyrektorzy operacyjni (COO)</strong>, dyrektorzy ds. ekspansji, Project Managerowie po stronie deweloperów (np. Scallier, Panattoni, 7R)</li>
+                    <li><strong>Właściciele dużych przedsiębiorstw</strong> produkcyjnych, transportowych i grup dealerskich (np. Grupa Dąbrowscy)</li>
+                </ul>
+                
+                <div style="margin-top: 3rem; border-left: 4px solid var(--mbt-orange); padding-left: 2rem; font-size: 1.4rem;">
+                    Wszystkie materiały — od postów w social mediach po foldery inwestycyjne — powinny być projektowane z myślą o odbiorcy decyzyjnym, technicznym i zorientowanym na konkrety, a nie o masowym odbiorcy konsumenckim.
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 6 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Logo -->
+        <div class="slide bg-gray">
+            <div class="slide-header">
+                <h2>5.1 Identyfikacja wizualna — logo</h2>
+            </div>
+            <div class="slide-content">
+                <div class="two-cols">
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div>
+                            <h3 style="margin-bottom: 0.6rem; color: var(--mbt-navy);">Zasady stosowania logo</h3>
+                            <ul style="margin-bottom: 0; line-height: 1.5;">
+                                <li style="margin-bottom: 0.4rem;">Znak podstawowy umieszczaj <strong>na białym tle</strong> — zapewnia to optymalną czytelność marki.</li>
+                                <li style="margin-bottom: 0.4rem;"><strong>Wersja kontrastowa:</strong> Dozwolone jest stosowanie logo w wersji kontrastowej (w kontrze białej) na ciemnym tle — na oficjalnym granacie MBT lub czerni.</li>
+                                <li style="margin-bottom: 0.4rem;">Zachowuj pole ochronne wokół logo.</li>
+                                <li style="margin-bottom: 0.4rem;">Nie rozciągaj, nie obracaj, nie zmieniaj proporcji logo.</li>
+                                <li style="margin-bottom: 0.4rem;">Nie dodawaj cieni, obrysów, gradientów.</li>
+                                <li style="margin-bottom: 0.4rem;"><strong>Bezwzględnie zakazane</strong> jest stosowanie dawnej jaskrawej kolorystyki (np. zieleń, błękit).</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="color: #d93025; margin-bottom: 0.5rem;">Niedozwolone modyfikacje</h3>
+                            <div style="display: flex; gap: 1rem;">
+                                <div style="position: relative; border: 2px solid #d93025; border-radius: 8px; overflow: hidden; width: 110px; height: 110px;">
+                                    <img src="{% static 'img/mbt/logo-bad-1.png' %}" alt="Złe logo 1" style="width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.8;">
+                                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #d93025; font-size: 4.5rem; font-weight: bold; line-height: 1; text-shadow: 0 0 10px rgba(255,255,255,0.9);">✕</div>
+                                </div>
+                                <div style="position: relative; border: 2px solid #d93025; border-radius: 8px; overflow: hidden; width: 110px; height: 110px;">
+                                    <img src="{% static 'img/mbt/logo-bad-2.png' %}" alt="Złe logo 2" style="width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.8;">
+                                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #d93025; font-size: 4.5rem; font-weight: bold; line-height: 1; text-shadow: 0 0 10px rgba(255,255,255,0.9);">✕</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+                        <!-- Wersje podstawowe -->
+                        <div>
+                            <div style="font-size: 0.85rem; font-weight: bold; color: var(--mbt-navy); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">Wersje podstawowe (na białym tle)</div>
+                            <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1rem;">
+                                <div style="background-color: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                    <img src="{% static 'img/mbt/mbt_logo_main.png' %}" alt="Logo Główne" style="max-height: 85px; object-fit: contain;">
+                                    <div style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--mbt-navy); font-weight: bold;">Znak podstawowy</div>
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                                    <div style="background-color: white; padding: 0.6rem 0.8rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee; flex: 1; display: flex; align-items: center; justify-content: space-around;">
+                                        <img src="{% static 'img/mbt/mbt_logo_vertical.png' %}" alt="Logo Pionowe" style="max-height: 48px; object-fit: contain;">
+                                        <span style="font-size: 0.75rem; color: var(--mbt-navy); font-weight: 500;">Wersja pionowa</span>
+                                    </div>
+                                    <div style="background-color: white; padding: 0.6rem 0.8rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee; flex: 1; display: flex; align-items: center; justify-content: space-around;">
+                                        <img src="{% static 'img/mbt/mbt_logo_horizontal.png' %}" alt="Logo Poziome" style="max-height: 28px; object-fit: contain;">
+                                        <span style="font-size: 0.75rem; color: var(--mbt-navy); font-weight: 500;">Wersja pozioma</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wersje kontrastowe (Dozwolone) -->
+                        <div>
+                            <div style="font-size: 0.85rem; font-weight: bold; color: var(--mbt-orange); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">✓ Dozwolone: Wersje kontrastowe (na ciemnym tle)</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div style="background-color: var(--mbt-navy); padding: 0.9rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                    <img src="{% static 'img/mbt/mbt_logo_contrast_navy.png' %}" alt="Logo kontrastowe na granacie" style="max-height: 80px; width: auto; border-radius: 6px;">
+                                    <div style="margin-top: 0.5rem; font-size: 0.75rem; color: white; font-weight: 500;">Na granacie MBT (#023E7C)</div>
+                                </div>
+                                <div style="background-color: #000000; padding: 0.9rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                    <img src="{% static 'img/mbt/mbt_logo_contrast_black.png' %}" alt="Logo kontrastowe na czerni" style="max-height: 80px; width: auto; border-radius: 6px;">
+                                    <div style="margin-top: 0.5rem; font-size: 0.75rem; color: white; font-weight: 500;">Na czerni (#000000)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 7 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 6B: Kolorystyka -->
+        <div class="slide bg-gray">
+            <div class="slide-header">
+                <h2>5.2 Kolorystyka</h2>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 1.4rem; max-width: 800px; margin-bottom: 3rem;">
+                    Poniższa paleta stanowi szkielet kolorystyczny marki MBT. Podane wartości HEX i CMYK/Pantone powinny być bezwzględnie stosowane na wszystkich nośnikach cyfrowych i w druku.
+                </p>
+                <div class="color-palette">
+                    <div class="color-box navy">
+                        <strong>Granat główny</strong>
+                        <span>HEX: #023E7C</span>
+                    </div>
+                    <div class="color-box orange">
+                        <strong>Akcent</strong>
+                        <span>HEX: #ED7121</span>
+                    </div>
+                    <div class="color-box white">
+                        <strong>Tło / Jasne tło</strong>
+                        <span>HEX: #FFFFFF</span>
+                    </div>
+                    <div class="color-box blue">
+                        <strong>Dodatkowy</strong>
+                        <span>HEX: #4456FE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 7b z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Typografia i Fotografia -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>5.3 Typografia i 5.4 Fotografia</h2>
+            </div>
+            <div class="slide-content two-cols">
+                <div class="typo-spec font-technor">
+                    <h4>AaBbCc</h4>
+                    <p style="font-size: 1.5rem;">Technor</p>
+                    
+                    <div class="typo-details">
+                        <div class="typo-label">Nagłówki / Tytuły</div>
+                        <div><strong>Technor Bold / Medium</strong></div>
+                        
+                        <div class="typo-label">Tekst podstawowy</div>
+                        <div>Technor Regular</div>
+                        
+                        <div class="typo-label">Zamiennik systemowy</div>
+                        <div>Calibri (dokumenty edytowalne)</div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h3>5.4 Styl fotografii i grafiki</h3>
+                    <ul>
+                        <li>Wyłącznie autorskie, wysokorozdzielcze zdjęcia z profesjonalnego sprzętu foto/wideo.</li>
+                        <li><strong>Kategoryczny zakaz stockowych zdjęć generycznych i AI.</strong></li>
+                        <li>Zdjęcia z drona pokazujące skalę inwestycji.</li>
+                        <li>Surowe, ale czyste i estetyczne ujęcia detali konstrukcyjnych (beton, stal, prefabrykaty).</li>
+                        <li>Minimalistyczne grafiki i ikony podkreślające techniczny charakter firmy.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 8 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 8B: Ikony i Elementy Graficzne -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>5.5 Ikony i Elementy Graficzne</h2>
+            </div>
+            <div class="slide-content">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                    <!-- Kolumna lewa: Dźwig i Kod QR -->
+                    <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                        <h3 style="color: var(--mbt-orange); margin-bottom: 0.5rem;">Podstawowa ikona: Dźwig</h3>
+                        <p style="margin-bottom: 1.5rem;">Ikona dźwigu jest naszym głównym elementem ikonograficznym. Można ją swobodnie łączyć z innymi funkcjonalnymi elementami, np. z kodem QR kierującym na stronę.</p>
+                        <div style="display: flex; gap: 1rem; align-items: flex-end;">
+                            <img src="{% static 'img/mbt/mbt_crane_alone.png' %}" alt="Ikona dźwigu" style="max-height: 220px; object-fit: contain;">
+                            <img src="{% static 'img/mbt/mbt_crane_qr.png' %}" alt="Dźwig z QR" style="max-height: 200px; object-fit: contain;">
+                        </div>
+                    </div>
+                    
+                    <!-- Kolumna prawa: Kreski -->
+                    <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 1.5rem;">
+                        <div>
+                            <h3 style="color: var(--mbt-orange); margin-bottom: 0.5rem;">Motyw dynamiczny</h3>
+                            <p style="margin-bottom: 1.5rem;">Charakterystyczne linie / kreski, które symbolizują <strong>dynamiczność</strong> naszej firmy oraz jej <strong>niezawodność</strong>.</p>
+                            <img src="{% static 'img/mbt/mbt_lines.png' %}" alt="Kreski dynamiczne" style="max-height: 240px; width: auto; object-fit: contain; display: block;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 8b z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 8C: Pełna ilustracja -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>5.6 Pełna ilustracja izometryczna</h2>
+            </div>
+            <div class="slide-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <p style="margin-bottom: 2rem; font-size: 1.2rem; text-align: center;">Kompleksowa ilustracja obrazująca kluczowe elementy identyfikacji wizualnej MBT w przestrzeni.</p>
+                <img src="{% static 'img/mbt/mbt_icon_full.png' %}" alt="Pełna ilustracja izometryczna" style="width: 100%; max-width: 1100px; max-height: 650px; object-fit: contain;">
+            </div>
+            <div class="slide-footer">
+                <div>Strona 8c z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 8A: Digital -->
+        <div class="slide bg-navy">
+            <div class="slide-header">
+                <h2>6. Wytyczne wizualne — digital</h2>
+            </div>
+            <div class="slide-content" style="max-width: 900px;">
+                <p style="font-size: 1.2rem;"><strong>Strona internetowa i prezentacje:</strong><br>
+                Minimalistyczne grafiki i ikony w stylu technicznym. Zdjęcia z drona i detale konstrukcyjne jako główny materiał wizualny.</p>
+                <p style="font-size: 1.2rem;">Prezentacje ofertowe (PDF) w jednolitym szablonie z logo (zawsze na białym polu), paginacją i stopką kontaktową.</p>
+                
+                <p style="margin-top: 2rem; font-size: 1.2rem;"><strong>Media społecznościowe:</strong><br>
+                Każdy post z relacji z budowy oznaczony nazwą inwestycji/klienta (o ile umowa NDA na to pozwala). Spójna stopka/plansza końcowa z logo i danymi w wideo.</p>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 9 z 14</div>
+            </div>
+        </div>
+
+        <!-- Slide 8B: Content -->
+        <div class="slide bg-navy">
+            <div class="slide-header">
+                <h2>7. Filary strategii contentowej</h2>
+            </div>
+            <div class="slide-content" style="max-width: 1000px;">
+                <ul style="font-size: 1.2rem; line-height: 1.8;">
+                    <li style="margin-bottom: 1.5rem;"><strong>Relacje z placu budowy (Case Studies):</strong> Regularne aktualizacje z trwających budów (fundamenty, montaż, elewacje).</li>
+                    <li style="margin-bottom: 1.5rem;"><strong>Ludzie i Bezpieczeństwo:</strong> Promowanie kadry inżynierskiej i podejścia do norm BHP.</li>
+                    <li style="margin-bottom: 1.5rem;"><strong>Social Proof:</strong> Eksponowanie logotypów znanych klientów i partnerów. Referencje po oddaniu kluczy.</li>
+                    <li style="margin-bottom: 1.5rem;"><strong>Edukacja technologiczna:</strong> Pokazywanie, jak narzędzia (BIM, drony) przekładają się na oszczędności dla Inwestora.</li>
+                </ul>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 10 z 14</div>
+            </div>
+        </div>
+
+        <!-- Slide 8.1: Materiały reklamowe (Katalogi) -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>8.1 Materiały reklamowe (Katalogi)</h2>
+            </div>
+            <div class="slide-content">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; height: 100%;">
+                    <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 2rem; margin-top: 2rem;">
+                        <div style="background-color: rgba(2, 62, 124, 0.05); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--mbt-navy);">
+                            <h3 style="color: var(--mbt-navy); margin-bottom: 1rem; font-size: 1.4rem;">Katalog A3 (Duży format)</h3>
+                            <p style="font-size: 1.1rem; margin-bottom: 0;">Wykorzystywany i prezentowany na ważnych wydarzeniach oraz eventach branżowych. Pełne case studies i pełne spektrum ofertowe.</p>
+                        </div>
+                        
+                        <div style="background-color: rgba(2, 62, 124, 0.05); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--mbt-orange);">
+                            <h3 style="color: var(--mbt-orange); margin-bottom: 1rem; font-size: 1.4rem;">Katalog A5 (Mniejszy) i Ulotki</h3>
+                            <p style="font-size: 1.1rem; margin-bottom: 0;">Rozdawany inwestorom, z mniejszą wyselekcjonowaną ilością zrealizowanych inwestycji. Opcjonalnie wspierany dedykowanymi ulotkami np. o konkretnych usługach.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 2rem; justify-content: flex-start; margin-top: 2rem;">
+                        <img src="{% static 'img/mbt/mbt_catalog.png' %}" alt="Katalog MBT A3" style="max-height: 200px; max-width: 100%; object-fit: contain; object-position: left; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                        <img src="{% static 'img/mbt/mbt_leaflet.png' %}" alt="Ulotka MBT" style="max-height: 200px; max-width: 100%; object-fit: contain; object-position: left; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 11 z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 8.2: Materiały reklamowe (Billboardy) -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>8.2 Materiały reklamowe (Billboardy)</h2>
+            </div>
+            <div class="slide-content">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 100%; text-align: center; padding-top: 1rem;">
+                    <div style="background-color: rgba(2, 62, 124, 0.05); padding: 2rem; border-radius: 12px; width: 100%; max-width: 900px; border-left: 4px solid var(--mbt-navy); text-align: left; margin-bottom: 2rem;">
+                        <h3 style="color: var(--mbt-navy); margin-bottom: 0.5rem; font-size: 1.4rem;">Billboardy (OOH)</h3>
+                        <p style="font-size: 1.1rem; margin-bottom: 0;">
+                            Format ogólnowizerunkowy. Zapewnia szeroką ekspozycję marki MBT w przestrzeni miejskiej i tranzytowej.<br><br>
+                            <strong>UWAGA:</strong> Jeśli reklama pojawia się na placu budowy lub jest dzielona z Inwestorem, obowiązują ścisłe zasady montażu — więcej szczegółów w sekcji <strong>9. Oznakowanie budów</strong>.
+                        </p>
+                    </div>
+                    
+                    <img src="{% static 'img/mbt/mbt_billboard.png' %}" alt="Billboard MBT" style="max-height: 250px; max-width: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 11b z 13</div>
+            </div>
+        </div>
+
+        <!-- Slide 9A: Oznakowanie 1/3 -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>9. Oznakowanie budowy (Marketing i BHP) - 1/3</h2>
+            </div>
+            <div class="slide-content">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;"><strong>Każda budowa musi posiadać odpowiednie oznakowanie marketingowe i informacyjne.</strong></p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        <h3 style="color: var(--mbt-orange); margin-bottom: 1rem; font-size: 1.3rem;">Tablica Informacyjna i Ogłoszenie</h3>
+                        <p style="margin-bottom: 1rem; font-size: 1.1rem;">Obowiązkowa tablica informacyjna budowy oraz żółta tablica ogłoszeniowa muszą być przygotowane i wyeksponowane na specjalnie przygotowanym formacie <strong>z logo MBT</strong>.</p>
+                        <img src="{% static 'img/mbt/mbt_tablica_info.png' %}" alt="Tablica informacyjna" style="width: 100%; max-height: 250px; object-fit: contain; object-position: left; border: 1px solid #ddd;">
+                    </div>
+                    
+                    <div>
+                        <h3 style="color: var(--mbt-orange); margin-bottom: 1rem; font-size: 1.3rem;">Główny Baner BHP</h3>
+                        <p style="margin-bottom: 1rem; font-size: 1.1rem;">Wielkoformatowa plansza przypominająca o zasadach bezpieczeństwa. Stanowi główny punkt informacyjny dla każdego wchodzącego na plac budowy.</p>
+                        <img src="{% static 'img/mbt/mbt_baner_bhp.png' %}" alt="Baner BHP" style="width: 100%; max-height: 250px; object-fit: contain; object-position: left; border: 1px solid #ddd;">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 11 z 15</div>
+            </div>
+        </div>
+
+        <!-- Slide 9B: Oznakowanie 2/3 (Banery na płotach) -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>9. Oznakowanie budowy (Banery) - 2/3</h2>
+            </div>
+            <div class="slide-content" style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%; padding-top: 1rem;">
+                <div style="background-color: rgba(237, 113, 33, 0.05); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--mbt-orange); margin-bottom: 2rem; max-width: 900px;">
+                    <h3 style="color: var(--mbt-orange); margin-bottom: 1rem; font-size: 1.4rem;">Banery i Reklama na budowie</h3>
+                    <p style="font-size: 1.2rem; margin-bottom: 0; line-height: 1.5;">Banery mają za zadanie promować markę i zasłaniać budowę w najbardziej <strong>widocznych i reprezentatywnych miejscach</strong>.<br><br>
+                    <strong>UWAGA:</strong> Kategorycznie zabrania się wieszania banerów w miejscach niewidocznych, np. "za kupą piasku".<br><br>
+                    <strong>PODWYKONAWCY (DŹWIGI):</strong> Ważne, aby w zapisach umów z podwykonawcami wpisywać zgodę / zezwolenie na wieszanie naszych banerów na ich dźwigach.</p>
+                </div>
+                <img src="{% static 'img/mbt/mbt_baner_plot.png' %}" alt="Baner na płot" style="width: 100%; max-width: 900px; max-height: 350px; object-fit: contain; object-position: left;">
+            </div>
+            <div class="slide-footer">
+                <div>Strona 12 z 15</div>
+            </div>
+        </div>
+
+        <!-- Slide 9C: Oznakowanie 3/3 -->
+        <div class="slide">
+            <div class="slide-header">
+                <h2>9. Oznakowanie budowy (Nawigacja i Reklama) - 3/3</h2>
+            </div>
+            <div class="slide-content">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <!-- Lewa Kolumna: Tabliczki -->
+                    <div>
+                        <h3 style="color: var(--mbt-navy); margin-bottom: 1rem; font-size: 1.3rem;">Tabliczki ostrzegawcze i nawigacyjne</h3>
+                        <p style="margin-bottom: 1.5rem;">Każda kluczowa strefa powinna posiadać spójną, firmową tabliczkę z logo MBT kierującą ruch lub ostrzegającą przed zagrożeniami.</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                            <img src="{% static 'img/mbt/mbt_tabliczka_wyjazd.png' %}" alt="Wyjazd z budowy" style="width: 100%; max-height: 120px; object-fit: contain; border: 1px solid #ddd;">
+                            <img src="{% static 'img/mbt/mbt_tabliczka_wstep.png' %}" alt="Teren budowy wstęp wzbroniony" style="width: 100%; max-height: 120px; object-fit: contain; border: 1px solid #ddd;">
+                            <img src="{% static 'img/mbt/mbt_biuro_budowy.png' %}" alt="Biuro Budowy" style="grid-column: span 2; width: 100%; max-height: 100px; object-fit: contain; border: 1px solid #ddd;">
+                        </div>
+                    </div>
+
+                    <!-- Prawa Kolumna: Billboard i Kontakt -->
+                    <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="color: var(--mbt-navy); margin-bottom: 0.5rem; font-size: 1.3rem;">Opcjonalny Billboard Wspólny</h3>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Jeśli warunki przestrzenne na to pozwalają i Inwestor wyraża na to zgodę, stawiamy duży billboard reklamowy (zawierający logo Inwestora).</p>
+                            <img src="{% static 'img/mbt/mbt_billboard_inwestor.png' %}" alt="Billboard Inwestor" style="width: 100%; max-height: 150px; object-fit: contain; border: 1px solid #ddd;">
+                        </div>
+
+                        <div style="background-color: var(--mbt-navy); color: white; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+                            <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.2rem;">Zamówienia materiałów</h3>
+                            <p style="font-size: 0.95rem; margin-bottom: 0;">Wszelkie zamówienia na oznakowanie i materiały marketingowe należy zgłaszać do działu marketingu:</p>
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-top: 0.5rem;">
+                                📞 +48 889 200 179<br>
+                                ✉️ m.dziubek@mbt.pl
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <div>Strona 11c z 13</div>
+            </div>
+        </div>
+
+        // Prosta nawigacja przyciskami
+        const presentation = document.getElementById('presentation');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function scrollSlide(dir) {
+            currentSlide += dir;
+            if (currentSlide < 0) currentSlide = 0;
+            if (currentSlide >= slides.length) currentSlide = slides.length - 1;
+            
+            slides[currentSlide].scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Aktualizuj currentSlide na podstawie scrolla
+        presentation.addEventListener('scroll', () => {
+            const slideHeight = window.innerHeight;
+            currentSlide = Math.round(presentation.scrollTop / slideHeight);
+        });
+        
+
+        // Obsługa strzałek na klawiaturze
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+                e.preventDefault();
+                scrollSlide(1);
+            } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+                e.preventDefault();
+                scrollSlide(-1);
+            }
+        });
+    </script>
+</body>
+</html>

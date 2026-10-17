@@ -58,6 +58,9 @@ urlpatterns = [
     path('admin-budowa/pobierz/<slug:slug>/', oznakowanieViews._download_view, name='oznakowanie_download'),
     path('admin-budowa/tablice/<str:board_type>/podglad/', oznakowanieViews._board_preview_view, name='board_preview'),
     path('admin-budowa/tablice/<str:board_type>/pobierz/', oznakowanieViews._board_download_view, name='board_download'),
+    
+    # Brandbook
+    path('111111/', pagesViews.brandbook, name='brandbook'),
 ]
 
 from django.conf import settings
