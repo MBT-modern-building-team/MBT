@@ -4115,48 +4115,62 @@ PROJECTS = [{'czas': '16 miesięcy',
   'title': 'HERZ - Wieliczka',
   'type': 'realizacja-zrealizow'},
  {'czas': '9 miesięcy',
-  'formula': 'Generalny Wykonawca',
-  'gallery': [],
-  'hero': '/static/img/mbt/realizacja-euronova.jpg',
-  'latitude': 49.914,
+  'formula': 'Generalne Wykonawstwo',
+  'gallery': ['https://media.mbt.pl/uploads/realizacja-toto-glogoczow.webp',
+              'https://media.mbt.pl/uploads/referencje-toto-hair.webp'],
+  'hero': 'https://media.mbt.pl/uploads/realizacja-toto-glogoczow.webp',
+  'latitude': 49.8828,
   'logo': '/static/img/mbt/toto_logo-611681aa.jpg',
-  'longitude': 19.897,
-  'opis': 'Powierzchnia magazynowa: 2 220 m² Powierzchnia socjalno-biurowa: 55 '
-          'm² Układ komunikacyjny o powierzchni: 1 700 m² Posadowienie hali na '
-          'płycie fundamentowej, wykonanej na gruncie stabilizowanym cementem '
-          'Konstrukcja hali w całości stalowa Obudowa ścian i dachu z płyt '
-          'warstwowych',
-  'order': 22,
-  'slug': 'toto-golgoczow',
+  'longitude': 19.8667,
+  'opis': 'Powierzchnia magazynowa: 2 220 m²\n'
+          'Powierzchnia socjalno-biurowa: 55 m²\n'
+          'Układ budynku i komunikacji: Tereny zewnętrzne oraz układ komunikacyjny o powierzchni 1 700 m² (drogi dojazdowe i place manewrowe w nawierzchni betonowej). Całkowita powierzchnia zabudowy wynosi ok. 2 800 m².\n'
+          'Konstrukcja: Posadowienie hali na płycie fundamentowej wykonanej na gruncie stabilizowanym cementem. Konstrukcja nośna hali w całości stalowa.\n'
+          'Elewacja i obudowa: Obudowa ścian oraz dachu wykonana z nowoczesnych płyt warstwowych o wysokiej izolacyjności termicznej.\n'
+          'Infrastruktura i instalacje: Kompleksowe wykonanie wewnętrznych i zewnętrznych sieci oraz instalacji sanitarnych i elektrycznych.\n'
+          'Inwestor i formuła: Inwestycja zrealizowana dla TOTO Hair Company w formule Generalnego Wykonawstwa („Buduj”) wraz z opracowaniem zamiennej dokumentacji projektowej w czasie 9 miesięcy.',
+  'order': 7,
+  'slug': 'toto-glogoczow',
   'status': 'Zrealizowane',
-  't_c': {},
-  't_f': {},
-  't_o': {'cs': 'Skladová plocha: 2 220 m². Sociální a kancelářská plocha: 55 '
-                'm². Plocha dopravního řešení: 1 700 m². Hala založená na '
-                'základové desce provedené na zemině stabilizované cementem. '
-                'Konstrukce haly zcela ocelová. Plášť stěn a střechy ze '
-                'sendvičových panelů.',
-          'de': 'Lagerfläche: 2 220 m². Sozial- und Bürofläche: 55 m². '
-                'Verkehrserschließungsfläche: 1 700 m². Halle auf einer '
-                'Fundamentplatte auf zementstabilisiertem Boden gegründet. '
-                'Hallenkonstruktion vollständig in Stahl. Wand- und '
-                'Dachverkleidung aus Sandwichpaneelen.',
-          'en': 'Warehouse area: 2 220 m². Welfare and office area: 55 m². '
-                'Transport layout area: 1 700 m². Hall founded on a foundation '
-                'slab cast on cement-stabilised ground. Hall structure '
-                'entirely in steel. Wall and roof cladding in sandwich panels.',
-          'hu': 'Raktárterület: 2 220 m². Szociális és irodai terület: 55 m². '
-                'Közlekedési kialakítás területe: 1 700 m². A csarnok '
-                'alapozása cementtel stabilizált talajon készített '
-                'alaplemezen. A csarnok szerkezete teljes egészében acél. Fal- '
-                'és tetőburkolat szendvicspanelekből.',
-          'sk': 'Skladová plocha: 2 220 m². Sociálna a kancelárska plocha: 55 '
-                'm². Plocha dopravného riešenia: 1 700 m². Hala založená na '
-                'základovej doske realizovanej na podloží stabilizovanom '
-                'cementom. Konštrukcia haly celá oceľová. Plášť stien a '
-                'strechy zo sendvičových panelov.'},
-  't_s': {},
-  't_t': {},
+  't_c': {'cs': '9 měsíců', 'de': '9 Monate', 'en': '9 months', 'hu': '9 hónap', 'sk': '9 mesiacov'},
+  't_f': {'cs': 'Generální dodavatel (Výstavba)', 'de': 'Generalunternehmer (Bauen)', 'en': 'General Contractor (Build)', 'hu': 'Generálkivitelező (Építés)', 'sk': 'Generálny dodávateľ (Stavba)'},
+  't_o': {'cs': 'Skladová plocha: 2 220 m²\n'
+                'Sociální a administrativní zázemí: 55 m²\n'
+                'Dopravní a venkovní infrastruktura: Venkovní plochy a komunikace o rozloze 1 700 m² (betonové manipulační plochy). Celková zastavěná plocha cca 2 800 m².\n'
+                'Konstrukce: Založení haly na základové desce na zemině stabilizované cementem. Nosná konstrukce celoocelová.\n'
+                'Opláštění: Stěny a střecha ze sendvičových panelů.\n'
+                'Infrastruktura a instalace: Kompletní vnitřní a vnější sanitární a elektro rozvody.\n'
+                'Investor a model realizace: Realizováno pro TOTO Hair Company v režimu generální dodávky za 9 měsíců.',
+          'de': 'Lagerfläche: 2 220 m²\n'
+                'Sozial- und Bürofläche: 55 m²\n'
+                'Verkehrserschließung und Außenanlagen: Straßen und Manövrierflächen aus Beton mit 1 700 m². Gesamte bebaute Fläche ca. 2 800 m².\n'
+                'Konstruktion: Gründung auf einer Fundamentplatte auf zementstabilisiertem Boden. Tragkonstruktion vollständig aus Stahl.\n'
+                'Fassade und Verkleidung: Wand- und Dachverkleidung aus modernen Sandwichpaneelen.\n'
+                'Infrastruktur und Installationen: Umfassende Ausführung von Sanitär- und Elektroinstallationen.\n'
+                'Bauherr und Abwicklung: Realisiert für TOTO Hair Company im Modell Generalübernehmer („Bauen”) innerhalb von 9 Monaten.',
+          'en': 'Warehouse area: 2,220 m²\n'
+                'Welfare and office area: 55 m²\n'
+                'Transport layout and site infrastructure: External areas and internal roads with an area of 1,700 m² (concrete maneuvering yards). Total building footprint approx. 2,800 m².\n'
+                'Construction: Foundation slab on cement-stabilized ground. Main load-bearing structure entirely in steel.\n'
+                'Facade and cladding: Walls and roof clad in modern sandwich panels with high thermal insulation.\n'
+                'Infrastructure and installations: Comprehensive internal and external sanitary and electrical systems.\n'
+                'Investor and formula: Executed for TOTO Hair Company under the General Contracting formula (\"Build\") within 9 months.',
+          'hu': 'Raktárterület: 2 220 m²\n'
+                'Szociális és irodai terület: 55 m²\n'
+                'Közlekedési és külső infrastruktúra: 1 700 m² burkolt közlekedési és manőverezési felület. Teljes beépített terület kb. 2 800 m².\n'
+                'Szerkezet: Alaplemez cementtel stabilizált talajon. A tartószerkezet teljes egészében acél.\n'
+                'Burkolat: Szendvicspanel fal- és tetőburkolat.\n'
+                'Infrastruktúra és gépészet: Teljes körű épületgépészeti és villamossági rendszerek.\n'
+                'Megrendelő és megvalósítás: A TOTO Hair Company számára generálkivitelezésben megvalósítva 9 hónap alatt.',
+          'sk': 'Skladová plocha: 2 220 m²\n'
+                'Sociálna a kancelárska plocha: 55 m²\n'
+                'Dopravná a vonkajšia infraštruktúra: Vonkajšie plochy a komunikácie s výmerou 1 700 m² (betónové manipulačné plochy). Celková zastavaná plocha cca 2 800 m².\n'
+                'Konštrukcia: Založenie haly na základovej doske realizovanej na podloží stabilizovanom cementom. Nosná konštrukcia celooceľová.\n'
+                'Opláštenie: Steny a strecha zo sendvičových panelov.\n'
+                'Infraštruktúra a inštalácie: Kompletné vnútorné a vonkajšie sanitárne a elektroinštalácie.\n'
+                'Investor a model realizácie: Realizované pre TOTO Hair Company v modeli generálneho dodávateľa za 9 mesiacov.'},
+  't_s': {'cs': 'Zrealizováno', 'de': 'Realisierte Projekte', 'en': 'Completed', 'hu': 'Megvalósult projektek', 'sk': 'Zrealizované'},
+  't_t': {'cs': 'ToTo – Głogoczów', 'de': 'ToTo – Głogoczów', 'en': 'ToTo – Głogoczów', 'hu': 'ToTo – Głogoczów', 'sk': 'ToTo – Głogoczów'},
   'title': 'ToTo - Głogoczów',
   'type': 'realizacja-zrealizow'},
  {'czas': '',

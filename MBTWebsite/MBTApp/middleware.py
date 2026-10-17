@@ -40,6 +40,7 @@ LEGACY_PROJECT_SLUGS = {
     'lech-browary-wielkopolski': 'kompania-piwowarska',
     'stokado-self-storage-cracow': 'stokado-self-storage-krakow',
     'canpack-bss-excellence-centre-brzesk': 'canpack-bss-lab-brzesk',
+    'toto-golgoczow': 'toto-glogoczow',
 }
 
 _SLUG_CACHE = None
