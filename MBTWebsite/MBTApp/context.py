@@ -24,15 +24,15 @@ def translate_url(request):
     Dict { 'pl': '/oferta/', 'en': '/en/oferta/', ... } — niezawodne tłumaczenia bieżącego
     URL-a na każdy język (nawet przy braku prefiksu w domyślnym języku PL).
     """
-    full_path = request.get_full_path()
+    clean_path = request.path
     from django.conf import settings as _settings
     lang_list = []
     out = {}
     for code, name in _settings.LANGUAGES:
         try:
-            url = _translate_url_safe(full_path, code)
+            url = _translate_url_safe(clean_path, code)
         except Exception:
-            url = full_path
+            url = clean_path
         out[code] = url
         lang_list.append({
             'code': code,
