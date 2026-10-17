@@ -1432,8 +1432,8 @@ AWARDS = [{'image': '/static/img/mbt/award-gazele.png',
  {'image': '/static/img/mbt/award-rzetelna.svg',
   'name': 'Rzetelna Firma',
   'order': 2},
- {'image': '/static/img/mbt/award-forbes.svg',
-  'name': 'Diamenty Forbesa',
+ {'image': '/static/img/mbt/award-forbes-2026.png',
+  'name': 'Diamenty Forbesa 2026',
   'order': 3}]
 
 JOBS = [{'order': 0,
