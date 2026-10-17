@@ -1457,7 +1457,10 @@ AWARDS = [{'image': '/static/img/mbt/award-gazele.png',
   'order': 2},
  {'image': '/static/img/mbt/award-forbes-2026.png',
   'name': 'Diamenty Forbesa 2026',
-  'order': 3}]
+  'order': 3},
+ {'image': '/static/img/mbt/award-rig-katowice.png',
+  'name': 'Członek Regionalnej Izby Gospodarczej w Katowicach',
+  'order': 4}]
 
 JOBS = [{'order': 0,
   'slug': 'inzynier-budowy-m-k-generalny-wykonawca',
