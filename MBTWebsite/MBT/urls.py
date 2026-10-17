@@ -19,10 +19,11 @@ def robots_txt_view(request):
     return HttpResponse(content, content_type="text/plain; charset=utf-8")
 
 from django.contrib.sitemaps.views import sitemap
-from MBTApp.sitemaps import StaticViewSitemap, ArticleSitemap, ProjectSitemap, JobSitemap
+from MBTApp.sitemaps import StaticViewSitemap, ArticleSitemap, ProjectSitemap, JobSitemap, SectorSitemap
 
 sitemaps = {
     'static': StaticViewSitemap,
+    'sectors': SectorSitemap,
     'articles': ArticleSitemap,
     'projects': ProjectSitemap,
     'jobs': JobSitemap,
