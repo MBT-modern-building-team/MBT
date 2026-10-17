@@ -1550,8 +1550,8 @@
     "fields": {
         "name": "Karol Pinoczek",
         "position": "Manager ds. handlowych",
-        "opis": "Jestem Dyrektorem Handlowym z  dziesięcioletnim doświadczeniem w branży. Budownictwo jest moją pasją, a praca z ludźmi spełnieniem zawodowych ambicji i fantastyczną przygodą.",
-        "photo": "",
+        "opis": "Jestem handlowcem łączącym 12-letnie doświadczenie zdobyte na budowach jako inżynier budownictwa z kompetencjami w obszarze sprzedaży i rozwoju relacji biznesowych. Dzięki znajomości procesu inwestycyjnego potrafię spojrzeć na potrzeby Inwestora zarówno z perspektywy technicznej, jak i biznesowej. Wspieram klientów w wyborze optymalnych rozwiązań, koncentrując się na ich realnych potrzebach. Fundamentem mojej pracy są profesjonalizm, zaufanie i budowanie trwałych, partnerskich relacji.",
+        "photo": "/static/img/mbt/karol-pinoczek-o-nas.jpg",
         "linkedin": "https://www.linkedin.com/in/karol-pinoczek-380157151/",
         "order": 13,
         "t_position": {
@@ -1562,11 +1562,11 @@
             "sk": "Obchodný riaditeľ"
         },
         "t_opis": {
-            "en": "I am a Sales Director with ten years of experience in the industry. Construction is my passion, and working with people is the fulfilment of my professional ambitions and a fantastic adventure.",
-            "de": "Ich leite das Team der Abteilung Produktionsvorbereitung, das eng mit der Projektausführungsabteilung der von MBT realisierten Bauprojekte zusammenarbeitet.\nAls Ingenieurin verbinde ich technisches Denken mit guter Organisation und kommunikativen Fähigkeiten. Ich bin ein Führungstyp, der sein Team voll unterstützt und seine Erfahrung teilt. Gleichzeitig entwickle ich mich selbst ständig weiter.\nÜber mich sagt man: „Unmögliches erledige ich sofort, für Wunder braucht man etwas Geduld.\"\n",
-            "hu": "Tízéves iparági tapasztalattal rendelkező Kereskedelmi Igazgató vagyok. Az építés a szenvedélyem, az emberekkel való munka pedig szakmai ambícióim beteljesítése és fantasztikus kaland.",
-            "cs": "Jsem obchodní ředitel s desetiletou zkušeností v oboru. Stavitelství je mou vášní a práce s lidmi naplněním profesních ambicí a fantastickým dobrodružstvím.",
-            "sk": "Som Obchodný riaditeľ s desaťročnými skúsenosťami v odvetví. Stavebníctvo je mojou vášňou a práca s ľuďmi naplnením pracovných ambícií a fantastickým dobrodružstvom."
+            "en": "I am a commercial manager combining 12 years of experience gained on construction sites as a civil engineer with expertise in sales and business development. Thanks to my in-depth knowledge of the investment process, I can view the Investor's needs from both a technical and business perspective. I support clients in selecting optimal solutions, focusing on their real needs. The foundation of my work is professionalism, trust, and building lasting partnerships.",
+            "de": "Ich bin Vertriebsmanager und verbinde 12 Jahre auf Baustellen als Bauingenieur gesammelte Erfahrung mit Kompetenzen in Vertrieb und Geschäftsentwicklung. Dank meiner Kenntnis des Investitionsprozesses kann ich die Bedürfnisse des Investors sowohl aus technischer als auch aus geschäftlicher Perspektive betrachten. Ich unterstütze Kunden bei der Auswahl optimaler Lösungen und konzentriere mich auf ihre tatsächlichen Bedürfnisse. Das Fundament meiner Arbeit sind Professionalität, Vertrauen und der Aufbau dauerhafter Partnerschaften.",
+            "hu": "Értékesítőként ötvözöm az építkezéseken építőmérnökként szerzett 12 éves tapasztalatomat az értékesítési és üzletfejlesztési kompetenciákkal. A beruházási folyamat ismeretének köszönhetően mind műszaki, mind üzleti szempontból átlátom a Megrendelő igényeit. Támogatom ügyfeleimet az optimális megoldások kiválasztásában, a valós igényeikre összpontosítva. Munkám alapja a szakmaiság, a bizalom és a tartós partnerségi kapcsolatok építése.",
+            "cs": "Jsem obchodník spojující 12 let zkušeností získaných na stavbách jako stavební inženýr s kompetencemi v oblasti prodeje a rozvoje obchodních vztahů. Díky znalosti investičního procesu dokážu nahlížet na potřeby investora jak z technické, tak z obchodní perspektivy. Podporuji klienty při výběru optimálních řešení se zaměřením na jejich skutečné potřeby. Základem mé práce jsou profesionalita, důvěra a budování trvalých partnerských vztahů.",
+            "sk": "Som obchodník spájajúci 12 rokov skúseností získaných na stavbách ako stavebný inžinier s kompetenciami v oblasti predaja a rozvoja obchodných vzťahov. Vďaka znalosti investičného procesu dokážem nazerať na potreby investora z technickej aj obchodnej perspektívy. Podporujem klientov pri výbere optimálnych riešení so zameraním na ich skutočné potreby. Základom mojej práce sú profesionalita, dôvera a budovanie trvalých partnerských vzťahov."
         }
     }
 },
