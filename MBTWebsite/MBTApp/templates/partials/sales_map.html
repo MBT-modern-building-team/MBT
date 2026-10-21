@@ -3,7 +3,45 @@
 <div class="sales-map-container mt-5 mb-5">
     <div class="row align-items-center">
         <div class="col-lg-7 text-center">
-            <h3 class="text-white mb-4" style="font-weight: 700; letter-spacing: -0.3px;">{% trans "Znajdź opiekuna dla swojego regionu" %}</h3>
+            <h3 class="text-white mb-3" style="font-weight: 700; letter-spacing: -0.3px;">{% trans "Znajdź opiekuna dla swojego regionu" %}</h3>
+            
+            <!-- Inteligentna wyszukiwarka miejscowości / opiekuna -->
+            <div class="mbt-sales-search-box mb-4 mx-auto text-start" style="max-width: 620px;">
+                <label for="sales-search-input" class="text-white-50 small mb-2 d-flex align-items-center justify-content-between" style="font-size: 13px;">
+                    <span>
+                        <i class="ri-search-2-line me-1" style="color: #7886FF;"></i>
+                        {% trans "Wpisz swoją miejscowość, a my dobierzemy odpowiednią osobę:" %}
+                    </span>
+                    <span class="badge" style="background: rgba(43, 63, 214, 0.25); color: #9cb1ff; font-weight: 500; font-size: 11px;">Polska</span>
+                </label>
+                <div class="input-group" style="box-shadow: 0 10px 30px rgba(0,0,0,0.35); border-radius: 14px; overflow: hidden; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(10px); transition: border-color 0.2s ease, box-shadow 0.2s ease;">
+                    <span class="input-group-text border-0 ps-3" style="background: transparent; color: #7886FF;">
+                        <i class="ri-map-pin-line" style="font-size: 19px;"></i>
+                    </span>
+                    <input type="text" id="sales-search-input" class="form-control border-0 text-white" placeholder="{% trans 'np. Przewrotne, Zabrze, Warszawa, Poznań...' %}" autocomplete="off" style="background: transparent; box-shadow: none; font-size: 14.5px; padding: 12px 6px; color: #fff;">
+                    <button type="button" id="sales-search-clear" class="btn text-white-50 border-0 d-none" style="background: transparent; padding: 0 12px;" title="{% trans 'Wyczyść' %}">
+                        <i class="ri-close-line" style="font-size: 18px;"></i>
+                    </button>
+                    <button type="button" id="sales-search-btn" class="btn border-0 px-3 px-md-4" style="background: #2b3fd6; color: #fff; font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 7px; transition: all 0.2s ease;">
+                        <span id="sales-search-spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        <i id="sales-search-icon" class="ri-search-line"></i>
+                        <span id="sales-search-btn-text">{% trans "Szukaj" %}</span>
+                    </button>
+                </div>
+
+                <!-- Przykładowe tagi / szybki wybór -->
+                <div class="d-flex flex-wrap align-items-center gap-1 mt-2 text-start" style="font-size: 12px;">
+                    <span class="text-white-50 me-1" style="font-size: 11.5px;">{% trans "Szybki test:" %}</span>
+                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Przewrotne powiat rzeszowski" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Przewrotne (pow. rzeszowski)</button>
+                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Zabrze" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Zabrze</button>
+                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Warszawa" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Warszawa</button>
+                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Poznań" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Poznań</button>
+                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Gdańsk" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Gdańsk</button>
+                </div>
+
+                <!-- Wynik wyszukiwania (komunikat / feedback alert) -->
+                <div id="sales-search-feedback" class="mt-2 text-start p-2 px-3 rounded-3 d-none" style="font-size: 13px; line-height: 1.45; border-radius: 10px; transition: all 0.25s ease;"></div>
+            </div>
             
             <div id="poland-map-wrapper" style="width: 100%; max-width: 620px; min-height: 480px; margin: 0 auto; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 18px; position: relative; box-sizing: border-box; backdrop-filter: blur(8px);">
                 <svg id="poland-svg-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 600" width="650" height="600" style="width: 100%; height: auto; aspect-ratio: 650 / 600; min-height: 440px; display: block; margin: 0 auto;">
@@ -149,21 +187,63 @@
         var wrapper = document.getElementById('poland-map-wrapper');
         var chips = document.querySelectorAll('.mbt-rep-chip');
         var selectedRep = null;
+        var selectedVoivodeshipSlug = null;
 
-        function selectRep(repName, regionName) {
+        var searchInput = document.getElementById('sales-search-input');
+        var searchBtn = document.getElementById('sales-search-btn');
+        var searchClear = document.getElementById('sales-search-clear');
+        var searchSpinner = document.getElementById('sales-search-spinner');
+        var searchIcon = document.getElementById('sales-search-icon');
+        var searchFeedback = document.getElementById('sales-search-feedback');
+        var quickTags = document.querySelectorAll('.sales-quick-tag');
+
+        function showFeedback(htmlContent, type) {
+            if (!searchFeedback) return;
+            searchFeedback.classList.remove('d-none');
+            if (type === 'success') {
+                searchFeedback.style.background = 'rgba(43, 63, 214, 0.22)';
+                searchFeedback.style.border = '1px solid rgba(120, 134, 255, 0.5)';
+                searchFeedback.style.color = '#e0e7ff';
+                searchFeedback.innerHTML = '<div class="d-flex align-items-center gap-2"><i class="ri-checkbox-circle-fill" style="color: #4ade80; font-size: 16px;"></i> <div>' + htmlContent + '</div></div>';
+            } else {
+                searchFeedback.style.background = 'rgba(234, 179, 8, 0.16)';
+                searchFeedback.style.border = '1px solid rgba(234, 179, 8, 0.45)';
+                searchFeedback.style.color = '#fef08a';
+                searchFeedback.innerHTML = '<div class="d-flex align-items-center gap-2"><i class="ri-information-line" style="color: #facc15; font-size: 16px;"></i> <div>' + htmlContent + '</div></div>';
+            }
+        }
+
+        function hideFeedback() {
+            if (searchFeedback) searchFeedback.classList.add('d-none');
+        }
+
+        function selectRep(repName, regionName, specificVoivSlug) {
             selectedRep = repName;
+            if (specificVoivSlug) {
+                selectedVoivodeshipSlug = specificVoivSlug.toLowerCase();
+            } else if (regionName) {
+                selectedVoivodeshipSlug = regionName.toLowerCase();
+            }
             var rep = salesRepsData[repName];
             if (!rep) return;
+
+            var targetRegionId = selectedVoivodeshipSlug ? 'region-' + selectedVoivodeshipSlug : null;
 
             // Zaktualizuj stan zaznaczenia na ścieżkach
             paths.forEach(function(p) {
                 if (p.getAttribute('data-rep') === repName) {
                     p.style.opacity = '1';
-                    p.style.stroke = '#ffffff';
-                    p.style.strokeWidth = '2.2px';
-                    p.style.filter = 'brightness(1.25)';
+                    if (targetRegionId && p.id === targetRegionId) {
+                        p.style.stroke = '#ffe066';
+                        p.style.strokeWidth = '3px';
+                        p.style.filter = 'brightness(1.35) drop-shadow(0 0 8px rgba(255, 224, 102, 0.8))';
+                    } else {
+                        p.style.stroke = '#ffffff';
+                        p.style.strokeWidth = '2px';
+                        p.style.filter = 'brightness(1.2)';
+                    }
                 } else {
-                    p.style.opacity = '0.45';
+                    p.style.opacity = '0.4';
                     p.style.stroke = '#ffffff';
                     p.style.strokeWidth = '1.4px';
                     p.style.filter = 'none';
@@ -216,7 +296,101 @@
             card.style.animation = 'fadeIn 0.3s ease';
         }
 
-        // Event listenery dla województw
+        function doSearch(query) {
+            if (!query || !query.trim()) {
+                showFeedback('Wpisz nazwę miejscowości lub powiatu.', 'warning');
+                return;
+            }
+            query = query.trim();
+
+            if (searchBtn) searchBtn.disabled = true;
+            if (searchSpinner) searchSpinner.classList.remove('d-none');
+            if (searchIcon) searchIcon.classList.add('d-none');
+            hideFeedback();
+
+            var apiUrl = "{% url 'lookup_sales_rep' %}?q=" + encodeURIComponent(query);
+
+            fetch(apiUrl)
+                .then(function(res) {
+                    if (!res.ok) throw new Error('Błąd serwera');
+                    return res.json();
+                })
+                .then(function(data) {
+                    if (searchBtn) searchBtn.disabled = false;
+                    if (searchSpinner) searchSpinner.classList.add('d-none');
+                    if (searchIcon) searchIcon.classList.remove('d-none');
+
+                    if (data.success && data.rep) {
+                        var locationTitle = data.place || query;
+                        var msg = 'Lokalizacja: <strong>' + locationTitle + '</strong> (woj. ' + data.voivodeship + ') &mdash; Twój dedykowany doradca: <strong style="color: #fff;">' + data.rep.name + '</strong>';
+                        showFeedback(msg, 'success');
+
+                        selectRep(data.rep.name, data.voivodeship, data.voivodeship_slug);
+
+                        if (window.innerWidth < 992) {
+                            var card = document.getElementById('sales-rep-info');
+                            if (card) {
+                                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }
+                        }
+                    } else {
+                        showFeedback(data.error || 'Nie znaleziono miejscowości. Wybierz region bezpośrednio na mapie.', 'warning');
+                    }
+                })
+                .catch(function(err) {
+                    if (searchBtn) searchBtn.disabled = false;
+                    if (searchSpinner) searchSpinner.classList.add('d-none');
+                    if (searchIcon) searchIcon.classList.remove('d-none');
+                    showFeedback('Nie udało się połączyć z bazą miejscowości. Wybierz województwo na mapie.', 'warning');
+                });
+        }
+
+        // Obsługa wyszukiwarki tekstowej
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                if (searchInput.value.trim().length > 0) {
+                    if (searchClear) searchClear.classList.remove('d-none');
+                } else {
+                    if (searchClear) searchClear.classList.add('d-none');
+                    hideFeedback();
+                }
+            });
+
+            searchInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    doSearch(searchInput.value);
+                }
+            });
+        }
+
+        if (searchClear && searchInput) {
+            searchClear.addEventListener('click', function() {
+                searchInput.value = '';
+                searchClear.classList.add('d-none');
+                hideFeedback();
+                searchInput.focus();
+            });
+        }
+
+        if (searchBtn && searchInput) {
+            searchBtn.addEventListener('click', function() {
+                doSearch(searchInput.value);
+            });
+        }
+
+        quickTags.forEach(function(tag) {
+            tag.addEventListener('click', function() {
+                var q = tag.getAttribute('data-query');
+                if (searchInput) {
+                    searchInput.value = q;
+                    if (searchClear) searchClear.classList.remove('d-none');
+                }
+                doSearch(q);
+            });
+        });
+
+        // Event listenery dla województw na mapie SVG
         paths.forEach(function(path) {
             var repName = path.getAttribute('data-rep');
             var regionName = path.getAttribute('data-name');
@@ -250,7 +424,7 @@
 
             path.addEventListener('mouseleave', function() {
                 if (selectedRep) {
-                    selectRep(selectedRep);
+                    selectRep(selectedRep, null, selectedVoivodeshipSlug);
                 } else {
                     paths.forEach(function(p) {
                         p.style.opacity = '1';
@@ -261,7 +435,13 @@
             });
 
             path.addEventListener('click', function() {
-                selectRep(repName, regionName);
+                var slug = path.id.replace('region-', '');
+                selectRep(repName, regionName, slug);
+                if (searchInput) {
+                    searchInput.value = regionName;
+                    if (searchClear) searchClear.classList.remove('d-none');
+                }
+                hideFeedback();
             });
         });
 
@@ -270,6 +450,7 @@
             var repName = chip.getAttribute('data-rep');
             chip.addEventListener('click', function() {
                 selectRep(repName);
+                hideFeedback();
             });
             chip.addEventListener('mouseenter', function() {
                 paths.forEach(function(p) {
@@ -283,7 +464,7 @@
             });
             chip.addEventListener('mouseleave', function() {
                 if (selectedRep) {
-                    selectRep(selectedRep);
+                    selectRep(selectedRep, null, selectedVoivodeshipSlug);
                 } else {
                     paths.forEach(function(p) {
                         p.style.opacity = '1';
@@ -327,5 +508,25 @@
     background: rgba(43, 63, 214, 0.35) !important;
     border-color: rgba(69, 88, 254, 0.6) !important;
     transform: translateY(-1px);
+}
+.sales-quick-tag {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.sales-quick-tag:hover {
+    background: rgba(43, 63, 214, 0.3) !important;
+    border-color: rgba(120, 134, 255, 0.6) !important;
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+#sales-search-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+#sales-search-input:focus {
+    color: #ffffff;
+}
+.mbt-sales-search-box .input-group:focus-within {
+    border-color: rgba(120, 134, 255, 0.7) !important;
+    box-shadow: 0 10px 32px rgba(43, 63, 214, 0.3) !important;
 }
 </style>

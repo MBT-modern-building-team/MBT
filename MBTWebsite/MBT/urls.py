@@ -13,6 +13,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.views.generic import RedirectView
 import os
+from MBTApp import homeViews
 
 def robots_txt_view(request):
     content = "User-agent: *\nAllow: /\nSitemap: https://mbt.pl/sitemap.xml\nDisallow: /admin/\nDisallow: /admin-budowa/\n"
@@ -72,6 +73,7 @@ urlpatterns = [
     # język (np. /de/ → pl) — PREFIX_DEFAULT_LANGUAGE=False powoduje, że cache
     # translacji nie ma wpisu dla prefiksu 'pl', więc translate_url() zwraca
     # oryginalny URL i redirect zostaje na /de/.
+    path('api/znajdz-opiekuna/', homeViews.lookup_sales_rep, name='lookup_sales_rep_direct'),
     path('i18n/setlang/', include('MBTApp.i18n_urls')),
 ]
 

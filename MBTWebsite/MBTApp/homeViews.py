@@ -1,6 +1,8 @@
+from django.http import JsonResponse
 from django.shortcuts import render
 from django.utils.translation import gettext_lazy as _
 from MBTApp import mbt_orm
+from MBTApp.sales_locator import resolve_sales_rep
 
 
 def home(request):
@@ -79,3 +81,11 @@ def sitemap_html(request):
         'jobs': mbt_orm.get_jobs(lang),
     }
     return render(request, 'home/sitemap.html', context)
+
+
+def lookup_sales_rep(request):
+    """API endpoint: zwraca dopasowanego doradcę MBT dla podanej miejscowości / powiatu."""
+    query = request.GET.get('q', '').strip()
+    lang = getattr(request, 'LANGUAGE_CODE', 'pl')
+    data = resolve_sales_rep(query, lang=lang)
+    return JsonResponse(data)
