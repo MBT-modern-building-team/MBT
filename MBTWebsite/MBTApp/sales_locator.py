@@ -190,7 +190,8 @@ VOIV_CITIES: Dict[str, Tuple[str, ...]] = {
         'krośniewice', 'lututów', 'przedbórz', 'rzgów', 'stryków', 'sulejów', 'szadek', 'tuszyn',
         'uniejów', 'warta', 'złoczew', 'białaczów', 'bolimów', 'dąbrowice', 'grabów', 'inowłódz',
         'jeżów', 'kiernozia', 'lutomiersk', 'parzęczew', 'piątek', 'rozprza', 'ujazd', 'żarnów',
-        'osjaków', 'będków', 'bełchatowski', 'brzeziński', 'kutnowski', 'łaski', 'łęczycki',
+        'osjaków', 'będków', 'nietuszyna', 'ostrówek', 'czarnożyły', 'mokrsko', 'skrzynno', 'konopnica', 'wierzchlas',
+        'bełchatowski', 'brzeziński', 'kutnowski', 'łaski', 'łęczycki',
         'łowicki', 'łódzki wschodni', 'opoczyński', 'pabianicki', 'pajęczański', 'piotrkowski',
         'poddębicki', 'radomszczański', 'rawski', 'sieradzki', 'skierniewicki', 'tomaszowski',
         'wieluński', 'wieruszowski', 'zduńskowolski', 'zgierski'
@@ -396,9 +397,12 @@ def normalize_query_text(query: str) -> str:
 
 
 def _create_ssl_context():
-    """Tworzy bezpieczny kontekst SSL z fallbackiem dla macOS Python 3.14."""
+    """Tworzy kontekst SSL z tolerancją na brak certyfikatów CA w środowisku macOS/Python."""
     try:
-        return ssl.create_default_context()
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        return ctx
     except Exception:
         return ssl._create_unverified_context()
 
