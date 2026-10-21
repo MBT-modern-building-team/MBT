@@ -15,7 +15,7 @@
                     <span class="input-group-text border-0 ps-3" style="background: transparent; color: #7886FF;">
                         <i class="ri-map-pin-line" style="font-size: 19px;"></i>
                     </span>
-                    <input type="text" id="sales-search-input" class="form-control border-0 text-white" placeholder="{% trans 'np. Przewrotne, Zabrze, Warszawa, Poznań...' %}" autocomplete="off" style="background: transparent; box-shadow: none; font-size: 14.5px; padding: 12px 6px; color: #fff;">
+                    <input type="text" id="sales-search-input" class="form-control border-0 text-white" placeholder="{% trans 'np. Warszawa, Kraków, Poznań, Gdańsk, Zabrze...' %}" autocomplete="off" style="background: transparent; box-shadow: none; font-size: 14.5px; padding: 12px 6px; color: #fff;">
                     <button type="button" id="sales-search-clear" class="btn text-white-50 border-0 d-none" style="background: transparent; padding: 0 12px;" title="{% trans 'Wyczyść' %}">
                         <i class="ri-close-line" style="font-size: 18px;"></i>
                     </button>
@@ -29,11 +29,11 @@
                 <!-- Przykładowe tagi / szybki wybór -->
                 <div class="d-flex flex-wrap align-items-center gap-1 mt-2 text-start" style="font-size: 12px;">
                     <span class="text-white-50 me-1" style="font-size: 11.5px;">{% trans "Szybki test:" %}</span>
-                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Przewrotne powiat rzeszowski" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Przewrotne (pow. rzeszowski)</button>
-                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Zabrze" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Zabrze</button>
                     <button type="button" class="btn btn-sm sales-quick-tag" data-query="Warszawa" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Warszawa</button>
+                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Kraków" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Kraków</button>
                     <button type="button" class="btn btn-sm sales-quick-tag" data-query="Poznań" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Poznań</button>
                     <button type="button" class="btn btn-sm sales-quick-tag" data-query="Gdańsk" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Gdańsk</button>
+                    <button type="button" class="btn btn-sm sales-quick-tag" data-query="Zabrze" style="background: rgba(255,255,255,0.06); color: #9cb1ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 11.5px; padding: 2px 9px;">Zabrze</button>
                 </div>
 
                 <!-- Wynik wyszukiwania (komunikat / feedback alert) -->
