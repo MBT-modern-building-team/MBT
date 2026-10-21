@@ -143,11 +143,18 @@ class SeoRedirectMiddleware:
 
 
 class AdminSubdomainMiddleware:
-    """Zezwala na logowanie do panelu admina na domenie głównej (mbt.pl, www.mbt.pl) oraz subdomenach."""
+    """Zarządza subdomeną admin.* — wejście na stronę główną subdomeny przekierowuje do panelu /admin/."""
     def __init__(self, get_response):
         self.get_response = get_response
 
     def __call__(self, request):
+        host = (request.get_host() or '').split(':')[0].lower()
+        path = request.path
+
+        # Jeśli ktoś wejdzie na subdomenę admin.* na stronę główną (/), przekieruj od razu do /admin/
+        if host.startswith('admin.') and path in ('/', ''):
+            return redirect('/admin/')
+
         return self.get_response(request)
 
 

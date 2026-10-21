@@ -288,16 +288,27 @@ def get_workers(lang='pl'):
 
 @_cached('sales_reps')
 def get_sales_reps(lang='pl'):
+    reps_by_name = {}
+    for s in getattr(mbt_data, 'SALES_REPS', []):
+        trans_s = _project_translate(dict(s), lang)
+        reps_by_name[trans_s['name']] = trans_s
+
     try:
-        res = [
-            {'name': s.name, 'position': _t(s.t_position, lang, s.position),
-             'email': s.email, 'phone': s.phone, 'photo': s.photo}
-            for s in SalesRepresentative.objects.all().order_by('order', 'name')
-        ]
-        if res: return res
+        for s in SalesRepresentative.objects.all().order_by('order', 'name'):
+            reps_by_name[s.name] = {
+                'name': s.name,
+                'position': _t(s.t_position, lang, s.position),
+                'email': s.email,
+                'phone': s.phone,
+                'photo': s.photo,
+                'order': s.order
+            }
     except Exception:
         pass
-    return [_project_translate(dict(s), lang) for s in getattr(mbt_data, 'SALES_REPS', [])]
+
+    res = list(reps_by_name.values())
+    res.sort(key=lambda x: (x.get('order', 999), x.get('name', '')))
+    return res
 
 
 # ---------------------------------------------------------------------------

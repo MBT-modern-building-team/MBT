@@ -169,17 +169,58 @@
     };
 
     var salesRepsData = {
-        {% for rep in sales_reps %}
-        "{{ rep.name|escapejs }}": {
-            "name": "{{ rep.name|escapejs }}",
-            "position": "{{ rep.position|escapejs }}",
-            "phone": "{{ rep.phone|escapejs }}",
-            "phone_href": "tel:{{ rep.phone|cut:' '|escapejs }}",
-            "email": "{{ rep.email|escapejs }}",
-            "photo": "{{ rep.photo|default:''|escapejs }}"
-        }{% if not forloop.last %},{% endif %}
-        {% endfor %}
+        "Łukasz Liszka": {
+            "name": "Łukasz Liszka",
+            "position": "Manager ds. handlowych / Business Development Manager",
+            "phone": "+48 881 202 306",
+            "phone_href": "tel:+48881202306",
+            "email": "l.liszka@mbt.pl",
+            "photo": ""
+        },
+        "Agnieszka Grzelak": {
+            "name": "Agnieszka Grzelak",
+            "position": "Dział Handlowy",
+            "phone": "881 202 233",
+            "phone_href": "tel:881202233",
+            "email": "a.grzelak@mbt.pl",
+            "photo": ""
+        },
+        "Karol Pinoczek": {
+            "name": "Karol Pinoczek",
+            "position": "Dział Handlowy",
+            "phone": "881 202 784",
+            "phone_href": "tel:881202784",
+            "email": "k.pinoczek@mbt.pl",
+            "photo": "/static/img/mbt/O-nas-Karol-Pinoczek-scaled-e1769718455199-b48516a2.jpg"
+        },
+        "Marcin Kobryń": {
+            "name": "Marcin Kobryń",
+            "position": "Dział Handlowy",
+            "phone": "881 202 615",
+            "phone_href": "tel:881202615",
+            "email": "m.kobryn@mbt.pl",
+            "photo": ""
+        },
+        "Jarosław Wawrzyk": {
+            "name": "Jarosław Wawrzyk",
+            "position": "Dział Handlowy",
+            "phone": "881 202 167",
+            "phone_href": "tel:881202167",
+            "email": "j.wawrzyk@mbt.pl",
+            "photo": ""
+        }
     };
+
+    {% for rep in sales_reps %}
+    salesRepsData["{{ rep.name|escapejs }}"] = {
+        "name": "{{ rep.name|escapejs }}",
+        "position": "{{ rep.position|escapejs }}",
+        "phone": "{{ rep.phone|escapejs }}",
+        "phone_href": "tel:{{ rep.phone|cut:' '|escapejs }}",
+        "email": "{{ rep.email|escapejs }}",
+        "photo": "{{ rep.photo|default:''|escapejs }}"
+    };
+    {% endfor %}
 
     function initSalesMap() {
         var paths = document.querySelectorAll('.mbt-region');

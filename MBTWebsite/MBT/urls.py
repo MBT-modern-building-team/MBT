@@ -62,6 +62,14 @@ urlpatterns = [
     path('admin/mbtapp/', RedirectView.as_view(url='/admin/MBTApp/', permanent=False)),
     path('admin/mbtapp/<path:rest>', RedirectView.as_view(url='/admin/MBTApp/%(rest)s', permanent=False)),
     path('admin/', admin.site.urls),
+    # Aliasy logowania / WordPress legacy -> panel administracyjny
+    path('wp-admin/', RedirectView.as_view(url='/admin/', permanent=False)),
+    path('wp-admin', RedirectView.as_view(url='/admin/', permanent=False)),
+    path('wp-login.php', RedirectView.as_view(url='/admin/', permanent=False)),
+    path('login/', RedirectView.as_view(url='/admin/', permanent=False)),
+    path('login', RedirectView.as_view(url='/admin/', permanent=False)),
+    path('panel/', RedirectView.as_view(url='/admin/', permanent=False)),
+    path('panel', RedirectView.as_view(url='/admin/', permanent=False)),
     # Przekierowanie z /pl/ na / (ponieważ polski jest domyślnym językiem bez prefiksu)
     path('pl/', RedirectView.as_view(url='/', permanent=True)),
     path('pl/<path:rest>', RedirectView.as_view(url='/%(rest)s', permanent=True)),
