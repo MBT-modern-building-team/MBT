@@ -337,6 +337,119 @@
             card.style.animation = 'fadeIn 0.3s ease';
         }
 
+        var voivRepMap = {
+            'dolnośląskie': 'Agnieszka Grzelak',
+            'wielkopolskie': 'Agnieszka Grzelak',
+            'lubuskie': 'Agnieszka Grzelak',
+            'śląskie': 'Karol Pinoczek',
+            'opolskie': 'Karol Pinoczek',
+            'łódzkie': 'Karol Pinoczek',
+            'mazowieckie': 'Marcin Kobryń',
+            'warmińsko-mazurskie': 'Marcin Kobryń',
+            'podlaskie': 'Marcin Kobryń',
+            'podkarpackie': 'Jarosław Wawrzyk',
+            'małopolskie': 'Jarosław Wawrzyk',
+            'świętokrzyskie': 'Jarosław Wawrzyk',
+            'lubelskie': 'Jarosław Wawrzyk',
+            'zachodniopomorskie': 'Łukasz Liszka',
+            'pomorskie': 'Łukasz Liszka',
+            'kujawsko-pomorskie': 'Łukasz Liszka'
+        };
+
+        var voivNamesMap = {
+            'dolnośląskie': 'Dolnośląskie',
+            'kujawsko-pomorskie': 'Kujawsko-Pomorskie',
+            'lubelskie': 'Lubelskie',
+            'lubuskie': 'Lubuskie',
+            'łódzkie': 'Łódzkie',
+            'małopolskie': 'Małopolskie',
+            'mazowieckie': 'Mazowieckie',
+            'opolskie': 'Opolskie',
+            'podkarpackie': 'Podkarpackie',
+            'podlaskie': 'Podlaskie',
+            'pomorskie': 'Pomorskie',
+            'śląskie': 'Śląskie',
+            'świętokrzyskie': 'Świętokrzyskie',
+            'warmińsko-mazurskie': 'Warmińsko-Mazurskie',
+            'wielkopolskie': 'Wielkopolskie',
+            'zachodniopomorskie': 'Zachodniopomorskie'
+        };
+
+        function matchVoivFromText(txt) {
+            if (!txt) return null;
+            var t = txt.toLowerCase().replace(/[\-_,./]+/g, ' ');
+            var stems = [
+                ['kujawsko pomorsk', 'kujawsko-pomorskie'],
+                ['kujawsk', 'kujawsko-pomorskie'],
+                ['kujaw', 'kujawsko-pomorskie'],
+                ['zachodniopomorsk', 'zachodniopomorskie'],
+                ['zachodnio pomorsk', 'zachodniopomorskie'],
+                ['warmińsko mazursk', 'warmińsko-mazurskie'],
+                ['warminsko mazursk', 'warmińsko-mazurskie'],
+                ['warmińsk', 'warmińsko-mazurskie'],
+                ['warmia', 'warmińsko-mazurskie'],
+                ['mazur', 'warmińsko-mazurskie'],
+                ['dolnośląsk', 'dolnośląskie'],
+                ['dolnoslask', 'dolnośląskie'],
+                ['wielkopolsk', 'wielkopolskie'],
+                ['świętokrzysk', 'świętokrzyskie'],
+                ['swietokrzysk', 'świętokrzyskie'],
+                ['podkarpack', 'podkarpackie'],
+                ['małopolsk', 'małopolskie'],
+                ['malopolsk', 'małopolskie'],
+                ['mazowieck', 'mazowieckie'],
+                ['mazowsz', 'mazowieckie'],
+                ['podlask', 'podlaskie'],
+                ['lubelsk', 'lubelskie'],
+                ['lubusk', 'lubuskie'],
+                ['opolsk', 'opolskie'],
+                ['pomorsk', 'pomorskie'],
+                ['śląsk', 'śląskie'],
+                ['slask', 'śląskie'],
+                ['łódzk', 'łódzkie'],
+                ['lodzk', 'łódzkie']
+            ];
+            for (var i = 0; i < stems.length; i++) {
+                if (t.indexOf(stems[i][0]) !== -1) {
+                    return stems[i][1];
+                }
+            }
+            return null;
+        }
+
+        function fallbackClientGeocode(query, defaultMsg) {
+            var url = 'https://photon.komoot.io/api/?q=' + encodeURIComponent(query) + '&limit=1';
+            fetch(url)
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (searchBtn) searchBtn.disabled = false;
+                    if (searchSpinner) searchSpinner.classList.add('d-none');
+                    if (searchIcon) searchIcon.classList.remove('d-none');
+
+                    if (data && data.features && data.features.length > 0) {
+                        var p = data.features[0].properties;
+                        var fullText = (p.state || '') + ' ' + (p.county || '') + ' ' + (p.country || '') + ' ' + (p.name || '');
+                        var voivSlug = matchVoivFromText(fullText);
+                        if (voivSlug && voivRepMap[voivSlug]) {
+                            var repName = voivRepMap[voivSlug];
+                            var voivName = voivNamesMap[voivSlug] || voivSlug;
+                            var placeTitle = p.name || p.city || query;
+                            var msg = 'Lokalizacja: <strong>' + placeTitle + '</strong> (woj. ' + voivName + ') &mdash; Twój dedykowany doradca: <strong style="color: #fff;">' + repName + '</strong>';
+                            showFeedback(msg, 'success');
+                            selectRep(repName, voivName, voivSlug);
+                            return;
+                        }
+                    }
+                    showFeedback(defaultMsg || 'Nie udało się jednoznacznie zlokalizować miejscowości "' + query + '". Wybierz swoje województwo na mapie poniżej.', 'warning');
+                })
+                .catch(function() {
+                    if (searchBtn) searchBtn.disabled = false;
+                    if (searchSpinner) searchSpinner.classList.add('d-none');
+                    if (searchIcon) searchIcon.classList.remove('d-none');
+                    showFeedback(defaultMsg || 'Nie udało się jednoznacznie zlokalizować miejscowości "' + query + '". Wybierz swoje województwo na mapie poniżej.', 'warning');
+                });
+        }
+
         function doSearch(query) {
             if (!query || !query.trim()) {
                 showFeedback('Wpisz nazwę miejscowości lub powiatu.', 'warning');
@@ -357,11 +470,11 @@
                     return res.json();
                 })
                 .then(function(data) {
-                    if (searchBtn) searchBtn.disabled = false;
-                    if (searchSpinner) searchSpinner.classList.add('d-none');
-                    if (searchIcon) searchIcon.classList.remove('d-none');
-
                     if (data.success && data.rep) {
+                        if (searchBtn) searchBtn.disabled = false;
+                        if (searchSpinner) searchSpinner.classList.add('d-none');
+                        if (searchIcon) searchIcon.classList.remove('d-none');
+
                         var locationTitle = data.place || query;
                         var msg = 'Lokalizacja: <strong>' + locationTitle + '</strong> (woj. ' + data.voivodeship + ') &mdash; Twój dedykowany doradca: <strong style="color: #fff;">' + data.rep.name + '</strong>';
                         showFeedback(msg, 'success');
@@ -375,14 +488,11 @@
                             }
                         }
                     } else {
-                        showFeedback(data.error || 'Nie znaleziono miejscowości. Wybierz region bezpośrednio na mapie.', 'warning');
+                        fallbackClientGeocode(query, data.error);
                     }
                 })
                 .catch(function(err) {
-                    if (searchBtn) searchBtn.disabled = false;
-                    if (searchSpinner) searchSpinner.classList.add('d-none');
-                    if (searchIcon) searchIcon.classList.remove('d-none');
-                    showFeedback('Nie udało się połączyć z bazą miejscowości. Wybierz województwo na mapie.', 'warning');
+                    fallbackClientGeocode(query, null);
                 });
         }
 
