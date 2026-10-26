@@ -7,6 +7,7 @@ from MBTApp import oznakowanieViews
 from MBTApp import pagesViews
 from MBTApp import serviceViews
 from MBTApp import mbtViews
+from MBTApp import kioskViews
 
 urlpatterns = [
 
@@ -60,6 +61,9 @@ urlpatterns = [
     path('admin-budowa/tablice/<str:board_type>/podglad/', oznakowanieViews._board_preview_view, name='board_preview'),
     path('admin-budowa/tablice/<str:board_type>/pobierz/', oznakowanieViews._board_download_view, name='board_download'),
     
+    # Kiosk Dotykowy
+    path('kiosk/', kioskViews.kiosk_view, name='kiosk'),
+
     # Brandbook
     path('111111/', pagesViews.brandbook, name='brandbook'),
 ]

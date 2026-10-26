@@ -1,0 +1,592 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MBT Modern Building Team — Kiosk Prezentacyjny 4K</title>
+
+    <!-- Ikony lokalne RemixIcon -->
+    <link rel="stylesheet" href="{% static 'fonts/remixicon.css' %}">
+
+    <!-- Style Kiosku Dotykowego -->
+    <link rel="stylesheet" href="{% static 'css/kiosk.css' %}">
+
+    <link rel="icon" type="image/png" href="{% static 'img/favicons/favicon.png' %}">
+</head>
+<body>
+
+<div class="kiosk-app">
+
+    <!-- ======================================================================
+         PASEK GÓRNY (TOP STATUS BAR)
+         ====================================================================== -->
+    <header class="kiosk-header">
+        <div class="kiosk-header-left">
+            <img src="{% static 'img/mbt/logo-with-name-white.svg' %}" alt="MBT Modern Building Team" class="kiosk-logo-img" onerror="this.src='{% static 'img/mbt/mbt_logo_horizontal.png' %}'">
+            <div class="forbes-badge-mini">
+                <span class="gem">💎</span> Diamenty Forbesa 2026
+            </div>
+            <div class="forbes-badge-mini" style="border-color: rgba(0, 230, 118, 0.4); background: rgba(0, 230, 118, 0.1); color: #B9F6CA;">
+                <span style="color: #00E676;">✓</span> 100% Terminowości
+            </div>
+        </div>
+
+        <div class="kiosk-header-right">
+            <div class="live-clock-box">
+                <div class="live-clock-time" id="kiosk-live-time">12:00:00</div>
+                <div class="live-clock-date" id="kiosk-live-date">PON., 26 PAŹDZIERNIKA</div>
+            </div>
+
+            <button type="button" class="header-btn header-btn-presentation" id="header-btn-pitch">
+                <span>▶</span> Prezentacja MBT
+            </button>
+
+            <button type="button" class="header-btn header-btn-fullscreen" id="kiosk-fs-toggle" title="Tryb pełnoekranowy (ukryj paski webOS)">
+                <span class="fs-icon">⛶</span> <span class="fs-label">Pełny ekran</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         GŁÓWNY OBSZAR ZAWARTOŚCI (CONTENT VIEWPORTS)
+         ====================================================================== -->
+    <main class="kiosk-content">
+
+        <!-- ==================================================================
+             ZAKŁADKA 1: O MBT (HISTORIA, SUKCESY, LICZNIKI, FILARY)
+             ================================================================== -->
+        <section class="kiosk-tab-pane active" id="tab-o-nas">
+            <!-- Karta Hero z wideo drona -->
+            <div class="hero-banner-card">
+                <video class="hero-bg-media" autoplay muted loop playsinline preload="auto">
+                    <source src="{% static 'img/hero/strona_mbt.mp4' %}" type="video/mp4">
+                    <source src="{% static 'img/hero/strona_mbt.webm' %}" type="video/webm">
+                </video>
+                <div class="hero-banner-content">
+                    <div class="hero-top-tag">
+                        <i class="ri-building-line"></i> Twój Generalny Wykonawca
+                    </div>
+                    <h1 class="hero-headline">
+                        Z pasją budujemy Wasze biznesy. <span>Jeden team – pełna realizacja.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Modern Building Team (MBT) to wiodący generalny wykonawca zaawansowanych hal magazynowych, produkcyjnych i obiektów komercyjnych. Działamy w formule <strong>„Zaprojektuj i wybuduj” (Design & Build)</strong>, zapewniając Inwestorom stuprocentowe bezpieczeństwo kapitałowe, inżyniering wartości i gwarantowaną terminowość.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Liczniki i Statystyki -->
+            <div class="stats-grid-row">
+                <div class="stat-box-card">
+                    <div class="stat-box-num">100%</div>
+                    <div class="stat-box-label">Zaangażowania i pasji</div>
+                </div>
+                <div class="stat-box-card">
+                    <div class="stat-box-num">100+</div>
+                    <div class="stat-box-label">Zrealizowanych obiektów</div>
+                </div>
+                <div class="stat-box-card">
+                    <div class="stat-box-num">100%</div>
+                    <div class="stat-box-label">Terminowości oddania</div>
+                </div>
+                <div class="stat-box-card">
+                    <div class="stat-box-num">20+</div>
+                    <div class="stat-box-label">Lat doświadczenia na rynku</div>
+                </div>
+            </div>
+
+            <!-- Baner Forbesa 2026 -->
+            <div class="forbes-feature-banner">
+                <img src="{% static 'img/mbt/award-forbes-2026.webp' %}" alt="Diamenty Forbesa 2026" class="forbes-feature-img" onerror="this.src='{% static 'img/mbt/award-forbes-2026.png' %}';">
+                <div class="forbes-feature-text">
+                    <h3>MBT w elitarnym gronie Diamentów Forbesa 2026! 💎</h3>
+                    <p>
+                        Wyróżnienie przyznane na podstawie rzetelnej szwajcarskiej metody wyceny analityków Dun & Bradstreet Poland. Potwierdza dynamiczny wzrost wartości spółki, stabilność kapitałową oraz wiarygodność partnerską przy realizacji kontraktów kubaturowych wielomilionowej skali.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Trzy Filary MBT -->
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-card-icon">
+                        <i class="ri-calculator-line"></i>
+                    </div>
+                    <h4>Value Engineering</h4>
+                    <p>
+                        Inżynieryjna optymalizacja kosztów na etapie projektu. Kalkulujemy zużycie stali i betonu tak, by konstrukcja była maksymalnie ekonomiczna, zachowując pełne rezerwy nośności i bezpieczeństwa.
+                    </p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-card-icon">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <h4>Bezpieczeństwo Budżetu</h4>
+                    <p>
+                        W formule Design & Build koszty są stałe i znane Inwestorowi przed wbiciem pierwszej łopaty. Bierzemy na siebie pełną odpowiedzialność za koordynację formalności, PnB oraz PnU.
+                    </p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-card-icon">
+                        <i class="ri-team-line"></i>
+                    </div>
+                    <h4>Własna Kadra & Sprzęt</h4>
+                    <p>
+                        Doświadczeni inżynierowie budowy, stały nadzór uprawnionych kierowników oraz nowoczesny park maszynowy. Raportowanie postępu prac z drona i kamery online na żywo dla Inwestora.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             ZAKŁADKA 2: OFERTA & METODOLOGIA
+             ================================================================== -->
+        <section class="kiosk-tab-pane" id="tab-oferta">
+            <div class="section-intro-header">
+                <div class="badge-tag">Filozofia Wykonawcza</div>
+                <h2>Model „Zaprojektuj i wybuduj” vs Tradycyjny</h2>
+                <p>Dlaczego rozdzielenie projektanta od wykonawcy generuje straty i opóźnienia, a zintegrowany team MBT gwarantuje sukces inwestycji?</p>
+            </div>
+
+            <!-- Porównanie modeli -->
+            <div class="model-comparison-container">
+                <div class="comparison-box traditional">
+                    <h3>Model Tradycyjny (Inwestor w buforze)</h3>
+                    <ul class="comparison-list">
+                        <li>Inwestor pośredniczy w sporach między biurem projektowym a budowlanym</li>
+                        <li>Błędy i kolizje na budowie prowadzą do roszczeń finansowych i aneksów</li>
+                        <li>Ryzyko przewymiarowania konstrukcji stalowej przez brak wiedzy o rynku</li>
+                        <li>Kolejkowy tryb pracy: budowa rusza dopiero po pełnym projekcie wykonawczym</li>
+                        <li>Rozmyta odpowiedzialność za końcowy termin oddania obiektu do użytkowania</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-box mbt-way">
+                    <h3>Model MBT: Zaprojektuj i Wybuduj (Design & Build)</h3>
+                    <ul class="comparison-list">
+                        <li><strong>Jeden partner, jedna odpowiedzialność:</strong> MBT koordynuje całość od A do Z</li>
+                        <li><strong>Gwarancja budżetu:</strong> Stała cena i eliminacja nieprzewidzianych dopłat</li>
+                        <li><strong>Value Engineering:</strong> Optymalizacja konstrukcji dachu i posadzki już w CAD/BIM</li>
+                        <li><strong>Fast-Tracking:</strong> Prace ziemne ruszają równolegle ze szczegółowymi branżami</li>
+                        <li><strong>Oszczędność czasu:</strong> Średnio o 3-5 miesięcy szybsze oddanie do eksploatacji</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Specjalizacje MBT -->
+            <div class="section-intro-header" style="margin-top: 4rem;">
+                <div class="badge-tag">Zakres Kompetencji</div>
+                <h2>Główne Segmenty Budownictwa Kubaturowego</h2>
+            </div>
+
+            <div class="sectors-showcase-grid">
+                <div class="sector-tile-card">
+                    <div class="icon-wrap"><i class="ri-store-2-line"></i></div>
+                    <h4>Hale Magazynowe & Logistyczne</h4>
+                    <p>Wysokie składowanie, posadzki bezspoinowe o nośności do 10 t/m², doki przeładunkowe, certyfikacje BREEAM.</p>
+                </div>
+
+                <div class="sector-tile-card">
+                    <div class="icon-wrap"><i class="ri-settings-4-line"></i></div>
+                    <h4>Hale Produkcyjne & Przemysłowe</h4>
+                    <p>Zaawansowane obiekty pod suwnice 10-50t, skomplikowane fundamenty technologiczne, media sprężonego powietrza i gazów.</p>
+                </div>
+
+                <div class="sector-tile-card">
+                    <div class="icon-wrap"><i class="ri-community-line"></i></div>
+                    <h4>Parki Handlowe & Biurowce</h4>
+                    <p>Centra handlowo-usługowe, nowoczesne przestrzenie biurowe klasy A, salony ekspozycyjne i prestiżowe fasady szklane.</p>
+                </div>
+
+                <div class="sector-tile-card">
+                    <div class="icon-wrap"><i class="ri-temp-cold-line"></i></div>
+                    <h4>Chłodnie, Mroźnie & Spożywcze</h4>
+                    <p>Rygorystyczne strefy kontrolowanej temperatury (do -25°C), szczelne płyty PIR, atesty higieniczne PZH i normy IFS/BRC.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             ZAKŁADKA 3: REALIZACJE (INTERAKTYWNE PORTFOLIO & PRZED/PO)
+             ================================================================== -->
+        <section class="kiosk-tab-pane" id="tab-realizacje">
+            
+            <!-- Interaktywny Suwak Przed / Po -->
+            <div class="before-after-wrapper">
+                <div class="before-after-header">
+                    <div>
+                        <div class="ba-badge" style="display: inline-block; margin-bottom: 0.5rem; background: var(--mbt-orange); border: none;">
+                            <i class="ri-drag-move-fill"></i> Interaktywne Porównanie
+                        </div>
+                        <h3>{{ before_after.title }}</h3>
+                        <p>{{ before_after.subtitle }}</p>
+                    </div>
+                    <div class="before-after-badges">
+                        <span class="ba-badge"><i class="ri-map-pin-line"></i> {{ before_after.location }}</span>
+                        <span class="ba-badge"><i class="ri-ruler-2-line"></i> {{ before_after.area }}</span>
+                        <span class="ba-badge"><i class="ri-shield-flash-line"></i> {{ before_after.formula }}</span>
+                    </div>
+                </div>
+
+                <div class="before-after-stage" id="kiosk-ba-stage">
+                    <!-- Obraz "Przed" (Tło) -->
+                    <img src="{{ before_after.before_image }}" alt="Plac Budowy" class="ba-image ba-image-before">
+                    <div class="ba-label ba-label-before">{{ before_after.before_label }}</div>
+
+                    <!-- Obraz "Po" (Warstwa wierzchnia sterowana suwakiem) -->
+                    <div class="ba-image-after-container" id="kiosk-ba-after-container">
+                        <img src="{{ before_after.after_image }}" alt="Gotowy Obiekt" class="ba-image ba-image-after">
+                        <div class="ba-label ba-label-after">{{ before_after.after_label }}</div>
+                    </div>
+
+                    <!-- Uchwyt suwaka -->
+                    <div class="ba-handle" id="kiosk-ba-handle">
+                        <i class="ri-arrow-left-right-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtry realizacji -->
+            <div class="projects-filter-bar">
+                <button type="button" class="filter-btn active" data-filter="all">
+                    <i class="ri-apps-2-line"></i> Wszystkie Realizacje
+                </button>
+                <button type="button" class="filter-btn" data-filter="magazyn">
+                    <i class="ri-store-2-line"></i> Hale Magazynowe
+                </button>
+                <button type="button" class="filter-btn" data-filter="przemysl">
+                    <i class="ri-settings-4-line"></i> Hale Produkcyjne
+                </button>
+                <button type="button" class="filter-btn" data-filter="komercyjne">
+                    <i class="ri-building-line"></i> Komercyjne & Biurowce
+                </button>
+                <button type="button" class="filter-btn" data-filter="w-trakcie">
+                    <i class="ri-loader-2-line"></i> W trakcie realizacji
+                </button>
+            </div>
+
+            <!-- Siatka realizacji dotykowych -->
+            <div class="projects-grid">
+                {% for p in projects %}
+                <article class="project-touch-card" data-slug="{{ p.slug }}" data-type="{{ p.type }}" data-title="{{ p.title }}">
+                    <div class="project-card-thumb-wrap">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" class="project-card-thumb" loading="lazy" onerror="this.src='{% static 'img/mbt/hala-1024x672-eb7144c9.jpg' %}';">
+                        <div class="project-card-type-tag">
+                            {% if 'w-trakcie' in p.type %}W trakcie budowy{% else %}Zrealizowane{% endif %}
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <div>
+                            <h3 class="project-card-title">{{ p.title }}</h3>
+                            <div class="project-card-meta">
+                                {% if p.czas %}
+                                <div class="project-card-meta-item">
+                                    <i class="ri-time-line"></i> {{ p.czas }}
+                                </div>
+                                {% endif %}
+                                {% if p.formula %}
+                                <div class="project-card-meta-item">
+                                    <i class="ri-tools-line"></i> {{ p.formula }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <button type="button" class="project-card-btn-more">
+                            <span>Dotknij, aby zobaczyć galerię i parametry</span> <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             ZAKŁADKA 4: PEŁNOWYMIAROWA PREZENTACJA MBT (PITCH DECK)
+             ================================================================== -->
+        <section class="kiosk-tab-pane" id="tab-prezentacja" style="padding: 1.5rem 3rem;">
+            <div class="presentation-view-container">
+                <!-- Okno slajdów -->
+                <div class="slide-viewport">
+                    {% for slide in presentation_slides %}
+                    <div class="deck-slide {% if forloop.first %}active{% endif %}" data-slide-id="{{ slide.id }}">
+                        <img src="{{ slide.bg_image }}" alt="Tło slajdu" class="slide-backdrop-img">
+                        <div class="slide-inner-content">
+                            <!-- Nagłówek slajdu -->
+                            <div class="slide-header-area">
+                                <div>
+                                    <span class="slide-tag-pill">{{ slide.tag }}</span>
+                                    {% if slide.badge %}
+                                    <span class="slide-badge-pill">{{ slide.badge }}</span>
+                                    {% endif %}
+                                </div>
+                                <h2 class="slide-title">{{ slide.title }}</h2>
+                                <p class="slide-subtitle">{{ slide.subtitle }}</p>
+                            </div>
+
+                            <!-- Treść i Licznik -->
+                            <div class="slide-body-grid">
+                                <div class="slide-bullets-card">
+                                    {% for pt in slide.points %}
+                                    <div class="slide-bullet-item">
+                                        <div class="slide-bullet-dot"></div>
+                                        <div>{{ pt }}</div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="slide-stat-card">
+                                    <div class="slide-stat-number">{{ slide.stat_number }}</div>
+                                    <div class="slide-stat-label">{{ slide.stat_label }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Pasek sterowania slajdami -->
+                <footer class="deck-controls-bar">
+                    <button type="button" class="deck-nav-btn" id="deck-btn-prev">
+                        <i class="ri-arrow-left-s-line"></i> Poprzedni slajd
+                    </button>
+
+                    <div class="deck-dots-track" id="deck-dots-track">
+                        <!-- Generowane dynamicznie przez JS -->
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1.5rem;">
+                        <span id="deck-counter-text" style="color: rgba(255,255,255,0.7); font-weight: 700; font-size: 1.1rem;">1 / 10</span>
+                        <button type="button" class="deck-nav-btn" id="deck-btn-next" style="background: var(--mbt-orange); border-color: var(--mbt-orange);">
+                            Następny slajd <i class="ri-arrow-right-s-line"></i>
+                        </button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             ZAKŁADKA 5: ZAUFALI NAM & REFERENCJE
+             ================================================================== -->
+        <section class="kiosk-tab-pane" id="tab-referencje">
+            <div class="section-intro-header">
+                <div class="badge-tag">Zaufanie Liderów Biznesu</div>
+                <h2>Marki, które budują z Modern Building Team</h2>
+                <p>Ponad 70% naszych Inwestorów powierza nam kolejne etapy rozbudowy swoich zakładów przemysłowych i sieci magazynowych.</p>
+            </div>
+
+            <!-- Ściana marek -->
+            <div class="brands-grid-wall">
+                {% for b in trusted_brands %}
+                <div class="brand-tile-box">
+                    <img src="{{ b.logo }}" alt="{{ b.name }}" class="brand-tile-img" title="{{ b.name }}">
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Siatka referencji -->
+            <div class="section-intro-header" style="margin-top: 4rem;">
+                <div class="badge-tag">Głos Inwestorów</div>
+                <h2>Wybrane Opinie i Referencje</h2>
+            </div>
+
+            <div class="references-carousel-grid">
+                {% for r in references %}
+                <div class="ref-quote-card">
+                    <p class="ref-quote-text">„{{ r.tresc|truncatechars:260 }}”</p>
+                    <div class="ref-author-block">
+                        <div class="ref-company-name">{{ r.firma }}</div>
+                        <div class="ref-person-title">{{ r.osoba }}{% if r.stanowisko %} — {{ r.stanowisko }}{% endif %}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             ZAKŁADKA 6: KONTAKT & REGIONY
+             ================================================================== -->
+        <section class="kiosk-tab-pane" id="tab-kontakt">
+            <div class="section-intro-header">
+                <div class="badge-tag">Rozpocznijmy Współpracę</div>
+                <h2>Skontaktuj się z Dyrekcją MBT</h2>
+                <p>Opracujemy wstępną koncepcję chłonności działki, oszacujemy koszty w modelu Design & Build i przygotujemy harmonogram w 7 dni.</p>
+            </div>
+
+            <div class="contact-kiosk-grid">
+                <!-- Oddziały firmy -->
+                <div class="offices-cards-stack">
+                    <div class="office-info-card">
+                        <div>
+                            <h4>Siedziba Katowice</h4>
+                            <p>{{ site.office_katowice }}</p>
+                        </div>
+                        <span class="office-info-badge">Centrala Zarządu</span>
+                    </div>
+
+                    <div class="office-info-card">
+                        <div>
+                            <h4>Biuro Główne Zabrze</h4>
+                            <p>{{ site.office_zabrze }}</p>
+                        </div>
+                        <span class="office-info-badge">Dział Inżynieryjny</span>
+                    </div>
+
+                    <div class="office-info-card">
+                        <div>
+                            <h4>Oddział Kraków</h4>
+                            <p>{{ site.office_krakow }}</p>
+                        </div>
+                        <span class="office-info-badge">Małopolska & Południe</span>
+                    </div>
+
+                    <div class="office-info-card" style="background: var(--mbt-navy); color: white;">
+                        <div>
+                            <h4 style="color: white;">Infolinia Inwestycyjna</h4>
+                            <p style="color: rgba(255,255,255,0.8);">{{ site.phone }} • {{ site.email }}</p>
+                        </div>
+                        <span class="office-info-badge" style="background: var(--mbt-orange); color: white;">8:00 - 17:00</span>
+                    </div>
+                </div>
+
+                <!-- Karta z dużym kodem QR -->
+                <div class="contact-qr-lead-card">
+                    <h3>Zabierz kontakt do telefonu</h3>
+                    <p>Zeskanuj aparat telefonu, aby natychmiast zapisać dane MBT w kontaktach lub zadzwonić jednym kliknięciem.</p>
+                    
+                    <div class="big-qr-code-box" id="kiosk-main-contact-qr">
+                        <!-- Kod QR renderowany przez JS -->
+                    </div>
+
+                    <div class="contact-direct-numbers">
+                        {{ site.phone }}
+                    </div>
+                    <div style="color: rgba(255,255,255,0.7); font-size: 1rem; margin-top: 0.25rem;">
+                        {{ site.email }}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================================
+         DOLNY DOCK NAWIGACYJNY (BOTTOM DOCK 32")
+         ====================================================================== -->
+    <nav class="kiosk-dock" aria-label="Nawigacja kiosku">
+        <button type="button" class="dock-tab-btn active" data-tab="o-nas">
+            <i class="ri-home-4-line tab-icon"></i>
+            <span>O MBT</span>
+        </button>
+
+        <button type="button" class="dock-tab-btn" data-tab="oferta">
+            <i class="ri-shield-check-line tab-icon"></i>
+            <span>Oferta & Model</span>
+        </button>
+
+        <button type="button" class="dock-tab-btn" data-tab="realizacje">
+            <i class="ri-building-4-line tab-icon"></i>
+            <span>Realizacje</span>
+        </button>
+
+        <button type="button" class="dock-tab-btn" data-tab="prezentacja">
+            <i class="ri-slideshow-3-line tab-icon"></i>
+            <span>Prezentacja</span>
+        </button>
+
+        <button type="button" class="dock-tab-btn" data-tab="referencje">
+            <i class="ri-medal-line tab-icon"></i>
+            <span>Zaufali Nam</span>
+        </button>
+
+        <button type="button" class="dock-tab-btn" data-tab="kontakt">
+            <i class="ri-contacts-line tab-icon"></i>
+            <span>Kontakt</span>
+        </button>
+    </nav>
+
+</div>
+
+<!-- ==========================================================================
+     MODAL SZCZEGÓŁÓW REALIZACJI
+     ========================================================================== -->
+<div class="modal-overlay" id="project-detail-modal">
+    <div class="modal-project-box">
+        <div class="modal-header-bar">
+            <h2 id="modal-project-title">Szczegóły Inwestycji</h2>
+            <button type="button" class="modal-close-btn" id="modal-close-button" title="Zamknij">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+
+        <div class="modal-body-content">
+            <!-- Galeria ze zdjęciem głównym i strzałkami -->
+            <div class="modal-gallery-pane">
+                <div class="modal-main-img-wrap">
+                    <img src="" alt="Zdjęcie realizacji" class="modal-main-img" id="modal-project-main-img">
+                    <button type="button" class="gallery-arrow-btn prev" id="modal-gallery-prev" title="Poprzednie zdjęcie">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <button type="button" class="gallery-arrow-btn next" id="modal-gallery-next" title="Następne zdjęcie">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+                <div class="modal-thumbs-bar" id="modal-project-thumbs">
+                    <!-- Miniatury dodawane dynamicznie -->
+                </div>
+            </div>
+
+            <!-- Informacje techniczne i specyfikacja -->
+            <div class="modal-info-pane">
+                <div>
+                    <div class="modal-specs-list">
+                        <div class="spec-tile">
+                            <div class="spec-label">Status inwestycji</div>
+                            <div class="spec-val" id="modal-spec-status">—</div>
+                        </div>
+                        <div class="spec-tile">
+                            <div class="spec-label">Czas realizacji</div>
+                            <div class="spec-val" id="modal-spec-czas">—</div>
+                        </div>
+                        <div class="spec-tile" style="grid-column: span 2;">
+                            <div class="spec-label">Formuła wykonawcza</div>
+                            <div class="spec-val" id="modal-spec-formula">—</div>
+                        </div>
+                    </div>
+
+                    <div class="modal-desc-box" id="modal-project-desc">
+                        <!-- Opis techniczny -->
+                    </div>
+                </div>
+
+                <!-- Stopka z QR kodem do zabrania realizacji na telefon -->
+                <div class="modal-qr-footer">
+                    <div class="modal-qr-box" id="modal-project-qr">
+                        <!-- Kod QR -->
+                    </div>
+                    <div>
+                        <div style="font-weight: 700; color: var(--mbt-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">
+                            Zabierz tę realizację ze sobą
+                        </div>
+                        <div style="color: var(--mbt-text-muted); font-size: 0.95rem;">
+                            Zeskanuj kod QR smartfonem, aby otworzyć galerię i specyfikację w swoim telefonie.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Serializowane dane projektów do szybkiej obsługi modala -->
+<script id="kiosk-projects-data" type="application/json">
+{{ projects_json|safe }}
+</script>
+
+<!-- Skrypt obsługi Kiosku -->
+<script src="{% static 'js/kiosk.js' %}"></script>
+
+</body>
+</html>
