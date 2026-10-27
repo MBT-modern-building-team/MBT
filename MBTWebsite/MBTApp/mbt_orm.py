@@ -512,11 +512,17 @@ def get_site(lang='pl'):
 def get_photos():
     """Zwróć dict fotografie strony: klucz -> URL.
 
-    Wartości z bazy (admin → upload na R2) mają priorytet; puste pole
-    oznacza domyślną ścieżkę statyczną zdefiniowaną w modelu. Fallback
-    (baza pusta/niedostępna) — same domyślne ścieżki z mbt_data.PHOTOS.
+    Wartości z mbt_data.PHOTOS stanowią oficjalną bazę produkcyjnych zdjęć w wysokiej rozdzielczości.
+    Wartości z bazy danych mają priorytet tylko wtedy, gdy zostały świadomie skonfigurowane
+    (np. upload na R2) i nie są starymi dummy placeholderami (1362x704, 1362x716 itp.).
     """
     out = dict(getattr(mbt_data, 'PHOTOS', {}))
+    dummy_placeholders = {
+        '/static/img/hero/hero_bg_3_1.png',
+        '/static/img/bg/cta-bg3-1.png',
+        '/static/img/bg/contact-bg3-1.png',
+        '/static/img/bg/breadcrumb-bg.png',
+    }
     try:
         try:
             c = SitePhotos.objects.first()
@@ -526,9 +532,17 @@ def get_photos():
             for field in SitePhotos._meta.fields:
                 if field.name == 'id':
                     continue
-                val = getattr(c, field.name, '')
-                default_val = field.default if field.has_default() else ''
-                out[field.name] = val or default_val or out.get(field.name, '')
+                val = getattr(c, field.name, None)
+                if not val:
+                    continue
+                # Ignoruj stare atrapy z szablonów
+                if isinstance(val, str) and val.strip() in dummy_placeholders:
+                    continue
+                # Jeśli w mbt_data mamy oficjalny pełny URL (http...), a w bazie pozostała stara relatywna ścieżka /static/img/bg/, wolimy mbt_data
+                canon = out.get(field.name)
+                if isinstance(val, str) and val.startswith('/static/img/bg/') and canon and isinstance(canon, str) and canon.startswith('http'):
+                    continue
+                out[field.name] = val
             return out
     except Exception:
         pass

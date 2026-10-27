@@ -127,8 +127,17 @@ class Command(BaseCommand):
         SiteConfig.objects.create(**mbt_data.SITE)
         created_site = 1
 
+        # Fotografie strony (SitePhotos)
+        from MBTApp.models import SitePhotos
+        sp, _ = SitePhotos.objects.get_or_create(id=1)
+        for k, v in getattr(mbt_data, 'PHOTOS', {}).items():
+            if hasattr(sp, k):
+                setattr(sp, k, v)
+        sp.save()
+        created_photos = 1
+
         self.stdout.write(self.style.SUCCESS(
             f'OK — utworzono: projekty={created_p}, oferty={created_j}, '
             f'pracownicy={created_w}, handlowcy={created_s}, opinie={created_r}, artykuły={created_a}, '
-            f'site={created_site}'
+            f'site={created_site}, photos={created_photos}'
         ))
