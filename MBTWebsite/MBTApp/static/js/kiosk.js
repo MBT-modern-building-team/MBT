@@ -78,10 +78,10 @@ function initTabNavigation() {
     if (presentationBtn) {
       if (tabId === 'prezentacja') {
         presentationBtn.classList.add('active');
-        presentationBtn.innerHTML = '<span>✕</span> Wyjdź z prezentacji';
+        presentationBtn.innerHTML = '<i class="ri-close-line"></i> Wyjdź z prezentacji';
       } else {
         presentationBtn.classList.remove('active');
-        presentationBtn.innerHTML = '<span>▶</span> Prezentacja MBT';
+        presentationBtn.innerHTML = '<i class="ri-slideshow-3-line"></i> Prezentacja MBT';
       }
     }
   }
@@ -145,10 +145,16 @@ function initFullscreen() {
     const iconSpan = fsBtn.querySelector('.fs-icon');
     const labelSpan = fsBtn.querySelector('.fs-label');
     if (isFullscreen) {
-      if (iconSpan) iconSpan.textContent = '⤓';
+      if (iconSpan) {
+        iconSpan.className = 'ri-fullscreen-exit-line fs-icon';
+        iconSpan.textContent = '';
+      }
       if (labelSpan) labelSpan.textContent = 'Zmniejsz';
     } else {
-      if (iconSpan) iconSpan.textContent = '⛶';
+      if (iconSpan) {
+        iconSpan.className = 'ri-fullscreen-line fs-icon';
+        iconSpan.textContent = '';
+      }
       if (labelSpan) labelSpan.textContent = 'Pełny ekran';
     }
   }
@@ -214,7 +220,7 @@ function initBeforeAfterSlider() {
 }
 
 /* ==========================================================================
-   5. FILTROWANIE REALIZACJI
+   5. FILTROWANIE REALIZACJI (Identycznie jak na /realizacje)
    ========================================================================== */
 function initProjectFilters() {
   const filterButtons = document.querySelectorAll('.projects-filter-bar .filter-btn');
@@ -229,19 +235,14 @@ function initProjectFilters() {
 
       projectCards.forEach(card => {
         const type = card.dataset.type || '';
-        const title = (card.dataset.title || '').toLowerCase();
-
         let match = false;
+
         if (filter === 'all') {
           match = true;
-        } else if (filter === 'magazyn') {
-          match = type.includes('magazyn') || title.includes('magazyn') || title.includes('logist');
-        } else if (filter === 'przemysl') {
-          match = type.includes('przemys') || title.includes('produkcyjn') || title.includes('browar') || title.includes('hala');
-        } else if (filter === 'komercyjne') {
-          match = type.includes('komercyj') || title.includes('handlow') || title.includes('biur') || title.includes('salon');
-        } else if (filter === 'w-trakcie') {
-          match = type.includes('w-trakcie');
+        } else if (filter === 'completed') {
+          match = (type === 'realizacja-zrealizow');
+        } else if (filter === 'in-progress') {
+          match = (type !== 'realizacja-zrealizow');
         }
 
         card.style.display = match ? 'flex' : 'none';
@@ -251,7 +252,7 @@ function initProjectFilters() {
 }
 
 /* ==========================================================================
-   6. MODAL PROJEKTU I GALERIA
+   6. MODAL PROJEKTU I GALERIA (Identycznie jak na /realizacja/<slug>/)
    ========================================================================== */
 function initProjectModal() {
   const modal = document.getElementById('project-detail-modal');
@@ -269,6 +270,7 @@ function initProjectModal() {
   }
 
   const modalTitle = document.getElementById('modal-project-title');
+  const modalSubStatus = document.getElementById('modal-project-sub-status');
   const modalMainImg = document.getElementById('modal-project-main-img');
   const modalThumbsBar = document.getElementById('modal-project-thumbs');
   const modalPrevBtn = document.getElementById('modal-gallery-prev');
@@ -278,6 +280,7 @@ function initProjectModal() {
   const modalFormula = document.getElementById('modal-spec-formula');
   const modalDesc = document.getElementById('modal-project-desc');
   const modalQrBox = document.getElementById('modal-project-qr');
+  const ctaQuoteBtn = document.getElementById('modal-cta-quote-btn');
 
   let currentGallery = [];
   let currentImgIndex = 0;
@@ -297,11 +300,23 @@ function initProjectModal() {
     const proj = projectsData.find(p => p.slug === slug);
     if (!proj) return;
 
-    modalTitle.textContent = proj.title;
-    modalStatus.textContent = proj.status || 'Zrealizowane';
-    modalCzas.textContent = proj.czas || '—';
-    modalFormula.textContent = proj.formula || 'Generalne Wykonawstwo';
-    modalDesc.innerHTML = proj.opis ? proj.opis.replace(/\n/g, '<br>') : 'Szczegółowy opis projektu i specyfikacja techniczna generalnego wykonawstwa MBT.';
+    if (modalTitle) modalTitle.textContent = proj.title;
+    if (modalSubStatus) modalSubStatus.textContent = proj.status || 'Zrealizowane';
+    if (modalStatus) modalStatus.textContent = proj.status || 'Zrealizowane';
+    if (modalCzas) modalCzas.textContent = proj.czas || '—';
+    if (modalFormula) modalFormula.textContent = proj.formula_display || proj.formula || 'Generalne wykonawstwo';
+
+    if (modalDesc) {
+      if (proj.opis_paras && proj.opis_paras.length > 0) {
+        modalDesc.innerHTML = proj.opis_paras.map(p =>
+          `<p style="margin-bottom: 0.95rem; line-height: 1.65; color: var(--text-secondary); font-size: 1.05rem;">${p}</p>`
+        ).join('');
+      } else if (proj.opis) {
+        modalDesc.innerHTML = `<p style="margin-bottom: 0.95rem; line-height: 1.65; color: var(--text-secondary); font-size: 1.05rem;">${proj.opis.replace(/\n/g, '<br>')}</p>`;
+      } else {
+        modalDesc.innerHTML = '<p style="color: var(--text-secondary); font-size: 1.05rem;">Kompleksowa realizacja inwestycji kubaturowej w standardzie generalnego wykonawstwa MBT.</p>';
+      }
+    }
 
     // Budowanie galerii
     currentGallery = [];
@@ -334,6 +349,15 @@ function initProjectModal() {
 
   function closeModal() {
     modal.classList.remove('open');
+  }
+
+  if (ctaQuoteBtn) {
+    ctaQuoteBtn.addEventListener('click', () => {
+      closeModal();
+      if (window.kioskSwitchTab) {
+        window.kioskSwitchTab('kontakt');
+      }
+    });
   }
 
   closeBtn.addEventListener('click', closeModal);
@@ -371,51 +395,120 @@ function initProjectModal() {
 }
 
 /* ==========================================================================
-   7. PREZENTACJA PITCH DECK (SLAJDY)
+   7. PREZENTACJA PITCH DECK (23 OFICJALNE SLAJDY MBT)
    ========================================================================== */
 function initPresentationDeck() {
   const slides = document.querySelectorAll('.deck-slide');
   const prevBtn = document.getElementById('deck-btn-prev');
   const nextBtn = document.getElementById('deck-btn-next');
-  const dotsTrack = document.getElementById('deck-dots-track');
+  const stagePrevBtn = document.getElementById('slide-stage-arrow-prev');
+  const stageNextBtn = document.getElementById('slide-stage-arrow-next');
   const counterEl = document.getElementById('deck-counter-text');
+  const filmstripContainer = document.getElementById('deck-filmstrip-container');
+  const thumbCards = document.querySelectorAll('.deck-thumb-card');
+
+  const overviewBtn = document.getElementById('deck-btn-overview');
+  const overviewModal = document.getElementById('deck-overview-modal');
+  const overviewCloseBtn = document.getElementById('deck-overview-close');
+  const overviewItems = document.querySelectorAll('.deck-overview-item');
+  const fsSlideBtn = document.getElementById('deck-btn-fullscreen-slide');
+
   if (!slides.length) return;
 
   let currentSlide = 0;
   const totalSlides = slides.length;
 
-  // Generowanie kropek
-  if (dotsTrack) {
-    dotsTrack.innerHTML = '';
-    slides.forEach((_, idx) => {
-      const dot = document.createElement('div');
-      dot.className = 'deck-dot' + (idx === 0 ? ' active' : '');
-      dot.addEventListener('click', () => goToSlide(idx));
-      dotsTrack.appendChild(dot);
-    });
-  }
-
   function goToSlide(index) {
     currentSlide = (index + totalSlides) % totalSlides;
 
+    // Przełączanie slajdów głównych
     slides.forEach((slide, idx) => {
       slide.classList.toggle('active', idx === currentSlide);
     });
 
-    if (dotsTrack) {
-      const dots = dotsTrack.querySelectorAll('.deck-dot');
-      dots.forEach((dot, idx) => {
-        dot.classList.toggle('active', idx === currentSlide);
+    // Przełączanie miniaturek na dolnym pasku (Filmstrip)
+    thumbCards.forEach((card, idx) => {
+      card.classList.toggle('active', idx === currentSlide);
+    });
+
+    // Płynne centrowanie aktywnej miniatury w widoku
+    const activeThumb = thumbCards[currentSlide];
+    if (activeThumb && filmstripContainer) {
+      const cardLeft = activeThumb.offsetLeft;
+      const cardWidth = activeThumb.offsetWidth;
+      const containerWidth = filmstripContainer.offsetWidth;
+      filmstripContainer.scrollTo({
+        left: cardLeft - (containerWidth / 2) + (cardWidth / 2),
+        behavior: 'smooth'
       });
     }
 
+    // Aktualizacja aktywnego elementu w siatce spisu slajdów
+    overviewItems.forEach((item, idx) => {
+      item.classList.toggle('active', idx === currentSlide);
+    });
+
+    // Licznik slajdów
     if (counterEl) {
       counterEl.textContent = `${currentSlide + 1} / ${totalSlides}`;
     }
   }
 
+  // Przyciski nawigacyjne
   if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
   if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+  if (stagePrevBtn) stagePrevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+  if (stageNextBtn) stageNextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+  // Kliknięcie w miniaturę na filmstripie
+  thumbCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const idx = parseInt(card.dataset.slideIndex, 10);
+      if (!isNaN(idx)) goToSlide(idx);
+    });
+  });
+
+  // Modal spisu wszystkich slajdów (Siatka)
+  function openOverview() {
+    if (overviewModal) overviewModal.classList.add('open');
+  }
+
+  function closeOverview() {
+    if (overviewModal) overviewModal.classList.remove('open');
+  }
+
+  if (overviewBtn) overviewBtn.addEventListener('click', openOverview);
+  if (overviewCloseBtn) overviewCloseBtn.addEventListener('click', closeOverview);
+
+  if (overviewModal) {
+    overviewModal.addEventListener('click', (e) => {
+      if (e.target === overviewModal) closeOverview();
+    });
+  }
+
+  overviewItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const idx = parseInt(item.dataset.slideIndex, 10);
+      if (!isNaN(idx)) {
+        goToSlide(idx);
+        closeOverview();
+      }
+    });
+  });
+
+  // Pełny ekran prezentacji
+  if (fsSlideBtn) {
+    fsSlideBtn.addEventListener('click', () => {
+      const container = document.querySelector('.presentation-view-container');
+      if (!container) return;
+      if (!document.fullscreenElement) {
+        if (container.requestFullscreen) container.requestFullscreen();
+        else if (container.webkitRequestFullscreen) container.webkitRequestFullscreen();
+      } else {
+        if (document.exitFullscreen) document.exitFullscreen();
+      }
+    });
+  }
 
   // Obsługa klawiszy (prezenter bezprzewodowy / klawiatura)
   window.addEventListener('keydown', (e) => {
@@ -426,11 +519,13 @@ function initPresentationDeck() {
       goToSlide(currentSlide + 1);
     } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
       goToSlide(currentSlide - 1);
+    } else if (e.key === 'Escape') {
+      closeOverview();
     }
   });
 
   // Obsługa gestu swipe palcem na slajdzie
-  const deckViewport = document.querySelector('.slide-viewport');
+  const deckViewport = document.getElementById('presentation-viewport');
   if (deckViewport) {
     let slideTouchStartX = 0;
     deckViewport.addEventListener('touchstart', (e) => {
@@ -442,8 +537,8 @@ function initPresentationDeck() {
         const slideTouchEndX = e.changedTouches[0].clientX;
         const diff = slideTouchStartX - slideTouchEndX;
         if (Math.abs(diff) > 50) {
-          if (diff > 0) goToSlide(currentSlide + 1);
-          else goToSlide(currentSlide - 1);
+          if (diff > 0) goToSlide(currentSlide + 1); // swipe lewo -> następny
+          else goToSlide(currentSlide - 1); // swipe prawo -> poprzedni
         }
       }
     }, { passive: true });

@@ -9,194 +9,65 @@ from django.shortcuts import render
 from MBTApp import mbt_orm
 
 
-def _get_presentation_slides(site):
-    """Zwraca usystematyzowaną, 10-slajdową prezentację MBT."""
-    return [
-        {
-            'id': 1,
-            'title': 'Jeden team – pełna realizacja',
-            'subtitle': 'Od projektu aż po dach! Twój Generalny Wykonawca hal przemysłowych i magazynowych.',
-            'tag': 'WPROWADZENIE',
-            'badge': 'Diamenty Forbesa 2026 💎',
-            'bg_image': '/static/img/mbt/o-nas-1.jpg',
-            'points': [
-                'Kompleksowe generalne wykonawstwo inwestycji kubaturowych w całej Polsce',
-                'Specjalizacja w formule „Zaprojektuj i wybuduj” (Design & Build)',
-                'Ponad 20 lat doświadczenia inżynierskiego i 100% terminowości',
-                'Własna wyspecjalizowana kadra kierownicza i inżynieryjna',
-            ],
-            'stat_number': '100+',
-            'stat_label': 'Zrealizowanych obiektów',
-        },
-        {
-            'id': 2,
-            'title': 'Diamenty Forbesa 2026',
-            'subtitle': 'Potwierdzenie stabilności finansowej, dynamiki rozwoju i inżynierskiej rzetelności.',
-            'tag': 'STABILNOŚĆ & ZAUFANIE',
-            'badge': 'Laureat Rankingu Forbes',
-            'bg_image': '/static/img/mbt/artykul-diamenty-forbesa-2026.webp',
-            'points': [
-                'Wycena oparta o rzetelną szwajcarską metodę analityków Dun & Bradstreet',
-                'Pełne bezpieczeństwo kapitałowe dla Inwestorów i instytucji finansujących',
-                'Stabilne zaplecze finansowe i ubezpieczeniowe kontraktów wielomilionowych',
-                'Wyróżnienia: Gazele Biznesu, Złoty Laur RIG Katowice, Rzetelna Firma',
-            ],
-            'stat_number': '100%',
-            'stat_label': 'Wiarygodności finansowej',
-        },
-        {
-            'id': 3,
-            'title': 'Model „Zaprojektuj i wybuduj” (Design & Build)',
-            'subtitle': 'Jeden partner, jedna odpowiedzialność – eliminacja sporów między projektantem a wykonawcą.',
-            'tag': 'METODOLOGIA',
-            'badge': 'Optymalizacja Inwestycji',
-            'bg_image': '/static/img/mbt/design-build-2026.jpg',
-            'points': [
-                'Brak bufora i konfliktów: Inwestor ma jednego partnera od koncepcji po odbiór',
-                'Gwarancja budżetu: Koszty są znane i gwarantowane już na etapie koncepcji',
-                'Koordynacja administracyjna: Uzyskujemy decyzje środowiskowe, WZ, PnB i PnU',
-                'Płynne przekazanie do eksploatacji z pełną dokumentacją powykonawczą',
-            ],
-            'stat_number': '-25%',
-            'stat_label': 'Mniej formalności po stronie Inwestora',
-        },
-        {
-            'id': 4,
-            'title': 'Value Engineering: Inżynieria Wartości',
-            'subtitle': 'Oszczędności powstają przy desce kreślarskiej, a nie kosztem jakości na budowie.',
-            'tag': 'OPTYMALIZACJA KOSZTÓW',
-            'badge': 'Oszczędność Budżetu',
-            'bg_image': '/static/img/mbt/ZREALIZOWANE-ATT-4-scaled-ffc91418.jpg',
-            'points': [
-                'Optymalizacja konstrukcji stalowej i żelbetowej: eliminacja przewymiarowania',
-                'Dobór posadowienia: precyzyjna kalkulacja między palowaniem a wymianą gruntu',
-                'Efektywność energetyczna: rozwiązania ograniczające późniejsze koszty eksploatacji (OPEX)',
-                'Certyfikacja BREEAM / LEED w standardzie na życzenie Inwestora',
-            ],
-            'stat_number': '15-20%',
-            'stat_label': 'Średniej redukcji kosztów konstrukcji',
-        },
-        {
-            'id': 5,
-            'title': 'Fast-Tracking: Czas to Pieniądz',
-            'subtitle': 'Nakładanie się etapów projektowych i budowlanych skraca czas realizacji o miesiące.',
-            'tag': 'HARMONOGRAM',
-            'badge': 'Szybki Zwrot z Inwestycji',
-            'bg_image': '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg',
-            'points': [
-                'Równoległość procesów: Prace ziemne i fundamentowe ruszają w trakcie dopinania detali branżowych',
-                'Wcześniejsze zamawianie konstrukcji stalowej bezpośrednio u sprawdzonych wytwórców',
-                'Cotygodniowe raportowanie z drona i bieżący monitoring kamery online z placu budowy',
-                'Oddanie do użytkowania przed umownym terminem to szybszy przychód dla Twojego biznesu',
-            ],
-            'stat_number': '3-5 m-cy',
-            'stat_label': 'Szybsze oddanie hali do użytku',
-        },
-        {
-            'id': 6,
-            'title': 'Specjalizacje Budowlane MBT',
-            'subtitle': 'Kompleksowe obiekty kubaturowe dopasowane do specyfiki procesów technologicznych.',
-            'tag': 'OFERTA',
-            'badge': 'Wszechstronność',
-            'bg_image': '/static/img/mbt/realizacja-eurosleeve.jpg',
-            'points': [
-                'Hale magazynowe i centra logistyczne (wysokie składowanie, posadzki bezspoinowe)',
-                'Zaawansowane hale produkcyjne (suwnice, instalacje technologiczne, sprężone powietrze)',
-                'Chłodnie, mroźnie i zakłady przetwórstwa spożywczego (rygorystyczne normy sanitarne)',
-                'Parki handlowe, salony wystawiennicze oraz nowoczesne biurowce klasy A',
-            ],
-            'stat_number': '100%',
-            'stat_label': 'Standardu wykonania pod klucz',
-        },
-        {
-            'id': 7,
-            'title': 'ESG, Zielone Budownictwo i BREEAM',
-            'subtitle': 'Inwestycje przyszłości: niskoemisyjność, samowystarczalność energetyczna i trwałość.',
-            'tag': 'ZRÓWNOWAŻONY ROZWÓJ',
-            'badge': 'Certyfikacja BREEAM',
-            'bg_image': '/static/img/mbt/breem-e659b8f2.jpg',
-            'points': [
-                'Konstrukcje dachowe przygotowane pod pełne obciążenie instalacjami PV (fotowoltaika)',
-                'Zaawansowane pompy ciepła, rekuperacja i odzysk ciepła z procesów technologicznych',
-                'Retencja wód opadowych, zbiorniki bezodpływowe i zielone strefy buforowe',
-                'Ułatwiona ścieżka zielonego finansowania (Green Bonds / preferencyjne kredyty bankowe)',
-            ],
-            'stat_number': 'A+',
-            'stat_label': 'Klasa efektywności energetycznej',
-        },
-        {
-            'id': 8,
-            'title': 'Kultura BHP i Nadzór Inżynierski',
-            'subtitle': 'Zero kompromisów w bezpieczeństwie. Budowa prowadzona według najwyższych norm europejskich.',
-            'tag': 'BEZPIECZEŃSTWO',
-            'badge': 'Standard MBT Safe',
-            'bg_image': '/static/img/mbt/mbt_baner_bhp.png',
-            'points': [
-                'Dedykowany Koordynator BHP na każdym placu budowy MBT',
-                'Stały nadzór uprawnionych Kierowników Budów i Inspektorów Nadzoru Inwestorskiego',
-                'Elektroniczny obieg dokumentacji i dziennik budowy dostępny dla Inwestora online 24/7',
-                'Własne standardy oznakowania budowy i rygorystyczny dobór certyfikowanych podwykonawców',
-            ],
-            'stat_number': 'Zero',
-            'stat_label': 'Wypadków na budowach',
-        },
-        {
-            'id': 9,
-            'title': 'Zaufali nam liderzy rynku',
-            'subtitle': 'Wieloletnie relacje i kolejne realizacje powierzane MBT przez stałych partnerów.',
-            'tag': 'REFERENCJE',
-            'badge': 'Partnerzy Biznesowi',
-            'bg_image': '/static/img/mbt/ZREALIZOWANE-ATT-8-c1d848dd.jpg',
-            'points': [
-                'Kompania Piwowarska, Canpack, Browar Zamkowy, Huber+Suhner, Less Mess Storage',
-                'Euro-Trade, DL Invest Group, Epco, Herz, Toto Hair Company, Sutco Polska',
-                'Wysoki wskaźnik repeat business: ponad 70% Inwestorów wraca do nas z kolejnymi etapami',
-                'Pisane referencje zarządów potwierdzające terminowość i kulturę inżynierską',
-            ],
-            'stat_number': '70%+',
-            'stat_label': 'Inwestycji od powracających Klientów',
-        },
-        {
-            'id': 10,
-            'title': 'Rozpocznijmy współpracę',
-            'subtitle': 'Przeanalizujemy Twoją działkę, zrobimy wstępną koncepcję i wycenimy inwestycję w 7 dni.',
-            'tag': 'KONTAKT & START',
-            'badge': 'Twój Partner w Biznesie',
-            'bg_image': '/static/img/mbt/o-nas-zespol.jpg',
-            'points': [
-                'Bezpłatna wstępna analiza chłonności terenu i warunków gruntowo-wodnych',
-                'Opracowanie szacunkowego budżetu i harmonogramu w wariancie Design & Build',
-                'Biura w Katowicach, Zabrzu i Krakowie – działamy na terenie całego kraju',
-                'Zeskanuj kod QR na ekranie, aby pobrać bezpośredni kontakt do Dyrekcji MBT',
-            ],
-            'stat_number': '7 dni',
-            'stat_label': 'Czas na wstępną koncepcję hali',
-        },
-    ]
+def _get_presentation_slides():
+    """Zwraca pełną 23-slajdową oficjalną prezentację MBT z /static/img/prezentacja/."""
+    slides = []
+    for i in range(1, 24):
+        slides.append({
+            'id': i,
+            'number': i,
+            'image': f'/static/img/prezentacja/prezentacja-23022_{i}.jpg',
+            'thumb': f'/static/img/prezentacja/thumb_{i}.jpg',
+            'alt': f'Prezentacja Firmowa MBT – Slajd {i} z 23',
+        })
+    return slides
+
+
+import re
+
+def _project_paras(opis):
+    """Podziel opis projektu na akapity (specyfikacja z XML jest jednym blokiem)."""
+    opis = (opis or '').strip()
+    if not opis:
+        return []
+    parts = re.split(r'(?=(?:Specyfikacja|Powierzchnia|Certyfikacja|Układ budynku|Infrastruktura|Konstrukcja|Elewacja|Zagospodarowanie|Inwestor|Lokalizacja))', opis)
+    return [p.strip() for p in parts if p.strip()]
 
 
 def kiosk_view(request):
     """Główny widok Kiosku Dotykowego MBT."""
     lang = 'pl'
-    projects = mbt_orm.get_projects(lang=lang)
+    raw_projects = mbt_orm.get_projects(lang=lang)
     site = mbt_orm.get_site(lang=lang)
     references = mbt_orm.get_references(lang=lang)
     awards = mbt_orm.get_awards()
+    photos = mbt_orm.get_photos()
     workers = mbt_orm.get_workers(lang=lang)
     sales_reps = mbt_orm.get_sales_reps(lang=lang)
     sectors = mbt_orm.get_sectors(lang=lang)
 
-    # Przygotowanie bezpiecznej reprezentacji JSON projektów pod szybki modal
+    # Wzbogacenie projektów identycznie jak w mbtViews.py dla /realizacje
+    projects = []
     clean_projects = []
-    for p in projects:
+    for p in raw_projects:
+        ep = dict(p)
+        paras = _project_paras(p.get('opis', ''))
+        ep['opis_paras'] = paras
+        ep['formula_display'] = p.get('formula') or 'Generalne wykonawstwo'
+        ep['czas_display'] = f"Czas realizacji: {p['czas']}" if p.get('czas') else "Realizacja pod klucz"
+        projects.append(ep)
+
         clean_projects.append({
             'title': p.get('title', ''),
             'slug': p.get('slug', ''),
             'type': p.get('type', ''),
             'status': p.get('status', ''),
             'czas': p.get('czas', ''),
+            'czas_display': ep['czas_display'],
             'formula': p.get('formula', ''),
+            'formula_display': ep['formula_display'],
             'opis': p.get('opis', ''),
+            'opis_paras': paras,
             'hero': p.get('hero', ''),
             'logo': p.get('logo', ''),
             'gallery': p.get('gallery', []) or [],
@@ -204,8 +75,9 @@ def kiosk_view(request):
 
     projects_json = json.dumps(clean_projects, ensure_ascii=False)
 
-    # Slajdy do pełnoekranowej prezentacji MBT
-    presentation_slides = _get_presentation_slides(site)
+    # Slajdy do pełnoekranowej prezentacji MBT (23 oficjalne slajdy)
+    presentation_slides = _get_presentation_slides()
+    presentation_slides_json = json.dumps(presentation_slides, ensure_ascii=False)
 
     # Dane do suwaka Before & After (Przed i Po)
     before_after = {
@@ -246,11 +118,13 @@ def kiosk_view(request):
         'projects_json': projects_json,
         'references': references,
         'awards': awards,
+        'photos': photos,
         'workers': workers,
         'sales_reps': sales_reps,
         'sectors': sectors,
         'trusted_brands': trusted_brands,
         'presentation_slides': presentation_slides,
+        'presentation_slides_json': presentation_slides_json,
         'before_after': before_after,
     }
 

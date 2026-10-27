@@ -9,7 +9,7 @@
     <!-- Ikony lokalne RemixIcon -->
     <link rel="stylesheet" href="{% static 'fonts/remixicon.css' %}">
 
-    <!-- Style Kiosku Dotykowego -->
+    <!-- Style Kiosku Dotykowego (Jasny styl z białym tłem) -->
     <link rel="stylesheet" href="{% static 'css/kiosk.css' %}">
 
     <link rel="icon" type="image/png" href="{% static 'img/favicons/favicon.png' %}">
@@ -19,17 +19,11 @@
 <div class="kiosk-app">
 
     <!-- ======================================================================
-         PASEK GÓRNY (TOP STATUS BAR)
+         PASEK GÓRNY (TOP STATUS BAR) - CZYSTY BIAŁY
          ====================================================================== -->
     <header class="kiosk-header">
         <div class="kiosk-header-left">
-            <img src="{% static 'img/mbt/logo-with-name-white.svg' %}" alt="MBT Modern Building Team" class="kiosk-logo-img" onerror="this.src='{% static 'img/mbt/mbt_logo_horizontal.png' %}'">
-            <div class="forbes-badge-mini">
-                <span class="gem">💎</span> Diamenty Forbesa 2026
-            </div>
-            <div class="forbes-badge-mini" style="border-color: rgba(0, 230, 118, 0.4); background: rgba(0, 230, 118, 0.1); color: #B9F6CA;">
-                <span style="color: #00E676;">✓</span> 100% Terminowości
-            </div>
+            <img src="{% static 'img/mbt/logo-with-name.svg' %}" alt="MBT Modern Building Team" class="kiosk-logo-img" onerror="this.src='{% static 'img/mbt/mbt_logo_horizontal.png' %}'">
         </div>
 
         <div class="kiosk-header-right">
@@ -39,11 +33,11 @@
             </div>
 
             <button type="button" class="header-btn header-btn-presentation" id="header-btn-pitch">
-                <span>▶</span> Prezentacja MBT
+                <i class="ri-slideshow-3-line"></i> Prezentacja MBT
             </button>
 
             <button type="button" class="header-btn header-btn-fullscreen" id="kiosk-fs-toggle" title="Tryb pełnoekranowy (ukryj paski webOS)">
-                <span class="fs-icon">⛶</span> <span class="fs-label">Pełny ekran</span>
+                <i class="ri-fullscreen-line fs-icon"></i> <span class="fs-label">Pełny ekran</span>
             </button>
         </div>
     </header>
@@ -54,29 +48,32 @@
     <main class="kiosk-content">
 
         <!-- ==================================================================
-             ZAKŁADKA 1: O MBT (HISTORIA, SUKCESY, LICZNIKI, FILARY)
+             ZAKŁADKA 1: O MBT (JASNY DESIGN ARCHITEKTONICZNY)
              ================================================================== -->
         <section class="kiosk-tab-pane active" id="tab-o-nas">
-            <!-- Karta Hero z wideo drona -->
-            <div class="hero-banner-card">
-                <video class="hero-bg-media" autoplay muted loop playsinline preload="auto">
-                    <source src="{% static 'img/hero/strona_mbt.mp4' %}" type="video/mp4">
-                    <source src="{% static 'img/hero/strona_mbt.webm' %}" type="video/webm">
-                </video>
-                <div class="hero-banner-content">
-                    <div class="hero-top-tag">
+            
+            <!-- Karta Hero w jasnym stylu z wideo drona -->
+            <div class="hero-white-card">
+                <div class="hero-text-col">
+                    <div class="hero-pill-badge">
                         <i class="ri-building-line"></i> Twój Generalny Wykonawca
                     </div>
-                    <h1 class="hero-headline">
+                    <h1 class="hero-main-title">
                         Z pasją budujemy Wasze biznesy. <span>Jeden team – pełna realizacja.</span>
                     </h1>
-                    <p class="hero-description">
-                        Modern Building Team (MBT) to wiodący generalny wykonawca zaawansowanych hal magazynowych, produkcyjnych i obiektów komercyjnych. Działamy w formule <strong>„Zaprojektuj i wybuduj” (Design & Build)</strong>, zapewniając Inwestorom stuprocentowe bezpieczeństwo kapitałowe, inżyniering wartości i gwarantowaną terminowość.
+                    <p class="hero-main-desc">
+                        Modern Building Team (MBT) to wiodący generalny wykonawca zaawansowanych hal magazynowych, produkcyjnych i obiektów komercyjnych. Działamy w formule <strong>„Zaprojektuj i wybuduj” (Design & Build)</strong>, zapewniając Inwestorom stuprocentowe bezpieczeństwo kapitałowe, optymalizację kosztów i gwarantowaną terminowość.
                     </p>
+                </div>
+                <div class="hero-video-col">
+                    <video class="hero-drone-video" autoplay muted loop playsinline preload="auto">
+                        <source src="{% static 'img/hero/strona_mbt.mp4' %}" type="video/mp4">
+                        <source src="{% static 'img/hero/strona_mbt.webm' %}" type="video/webm">
+                    </video>
                 </div>
             </div>
 
-            <!-- Liczniki i Statystyki -->
+            <!-- Liczniki i Statystyki na białych kartach -->
             <div class="stats-grid-row">
                 <div class="stat-box-card">
                     <div class="stat-box-num">100%</div>
@@ -92,17 +89,17 @@
                 </div>
                 <div class="stat-box-card">
                     <div class="stat-box-num">20+</div>
-                    <div class="stat-box-label">Lat doświadczenia na rynku</div>
+                    <div class="stat-box-label">Lat doświadczenia inżynierskiego</div>
                 </div>
             </div>
 
-            <!-- Baner Forbesa 2026 -->
+            <!-- Baner Forbesa 2026 - Złoty & Prestiżowy na jasnym tle -->
             <div class="forbes-feature-banner">
                 <img src="{% static 'img/mbt/award-forbes-2026.webp' %}" alt="Diamenty Forbesa 2026" class="forbes-feature-img" onerror="this.src='{% static 'img/mbt/award-forbes-2026.png' %}';">
                 <div class="forbes-feature-text">
-                    <h3>MBT w elitarnym gronie Diamentów Forbesa 2026! 💎</h3>
+                    <h3>MBT w elitarnym gronie Diamentów Forbesa 2026</h3>
                     <p>
-                        Wyróżnienie przyznane na podstawie rzetelnej szwajcarskiej metody wyceny analityków Dun & Bradstreet Poland. Potwierdza dynamiczny wzrost wartości spółki, stabilność kapitałową oraz wiarygodność partnerską przy realizacji kontraktów kubaturowych wielomilionowej skali.
+                        Wyróżnienie przyznane na podstawie rzetelnej szwajcarskiej metody wyceny analityków Dun & Bradstreet Poland we współpracy z magazynem Forbes. Potwierdza dynamiczny wzrost wartości spółki, stabilność kapitałową oraz najwyższą wiarygodność partnerską przy realizacji kontraktów kubaturowych wielomilionowej skali.
                     </p>
                 </div>
             </div>
@@ -125,7 +122,7 @@
                     </div>
                     <h4>Bezpieczeństwo Budżetu</h4>
                     <p>
-                        W formule Design & Build koszty są stałe i znane Inwestorowi przed wbiciem pierwszej łopaty. Bierzemy na siebie pełną odpowiedzialność za koordynację formalności, PnB oraz PnU.
+                        W formule Design & Build koszty są stałe i gwarantowane Inwestorowi przed wbiciem pierwszej łopaty. Bierzemy na siebie pełną odpowiedzialność za koordynację formalności, PnB oraz PnU.
                     </p>
                 </div>
 
@@ -177,7 +174,7 @@
             </div>
 
             <!-- Specjalizacje MBT -->
-            <div class="section-intro-header" style="margin-top: 4rem;">
+            <div class="section-intro-header" style="margin-top: 4.5rem;">
                 <div class="badge-tag">Zakres Kompetencji</div>
                 <h2>Główne Segmenty Budownictwa Kubaturowego</h2>
             </div>
@@ -213,89 +210,48 @@
              ZAKŁADKA 3: REALIZACJE (INTERAKTYWNE PORTFOLIO & PRZED/PO)
              ================================================================== -->
         <section class="kiosk-tab-pane" id="tab-realizacje">
-            
-            <!-- Interaktywny Suwak Przed / Po -->
-            <div class="before-after-wrapper">
-                <div class="before-after-header">
-                    <div>
-                        <div class="ba-badge" style="display: inline-block; margin-bottom: 0.5rem; background: var(--mbt-orange); border: none;">
-                            <i class="ri-drag-move-fill"></i> Interaktywne Porównanie
-                        </div>
-                        <h3>{{ before_after.title }}</h3>
-                        <p>{{ before_after.subtitle }}</p>
-                    </div>
-                    <div class="before-after-badges">
-                        <span class="ba-badge"><i class="ri-map-pin-line"></i> {{ before_after.location }}</span>
-                        <span class="ba-badge"><i class="ri-ruler-2-line"></i> {{ before_after.area }}</span>
-                        <span class="ba-badge"><i class="ri-shield-flash-line"></i> {{ before_after.formula }}</span>
-                    </div>
-                </div>
-
-                <div class="before-after-stage" id="kiosk-ba-stage">
-                    <!-- Obraz "Przed" (Tło) -->
-                    <img src="{{ before_after.before_image }}" alt="Plac Budowy" class="ba-image ba-image-before">
-                    <div class="ba-label ba-label-before">{{ before_after.before_label }}</div>
-
-                    <!-- Obraz "Po" (Warstwa wierzchnia sterowana suwakiem) -->
-                    <div class="ba-image-after-container" id="kiosk-ba-after-container">
-                        <img src="{{ before_after.after_image }}" alt="Gotowy Obiekt" class="ba-image ba-image-after">
-                        <div class="ba-label ba-label-after">{{ before_after.after_label }}</div>
-                    </div>
-
-                    <!-- Uchwyt suwaka -->
-                    <div class="ba-handle" id="kiosk-ba-handle">
-                        <i class="ri-arrow-left-right-line"></i>
-                    </div>
-                </div>
+            <!-- Nagłówek identyczny jak na /realizacje -->
+            <div class="section-intro-header">
+                <div class="badge-tag">Realizacje <i class="ri-arrow-right-down-line"></i></div>
+                <h2>Zobacz efekty naszej pracy</h2>
+                <p>Hale magazynowe, produkcyjne i usługowe realizowane pod klucz — od projektu aż po dach.</p>
             </div>
 
-            <!-- Filtry realizacji -->
+            <!-- Filtry realizacji identyczne jak na /realizacje -->
             <div class="projects-filter-bar">
                 <button type="button" class="filter-btn active" data-filter="all">
-                    <i class="ri-apps-2-line"></i> Wszystkie Realizacje
+                    Wszystkie
                 </button>
-                <button type="button" class="filter-btn" data-filter="magazyn">
-                    <i class="ri-store-2-line"></i> Hale Magazynowe
+                <button type="button" class="filter-btn" data-filter="completed">
+                    Zrealizowane
                 </button>
-                <button type="button" class="filter-btn" data-filter="przemysl">
-                    <i class="ri-settings-4-line"></i> Hale Produkcyjne
-                </button>
-                <button type="button" class="filter-btn" data-filter="komercyjne">
-                    <i class="ri-building-line"></i> Komercyjne & Biurowce
-                </button>
-                <button type="button" class="filter-btn" data-filter="w-trakcie">
-                    <i class="ri-loader-2-line"></i> W trakcie realizacji
+                <button type="button" class="filter-btn" data-filter="in-progress">
+                    W trakcie realizacji
                 </button>
             </div>
 
-            <!-- Siatka realizacji dotykowych -->
+            <!-- Siatka realizacji dotykowych na białych kartach -->
             <div class="projects-grid">
                 {% for p in projects %}
                 <article class="project-touch-card" data-slug="{{ p.slug }}" data-type="{{ p.type }}" data-title="{{ p.title }}">
                     <div class="project-card-thumb-wrap">
-                        <img src="{{ p.hero }}" alt="{{ p.title }}" class="project-card-thumb" loading="lazy" onerror="this.src='{% static 'img/mbt/hala-1024x672-eb7144c9.jpg' %}';">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" class="project-card-thumb {% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}" loading="lazy" onerror="this.src='{% static 'img/mbt/hala-1024x672-eb7144c9.jpg' %}';">
                         <div class="project-card-type-tag">
-                            {% if 'w-trakcie' in p.type %}W trakcie budowy{% else %}Zrealizowane{% endif %}
+                            {{ p.status }}
                         </div>
                     </div>
                     <div class="project-card-body">
                         <div>
+                            <span class="portfolio-card-subtitle" style="display: block; font-size: 0.95rem; font-weight: 700; color: var(--mbt-orange); text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.5px;">
+                                {{ p.formula_display }}
+                            </span>
                             <h3 class="project-card-title">{{ p.title }}</h3>
-                            <div class="project-card-meta">
-                                {% if p.czas %}
-                                <div class="project-card-meta-item">
-                                    <i class="ri-time-line"></i> {{ p.czas }}
-                                </div>
-                                {% endif %}
-                                {% if p.formula %}
-                                <div class="project-card-meta-item">
-                                    <i class="ri-tools-line"></i> {{ p.formula }}
-                                </div>
-                                {% endif %}
-                            </div>
+                            <p class="portofolio-card-text" style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem; font-weight: 500;">
+                                {{ p.czas_display }}
+                            </p>
                         </div>
                         <button type="button" class="project-card-btn-more">
-                            <span>Dotknij, aby zobaczyć galerię i parametry</span> <i class="ri-arrow-right-line"></i>
+                            <span>Zobacz pełen opis</span> <i class="ri-arrow-right-up-line"></i>
                         </button>
                     </div>
                 </article>
@@ -306,103 +262,196 @@
         <!-- ==================================================================
              ZAKŁADKA 4: PEŁNOWYMIAROWA PREZENTACJA MBT (PITCH DECK)
              ================================================================== -->
-        <section class="kiosk-tab-pane" id="tab-prezentacja" style="padding: 1.5rem 3rem;">
+        <!-- ==================================================================
+             ZAKŁADKA 4: PEŁNOWYMIAROWA PREZENTACJA MBT (23 OFICJALNE SLAJDY)
+             ================================================================== -->
+        <section class="kiosk-tab-pane" id="tab-prezentacja" style="padding: 1rem 2.5rem 1.5rem;">
             <div class="presentation-view-container">
-                <!-- Okno slajdów -->
-                <div class="slide-viewport">
+                <!-- Górny pasek narzędziowy prezentacji -->
+                <div class="presentation-top-bar">
+                    <div class="deck-title-group">
+                        <span class="deck-main-tag">Prezentacja Firmowa MBT</span>
+                        <span class="deck-slides-total-badge">{{ presentation_slides|length }} slajdy</span>
+                    </div>
+
+                    <div class="deck-actions-group">
+                        <button type="button" class="deck-action-btn" id="deck-btn-overview" title="Pokaż wszystkie slajdy w siatce">
+                            <i class="ri-grid-fill"></i> Spis slajdów
+                        </button>
+                        <button type="button" class="deck-action-btn" id="deck-btn-fullscreen-slide" title="Powiększ na pełny ekran">
+                            <i class="ri-fullscreen-line"></i> Pełny ekran
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Główny ekran slajdu (16:9) -->
+                <div class="slide-viewport" id="presentation-viewport">
+                    <!-- Przyciski nawigacyjne po bokach slajdu (touch-friendly) -->
+                    <button type="button" class="slide-stage-arrow prev" id="slide-stage-arrow-prev" aria-label="Poprzedni slajd">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <button type="button" class="slide-stage-arrow next" id="slide-stage-arrow-next" aria-label="Następny slajd">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+
                     {% for slide in presentation_slides %}
-                    <div class="deck-slide {% if forloop.first %}active{% endif %}" data-slide-id="{{ slide.id }}">
-                        <img src="{{ slide.bg_image }}" alt="Tło slajdu" class="slide-backdrop-img">
-                        <div class="slide-inner-content">
-                            <!-- Nagłówek slajdu -->
-                            <div class="slide-header-area">
-                                <div>
-                                    <span class="slide-tag-pill">{{ slide.tag }}</span>
-                                    {% if slide.badge %}
-                                    <span class="slide-badge-pill">{{ slide.badge }}</span>
-                                    {% endif %}
-                                </div>
-                                <h2 class="slide-title">{{ slide.title }}</h2>
-                                <p class="slide-subtitle">{{ slide.subtitle }}</p>
-                            </div>
-
-                            <!-- Treść i Licznik -->
-                            <div class="slide-body-grid">
-                                <div class="slide-bullets-card">
-                                    {% for pt in slide.points %}
-                                    <div class="slide-bullet-item">
-                                        <div class="slide-bullet-dot"></div>
-                                        <div>{{ pt }}</div>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-
-                                <div class="slide-stat-card">
-                                    <div class="slide-stat-number">{{ slide.stat_number }}</div>
-                                    <div class="slide-stat-label">{{ slide.stat_label }}</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="deck-slide {% if forloop.first %}active{% endif %}" data-slide-id="{{ slide.id }}" data-slide-index="{{ forloop.counter0 }}">
+                        <img src="{{ slide.image }}" alt="{{ slide.alt }}" class="deck-slide-image" loading="{% if forloop.counter <= 3 %}eager{% else %}lazy{% endif %}">
                     </div>
                     {% endfor %}
                 </div>
 
-                <!-- Pasek sterowania slajdami -->
+                <!-- Pasek sterowania i miniatury (Filmstrip) -->
                 <footer class="deck-controls-bar">
                     <button type="button" class="deck-nav-btn" id="deck-btn-prev">
-                        <i class="ri-arrow-left-s-line"></i> Poprzedni slajd
+                        <i class="ri-arrow-left-s-line"></i> Poprzedni
                     </button>
 
-                    <div class="deck-dots-track" id="deck-dots-track">
-                        <!-- Generowane dynamicznie przez JS -->
+                    <!-- Przewijany poziomy pasek miniaturek 23 slajdów -->
+                    <div class="deck-filmstrip-container" id="deck-filmstrip-container">
+                        <div class="deck-filmstrip-track" id="deck-filmstrip-track">
+                            {% for slide in presentation_slides %}
+                            <button type="button" class="deck-thumb-card {% if forloop.first %}active{% endif %}" data-slide-index="{{ forloop.counter0 }}" aria-label="Przejdź do slajdu {{ slide.number }}">
+                                <img src="{{ slide.thumb }}" alt="Miniatura slajdu {{ slide.number }}" class="deck-thumb-img" loading="lazy">
+                                <span class="deck-thumb-num">{{ slide.number }}</span>
+                            </button>
+                            {% endfor %}
+                        </div>
                     </div>
 
-                    <div style="display: flex; align-items: center; gap: 1.5rem;">
-                        <span id="deck-counter-text" style="color: rgba(255,255,255,0.7); font-weight: 700; font-size: 1.1rem;">1 / 10</span>
-                        <button type="button" class="deck-nav-btn" id="deck-btn-next" style="background: var(--mbt-orange); border-color: var(--mbt-orange);">
-                            Następny slajd <i class="ri-arrow-right-s-line"></i>
+                    <div class="deck-controls-right">
+                        <span id="deck-counter-text" class="deck-counter-badge">1 / {{ presentation_slides|length }}</span>
+                        <button type="button" class="deck-nav-btn deck-nav-btn-next" id="deck-btn-next">
+                            Następny <i class="ri-arrow-right-s-line"></i>
                         </button>
                     </div>
                 </footer>
             </div>
+
+            <!-- Modal / Pełnoekranowy przegląd wszystkich 23 slajdów (Siatka) -->
+            <div class="deck-overview-modal" id="deck-overview-modal">
+                <div class="deck-overview-content">
+                    <div class="deck-overview-header">
+                        <div>
+                            <span class="badge-tag" style="margin-bottom: 0.5rem;">Prezentacja MBT</span>
+                            <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--mbt-navy); margin: 0;">Spis Wszystkich Slajdów ({{ presentation_slides|length }})</h3>
+                            <p style="color: var(--text-secondary); margin-top: 0.25rem;">Wybierz slajd dotknięciem, aby przejść do niego bezpośrednio na ekranie</p>
+                        </div>
+                        <button type="button" class="deck-overview-close" id="deck-overview-close">
+                            <i class="ri-close-line"></i> Zamknij
+                        </button>
+                    </div>
+                    <div class="deck-overview-grid">
+                        {% for slide in presentation_slides %}
+                        <div class="deck-overview-item {% if forloop.first %}active{% endif %}" data-slide-index="{{ forloop.counter0 }}">
+                            <div class="deck-overview-thumb-wrap">
+                                <img src="{{ slide.thumb }}" alt="Slajd {{ slide.number }}" loading="lazy">
+                                <span class="deck-overview-num">Slajd {{ slide.number }}</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- ==================================================================
-             ZAKŁADKA 5: ZAUFALI NAM & REFERENCJE
+             ZAKŁADKA 5: ZAUFALI NAM & OPINIE KLIENTÓW (Zgodnie ze stroną MBT)
              ================================================================== -->
         <section class="kiosk-tab-pane" id="tab-referencje">
-            <div class="section-intro-header">
-                <div class="badge-tag">Zaufanie Liderów Biznesu</div>
-                <h2>Marki, które budują z Modern Building Team</h2>
-                <p>Ponad 70% naszych Inwestorów powierza nam kolejne etapy rozbudowy swoich zakładów przemysłowych i sieci magazynowych.</p>
+            <!-- 1. ZAUFALI NAM: TE MARKI NAM ZAUFAŁY -->
+            <div class="section-intro-header" style="margin-bottom: 2.5rem;">
+                <div class="badge-tag">
+                    Zaufali nam <i class="ri-arrow-right-down-line"></i>
+                </div>
+                <h2>Te marki nam zaufały</h2>
+                <p>Hale magazynowe, produkcyjne i obiekty komercyjne zrealizowane w formule generalnego wykonawstwa dla liderów rynku.</p>
             </div>
 
-            <!-- Ściana marek -->
+            <!-- Ściana logotypów marek (16 oficjalnych marek) -->
             <div class="brands-grid-wall">
                 {% for b in trusted_brands %}
-                <div class="brand-tile-box">
-                    <img src="{{ b.logo }}" alt="{{ b.name }}" class="brand-tile-img" title="{{ b.name }}">
+                <div class="brand-tile-box" title="{{ b.name }}">
+                    <img src="{{ b.logo }}" alt="{{ b.name }}" class="brand-tile-img" loading="lazy">
                 </div>
                 {% endfor %}
             </div>
 
-            <!-- Siatka referencji -->
-            <div class="section-intro-header" style="margin-top: 4rem;">
-                <div class="badge-tag">Głos Inwestorów</div>
-                <h2>Wybrane Opinie i Referencje</h2>
+            <!-- 2. OPINIE KLIENTÓW: OPINIE NASZYCH KLIENTÓW -->
+            <div class="testi-header-row" style="margin-top: 5rem; margin-bottom: 2.5rem;">
+                <div class="testi-title-area">
+                    <div class="badge-tag">
+                        Opinie klientów <i class="ri-arrow-right-down-line"></i>
+                    </div>
+                    <h2>Opinie naszych klientów</h2>
+                    <p>Referencje zarządów potwierdzające rzetelność, tempo prac i inżynierski standard MBT.</p>
+                </div>
+                <div class="testi-counter-card">
+                    {% if photos.home_client_group %}
+                    <img src="{{ photos.home_client_group }}" alt="Klienci MBT" class="testi-group-thumb">
+                    {% endif %}
+                    <div class="testi-counter-text-wrap">
+                        <div class="testi-counter-number">100%</div>
+                        <div class="testi-counter-label">Zadowolonych klientów</div>
+                    </div>
+                </div>
             </div>
 
+            <!-- Siatka kart referencji (zgodnie z index.html: logo, 5 gwiazdek, treść, autor, quote icon) -->
             <div class="references-carousel-grid">
                 {% for r in references %}
-                <div class="ref-quote-card">
-                    <p class="ref-quote-text">„{{ r.tresc|truncatechars:260 }}”</p>
-                    <div class="ref-author-block">
-                        <div class="ref-company-name">{{ r.firma }}</div>
-                        <div class="ref-person-title">{{ r.osoba }}{% if r.stanowisko %} — {{ r.stanowisko }}{% endif %}</div>
+                <div class="testi-card-touch">
+                    <div class="testi-card-top">
+                        <div class="testi-card-brand-block">
+                            {% if r.logo %}
+                            <div class="testi-brand-logo-wrap">
+                                <img src="{{ r.logo }}" alt="{{ r.firma }}" class="testi-card-logo">
+                            </div>
+                            {% endif %}
+                            <div>
+                                <h3 class="testi-card-company">{{ r.firma }}</h3>
+                                <div class="testi-card-stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-card-quote-icon">
+                            <img src="/static/img/icon/quote3.svg" alt="Quote">
+                        </div>
+                    </div>
+
+                    <p class="testi-card-text">„{{ r.tresc|striptags }}”</p>
+
+                    <div class="testi-card-footer">
+                        <div class="testi-author-name">{{ r.osoba }}</div>
+                        <div class="testi-author-role">/ {{ r.firma }}{% if r.stanowisko %}, {{ r.stanowisko }}{% endif %}</div>
                     </div>
                 </div>
                 {% endfor %}
             </div>
+
+            <!-- 3. WYRÓŻNIENIA I PARTNERSTWA (Zgodnie z about.html) -->
+            {% if awards %}
+            <div class="section-intro-header" style="margin-top: 5rem; margin-bottom: 2.5rem;">
+                <div class="badge-tag">
+                    Nasze osiągnięcia <i class="ri-arrow-right-down-line"></i>
+                </div>
+                <h2>Wyróżnienia i partnerstwa</h2>
+            </div>
+
+            <div class="awards-kiosk-row">
+                {% for award in awards %}
+                <div class="award-kiosk-card">
+                    <img src="{{ award.image }}" alt="{{ award.name }}" class="award-kiosk-img">
+                    <span class="award-kiosk-label">{{ award.name }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </section>
 
         <!-- ==================================================================
@@ -410,44 +459,46 @@
              ================================================================== -->
         <section class="kiosk-tab-pane" id="tab-kontakt">
             <div class="section-intro-header">
-                <div class="badge-tag">Rozpocznijmy Współpracę</div>
-                <h2>Skontaktuj się z Dyrekcją MBT</h2>
-                <p>Opracujemy wstępną koncepcję chłonności działki, oszacujemy koszty w modelu Design & Build i przygotujemy harmonogram w 7 dni.</p>
+                <div class="badge-tag">
+                    Kontakt <i class="ri-arrow-right-down-line"></i>
+                </div>
+                <h2>Skontaktuj się z nami</h2>
+                <p>Trzy biura — jeden zespół gotowy na Twoje wyzwania budowlane.</p>
             </div>
 
             <div class="contact-kiosk-grid">
-                <!-- Oddziały firmy -->
+                <!-- Oddziały firmy (Bez etykiet / badges) -->
                 <div class="offices-cards-stack">
                     <div class="office-info-card">
                         <div>
-                            <h4>Siedziba Katowice</h4>
-                            <p>{{ site.office_katowice }}</p>
+                            <h4>Biuro — Zabrze</h4>
+                            <p style="margin-bottom: 0.35rem;"><i class="ri-map-pin-line" style="color: var(--mbt-orange); margin-right: 0.4rem;"></i>{{ site.office_zabrze }}</p>
+                            <p style="color: var(--text-muted); font-size: 1.05rem;"><i class="ri-time-line" style="margin-right: 0.4rem;"></i>{{ site.hours|default:'Pn - Pt: 8:00 - 16:00' }}</p>
                         </div>
-                        <span class="office-info-badge">Centrala Zarządu</span>
                     </div>
 
                     <div class="office-info-card">
                         <div>
-                            <h4>Biuro Główne Zabrze</h4>
-                            <p>{{ site.office_zabrze }}</p>
+                            <h4>Oddział — Kraków</h4>
+                            <p style="margin-bottom: 0.35rem;"><i class="ri-map-pin-line" style="color: var(--mbt-orange); margin-right: 0.4rem;"></i>{{ site.office_krakow }}</p>
+                            <p style="color: var(--text-muted); font-size: 1.05rem;"><i class="ri-time-line" style="margin-right: 0.4rem;"></i>{{ site.hours|default:'Pn - Pt: 8:00 - 16:00' }}</p>
                         </div>
-                        <span class="office-info-badge">Dział Inżynieryjny</span>
                     </div>
 
                     <div class="office-info-card">
                         <div>
-                            <h4>Oddział Kraków</h4>
-                            <p>{{ site.office_krakow }}</p>
+                            <h4>Siedziba — Katowice</h4>
+                            <p><i class="ri-map-pin-line" style="color: var(--mbt-orange); margin-right: 0.4rem;"></i>{{ site.office_katowice }}</p>
                         </div>
-                        <span class="office-info-badge">Małopolska & Południe</span>
                     </div>
 
                     <div class="office-info-card" style="background: var(--mbt-navy); color: white;">
                         <div>
-                            <h4 style="color: white;">Infolinia Inwestycyjna</h4>
-                            <p style="color: rgba(255,255,255,0.8);">{{ site.phone }} • {{ site.email }}</p>
+                            <h4 style="color: white; margin-bottom: 0.35rem;">Kontakt bezpośredni</h4>
+                            <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; font-weight: 700;">
+                                <i class="ri-phone-line" style="color: var(--mbt-orange); margin-right: 0.4rem;"></i>{{ site.phone }} &nbsp;•&nbsp; <i class="ri-mail-line" style="color: var(--mbt-orange); margin-right: 0.4rem;"></i>{{ site.email }}
+                            </p>
                         </div>
-                        <span class="office-info-badge" style="background: var(--mbt-orange); color: white;">8:00 - 17:00</span>
                     </div>
                 </div>
 
@@ -463,17 +514,49 @@
                     <div class="contact-direct-numbers">
                         {{ site.phone }}
                     </div>
-                    <div style="color: rgba(255,255,255,0.7); font-size: 1rem; margin-top: 0.25rem;">
+                    <div style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.35rem; font-weight: 600;">
                         {{ site.email }}
                     </div>
                 </div>
             </div>
+
+            <!-- Nasi Handlowcy (Jak na /kontakt) -->
+            {% if sales_reps %}
+            <div class="section-intro-header" style="margin-top: 5rem; margin-bottom: 2.5rem;">
+                <div class="badge-tag">
+                    Nasi Handlowcy <i class="ri-arrow-right-down-line"></i>
+                </div>
+                <h2>Zadzwoń do nas bezpośrednio</h2>
+            </div>
+
+            <div class="reps-kiosk-grid">
+                {% for rep in sales_reps %}
+                <div class="rep-kiosk-card">
+                    {% if rep.photo %}
+                    <img src="{{ rep.photo }}" alt="{{ rep.name }}" class="rep-kiosk-photo" loading="lazy">
+                    {% endif %}
+                    <div class="rep-kiosk-body">
+                        <h4>{{ rep.name }}</h4>
+                        <div class="rep-kiosk-pos">{{ rep.position }}</div>
+                        {% if rep.phone %}
+                        <div class="rep-kiosk-phone">
+                            <i class="ri-phone-fill"></i> {{ rep.phone }}
+                        </div>
+                        {% endif %}
+                        <div class="rep-kiosk-email">
+                            <i class="ri-mail-line"></i> {{ rep.email }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </section>
 
     </main>
 
     <!-- ======================================================================
-         DOLNY DOCK NAWIGACYJNY (BOTTOM DOCK 32")
+         DOLNY DOCK NAWIGACYJNY (BOTTOM DOCK 32") - CZYSTY BIAŁY
          ====================================================================== -->
     <nav class="kiosk-dock" aria-label="Nawigacja kiosku">
         <button type="button" class="dock-tab-btn active" data-tab="o-nas">
@@ -538,27 +621,39 @@
                 </div>
             </div>
 
-            <!-- Informacje techniczne i specyfikacja -->
+            <!-- Informacje techniczne i specyfikacja (jak na /realizacja/<slug>/) -->
             <div class="modal-info-pane">
                 <div>
-                    <div class="modal-specs-list">
+                    <div style="margin-bottom: 1.25rem;">
+                        <span class="badge-tag" id="modal-project-sub-status" style="font-size: 0.9rem; padding: 0.35rem 1rem;">Status</span>
+                    </div>
+
+                    <div class="modal-desc-box" id="modal-project-desc" style="max-height: 260px; overflow-y: auto; padding-right: 0.5rem; margin-bottom: 1.75rem;">
+                        <!-- Akapity opisu i specyfikacji wg _project_paras -->
+                    </div>
+
+                    <div class="modal-specs-list" style="margin-bottom: 1.5rem;">
                         <div class="spec-tile">
-                            <div class="spec-label">Status inwestycji</div>
+                            <div class="spec-label">Status</div>
                             <div class="spec-val" id="modal-spec-status">—</div>
                         </div>
                         <div class="spec-tile">
                             <div class="spec-label">Czas realizacji</div>
                             <div class="spec-val" id="modal-spec-czas">—</div>
                         </div>
-                        <div class="spec-tile" style="grid-column: span 2;">
-                            <div class="spec-label">Formuła wykonawcza</div>
+                        <div class="spec-tile">
+                            <div class="spec-label">Formuła</div>
                             <div class="spec-val" id="modal-spec-formula">—</div>
+                        </div>
+                        <div class="spec-tile">
+                            <div class="spec-label">Wykonawca</div>
+                            <div class="spec-val">MBT</div>
                         </div>
                     </div>
 
-                    <div class="modal-desc-box" id="modal-project-desc">
-                        <!-- Opis techniczny -->
-                    </div>
+                    <button type="button" class="header-btn header-btn-presentation" id="modal-cta-quote-btn" style="width: 100%; justify-content: center; height: 52px; font-size: 1.15rem; margin-bottom: 1.75rem; border-radius: 14px;">
+                        Wyceń podobny projekt <i class="ri-arrow-right-up-line"></i>
+                    </button>
                 </div>
 
                 <!-- Stopka z QR kodem do zabrania realizacji na telefon -->
@@ -567,10 +662,10 @@
                         <!-- Kod QR -->
                     </div>
                     <div>
-                        <div style="font-weight: 700; color: var(--mbt-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">
+                        <div style="font-weight: 800; color: var(--mbt-navy); font-size: 1.15rem; margin-bottom: 0.25rem;">
                             Zabierz tę realizację ze sobą
                         </div>
-                        <div style="color: var(--mbt-text-muted); font-size: 0.95rem;">
+                        <div style="color: var(--text-secondary); font-size: 1rem;">
                             Zeskanuj kod QR smartfonem, aby otworzyć galerię i specyfikację w swoim telefonie.
                         </div>
                     </div>
@@ -583,6 +678,11 @@
 <!-- Serializowane dane projektów do szybkiej obsługi modala -->
 <script id="kiosk-projects-data" type="application/json">
 {{ projects_json|safe }}
+</script>
+
+<!-- Serializowane dane slajdów prezentacji -->
+<script id="kiosk-presentation-data" type="application/json">
+{{ presentation_slides_json|safe }}
 </script>
 
 <!-- Skrypt obsługi Kiosku -->
