@@ -522,6 +522,7 @@ def get_photos():
         '/static/img/bg/cta-bg3-1.png',
         '/static/img/bg/contact-bg3-1.png',
         '/static/img/bg/breadcrumb-bg.png',
+        '/static/img/normal/client_group_1-2.png',
     }
     try:
         try:
