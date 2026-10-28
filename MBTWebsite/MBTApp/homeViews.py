@@ -10,6 +10,7 @@ def home(request):
     lang = request.LANGUAGE_CODE
     projects = mbt_orm.get_projects(lang)
     data = {
+        'meta_title': _('Generalny Wykonawca Budowlany - MBT - Śląsk, Kraków, Małopolska'),
         'workers': mbt_orm.get_workers(lang),
         'articles': mbt_orm.get_articles(lang),
         'projects': projects,

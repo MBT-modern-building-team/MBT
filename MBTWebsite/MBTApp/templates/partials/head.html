@@ -2,16 +2,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{% if title %}{{ title }} - {% endif %}MBT Modern Building Team - {% trans 'Generalny Wykonawca Hal i Obiektów Przemysłowych' %}</title>
-    <meta name="description" content="{% trans 'Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!' %}">
+    <title>{% if meta_title %}{{ meta_title }}{% else %}{% if title %}{{ title }} - {% endif %}MBT Modern Building Team - {% trans 'Generalny Wykonawca Hal i Obiektów Przemysłowych' %}{% endif %}</title>
+    <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{% trans 'Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!' %}{% endif %}">
     <meta name="keywords" content="MBT, {% trans 'generalny wykonawca' %}, {% trans 'hale magazynowe' %}, {% trans 'hale produkcyjne' %}, {% trans 'obiekty przemysłowe' %}, {% trans 'budowa pod klucz' %}">
     <meta name="robots" content="INDEX,FOLLOW">
 
 	<meta name="google-site-verification" content="qAg665ZzIpmEYcTIkNlT91UHk4f_LqmL8_QVfUAiAJ4" />
     
     <!-- Open Graph / SEO -->
-    <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}MBT Modern Building Team">
-    <meta property="og:description" content="{% trans 'Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!' %}">
+    <meta property="og:title" content="{% if meta_title %}{{ meta_title }}{% else %}{% if title %}{{ title }} - {% endif %}MBT Modern Building Team{% endif %}">
+    <meta property="og:description" content="{% if meta_description %}{{ meta_description }}{% else %}{% trans 'Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!' %}{% endif %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mbt.pl{{ request.path }}">
     <link rel="canonical" href="https://mbt.pl{{ request.path }}">

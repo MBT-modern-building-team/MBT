@@ -42,6 +42,8 @@ def halePrzemyslowe(request):
     completed = [p for p in projects if p.get('type') == 'realizacja-zrealizow'][:3]
     data = {
         'title': _('Hale Przemysłowe'),
+        'meta_title': _('Generalny Wykonawca Hal Przemysłowych i Produkcyjnych - Projektowanie i Budowa - MBT'),
+        'meta_description': _('MBT to Generalny Wykonawca hal przemysłowych i produkcyjnych. Oferujemy projektowanie i budowę obiektów pod klucz. Poznaj naszą ofertę i realizacje!'),
         'subTitle': _('Oferta'),
         'completed': completed,
         'site': mbt_orm.get_site(lang),
@@ -56,6 +58,8 @@ def haleMagazynowe(request):
     completed = [p for p in projects if p.get('type') == 'realizacja-zrealizow'][:3]
     data = {
         'title': _('Hale Magazynowe'),
+        'meta_title': _('Budowa Hal Magazynowych i Centrów Logistycznych - Projekt Magazynu - MBT'),
+        'meta_description': _('Budowa hal magazynowych i centrów logistycznych z MBT. Tworzymy funkcjonalny projekt magazynu dopasowany do Twojego biznesu. Skontaktuj się z nami!'),
         'subTitle': _('Oferta'),
         'completed': completed,
         'site': mbt_orm.get_site(lang),
@@ -70,6 +74,8 @@ def obiektyKomercyjne(request):
     completed = [p for p in projects if p.get('type') == 'realizacja-zrealizow'][:3]
     data = {
         'title': _('Obiekty Komercyjne'),
+        'meta_title': _('Budowa Obiektów Handlowych - Projektowanie Hal Komercyjnych - MBT'),
+        'meta_description': _('Projekt i budowa obiektów handlowych z MBT. Tworzymy nowoczesne hale komercyjne dopasowane do Twojego biznesu. Skontaktuj się i sprawdź szczegóły!'),
         'subTitle': _('Oferta'),
         'completed': completed,
         'site': mbt_orm.get_site(lang),
