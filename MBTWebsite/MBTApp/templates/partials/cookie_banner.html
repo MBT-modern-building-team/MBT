@@ -170,6 +170,12 @@
                 'analytics_storage': granted ? 'granted' : 'denied'
             });
         }
+        if (window.dataLayer && Array.isArray(window.dataLayer)) {
+            window.dataLayer.push({
+                event: 'cookie_consent_update',
+                consent_status: granted ? 'all' : 'necessary'
+            });
+        }
     }
 
     function getSavedConsent() {

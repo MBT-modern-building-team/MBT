@@ -1,7 +1,6 @@
 {% load i18n %}
 <head>
-    <!-- Google tag (gtag.js) & Consent Mode v2 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EY06LJLW3F"></script>
+    <!-- Google Consent Mode v2 (Zdefiniowane PRZED gtag.js zgodnie z oficjalną dokumentacją Google) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -27,9 +26,18 @@
         });
       }
 
-      gtag('js', new Date());
-      gtag('config', 'G-EY06LJLW3F');
+      // Zaawansowane funkcje ochrony prywatności i modelowania Google
+      gtag('set', 'ads_data_redaction', true);
+      gtag('set', 'url_passthrough', true);
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T47RS97C');</script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
