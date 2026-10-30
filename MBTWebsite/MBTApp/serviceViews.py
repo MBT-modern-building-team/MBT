@@ -11,6 +11,7 @@ def service(request):
         'title': _('Oferta'),
         'subTitle': _('Oferta'),
         'completed': completed,
+        'sectors': [s for s in mbt_orm.get_sectors(lang) if s.get('slug')],
         'site': mbt_orm.get_site(lang),
         'breadcrumb': True,
     }
@@ -95,8 +96,25 @@ def sectorDetail(request, slug):
     # Generujemy czytelny tytuł ze sluga np. 'konstrukcje-stalowe' -> 'Konstrukcje stalowe'
     readable_title = slug.replace('-', ' ').capitalize()
     
+    sector_obj = None
+    try:
+        from MBTApp.models import Sector
+        sector_obj = Sector.objects.filter(slug=slug).first()
+    except Exception:
+        pass
+        
+    if sector_obj and sector_obj.title:
+        readable_title = sector_obj.title
+        
+    meta_desc = None
+    if sector_obj and sector_obj.opis:
+        meta_desc = sector_obj.opis.strip()
+    if not meta_desc:
+        meta_desc = _("Projektowanie i budowa: %(sector)s. Kompleksowe generalne wykonawstwo inwestycji przemysłowych i komercyjnych w MBT Modern Building Team.") % {'sector': readable_title}
+    
     data = {
         'title': readable_title,
+        'meta_description': meta_desc,
         'subTitle': _('Oferta'),
         'completed': completed,
         'site': mbt_orm.get_site(lang),

@@ -77,6 +77,7 @@ def sitemap_html(request):
     context = {
         'title': _('Mapa witryny'),
         'subTitle': _('Mapa witryny'),
+        'sectors': [s for s in mbt_orm.get_sectors(lang) if s.get('slug')],
         'projects': mbt_orm.get_projects(lang),
         'articles': mbt_orm.get_articles(lang),
         'jobs': mbt_orm.get_jobs(lang),

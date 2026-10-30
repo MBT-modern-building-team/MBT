@@ -54,8 +54,17 @@ def realizacjaDetail(request, slug):
     if project is None:
         raise Http404(_("Realizacja nie istnieje"))
     project = _enrich(project)
+    
+    meta_desc = (project.get('opis') or project.get('text') or '').strip()
+    if meta_desc:
+        import re
+        meta_desc = re.sub(r'\s+', ' ', meta_desc)[:160].strip()
+    else:
+        meta_desc = _("Inwestycja %(title)s zrealizowana przez generalnego wykonawcę MBT Modern Building Team.") % {'title': project.get('title')}
+        
     data = {
         'title': project['title'],
+        'meta_description': meta_desc,
         'subTitle': _('Realizacje'),
         'project': project,
         'breadcrumb': True,
@@ -98,8 +107,11 @@ def careerDetail(request, slug):
             else:
                 lines.append(part)
     job['lines'] = lines
+    
+    meta_desc = _("Oferta pracy: %(title)s w MBT Modern Building Team. Sprawdź wymagania i dołącz do naszego zespołu inżynierów.") % {'title': job['title']}
     data = {
         'title': job['title'],
+        'meta_description': meta_desc,
         'subTitle': _('Kariera'),
         'job': job,
         'jobs': mbt_orm.get_jobs(lang),

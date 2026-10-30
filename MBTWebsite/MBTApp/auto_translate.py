@@ -13,6 +13,7 @@ When to use:
 - User-edited content — translates on save
 """
 import os
+import time
 import hashlib
 import sqlite3
 import threading
@@ -20,6 +21,8 @@ import logging
 from django.conf import settings
 
 logger = logging.getLogger(__name__)
+
+_circuit_open_until = 0
 
 # Cache backend: SQLite on writable FS, in-memory fallback on read-only (e.g. Vercel).
 CACHE_DB = os.path.join(settings.BASE_DIR, 'logs', 'translation_cache.sqlite3')
@@ -147,6 +150,10 @@ def translate(text, source='pl', target='en', use_cache=True):
     if text.startswith(('/', '#', 'http', '{%', '{{', '<script', '<style')):
         return text
 
+    global _circuit_open_until
+    if time.time() < _circuit_open_until:
+        return text
+
     translated = None
     try:
         import urllib.request
@@ -175,9 +182,14 @@ def translate(text, source='pl', target='en', use_cache=True):
                     translated_parts = [part[0] for part in data[0] if part[0]]
                     translated = "".join(translated_parts)
     except Exception as e:
-        logger.warning(f'GoogleTranslator direct API failed for {source}->{target}: {e}')
+        err_msg = str(e)
+        if '403' in err_msg or 'Forbidden' in err_msg:
+            _circuit_open_until = time.time() + 600  # Pause for 10 minutes
+            logger.warning(f'Translation service returned 403, pausing external requests for 10 minutes: {e}')
+        else:
+            logger.warning(f'GoogleTranslator direct API failed for {source}->{target}: {e}')
 
-    if not translated or translated == text:
+    if (not translated or translated == text) and time.time() >= _circuit_open_until:
         try:
             import urllib.request
             import urllib.parse
@@ -198,6 +210,9 @@ def translate(text, source='pl', target='en', use_cache=True):
                     if data.get('responseStatus') == 200:
                         translated = data['responseData']['translatedText']
         except Exception as e:
+            err_msg = str(e)
+            if '403' in err_msg or 'Forbidden' in err_msg:
+                _circuit_open_until = time.time() + 600
             logger.warning(f'MyMemory fallback failed: {e}')
 
     if not translated:

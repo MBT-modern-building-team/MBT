@@ -96,6 +96,21 @@
                     </div>
                 </div>
 
+                {% if sectors %}
+                <div class="col-12 mt-5">
+                    <div class="widget widget_nav_menu">
+                        <h3 class="widget_title">{% trans 'Sektory i branże' %}</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; list-style: none; padding-left: 0;">
+                                {% for sector in sectors %}
+                                <li><a href="{% url 'sectorDetail' sector.slug %}"><i class="ri-arrow-right-s-line" style="color:var(--theme-color);margin-right:6px;"></i>{{ sector.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
             </div>
         </div>
     </section>

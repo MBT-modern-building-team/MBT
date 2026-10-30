@@ -26,8 +26,16 @@ def articleDetail(request, slug):
     if len(paras) < 2:
         paras = [text[i:i+400].strip() for i in range(0, len(text), 400) if text[i:i+400].strip()]
     article['paras'] = paras
+    
+    meta_desc = (article.get('excerpt') or text or '').strip()
+    if meta_desc:
+        meta_desc = re.sub(r'\s+', ' ', meta_desc)[:160].strip()
+    else:
+        meta_desc = article.get('title')
+        
     data = {
         'title': article['title'],
+        'meta_description': meta_desc,
         'subTitle': _('Blog'),
         'article': article,
         'articles': mbt_orm.get_articles(lang),
