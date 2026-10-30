@@ -559,7 +559,7 @@
                 <div class="col-md-6 col-lg-4 mbt-project-item {% if p.type == 'realizacja-zrealizow' %}completed{% else %}in-progress{% endif %}">
                     <div class="portfolio-card style2">
                         <div class="portfolio-card-thumb">
-                            <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" decoding="async" width="800" height="533" class="{% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}">
+                            <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" decoding="async" width="800" height="533" class="{% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}" onerror="this.onerror=null;this.src='/static/img/mbt/hala-1024x672-eb7144c9.jpg';">
                             <a class="icon-btn popup-image" href="{{ p.hero }}" aria-label="{% trans 'Zobacz' %}: {{ p.title }}"><i class="ri-eye-line" aria-hidden="true"></i></a>
                             <span class="mbt-project-badge">{% trans p.status %}</span>
                         </div>

@@ -552,7 +552,7 @@
             <div class="col-md-6 col-lg-4">
                 <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
                     <div class="gw-project-img">
-                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" onerror="this.onerror=null;this.src='/static/img/mbt/hala-1024x672-eb7144c9.jpg';">
                         <div class="gw-project-overlay">
                             <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
                         </div>

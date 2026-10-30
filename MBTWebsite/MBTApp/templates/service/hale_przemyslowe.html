@@ -33,7 +33,7 @@
             <div class="col-lg-6">
                 <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
                     <div class="gw-about-img-main">
-                        <img src="{{ photos.hale_przemyslowe_1 }}" alt="Hala przemysłowa">
+                        <img src="{{ photos.hale_przemyslowe_1 }}" alt="Hala przemysłowa" onerror="this.onerror=null;this.src='/static/img/mbt/hala-1024x672-eb7144c9.jpg';">
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
         <div class="row align-items-center gy-40">
             <div class="col-lg-5 order-lg-2">
                 <div class="gw-esg-media wow animate__animated animate__fadeInRight">
-                    <img src="{{ photos.hale_przemyslowe_2 }}" alt="Ekologiczna hala przemysłowa">
+                    <img src="{{ photos.hale_przemyslowe_2 }}" alt="Ekologiczna hala przemysłowa" onerror="this.onerror=null;this.src='/static/img/mbt/breem-e659b8f2.jpg';">
                     <div class="gw-esg-leaf"><i class="ri-leaf-line"></i></div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
             <div class="col-md-6 col-lg-4">
                 <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
                     <div class="gw-project-img">
-                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" onerror="this.onerror=null;this.src='/static/img/mbt/hala-1024x672-eb7144c9.jpg';">
                         <div class="gw-project-overlay">
                             <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
                         </div>

@@ -45,7 +45,7 @@ def media_redirect_view(request, path_str):
     if ext.lower() in ['.jpg', '.jpeg', '.png']:
         ext = '.webp'
     new_filename = base + ext
-    r2_public = os.getenv('R2_PUBLIC_URL', 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev')
+    r2_public = os.getenv('R2_PUBLIC_URL', 'https://media.mbt.pl')
     
     # Check if it was an awards file, which might not be in 'uploads' directory on R2
     if 'awards/' in new_filename:

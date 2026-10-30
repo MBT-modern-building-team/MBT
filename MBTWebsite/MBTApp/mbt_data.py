@@ -2431,137 +2431,105 @@ JOBS = [{'order': 0,
   'title': 'Praktyka/Staż'}]
 
 PHOTOS = {'about_1': '/static/img/mbt/o-nas-1.jpg',
- 'bg_breadcrumb': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/374e7a5adfbf.webp',
+ 'bg_breadcrumb': '/static/img/bg/breadcrumb-bg.png',
  'bg_footer': '/static/img/bg/footer-bg1-1.png',
  'bg_header': '/static/img/bg/header-1-bg.png',
- 'general_contracting_1': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/0b5b6f5c26b1.webp',
- 'general_contracting_2': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/ed67bb1b2b03.webp',
+ 'general_contracting_1': '/static/img/mbt/LessMess-1-3370ce84.jpg',
+ 'general_contracting_2': '/static/img/mbt/realizacja-stokado.jpg',
  'gw_1': '/static/img/mbt/ZREALIZOWANE-ATT-1-scaled-f12dacac.jpg',
  'gw_10': '/static/img/mbt/breem-e659b8f2.jpg',
  'gw_11': '/static/img/mbt/hala-1024x672-eb7144c9.jpg',
- 'gw_12': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/205539665175.webp',
+ 'gw_12': '/static/img/mbt/realizacja-stokado.jpg',
  'gw_2': '/static/img/mbt/ZREALIZOWANE-ATT-3-scaled-b0f20287.jpg',
  'gw_3': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
  'gw_4': '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg',
  'gw_5': '/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg',
- 'gw_6': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/4b52bd6eff86.webp',
- 'gw_7': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/151dd278be86.webp',
+ 'gw_6': '/static/img/mbt/Fronton-1-scaled-42981731.jpg',
+ 'gw_7': '/static/img/mbt/Fronton-2-scaled-de057284.jpg',
  'gw_8': '/static/img/mbt/Huber-6-scaled-b00b8b23.jpg',
  'gw_9': '/static/img/mbt/3-2-scaled-38947c85.jpg',
- 'gw_hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/edc93501919b.webp',
- 'hale_magazynowe_1': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/6f70f8a65c1f.webp',
- 'hale_magazynowe_hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/cde95e4141b2.webp',
- 'hale_przemyslowe_1': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/a07b2f5a2585.webp',
- 'hale_przemyslowe_2': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/36d1642694e1.webp',
+ 'gw_hero': 'https://media.mbt.pl/uploads/41003d4cca6e.webp',
+ 'hale_magazynowe_1': '/static/img/mbt/LessMess-4-18feb603.jpg',
+ 'hale_magazynowe_hero': 'https://media.mbt.pl/uploads/1648f91ebdc2.webp',
+ 'hale_przemyslowe_1': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
+ 'hale_przemyslowe_2': '/static/img/mbt/breem-e659b8f2.jpg',
  'hale_przemyslowe_hero': 'https://media.mbt.pl/uploads/41003d4cca6e.webp',
- 'home_att8': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/42b91ab7c950.webp',
- 'home_bg_contact': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/34754bbfa84c.webp',
- 'home_bg_cta': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/c4c3b74ce689.webp',
+ 'home_att8': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
+ 'home_bg_contact': '/static/img/bg/contact-bg3-1.png',
+ 'home_bg_cta': '/static/img/bg/cta-bg3-1.png',
  'home_bg_why': '/static/img/bg/why-bg3-1.png',
- 'home_client_group': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/65f5ac2e1b40.webp',
- 'home_hero_bg': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/e7c67178548f.webp',
+ 'home_client_group': '',
+ 'home_hero_bg': '/static/img/hero/hero_bg_3_1.png',
  'home_o_nas_2': '/static/img/mbt/o-nas-2.jpg',
  'home_o_nas_zespol': 'https://media.mbt.pl/uploads/c4f9f468d740.webp',
  'home_realizacja': '/static/img/mbt/realizacja-eurosleeve.jpg',
- 'home_testi_2': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/aaa9406ed7a3.webp',
- 'obiekty_komercyjne_1': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/80628a4cba4c.webp',
- 'obiekty_komercyjne_2': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/c6103a286635.webp',
- 'obiekty_komercyjne_hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/570767cfd0e4.webp',
+ 'home_testi_2': '/static/img/testimonial/testi_2_2.png',
+ 'obiekty_komercyjne_1': '/static/img/mbt/CANPACK-BSS-LAB-w-Brzesku-1-1-ee4bd957.jpg',
+ 'obiekty_komercyjne_2': '/static/img/mbt/3-2-scaled-38947c85.jpg',
+ 'obiekty_komercyjne_hero': 'https://media.mbt.pl/uploads/04bfb07ae41b.webp',
  'service_1': '/static/img/mbt/Eurosleeve-10-scaled-fd8f7247.jpg',
  'service_2': '/static/img/mbt/IMG_20220722_102326-scaled-1-fdde92f8.jpg',
- 'work_gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/caa74380050b.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/6f43bfc3bf1c.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/d9df34622f41.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/2e72cf285aaf.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/7a1b37c27156.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/d016fd735e56.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/cc59a6d9b5d5.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/91a266765989.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/2b0eecc96d45.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/427662a1bd15.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/ee5d542c1a17.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/5df613347b32.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/4cec556f3753.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/f491e80d2a25.webp',
-                  'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/609ba634da28.webp']}
+ 'work_gallery': ['/static/img/mbt/DSC03626-scaled-6f5bda4e.jpeg',
+                  '/static/img/mbt/DSC03726-scaled-04284a3e.jpeg',
+                  '/static/img/mbt/DSC03730-scaled-ee7d1094.jpeg',
+                  '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg',
+                  '/static/img/mbt/DSC03980-scaled-ea8b4933.jpeg',
+                  '/static/img/mbt/DJI_0174-scaled-5106e265.jpeg',
+                  '/static/img/mbt/DJI_0181-1-scaled-b366f7fb.jpeg',
+                  '/static/img/mbt/DJI_3-03272d0f.jpg']}
 
 PROJECTS = [{'czas': '16 miesięcy',
   'formula': 'Buduj',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/59554a51bfd4.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/f6af6fd925eb.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/e1860085210d.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/c1f5cbc83f42.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/10adbef6ea88.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/c0cbaa631e5c.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/419521a19211.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/5db8fc52720e.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/ca3b50a75413.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/b9fd7af25348.webp'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/bd7222b47df1.webp',
+  'gallery': ['/static/img/mbt/ZREALIZOWANE-ATT-3-scaled-b0f20287.jpg',
+              '/static/img/mbt/ZREALIZOWANE-ATT-4-scaled-ffc91418.jpg',
+              '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg',
+              '/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg',
+              '/static/img/mbt/ZREALIZOWANE-ATT-8-c1d848dd.jpg'],
+  'hero': '/static/img/mbt/ZREALIZOWANE-ATT-1-scaled-f12dacac.jpg',
   'latitude': 50.0199155,
   'logo': '/static/img/mbt/1718005265186-2efb17dd-48b4-4732-ac49-4f435ead9e69_1-acf11eeb.jpg',
   'longitude': 20.0948933,
-  'opis': 'Powierzchnia hali produkcyjnej: około 6500 m² Trzykondygnacyjny '
-          'budynek biurowo-socjalny o powierzchni 1500 m² Place manewrowe, '
-          'drogi dojazdowe, uzbrojenie podziemne Zagospodarowanie terenu wokół '
-          'obiektu Wyposażenie wszystkich naw w suwnice Konstrukcja hali '
-          'mieszana: słupy prefabrykowane, żelbetowe dach w konstrukcji '
+  'opis': 'Powierzchnia hali produkcyjnej: około 6500 m² Trzykondygnacyjny budynek biurowo-socjalny o powierzchni 1500 '
+          'm² Place manewrowe, drogi dojazdowe, uzbrojenie podziemne Zagospodarowanie terenu wokół obiektu Wyposażenie '
+          'wszystkich naw w suwnice Konstrukcja hali mieszana: słupy prefabrykowane, żelbetowe dach w konstrukcji '
           'stalowej',
   'order': 1,
   'slug': 'att-kokotow',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Plocha výrobní haly: přibližně 6500 m² Třípatrová '
-                'kancelářsko-sociální budova o ploše 1500 m² Manévrovací '
-                'plochy, příjezdové komunikace, podzemní vedení Úprava terénu '
-                'kolem objektu Vybavení všech polí jeřáby Smíšená konstrukce '
-                'haly: prefabrikované sloupy, železobetonové, střecha v '
-                'ocelové konstrukci',
-          'de': 'Produktionshallenfläche: ca. 6.500 m² Dreigeschossiges Büro- '
-                'und Sozialgebäude mit einer Fläche von 1.500 m² '
-                'Rangierflächen, Zufahrtsstraßen, unterirdische Erschließung '
-                'Gestaltung des Geländes um das Objekt Ausstattung aller '
-                'Felder mit Kranen Gemischte Hallenkonstruktion: vorgefertigte '
-                'Stützen, Stahlbeton, Dach in Stahlkonstruktion',
-          'en': 'Production hall area: approximately 6,500 m² Three-storey '
-                'office-social building with an area of 1,500 m² Manoeuvring '
-                'areas, access roads, underground utilities Land development '
-                'around the facility Equipping all bays with overhead cranes '
-                'Mixed hall structure: prefabricated columns, reinforced '
+  't_o': {'cs': 'Plocha výrobní haly: přibližně 6500 m² Třípatrová kancelářsko-sociální budova o ploše 1500 m² '
+                'Manévrovací plochy, příjezdové komunikace, podzemní vedení Úprava terénu kolem objektu Vybavení všech '
+                'polí jeřáby Smíšená konstrukce haly: prefabrikované sloupy, železobetonové, střecha v ocelové '
+                'konstrukci',
+          'de': 'Produktionshallenfläche: ca. 6.500 m² Dreigeschossiges Büro- und Sozialgebäude mit einer Fläche von '
+                '1.500 m² Rangierflächen, Zufahrtsstraßen, unterirdische Erschließung Gestaltung des Geländes um das '
+                'Objekt Ausstattung aller Felder mit Kranen Gemischte Hallenkonstruktion: vorgefertigte Stützen, '
+                'Stahlbeton, Dach in Stahlkonstruktion',
+          'en': 'Production hall area: approximately 6,500 m² Three-storey office-social building with an area of '
+                '1,500 m² Manoeuvring areas, access roads, underground utilities Land development around the facility '
+                'Equipping all bays with overhead cranes Mixed hall structure: prefabricated columns, reinforced '
                 'concrete, roof in steel structure',
-          'hu': 'Gyártócsarnok alapterülete: kb. 6500 m² Háromszintes '
-                'iroda-szociális épület 1500 m² alapterülettel Manőverezési '
-                'területek, bekötő utak, földalatti közművek A telek rendezése '
-                'az objektum körül Minden mező felszerelése darukkal Vegyes '
-                'csarnokszerkezet: előregyártott oszlopok, vasbeton, '
-                'acélszerkezetű tető',
-          'sk': 'Plocha výrobnej haly: približne 6500 m² Trojpodlažná '
-                'kancelársko-sociálna budova s plochou 1500 m² Manévrovacie '
-                'plochy, príjazdové cesty, podzemné vedenia Úprava terénu '
-                'okolo objektu Vybavenie všetkých polí žeriavmi Zmiešaná '
-                'konštrukcia haly: prefabrikované stĺpy, železobetónové, '
-                'strecha v oceľovej konštrukcii'},
+          'hu': 'Gyártócsarnok alapterülete: kb. 6500 m² Háromszintes iroda-szociális épület 1500 m² alapterülettel '
+                'Manőverezési területek, bekötő utak, földalatti közművek A telek rendezése az objektum körül Minden '
+                'mező felszerelése darukkal Vegyes csarnokszerkezet: előregyártott oszlopok, vasbeton, acélszerkezetű '
+                'tető',
+          'sk': 'Plocha výrobnej haly: približne 6500 m² Trojpodlažná kancelársko-sociálna budova s plochou 1500 m² '
+                'Manévrovacie plochy, príjazdové cesty, podzemné vedenia Úprava terénu okolo objektu Vybavenie '
+                'všetkých polí žeriavmi Zmiešaná konštrukcia haly: prefabrikované stĺpy, železobetónové, strecha v '
+                'oceľovej konštrukcii'},
   't_s': {},
   't_t': {},
   'title': 'ATT - Kokotów',
   'type': 'realizacja-zrealizow'},
  {'czas': '',
   'formula': 'zaprojektuj - wybuduj',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/2939e412daee.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/f5fb318c8128.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/f2107da0ac72.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/585f2a82ce57.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/1ae05fac1c6f.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/309cd02db637.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/271371fbe400.webp',
-              'https://media.mbt.pl/uploads/c9cded91e7fa.webp'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/0b5b6f5c26b1.webp',
+  'gallery': ['https://media.mbt.pl/uploads/c9cded91e7fa.webp'],
+  'hero': '/static/img/mbt/hala-1024x672-eb7144c9.jpg',
   'latitude': 50.3232916,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/fb6676b754f8.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 19.0131504,
-  'opis': 'Budowa hali magazynowo – produkcyjnej z zapleczem '
-          'socjalno-biurowym.\r\n'
+  'opis': 'Budowa hali magazynowo – produkcyjnej z zapleczem socjalno-biurowym.\r\n'
           '\r\n'
           'Powierzchnia hali wynosi około 2700 m²\r\n'
           'Powierzchnia części administracyjno-biurowej wynosi około 300 m²\r\n'
@@ -2572,41 +2540,34 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba skladově-výrobní haly se sociálně-kancelářským '
-                'zázemím.\n'
+  't_o': {'cs': 'Výstavba skladově-výrobní haly se sociálně-kancelářským zázemím.\n'
                 '\n'
                 'Plocha haly činí přibližně 2 700 m²\n'
-                'Plocha administrativně-kancelářské části činí přibližně 300 '
-                'm²\n'
+                'Plocha administrativně-kancelářské části činí přibližně 300 m²\n'
                 '\n'
                 'konstrukce haly je kompletně ocelová',
-          'de': 'Bau einer Lager- und Produktionshalle mit Sozial- und '
-                'Büroräumen.\n'
+          'de': 'Bau einer Lager- und Produktionshalle mit Sozial- und Büroräumen.\n'
                 '\n'
                 'Hallenfläche ca. 2.700 m²\n'
                 'Verwaltungs- und Bürofläche ca. 300 m²\n'
                 '\n'
                 'Hallenkonstruktion vollständig in Stahl',
-          'en': 'Construction of a warehouse and production hall with social '
-                'and office facilities.\n'
+          'en': 'Construction of a warehouse and production hall with social and office facilities.\n'
                 '\n'
                 'Hall area of approximately 2,700 m²\n'
                 'Administrative and office area of approximately 300 m²\n'
                 '\n'
                 'Fully steel structure of the hall',
-          'hu': 'Raktár- és termelőcsarnok építése szociális és irodai '
-                'kiszolgálórésszel.\n'
+          'hu': 'Raktár- és termelőcsarnok építése szociális és irodai kiszolgálórésszel.\n'
                 '\n'
                 'A csarnok alapterülete kb. 2 700 m²\n'
                 'Az adminisztratív-irodai rész alapterülete kb. 300 m²\n'
                 '\n'
                 'a csarnok szerkezete teljes egészében acél',
-          'sk': 'Výstavba skladovo-výrobnej haly so sociálno-kancelárskym '
-                'zázemím.\n'
+          'sk': 'Výstavba skladovo-výrobnej haly so sociálno-kancelárskym zázemím.\n'
                 '\n'
                 'Plocha haly je približne 2 700 m²\n'
-                'Plocha administratívno-kancelárskej časti je približne 300 '
-                'm²\n'
+                'Plocha administratívno-kancelárskej časti je približne 300 m²\n'
                 '\n'
                 'konštrukcia haly je celooková'},
   't_s': {},
@@ -2615,124 +2576,88 @@ PROJECTS = [{'czas': '16 miesięcy',
   'type': 'realizacja-zrealizow'},
  {'czas': '11 miesięcy',
   'formula': 'Zaprojektuj-wybuduj',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/22ef7443d42f.webp',
-              '/static/img/mbt/LessMess-6-916e0c22.jpg',
+  'gallery': ['/static/img/mbt/LessMess-6-916e0c22.jpg',
               '/static/img/mbt/LessMess-5-9e410f12.jpg',
               '/static/img/mbt/LessMess-4-18feb603.jpg',
               '/static/img/mbt/LessMess-3-scaled-8cef25bd.jpg',
               '/static/img/mbt/LessMess-2-scaled-97b96a57.jpg',
               '/static/img/mbt/LessMess-1-3370ce84.jpg'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/252a53665bfa.webp',
+  'hero': '/static/img/mbt/LessMess-1-3370ce84.jpg',
   'latitude': 52.3437589,
   'logo': '/static/img/mbt/preloader-56f61948.png',
   'longitude': 20.9503183,
-  'opis': 'Konstrukcja: żelbetowa, z optymalizacją zużycia stali Obudowa: '
-          'płyty warstwowe Strop: strop żelbetowy pełniący funkcję podłogi o '
-          'wysokiej jakości wykończenia Ogrzewanie: pompy ciepła, wymagające '
-          'wcześniejszych odwiertów Wyposażenie: zróżnicowane boxy do '
-          'przechowywania, rozmieszczone zgodnie z harmonogramem dostaw i '
+  'opis': 'Konstrukcja: żelbetowa, z optymalizacją zużycia stali Obudowa: płyty warstwowe Strop: strop żelbetowy '
+          'pełniący funkcję podłogi o wysokiej jakości wykończenia Ogrzewanie: pompy ciepła, wymagające wcześniejszych '
+          'odwiertów Wyposażenie: zróżnicowane boxy do przechowywania, rozmieszczone zgodnie z harmonogramem dostaw i '
           'montażu',
   'order': 3,
   'slug': 'less-mess-storage-warszawa',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Konstrukce: železobetonová, s optimalizací spotřeby oceli. '
-                'Plášť: sendvičové panely. Strop: železobetonový strop plnící '
-                'funkci podlahy s vysoce kvalitní povrchovou úpravou. '
-                'Vytápění: tepelná čerpadla vyžadující předchozí vrty. '
-                'Vybavení: rozmanité boxy pro skladování, rozmístěné dle '
+  't_o': {'cs': 'Konstrukce: železobetonová, s optimalizací spotřeby oceli. Plášť: sendvičové panely. Strop: '
+                'železobetonový strop plnící funkci podlahy s vysoce kvalitní povrchovou úpravou. Vytápění: tepelná '
+                'čerpadla vyžadující předchozí vrty. Vybavení: rozmanité boxy pro skladování, rozmístěné dle '
                 'harmonogramu dodávek a montáže.',
-          'de': 'Konstruktion: Stahlbeton, mit optimiertem Stahlverbrauch. '
-                'Hülle: Sandwichpaneele. Decke: Stahlbeton-Decke als '
-                'hochwertig ausgeführter Boden. Heizung: Wärmepumpen, die '
-                'vorherige Bohrungen erfordern. Ausstattung: unterschiedliche '
-                'Lagerboxen, angeordnet nach Liefer- und Montageplan.',
-          'en': 'Structure: reinforced concrete, with optimised steel '
-                'consumption. Envelope: sandwich panels. Floor: reinforced '
-                'concrete slab serving as a high-quality finished floor. '
-                'Heating: heat pumps requiring prior boreholes. Equipment: '
-                'varied storage boxes arranged in line with the delivery and '
-                'installation schedule.',
-          'hu': 'Szerkezet: vasbeton, optimalizált acélfelhasználással. '
-                'Burkolat: szendvicspanelek. Födém: vasbeton födém, amely '
-                'kiváló minőségű padlóburkolatként funkcionál. Fűtés: '
-                'hőszivattyúk, amelyek előzetes fúrásokat igényelnek. '
-                'Felszerelés: változatos tárolóboxok, a szállítási és '
-                'szerelési ütemterv szerint elhelyezve.',
-          'sk': 'Konštrukcia: železobetónová, s optimalizáciou spotreby ocele. '
-                'Plášť: sendvičové panely. Strop: železobetónový strop plniaci '
-                'funkciu podlahy s vysoko kvalitnou povrchovou úpravou. '
-                'Vykurovanie: tepelné čerpadlá vyžadujúce predchádzajúce vrty. '
-                'Vybavenie: rozmanité boxy na skladovanie, rozmiestnené podľa '
-                'harmonogramu dodávok a montáže.'},
+          'de': 'Konstruktion: Stahlbeton, mit optimiertem Stahlverbrauch. Hülle: Sandwichpaneele. Decke: '
+                'Stahlbeton-Decke als hochwertig ausgeführter Boden. Heizung: Wärmepumpen, die vorherige Bohrungen '
+                'erfordern. Ausstattung: unterschiedliche Lagerboxen, angeordnet nach Liefer- und Montageplan.',
+          'en': 'Structure: reinforced concrete, with optimised steel consumption. Envelope: sandwich panels. Floor: '
+                'reinforced concrete slab serving as a high-quality finished floor. Heating: heat pumps requiring '
+                'prior boreholes. Equipment: varied storage boxes arranged in line with the delivery and installation '
+                'schedule.',
+          'hu': 'Szerkezet: vasbeton, optimalizált acélfelhasználással. Burkolat: szendvicspanelek. Födém: vasbeton '
+                'födém, amely kiváló minőségű padlóburkolatként funkcionál. Fűtés: hőszivattyúk, amelyek előzetes '
+                'fúrásokat igényelnek. Felszerelés: változatos tárolóboxok, a szállítási és szerelési ütemterv szerint '
+                'elhelyezve.',
+          'sk': 'Konštrukcia: železobetónová, s optimalizáciou spotreby ocele. Plášť: sendvičové panely. Strop: '
+                'železobetónový strop plniaci funkciu podlahy s vysoko kvalitnou povrchovou úpravou. Vykurovanie: '
+                'tepelné čerpadlá vyžadujúce predchádzajúce vrty. Vybavenie: rozmanité boxy na skladovanie, '
+                'rozmiestnené podľa harmonogramu dodávok a montáže.'},
   't_s': {},
   't_t': {},
   'title': 'Less Mess Storage – Warszawa',
   'type': 'realizacja-zrealizow'},
  {'czas': '',
   'formula': '',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/17b9961f0ef4.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/0c4bdef57c89.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/9d3261b2a1b3.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/402fc9261140.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/2cd375f208af.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/29d1c38c6a62.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/4b6c6cbcd744.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/55219aceb865.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/f33c64967077.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/c3c02d2f26e0.webp'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/7ba1ed4fdb7c.webp',
+  'gallery': [],
+  'hero': '/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg',
   'latitude': 50.1329145,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/d0028e1be0ff.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 18.9865084,
-  'opis': 'Na terenie zakładu Kampanii Piwowarskiej realizowaliśmy przebudowę '
-          'starej hali. Projekt zrealizowaliśmy w taki sposób aby jak '
-          'najbardziej nawiązywał do historycznej architektury browaru.',
+  'opis': 'Na terenie zakładu Kampanii Piwowarskiej realizowaliśmy przebudowę starej hali. Projekt zrealizowaliśmy w '
+          'taki sposób aby jak najbardziej nawiązywał do historycznej architektury browaru.',
   'order': 4,
   'slug': 'kompania-piwowarska-tychy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'V areálu pivovaru Kompania Piwowarska jsme realizovali '
-                'přestavbu staré haly. Projekt jsme provedli tak, aby co '
-                'nejvíce navazoval na historickou architekturu pivovaru.',
-          'de': 'Auf dem Gelände der Brauerei Kompania Piwowarska haben wir '
-                'den Umbau einer alten Halle realisiert. Wir haben das Projekt '
-                'so umgesetzt, dass es möglichst stark an die historische '
-                'Architektur der Brauerei anknüpft.',
-          'en': 'Within the Kompania Piwowarska brewery facility, we carried '
-                'out the reconstruction of an old hall. We delivered the '
-                'project in a way that refers as much as possible to the '
-                'historic architecture of the brewery.',
-          'hu': 'A Kompania Piwowarska sörgyár területén egy régi csarnok '
-                'átépítését valósítottuk meg. A projektet úgy valósítottuk '
-                'meg, hogy a lehető legjobban illeszkedjen a sörgyár '
-                'történelmi építészetéhez.',
-          'sk': 'V areáli pivovaru Kompania Piwowarska sme realizovali '
-                'prestavbu starej haly. Projekt sme zrealizovali tak, aby čo '
-                'najviac nadväzoval na historickú architektúru pivovaru.'},
+  't_o': {'cs': 'V areálu pivovaru Kompania Piwowarska jsme realizovali přestavbu staré haly. Projekt jsme provedli '
+                'tak, aby co nejvíce navazoval na historickou architekturu pivovaru.',
+          'de': 'Auf dem Gelände der Brauerei Kompania Piwowarska haben wir den Umbau einer alten Halle realisiert. '
+                'Wir haben das Projekt so umgesetzt, dass es möglichst stark an die historische Architektur der '
+                'Brauerei anknüpft.',
+          'en': 'Within the Kompania Piwowarska brewery facility, we carried out the reconstruction of an old hall. We '
+                'delivered the project in a way that refers as much as possible to the historic architecture of the '
+                'brewery.',
+          'hu': 'A Kompania Piwowarska sörgyár területén egy régi csarnok átépítését valósítottuk meg. A projektet úgy '
+                'valósítottuk meg, hogy a lehető legjobban illeszkedjen a sörgyár történelmi építészetéhez.',
+          'sk': 'V areáli pivovaru Kompania Piwowarska sme realizovali prestavbu starej haly. Projekt sme zrealizovali '
+                'tak, aby čo najviac nadväzoval na historickú architektúru pivovaru.'},
   't_s': {},
   't_t': {},
   'title': 'Kompania Piwowarska Tychy',
   'type': 'realizacja-zrealizow'},
  {'czas': '10 Miesięcy',
   'formula': 'Generalne wykonawstwo',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/b8f522564cd5.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/2b1b03be6f86.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/cdab5738115c.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/2676543c835e.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/2ffd70ab108d.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/18624e7ecbda.webp'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/afe891827322.webp',
+  'gallery': [],
+  'hero': '/static/img/mbt/DSC03726-scaled-04284a3e.jpeg',
   'latitude': 50.214195,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/f7dbcc9a7d55.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 18.9753366,
-  'opis': 'Jako Generalny Wykonawca zakończyliśmy budowę kolejnego etapu '
-          'kompleksu Fabryka Park. Zrealizowaliśmy trzykondygnacyjną bryłę o '
-          'charakterze biurowym, która pełni funkcję nowoczesnego parku '
-          'handlowo-usługowego. Inwestycja została oddana, a obecnie wewnątrz '
-          'trwają prace fit-out prowadzone przez najemców.\r\n'
+  'opis': 'Jako Generalny Wykonawca zakończyliśmy budowę kolejnego etapu kompleksu Fabryka Park. Zrealizowaliśmy '
+          'trzykondygnacyjną bryłę o charakterze biurowym, która pełni funkcję nowoczesnego parku handlowo-usługowego. '
+          'Inwestycja została oddana, a obecnie wewnątrz trwają prace fit-out prowadzone przez najemców.\r\n'
           '\r\n'
           'Parametry inwestycji:\r\n'
           '\r\n'
@@ -2747,31 +2672,26 @@ PROJECTS = [{'czas': '16 miesięcy',
           'Konstrukcja: Mieszana\r\n'
           '\r\n'
           'Najemcy:\r\n'
-          'Główną część obiektu zajmą placówka medyczna MEDICOVER oraz klub '
-          'XTREME FITNESS. Ofertę uzupełniają mniejsze lokale: KROWA MAĆ, DR '
-          'MATERAC i LIKE A PET.\r\n'
+          'Główną część obiektu zajmą placówka medyczna MEDICOVER oraz klub XTREME FITNESS. Ofertę uzupełniają '
+          'mniejsze lokale: KROWA MAĆ, DR MATERAC i LIKE A PET.\r\n'
           '\r\n'
           'Technologia i Wyzwania:\r\n'
           '\r\n'
-          'Elewacja: Zastosowano nowoczesną fasadę z siatki '
-          'cięto-ciągnionej.\r\n'
+          'Elewacja: Zastosowano nowoczesną fasadę z siatki cięto-ciągnionej.\r\n'
           '\r\n'
-          'Ekologia: Na dachu zainstalowano panele fotowoltaiczne. Obiekt jest '
-          'w trakcie procedowania certyfikatu BREEAM.\r\n'
+          'Ekologia: Na dachu zainstalowano panele fotowoltaiczne. Obiekt jest w trakcie procedowania certyfikatu '
+          'BREEAM.\r\n'
           '\r\n'
-          'Logistyka: Największym wyzwaniem była skomplikowana konstrukcja, '
-          'napięty harmonogram oraz prowadzenie prac w bezpośrednim '
-          'sąsiedztwie czynnego parku handlowego i linii kolejowej.',
+          'Logistyka: Największym wyzwaniem była skomplikowana konstrukcja, napięty harmonogram oraz prowadzenie prac '
+          'w bezpośrednim sąsiedztwie czynnego parku handlowego i linii kolejowej.',
   'order': 5,
   'slug': 'fabryka-park-katowice',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Jako Generální dodavatel jsme dokončili výstavbu další etapy '
-                'komplexu Fabryka Park. Realizovali jsme třípatrovou budovu '
-                'kancelářského charakteru, která plní funkci moderního '
-                'obchodně-služebního parku. Investice byla předána a v '
-                'současné době probíhají uvnitř fit-out práce nájemců.\n'
+  't_o': {'cs': 'Jako Generální dodavatel jsme dokončili výstavbu další etapy komplexu Fabryka Park. Realizovali jsme '
+                'třípatrovou budovu kancelářského charakteru, která plní funkci moderního obchodně-služebního parku. '
+                'Investice byla předána a v současné době probíhají uvnitř fit-out práce nájemců.\n'
                 '\n'
                 'Parametry investice:\n'
                 '\n'
@@ -2786,27 +2706,21 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Konstrukce: Smíšená\n'
                 '\n'
                 'Nájemci:\n'
-                'Hlavní část objektu obsadí zdravotnické zařízení MEDICOVER a '
-                'klub XTREME FITNESS. Nabídku doplňují menší provozovny: KROWA '
-                'MAĆ, DR MATERAC a LIKE A PET.\n'
+                'Hlavní část objektu obsadí zdravotnické zařízení MEDICOVER a klub XTREME FITNESS. Nabídku doplňují '
+                'menší provozovny: KROWA MAĆ, DR MATERAC a LIKE A PET.\n'
                 '\n'
                 'Technologie a výzvy:\n'
                 '\n'
-                'Fasáda: Byla použita moderní fasáda z taženého a řezaného '
-                'kovového pletiva.\n'
+                'Fasáda: Byla použita moderní fasáda z taženého a řezaného kovového pletiva.\n'
                 '\n'
-                'Ekologie: Na střeše byly instalovány fotovoltaické panely. '
-                'Objekt je v procesu certifikace BREEAM.\n'
+                'Ekologie: Na střeše byly instalovány fotovoltaické panely. Objekt je v procesu certifikace BREEAM.\n'
                 '\n'
-                'Logistika: Největší výzvou byla složitá konstrukce, napjatý '
-                'harmonogram a provádění prací v bezprostřední blízkosti '
-                'aktivního obchodního parku a železniční trati.',
-          'de': 'Als Generalunternehmer haben wir den Bau der nächsten Etappe '
-                'des Komplexes Fabryka Park abgeschlossen. Wir haben einen '
-                'dreigeschossigen Baukörper mit Bürocharakter realisiert, der '
-                'als moderner Handels- und Dienstleistungspark fungiert. Die '
-                'Investition wurde übergeben, derzeit laufen im Inneren die '
-                'Mieterausbauten.\n'
+                'Logistika: Největší výzvou byla složitá konstrukce, napjatý harmonogram a provádění prací v '
+                'bezprostřední blízkosti aktivního obchodního parku a železniční trati.',
+          'de': 'Als Generalunternehmer haben wir den Bau der nächsten Etappe des Komplexes Fabryka Park '
+                'abgeschlossen. Wir haben einen dreigeschossigen Baukörper mit Bürocharakter realisiert, der als '
+                'moderner Handels- und Dienstleistungspark fungiert. Die Investition wurde übergeben, derzeit laufen '
+                'im Inneren die Mieterausbauten.\n'
                 '\n'
                 'Investitionsparameter:\n'
                 '\n'
@@ -2821,28 +2735,21 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Konstruktion: Gemischt\n'
                 '\n'
                 'Mieter:\n'
-                'Den Hauptteil des Objekts belegen die medizinische '
-                'Einrichtung MEDICOVER und der XTREME FITNESS Club. Kleinere '
-                'Einheiten – KROWA MAĆ, DR MATERAC und LIKE A PET – ergänzen '
-                'das Angebot.\n'
+                'Den Hauptteil des Objekts belegen die medizinische Einrichtung MEDICOVER und der XTREME FITNESS Club. '
+                'Kleinere Einheiten – KROWA MAĆ, DR MATERAC und LIKE A PET – ergänzen das Angebot.\n'
                 '\n'
                 'Technologie und Herausforderungen:\n'
                 '\n'
-                'Fassade: Eine moderne Fassade aus Streckmetall wurde '
-                'eingesetzt.\n'
+                'Fassade: Eine moderne Fassade aus Streckmetall wurde eingesetzt.\n'
                 '\n'
-                'Ökologie: Auf dem Dach wurden Photovoltaikmodule installiert. '
-                'Das Objekt befindet sich im BREEAM-Zertifizierungsprozess.\n'
+                'Ökologie: Auf dem Dach wurden Photovoltaikmodule installiert. Das Objekt befindet sich im '
+                'BREEAM-Zertifizierungsprozess.\n'
                 '\n'
-                'Logistik: Die größten Herausforderungen waren die komplexe '
-                'Konstruktion, ein enger Zeitplan und die Durchführung der '
-                'Arbeiten in unmittelbarer Nähe eines aktiven Handelsparks und '
-                'einer Bahnlinie.',
-          'en': 'As the General Contractor, we have completed the construction '
-                'of the next stage of the Fabryka Park complex. We have '
-                'delivered a three-storey office-style building that serves as '
-                'a modern retail and service park. The investment has been '
-                'handed over, and tenants are currently carrying out fit-out '
+                'Logistik: Die größten Herausforderungen waren die komplexe Konstruktion, ein enger Zeitplan und die '
+                'Durchführung der Arbeiten in unmittelbarer Nähe eines aktiven Handelsparks und einer Bahnlinie.',
+          'en': 'As the General Contractor, we have completed the construction of the next stage of the Fabryka Park '
+                'complex. We have delivered a three-storey office-style building that serves as a modern retail and '
+                'service park. The investment has been handed over, and tenants are currently carrying out fit-out '
                 'works inside.\n'
                 '\n'
                 'Investment parameters:\n'
@@ -2858,28 +2765,22 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Structure: Mixed\n'
                 '\n'
                 'Tenants:\n'
-                'The main part of the building will be occupied by the '
-                'MEDICOVER medical facility and the XTREME FITNESS club. '
-                'Smaller premises – KROWA MAĆ, DR MATERAC and LIKE A PET – '
-                'complement the offering.\n'
+                'The main part of the building will be occupied by the MEDICOVER medical facility and the XTREME '
+                'FITNESS club. Smaller premises – KROWA MAĆ, DR MATERAC and LIKE A PET – complement the offering.\n'
                 '\n'
                 'Technology and Challenges:\n'
                 '\n'
-                'Façade: A modern façade made of expanded metal mesh was '
-                'used.\n'
+                'Façade: A modern façade made of expanded metal mesh was used.\n'
                 '\n'
-                'Ecology: Photovoltaic panels have been installed on the roof. '
-                'The facility is currently undergoing BREEAM certification.\n'
+                'Ecology: Photovoltaic panels have been installed on the roof. The facility is currently undergoing '
+                'BREEAM certification.\n'
                 '\n'
-                'Logistics: The biggest challenges were the complex structure, '
-                'a tight schedule and conducting works in the immediate '
-                'vicinity of an operating retail park and a railway line.',
-          'hu': 'Mint Fővállalkozó befejeztük a Fabryka Park komplexum '
-                'következő ütemének építését. Megvalósítottunk egy '
-                'háromszintes, irodai jellegű épülettömböt, amely modern '
-                'kereskedelmi-szolgáltató park funkcióját tölti be. A '
-                'beruházás átadásra került, jelenleg a bérlők fit-out '
-                'munkálatai zajlanak az épületen belül.\n'
+                'Logistics: The biggest challenges were the complex structure, a tight schedule and conducting works '
+                'in the immediate vicinity of an operating retail park and a railway line.',
+          'hu': 'Mint Fővállalkozó befejeztük a Fabryka Park komplexum következő ütemének építését. Megvalósítottunk '
+                'egy háromszintes, irodai jellegű épülettömböt, amely modern kereskedelmi-szolgáltató park funkcióját '
+                'tölti be. A beruházás átadásra került, jelenleg a bérlők fit-out munkálatai zajlanak az épületen '
+                'belül.\n'
                 '\n'
                 'A beruházás paraméterei:\n'
                 '\n'
@@ -2894,26 +2795,20 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Szerkezet: Vegyes\n'
                 '\n'
                 'Bérlők:\n'
-                'Az objektum fő részét a MEDICOVER egészségügyi intézmény és '
-                'az XTREME FITNESS klub foglalja el. A kínálatot kisebb '
-                'egységek egészítik ki: KROWA MAĆ, DR MATERAC és LIKE A PET.\n'
+                'Az objektum fő részét a MEDICOVER egészségügyi intézmény és az XTREME FITNESS klub foglalja el. A '
+                'kínálatot kisebb egységek egészítik ki: KROWA MAĆ, DR MATERAC és LIKE A PET.\n'
                 '\n'
                 'Technológia és kihívások:\n'
                 '\n'
-                'Homlokzat: Modern, nyújtott és vágott fémhálós homlokzatot '
-                'alkalmaztunk.\n'
+                'Homlokzat: Modern, nyújtott és vágott fémhálós homlokzatot alkalmaztunk.\n'
                 '\n'
-                'Ökológia: A tetőn napelemeket telepítettünk. Az objektum '
-                'jelenleg BREEAM tanúsítási folyamatban van.\n'
+                'Ökológia: A tetőn napelemeket telepítettünk. Az objektum jelenleg BREEAM tanúsítási folyamatban van.\n'
                 '\n'
-                'Logisztika: A legnagyobb kihívást az összetett szerkezet, a '
-                'feszített ütemezés és a munkavégzés volt egy működő '
-                'kereskedelmi park és vasútvonal közvetlen közelében.',
-          'sk': 'Ako Generálny dodávateľ sme dokončili výstavbu ďalšej etapy '
-                'komplexu Fabryka Park. Zrealizovali sme trojpodlažnú budovu '
-                'kancelárskeho charakteru, ktorá plní funkciu moderného '
-                'obchodno-služobného parku. Investícia bola odovzdaná a v '
-                'súčasnosti prebiehajú vo vnútri fit-out práce nájomcov.\n'
+                'Logisztika: A legnagyobb kihívást az összetett szerkezet, a feszített ütemezés és a munkavégzés volt '
+                'egy működő kereskedelmi park és vasútvonal közvetlen közelében.',
+          'sk': 'Ako Generálny dodávateľ sme dokončili výstavbu ďalšej etapy komplexu Fabryka Park. Zrealizovali sme '
+                'trojpodlažnú budovu kancelárskeho charakteru, ktorá plní funkciu moderného obchodno-služobného parku. '
+                'Investícia bola odovzdaná a v súčasnosti prebiehajú vo vnútri fit-out práce nájomcov.\n'
                 '\n'
                 'Parametre investície:\n'
                 '\n'
@@ -2928,21 +2823,17 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Konštrukcia: Zmiešaná\n'
                 '\n'
                 'Nájomcovia:\n'
-                'Hlavnú časť objektu obsadí zdravotnícke zariadenie MEDICOVER '
-                'a klub XTREME FITNESS. Ponuku dop�ňajú menšie prevádzky: '
-                'KROWA MAĆ, DR MATERAC a LIKE A PET.\n'
+                'Hlavnú časť objektu obsadí zdravotnícke zariadenie MEDICOVER a klub XTREME FITNESS. Ponuku dop�ňajú '
+                'menšie prevádzky: KROWA MAĆ, DR MATERAC a LIKE A PET.\n'
                 '\n'
                 'Technológia a výzvy:\n'
                 '\n'
-                'Fasáda: Bola použitá moderná fasáda z ťahaného a rezaného '
-                'kovového pletiva.\n'
+                'Fasáda: Bola použitá moderná fasáda z ťahaného a rezaného kovového pletiva.\n'
                 '\n'
-                'Ekológia: Na streche boli inštalované fotovoltické panely. '
-                'Objekt je v procese certifikácie BREEAM.\n'
+                'Ekológia: Na streche boli inštalované fotovoltické panely. Objekt je v procese certifikácie BREEAM.\n'
                 '\n'
-                'Logistika: Najväčšou výzvou bola zložitá konštrukcia, napätý '
-                'harmonogram a vykonávanie prác v bezprostrednej blízkosti '
-                'aktívneho obchodného parku a železničnej trate.'},
+                'Logistika: Najväčšou výzvou bola zložitá konštrukcia, napätý harmonogram a vykonávanie prác v '
+                'bezprostrednej blízkosti aktívneho obchodného parku a železničnej trate.'},
   't_s': {},
   't_t': {},
   'title': 'Fabryka Park Katowice',
@@ -2963,13 +2854,10 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.3461723,
   'logo': '/static/img/mbt/Projekt-bez-nazwy-16-737059f4.png',
   'longitude': 18.8076197,
-  'opis': 'Powierzchnia hali: 2333,43 m² Powierzchnia części '
-          'socjalno-biurowej: 449,93 m² Sieci i instalacje na potrzeby '
-          'realizowanej inwestycji Zagospodarowanie terenu Konstrukcja: '
-          'Konstrukcja hali w słupy żelbetowe prefabrykowane Konstrukcja dachu '
-          'hali stalowa Elewacja z płyt warstwowych Pokrycie dachu z izolacją '
-          'z PIR i pokryciem membraną PCV Konstrukcja budynku biurowego '
-          'mieszana (murowana, stropy i płyta żelbetowa)',
+  'opis': 'Powierzchnia hali: 2333,43 m² Powierzchnia części socjalno-biurowej: 449,93 m² Sieci i instalacje na '
+          'potrzeby realizowanej inwestycji Zagospodarowanie terenu Konstrukcja: Konstrukcja hali w słupy żelbetowe '
+          'prefabrykowane Konstrukcja dachu hali stalowa Elewacja z płyt warstwowych Pokrycie dachu z izolacją z PIR i '
+          'pokryciem membraną PCV Konstrukcja budynku biurowego mieszana (murowana, stropy i płyta żelbetowa)',
   'order': 6,
   'slug': 'eurosleeve-zabrze',
   'status': 'Zrealizowane',
@@ -2984,20 +2872,17 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Ocelová konstrukce střechy haly\n'
                 'Fasáda ze sendvičových panelů\n'
                 'Střešní krytina s izolací z PIR a membránou z PVC\n'
-                'Smíšená konstrukce kancelářské budovy (zděná, stropy a '
-                'železobetonová deska)',
+                'Smíšená konstrukce kancelářské budovy (zděná, stropy a železobetonová deska)',
           'de': 'Hallenfläche: 2.333,43 m²\n'
                 'Sozial- und Bürofläche: 449,93 m²\n'
-                'Netze und Installationen für die Anforderungen der '
-                'Investition\n'
+                'Netze und Installationen für die Anforderungen der Investition\n'
                 'Freiflächengestaltung\n'
                 'Konstruktion:\n'
                 'Hallenkonstruktion mit Stahlbeton-Fertigteilstützen\n'
                 'Stahldachkonstruktion der Halle\n'
                 'Fassade aus Sandwichpaneelen\n'
                 'Dacheindeckung mit PIR-Dämmung und PVC-Membran\n'
-                'Gemischte Konstruktion des Bürogebäudes (Mauerwerk, '
-                'Stahlbetondecken und -platte)',
+                'Gemischte Konstruktion des Bürogebäudes (Mauerwerk, Stahlbetondecken und -platte)',
           'en': 'Hall area: 2,333.43 m²\n'
                 'Social and office area: 449.93 m²\n'
                 'Networks and installations for the needs of the project\n'
@@ -3007,20 +2892,17 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Steel roof structure of the hall\n'
                 'Façade made of sandwich panels\n'
                 'Roof covering with PIR insulation and PVC membrane\n'
-                'Mixed structure of the office building (masonry, reinforced '
-                'concrete floors and slab)',
+                'Mixed structure of the office building (masonry, reinforced concrete floors and slab)',
           'hu': 'Csarnok területe: 2 333,43 m²\n'
                 'Szociális-irodai rész területe: 449,93 m²\n'
-                'Hálózatok és installációk a megvalósított beruházás igényei '
-                'szerint\n'
+                'Hálózatok és installációk a megvalósított beruházás igényei szerint\n'
                 'Telekrendezés\n'
                 'Szerkezet:\n'
                 'A csarnok szerkezete előregyártott vasbeton oszlopokkal\n'
                 'Acél tetőszerkezetű csarnok\n'
                 'Homlokzat szendvicspanelekből\n'
                 'Tetőfedés PIR hőszigeteléssel és PVC membránnal\n'
-                'Az irodaépület vegyes szerkezetű (falazott, vasbeton födémek '
-                'és lemez)',
+                'Az irodaépület vegyes szerkezetű (falazott, vasbeton födémek és lemez)',
           'sk': 'Plocha haly: 2 333,43 m²\n'
                 'Plocha sociálno-kancelárskej časti: 449,93 m²\n'
                 'Siete a inštalácie pre potreby realizovanej investície\n'
@@ -3030,8 +2912,7 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Oceľová konštrukcia strechy haly\n'
                 'Fasáda zo sendvičových panelov\n'
                 'Strešná krytina s izoláciou z PIR a membránou z PVC\n'
-                'Zmiešaná konštrukcia kancelárskej budovy (murovaná, stropy a '
-                'železobetónová doska)'},
+                'Zmiešaná konštrukcia kancelárskej budovy (murovaná, stropy a železobetónová doska)'},
   't_s': {},
   't_t': {},
   'title': 'Eurosleeve – Zabrze',
@@ -3042,134 +2923,88 @@ PROJECTS = [{'czas': '16 miesięcy',
               '/static/img/mbt/6-scaled-8c1b1f01.jpg',
               '/static/img/mbt/3-2-scaled-38947c85.jpg',
               '/static/img/mbt/1-scaled-f7ffa583.jpg'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/ed67bb1b2b03.webp',
+  'hero': '/static/img/mbt/realizacja-stokado.jpg',
   'latitude': 50.0621679,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/4070af82833b.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 20.0025483,
-  'opis': 'Specyfikacja Powierzchnia użytkowa (łącznie): ok. 4 631 m² , w tym: '
-          '• Powierzchnia pod najem: 3 230,17 m² • Powierzchnia komunikacji: 1 '
-          '296,71 m² • Powierzchnia pomieszczeń technicznych: 44,88 m² • '
-          'Powierzchnia biurowo-recepcyjna: 59,28 m² Powierzchnia terenu: 4 '
-          '150,00 m² Certyfikacja: BREEAM (Very Good) Układ budynku: Budynek '
-          'na planie pięcioboku (zbliżony do prostokąta ze ścięciem), '
-          'usytuowany w kierunku płd.-wsch. oraz płn.-zach. Dach płaski '
-          'Charakterystyczne przeszklenie na elewacji biegnące przez cztery '
-          'kondygnacje Infrastruktura techniczna: Instalacje OZE: Pompa '
-          'ciepła, fotowoltaika Podziemny zbiornik przeciwpożarowy oraz '
-          'zbiornik retencyjny na wody deszczowe Przebudowa istniejącej sieci '
-          'wodociągowej Konstrukcja: Część podziemna: Płyta fundamentowa '
-          'monolityczna, żelbetowa Część nadziemna: 5-kondygnacyjna, '
-          'żelbetowa, w układzie słupowo-płytowym Stropy płaskie z lokalnymi '
-          'pogrubieniami i belkami krawędziowymi Sztywność zapewniona przez '
-          'monolityczny trzon komunikacyjny oraz tarczę żelbetową przy ścianie '
-          'południowej Elewacja: Płyty warstwowe w układzie pionowym (kolor '
-          'szary i pomarańczowy) Fragmenty wykończone tynkiem w kolorze '
-          'antracytowym Zagospodarowanie terenu: Drogi wewnętrzne, chodniki i '
-          'miejsca postojowe Oświetlenie zewnętrzne',
+  'opis': 'Specyfikacja Powierzchnia użytkowa (łącznie): ok. 4 631 m² , w tym: • Powierzchnia pod najem: 3 230,17 m² • '
+          'Powierzchnia komunikacji: 1 296,71 m² • Powierzchnia pomieszczeń technicznych: 44,88 m² • Powierzchnia '
+          'biurowo-recepcyjna: 59,28 m² Powierzchnia terenu: 4 150,00 m² Certyfikacja: BREEAM (Very Good) Układ '
+          'budynku: Budynek na planie pięcioboku (zbliżony do prostokąta ze ścięciem), usytuowany w kierunku '
+          'płd.-wsch. oraz płn.-zach. Dach płaski Charakterystyczne przeszklenie na elewacji biegnące przez cztery '
+          'kondygnacje Infrastruktura techniczna: Instalacje OZE: Pompa ciepła, fotowoltaika Podziemny zbiornik '
+          'przeciwpożarowy oraz zbiornik retencyjny na wody deszczowe Przebudowa istniejącej sieci wodociągowej '
+          'Konstrukcja: Część podziemna: Płyta fundamentowa monolityczna, żelbetowa Część nadziemna: 5-kondygnacyjna, '
+          'żelbetowa, w układzie słupowo-płytowym Stropy płaskie z lokalnymi pogrubieniami i belkami krawędziowymi '
+          'Sztywność zapewniona przez monolityczny trzon komunikacyjny oraz tarczę żelbetową przy ścianie południowej '
+          'Elewacja: Płyty warstwowe w układzie pionowym (kolor szary i pomarańczowy) Fragmenty wykończone tynkiem w '
+          'kolorze antracytowym Zagospodarowanie terenu: Drogi wewnętrzne, chodniki i miejsca postojowe Oświetlenie '
+          'zewnętrzne',
   'order': 7,
   'slug': 'stokado-self-storage-krakow',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Specifikace Užitková plocha (celkem): cca 4 631 m², z toho: • '
-                'Plocha k pronájmu: 3 230,17 m² • Komunikační plocha: 1 296,71 '
-                'm² • Plocha technických místností: 44,88 m² • '
-                'Kancelářsko-recepční plocha: 59,28 m² Plocha pozemku: 4 '
-                '150,00 m² Certifikace: BREEAM (Very Good) Dispozice budovy: '
-                'Budova na pětiúhelníkovém půdorysu (blízký obdélníku se '
-                'seříznutím), orientovaná směrem JV a SZ. Plochá střecha. '
-                'Charakteristické prosklení na fasádě probíhající přes čtyři '
-                'podlaží. Technická infrastruktura: Instalace OZE: Tepelné '
-                'čerpadlo, fotovoltaika. Podzemní požární nádrž a retenční '
-                'nádrž na dešťovou vodu. Přestavba stávající vodovodní sítě. '
-                'Konstrukce: Podzemní část: Monolitická železobetonová '
-                'základová deska. Nadzemní část: 5podlažní, železobetonová, ve '
-                'sloupovo-deskovém uspořádání. Ploché stropy s lokálními '
-                'zesíleními a krajními nosníky. Tuhost zajištěna monolitickým '
-                'komunikačním jádrem a železobetonovou stěnou u jižní stěny. '
-                'Fasáda: Sendvičové panely ve svislém uspořádání (šedá a '
-                'oranžová barva). Fragmenty dokončené omítkou v antracitové '
-                'barvě. Úprava terénu: Vnitřní komunikace, chodníky a '
-                'parkovací stání. Venkovní osvětlení.',
-          'de': 'Spezifikation Nutzfläche (insgesamt): ca. 4.631 m², davon: • '
-                'Mietfläche: 3.230,17 m² • Verkehrsfläche: 1.296,71 m² • '
-                'Fläche der Technikräume: 44,88 m² • Büro- und Empfangsfläche: '
-                '59,28 m² Grundstücksfläche: 4.150,00 m² Zertifizierung: '
-                'BREEAM (Very Good) Gebäudegrundriss: Gebäude auf fünfeckigem '
-                'Grundriss (annahernd Rechteck mit Abschrägung), orientiert in '
-                'Richtung SO und NW. Flachdach. Charakteristische Verglasung '
-                'an der Fassade über vier Geschosse. Technische Infrastruktur: '
-                'EE-Anlagen: Wärmepumpe, Photovoltaik. Unterirdischer '
-                'Löschwassertank und Regenwasserrückhaltebecken. Umbau des '
-                'bestehenden Wasserversorgungsnetzes. Konstruktion: '
-                'Unterirdischer Teil: Monolithische '
-                'Stahlbeton-Fundamentplatte. Oberirdischer Teil: 5-geschossig, '
-                'Stahlbeton, in Stützen-Platten-Anordnung. Flache Decken mit '
-                'lokalen Verstärkungen und Randträgern. Steifigkeit durch '
-                'monolithischen Erschließungskern und Stahlbeton-Scheibe an '
-                'der Südwand. Fassade: Sandwichpaneele in vertikaler Anordnung '
-                '(grau und orange). Fragmente in anthrazitfarbenem Putz. '
-                'Geländegestaltung: Innenstraßen, Gehwege und Parkplätze. '
-                'Außenbeleuchtung.',
-          'en': 'Specification Usable area (total): approx. 4,631 m², '
-                'including: • Rental area: 3,230.17 m² • Circulation area: '
-                '1,296.71 m² • Technical rooms area: 44.88 m² • Office and '
-                'reception area: 59.28 m² Plot area: 4,150.00 m² '
-                'Certification: BREEAM (Very Good) Building layout: A '
-                'pentagonal building plan (close to a rectangle with a cut), '
-                'oriented towards SE and NW. Flat roof. Characteristic glazing '
-                'on the façade running through four storeys. Technical '
-                'infrastructure: RES installations: Heat pump, photovoltaics. '
-                'Underground fire water tank and rainwater retention tank. '
-                'Reconstruction of the existing water supply network. '
-                'Structure: Underground part: Monolithic reinforced concrete '
-                'foundation slab. Above-ground part: 5-storey, reinforced '
-                'concrete, in column-slab layout. Flat ceilings with local '
-                'thickenings and edge beams. Stiffness provided by a '
-                'monolithic communication core and a reinforced concrete '
-                'diaphragm at the south wall. Façade: Sandwich panels in a '
-                'vertical layout (grey and orange colour). Fragments finished '
-                'with anthracite-coloured plaster. Land development: Internal '
+  't_o': {'cs': 'Specifikace Užitková plocha (celkem): cca 4 631 m², z toho: • Plocha k pronájmu: 3 230,17 m² • '
+                'Komunikační plocha: 1 296,71 m² • Plocha technických místností: 44,88 m² • Kancelářsko-recepční '
+                'plocha: 59,28 m² Plocha pozemku: 4 150,00 m² Certifikace: BREEAM (Very Good) Dispozice budovy: Budova '
+                'na pětiúhelníkovém půdorysu (blízký obdélníku se seříznutím), orientovaná směrem JV a SZ. Plochá '
+                'střecha. Charakteristické prosklení na fasádě probíhající přes čtyři podlaží. Technická '
+                'infrastruktura: Instalace OZE: Tepelné čerpadlo, fotovoltaika. Podzemní požární nádrž a retenční '
+                'nádrž na dešťovou vodu. Přestavba stávající vodovodní sítě. Konstrukce: Podzemní část: Monolitická '
+                'železobetonová základová deska. Nadzemní část: 5podlažní, železobetonová, ve sloupovo-deskovém '
+                'uspořádání. Ploché stropy s lokálními zesíleními a krajními nosníky. Tuhost zajištěna monolitickým '
+                'komunikačním jádrem a železobetonovou stěnou u jižní stěny. Fasáda: Sendvičové panely ve svislém '
+                'uspořádání (šedá a oranžová barva). Fragmenty dokončené omítkou v antracitové barvě. Úprava terénu: '
+                'Vnitřní komunikace, chodníky a parkovací stání. Venkovní osvětlení.',
+          'de': 'Spezifikation Nutzfläche (insgesamt): ca. 4.631 m², davon: • Mietfläche: 3.230,17 m² • '
+                'Verkehrsfläche: 1.296,71 m² • Fläche der Technikräume: 44,88 m² • Büro- und Empfangsfläche: 59,28 m² '
+                'Grundstücksfläche: 4.150,00 m² Zertifizierung: BREEAM (Very Good) Gebäudegrundriss: Gebäude auf '
+                'fünfeckigem Grundriss (annahernd Rechteck mit Abschrägung), orientiert in Richtung SO und NW. '
+                'Flachdach. Charakteristische Verglasung an der Fassade über vier Geschosse. Technische Infrastruktur: '
+                'EE-Anlagen: Wärmepumpe, Photovoltaik. Unterirdischer Löschwassertank und Regenwasserrückhaltebecken. '
+                'Umbau des bestehenden Wasserversorgungsnetzes. Konstruktion: Unterirdischer Teil: Monolithische '
+                'Stahlbeton-Fundamentplatte. Oberirdischer Teil: 5-geschossig, Stahlbeton, in '
+                'Stützen-Platten-Anordnung. Flache Decken mit lokalen Verstärkungen und Randträgern. Steifigkeit durch '
+                'monolithischen Erschließungskern und Stahlbeton-Scheibe an der Südwand. Fassade: Sandwichpaneele in '
+                'vertikaler Anordnung (grau und orange). Fragmente in anthrazitfarbenem Putz. Geländegestaltung: '
+                'Innenstraßen, Gehwege und Parkplätze. Außenbeleuchtung.',
+          'en': 'Specification Usable area (total): approx. 4,631 m², including: • Rental area: 3,230.17 m² • '
+                'Circulation area: 1,296.71 m² • Technical rooms area: 44.88 m² • Office and reception area: 59.28 m² '
+                'Plot area: 4,150.00 m² Certification: BREEAM (Very Good) Building layout: A pentagonal building plan '
+                '(close to a rectangle with a cut), oriented towards SE and NW. Flat roof. Characteristic glazing on '
+                'the façade running through four storeys. Technical infrastructure: RES installations: Heat pump, '
+                'photovoltaics. Underground fire water tank and rainwater retention tank. Reconstruction of the '
+                'existing water supply network. Structure: Underground part: Monolithic reinforced concrete foundation '
+                'slab. Above-ground part: 5-storey, reinforced concrete, in column-slab layout. Flat ceilings with '
+                'local thickenings and edge beams. Stiffness provided by a monolithic communication core and a '
+                'reinforced concrete diaphragm at the south wall. Façade: Sandwich panels in a vertical layout (grey '
+                'and orange colour). Fragments finished with anthracite-coloured plaster. Land development: Internal '
                 'roads, pavements and parking spaces. Outdoor lighting.',
-          'hu': 'Specifikáció Hasznos alapterület (összesen): kb. 4 631 m², '
-                'ebből: • Bérbe adható terület: 3 230,17 m² • Közlekedési '
-                'terület: 1 296,71 m² • Műszaki helyiségek területe: 44,88 m² '
-                '• Iroda és recepció területe: 59,28 m² Telek területe: 4 '
-                '150,00 m² Tanúsítás: BREEAM (Very Good) Épület elrendezése: '
-                'Ötszögletű alaprajzú épület (téglalaphoz közeli levágással), '
-                'DK és ÉNy irányba tájolva. Lapos tető. Jellegzetes üvegezés a '
-                'homlokzaton, négy szinten átívelve. Műszaki infrastruktúra: '
-                'Megújuló energia berendezések: Hőszivattyú, napelemes '
-                'rendszer. Földalatti tűzivíz-tartály és esővíz-visszatartó '
-                'tartály. Meglévő vízellátó hálózat átépítése. Szerkezet: '
-                'Földalatti rész: Monolit vasbeton alaplemez. Föld feletti '
-                'rész: 5 szintes, vasbeton, oszlop-lemez elrendezésben. Lapos '
-                'födémek helyi vastagításokkal és szélső gerendákkal. A '
-                'merevséget monolitikus közlekedő mag és déli falnál lévő '
-                'vasbeton fal biztosítja. Homlokzat: Szendvicspanelek '
-                'függőleges elrendezésben (szürke és narancssárga szín). '
-                'Töredékek antracit színű vakolattal. Telekrendezés: Belső '
-                'utak, járdák és parkolóhelyek. Kültéri világítás.',
-          'sk': 'Špecifikácia Úžitková plocha (spolu): cca 4 631 m², z toho: • '
-                'Plocha na prenájom: 3 230,17 m² • Komunikačná plocha: 1 '
-                '296,71 m² • Plocha technických miestností: 44,88 m² • '
-                'Kancelársko-recepčná plocha: 59,28 m² Plocha pozemku: 4 '
-                '150,00 m² Certifikácia: BREEAM (Very Good) Dispozícia budovy: '
-                'Budova na päťuholníkovom pôdoryse (blízky obd�žniku so '
-                'skosením), orientovaná smerom JV a SZ. Plochá strecha. '
-                'Charakteristické presklenie na fasáde prebiehajúce cez štyri '
-                'podlažia. Technická infraštruktúra: Inštalácie OZE: Tepelné '
-                'čerpadlo, fotovoltika. Podzemný požiarny zásobník a retenčný '
-                'zásobník na dažďovú vodu. Prestavba existujúcej vodovodnej '
-                'siete. Konštrukcia: Podzemná časť: Monolitická železobetonová '
-                'základová doska. Nadzemná časť: 5-podlažná, železobetonová, v '
-                'stĺpovo-doskovom usporiadaní. Ploché stropy s lokálnymi '
-                'zhrubnutiami a krajnými nosníkmi. Tuhosť zabezpečená '
-                'monolitickým komunikačným jadrom a železobetónovou stenou pri '
-                'južnej stene. Fasáda: Sendvičové panely vo zvislom '
-                'usporiadaní (sivá a oranžová farba). Fragmenty dokončené '
-                'omietkou v antracitovej farbe. Úprava terénu: Vnútorné '
-                'komunikácie, chodníky a parkovacie miesta. Vonkajšie '
+          'hu': 'Specifikáció Hasznos alapterület (összesen): kb. 4 631 m², ebből: • Bérbe adható terület: 3 230,17 m² '
+                '• Közlekedési terület: 1 296,71 m² • Műszaki helyiségek területe: 44,88 m² • Iroda és recepció '
+                'területe: 59,28 m² Telek területe: 4 150,00 m² Tanúsítás: BREEAM (Very Good) Épület elrendezése: '
+                'Ötszögletű alaprajzú épület (téglalaphoz közeli levágással), DK és ÉNy irányba tájolva. Lapos tető. '
+                'Jellegzetes üvegezés a homlokzaton, négy szinten átívelve. Műszaki infrastruktúra: Megújuló energia '
+                'berendezések: Hőszivattyú, napelemes rendszer. Földalatti tűzivíz-tartály és esővíz-visszatartó '
+                'tartály. Meglévő vízellátó hálózat átépítése. Szerkezet: Földalatti rész: Monolit vasbeton alaplemez. '
+                'Föld feletti rész: 5 szintes, vasbeton, oszlop-lemez elrendezésben. Lapos födémek helyi '
+                'vastagításokkal és szélső gerendákkal. A merevséget monolitikus közlekedő mag és déli falnál lévő '
+                'vasbeton fal biztosítja. Homlokzat: Szendvicspanelek függőleges elrendezésben (szürke és narancssárga '
+                'szín). Töredékek antracit színű vakolattal. Telekrendezés: Belső utak, járdák és parkolóhelyek. '
+                'Kültéri világítás.',
+          'sk': 'Špecifikácia Úžitková plocha (spolu): cca 4 631 m², z toho: • Plocha na prenájom: 3 230,17 m² • '
+                'Komunikačná plocha: 1 296,71 m² • Plocha technických miestností: 44,88 m² • Kancelársko-recepčná '
+                'plocha: 59,28 m² Plocha pozemku: 4 150,00 m² Certifikácia: BREEAM (Very Good) Dispozícia budovy: '
+                'Budova na päťuholníkovom pôdoryse (blízky obd�žniku so skosením), orientovaná smerom JV a SZ. Plochá '
+                'strecha. Charakteristické presklenie na fasáde prebiehajúce cez štyri podlažia. Technická '
+                'infraštruktúra: Inštalácie OZE: Tepelné čerpadlo, fotovoltika. Podzemný požiarny zásobník a retenčný '
+                'zásobník na dažďovú vodu. Prestavba existujúcej vodovodnej siete. Konštrukcia: Podzemná časť: '
+                'Monolitická železobetonová základová doska. Nadzemná časť: 5-podlažná, železobetonová, v '
+                'stĺpovo-doskovom usporiadaní. Ploché stropy s lokálnymi zhrubnutiami a krajnými nosníkmi. Tuhosť '
+                'zabezpečená monolitickým komunikačným jadrom a železobetónovou stenou pri južnej stene. Fasáda: '
+                'Sendvičové panely vo zvislom usporiadaní (sivá a oranžová farba). Fragmenty dokončené omietkou v '
+                'antracitovej farbe. Úprava terénu: Vnútorné komunikácie, chodníky a parkovacie miesta. Vonkajšie '
                 'osvetlenie.'},
   't_s': {},
   't_t': {},
@@ -3186,16 +3021,12 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.075889,
   'logo': '/static/img/mbt/Projekt-bez-nazwy-8-4d387861.png',
   'longitude': 19.9411511,
-  'opis': 'Powierzchnia użytkowa:&nbsp; 1468,70 m² Wysokość hali:&nbsp; 8,72 m '
-          'Kubatura hali:&nbsp; 10 244 m³ Część biurowa '
-          'o&nbsp;powierzchni:&nbsp; 271,2 m² Parkingi i&nbsp;place manewrowe '
-          'Zbiornik przeciwpożarowy (PPOŻ) Rozbudowa i&nbsp;budowa '
-          'infrastruktury technicznej: Kanalizacja deszczowa ze zbiornikiem '
-          'retencyjnym Kanalizacja sanitarna z&nbsp;oczyszczalnią ścieków Sieć '
-          'grzewcza preizolowana Zagospodarowanie terenu wokół obiektu '
-          'Konstrukcja: Posadowienie bezpośrednio na stopach fundamentowych, '
-          'Konstrukcja hali wykonana w&nbsp;technologii prefabrykowanej '
-          'żelbetowej, dźwigary dachowe sprężone Obudowa hali z&nbsp;płyt '
+  'opis': 'Powierzchnia użytkowa:&nbsp; 1468,70 m² Wysokość hali:&nbsp; 8,72 m Kubatura hali:&nbsp; 10 244 m³ Część '
+          'biurowa o&nbsp;powierzchni:&nbsp; 271,2 m² Parkingi i&nbsp;place manewrowe Zbiornik przeciwpożarowy (PPOŻ) '
+          'Rozbudowa i&nbsp;budowa infrastruktury technicznej: Kanalizacja deszczowa ze zbiornikiem retencyjnym '
+          'Kanalizacja sanitarna z&nbsp;oczyszczalnią ścieków Sieć grzewcza preizolowana Zagospodarowanie terenu wokół '
+          'obiektu Konstrukcja: Posadowienie bezpośrednio na stopach fundamentowych, Konstrukcja hali wykonana '
+          'w&nbsp;technologii prefabrykowanej żelbetowej, dźwigary dachowe sprężone Obudowa hali z&nbsp;płyt '
           'warstwowych z&nbsp;rdzeniem z&nbsp;wełny skalnej',
   'order': 8,
   'slug': 'fronton-krakow',
@@ -3215,8 +3046,7 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Krajinářské úpravy okolí objektu\n'
                 'Konstrukce:\n'
                 'Přímé založení na patkových základech,\n'
-                'Konstrukce haly provedena v prefabrikované železobetonové '
-                'technologii, střešní vazníky předpjaté\n'
+                'Konstrukce haly provedena v prefabrikované železobetonové technologii, střešní vazníky předpjaté\n'
                 'Opláštění haly ze sendvičových panelů s jádrem ze skalní vlny',
           'de': 'Nutzfläche: 1.468,70 m²\n'
                 'Hallenhöhe: 8,72 m\n'
@@ -3231,10 +3061,8 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Gestaltung der Außenanlagen rund um das Gebäude\n'
                 'Konstruktion:\n'
                 'Direkte Gründung auf Einzelfundamenten,\n'
-                'Hallenkonstruktion in Stahlbeton-Fertigteilbauweise, '
-                'vorgespannte Dachbinder\n'
-                'Hallenverkleidung aus Sandwichpaneelen mit Kern aus '
-                'Steinwolle',
+                'Hallenkonstruktion in Stahlbeton-Fertigteilbauweise, vorgespannte Dachbinder\n'
+                'Hallenverkleidung aus Sandwichpaneelen mit Kern aus Steinwolle',
           'en': 'Usable area: 1,468.70 m²\n'
                 'Hall height: 8.72 m\n'
                 'Hall volume: 10,244 m³\n'
@@ -3248,8 +3076,7 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Landscaping of the area around the building\n'
                 'Structure:\n'
                 'Direct foundation on pad footings,\n'
-                'Hall structure made using precast reinforced concrete '
-                'technology, prestressed roof beams\n'
+                'Hall structure made using precast reinforced concrete technology, prestressed roof beams\n'
                 'Hall cladding made of sandwich panels with a rock-wool core',
           'hu': 'Hasznos alapterület: 1 468,70 m²\n'
                 'Csarnokmagasság: 8,72 m\n'
@@ -3264,8 +3091,7 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Az épület környezetének rendezése\n'
                 'Szerkezet:\n'
                 'Közvetlen alapozás pontalapokon,\n'
-                'A csarnok szerkezete előregyártott vasbeton technológiával '
-                'készült, feszített tetőgerendák\n'
+                'A csarnok szerkezete előregyártott vasbeton technológiával készült, feszített tetőgerendák\n'
                 'A csarnok burkolata kőzetgyapot magos szendvicspanelekből',
           'sk': 'Úžitková plocha: 1 468,70 m²\n'
                 'Výška haly: 8,72 m\n'
@@ -3280,30 +3106,21 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Krajinné úpravy okolia objektu\n'
                 'Konštrukcia:\n'
                 'Priame založenie na pätkových základoch,\n'
-                'Konštrukcia haly vyhotovená v prefabrikovanej železobetónovej '
-                'technológii, strešné väzníky predpäté\n'
-                'Opláštenie haly zo sendvičových panelov s jadrom zo skalnej '
-                'vlny'},
+                'Konštrukcia haly vyhotovená v prefabrikovanej železobetónovej technológii, strešné väzníky predpäté\n'
+                'Opláštenie haly zo sendvičových panelov s jadrom zo skalnej vlny'},
   't_s': {},
   't_t': {},
   'title': 'Fronton – Kraków',
   'type': 'realizacja-zrealizow'},
  {'czas': '8 miesięcy',
   'formula': 'Zaprojektuj-wybuduj',
-  'gallery': ['/static/img/mbt/mbt-browar-raciborz-8-03eeadf7.jpg',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/23f653996b58.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/942c1ffca3a1.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/6097dd073ebc.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/90a36e61fa56.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/b8ef1178df1c.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/830528646291.webp'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/7de95267e6b8.webp',
+  'gallery': ['/static/img/mbt/mbt-browar-raciborz-8-03eeadf7.jpg'],
+  'hero': '/static/img/mbt/mbt-browar-raciborz-8-03eeadf7.jpg',
   'latitude': 50.0965337,
   'logo': '/static/img/mbt/logo-browar-3708c41b.jpg',
   'longitude': 18.2200745,
-  'opis': 'Hala magazynowa w konstrukcji stalowej Obudowa z płyt warstwowych '
-          'Powierzchnia posadzki: około 400,0 m² Posadowienie bezpośrednie z '
-          'lokalną wymianą gruntu',
+  'opis': 'Hala magazynowa w konstrukcji stalowej Obudowa z płyt warstwowych Powierzchnia posadzki: około 400,0 m² '
+          'Posadowienie bezpośrednie z lokalną wymianą gruntu',
   'order': 9,
   'slug': 'browar-zamkowy-raciborz',
   'status': 'Zrealizowane',
@@ -3346,19 +3163,14 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 52.2177584,
   'logo': '/static/img/mbt/logo-stokado-CMYK.ai_01-scaled-a32efdb4.jpg',
   'longitude': 20.895744,
-  'opis': 'Specyfikacja Powierzchnia użytkowa: 6818,21 m² Powierzchnia terenu: '
-          '9142,00 m² Certyfikacja: BREEAM (Very Good) Układ budynku: 3 '
-          'kondygnacje naziemne oraz podpiwniczenie, budynek kryty dachem '
-          'płaskim Przeznaczenie i zagospodarowanie terenu: Obiekt usługowy '
-          'typu self-storage (wynajem powierzchni do przechowywania dla '
-          'klientów indywidualnych) Działalność wspierająca nowoczesną '
-          'zabudowę wielorodzinną (dodatkowa przestrzeń magazynowa dla '
-          'mieszkańców osiedli) Konstrukcja: Konstrukcja żelbetowa, słupowa '
-          'Sztywność przestrzenna zapewniona przez trzony żelbetowe klatek '
-          'schodowych oraz szachty wind ze ścianami ogniowymi Elewacja: '
-          'Zasadnicza część elewacji wykonana z płyt warstwowych, z '
-          'wypełnieniem z wełny mineralnej Systemowe obróbki, uszczelnienia i '
-          'elementy montażowe',
+  'opis': 'Specyfikacja Powierzchnia użytkowa: 6818,21 m² Powierzchnia terenu: 9142,00 m² Certyfikacja: BREEAM (Very '
+          'Good) Układ budynku: 3 kondygnacje naziemne oraz podpiwniczenie, budynek kryty dachem płaskim Przeznaczenie '
+          'i zagospodarowanie terenu: Obiekt usługowy typu self-storage (wynajem powierzchni do przechowywania dla '
+          'klientów indywidualnych) Działalność wspierająca nowoczesną zabudowę wielorodzinną (dodatkowa przestrzeń '
+          'magazynowa dla mieszkańców osiedli) Konstrukcja: Konstrukcja żelbetowa, słupowa Sztywność przestrzenna '
+          'zapewniona przez trzony żelbetowe klatek schodowych oraz szachty wind ze ścianami ogniowymi Elewacja: '
+          'Zasadnicza część elewacji wykonana z płyt warstwowych, z wypełnieniem z wełny mineralnej Systemowe obróbki, '
+          'uszczelnienia i elementy montażowe',
   'order': 11,
   'slug': 'stokado-self-storage-warszawa-bemowo',
   'status': 'Zrealizowane',
@@ -3368,96 +3180,80 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Užitková plocha: 6 818,21 m²\n'
                 'Plocha pozemku: 9 142,00 m²\n'
                 'Certifikace: BREEAM (Very Good)\n'
-                'Dispozice budovy: 3 nadzemní podlaží a podsklepení, budova '
-                'krytá plochou střechou\n'
+                'Dispozice budovy: 3 nadzemní podlaží a podsklepení, budova krytá plochou střechou\n'
                 'Určení a využití pozemku:\n'
-                'Služební objekt typu self-storage (pronájem skladovacích '
-                'prostor individuálním zákazníkům)\n'
-                'Činnost podporující moderní vícepodlažní bytovou výstavbu '
-                '(dodatečný skladovací prostor pro obyvatele sídlišť)\n'
+                'Služební objekt typu self-storage (pronájem skladovacích prostor individuálním zákazníkům)\n'
+                'Činnost podporující moderní vícepodlažní bytovou výstavbu (dodatečný skladovací prostor pro obyvatele '
+                'sídlišť)\n'
                 'Konstrukce:\n'
                 'Železobetonová sloupová konstrukce\n'
-                'Prostorová tuhost zajištěna železobetonovými jádry schodišť a '
-                'šachtami výtahů s požárně odolnými stěnami\n'
+                'Prostorová tuhost zajištěna železobetonovými jádry schodišť a šachtami výtahů s požárně odolnými '
+                'stěnami\n'
                 'Fasáda:\n'
-                'Hlavní část fasády provedena ze sendvičových panelů s výplní '
-                'z minerální vlny\n'
+                'Hlavní část fasády provedena ze sendvičových panelů s výplní z minerální vlny\n'
                 'Systémové oplechování, těsnění a montážní prvky',
           'de': 'Spezifikation\n'
                 'Nutzfläche: 6.818,21 m²\n'
                 'Grundstücksfläche: 9.142,00 m²\n'
                 'Zertifizierung: BREEAM (Very Good)\n'
-                'Gebäudestruktur: 3 Obergeschosse sowie ein Untergeschoss, '
-                'Flachdach\n'
+                'Gebäudestruktur: 3 Obergeschosse sowie ein Untergeschoss, Flachdach\n'
                 'Nutzung und Erschließung:\n'
-                'Gewerbliche Anlage vom Typ Self-Storage (Vermietung von '
-                'Lagerflächen an Privatkunden)\n'
-                'Unterstützung des modernen Geschosswohnungsbaus (zusätzliche '
-                'Lagerfläche für die Bewohner der Siedlungen)\n'
+                'Gewerbliche Anlage vom Typ Self-Storage (Vermietung von Lagerflächen an Privatkunden)\n'
+                'Unterstützung des modernen Geschosswohnungsbaus (zusätzliche Lagerfläche für die Bewohner der '
+                'Siedlungen)\n'
                 'Konstruktion:\n'
                 'Stützenbauweise in Stahlbeton\n'
-                'Räumliche Steifigkeit durch Stahlbeton-Treppenhauskerne und '
-                'Aufzugsschächte mit Brandwänden\n'
+                'Räumliche Steifigkeit durch Stahlbeton-Treppenhauskerne und Aufzugsschächte mit Brandwänden\n'
                 'Fassade:\n'
-                'Hauptteil der Fassade aus Sandwichpaneelen mit '
-                'Mineralwollkern\n'
+                'Hauptteil der Fassade aus Sandwichpaneelen mit Mineralwollkern\n'
                 'System-Verblechungen, Dichtungen und Montageelemente',
           'en': 'Specification\n'
                 'Usable area: 6,818.21 m²\n'
                 'Land area: 9,142.00 m²\n'
                 'Certification: BREEAM (Very Good)\n'
-                'Building layout: 3 above-ground storeys plus a basement, '
-                'building covered by a flat roof\n'
+                'Building layout: 3 above-ground storeys plus a basement, building covered by a flat roof\n'
                 'Purpose and site development:\n'
-                'Service facility of the self-storage type (rental of storage '
-                'space to individual customers)\n'
-                'Operations supporting modern multi-family housing development '
-                '(additional storage space for residents of the estates)\n'
+                'Service facility of the self-storage type (rental of storage space to individual customers)\n'
+                'Operations supporting modern multi-family housing development (additional storage space for residents '
+                'of the estates)\n'
                 'Structure:\n'
                 'Reinforced concrete column structure\n'
-                'Spatial stiffness provided by reinforced concrete stairwell '
-                'cores and lift shafts with fire-rated walls\n'
+                'Spatial stiffness provided by reinforced concrete stairwell cores and lift shafts with fire-rated '
+                'walls\n'
                 'Façade:\n'
-                'Main part of the façade made of sandwich panels with mineral '
-                'wool core\n'
+                'Main part of the façade made of sandwich panels with mineral wool core\n'
                 'System flashings, sealants and assembly components',
           'hu': 'Specifikáció\n'
                 'Hasznos alapterület: 6 818,21 m²\n'
                 'Telek területe: 9 142,00 m²\n'
                 'Tanúsítás: BREEAM (Very Good)\n'
-                'Épület elrendezése: 3 föld feletti szint és pinceszint, '
-                'lapostetős épület\n'
+                'Épület elrendezése: 3 föld feletti szint és pinceszint, lapostetős épület\n'
                 'Rendeltetés és telekhasználat:\n'
-                'Önkiszolgáló raktár (self-storage) típusú szolgáltató '
-                'létesítmény (tárolóterület bérbeadása magánszemélyeknek)\n'
-                'A modern többlakásos lakóépületeket kiegészítő tevékenység '
-                '(kiegészítő tárolóterület a lakótelepi lakók számára)\n'
+                'Önkiszolgáló raktár (self-storage) típusú szolgáltató létesítmény (tárolóterület bérbeadása '
+                'magánszemélyeknek)\n'
+                'A modern többlakásos lakóépületeket kiegészítő tevékenység (kiegészítő tárolóterület a lakótelepi '
+                'lakók számára)\n'
                 'Szerkezet:\n'
                 'Vasbeton pillérvázas szerkezet\n'
-                'Térbeli merevséget a vasbeton lépcsőház-magok és a tűzgátló '
-                'falú liftaknák biztosítják\n'
+                'Térbeli merevséget a vasbeton lépcsőház-magok és a tűzgátló falú liftaknák biztosítják\n'
                 'Homlokzat:\n'
-                'A homlokzat fő része ásványgyapot kitöltésű '
-                'szendvicspanelekből készül\n'
+                'A homlokzat fő része ásványgyapot kitöltésű szendvicspanelekből készül\n'
                 'Rendszer-illesztések, tömítések és szerelési elemek',
           'sk': 'Špecifikácia\n'
                 'Úžitková plocha: 6 818,21 m²\n'
                 'Plocha pozemku: 9 142,00 m²\n'
                 'Certifikácia: BREEAM (Very Good)\n'
-                'Dispozícia budovy: 3 nadzemné podlažia a podpivničenie, '
-                'budova krytá plochou strechou\n'
+                'Dispozícia budovy: 3 nadzemné podlažia a podpivničenie, budova krytá plochou strechou\n'
                 'Určenie a využitie pozemku:\n'
-                'Služobný objekt typu self-storage (prenájom skladovacích '
-                'priestorov individuálnym zákazníkom)\n'
-                'Činnosť podporujúca modernú viacpodlažnú bytovú výstavbu '
-                '(dodatočný skladovací priestor pre obyvateľov sídlisk)\n'
+                'Služobný objekt typu self-storage (prenájom skladovacích priestorov individuálnym zákazníkom)\n'
+                'Činnosť podporujúca modernú viacpodlažnú bytovú výstavbu (dodatočný skladovací priestor pre '
+                'obyvateľov sídlisk)\n'
                 'Konštrukcia:\n'
                 'Železobetónová stĺpová konštrukcia\n'
-                'Priestorová tuhosť zabezpečená železobetónovými jadrami '
-                'schodísk a šachtami výťahov s požiarne odolnými stenami\n'
+                'Priestorová tuhosť zabezpečená železobetónovými jadrami schodísk a šachtami výťahov s požiarne '
+                'odolnými stenami\n'
                 'Fasáda:\n'
-                'Hlavná časť fasády vyhotovená zo sendvičových panelov s '
-                'výplňou z minerálnej vlny\n'
+                'Hlavná časť fasády vyhotovená zo sendvičových panelov s výplňou z minerálnej vlny\n'
                 'Systémové oplechovanie, tesnenia a montážne prvky'},
   't_s': {},
   't_t': {},
@@ -3470,193 +3266,131 @@ PROJECTS = [{'czas': '16 miesięcy',
               '/static/img/mbt/Huber-4-scaled-9c017841.jpg',
               '/static/img/mbt/Huber-3-scaled-9bd9b813.jpg',
               '/static/img/mbt/Huber-2-scaled-0183eebd.jpg',
-              '/static/img/mbt/Huber-1-scaled-1d0326ab.jpg',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/8d8dcfd2b3c9.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/170c3c473338.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/902daf2e9102.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/9f53bfa208ce.webp'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/1d2cd76b899f.webp',
+              '/static/img/mbt/Huber-1-scaled-1d0326ab.jpg'],
+  'hero': '/static/img/mbt/Huber-1-scaled-1d0326ab.jpg',
   'latitude': 50.1304881,
   'logo': '/static/img/mbt/HS_Logo_blue-scaled-c772a155.jpg',
   'longitude': 19.685079,
-  'opis': 'Powierzchnia użytkowa: 3002 m² Wysokość hali: 7,5 m Kubatura hali: '
-          '19 300 m³ Obciążenie ogniowe, nie przekraczające 500MJ/m² '
-          'Dwukondygnacyjny budynek biurowy o powierzchni 600m² Parkingi i '
-          'place manewrowe Zagospodarowanie terenu wokół obiektu Konstrukcja: '
-          'posadowienie bezpośrednio na płycie fundamentowej, żelbetowe w '
-          'technologii betonu wodoszczelnego konstrukcja nośna obiektu '
-          '„mieszana” (prefabrykowane słupy betonowe, konstrukcja dachu '
-          'stalowa)',
+  'opis': 'Powierzchnia użytkowa: 3002 m² Wysokość hali: 7,5 m Kubatura hali: 19 300 m³ Obciążenie ogniowe, nie '
+          'przekraczające 500MJ/m² Dwukondygnacyjny budynek biurowy o powierzchni 600m² Parkingi i place manewrowe '
+          'Zagospodarowanie terenu wokół obiektu Konstrukcja: posadowienie bezpośrednio na płycie fundamentowej, '
+          'żelbetowe w technologii betonu wodoszczelnego konstrukcja nośna obiektu „mieszana” (prefabrykowane słupy '
+          'betonowe, konstrukcja dachu stalowa)',
   'order': 12,
   'slug': 'huber-suhner-pisary',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Užitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 '
-                'm³ Požární zatížení nepřekračující 500 MJ/m² Dvoupodlažní '
-                'kancelářská budova o ploše 600 m² Parkoviště a manévrovací '
-                'plochy Úprava terénu kolem objektu Konstrukce: založení přímo '
-                'na základové desce, železobetonová v technologii '
-                'vodostavebního betonu; nosná konstrukce objektu „smíšená" '
-                '(prefabrikované betonové sloupy, ocelová konstrukce střechy)',
-          'de': 'Nutzfläche: 3.002 m² Hallenhöhe: 7,5 m Volumen: 19.300 m³ '
-                'Brandlast, die 500 MJ/m² nicht überschreitet Zweigeschossiges '
-                'Bürogebäude mit einer Fläche von 600 m² Parkplätze und '
-                'Rangierflächen Gestaltung des Geländes um das Objekt '
-                'Konstruktion: Gründung direkt auf einer Fundamentplatte, '
-                'Stahlbeton in WU-Beton-Technologie; Tragkonstruktion des '
-                'Objekts „gemischt" (vorgefertigte Betonstützen, Stahltragwerk '
-                'des Daches)',
-          'en': 'Usable area: 3,002 m² Hall height: 7.5 m Volume: 19,300 m³ '
-                'Fire load not exceeding 500 MJ/m² Two-storey office building '
-                'with an area of 600 m² Parking lots and manoeuvring areas '
-                'Land development around the facility Structure: foundation '
-                'directly on a foundation slab, reinforced concrete in '
-                'waterproof concrete technology; load-bearing structure of the '
-                'facility is "mixed" (prefabricated concrete columns, steel '
-                'roof structure)',
-          'hu': 'Hasznos alapterület: 3002 m² Csarnok magassága: 7,5 m '
-                'Térfogat: 19 300 m³ Tűzterhelés, nem haladja meg az 500 '
-                'MJ/m²-t Kétszintes irodaépület 600 m² alapterülettel Parkolók '
-                'és manőverezési területek A telek rendezése az objektum körül '
-                'Szerkezet: alapozás közvetlenül alaplemezre, vasbeton vízzáró '
-                'beton technológiával; az objektum teherhordó szerkezete '
-                '„vegyes" (előregyártott betonoszlopok, acél tetőszerkezet)',
-          'sk': 'Úžitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 '
-                'm³ Požiarne zaťaženie neprekračujúce 500 MJ/m² Dvojpodlažná '
-                'kancelárska budova s plochou 600 m² Parkoviská a manévrovacie '
-                'plochy Úprava terénu okolo objektu Konštrukcia: založenie '
-                'priamo na základovej doske, železobetónová v technológii '
-                'vodostavebného betónu; nosná konštrukcia objektu „zmiešaná" '
-                '(prefabrikované betónové stĺpy, oceľová konštrukcia strechy)'},
+  't_o': {'cs': 'Užitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 m³ Požární zatížení nepřekračující 500 '
+                'MJ/m² Dvoupodlažní kancelářská budova o ploše 600 m² Parkoviště a manévrovací plochy Úprava terénu '
+                'kolem objektu Konstrukce: založení přímo na základové desce, železobetonová v technologii '
+                'vodostavebního betonu; nosná konstrukce objektu „smíšená" (prefabrikované betonové sloupy, ocelová '
+                'konstrukce střechy)',
+          'de': 'Nutzfläche: 3.002 m² Hallenhöhe: 7,5 m Volumen: 19.300 m³ Brandlast, die 500 MJ/m² nicht '
+                'überschreitet Zweigeschossiges Bürogebäude mit einer Fläche von 600 m² Parkplätze und Rangierflächen '
+                'Gestaltung des Geländes um das Objekt Konstruktion: Gründung direkt auf einer Fundamentplatte, '
+                'Stahlbeton in WU-Beton-Technologie; Tragkonstruktion des Objekts „gemischt" (vorgefertigte '
+                'Betonstützen, Stahltragwerk des Daches)',
+          'en': 'Usable area: 3,002 m² Hall height: 7.5 m Volume: 19,300 m³ Fire load not exceeding 500 MJ/m² '
+                'Two-storey office building with an area of 600 m² Parking lots and manoeuvring areas Land development '
+                'around the facility Structure: foundation directly on a foundation slab, reinforced concrete in '
+                'waterproof concrete technology; load-bearing structure of the facility is "mixed" (prefabricated '
+                'concrete columns, steel roof structure)',
+          'hu': 'Hasznos alapterület: 3002 m² Csarnok magassága: 7,5 m Térfogat: 19 300 m³ Tűzterhelés, nem haladja '
+                'meg az 500 MJ/m²-t Kétszintes irodaépület 600 m² alapterülettel Parkolók és manőverezési területek A '
+                'telek rendezése az objektum körül Szerkezet: alapozás közvetlenül alaplemezre, vasbeton vízzáró beton '
+                'technológiával; az objektum teherhordó szerkezete „vegyes" (előregyártott betonoszlopok, acél '
+                'tetőszerkezet)',
+          'sk': 'Úžitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 m³ Požiarne zaťaženie neprekračujúce '
+                '500 MJ/m² Dvojpodlažná kancelárska budova s plochou 600 m² Parkoviská a manévrovacie plochy Úprava '
+                'terénu okolo objektu Konštrukcia: založenie priamo na základovej doske, železobetónová v technológii '
+                'vodostavebného betónu; nosná konštrukcia objektu „zmiešaná" (prefabrikované betónové stĺpy, oceľová '
+                'konštrukcia strechy)'},
   't_s': {},
   't_t': {},
   'title': 'Huber + Suhner – Pisary',
   'type': 'realizacja-zrealizow'},
  {'czas': '10 miesięcy',
   'formula': 'Zaprojektuj-wybuduj',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/eeec5134af66.webp',
-              '/static/img/mbt/jpg-4-ecfca2a2.jpg',
+  'gallery': ['/static/img/mbt/jpg-4-ecfca2a2.jpg',
               '/static/img/mbt/jpg-16-111-17362cd9.jpg',
               '/static/img/mbt/jpg-55-453122db.jpg'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/366af5fc0ffe.webp',
+  'hero': '/static/img/mbt/realizacja-euronova.jpg',
   'latitude': 50.0235169,
   'logo': '/static/img/mbt/eu_logo-scaled-9014591f.jpg',
   'longitude': 20.0861011,
-  'opis': 'Konstrukcja: budynek produkcyjny w technologii prefabrykowanej '
-          'budynek biurowy wykonany w pełnym żelbecie Elewacja: płyty '
-          'warstwowe na części przemysłowej technologia lekka-mokra na części '
-          'biurowej Dach: hala produkcyjna: kratownice, blacha trapezowa, '
-          'izolacja, membrana część biurowa: klasyczny stropodach, izolacja, '
-          'membrana Wnętrza: industrialne, surowe wykończenia, odsłonięte '
-          'instalacje, beton na stropach Ogrzewanie: technologia nadmuchowa '
-          'Podłogi: gres oraz wykładzina w wybranych przestrzeniach',
+  'opis': 'Konstrukcja: budynek produkcyjny w technologii prefabrykowanej budynek biurowy wykonany w pełnym żelbecie '
+          'Elewacja: płyty warstwowe na części przemysłowej technologia lekka-mokra na części biurowej Dach: hala '
+          'produkcyjna: kratownice, blacha trapezowa, izolacja, membrana część biurowa: klasyczny stropodach, '
+          'izolacja, membrana Wnętrza: industrialne, surowe wykończenia, odsłonięte instalacje, beton na stropach '
+          'Ogrzewanie: technologia nadmuchowa Podłogi: gres oraz wykładzina w wybranych przestrzeniach',
   'order': 13,
   'slug': 'euronova-kokotow-gm-wieliczka',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Konstrukce: výrobní budova v prefabrikované technologii; '
-                'kancelářská budova provedena v plném železobetonu. Fasáda: '
-                'sendvičové panely v průmyslové části; lehká mokrá technologie '
-                'v kancelářské části. Střecha: výrobní hala: příhradové '
-                'vazníky, trapézový plech, izolace, membrána; kancelářská '
-                'část: klasický plochý střešní plášť, izolace, membrána. '
-                'Interiéry: industriální, surové povrchové úpravy, odhalené '
-                'instalace, beton na stropech. Vytápění: technologie '
-                'teplovzdušného ofukování. Podlahy: slinutá dlažba a koberce '
-                've vybraných prostorech.',
-          'de': 'Konstruktion: Produktionsgebäude in Fertigteil-Bauweise; '
-                'Bürogebäude in Massiv-Stahlbetonbauweise. Fassade: '
-                'Sandwichpaneele im industriellen Teil; '
-                'Leichtbau-Nassputz-Technologie im Büroteil. Dach: '
-                'Produktionshalle: Fachwerkbinder, Trapezblech, Dämmung, '
-                'Membran; Büroteil: klassisches Flachdach, Dämmung, Membran. '
-                'Innenräume: industriell, rohe Oberflächen, sichtbare '
-                'Installationen, Beton an den Decken. Heizung: '
-                'Luftumwälztechnik. Böden: Feinsteinzeug und Teppichboden in '
-                'ausgewählten Bereichen.',
-          'en': 'Structure: production building in precast technology; office '
-                'building executed entirely in reinforced concrete. Façade: '
-                'sandwich panels on the industrial section; lightweight-wet '
-                'technology on the office section. Roof: production hall: '
-                'trusses, trapezoidal sheet, insulation, membrane; office '
-                'section: classic flat roof, insulation, membrane. Interiors: '
-                'industrial, raw finishes, exposed installations, concrete on '
-                'ceilings. Heating: blown-air technology. Floors: stoneware '
-                'tiles and carpet in selected areas.',
-          'hu': 'Szerkezet: előre gyártott technológiájú gyártócsarnok; teljes '
-                'vasbeton szerkezetű irodaház. Homlokzat: szendvicspanelek az '
-                'ipari részen; könnyű-nedves technológia az irodai részen. '
-                'Tető: gyártócsarnok: rácsos tartók, trapézlemez, szigetelés, '
-                'membrán; irodai rész: klasszikus lapostető, szigetelés, '
-                'membrán. Belső terek: ipari, nyers felületek, látható '
-                'telepítések, beton a födémeken. Fűtés: befúvásos technológia. '
-                'Padlók: kőporcelán és szőnyegpadló a kiválasztott terekben.',
-          'sk': 'Konštrukcia: výrobná budova v prefabrikovanej technológii; '
-                'kancelárska budova realizovaná v plnom železobetóne. Fasáda: '
-                'sendvičové panely v priemyselnej časti; ľahká mokrá '
-                'technológia v kancelárskej časti. Strecha: výrobná hala: '
-                'priehradové väzníky, trapézový plech, izolácia, membrána; '
-                'kancelárska časť: klasický plochý strešný plášť, izolácia, '
-                'membrána. Interiéry: industriálne, surové povrchové úpravy, '
-                'odhalené inštalácie, betón na stropoch. Vykurovanie: '
-                'technológia teplovzdušného fúkania. Podlahy: slinutá dlažba a '
-                'koberce vo vybraných priestoroch.'},
+  't_o': {'cs': 'Konstrukce: výrobní budova v prefabrikované technologii; kancelářská budova provedena v plném '
+                'železobetonu. Fasáda: sendvičové panely v průmyslové části; lehká mokrá technologie v kancelářské '
+                'části. Střecha: výrobní hala: příhradové vazníky, trapézový plech, izolace, membrána; kancelářská '
+                'část: klasický plochý střešní plášť, izolace, membrána. Interiéry: industriální, surové povrchové '
+                'úpravy, odhalené instalace, beton na stropech. Vytápění: technologie teplovzdušného ofukování. '
+                'Podlahy: slinutá dlažba a koberce ve vybraných prostorech.',
+          'de': 'Konstruktion: Produktionsgebäude in Fertigteil-Bauweise; Bürogebäude in Massiv-Stahlbetonbauweise. '
+                'Fassade: Sandwichpaneele im industriellen Teil; Leichtbau-Nassputz-Technologie im Büroteil. Dach: '
+                'Produktionshalle: Fachwerkbinder, Trapezblech, Dämmung, Membran; Büroteil: klassisches Flachdach, '
+                'Dämmung, Membran. Innenräume: industriell, rohe Oberflächen, sichtbare Installationen, Beton an den '
+                'Decken. Heizung: Luftumwälztechnik. Böden: Feinsteinzeug und Teppichboden in ausgewählten Bereichen.',
+          'en': 'Structure: production building in precast technology; office building executed entirely in reinforced '
+                'concrete. Façade: sandwich panels on the industrial section; lightweight-wet technology on the office '
+                'section. Roof: production hall: trusses, trapezoidal sheet, insulation, membrane; office section: '
+                'classic flat roof, insulation, membrane. Interiors: industrial, raw finishes, exposed installations, '
+                'concrete on ceilings. Heating: blown-air technology. Floors: stoneware tiles and carpet in selected '
+                'areas.',
+          'hu': 'Szerkezet: előre gyártott technológiájú gyártócsarnok; teljes vasbeton szerkezetű irodaház. '
+                'Homlokzat: szendvicspanelek az ipari részen; könnyű-nedves technológia az irodai részen. Tető: '
+                'gyártócsarnok: rácsos tartók, trapézlemez, szigetelés, membrán; irodai rész: klasszikus lapostető, '
+                'szigetelés, membrán. Belső terek: ipari, nyers felületek, látható telepítések, beton a födémeken. '
+                'Fűtés: befúvásos technológia. Padlók: kőporcelán és szőnyegpadló a kiválasztott terekben.',
+          'sk': 'Konštrukcia: výrobná budova v prefabrikovanej technológii; kancelárska budova realizovaná v plnom '
+                'železobetóne. Fasáda: sendvičové panely v priemyselnej časti; ľahká mokrá technológia v kancelárskej '
+                'časti. Strecha: výrobná hala: priehradové väzníky, trapézový plech, izolácia, membrána; kancelárska '
+                'časť: klasický plochý strešný plášť, izolácia, membrána. Interiéry: industriálne, surové povrchové '
+                'úpravy, odhalené inštalácie, betón na stropoch. Vykurovanie: technológia teplovzdušného fúkania. '
+                'Podlahy: slinutá dlažba a koberce vo vybraných priestoroch.'},
   't_s': {},
   't_t': {},
   'title': 'Euronova – Kokotów, gm. Wieliczka',
   'type': 'realizacja-zrealizow'},
  {'czas': '8 miesięcy',
   'formula': 'Generalny Wykonawca',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/8e7a85eb7be6.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/1ce92fe371a1.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/c1005bfea89f.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/0f4fa456dc0c.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/43e712db1c79.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/754871bb9a0c.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/b391eefdff20.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/dbd4bfe96548.webp',
-              'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/f9898b65dde6.webp'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/0c4f48e81c2e.webp',
+  'gallery': [],
+  'hero': '/static/img/mbt/IMG_20220722_102111-scaled-1-ceffec28.jpg',
   'latitude': 50.1202424,
   'logo': '/static/img/mbt/ET_logo-ada4c441.png',
   'longitude': 19.8737154,
-  'opis': 'Powierzchnia magazynowa: 6 650 m² Powierzchnia socjalno-biurowa: '
-          '550 m² Układ komunikacyjny: 4 718 m² Posadowienie bezpośrednie na '
-          'gruncie stabilizowanym cementem Konstrukcja hali mieszana (słupy '
-          'żelbetowe, prefabrykowane; dźwigary i płatwie stalowe) Obudowa '
-          'ścian z płyty warstwowej',
+  'opis': 'Powierzchnia magazynowa: 6 650 m² Powierzchnia socjalno-biurowa: 550 m² Układ komunikacyjny: 4 718 m² '
+          'Posadowienie bezpośrednie na gruncie stabilizowanym cementem Konstrukcja hali mieszana (słupy żelbetowe, '
+          'prefabrykowane; dźwigary i płatwie stalowe) Obudowa ścian z płyty warstwowej',
   'order': 14,
   'slug': 'euro-trade-w-modlnicy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Skladová plocha: 6 650 m². Sociální a kancelářská plocha: 550 '
-                'm². Dopravní řešení: 4 718 m². Přímé založení na zemině '
-                'stabilizované cementem. Smíšená konstrukce haly '
-                '(železobetonové prefabrikované sloupy; ocelové vaznice a '
-                'průvlaky). Plášť stěn ze sendvičových panelů.',
-          'de': 'Lagerfläche: 6 650 m². Sozial- und Bürofläche: 550 m². '
-                'Verkehrserschließung: 4 718 m². Direkte Gründung auf '
-                'zementstabilisiertem Boden. Gemischte Hallenkonstruktion '
-                '(Stahlbeton-Fertigteilstützen; Stahlbinder und Pfetten). '
-                'Wandverkleidung aus Sandwichpaneelen.',
-          'en': 'Warehouse area: 6 650 m². Welfare and office area: 550 m². '
-                'Transport layout: 4 718 m². Direct foundation on '
-                'cement-stabilised ground. Mixed hall structure (precast '
-                'reinforced concrete columns; steel beams and purlins). Wall '
-                'cladding with sandwich panels.',
-          'hu': 'Raktárterület: 6 650 m². Szociális és irodai terület: 550 m². '
-                'Közlekedési kialakítás: 4 718 m². Közvetlen alapozás '
-                'cementtel stabilizált talajon. Vegyes csarnokszerkezet (előre '
-                'gyártott vasbeton oszlopok; acél főtartók és szelemenek). '
-                'Falburkolat szendvicspanelekből.',
-          'sk': 'Skladová plocha: 6 650 m². Sociálna a kancelárska plocha: 550 '
-                'm². Dopravné riešenie: 4 718 m². Priame založenie na podloží '
-                'stabilizovanom cementom. Zmiešaná konštrukcia haly '
-                '(železobetónové prefabrikované stĺpy; oceľové nosníky a '
-                'väznice). Plášť stien zo sendvičových panelov.'},
+  't_o': {'cs': 'Skladová plocha: 6 650 m². Sociální a kancelářská plocha: 550 m². Dopravní řešení: 4 718 m². Přímé '
+                'založení na zemině stabilizované cementem. Smíšená konstrukce haly (železobetonové prefabrikované '
+                'sloupy; ocelové vaznice a průvlaky). Plášť stěn ze sendvičových panelů.',
+          'de': 'Lagerfläche: 6 650 m². Sozial- und Bürofläche: 550 m². Verkehrserschließung: 4 718 m². Direkte '
+                'Gründung auf zementstabilisiertem Boden. Gemischte Hallenkonstruktion (Stahlbeton-Fertigteilstützen; '
+                'Stahlbinder und Pfetten). Wandverkleidung aus Sandwichpaneelen.',
+          'en': 'Warehouse area: 6 650 m². Welfare and office area: 550 m². Transport layout: 4 718 m². Direct '
+                'foundation on cement-stabilised ground. Mixed hall structure (precast reinforced concrete columns; '
+                'steel beams and purlins). Wall cladding with sandwich panels.',
+          'hu': 'Raktárterület: 6 650 m². Szociális és irodai terület: 550 m². Közlekedési kialakítás: 4 718 m². '
+                'Közvetlen alapozás cementtel stabilizált talajon. Vegyes csarnokszerkezet (előre gyártott vasbeton '
+                'oszlopok; acél főtartók és szelemenek). Falburkolat szendvicspanelekből.',
+          'sk': 'Skladová plocha: 6 650 m². Sociálna a kancelárska plocha: 550 m². Dopravné riešenie: 4 718 m². Priame '
+                'založenie na podloží stabilizovanom cementom. Zmiešaná konštrukcia haly (železobetónové '
+                'prefabrikované stĺpy; oceľové nosníky a väznice). Plášť stien zo sendvičových panelov.'},
   't_s': {},
   't_t': {},
   'title': 'Euro-Trade - Modlnica',
@@ -3664,78 +3398,57 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': 'Wybuduj',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/95014a152c55.webp',
+  'hero': '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg',
   'latitude': 52.3853423,
   'logo': '/static/img/mbt/realizacje-kompania-piwowarska-logo-c686aab0.png',
   'longitude': 16.9971062,
-  'opis': 'Budowa Magazynu Aromatów z infrastrukturą techniczną i drogową na '
-          'terenie Lech Browary Wielkopolski dla Kompanii Piwowarskiej.\r\n'
+  'opis': 'Budowa Magazynu Aromatów z infrastrukturą techniczną i drogową na terenie Lech Browary Wielkopolski dla '
+          'Kompanii Piwowarskiej.\r\n'
           '\r\n'
-          '•  Hala wyposażona w zaawansowane instalacje sanitarne, elektryczne '
-          'i techniczne \r\n'
-          '•  Zagospodarowanie terenu wraz z przebudową istniejącej '
-          'infrastruktury \r\n'
-          '•  Praca w wysokim reżimie BHP na terenie działającego zakładu '
-          'przemysłowego \r\n'
+          '•  Hala wyposażona w zaawansowane instalacje sanitarne, elektryczne i techniczne \r\n'
+          '•  Zagospodarowanie terenu wraz z przebudową istniejącej infrastruktury \r\n'
+          '•  Praca w wysokim reżimie BHP na terenie działającego zakładu przemysłowego \r\n'
           '•  Powierzchnia zabudowy budynku 722 m2',
   'order': 15,
   'slug': 'kompania-piwowarska',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba Skladu Aromatů s technickou a dopravní '
-                'infrastrukturou v areálu Lech Browary Wielkopolski pro '
-                'Kompania Piwowarska.\n'
+  't_o': {'cs': 'Výstavba Skladu Aromatů s technickou a dopravní infrastrukturou v areálu Lech Browary Wielkopolski '
+                'pro Kompania Piwowarska.\n'
                 '\n'
-                '•  Hala vybavená pokročilými sanitárními, elektrickými a '
-                'technickými instalacemi \n'
+                '•  Hala vybavená pokročilými sanitárními, elektrickými a technickými instalacemi \n'
                 '•  Úprava území včetně přestavby stávající infrastruktury \n'
-                '•  Práce probíhající ve vysokém režimu BOZP v areálu '
-                'fungujícího průmyslového závodu \n'
+                '•  Práce probíhající ve vysokém režimu BOZP v areálu fungujícího průmyslového závodu \n'
                 '•  Zastavěná plocha budovy 722 m²',
-          'de': 'Bau des Aromen-Lagers mit technischer und '
-                'Straßeninfrastruktur auf dem Gelände von Lech Browary '
+          'de': 'Bau des Aromen-Lagers mit technischer und Straßeninfrastruktur auf dem Gelände von Lech Browary '
                 'Wielkopolski für Kompania Piwowarska.\n'
                 '\n'
-                '•  Halle mit fortschrittlichen Sanitär-, Elektro- und '
-                'technischen Installationen \n'
-                '•  Geländegestaltung einschließlich Umbau der bestehenden '
-                'Infrastruktur \n'
-                '•  Arbeiten unter strengen Arbeitsschutzauflagen auf dem '
-                'Gelände eines in Betrieb befindlichen Industrieunternehmens \n'
+                '•  Halle mit fortschrittlichen Sanitär-, Elektro- und technischen Installationen \n'
+                '•  Geländegestaltung einschließlich Umbau der bestehenden Infrastruktur \n'
+                '•  Arbeiten unter strengen Arbeitsschutzauflagen auf dem Gelände eines in Betrieb befindlichen '
+                'Industrieunternehmens \n'
                 '•  Grundstücksfläche des Gebäudes: 722 m²',
-          'en': 'Construction of the Aromatics Warehouse with technical and '
-                'road infrastructure on the premises of Lech Browary '
-                'Wielkopolski for Kompania Piwowarska.\n'
+          'en': 'Construction of the Aromatics Warehouse with technical and road infrastructure on the premises of '
+                'Lech Browary Wielkopolski for Kompania Piwowarska.\n'
                 '\n'
-                '•  Hall equipped with advanced sanitary, electrical and '
-                'technical installations \n'
-                '•  Site development including reconstruction of the existing '
-                'infrastructure \n'
-                '•  Work carried out under strict H&S standards on the '
-                'premises of an operating industrial facility \n'
+                '•  Hall equipped with advanced sanitary, electrical and technical installations \n'
+                '•  Site development including reconstruction of the existing infrastructure \n'
+                '•  Work carried out under strict H&S standards on the premises of an operating industrial facility \n'
                 '•  Building area: 722 m²',
-          'hu': 'Az Aromaraktár építése műszaki és közlekedési '
-                'infrastruktúrával a Lech Browary Wielkopolski területén, a '
-                'Kompania Piwowarska számára.\n'
+          'hu': 'Az Aromaraktár építése műszaki és közlekedési infrastruktúrával a Lech Browary Wielkopolski '
+                'területén, a Kompania Piwowarska számára.\n'
                 '\n'
-                '•  Fejlett higiéniai, elektromos és műszaki telepítésekkel '
-                'felszerelt csarnok \n'
-                '•  Területrendezés a meglévő infrastruktúra átépítésével '
-                'együtt \n'
-                '•  Munkavégzés szigorú munkavédelmi előírások mellett egy '
-                'működő ipari üzem területén \n'
+                '•  Fejlett higiéniai, elektromos és műszaki telepítésekkel felszerelt csarnok \n'
+                '•  Területrendezés a meglévő infrastruktúra átépítésével együtt \n'
+                '•  Munkavégzés szigorú munkavédelmi előírások mellett egy működő ipari üzem területén \n'
                 '•  Beépített terület: 722 m²',
-          'sk': 'Výstavba Skladu Aromatov s technickou a dopravnou '
-                'infraštruktúrou v areáli Lech Browary Wielkopolski pre '
-                'Kompania Piwowarska.\n'
+          'sk': 'Výstavba Skladu Aromatov s technickou a dopravnou infraštruktúrou v areáli Lech Browary Wielkopolski '
+                'pre Kompania Piwowarska.\n'
                 '\n'
-                '•  Hala vybavená pokročilými sanitárnymi, elektrickými a '
-                'technickými inštaláciami \n'
-                '•  Úprava územia vrátane prestavby existujúcej '
-                'infraštruktúry \n'
-                '•  Práca vo vysokom režime BOZP v areáli fungujúceho '
-                'priemyselného závodu \n'
+                '•  Hala vybavená pokročilými sanitárnymi, elektrickými a technickými inštaláciami \n'
+                '•  Úprava územia vrátane prestavby existujúcej infraštruktúry \n'
+                '•  Práca vo vysokom režime BOZP v areáli fungujúceho priemyselného závodu \n'
                 '•  Zastavaná plocha budovy 722 m²'},
   't_s': {},
   't_t': {},
@@ -3743,57 +3456,42 @@ PROJECTS = [{'czas': '16 miesięcy',
   'type': 'realizacja-zrealizow'},
  {'czas': '6 miesięcy',
   'formula': 'Obiekt na posadowieniu bezpośrednim',
-  'gallery': ['https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/5f70be1acf06.webp',
-              '/static/img/mbt/IMG_20220722_102326-scaled-1-fdde92f8.jpg',
+  'gallery': ['/static/img/mbt/IMG_20220722_102326-scaled-1-fdde92f8.jpg',
               '/static/img/mbt/IMG_20220722_102111-scaled-1-ceffec28.jpg',
               '/static/img/mbt/IMG_20220406_131518-scaled-1-84d560cd.jpg'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/945dd3d54da9.webp',
+  'hero': '/static/img/mbt/IMG_20220406_131518-scaled-1-84d560cd.jpg',
   'latitude': 51.1731582,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/7ab29f71ec4a.svg',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 16.1811487,
-  'opis': 'Powierzchnia produkcyjno-magazynowa: 5331,79 m 2 Powierzchnia '
-          'utwardzeń-układ komunikacyjny: około 18000 m 2 Konstrukcja: Obiekt '
-          'na posadowieniu bezpośrednim Konstrukcja mieszana żelbetowo-stalowa '
-          'Obudowa w technologii płyty warstwowej Dach w konstrukcji stalowej '
-          'z pokryciem wełną mineralna i membraną PVC Obiekt wykończony '
-          'zgodnie ze standardem Użytkownika i oddany do użytkowania',
+  'opis': 'Powierzchnia produkcyjno-magazynowa: 5331,79 m 2 Powierzchnia utwardzeń-układ komunikacyjny: około 18000 m '
+          '2 Konstrukcja: Obiekt na posadowieniu bezpośrednim Konstrukcja mieszana żelbetowo-stalowa Obudowa w '
+          'technologii płyty warstwowej Dach w konstrukcji stalowej z pokryciem wełną mineralna i membraną PVC Obiekt '
+          'wykończony zgodnie ze standardem Użytkownika i oddany do użytkowania',
   'order': 16,
   'slug': 'in-post-w-legnicy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výrobně-skladovací plocha: 5 331,79 m². Plocha zpevnění – '
-                'dopravní řešení: přibližně 18 000 m². Konstrukce: Objekt na '
-                'přímém založení. Smíšená železobeton-ocelová konstrukce. '
-                'Plášť v technologii sendvičových panelů. Střecha v ocelové '
-                'konstrukci s krytinou z minerální vlny a PVC membrány. Objekt '
+  't_o': {'cs': 'Výrobně-skladovací plocha: 5 331,79 m². Plocha zpevnění – dopravní řešení: přibližně 18 000 m². '
+                'Konstrukce: Objekt na přímém založení. Smíšená železobeton-ocelová konstrukce. Plášť v technologii '
+                'sendvičových panelů. Střecha v ocelové konstrukci s krytinou z minerální vlny a PVC membrány. Objekt '
                 'dokončený dle standardu Uživatele a předaný do užívání.',
-          'de': 'Produktions- und Lagerfläche: 5.331,79 m². Befestigte Fläche '
-                '– Verkehrserschließung: ca. 18 000 m². Konstruktion: Gebäude '
-                'auf direkter Gründung. Gemischte '
-                'Stahlbeton-Stahl-Konstruktion. Sandwichpaneel-Hülle. '
-                'Stahldachkonstruktion mit Mineralwolldämmung und PVC-Membran. '
-                'Gebäude nach dem Standard des Nutzers fertiggestellt und in '
-                'Betrieb genommen.',
-          'en': 'Production and warehouse area: 5,331.79 m². Hardstand area – '
-                'transport layout: approx. 18 000 m². Structure: Building on a '
-                'direct foundation. Mixed reinforced concrete and steel '
-                'structure. Sandwich panel envelope. Steel roof structure '
-                'covered with mineral wool and PVC membrane. Building finished '
-                "to the User's standard and commissioned.",
-          'hu': 'Gyártási és raktározási terület: 5 331,79 m². Burkolt felület '
-                '– közlekedési kialakítás: kb. 18 000 m². Szerkezet: Az '
-                'objektum közvetlen alapozású. Vegyes vasbeton-acél szerkezet. '
-                'Szendvicspanel burkolat. Acél tetőszerkezet ásványgyapot és '
-                'PVC membrán szigeteléssel. Az objektum a Használó szabványa '
-                'szerint kivitelezve és átadva.',
-          'sk': 'Výrobná a skladová plocha: 5 331,79 m². Plocha spevnenia – '
-                'dopravné riešenie: približne 18 000 m². Konštrukcia: Objekt '
-                'na priamom založení. Zmiešaná železobetónovo-oceľová '
-                'konštrukcia. Plášť v technológii sendvičových panelov. '
-                'Strecha v oceľovej konštrukcii s krytinou z minerálnej vlny a '
-                'PVC membrány. Objekt dokončený podľa štandardu Užívateľa a '
-                'odovzdaný do užívania.'},
+          'de': 'Produktions- und Lagerfläche: 5.331,79 m². Befestigte Fläche – Verkehrserschließung: ca. 18 000 m². '
+                'Konstruktion: Gebäude auf direkter Gründung. Gemischte Stahlbeton-Stahl-Konstruktion. '
+                'Sandwichpaneel-Hülle. Stahldachkonstruktion mit Mineralwolldämmung und PVC-Membran. Gebäude nach dem '
+                'Standard des Nutzers fertiggestellt und in Betrieb genommen.',
+          'en': 'Production and warehouse area: 5,331.79 m². Hardstand area – transport layout: approx. 18 000 m². '
+                'Structure: Building on a direct foundation. Mixed reinforced concrete and steel structure. Sandwich '
+                'panel envelope. Steel roof structure covered with mineral wool and PVC membrane. Building finished to '
+                "the User's standard and commissioned.",
+          'hu': 'Gyártási és raktározási terület: 5 331,79 m². Burkolt felület – közlekedési kialakítás: kb. 18 000 '
+                'm². Szerkezet: Az objektum közvetlen alapozású. Vegyes vasbeton-acél szerkezet. Szendvicspanel '
+                'burkolat. Acél tetőszerkezet ásványgyapot és PVC membrán szigeteléssel. Az objektum a Használó '
+                'szabványa szerint kivitelezve és átadva.',
+          'sk': 'Výrobná a skladová plocha: 5 331,79 m². Plocha spevnenia – dopravné riešenie: približne 18 000 m². '
+                'Konštrukcia: Objekt na priamom založení. Zmiešaná železobetónovo-oceľová konštrukcia. Plášť v '
+                'technológii sendvičových panelov. Strecha v oceľovej konštrukcii s krytinou z minerálnej vlny a PVC '
+                'membrány. Objekt dokončený podľa štandardu Užívateľa a odovzdaný do užívania.'},
   't_s': {},
   't_t': {},
   'title': 'InPost - Legnica',
@@ -3810,51 +3508,35 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.2559561,
   'logo': '/static/img/mbt/realizacje-sutco-logo-a5df22a7.png',
   'longitude': 19.0571593,
-  'opis': 'Powierzchnia produkcyjno-magazynowa: 3800m² Hala wyposażona w 4 '
-          'suwnice 8T Zagospodarowanie terenu wokół nowego obiektu '
-          'Konstrukcja: Obiekt na posadowieniu bezpośrednim Konstrukcja '
-          'stalowa ścian i dachu Obudowa w technologii płyty warstwowej Dach w '
-          'konstrukcji stalowej z pokryciem płytami PIR i membraną PVC Obiekt '
+  'opis': 'Powierzchnia produkcyjno-magazynowa: 3800m² Hala wyposażona w 4 suwnice 8T Zagospodarowanie terenu wokół '
+          'nowego obiektu Konstrukcja: Obiekt na posadowieniu bezpośrednim Konstrukcja stalowa ścian i dachu Obudowa w '
+          'technologii płyty warstwowej Dach w konstrukcji stalowej z pokryciem płytami PIR i membraną PVC Obiekt '
           'przystosowany do wymagań produkcji konstrukcji stalowych',
   'order': 17,
   'slug': 'sutco-katowice',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výrobně-skladovací plocha: 3 800 m². Hala vybavená 4 '
-                'mostovými jeřáby o nosnosti 8 t. Úprava území v okolí nového '
-                'objektu. Konstrukce: Objekt na přímém založení. Ocelová '
-                'konstrukce stěn a střechy. Plášť v technologii sendvičových '
-                'panelů. Střecha v ocelové konstrukci s krytinou z PIR panelů '
-                'a PVC membrány. Objekt přizpůsobený požadavkům výroby '
-                'ocelových konstrukcí.',
-          'de': 'Produktions- und Lagerfläche: 3 800 m². Halle mit 4 Kranen zu '
-                'je 8 t. Geländegestaltung rund um das neue Gebäude. '
-                'Konstruktion: Gebäude auf direkter Gründung. '
-                'Stahlkonstruktion der Wände und des Daches. '
-                'Sandwichpaneel-Hülle. Stahldachkonstruktion mit PIR-Platten '
-                'und PVC-Membran. Gebäude an die Anforderungen der '
-                'Stahlbaufertigung angepasst.',
-          'en': 'Production and warehouse area: 3 800 m². Hall equipped with 4 '
-                'overhead cranes of 8 t. Site development around the new '
-                'building. Structure: Building on a direct foundation. Steel '
-                'structure of walls and roof. Sandwich panel envelope. Steel '
-                'roof structure covered with PIR panels and PVC membrane. '
-                'Building adapted to the requirements of steel structure '
-                'production.',
-          'hu': 'Gyártási és raktározási terület: 3 800 m². A csarnok 4 darab '
-                '8 tonnás daruval felszerelt. Az új objektum környékének '
-                'tereprendezése. Szerkezet: Az objektum közvetlen alapozású. '
-                'Falak és tető acélszerkezete. Szendvicspanel burkolat. Acél '
-                'tetőszerkezet PIR panelekkel és PVC membránnal. Az objektum '
-                'az acélszerkezet-gyártás követelményeihez igazítva.',
-          'sk': 'Výrobná a skladová plocha: 3 800 m². Hala vybavená 4 '
-                'mostovými žeriavmi s nosnosťou 8 t. Úprava územia okolo '
-                'nového objektu. Konštrukcia: Objekt na priamom založení. '
-                'Oceľová konštrukcia stien a strechy. Plášť v technológii '
-                'sendvičových panelov. Strecha v oceľovej konštrukcii s '
-                'krytinou z PIR panelov a PVC membrány. Objekt prispôsobený '
-                'požiadavkám výroby oceľových konštrukcií.'},
+  't_o': {'cs': 'Výrobně-skladovací plocha: 3 800 m². Hala vybavená 4 mostovými jeřáby o nosnosti 8 t. Úprava území v '
+                'okolí nového objektu. Konstrukce: Objekt na přímém založení. Ocelová konstrukce stěn a střechy. Plášť '
+                'v technologii sendvičových panelů. Střecha v ocelové konstrukci s krytinou z PIR panelů a PVC '
+                'membrány. Objekt přizpůsobený požadavkům výroby ocelových konstrukcí.',
+          'de': 'Produktions- und Lagerfläche: 3 800 m². Halle mit 4 Kranen zu je 8 t. Geländegestaltung rund um das '
+                'neue Gebäude. Konstruktion: Gebäude auf direkter Gründung. Stahlkonstruktion der Wände und des '
+                'Daches. Sandwichpaneel-Hülle. Stahldachkonstruktion mit PIR-Platten und PVC-Membran. Gebäude an die '
+                'Anforderungen der Stahlbaufertigung angepasst.',
+          'en': 'Production and warehouse area: 3 800 m². Hall equipped with 4 overhead cranes of 8 t. Site '
+                'development around the new building. Structure: Building on a direct foundation. Steel structure of '
+                'walls and roof. Sandwich panel envelope. Steel roof structure covered with PIR panels and PVC '
+                'membrane. Building adapted to the requirements of steel structure production.',
+          'hu': 'Gyártási és raktározási terület: 3 800 m². A csarnok 4 darab 8 tonnás daruval felszerelt. Az új '
+                'objektum környékének tereprendezése. Szerkezet: Az objektum közvetlen alapozású. Falak és tető '
+                'acélszerkezete. Szendvicspanel burkolat. Acél tetőszerkezet PIR panelekkel és PVC membránnal. Az '
+                'objektum az acélszerkezet-gyártás követelményeihez igazítva.',
+          'sk': 'Výrobná a skladová plocha: 3 800 m². Hala vybavená 4 mostovými žeriavmi s nosnosťou 8 t. Úprava '
+                'územia okolo nového objektu. Konštrukcia: Objekt na priamom založení. Oceľová konštrukcia stien a '
+                'strechy. Plášť v technológii sendvičových panelov. Strecha v oceľovej konštrukcii s krytinou z PIR '
+                'panelov a PVC membrány. Objekt prispôsobený požiadavkám výroby oceľových konštrukcií.'},
   't_s': {},
   't_t': {},
   'title': 'Sutco - Katowice',
@@ -3868,18 +3550,15 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 49.9771894,
   'logo': '/static/img/mbt/logo-canpack2-db627ab0.jpg',
   'longitude': 20.6219206,
-  'opis': 'Powierzchnia użytkowa pomieszczeń laboratoryjnych i socjalnych: ok. '
-          '420,0 m² Rozbiórki ścian i instalacji Wykonanie nowej posadzki '
-          'Wykonanie antresoli stalowej Wykonanie fundamentu pod prasę Roboty '
-          'wykończeniowe Termomodernizacja dachu i elewacji Nowa stolarka '
-          'okienna Wykonanie instalacji HVAC oraz elektrycznych',
+  'opis': 'Powierzchnia użytkowa pomieszczeń laboratoryjnych i socjalnych: ok. 420,0 m² Rozbiórki ścian i instalacji '
+          'Wykonanie nowej posadzki Wykonanie antresoli stalowej Wykonanie fundamentu pod prasę Roboty wykończeniowe '
+          'Termomodernizacja dachu i elewacji Nowa stolarka okienna Wykonanie instalacji HVAC oraz elektrycznych',
   'order': 18,
   'slug': 'canpack-bss-lab-brzesk',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Užitková plocha laboratorních a sociálních místností: cca '
-                '420,0 m²\n'
+  't_o': {'cs': 'Užitková plocha laboratorních a sociálních místností: cca 420,0 m²\n'
                 'Demolice stěn a instalací\n'
                 'Provedení nové podlahy\n'
                 'Provedení ocelové mezipatrové konstrukce\n'
@@ -3897,8 +3576,7 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Thermische Modernisierung von Dach und Fassade\n'
                 'Neue Fensterelemente\n'
                 'Herstellung von HVAC- und Elektroinstallationen',
-          'en': 'Usable area of laboratory and staff facilities: approx. 420.0 '
-                'm²\n'
+          'en': 'Usable area of laboratory and staff facilities: approx. 420.0 m²\n'
                 'Demolition of walls and installations\n'
                 'New floor slab\n'
                 'Steel mezzanine structure\n'
@@ -3907,8 +3585,7 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Thermal modernisation of the roof and façade\n'
                 'New window joinery\n'
                 'HVAC and electrical installations',
-          'hu': 'Laboratóriumi és szociális helyiségek hasznos alapterülete: '
-                'kb. 420,0 m²\n'
+          'hu': 'Laboratóriumi és szociális helyiségek hasznos alapterülete: kb. 420,0 m²\n'
                 'Falak és installációk bontása\n'
                 'Új padlóburkolat kivitelezése\n'
                 'Acél félemeleti szint kivitelezése\n'
@@ -3917,8 +3594,7 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Tető és homlokzat hőszigetelő korszerűsítése\n'
                 'Új nyílászárók\n'
                 'HVAC és elektromos installációk kivitelezése',
-          'sk': 'Úžitková plocha laboratórnych a sociálnych priestorov: cca '
-                '420,0 m²\n'
+          'sk': 'Úžitková plocha laboratórnych a sociálnych priestorov: cca 420,0 m²\n'
                 'Demolície stien a inštalácií\n'
                 'Vyhotovenie novej podlahy\n'
                 'Vyhotovenie oceľovej medziposchodovej konštrukcie\n'
@@ -3931,53 +3607,37 @@ PROJECTS = [{'czas': '16 miesięcy',
   't_t': {},
   'title': 'CanPack BSS LAB - Brzesk',
   'type': 'realizacja-zrealizow'},
-
  {'czas': '8 miesięcy',
   'formula': 'Generalny Wykonawca',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/7d213c49a73d.webp',
+  'hero': '/static/img/mbt/3-2-scaled-38947c85.jpg',
   'latitude': 50.3847018,
   'logo': '/static/img/mbt/Epcologo-7badc63b.png',
   'longitude': 18.8759491,
-  'opis': 'Rozbudowa wymagająca zarówno rozbiórek obecnego układu drogowego, '
-          'jak i elementów hali Prace wykonywane na czynnym zakładzie z '
-          'zachowaniem obowiązujących standardów BHP Dobudowa do istniejącej '
-          'hali z zachowaniem formy i kolorystyki obiektu istniejącego',
+  'opis': 'Rozbudowa wymagająca zarówno rozbiórek obecnego układu drogowego, jak i elementów hali Prace wykonywane na '
+          'czynnym zakładzie z zachowaniem obowiązujących standardów BHP Dobudowa do istniejącej hali z zachowaniem '
+          'formy i kolorystyki obiektu istniejącego',
   'order': 20,
   'slug': 'p1704',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Rozšíření vyžadující jak demolice stávajícího dopravního '
-                'uspořádání, tak i vybraných prvků haly\n'
-                'Práce prováděné na provozovaném závodě při dodržení platných '
-                'norem BOZP\n'
-                'Přístavba ke stávající hale se zachováním tvaru a barevnosti '
-                'stávajícího objektu',
-          'de': 'Erweiterung mit erforderlichem Abriss der bestehenden '
-                'Verkehrsführung sowie ausgewählter Hallenelemente\n'
-                'Arbeiten an einem in Betrieb befindlichen Werk unter '
-                'Einhaltung der geltenden Arbeitsschutzstandards\n'
-                'Anbau an die bestehende Halle unter Wahrung von Form und '
-                'Farbgebung des bestehenden Objekts',
-          'en': 'Extension requiring demolition of the existing road layout as '
-                'well as selected hall elements\n'
-                'Works carried out on an operating facility in compliance with '
-                'applicable H&S standards\n'
-                'Extension to the existing hall, matching the form and colour '
-                'scheme of the existing building',
-          'hu': 'Bővítés, amely a meglévő úthálózat és a csarnok egyes '
-                'elemeinek elbontását egyaránt megköveteli\n'
-                'Munkavégzés üzemelő gyár területén a hatályos munkavédelmi '
-                'előírások betartásával\n'
-                'Hozzáépítés a meglévő csarnokhoz a meglévő épület formájának '
-                'és színvilágának megőrzésével',
-          'sk': 'Rozšírenie vyžadujúce ako demolície súčasného dopravného '
-                'usporiadania, tak aj vybraných prvkov haly\n'
-                'Práce vykonávané na prevádzkovanom závode pri dodržaní '
-                'platných noriem BOZP\n'
-                'Prístavba k jestvujúcej hale so zachovaním tvaru a farebnosti '
-                'jestvujúceho objektu'},
+  't_o': {'cs': 'Rozšíření vyžadující jak demolice stávajícího dopravního uspořádání, tak i vybraných prvků haly\n'
+                'Práce prováděné na provozovaném závodě při dodržení platných norem BOZP\n'
+                'Přístavba ke stávající hale se zachováním tvaru a barevnosti stávajícího objektu',
+          'de': 'Erweiterung mit erforderlichem Abriss der bestehenden Verkehrsführung sowie ausgewählter '
+                'Hallenelemente\n'
+                'Arbeiten an einem in Betrieb befindlichen Werk unter Einhaltung der geltenden Arbeitsschutzstandards\n'
+                'Anbau an die bestehende Halle unter Wahrung von Form und Farbgebung des bestehenden Objekts',
+          'en': 'Extension requiring demolition of the existing road layout as well as selected hall elements\n'
+                'Works carried out on an operating facility in compliance with applicable H&S standards\n'
+                'Extension to the existing hall, matching the form and colour scheme of the existing building',
+          'hu': 'Bővítés, amely a meglévő úthálózat és a csarnok egyes elemeinek elbontását egyaránt megköveteli\n'
+                'Munkavégzés üzemelő gyár területén a hatályos munkavédelmi előírások betartásával\n'
+                'Hozzáépítés a meglévő csarnokhoz a meglévő épület formájának és színvilágának megőrzésével',
+          'sk': 'Rozšírenie vyžadujúce ako demolície súčasného dopravného usporiadania, tak aj vybraných prvkov haly\n'
+                'Práce vykonávané na prevádzkovanom závode pri dodržaní platných noriem BOZP\n'
+                'Prístavba k jestvujúcej hale so zachovaním tvaru a farebnosti jestvujúceho objektu'},
   't_s': {},
   't_t': {},
   'title': 'Epco - Bytom',
@@ -3986,13 +3646,12 @@ PROJECTS = [{'czas': '16 miesięcy',
   'formula': 'Zaprojektuj-wybuduj',
   'gallery': ['/static/img/mbt/Herz-docel-2-1-scaled-1-04664ed6.jpg',
               '/static/img/mbt/Herz-docel-3-scaled-1-89b6538a.jpg'],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/6dcb891fb91a.webp',
+  'hero': '/static/img/mbt/Herz-docel-2-1-scaled-1-04664ed6.jpg',
   'latitude': 49.9949198,
   'logo': '/static/img/mbt/2e7538dfbcb3865df6ea9a1138c99e1c-79db89e5.jpg',
   'longitude': 20.0730015,
-  'opis': 'Powierzchnia produkcyjno-magazynowa: 4 500 m2 Powierzchnia małej '
-          'hali produkcyjnej: 500m2 Układ komunikacyjny: 2 500m2 Posadowienie '
-          'bezpośrednie na gruncie rodzimym Konstrukcja hali w całości stalowa '
+  'opis': 'Powierzchnia produkcyjno-magazynowa: 4 500 m2 Powierzchnia małej hali produkcyjnej: 500m2 Układ '
+          'komunikacyjny: 2 500m2 Posadowienie bezpośrednie na gruncie rodzimym Konstrukcja hali w całości stalowa '
           'Obudowa hali z płyt warstwowych',
   'order': 21,
   'slug': 'herz-wieliczka',
@@ -4043,165 +3702,165 @@ PROJECTS = [{'czas': '16 miesięcy',
   'longitude': 19.8667,
   'opis': 'Powierzchnia magazynowa: 2 220 m²\n'
           'Powierzchnia socjalno-biurowa: 55 m²\n'
-          'Układ budynku i komunikacji: Tereny zewnętrzne oraz układ komunikacyjny o powierzchni 1 700 m² (drogi dojazdowe i place manewrowe w nawierzchni betonowej). Całkowita powierzchnia zabudowy wynosi ok. 2 800 m².\n'
-          'Konstrukcja: Posadowienie hali na płycie fundamentowej wykonanej na gruncie stabilizowanym cementem. Konstrukcja nośna hali w całości stalowa.\n'
-          'Elewacja i obudowa: Obudowa ścian oraz dachu wykonana z nowoczesnych płyt warstwowych o wysokiej izolacyjności termicznej.\n'
-          'Infrastruktura i instalacje: Kompleksowe wykonanie wewnętrznych i zewnętrznych sieci oraz instalacji sanitarnych i elektrycznych.\n'
-          'Inwestor i formuła: Inwestycja zrealizowana dla TOTO Hair Company w formule Generalnego Wykonawstwa („Buduj”) wraz z opracowaniem zamiennej dokumentacji projektowej w czasie 9 miesięcy.',
+          'Układ budynku i komunikacji: Tereny zewnętrzne oraz układ komunikacyjny o powierzchni 1 700 m² (drogi '
+          'dojazdowe i place manewrowe w nawierzchni betonowej). Całkowita powierzchnia zabudowy wynosi ok. 2 800 m².\n'
+          'Konstrukcja: Posadowienie hali na płycie fundamentowej wykonanej na gruncie stabilizowanym cementem. '
+          'Konstrukcja nośna hali w całości stalowa.\n'
+          'Elewacja i obudowa: Obudowa ścian oraz dachu wykonana z nowoczesnych płyt warstwowych o wysokiej '
+          'izolacyjności termicznej.\n'
+          'Infrastruktura i instalacje: Kompleksowe wykonanie wewnętrznych i zewnętrznych sieci oraz instalacji '
+          'sanitarnych i elektrycznych.\n'
+          'Inwestor i formuła: Inwestycja zrealizowana dla TOTO Hair Company w formule Generalnego Wykonawstwa '
+          '(„Buduj”) wraz z opracowaniem zamiennej dokumentacji projektowej w czasie 9 miesięcy.',
   'order': 7,
   'slug': 'toto-glogoczow',
   'status': 'Zrealizowane',
   't_c': {'cs': '9 měsíců', 'de': '9 Monate', 'en': '9 months', 'hu': '9 hónap', 'sk': '9 mesiacov'},
-  't_f': {'cs': 'Generální dodavatel (Výstavba)', 'de': 'Generalunternehmer (Bauen)', 'en': 'General Contractor (Build)', 'hu': 'Generálkivitelező (Építés)', 'sk': 'Generálny dodávateľ (Stavba)'},
+  't_f': {'cs': 'Generální dodavatel (Výstavba)',
+          'de': 'Generalunternehmer (Bauen)',
+          'en': 'General Contractor (Build)',
+          'hu': 'Generálkivitelező (Építés)',
+          'sk': 'Generálny dodávateľ (Stavba)'},
   't_o': {'cs': 'Skladová plocha: 2 220 m²\n'
                 'Sociální a administrativní zázemí: 55 m²\n'
-                'Dopravní a venkovní infrastruktura: Venkovní plochy a komunikace o rozloze 1 700 m² (betonové manipulační plochy). Celková zastavěná plocha cca 2 800 m².\n'
-                'Konstrukce: Založení haly na základové desce na zemině stabilizované cementem. Nosná konstrukce celoocelová.\n'
+                'Dopravní a venkovní infrastruktura: Venkovní plochy a komunikace o rozloze 1 700 m² (betonové '
+                'manipulační plochy). Celková zastavěná plocha cca 2 800 m².\n'
+                'Konstrukce: Založení haly na základové desce na zemině stabilizované cementem. Nosná konstrukce '
+                'celoocelová.\n'
                 'Opláštění: Stěny a střecha ze sendvičových panelů.\n'
                 'Infrastruktura a instalace: Kompletní vnitřní a vnější sanitární a elektro rozvody.\n'
                 'Investor a model realizace: Realizováno pro TOTO Hair Company v režimu generální dodávky za 9 měsíců.',
           'de': 'Lagerfläche: 2 220 m²\n'
                 'Sozial- und Bürofläche: 55 m²\n'
-                'Verkehrserschließung und Außenanlagen: Straßen und Manövrierflächen aus Beton mit 1 700 m². Gesamte bebaute Fläche ca. 2 800 m².\n'
-                'Konstruktion: Gründung auf einer Fundamentplatte auf zementstabilisiertem Boden. Tragkonstruktion vollständig aus Stahl.\n'
+                'Verkehrserschließung und Außenanlagen: Straßen und Manövrierflächen aus Beton mit 1 700 m². Gesamte '
+                'bebaute Fläche ca. 2 800 m².\n'
+                'Konstruktion: Gründung auf einer Fundamentplatte auf zementstabilisiertem Boden. Tragkonstruktion '
+                'vollständig aus Stahl.\n'
                 'Fassade und Verkleidung: Wand- und Dachverkleidung aus modernen Sandwichpaneelen.\n'
                 'Infrastruktur und Installationen: Umfassende Ausführung von Sanitär- und Elektroinstallationen.\n'
-                'Bauherr und Abwicklung: Realisiert für TOTO Hair Company im Modell Generalübernehmer („Bauen”) innerhalb von 9 Monaten.',
+                'Bauherr und Abwicklung: Realisiert für TOTO Hair Company im Modell Generalübernehmer („Bauen”) '
+                'innerhalb von 9 Monaten.',
           'en': 'Warehouse area: 2,220 m²\n'
                 'Welfare and office area: 55 m²\n'
-                'Transport layout and site infrastructure: External areas and internal roads with an area of 1,700 m² (concrete maneuvering yards). Total building footprint approx. 2,800 m².\n'
-                'Construction: Foundation slab on cement-stabilized ground. Main load-bearing structure entirely in steel.\n'
+                'Transport layout and site infrastructure: External areas and internal roads with an area of 1,700 m² '
+                '(concrete maneuvering yards). Total building footprint approx. 2,800 m².\n'
+                'Construction: Foundation slab on cement-stabilized ground. Main load-bearing structure entirely in '
+                'steel.\n'
                 'Facade and cladding: Walls and roof clad in modern sandwich panels with high thermal insulation.\n'
-                'Infrastructure and installations: Comprehensive internal and external sanitary and electrical systems.\n'
-                'Investor and formula: Executed for TOTO Hair Company under the General Contracting formula (\"Build\") within 9 months.',
+                'Infrastructure and installations: Comprehensive internal and external sanitary and electrical '
+                'systems.\n'
+                'Investor and formula: Executed for TOTO Hair Company under the General Contracting formula ("Build") '
+                'within 9 months.',
           'hu': 'Raktárterület: 2 220 m²\n'
                 'Szociális és irodai terület: 55 m²\n'
-                'Közlekedési és külső infrastruktúra: 1 700 m² burkolt közlekedési és manőverezési felület. Teljes beépített terület kb. 2 800 m².\n'
+                'Közlekedési és külső infrastruktúra: 1 700 m² burkolt közlekedési és manőverezési felület. Teljes '
+                'beépített terület kb. 2 800 m².\n'
                 'Szerkezet: Alaplemez cementtel stabilizált talajon. A tartószerkezet teljes egészében acél.\n'
                 'Burkolat: Szendvicspanel fal- és tetőburkolat.\n'
                 'Infrastruktúra és gépészet: Teljes körű épületgépészeti és villamossági rendszerek.\n'
-                'Megrendelő és megvalósítás: A TOTO Hair Company számára generálkivitelezésben megvalósítva 9 hónap alatt.',
+                'Megrendelő és megvalósítás: A TOTO Hair Company számára generálkivitelezésben megvalósítva 9 hónap '
+                'alatt.',
           'sk': 'Skladová plocha: 2 220 m²\n'
                 'Sociálna a kancelárska plocha: 55 m²\n'
-                'Dopravná a vonkajšia infraštruktúra: Vonkajšie plochy a komunikácie s výmerou 1 700 m² (betónové manipulačné plochy). Celková zastavaná plocha cca 2 800 m².\n'
-                'Konštrukcia: Založenie haly na základovej doske realizovanej na podloží stabilizovanom cementom. Nosná konštrukcia celooceľová.\n'
+                'Dopravná a vonkajšia infraštruktúra: Vonkajšie plochy a komunikácie s výmerou 1 700 m² (betónové '
+                'manipulačné plochy). Celková zastavaná plocha cca 2 800 m².\n'
+                'Konštrukcia: Založenie haly na základovej doske realizovanej na podloží stabilizovanom cementom. '
+                'Nosná konštrukcia celooceľová.\n'
                 'Opláštenie: Steny a strecha zo sendvičových panelov.\n'
                 'Infraštruktúra a inštalácie: Kompletné vnútorné a vonkajšie sanitárne a elektroinštalácie.\n'
-                'Investor a model realizácie: Realizované pre TOTO Hair Company v modeli generálneho dodávateľa za 9 mesiacov.'},
-  't_s': {'cs': 'Zrealizováno', 'de': 'Realisierte Projekte', 'en': 'Completed', 'hu': 'Megvalósult projektek', 'sk': 'Zrealizované'},
-  't_t': {'cs': 'ToTo – Głogoczów', 'de': 'ToTo – Głogoczów', 'en': 'ToTo – Głogoczów', 'hu': 'ToTo – Głogoczów', 'sk': 'ToTo – Głogoczów'},
+                'Investor a model realizácie: Realizované pre TOTO Hair Company v modeli generálneho dodávateľa za 9 '
+                'mesiacov.'},
+  't_s': {'cs': 'Zrealizováno',
+          'de': 'Realisierte Projekte',
+          'en': 'Completed',
+          'hu': 'Megvalósult projektek',
+          'sk': 'Zrealizované'},
+  't_t': {'cs': 'ToTo – Głogoczów',
+          'de': 'ToTo – Głogoczów',
+          'en': 'ToTo – Głogoczów',
+          'hu': 'ToTo – Głogoczów',
+          'sk': 'ToTo – Głogoczów'},
   'title': 'ToTo - Głogoczów',
   'type': 'realizacja-zrealizow'},
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/b04e4b92e0f0.svg',
+  'hero': '/static/img/mbt/DJI_0181-1-scaled-b366f7fb.jpeg',
   'latitude': 51.9825434,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/399402210852.svg',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 15.4178416,
-  'opis': 'Jako Generalny Wykonawca realizujemy nowoczesny obiekt dla BTS '
-          'Development Park. Docelowo cały kompleks zaoferuje 10 000 m² '
-          'zaawansowanej powierzchni biznesowej, przeznaczonej pod działalność '
-          'produkcyjną, magazynową i logistyczną.\r\n'
+  'opis': 'Jako Generalny Wykonawca realizujemy nowoczesny obiekt dla BTS Development Park. Docelowo cały kompleks '
+          'zaoferuje 10 000 m² zaawansowanej powierzchni biznesowej, przeznaczonej pod działalność produkcyjną, '
+          'magazynową i logistyczną.\r\n'
           '\r\n'
-          'Inwestycja została zaprojektowana z myślą o maksymalnej '
-          'elastyczności. Przestrzeń pozwala na podział na 4 niezależne moduły '
-          'o powierzchni od 850 m² do 3 330 m². Takie rozwiązanie umożliwia '
-          'precyzyjne dopasowanie układu funkcjonalnego do indywidualnych '
-          'potrzeb operacyjnych przyszłych najemców.\r\n'
+          'Inwestycja została zaprojektowana z myślą o maksymalnej elastyczności. Przestrzeń pozwala na podział na 4 '
+          'niezależne moduły o powierzchni od 850 m² do 3 330 m². Takie rozwiązanie umożliwia precyzyjne dopasowanie '
+          'układu funkcjonalnego do indywidualnych potrzeb operacyjnych przyszłych najemców.\r\n'
           '\r\n'
-          'Obecnie nasze prace na placu budowy koncentrują się na sprawnej '
-          'realizacji pierwszej z hal. Zgodnie ze standardami MBT, kładziemy '
-          'maksymalny nacisk na precyzyjne wykonanie każdego detalu '
-          'technicznego oraz rygorystyczne przestrzeganie założonego '
-          'harmonogramu inwestycji.',
+          'Obecnie nasze prace na placu budowy koncentrują się na sprawnej realizacji pierwszej z hal. Zgodnie ze '
+          'standardami MBT, kładziemy maksymalny nacisk na precyzyjne wykonanie każdego detalu technicznego oraz '
+          'rygorystyczne przestrzeganie założonego harmonogramu inwestycji.',
   'order': 23,
   'slug': 'bts-development-park-zielona-gora',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Jako Generální dodavatel realizujeme moderní objekt pro BTS '
-                'Development Park. V konečném důsledku celý komplex nabídne 10 '
-                '000 m² pokročilé obchodní plochy určené pro výrobní, '
-                'skladovou a logistickou činnost.\n'
+  't_o': {'cs': 'Jako Generální dodavatel realizujeme moderní objekt pro BTS Development Park. V konečném důsledku '
+                'celý komplex nabídne 10 000 m² pokročilé obchodní plochy určené pro výrobní, skladovou a logistickou '
+                'činnost.\n'
                 '\n'
-                'Investice byla navržena s ohledem na maximální flexibilitu. '
-                'Prostor umožňuje rozdělení na 4 nezávislé moduly s plochou od '
-                '850 m² do 3 330 m². Takové řešení umožňuje přesné '
-                'přizpůsobení funkčního uspořádání individuálním provozním '
-                'potřebám budoucích nájemců.\n'
+                'Investice byla navržena s ohledem na maximální flexibilitu. Prostor umožňuje rozdělení na 4 nezávislé '
+                'moduly s plochou od 850 m² do 3 330 m². Takové řešení umožňuje přesné přizpůsobení funkčního '
+                'uspořádání individuálním provozním potřebám budoucích nájemců.\n'
                 '\n'
-                'V současné době se naše práce na staveništi soustředí na '
-                'efektivní realizaci první z hal. V souladu se standardy MBT '
-                'klademe maximální důraz na přesné provedení každého '
-                'technického detailu a důsledné dodržování stanoveného '
-                'harmonogramu investice.',
-          'de': 'Als Generalunternehmer realisieren wir ein modernes Objekt '
-                'für den BTS Development Park. Letztendlich wird der gesamte '
-                'Komplex 10.000 m² hochwertige Geschäftsfläche bieten, die für '
-                'Produktions-, Lager- und Logistikaktivitäten bestimmt ist.\n'
+                'V současné době se naše práce na staveništi soustředí na efektivní realizaci první z hal. V souladu '
+                'se standardy MBT klademe maximální důraz na přesné provedení každého technického detailu a důsledné '
+                'dodržování stanoveného harmonogramu investice.',
+          'de': 'Als Generalunternehmer realisieren wir ein modernes Objekt für den BTS Development Park. Letztendlich '
+                'wird der gesamte Komplex 10.000 m² hochwertige Geschäftsfläche bieten, die für Produktions-, Lager- '
+                'und Logistikaktivitäten bestimmt ist.\n'
                 '\n'
-                'Die Investition wurde mit Blick auf maximale Flexibilität '
-                'konzipiert. Die Fläche lässt sich in 4 unabhängige Module mit '
-                'Flächen zwischen 850 m² und 3.330 m² unterteilen. Eine solche '
-                'Lösung ermöglicht die präzise Anpassung des Funktionslayouts '
-                'an die individuellen betrieblichen Anforderungen der '
-                'künftigen Mieter.\n'
+                'Die Investition wurde mit Blick auf maximale Flexibilität konzipiert. Die Fläche lässt sich in 4 '
+                'unabhängige Module mit Flächen zwischen 850 m² und 3.330 m² unterteilen. Eine solche Lösung '
+                'ermöglicht die präzise Anpassung des Funktionslayouts an die individuellen betrieblichen '
+                'Anforderungen der künftigen Mieter.\n'
                 '\n'
-                'Derzeit konzentrieren sich unsere Arbeiten auf der Baustelle '
-                'auf die reibungslose Realisierung der ersten Halle. Gemäß den '
-                'MBT-Standards legen wir höchsten Wert auf die präzise '
-                'Ausführung jedes technischen Details und die strikte '
-                'Einhaltung des festgelegten Investitionszeitplans.',
-          'en': 'As the General Contractor, we are delivering a modern '
-                'facility for BTS Development Park. Ultimately, the entire '
-                'complex will offer 10,000 m² of advanced business space, '
-                'intended for production, warehousing and logistics '
-                'operations.\n'
+                'Derzeit konzentrieren sich unsere Arbeiten auf der Baustelle auf die reibungslose Realisierung der '
+                'ersten Halle. Gemäß den MBT-Standards legen wir höchsten Wert auf die präzise Ausführung jedes '
+                'technischen Details und die strikte Einhaltung des festgelegten Investitionszeitplans.',
+          'en': 'As the General Contractor, we are delivering a modern facility for BTS Development Park. Ultimately, '
+                'the entire complex will offer 10,000 m² of advanced business space, intended for production, '
+                'warehousing and logistics operations.\n'
                 '\n'
-                'The investment has been designed with maximum flexibility in '
-                'mind. The space can be divided into 4 independent modules '
-                'with areas ranging from 850 m² to 3,330 m². Such a solution '
-                'enables precise tailoring of the functional layout to the '
-                'individual operational needs of future tenants.\n'
+                'The investment has been designed with maximum flexibility in mind. The space can be divided into 4 '
+                'independent modules with areas ranging from 850 m² to 3,330 m². Such a solution enables precise '
+                'tailoring of the functional layout to the individual operational needs of future tenants.\n'
                 '\n'
-                'Currently, our work on the construction site focuses on the '
-                'efficient delivery of the first of the halls. In line with '
-                "MBT's standards, we place maximum emphasis on the precise "
-                'execution of every technical detail and strict adherence to '
-                'the assumed investment schedule.',
-          'hu': 'Mint Fővállalkozó modern objektumot valósítunk meg a BTS '
-                'Development Park számára. Végső soron a teljes komplexum 10 '
-                '000 m² fejlett üzleti területet kínál majd, amely gyártási, '
-                'raktározási és logisztikai tevékenységekre lesz alkalmas.\n'
+                'Currently, our work on the construction site focuses on the efficient delivery of the first of the '
+                "halls. In line with MBT's standards, we place maximum emphasis on the precise execution of every "
+                'technical detail and strict adherence to the assumed investment schedule.',
+          'hu': 'Mint Fővállalkozó modern objektumot valósítunk meg a BTS Development Park számára. Végső soron a '
+                'teljes komplexum 10 000 m² fejlett üzleti területet kínál majd, amely gyártási, raktározási és '
+                'logisztikai tevékenységekre lesz alkalmas.\n'
                 '\n'
-                'A beruházást a maximális rugalmasság szem előtt tartásával '
-                'terveztük. A tér 4 független modulra osztható, 850 m² és 3 '
-                '330 m² közötti alapterülettel. Ez a megoldás lehetővé teszi a '
-                'funkcionális elrendezés pontos testreszabását a jövőbeli '
-                'bérlők egyedi működési igényeihez.\n'
+                'A beruházást a maximális rugalmasság szem előtt tartásával terveztük. A tér 4 független modulra '
+                'osztható, 850 m² és 3 330 m² közötti alapterülettel. Ez a megoldás lehetővé teszi a funkcionális '
+                'elrendezés pontos testreszabását a jövőbeli bérlők egyedi működési igényeihez.\n'
                 '\n'
-                'Jelenleg az építkezésen végzett munkánk az első csarnok '
-                'hatékony megvalósítására összpontosít. Az MBT szabványainak '
-                'megfelelően maximális hangsúlyt fektetünk minden műszaki '
-                'részlet precíz kivitelezésére és a beruházás tervezett '
-                'ütemezésének szigorú betartására.',
-          'sk': 'Ako Generálny dodávateľ realizujeme moderný objekt pre BTS '
-                'Development Park. V konečnom dôsledku celý komplex ponúkne 10 '
-                '000 m² pokročilej obchodnej plochy určenej na výrobnú, '
-                'skladovú a logistickú činnosť.\n'
+                'Jelenleg az építkezésen végzett munkánk az első csarnok hatékony megvalósítására összpontosít. Az MBT '
+                'szabványainak megfelelően maximális hangsúlyt fektetünk minden műszaki részlet precíz kivitelezésére '
+                'és a beruházás tervezett ütemezésének szigorú betartására.',
+          'sk': 'Ako Generálny dodávateľ realizujeme moderný objekt pre BTS Development Park. V konečnom dôsledku celý '
+                'komplex ponúkne 10 000 m² pokročilej obchodnej plochy určenej na výrobnú, skladovú a logistickú '
+                'činnosť.\n'
                 '\n'
-                'Investícia bola navrhnutá s ohľadom na maximálnu flexibilitu. '
-                'Priestor umožňuje rozdelenie na 4 nezávislé moduly s plochou '
-                'od 850 m² do 3 330 m². Takéto riešenie umožňuje presné '
-                'prispôsobenie funkčného usporiadania individuálnym '
-                'prevádzkovým potrebám budúcich nájomcov.\n'
+                'Investícia bola navrhnutá s ohľadom na maximálnu flexibilitu. Priestor umožňuje rozdelenie na 4 '
+                'nezávislé moduly s plochou od 850 m² do 3 330 m². Takéto riešenie umožňuje presné prispôsobenie '
+                'funkčného usporiadania individuálnym prevádzkovým potrebám budúcich nájomcov.\n'
                 '\n'
-                'V súčasnosti sa naše práce na stavenisku sústreďujú na '
-                'efektívnu realizáciu prvej z hál. V súlade so štandardmi MBT '
-                'kladieme maximálny dôraz na presné vykonanie každého '
-                'technického detailu a dôsledné dodržiavanie stanoveného '
-                'harmonogramu investície.'},
+                'V súčasnosti sa naše práce na stavenisku sústreďujú na efektívnu realizáciu prvej z hál. V súlade so '
+                'štandardmi MBT kladieme maximálny dôraz na presné vykonanie každého technického detailu a dôsledné '
+                'dodržiavanie stanoveného harmonogramu investície.'},
   't_s': {},
   't_t': {},
   'title': 'BTS Development Park Zielona góra',
@@ -4209,173 +3868,132 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/125d6a00ce04.webp',
+  'hero': '/static/img/mbt/DSC03980-scaled-ea8b4933.jpeg',
   'latitude': 50.36019,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/a491138f9a7b.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 18.90364,
-  'opis': 'Realizujemy budowę nowoczesnego obiektu dealerskiego dla marki BYD, '
-          'na zlecenie Grupy Dąbrowscy. Inwestycja obejmuje stworzenie '
-          'kompleksowego salonu samochodowego nowej generacji.\r\n'
+  'opis': 'Realizujemy budowę nowoczesnego obiektu dealerskiego dla marki BYD, na zlecenie Grupy Dąbrowscy. Inwestycja '
+          'obejmuje stworzenie kompleksowego salonu samochodowego nowej generacji.\r\n'
           '\r\n'
-          'Cała nowoczesna przestrzeń została zaprojektowana od podstaw, w '
-          'rygorystycznej zgodności z najnowszym, globalnym standardem '
-          'architektonicznym i wizualnym marki – BYD CI 7.\r\n'
+          'Cała nowoczesna przestrzeń została zaprojektowana od podstaw, w rygorystycznej zgodności z najnowszym, '
+          'globalnym standardem architektonicznym i wizualnym marki – BYD CI 7.\r\n'
           '\r\n'
           'Zakres realizacji obejmuje:\r\n'
           '\r\n'
-          'Nowoczesną salę sprzedaży (Showroom): Reprezentacyjna przestrzeń '
-          'ekspozycyjna, dostosowana do najwyższych standardów prezentacji '
-          'pojazdów oraz obsługi klienta.\r\n'
+          'Nowoczesną salę sprzedaży (Showroom): Reprezentacyjna przestrzeń ekspozycyjna, dostosowana do najwyższych '
+          'standardów prezentacji pojazdów oraz obsługi klienta.\r\n'
           '\r\n'
-          'Zaawansowany serwis motoryzacyjny: Technologicznie przystosowana '
-          'hala warsztatowa, przygotowana do specjalistycznej diagnostyki i '
-          'naprawy pojazdów elektrycznych oraz hybrydowych.\r\n'
+          'Zaawansowany serwis motoryzacyjny: Technologicznie przystosowana hala warsztatowa, przygotowana do '
+          'specjalistycznej diagnostyki i naprawy pojazdów elektrycznych oraz hybrydowych.\r\n'
           '\r\n'
-          'Kompleksową obsługę posprzedażową: W pełni zintegrowane zaplecze '
-          'dedykowane doradcom serwisowym, zapewniające sprawną realizację '
-          'usług (after-sales) w komfortowych warunkach.\r\n'
+          'Kompleksową obsługę posprzedażową: W pełni zintegrowane zaplecze dedykowane doradcom serwisowym, '
+          'zapewniające sprawną realizację usług (after-sales) w komfortowych warunkach.\r\n'
           '\r\n'
-          'Naszym zadaniem jest precyzyjne wykonanie obiektu, który zapewni '
-          'Inwestorowi optymalne warunki operacyjne oraz w pełni odda '
-          'innowacyjny charakter marki BYD.',
+          'Naszym zadaniem jest precyzyjne wykonanie obiektu, który zapewni Inwestorowi optymalne warunki operacyjne '
+          'oraz w pełni odda innowacyjny charakter marki BYD.',
   'order': 24,
   'slug': 'byd-dabrowscy-bytom',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Realizujeme výstavbu moderního dealerství pro značku BYD, na '
-                'objednávku skupiny Dąbrowscy. Investice zahrnuje vytvoření '
-                'komplexního autosalonu nové generace.\n'
+  't_o': {'cs': 'Realizujeme výstavbu moderního dealerství pro značku BYD, na objednávku skupiny Dąbrowscy. Investice '
+                'zahrnuje vytvoření komplexního autosalonu nové generace.\n'
                 '\n'
-                'Celý moderní prostor byl navržen od základu, v přísném '
-                'souladu s nejnovějším globálním architektonickým a vizuálním '
-                'standardem značky – BYD CI 7.\n'
+                'Celý moderní prostor byl navržen od základu, v přísném souladu s nejnovějším globálním '
+                'architektonickým a vizuálním standardem značky – BYD CI 7.\n'
                 '\n'
                 'Rozsah realizace zahrnuje:\n'
                 '\n'
-                'Moderní prodejní sal (Showroom): Reprezentativní výstavní '
-                'prostor přizpůsobený nejvyšším standardům prezentace vozidel '
-                'a zákaznického servisu.\n'
+                'Moderní prodejní sal (Showroom): Reprezentativní výstavní prostor přizpůsobený nejvyšším standardům '
+                'prezentace vozidel a zákaznického servisu.\n'
                 '\n'
-                'Pokročilý autoservis: Technologicky vybavená dílenská hala '
-                'připravená pro specializovanou diagnostiku a opravy '
-                'elektrických a hybridních vozidel.\n'
+                'Pokročilý autoservis: Technologicky vybavená dílenská hala připravená pro specializovanou diagnostiku '
+                'a opravy elektrických a hybridních vozidel.\n'
                 '\n'
-                'Komplexní poprodejní služby: Plně integrované zázemí určené '
-                'servisním poradcům, zajišťující efektivní poskytování služeb '
-                '(after-sales) v komfortních podmínkách.\n'
+                'Komplexní poprodejní služby: Plně integrované zázemí určené servisním poradcům, zajišťující efektivní '
+                'poskytování služeb (after-sales) v komfortních podmínkách.\n'
                 '\n'
-                'Naším úkolem je precizní provedení objektu, který investorovi '
-                'poskytne optimální provozní podmínky a plně vyjádří '
-                'inovativní charakter značky BYD.',
-          'de': 'Wir realisieren den Bau eines modernen Händlerobjekts für die '
-                'Marke BYD, im Auftrag der Gruppe Dąbrowscy. Die Investition '
-                'umfasst die Errichtung eines umfassenden Autohauses der neuen '
-                'Generation.\n'
+                'Naším úkolem je precizní provedení objektu, který investorovi poskytne optimální provozní podmínky a '
+                'plně vyjádří inovativní charakter značky BYD.',
+          'de': 'Wir realisieren den Bau eines modernen Händlerobjekts für die Marke BYD, im Auftrag der Gruppe '
+                'Dąbrowscy. Die Investition umfasst die Errichtung eines umfassenden Autohauses der neuen Generation.\n'
                 '\n'
-                'Der gesamte moderne Raum wurde von Grund auf geplant, in '
-                'strikter Übereinstimmung mit dem neuesten globalen '
-                'Architektur- und Visualstandard der Marke – BYD CI 7.\n'
+                'Der gesamte moderne Raum wurde von Grund auf geplant, in strikter Übereinstimmung mit dem neuesten '
+                'globalen Architektur- und Visualstandard der Marke – BYD CI 7.\n'
                 '\n'
                 'Der Realisierungsumfang umfasst:\n'
                 '\n'
-                'Moderner Showroom (Showroom): Ein repräsentativer '
-                'Ausstellungsraum, der den höchsten Standards für '
+                'Moderner Showroom (Showroom): Ein repräsentativer Ausstellungsraum, der den höchsten Standards für '
                 'Fahrzeugpräsentation und Kundenservice entspricht.\n'
                 '\n'
-                'Fortschrittlicher Automobilservice: Eine technologisch '
-                'ausgestattete Werkstatthalle, die für die fachgerechte '
-                'Diagnose und Reparatur von Elektro- und Hybridfahrzeugen '
-                'vorbereitet ist.\n'
+                'Fortschrittlicher Automobilservice: Eine technologisch ausgestattete Werkstatthalle, die für die '
+                'fachgerechte Diagnose und Reparatur von Elektro- und Hybridfahrzeugen vorbereitet ist.\n'
                 '\n'
-                'Umfassender After-Sales-Service: Ein voll integriertes '
-                'Backoffice für Serviceberater, das eine effiziente Abwicklung '
-                'der Dienstleistungen (After-Sales) unter komfortablen '
-                'Bedingungen gewährleistet.\n'
+                'Umfassender After-Sales-Service: Ein voll integriertes Backoffice für Serviceberater, das eine '
+                'effiziente Abwicklung der Dienstleistungen (After-Sales) unter komfortablen Bedingungen '
+                'gewährleistet.\n'
                 '\n'
-                'Unsere Aufgabe ist die präzise Ausführung eines Objekts, das '
-                'dem Investor optimale Betriebsbedingungen bietet und den '
-                'innovativen Charakter der Marke BYD vollständig zum Ausdruck '
+                'Unsere Aufgabe ist die präzise Ausführung eines Objekts, das dem Investor optimale '
+                'Betriebsbedingungen bietet und den innovativen Charakter der Marke BYD vollständig zum Ausdruck '
                 'bringt.',
-          'en': 'We are constructing a modern dealership facility for the BYD '
-                'brand, commissioned by Grupa Dąbrowscy. The investment covers '
-                'the creation of a comprehensive, next-generation car '
-                'showroom.\n'
+          'en': 'We are constructing a modern dealership facility for the BYD brand, commissioned by Grupa Dąbrowscy. '
+                'The investment covers the creation of a comprehensive, next-generation car showroom.\n'
                 '\n'
-                'The entire modern space has been designed from scratch, in '
-                'strict compliance with the latest global architectural and '
-                'visual standard of the brand – BYD CI 7.\n'
+                'The entire modern space has been designed from scratch, in strict compliance with the latest global '
+                'architectural and visual standard of the brand – BYD CI 7.\n'
                 '\n'
                 'Scope of work includes:\n'
                 '\n'
-                'Modern showroom (Showroom): A representative exhibition '
-                'space, tailored to the highest standards of vehicle '
-                'presentation and customer service.\n'
+                'Modern showroom (Showroom): A representative exhibition space, tailored to the highest standards of '
+                'vehicle presentation and customer service.\n'
                 '\n'
-                'Advanced automotive service: A technologically equipped '
-                'workshop hall, prepared for specialist diagnostics and repair '
-                'of electric and hybrid vehicles.\n'
+                'Advanced automotive service: A technologically equipped workshop hall, prepared for specialist '
+                'diagnostics and repair of electric and hybrid vehicles.\n'
                 '\n'
-                'Comprehensive after-sales support: A fully integrated '
-                'facility dedicated to service advisors, ensuring efficient '
-                'delivery of services (after-sales) in comfortable '
-                'conditions.\n'
+                'Comprehensive after-sales support: A fully integrated facility dedicated to service advisors, '
+                'ensuring efficient delivery of services (after-sales) in comfortable conditions.\n'
                 '\n'
-                'Our task is to precisely deliver a facility that will provide '
-                'the Investor with optimal operational conditions and fully '
-                'reflect the innovative character of the BYD brand.',
-          'hu': 'Modern márkakereskedelmi objektumot építünk a BYD márka '
-                'számára, a Dąbrowscy Csoport megbízásából. A beruházás egy új '
-                'generációs, komplex autószalon létrehozását foglalja '
-                'magában.\n'
+                'Our task is to precisely deliver a facility that will provide the Investor with optimal operational '
+                'conditions and fully reflect the innovative character of the BYD brand.',
+          'hu': 'Modern márkakereskedelmi objektumot építünk a BYD márka számára, a Dąbrowscy Csoport megbízásából. A '
+                'beruházás egy új generációs, komplex autószalon létrehozását foglalja magában.\n'
                 '\n'
-                'A teljes modern teret a nulláról terveztük, szigorúan a márka '
-                'legújabb globális építészeti és vizuális szabványának – BYD '
-                'CI 7 – megfelelően.\n'
+                'A teljes modern teret a nulláról terveztük, szigorúan a márka legújabb globális építészeti és '
+                'vizuális szabványának – BYD CI 7 – megfelelően.\n'
                 '\n'
                 'A megvalósítás terjedelme:\n'
                 '\n'
-                'Modern értékesítési terem (Showroom): Reprezentatív '
-                'kiállítási tér, a járművek bemutatásának és az '
+                'Modern értékesítési terem (Showroom): Reprezentatív kiállítási tér, a járművek bemutatásának és az '
                 'ügyfélkiszolgálásnak a legmagasabb színvonalához igazítva.\n'
                 '\n'
-                'Fejlett gépjárműszerviz: Technológiailag felszerelt '
-                'műhelycsarnok, amely elektromos és hibrid járművek speciális '
-                'diagnosztikájára és javítására készült.\n'
+                'Fejlett gépjárműszerviz: Technológiailag felszerelt műhelycsarnok, amely elektromos és hibrid '
+                'járművek speciális diagnosztikájára és javítására készült.\n'
                 '\n'
-                'Átfogó értékesítés utáni szolgáltatás: Teljes mértékben '
-                'integrált háttér a szerviz-tanácsadók számára, amely '
-                'kényelmes körülmények között biztosítja a szolgáltatások '
-                '(after-sales) hatékony megvalósítását.\n'
+                'Átfogó értékesítés utáni szolgáltatás: Teljes mértékben integrált háttér a szerviz-tanácsadók '
+                'számára, amely kényelmes körülmények között biztosítja a szolgáltatások (after-sales) hatékony '
+                'megvalósítását.\n'
                 '\n'
-                'Feladatunk egy olyan objektum precíz kivitelezése, amely '
-                'optimális működési feltételeket biztosít a befektető számára, '
-                'és teljes mértékben tükrözi a BYD márka innovatív jellegét.',
-          'sk': 'Realizujeme výstavbu moderného dealerského objektu pre značku '
-                'BYD, na objednávku skupiny Dąbrowscy. Investícia zahŕňa '
-                'vytvorenie komplexného autosalónu novej generácie.\n'
+                'Feladatunk egy olyan objektum precíz kivitelezése, amely optimális működési feltételeket biztosít a '
+                'befektető számára, és teljes mértékben tükrözi a BYD márka innovatív jellegét.',
+          'sk': 'Realizujeme výstavbu moderného dealerského objektu pre značku BYD, na objednávku skupiny Dąbrowscy. '
+                'Investícia zahŕňa vytvorenie komplexného autosalónu novej generácie.\n'
                 '\n'
-                'Celý moderný priestor bol navrhnutý od základu, v prísnom '
-                'súlade s najnovším globálnym architektonickým a vizuálnym '
-                'štandardom značky – BYD CI 7.\n'
+                'Celý moderný priestor bol navrhnutý od základu, v prísnom súlade s najnovším globálnym '
+                'architektonickým a vizuálnym štandardom značky – BYD CI 7.\n'
                 '\n'
                 'Rozsah realizácie zahŕňa:\n'
                 '\n'
-                'Modernú predajnú sálu (Showroom): Reprezentatívny výstavný '
-                'priestor prispôsobený najvyšším štandardom prezentácie '
-                'vozidiel a zákazníckeho servisu.\n'
+                'Modernú predajnú sálu (Showroom): Reprezentatívny výstavný priestor prispôsobený najvyšším štandardom '
+                'prezentácie vozidiel a zákazníckeho servisu.\n'
                 '\n'
-                'Pokročilý autoservis: Technologicky vybavená dielenská hala '
-                'pripravená na špecializovanú diagnostiku a opravu '
-                'elektrických a hybridných vozidiel.\n'
+                'Pokročilý autoservis: Technologicky vybavená dielenská hala pripravená na špecializovanú diagnostiku '
+                'a opravu elektrických a hybridných vozidiel.\n'
                 '\n'
-                'Komplexný popredajný servis: Plne integrované zázemie určené '
-                'servisným poradcom, zabezpečujúce efektívne poskytovanie '
-                'služieb (after-sales) v komfortných podmienkach.\n'
+                'Komplexný popredajný servis: Plne integrované zázemie určené servisným poradcom, zabezpečujúce '
+                'efektívne poskytovanie služieb (after-sales) v komfortných podmienkach.\n'
                 '\n'
-                'Našou úlohou je precízne vykonanie objektu, ktorý investorovi '
-                'poskytne optimálne prevádzkové podmínky a plne vyjadrí '
-                'inovatívny charakter značky BYD.'},
+                'Našou úlohou je precízne vykonanie objektu, ktorý investorovi poskytne optimálne prevádzkové podmínky '
+                'a plne vyjadrí inovatívny charakter značky BYD.'},
   't_s': {},
   't_t': {},
   'title': 'BYD Dąbrowscy - Bytom',
@@ -4383,9 +4001,9 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/5c9ca71ccb20.webp',
+  'hero': '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg',
   'latitude': 52.4305024,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/5f295318db8b.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 20.7349408,
   'opis': '',
   'order': 25,
@@ -4401,9 +4019,9 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/39e49a9d540c.webp',
+  'hero': '/static/img/mbt/DSC03730-scaled-ee7d1094.jpeg',
   'latitude': 50.1494206,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/444dc913cea9.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 18.8517032,
   'opis': '',
   'order': 26,
@@ -4419,39 +4037,28 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/c03c5bacba61.webp',
+  'hero': '/static/img/mbt/DSC03626-scaled-6f5bda4e.jpeg',
   'latitude': 49.9782175,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/75844a90de04.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 19.8201712,
-  'opis': 'Specyfikacja Powierzchnia i parametry (Łącznie): Powierzchnia '
-          'całkowita: 6 650,00 m² Powierzchnia użytkowa: 6 405,00 m² '
-          'Powierzchnia zabudowy: 6 413,00 m² Kubatura: 109 795 m³ Budynek '
-          'biurowo-socjalny: Powierzchnia: ok. 347 m² Kondygnacje: 2 '
-          'Konstrukcja (Hala magazynowa): Posadowienie: Pale betonowe Słupy: '
-          'Prefabrykaty żelbetowe (wysokość 20 m) Dach: Konstrukcja '
-          'prefabrykowana (rozpiętość 33 m), poszycie z blachy trapezowej z '
-          'izolacją termiczną i przeciwwodną Ściany: Obudowa z płyt '
-          'warstwowych Płyta fundamentowa: Żelbetowa, dostosowana pod regały i '
-          'układnice magazynu wysokiego składowania Posadzka: Przemysłowa, '
-          'betonowa, zacierana na gładko Konstrukcja i wykończenie (Budynek '
-          'biurowo-socjalny): Konstrukcja: Murowana ze stropami '
-          'strunobetonowymi Elewacja: Płyty warstwowe Wykończenie (wysoki '
-          'standard): Sufity akustyczne, sucha zabudowa, wykładziny dywanowe i '
-          'PCV, płytki gresowe, witryny aluminiowe Urządzenia i technologia '
-          'magazynowa: 6 doków przeładunkowych z rampami, w większości '
-          'wyposażonych w system automatycznej blokady kół Instalacja '
-          'automatycznego składowania (część wysoka) Regały do składowania '
-          'manualnego "Magazyn ciepły" z precyzyjną kontrolą parametrów '
-          'temperaturowych Instalacje i infrastruktura (Wewnętrzna i '
-          'Zewnętrzna): Instalacje sanitarne: Wodociągowa, kanalizacja '
-          'sanitarna i deszczowa, centralne ogrzewanie Instalacje HVAC: '
-          'Wentylacja mechaniczna, klimatyzacja Instalacje elektryczne i '
-          'teletechniczne: Pełny zakres Ochrona PPOŻ: System Sygnalizacji '
-          'Pożaru (SSP), instalacja gaszenia gazem, zewnętrzny zbiornik wody '
-          'pożarowej, zestaw hydroforowy Infrastruktura zewnętrzna: Przebudowa '
-          'i rozbudowa instalacji (w tym sieci cieplnej), mury oporowe, '
-          'zadaszenie zewnętrzne Układ komunikacyjny: Przebudowa istniejącego '
-          'wewnętrznego układu dróg i stanowisk postojowych',
+  'opis': 'Specyfikacja Powierzchnia i parametry (Łącznie): Powierzchnia całkowita: 6 650,00 m² Powierzchnia użytkowa: '
+          '6 405,00 m² Powierzchnia zabudowy: 6 413,00 m² Kubatura: 109 795 m³ Budynek biurowo-socjalny: Powierzchnia: '
+          'ok. 347 m² Kondygnacje: 2 Konstrukcja (Hala magazynowa): Posadowienie: Pale betonowe Słupy: Prefabrykaty '
+          'żelbetowe (wysokość 20 m) Dach: Konstrukcja prefabrykowana (rozpiętość 33 m), poszycie z blachy trapezowej '
+          'z izolacją termiczną i przeciwwodną Ściany: Obudowa z płyt warstwowych Płyta fundamentowa: Żelbetowa, '
+          'dostosowana pod regały i układnice magazynu wysokiego składowania Posadzka: Przemysłowa, betonowa, '
+          'zacierana na gładko Konstrukcja i wykończenie (Budynek biurowo-socjalny): Konstrukcja: Murowana ze stropami '
+          'strunobetonowymi Elewacja: Płyty warstwowe Wykończenie (wysoki standard): Sufity akustyczne, sucha '
+          'zabudowa, wykładziny dywanowe i PCV, płytki gresowe, witryny aluminiowe Urządzenia i technologia '
+          'magazynowa: 6 doków przeładunkowych z rampami, w większości wyposażonych w system automatycznej blokady kół '
+          'Instalacja automatycznego składowania (część wysoka) Regały do składowania manualnego "Magazyn ciepły" z '
+          'precyzyjną kontrolą parametrów temperaturowych Instalacje i infrastruktura (Wewnętrzna i Zewnętrzna): '
+          'Instalacje sanitarne: Wodociągowa, kanalizacja sanitarna i deszczowa, centralne ogrzewanie Instalacje HVAC: '
+          'Wentylacja mechaniczna, klimatyzacja Instalacje elektryczne i teletechniczne: Pełny zakres Ochrona PPOŻ: '
+          'System Sygnalizacji Pożaru (SSP), instalacja gaszenia gazem, zewnętrzny zbiornik wody pożarowej, zestaw '
+          'hydroforowy Infrastruktura zewnętrzna: Przebudowa i rozbudowa instalacji (w tym sieci cieplnej), mury '
+          'oporowe, zadaszenie zewnętrzne Układ komunikacyjny: Przebudowa istniejącego wewnętrznego układu dróg i '
+          'stanowisk postojowych',
   'order': 27,
   'slug': 'VESUVIUS',
   'status': 'W trakcie realizacji',
@@ -4469,36 +4076,30 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Konstrukce (Skladová hala):\n'
                 'Založení: betonové piloty\n'
                 'Sloupy: prefabrikované železobetonové (výška 20 m)\n'
-                'Střecha: prefabrikovaná konstrukce (rozpětí 33 m), opláštění '
-                'z trapézového plechu s tepelnou a protivodní izolací\n'
+                'Střecha: prefabrikovaná konstrukce (rozpětí 33 m), opláštění z trapézového plechu s tepelnou a '
+                'protivodní izolací\n'
                 'Stěny: opláštění ze sendvičových panelů\n'
-                'Základová deska: železobetonová, přizpůsobená pro regály a '
-                'zakladače vysokého skladu\n'
+                'Základová deska: železobetonová, přizpůsobená pro regály a zakladače vysokého skladu\n'
                 'Podlaha: průmyslová betonová, hladce zahlazená\n'
                 'Konstrukce a dokončení (Kancelářsko-sociální budova):\n'
                 'Konstrukce: zděná se stropy z předpjatého betonu\n'
                 'Fasáda: sendvičové panely\n'
-                'Dokončení (vysoký standard): akustické podhledy, suchá '
-                'výstavba, kobercové a PVC krytiny, gresové dlaždice, '
-                'hliníkové výlohy\n'
+                'Dokončení (vysoký standard): akustické podhledy, suchá výstavba, kobercové a PVC krytiny, gresové '
+                'dlaždice, hliníkové výlohy\n'
                 'Zařízení a skladovací technologie:\n'
-                '6 překládacích doků s rampami, převážně vybavených systémem '
-                'automatického blokování kol\n'
+                '6 překládacích doků s rampami, převážně vybavených systémem automatického blokování kol\n'
                 'Instalace automatického skladování (vysoká část)\n'
                 'Regály pro manuální skladování\n'
                 '"Teplý sklad" s přesnou kontrolou teplotních parametrů\n'
                 'Instalace a infrastruktura (Vnitřní i vnější):\n'
-                'Sanitární instalace: vodovod, kanalizace sanitární a dešťová, '
-                'ústřední vytápění\n'
+                'Sanitární instalace: vodovod, kanalizace sanitární a dešťová, ústřední vytápění\n'
                 'HVAC instalace: mechanická ventilace, klimatizace\n'
                 'Elektrické a slaboproudé instalace: v plném rozsahu\n'
-                'PO požární ochrana: systém požární signalizace (EPS), '
-                'instalace plynového hašení, vnější nádrž požární vody, '
-                'hydroforová sestava\n'
-                'Vnější infrastruktura: přestavba a rozšíření instalací '
-                '(včetně teplovodní sítě), opěrné zdi, vnější přístřešky\n'
-                'Dopravní uspořádání: přestavba stávajícího vnitřního '
-                'uspořádání komunikací a parkovacích stání',
+                'PO požární ochrana: systém požární signalizace (EPS), instalace plynového hašení, vnější nádrž '
+                'požární vody, hydroforová sestava\n'
+                'Vnější infrastruktura: přestavba a rozšíření instalací (včetně teplovodní sítě), opěrné zdi, vnější '
+                'přístřešky\n'
+                'Dopravní uspořádání: přestavba stávajícího vnitřního uspořádání komunikací a parkovacích stání',
           'de': 'Spezifikation\n'
                 'Flächen und Parameter (Gesamt):\n'
                 'Gesamtfläche: 6.650,00 m²\n'
@@ -4511,34 +4112,30 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Konstruktion (Lagerhalle):\n'
                 'Gründung: Betonpfähle\n'
                 'Stützen: Stahlbeton-Fertigteile (Höhe 20 m)\n'
-                'Dach: Fertigteilkonstruktion (Spannweite 33 m), '
-                'Trapezblechverkleidung mit Wärmedämmung und Abdichtung\n'
+                'Dach: Fertigteilkonstruktion (Spannweite 33 m), Trapezblechverkleidung mit Wärmedämmung und '
+                'Abdichtung\n'
                 'Wände: Verkleidung aus Sandwichpaneelen\n'
-                'Bodenplatte: Stahlbeton, ausgelegt für Hochregal-Lager und '
-                'Regalbediengeräte\n'
+                'Bodenplatte: Stahlbeton, ausgelegt für Hochregal-Lager und Regalbediengeräte\n'
                 'Boden: Industriebeton, glatt maschinengeschliffen\n'
                 'Konstruktion und Ausbau (Büro- und Sozialgebäude):\n'
                 'Konstruktion: Mauerwerk mit Spannbetondecken\n'
                 'Fassade: Sandwichpaneele\n'
-                'Ausbau (hochwertig): Akustikdecken, Trockenbau, Teppich- und '
-                'PVC-Beläge, Feinsteinzeugfliesen, Aluminium-Schaufenster\n'
+                'Ausbau (hochwertig): Akustikdecken, Trockenbau, Teppich- und PVC-Beläge, Feinsteinzeugfliesen, '
+                'Aluminium-Schaufenster\n'
                 'Ausstattung und Lagertechnik:\n'
-                '6 Verladedocks mit Rampen, überwiegend mit automatischer '
-                'Radblockierung ausgestattet\n'
+                '6 Verladedocks mit Rampen, überwiegend mit automatischer Radblockierung ausgestattet\n'
                 'Automatische Lagereinrichtung (Hochregalbereich)\n'
                 'Regale für manuelle Lagerung\n'
                 '„Warmes Lager" mit präziser Temperaturparameter-Überwachung\n'
                 'Installationen und Infrastruktur (Innen und Außen):\n'
-                'Sanitärinstallationen: Wasserleitung, Schmutz- und '
-                'Regenwasserkanalisation, Zentralheizung\n'
+                'Sanitärinstallationen: Wasserleitung, Schmutz- und Regenwasserkanalisation, Zentralheizung\n'
                 'HVAC-Installationen: Mechanische Lüftung, Klimatisierung\n'
                 'Elektro- und Fernmeldetechnik: Vollständiger Umfang\n'
-                'Brandschutz: Brandmeldeanlage (BMA), Gaslöschanlage, '
-                'außenliegender Löschwassertank, Druckerhöhungsanlage\n'
-                'Außenanlagen: Umbau und Erweiterung der Installationen '
-                '(einschließlich Wärmenetz), Stützmauern, Außenüberdachungen\n'
-                'Verkehrsanlagen: Umbau der bestehenden inneren Wege- und '
-                'Stellplatzanordnung',
+                'Brandschutz: Brandmeldeanlage (BMA), Gaslöschanlage, außenliegender Löschwassertank, '
+                'Druckerhöhungsanlage\n'
+                'Außenanlagen: Umbau und Erweiterung der Installationen (einschließlich Wärmenetz), Stützmauern, '
+                'Außenüberdachungen\n'
+                'Verkehrsanlagen: Umbau der bestehenden inneren Wege- und Stellplatzanordnung',
           'en': 'Specification\n'
                 'Areas and parameters (Total):\n'
                 'Total area: 6,650.00 m²\n'
@@ -4551,38 +4148,30 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Structure (Warehouse hall):\n'
                 'Foundation: Concrete piles\n'
                 'Columns: Precast reinforced concrete (height 20 m)\n'
-                'Roof: Precast structure (span 33 m), trapezoidal sheet metal '
-                'cladding with thermal and waterproof insulation\n'
+                'Roof: Precast structure (span 33 m), trapezoidal sheet metal cladding with thermal and waterproof '
+                'insulation\n'
                 'Walls: Sandwich panel cladding\n'
-                'Foundation slab: Reinforced concrete, designed for high-bay '
-                'racking and storage/retrieval systems\n'
-                'Floor: Industrial concrete floor, power-trowelled to a smooth '
-                'finish\n'
+                'Foundation slab: Reinforced concrete, designed for high-bay racking and storage/retrieval systems\n'
+                'Floor: Industrial concrete floor, power-trowelled to a smooth finish\n'
                 'Structure and finishes (Office and welfare building):\n'
                 'Structure: Masonry with prestressed concrete floors\n'
                 'Façade: Sandwich panels\n'
-                'Finishes (high standard): Acoustic ceilings, drywall, carpet '
-                'and PVC floor coverings, stoneware tiles, aluminium '
-                'storefronts\n'
+                'Finishes (high standard): Acoustic ceilings, drywall, carpet and PVC floor coverings, stoneware '
+                'tiles, aluminium storefronts\n'
                 'Equipment and storage technology:\n'
-                '6 loading docks with ramps, mostly equipped with automatic '
-                'wheel-locking systems\n'
+                '6 loading docks with ramps, mostly equipped with automatic wheel-locking systems\n'
                 'Automated storage installation (high-bay section)\n'
                 'Manual storage racking\n'
-                '"Heated warehouse" with precise temperature parameter '
-                'control\n'
+                '"Heated warehouse" with precise temperature parameter control\n'
                 'Installations and infrastructure (Internal and External):\n'
-                'Sanitary installations: Water supply, sanitary and stormwater '
-                'drainage, central heating\n'
+                'Sanitary installations: Water supply, sanitary and stormwater drainage, central heating\n'
                 'HVAC installations: Mechanical ventilation, air conditioning\n'
                 'Electrical and teletechnical installations: Full scope\n'
-                'Fire protection: Fire alarm system (SSP), gas extinguishing '
-                'system, external fire-water tank, booster set\n'
-                'External infrastructure: Reconstruction and extension of '
-                'installations (including heating network), retaining walls, '
-                'external canopies\n'
-                'Traffic layout: Reconstruction of the existing internal road '
-                'and parking layout',
+                'Fire protection: Fire alarm system (SSP), gas extinguishing system, external fire-water tank, booster '
+                'set\n'
+                'External infrastructure: Reconstruction and extension of installations (including heating network), '
+                'retaining walls, external canopies\n'
+                'Traffic layout: Reconstruction of the existing internal road and parking layout',
           'hu': 'Specifikáció\n'
                 'Területek és paraméterek (Összesen):\n'
                 'Teljes terület: 6 650,00 m²\n'
@@ -4595,35 +4184,28 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Szerkezet (Raktárcsarnok):\n'
                 'Alapozás: beton cölöpök\n'
                 'Oszlopok: előregyártott vasbeton (magasság 20 m)\n'
-                'Tető: előregyártott szerkezet (fesztáv 33 m), trapézlemez '
-                'burkolat hő- és vízszigeteléssel\n'
+                'Tető: előregyártott szerkezet (fesztáv 33 m), trapézlemez burkolat hő- és vízszigeteléssel\n'
                 'Falak: szendvicspanel burkolat\n'
-                'Alaplemez: vasbeton, magasraktári állványokhoz és '
-                'rakodógépekhez igazítva\n'
+                'Alaplemez: vasbeton, magasraktári állványokhoz és rakodógépekhez igazítva\n'
                 'Padló: ipari beton, simára csiszolt\n'
                 'Szerkezet és kivitelezés (Irodai és szociális épület):\n'
                 'Szerkezet: falazott, feszített beton födémekkel\n'
                 'Homlokzat: szendvicspanelek\n'
-                'Kivitelezés (magas színvonalú): akusztikus álmennyezetek, '
-                'szárazépítészet, szőnyeg- és PVC padlóburkolatok, greslapok, '
-                'alumínium kirakatok\n'
+                'Kivitelezés (magas színvonalú): akusztikus álmennyezetek, szárazépítészet, szőnyeg- és PVC '
+                'padlóburkolatok, greslapok, alumínium kirakatok\n'
                 'Berendezések és raktártechnológia:\n'
-                '6 átfejtő dokk rámpákkal, többnyire automata kerékblokkoló '
-                'rendszerrel felszerelve\n'
+                '6 átfejtő dokk rámpákkal, többnyire automata kerékblokkoló rendszerrel felszerelve\n'
                 'Automata tároló berendezés (magas rész)\n'
                 'Kézi tárolásra szolgáló állványok\n'
                 '„Meleg raktár" precíz hőmérséklet-paraméter ellenőrzéssel\n'
                 'Installációk és infrastruktúra (Belső és külső):\n'
-                'Szaniter installációk: vízvezeték, szennyvíz- és '
-                'csapadékvíz-csatorna, központi fűtés\n'
+                'Szaniter installációk: vízvezeték, szennyvíz- és csapadékvíz-csatorna, központi fűtés\n'
                 'HVAC installációk: gépi szellőzés, klíma\n'
                 'Elektromos és gyengeáramú installációk: teljes körű\n'
-                'Tűzvédelem: tűzjelző rendszer (SSP), gázzal oltó rendszer, '
-                'külső tűzivíztározó, hidrofor egység\n'
-                'Külső infrastruktúra: installációk át- és kiépítése '
-                '(beleértve a távhőhálózatot), támfalak, külső előtetők\n'
-                'Közlekedési rendszer: a meglévő belső út- és '
-                'parkolóelrendezés átépítése',
+                'Tűzvédelem: tűzjelző rendszer (SSP), gázzal oltó rendszer, külső tűzivíztározó, hidrofor egység\n'
+                'Külső infrastruktúra: installációk át- és kiépítése (beleértve a távhőhálózatot), támfalak, külső '
+                'előtetők\n'
+                'Közlekedési rendszer: a meglévő belső út- és parkolóelrendezés átépítése',
           'sk': 'Špecifikácia\n'
                 'Plochy a parametre (Spolu):\n'
                 'Celková plocha: 6 650,00 m²\n'
@@ -4636,38 +4218,31 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'Konštrukcia (Skladová hala):\n'
                 'Založenie: betónové pilóty\n'
                 'Stĺpy: prefabrikované železobetónové (výška 20 m)\n'
-                'Strecha: prefabrikovaná konštrukcia (rozpätie 33 m), '
-                'opláštenie z trapézového plechu s tepelnou a protivodnou '
-                'izoláciou\n'
+                'Strecha: prefabrikovaná konštrukcia (rozpätie 33 m), opláštenie z trapézového plechu s tepelnou a '
+                'protivodnou izoláciou\n'
                 'Steny: opláštenie zo sendvičových panelov\n'
-                'Základová doska: železobetónová, prispôsobená pre regále a '
-                'zakladače vysokého skladu\n'
+                'Základová doska: železobetónová, prispôsobená pre regále a zakladače vysokého skladu\n'
                 'Podlaha: priemyselná betónová, hladko zahladená\n'
                 'Konštrukcia a dokončenie (Kancelársko-sociálna budova):\n'
                 'Konštrukcia: murovaná so stropmi z predpätého betónu\n'
                 'Fasáda: sendvičové panely\n'
-                'Dokončenie (vysoký štandard): akustické podh�ady, suchá '
-                'výstavba, kobercové a PVC krytiny, gresové dlaždice, '
-                'hliníkové výklady\n'
+                'Dokončenie (vysoký štandard): akustické podh�ady, suchá výstavba, kobercové a PVC krytiny, gresové '
+                'dlaždice, hliníkové výklady\n'
                 'Zariadenia a skladovacia technológia:\n'
-                '6 prekladaných dokov s rampami, prevažne vybavených systémom '
-                'automatického blokovania kolies\n'
+                '6 prekladaných dokov s rampami, prevažne vybavených systémom automatického blokovania kolies\n'
                 'Inštalácia automatického skladovania (vysoká časť)\n'
                 'Regále pre manuálne skladovanie\n'
                 '"Teplý sklad" s presnou kontrolou teplotných parametrov\n'
                 'Inštalácie a infraštruktúra (Vnútorná a vonkajšia):\n'
-                'Sanitárne inštalácie: vodovod, kanalizácia sanitárna a '
-                'dažďová, ústredné vykurovanie\n'
+                'Sanitárne inštalácie: vodovod, kanalizácia sanitárna a dažďová, ústredné vykurovanie\n'
                 'HVAC inštalácie: mechanická ventilácia, klimatizácia\n'
                 'Elektrické a slaboprúdové inštalácie: v plnom rozsahu\n'
-                'PO protipožiarna ochrana: systém požiarnej signalizácie '
-                '(EPS), inštalácia plynového hasenia, vonkajšia nádrž '
-                'požiarnej vody, hydroforová zostava\n'
-                'Vonkajšia infraštruktúra: prestavba a rozšírenie inštalácií '
-                '(vrátane teplovodnej siete), oporné múry, vonkajšie '
-                'prístrešky\n'
-                'Dopravné usporiadanie: prestavba jestvujúceho vnútorného '
-                'usporiadania komunikácií a parkovacích státí'},
+                'PO protipožiarna ochrana: systém požiarnej signalizácie (EPS), inštalácia plynového hasenia, '
+                'vonkajšia nádrž požiarnej vody, hydroforová zostava\n'
+                'Vonkajšia infraštruktúra: prestavba a rozšírenie inštalácií (vrátane teplovodnej siete), oporné múry, '
+                'vonkajšie prístrešky\n'
+                'Dopravné usporiadanie: prestavba jestvujúceho vnútorného usporiadania komunikácií a parkovacích '
+                'státí'},
   't_s': {},
   't_t': {},
   'title': 'VESUVIUS Skawina',
@@ -4675,93 +4250,60 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/7ad52ff95b94.webp',
+  'hero': '/static/img/mbt/DJI_0174-scaled-5106e265.jpeg',
   'latitude': 52.2917104,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/4d8667558baa.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 21.0761354,
-  'opis': 'Budowa budynku self storage przy ul. Bystrej i Kolejarskiej w '
-          'Warszawie. \r\n'
+  'opis': 'Budowa budynku self storage przy ul. Bystrej i Kolejarskiej w Warszawie. \r\n'
           '\r\n'
-          '•\tBudynek 6 kondygnacyjny wyposażony w duże windy towarowo-osobowe '
-          'oraz ewakuacyjną klatkę schodową. \r\n'
-          '•\tCałkowita powierzchnia budynku self storge 8 269,03 m² o '
-          'kubaturze 24 458 m3\r\n'
-          '•\tBudynek powstaje jako konstrukcja betonowa monolityczna '
-          'posadowiony na stopach fundamentowych.\r\n'
-          '•\tElewacja z płyt warstwowych, poszycie dachy wykonane z membrany '
-          'EPDM na warstwach termoizolacyjnych. \r\n'
-          '•\tZagospodarowanie terenu wraz z zbiornikiem retencyjnym oraz '
-          'infrastrukturą towarzyszącą.',
+          '•\tBudynek 6 kondygnacyjny wyposażony w duże windy towarowo-osobowe oraz ewakuacyjną klatkę schodową. \r\n'
+          '•\tCałkowita powierzchnia budynku self storge 8 269,03 m² o kubaturze 24 458 m3\r\n'
+          '•\tBudynek powstaje jako konstrukcja betonowa monolityczna posadowiony na stopach fundamentowych.\r\n'
+          '•\tElewacja z płyt warstwowych, poszycie dachy wykonane z membrany EPDM na warstwach termoizolacyjnych. \r\n'
+          '•\tZagospodarowanie terenu wraz z zbiornikiem retencyjnym oraz infrastrukturą towarzyszącą.',
   'order': 28,
   'slug': 'stokado-self-storage-warszawa-targowek',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba budovy self storage u ul. Bystréj a Kolejarské ve '
-                'Varšavě.\n'
+  't_o': {'cs': 'Výstavba budovy self storage u ul. Bystréj a Kolejarské ve Varšavě.\n'
                 '\n'
-                '• 6podlažní budova vybavená velkými nákladně-osobními výtahy '
-                'a únikovým schodištěm.\n'
-                '• Celková plocha budovy self storage 8 269,03 m² o objemu 24 '
-                '458 m3\n'
-                '• Budova je realizována jako monolitická betonová konstrukce '
-                'založená na základových patkách.\n'
-                '• Fasáda ze sendvičových panelů, opláštění střechy provedeno '
-                'z EPDM membrány na tepelněizolačních vrstvách.\n'
-                '• Úprava terénu včetně retenční nádrže a doprovodné '
-                'infrastruktury.',
-          'de': 'Bau eines Self-Storage-Gebäudes an der ul. Bystra und '
-                'Kolejarska in Warschau.\n'
+                '• 6podlažní budova vybavená velkými nákladně-osobními výtahy a únikovým schodištěm.\n'
+                '• Celková plocha budovy self storage 8 269,03 m² o objemu 24 458 m3\n'
+                '• Budova je realizována jako monolitická betonová konstrukce založená na základových patkách.\n'
+                '• Fasáda ze sendvičových panelů, opláštění střechy provedeno z EPDM membrány na tepelněizolačních '
+                'vrstvách.\n'
+                '• Úprava terénu včetně retenční nádrže a doprovodné infrastruktury.',
+          'de': 'Bau eines Self-Storage-Gebäudes an der ul. Bystra und Kolejarska in Warschau.\n'
                 '\n'
-                '• 6-geschossiges Gebäude, ausgestattet mit großen Lasten- und '
-                'Personenaufzügen sowie einem Fluchttreppenhaus.\n'
-                '• Gesamtfläche des Self-Storage-Gebäudes 8.269,03 m² mit '
-                'einem Volumen von 24.458 m3\n'
-                '• Das Gebäude wird als monolithische Betonkonstruktion auf '
-                'Punktfundamenten errichtet.\n'
-                '• Fassade aus Sandwichpaneelen, Dacheindeckung aus '
-                'EPDM-Membran auf Wärmedämmschichten.\n'
-                '• Geländegestaltung einschließlich Rückhaltetank und '
-                'zugehöriger Infrastruktur.',
-          'en': 'Construction of a self-storage building at ul. Bystra and '
-                'Kolejarska in Warsaw.\n'
+                '• 6-geschossiges Gebäude, ausgestattet mit großen Lasten- und Personenaufzügen sowie einem '
+                'Fluchttreppenhaus.\n'
+                '• Gesamtfläche des Self-Storage-Gebäudes 8.269,03 m² mit einem Volumen von 24.458 m3\n'
+                '• Das Gebäude wird als monolithische Betonkonstruktion auf Punktfundamenten errichtet.\n'
+                '• Fassade aus Sandwichpaneelen, Dacheindeckung aus EPDM-Membran auf Wärmedämmschichten.\n'
+                '• Geländegestaltung einschließlich Rückhaltetank und zugehöriger Infrastruktur.',
+          'en': 'Construction of a self-storage building at ul. Bystra and Kolejarska in Warsaw.\n'
                 '\n'
-                '• 6-storey building equipped with large cargo and passenger '
-                'lifts and an evacuation staircase.\n'
-                '• Total area of the self-storage building 8,269.03 m² with a '
-                'volume of 24,458 m3\n'
-                '• The building is being built as a monolithic concrete '
-                'structure founded on foundation footings.\n'
-                '• Façade of sandwich panels, roof covering made of EPDM '
-                'membrane on thermal insulation layers.\n'
-                '• Land development including a retention tank and '
-                'accompanying infrastructure.',
-          'hu': 'Önkiszolgáló tároló (self storage) épület építése a varsói '
-                'ul. Bystra és Kolejarska utcánál.\n'
+                '• 6-storey building equipped with large cargo and passenger lifts and an evacuation staircase.\n'
+                '• Total area of the self-storage building 8,269.03 m² with a volume of 24,458 m3\n'
+                '• The building is being built as a monolithic concrete structure founded on foundation footings.\n'
+                '• Façade of sandwich panels, roof covering made of EPDM membrane on thermal insulation layers.\n'
+                '• Land development including a retention tank and accompanying infrastructure.',
+          'hu': 'Önkiszolgáló tároló (self storage) épület építése a varsói ul. Bystra és Kolejarska utcánál.\n'
                 '\n'
-                '• 6 szintes épület, nagy teher- és személyfelvonókkal, '
-                'valamint menekülési lépcsőházzal felszerelve.\n'
-                '• A self storage épület teljes alapterülete 8 269,03 m², '
-                'térfogata 24 458 m3\n'
-                '• Az épület monolitikus betonszerkezetként készül, '
-                'pontalapokon.\n'
-                '• Szendvicspanel homlokzat, a tetőfedés EPDM membránból '
-                'készült hőszigetelő rétegeken.\n'
-                '• Telekrendezés visszatartó tartállyal és kísérő '
-                'infrastruktúrával.',
-          'sk': 'Výstavba budovy self storage pri ul. Bystrej a Kolejarskej vo '
-                'Varšave.\n'
+                '• 6 szintes épület, nagy teher- és személyfelvonókkal, valamint menekülési lépcsőházzal felszerelve.\n'
+                '• A self storage épület teljes alapterülete 8 269,03 m², térfogata 24 458 m3\n'
+                '• Az épület monolitikus betonszerkezetként készül, pontalapokon.\n'
+                '• Szendvicspanel homlokzat, a tetőfedés EPDM membránból készült hőszigetelő rétegeken.\n'
+                '• Telekrendezés visszatartó tartállyal és kísérő infrastruktúrával.',
+          'sk': 'Výstavba budovy self storage pri ul. Bystrej a Kolejarskej vo Varšave.\n'
                 '\n'
-                '• 6-podlažná budova vybavená veľkými nákladno-osobnými '
-                'výťahmi a únikovým schodiskom.\n'
-                '• Celková plocha budovy self storage 8 269,03 m² s objemom 24 '
-                '458 m3\n'
-                '• Budova je realizovaná ako monolitická betónová konštrukcia '
-                'založená na základových pätkách.\n'
-                '• Fasáda zo sendvičových panelov, opláštenie strechy vykonané '
-                'z EPDM membrány na tepelnoizolačných vrstvách.\n'
-                '• Úprava terénu vrátane retenčnej nádrže a sprievodnej '
-                'infraštruktúry.'},
+                '• 6-podlažná budova vybavená veľkými nákladno-osobnými výťahmi a únikovým schodiskom.\n'
+                '• Celková plocha budovy self storage 8 269,03 m² s objemom 24 458 m3\n'
+                '• Budova je realizovaná ako monolitická betónová konštrukcia založená na základových pätkách.\n'
+                '• Fasáda zo sendvičových panelov, opláštenie strechy vykonané z EPDM membrány na tepelnoizolačných '
+                'vrstvách.\n'
+                '• Úprava terénu vrátane retenčnej nádrže a sprievodnej infraštruktúry.'},
   't_s': {},
   't_t': {},
   'title': 'Stokado Self-Storage – Warszawa Targówek',
@@ -4773,106 +4315,70 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.03319,
   'logo': '/static/img/mbt/venusgotowe-3c7b87fa.png',
   'longitude': 20.0895646,
-  'opis': 'Zagospodarowanie terenu – PZT • Powierzchnia terenu inwestycji: ok. '
-          '13 300 m² • Powierzchnia utwardzona: ok. 850 m² Hala magazynowa + '
-          'biurowiec • Powierzchnia zabudowy: ok. 3200 m² • Powierzchnia '
-          'użytkowa: ok. 3800 m² • Kubatura: ok. 33 500 m³ • Ilość '
-          'kondygnacji: 1 i 3 Konstrukcja • Konstrukcja mieszana: słupy i '
-          'stropy żelbetowe, konstrukcja dachu stalowa, ściany zewnętrzne jako '
-          'wypełnienie murem oraz płyty warstwowe, stropy monolityczne i '
-          'prefabrykowane Elewacja • W hali system płyt warstwowych, natomiast '
-          'w biurowcu system płyt warstwowych oraz jako reprezentatywna część '
-          'obiektu, zastosowanie dużych przeszkleń oraz płyt kompozytowych '
-          'Dach • Membrana dachowa PVC Sieci i instalacje zewnętrzne i '
-          'wewnętrzne • Na potrzeby realizowanej inwestycji: ○ Sieci wod-kan, '
-          'gaz, elektryczne ○ Kanalizacja sanitarna i deszczowa ○ Budowa '
-          'zbiornika retencyjnego W naszych mediach społecznościowych znajdują '
-          'się fotorelacje, aktualizowane na bieżąco.',
+  'opis': 'Zagospodarowanie terenu – PZT • Powierzchnia terenu inwestycji: ok. 13 300 m² • Powierzchnia utwardzona: '
+          'ok. 850 m² Hala magazynowa + biurowiec • Powierzchnia zabudowy: ok. 3200 m² • Powierzchnia użytkowa: ok. '
+          '3800 m² • Kubatura: ok. 33 500 m³ • Ilość kondygnacji: 1 i 3 Konstrukcja • Konstrukcja mieszana: słupy i '
+          'stropy żelbetowe, konstrukcja dachu stalowa, ściany zewnętrzne jako wypełnienie murem oraz płyty warstwowe, '
+          'stropy monolityczne i prefabrykowane Elewacja • W hali system płyt warstwowych, natomiast w biurowcu system '
+          'płyt warstwowych oraz jako reprezentatywna część obiektu, zastosowanie dużych przeszkleń oraz płyt '
+          'kompozytowych Dach • Membrana dachowa PVC Sieci i instalacje zewnętrzne i wewnętrzne • Na potrzeby '
+          'realizowanej inwestycji: ○ Sieci wod-kan, gaz, elektryczne ○ Kanalizacja sanitarna i deszczowa ○ Budowa '
+          'zbiornika retencyjnego W naszych mediach społecznościowych znajdują się fotorelacje, aktualizowane na '
+          'bieżąco.',
   'order': 29,
   'slug': 'venus-brzegi',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Zastavovací plán – PZT • Plocha pozemku investice: cca 13 300 '
-                'm² • Zpevněná plocha: cca 850 m². Skladová hala + kancelářská '
-                'budova • Zastavěná plocha: cca 3 200 m² • Užitková plocha: '
-                'cca 3 800 m² • Objem: cca 33 500 m³ • Počet podlaží: 1 a 3. '
-                'Konstrukce • Smíšená konstrukce: železobetonové sloupy a '
-                'stropy, ocelová střešní konstrukce, vnější stěny jako zděná '
-                'výplň se sendvičovými panely, monolitické a prefabrikované '
-                'stropy. Fasáda • V hale systém sendvičových panelů, v '
-                'kancelářské budově systém sendvičových panelů a jako '
-                'reprezentativní část objektu velké prosklené plochy a '
-                'kompozitní panely. Střecha • Střešní PVC membrána. Vnější a '
-                'vnitřní sítě a instalace • Pro potřeby realizované investice: '
-                '○ Vodovodní a kanalizační, plynové a elektrické sítě ○ '
-                'Splašková a dešťová kanalizace ○ Výstavba retenční nádrže. '
-                'Fotogalerie jsou průběžně aktualizovány na našich sociálních '
-                'sítích.',
-          'de': 'Geländegestaltung – B-Plan • Grundstücksfläche der '
-                'Investition: ca. 13 300 m² • Befestigte Fläche: ca. 850 m². '
-                'Lagerhalle + Bürogebäude • Grundstücksfläche: ca. 3 200 m² • '
-                'Nutzfläche: ca. 3 800 m² • Volumen: ca. 33 500 m³ • Anzahl '
-                'der Geschosse: 1 und 3. Konstruktion • Gemischte '
-                'Konstruktion: Stahlbetonstützen und -decken, '
-                'Stahl-Dachkonstruktion, Außenwände als Mauerwerksausfachung '
-                'mit Sandwichpaneelen, monolitische und vorgefertigte Decken. '
-                'Fassade • Sandwichpaneelsystem in der Halle; im Bürogebäude '
-                'Sandwichpaneelsystem und, als repräsentativer Teil des '
-                'Gebäudes, großflächige Verglasungen und Verbundpaneele. Dach '
-                '• PVC-Dachmembran. Außen- und Innen-Netze und -Installationen '
-                '• Für die Bedürfnisse der Investition: ○ Wasser-, Kanal-, '
-                'Gas- und Stromnetze ○ Schmutz- und Regenwasserkanalisation ○ '
-                'Bau eines Rückhaltebeckens. Aktuelle Fotoreportagen werden '
-                'laufend auf unseren Social-Media-Kanälen veröffentlicht.',
-          'en': 'Site development – PZT • Investment site area: approx. 13 300 '
-                'm² • Paved area: approx. 850 m². Warehouse hall + office '
-                'building • Building area: approx. 3 200 m² • Usable area: '
-                'approx. 3 800 m² • Volume: approx. 33 500 m³ • Number of '
-                'storeys: 1 and 3. Structure • Mixed structure: reinforced '
-                'concrete columns and slabs, steel roof structure, external '
-                'walls as masonry infill with sandwich panels, monolithic and '
-                'precast slabs. Façade • Sandwich panel system in the hall; in '
-                'the office building, sandwich panel system combined, as a '
-                'representative feature of the building, with large glazing '
-                'and composite panels. Roof • PVC roofing membrane. External '
-                'and internal networks and installations • For the needs of '
-                'the investment: ○ Water and sewage, gas and electrical '
-                'networks ○ Sanitary and stormwater drainage ○ Construction of '
-                'a retention tank. Photo updates from our social media are '
-                'posted on an ongoing basis.',
-          'hu': 'Területrendezés – Terv • A beruházás területének nagysága: '
-                'kb. 13 300 m² • Burkolt felület: kb. 850 m². Raktárcsarnok + '
-                'irodaház • Beépített terület: kb. 3 200 m² • Hasznos '
-                'alapterület: kb. 3 800 m² • Térfogat: kb. 33 500 m³ • Szintek '
-                'száma: 1 és 3. Szerkezet • Vegyes szerkezet: vasbeton '
-                'oszlopok és födémek, acél tetőszerkezet, külső falak falazott '
-                'kitöltéssel és szendvicspanelekkel, monolit és előre gyártott '
-                'födémek. Homlokzat • A csarnokban szendvicspanel rendszer, az '
-                'irodaházban szendvicspanel rendszer, valamint – az épület '
-                'reprezentatív részeként – nagyméretű üvegezések és kompozit '
-                'panelek. Tető • PVC tetőmembrán. Külső és belső hálózatok és '
-                'telepítések • A megvalósuló beruházás igényeihez: ○ Víz-, '
-                'csatorna-, gáz- és elektromos hálózatok ○ Szennyvíz- és '
-                'csapadékcsatorna ○ Csapadékvíz-visszatartó tározó építése. '
-                'Folyamatosan frissített fotóbeszámolók találhatók a közösségi '
-                'média felületeinken.',
-          'sk': 'Zastavovací plán – PZT • Plocha pozemku investície: cca 13 '
-                '300 m² • Spevnená plocha: cca 850 m². Skladová hala + '
-                'kancelárska budova • Zastavaná plocha: cca 3 200 m² • '
-                'Úžitková plocha: cca 3 800 m² • Objem: cca 33 500 m³ • Počet '
-                'podlaží: 1 a 3. Konštrukcia • Zmiešaná konštrukcia: '
-                'železobetónové stĺpy a stropy, oce�ová strešná konštrukcia, '
-                'vonkajšie steny ako murovaná výplň so sendvičovými panelmi, '
-                'monolitické a prefabrikované stropy. Fasáda • V hale systém '
-                'sendvičových panelov, v kancelárskej budove systém '
-                'sendvičových panelov a ako reprezentatívna časť objektu veľké '
-                'presklené plochy a kompozitné panely. Strecha • Strešná PVC '
-                'membrána. Vonkajšie a vnútorné siete a inštalácie • Pre '
-                'potreby realizovanej investície: ○ Vodovodné a kanalizačné, '
-                'plynové a elektrické siete ○ Splášková a dažďová kanalizácia '
-                '○ Výstavba retenčnej nádrže. Aktuálne fotogalérie nájdete '
-                'priebežne dopĺňané na našich sociálnych sieťach.'},
+  't_o': {'cs': 'Zastavovací plán – PZT • Plocha pozemku investice: cca 13 300 m² • Zpevněná plocha: cca 850 m². '
+                'Skladová hala + kancelářská budova • Zastavěná plocha: cca 3 200 m² • Užitková plocha: cca 3 800 m² • '
+                'Objem: cca 33 500 m³ • Počet podlaží: 1 a 3. Konstrukce • Smíšená konstrukce: železobetonové sloupy a '
+                'stropy, ocelová střešní konstrukce, vnější stěny jako zděná výplň se sendvičovými panely, monolitické '
+                'a prefabrikované stropy. Fasáda • V hale systém sendvičových panelů, v kancelářské budově systém '
+                'sendvičových panelů a jako reprezentativní část objektu velké prosklené plochy a kompozitní panely. '
+                'Střecha • Střešní PVC membrána. Vnější a vnitřní sítě a instalace • Pro potřeby realizované '
+                'investice: ○ Vodovodní a kanalizační, plynové a elektrické sítě ○ Splašková a dešťová kanalizace ○ '
+                'Výstavba retenční nádrže. Fotogalerie jsou průběžně aktualizovány na našich sociálních sítích.',
+          'de': 'Geländegestaltung – B-Plan • Grundstücksfläche der Investition: ca. 13 300 m² • Befestigte Fläche: '
+                'ca. 850 m². Lagerhalle + Bürogebäude • Grundstücksfläche: ca. 3 200 m² • Nutzfläche: ca. 3 800 m² • '
+                'Volumen: ca. 33 500 m³ • Anzahl der Geschosse: 1 und 3. Konstruktion • Gemischte Konstruktion: '
+                'Stahlbetonstützen und -decken, Stahl-Dachkonstruktion, Außenwände als Mauerwerksausfachung mit '
+                'Sandwichpaneelen, monolitische und vorgefertigte Decken. Fassade • Sandwichpaneelsystem in der Halle; '
+                'im Bürogebäude Sandwichpaneelsystem und, als repräsentativer Teil des Gebäudes, großflächige '
+                'Verglasungen und Verbundpaneele. Dach • PVC-Dachmembran. Außen- und Innen-Netze und -Installationen • '
+                'Für die Bedürfnisse der Investition: ○ Wasser-, Kanal-, Gas- und Stromnetze ○ Schmutz- und '
+                'Regenwasserkanalisation ○ Bau eines Rückhaltebeckens. Aktuelle Fotoreportagen werden laufend auf '
+                'unseren Social-Media-Kanälen veröffentlicht.',
+          'en': 'Site development – PZT • Investment site area: approx. 13 300 m² • Paved area: approx. 850 m². '
+                'Warehouse hall + office building • Building area: approx. 3 200 m² • Usable area: approx. 3 800 m² • '
+                'Volume: approx. 33 500 m³ • Number of storeys: 1 and 3. Structure • Mixed structure: reinforced '
+                'concrete columns and slabs, steel roof structure, external walls as masonry infill with sandwich '
+                'panels, monolithic and precast slabs. Façade • Sandwich panel system in the hall; in the office '
+                'building, sandwich panel system combined, as a representative feature of the building, with large '
+                'glazing and composite panels. Roof • PVC roofing membrane. External and internal networks and '
+                'installations • For the needs of the investment: ○ Water and sewage, gas and electrical networks ○ '
+                'Sanitary and stormwater drainage ○ Construction of a retention tank. Photo updates from our social '
+                'media are posted on an ongoing basis.',
+          'hu': 'Területrendezés – Terv • A beruházás területének nagysága: kb. 13 300 m² • Burkolt felület: kb. 850 '
+                'm². Raktárcsarnok + irodaház • Beépített terület: kb. 3 200 m² • Hasznos alapterület: kb. 3 800 m² • '
+                'Térfogat: kb. 33 500 m³ • Szintek száma: 1 és 3. Szerkezet • Vegyes szerkezet: vasbeton oszlopok és '
+                'födémek, acél tetőszerkezet, külső falak falazott kitöltéssel és szendvicspanelekkel, monolit és '
+                'előre gyártott födémek. Homlokzat • A csarnokban szendvicspanel rendszer, az irodaházban '
+                'szendvicspanel rendszer, valamint – az épület reprezentatív részeként – nagyméretű üvegezések és '
+                'kompozit panelek. Tető • PVC tetőmembrán. Külső és belső hálózatok és telepítések • A megvalósuló '
+                'beruházás igényeihez: ○ Víz-, csatorna-, gáz- és elektromos hálózatok ○ Szennyvíz- és '
+                'csapadékcsatorna ○ Csapadékvíz-visszatartó tározó építése. Folyamatosan frissített fotóbeszámolók '
+                'találhatók a közösségi média felületeinken.',
+          'sk': 'Zastavovací plán – PZT • Plocha pozemku investície: cca 13 300 m² • Spevnená plocha: cca 850 m². '
+                'Skladová hala + kancelárska budova • Zastavaná plocha: cca 3 200 m² • Úžitková plocha: cca 3 800 m² • '
+                'Objem: cca 33 500 m³ • Počet podlaží: 1 a 3. Konštrukcia • Zmiešaná konštrukcia: železobetónové stĺpy '
+                'a stropy, oce�ová strešná konštrukcia, vonkajšie steny ako murovaná výplň so sendvičovými panelmi, '
+                'monolitické a prefabrikované stropy. Fasáda • V hale systém sendvičových panelov, v kancelárskej '
+                'budove systém sendvičových panelov a ako reprezentatívna časť objektu veľké presklené plochy a '
+                'kompozitné panely. Strecha • Strešná PVC membrána. Vonkajšie a vnútorné siete a inštalácie • Pre '
+                'potreby realizovanej investície: ○ Vodovodné a kanalizačné, plynové a elektrické siete ○ Splášková a '
+                'dažďová kanalizácia ○ Výstavba retenčnej nádrže. Aktuálne fotogalérie nájdete priebežne dopĺňané na '
+                'našich sociálnych sieťach.'},
   't_s': {},
   't_t': {},
   'title': 'VENUS - Brzegi',
@@ -4884,113 +4390,75 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.2963029,
   'logo': '/static/img/mbt/scallier-logo-662a14b7.png',
   'longitude': 18.8264414,
-  'opis': '• Powierzchnia użytkowa: • Budynek A: 1 358,90 m² • Budynek B: '
-          '943,70 m² • Powierzchnia terenu: 9 263,44 m² Układ przestrzenny: • '
-          'Dwa parterowe budynki rozdzielone drogą wjazdową, formą podążającą '
-          'za linią zabudowy • Wejścia główne dla klientów od strony parkingu '
-          '(wschód) • Strefa dostaw i zaplecza techniczno-magazynowego od '
-          'strony zachodniej • Wydzielone strefy: lokale usługowe (sala '
-          'sprzedaży + zaplecze), ogólnodostępne sanitariaty, pomieszczenia '
-          'techniczne Konstrukcja: • Ustrój mieszany • Posadowienie '
-          'bezpośrednie: żelbetowe ławy i stopy fundamentowe • Słupy: '
-          'żelbetowe prefabrykowane • Dach: konstrukcja stalowa Elewacja: • '
-          'Płyty warstwowe Zagospodarowanie terenu: • Parking dla samochodów '
-          'osobowych wraz z chodnikami • Podziemny zbiornik na wodę pożarową • '
-          'Podziemny zbiornik retencyjny na wodę deszczową W naszych mediach '
-          'społecznościowych znajdują się fotorelacje, aktualizowane na '
-          'bieżąco.',
+  'opis': '• Powierzchnia użytkowa: • Budynek A: 1 358,90 m² • Budynek B: 943,70 m² • Powierzchnia terenu: 9 263,44 m² '
+          'Układ przestrzenny: • Dwa parterowe budynki rozdzielone drogą wjazdową, formą podążającą za linią zabudowy '
+          '• Wejścia główne dla klientów od strony parkingu (wschód) • Strefa dostaw i zaplecza '
+          'techniczno-magazynowego od strony zachodniej • Wydzielone strefy: lokale usługowe (sala sprzedaży + '
+          'zaplecze), ogólnodostępne sanitariaty, pomieszczenia techniczne Konstrukcja: • Ustrój mieszany • '
+          'Posadowienie bezpośrednie: żelbetowe ławy i stopy fundamentowe • Słupy: żelbetowe prefabrykowane • Dach: '
+          'konstrukcja stalowa Elewacja: • Płyty warstwowe Zagospodarowanie terenu: • Parking dla samochodów osobowych '
+          'wraz z chodnikami • Podziemny zbiornik na wodę pożarową • Podziemny zbiornik retencyjny na wodę deszczową W '
+          'naszych mediach społecznościowych znajdują się fotorelacje, aktualizowane na bieżąco.',
   'order': 30,
   'slug': 'scallier-zabrze',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': '• Užitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 '
-                'm² • Plocha pozemku: 9 263,44 m²\n'
-                'Prostorové uspořádání: • Dva jednopodlažní objekty oddělené '
-                'příjezdovou komunikací, tvarově sledující linii zástavby • '
-                'Hlavní vstupy pro zákazníky ze strany parkoviště (východ) • '
-                'Zóna zásobování a technicko-skladového zázemí ze západní '
-                'strany • Vymezené zóny: obchodní jednotky (prodejní sál + '
+  't_o': {'cs': '• Užitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 m² • Plocha pozemku: 9 263,44 m²\n'
+                'Prostorové uspořádání: • Dva jednopodlažní objekty oddělené příjezdovou komunikací, tvarově sledující '
+                'linii zástavby • Hlavní vstupy pro zákazníky ze strany parkoviště (východ) • Zóna zásobování a '
+                'technicko-skladového zázemí ze západní strany • Vymezené zóny: obchodní jednotky (prodejní sál + '
                 'zázemí), veřejně přístupné toalety, technické místnosti\n'
-                'Konstrukce: • Smíšený nosný systém • Přímé založení: '
-                'železobetonové pasy a patky • Sloupy: prefabrikované '
-                'železobetonové • Střecha: ocelová konstrukce\n'
+                'Konstrukce: • Smíšený nosný systém • Přímé založení: železobetonové pasy a patky • Sloupy: '
+                'prefabrikované železobetonové • Střecha: ocelová konstrukce\n'
                 'Fasáda: • Sendvičové panely\n'
-                'Krajinářské úpravy: • Parkoviště pro osobní automobily včetně '
-                'chodníků • Podzemní požární nádrž na vodu • Podzemní retenční '
-                'nádrž na dešťovou vodu\n'
-                'Na našich sociálních sítích naleznete průběžně aktualizované '
-                'fotoreportáže.',
-          'de': '• Nutzfläche: • Gebäude A: 1.358,90 m² • Gebäude B: 943,70 m² '
-                '• Grundstücksfläche: 9.263,44 m²\n'
-                'Räumliche Anordnung: • Zwei eingeschossige Gebäude, getrennt '
-                'durch eine Zufahrtsstraße, deren Form der Bebauungslinie '
-                'folgt • Haupteingänge für Kunden von der Parkplatzseite '
-                '(Osten) • Anlieferungs- und Technik-/Lagerzone auf der '
-                'Westseite • Abgegrenzte Zonen: Geschäftseinheiten '
-                '(Verkaufsraum + Back-of-House), öffentlich zugängliche '
-                'Sanitärräume, Technikräume\n'
-                'Konstruktion: • Gemischtes Tragsystem • Direkte Gründung: '
-                'Stahlbeton-Streifen- und Punktfundamente • Stützen: '
-                'Stahlbeton-Fertigteile • Dach: Stahlkonstruktion\n'
+                'Krajinářské úpravy: • Parkoviště pro osobní automobily včetně chodníků • Podzemní požární nádrž na '
+                'vodu • Podzemní retenční nádrž na dešťovou vodu\n'
+                'Na našich sociálních sítích naleznete průběžně aktualizované fotoreportáže.',
+          'de': '• Nutzfläche: • Gebäude A: 1.358,90 m² • Gebäude B: 943,70 m² • Grundstücksfläche: 9.263,44 m²\n'
+                'Räumliche Anordnung: • Zwei eingeschossige Gebäude, getrennt durch eine Zufahrtsstraße, deren Form '
+                'der Bebauungslinie folgt • Haupteingänge für Kunden von der Parkplatzseite (Osten) • Anlieferungs- '
+                'und Technik-/Lagerzone auf der Westseite • Abgegrenzte Zonen: Geschäftseinheiten (Verkaufsraum + '
+                'Back-of-House), öffentlich zugängliche Sanitärräume, Technikräume\n'
+                'Konstruktion: • Gemischtes Tragsystem • Direkte Gründung: Stahlbeton-Streifen- und Punktfundamente • '
+                'Stützen: Stahlbeton-Fertigteile • Dach: Stahlkonstruktion\n'
                 'Fassade: • Sandwichpaneele\n'
-                'Freiflächengestaltung: • PKW-Parkplatz mit Gehwegen • '
-                'Unterirdischer Löschwassertank • Unterirdischer '
+                'Freiflächengestaltung: • PKW-Parkplatz mit Gehwegen • Unterirdischer Löschwassertank • Unterirdischer '
                 'Regenwasserrückhaltetank\n'
-                'In unseren sozialen Medien finden Sie laufend aktualisierte '
-                'Fotodokumentationen.',
-          'en': '• Usable area: • Building A: 1,358.90 m² • Building B: 943.70 '
-                'm² • Land area: 9,263.44 m²\n'
-                'Spatial layout: • Two single-storey buildings separated by an '
-                'access road, following the building line • Main customer '
-                'entrances from the parking side (east) • Delivery and '
-                'technical/back-of-house zone on the west side • Separated '
-                'zones: retail units (sales floor + back-of-house), public '
+                'In unseren sozialen Medien finden Sie laufend aktualisierte Fotodokumentationen.',
+          'en': '• Usable area: • Building A: 1,358.90 m² • Building B: 943.70 m² • Land area: 9,263.44 m²\n'
+                'Spatial layout: • Two single-storey buildings separated by an access road, following the building '
+                'line • Main customer entrances from the parking side (east) • Delivery and technical/back-of-house '
+                'zone on the west side • Separated zones: retail units (sales floor + back-of-house), public '
                 'restrooms, technical rooms\n'
-                'Structure: • Mixed structural system • Direct foundation: '
-                'reinforced-concrete strip and pad footings • Columns: precast '
-                'reinforced concrete • Roof: steel structure\n'
+                'Structure: • Mixed structural system • Direct foundation: reinforced-concrete strip and pad footings '
+                '• Columns: precast reinforced concrete • Roof: steel structure\n'
                 'Façade: • Sandwich panels\n'
-                'Site development: • Car park with pedestrian walkways • '
-                'Underground fire-water tank • Underground stormwater '
-                'retention tank\n'
-                'Our social media channels feature regular photo updates from '
-                'the project.',
-          'hu': '• Hasznos alapterület: • A épület: 1 358,90 m² • B épület: '
-                '943,70 m² • Telek területe: 9 263,44 m²\n'
-                'Térbeli elrendezés: • Két földszintes épület, amelyeket '
-                'behajtó út választ el, a beépítési vonalat követő formával • '
-                'Főbejáratok az ügyfelek számára a parkoló felől (kelet) • '
-                'Áruátvételi és műszaki-raktári zóna a nyugati oldalon • '
-                'Elkülönített zónák: üzlethelyiségek (értékesítési tér + '
+                'Site development: • Car park with pedestrian walkways • Underground fire-water tank • Underground '
+                'stormwater retention tank\n'
+                'Our social media channels feature regular photo updates from the project.',
+          'hu': '• Hasznos alapterület: • A épület: 1 358,90 m² • B épület: 943,70 m² • Telek területe: 9 263,44 m²\n'
+                'Térbeli elrendezés: • Két földszintes épület, amelyeket behajtó út választ el, a beépítési vonalat '
+                'követő formával • Főbejáratok az ügyfelek számára a parkoló felől (kelet) • Áruátvételi és '
+                'műszaki-raktári zóna a nyugati oldalon • Elkülönített zónák: üzlethelyiségek (értékesítési tér + '
                 'kiszolgálórész), nyilvános mosdók, műszaki helyiségek\n'
-                'Szerkezet: • Vegyes tartószerkezet • Közvetlen alapozás: '
-                'vasbeton sávalapok és pontalapok • Oszlopok: előregyártott '
-                'vasbeton • Tető: acélszerkezet\n'
+                'Szerkezet: • Vegyes tartószerkezet • Közvetlen alapozás: vasbeton sávalapok és pontalapok • Oszlopok: '
+                'előregyártott vasbeton • Tető: acélszerkezet\n'
                 'Homlokzat: • Szendvicspanelek\n'
-                'Telekrendezés: • Személygépkocsi-parkoló járdákkal • Föld '
-                'alatti tűzivíztározó • Föld alatti csapadékvíz-visszatartó '
-                'tározó\n'
-                'Közösségi média felületeinken rendszeresen frissített '
-                'fotódokumentációt talál.',
-          'sk': '• Úžitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 '
-                'm² • Plocha pozemku: 9 263,44 m²\n'
-                'Priestorové usporiadanie: • Dva jednopodlažné objekty '
-                'oddelené príjazdovou komunikáciou, tvarovo sledujúce líniu '
-                'zástavby • Hlavné vstupy pre zákazníkov zo strany parkoviska '
-                '(východ) • Zóna zásobovania a technicko-skladového zázemia zo '
-                'západnej strany • Vymedzené zóny: obchodné jednotky (predajný '
-                'priestor + zázemie), verejne prístupné toalety, technické '
-                'miestnosti\n'
-                'Konštrukcia: • Zmiešaný nosný systém • Priame založenie: '
-                'železobetónové pásy a pätky • Stĺpy: prefabrikované '
-                'železobetónové • Strecha: oceľová konštrukcia\n'
+                'Telekrendezés: • Személygépkocsi-parkoló járdákkal • Föld alatti tűzivíztározó • Föld alatti '
+                'csapadékvíz-visszatartó tározó\n'
+                'Közösségi média felületeinken rendszeresen frissített fotódokumentációt talál.',
+          'sk': '• Úžitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 m² • Plocha pozemku: 9 263,44 m²\n'
+                'Priestorové usporiadanie: • Dva jednopodlažné objekty oddelené príjazdovou komunikáciou, tvarovo '
+                'sledujúce líniu zástavby • Hlavné vstupy pre zákazníkov zo strany parkoviska (východ) • Zóna '
+                'zásobovania a technicko-skladového zázemia zo západnej strany • Vymedzené zóny: obchodné jednotky '
+                '(predajný priestor + zázemie), verejne prístupné toalety, technické miestnosti\n'
+                'Konštrukcia: • Zmiešaný nosný systém • Priame založenie: železobetónové pásy a pätky • Stĺpy: '
+                'prefabrikované železobetónové • Strecha: oceľová konštrukcia\n'
                 'Fasáda: • Sendvičové panely\n'
-                'Krajinné úpravy: • Parkovisko pre osobné automobily vrátane '
-                'chodníkov • Podzemná požiarna nádrž na vodu • Podzemná '
-                'retenčná nádrž na dažďovú vodu\n'
-                'Na našich sociálnych sieťach nájdete priebežne aktualizované '
-                'fotoreportáže.'},
+                'Krajinné úpravy: • Parkovisko pre osobné automobily vrátane chodníkov • Podzemná požiarna nádrž na '
+                'vodu • Podzemná retenčná nádrž na dažďovú vodu\n'
+                'Na našich sociálnych sieťach nájdete priebežne aktualizované fotoreportáže.'},
   't_s': {},
   't_t': {},
   'title': 'Scallier - Zabrze',
@@ -4998,13 +4466,12 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/f6e1ae46d58d.webp',
+  'hero': '/static/img/mbt/IMG_20220722_102326-scaled-1-fdde92f8.jpg',
   'latitude': 50.0974579,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/dbbea2e8e99b.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 18.2342209,
-  'opis': 'Budowa hali montażowo-magazynowej wraz z zapleczem '
-          'socjalno-biurowym oraz odźwigowieniem dla działalności produkcyjnej '
-          'polegającej na prefabrykacji rozdzielni silnoprądowych. \r\n'
+  'opis': 'Budowa hali montażowo-magazynowej wraz z zapleczem socjalno-biurowym oraz odźwigowieniem dla działalności '
+          'produkcyjnej polegającej na prefabrykacji rozdzielni silnoprądowych. \r\n'
           '\r\n'
           '•\tPowierzchnia produkcyjno-magazynowa – 3634 m2 \r\n'
           '•\tPowierzchnia socjalno-biurowa – 250,52 m2\r\n'
@@ -5015,19 +4482,17 @@ PROJECTS = [{'czas': '16 miesięcy',
           'o\tObiekt o posadowieniu pośrednim na kolumnach betonowych\r\n'
           'o\tKonstrukcja ścian i dachu hali w technologii stalowej\r\n'
           'o\tObudowa hali w technologii płyt warstwowych\r\n'
-          'o\tPokrycie dachu hali w konstrukcji stalowej z użyciem blachy '
-          'trapezowej, izolacją z wełny mineralnej i membraną PVC \r\n'
-          'o\tKonstrukcja budynku biurowego mieszana (murowana, rdzenie i '
-          'wieńce żelbetowe, prefabrykowane stopy z użyciem płyt kanałowych '
-          'typu HC)',
+          'o\tPokrycie dachu hali w konstrukcji stalowej z użyciem blachy trapezowej, izolacją z wełny mineralnej i '
+          'membraną PVC \r\n'
+          'o\tKonstrukcja budynku biurowego mieszana (murowana, rdzenie i wieńce żelbetowe, prefabrykowane stopy z '
+          'użyciem płyt kanałowych typu HC)',
   'order': 31,
   'slug': 'fiolka-raciborz',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba montážně-skladové haly se sociálně-kancelářským '
-                'zázemím a jeřábovým vybavením pro výrobní činnost spočívající '
-                'v prefabrikaci silnoproudých rozvoden.\n'
+  't_o': {'cs': 'Výstavba montážně-skladové haly se sociálně-kancelářským zázemím a jeřábovým vybavením pro výrobní '
+                'činnost spočívající v prefabrikaci silnoproudých rozvoden.\n'
                 '\n'
                 '• Výrobně-skladová plocha – 3634 m2\n'
                 '• Sociálně-kancelářská plocha – 250,52 m2\n'
@@ -5038,76 +4503,60 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'o Objekt s nepřímým založením na betonových sloupech\n'
                 'o Konstrukce stěn a střechy haly v ocelové technologii\n'
                 'o Opláštění haly v technologii sendvičových panelů\n'
-                'o Krytina střechy haly v ocelové konstrukci s použitím '
-                'trapézového plechu, izolace z minerální vlny a PVC membrány\n'
-                'o Smíšená konstrukce kancelářské budovy (zděná, '
-                'železobetonová jádra a věnce, prefabrikované patky s použitím '
-                'kanálových desek typu HC)',
-          'de': 'Bau einer Montage- und Lagerhalle mit Sozial- und Büroräumen '
-                'sowie Kranausrüstung für die Produktionstätigkeit im Bereich '
-                'der Vorfertigung von Hochspannungsschaltanlagen.\n'
+                'o Krytina střechy haly v ocelové konstrukci s použitím trapézového plechu, izolace z minerální vlny a '
+                'PVC membrány\n'
+                'o Smíšená konstrukce kancelářské budovy (zděná, železobetonová jádra a věnce, prefabrikované patky s '
+                'použitím kanálových desek typu HC)',
+          'de': 'Bau einer Montage- und Lagerhalle mit Sozial- und Büroräumen sowie Kranausrüstung für die '
+                'Produktionstätigkeit im Bereich der Vorfertigung von Hochspannungsschaltanlagen.\n'
                 '\n'
                 '• Produktions- und Lagerfläche – 3.634 m2\n'
                 '• Sozial- und Bürofläche – 250,52 m2\n'
-                '• Halle ausgelegt für zwei Krane mit einer Gesamtragfähigkeit '
-                'von 20 T\n'
-                '• Netze und Installationen für die Bedürfnisse der '
-                'realisierten Investition\n'
+                '• Halle ausgelegt für zwei Krane mit einer Gesamtragfähigkeit von 20 T\n'
+                '• Netze und Installationen für die Bedürfnisse der realisierten Investition\n'
                 '• Geländegestaltung um das Objekt\n'
                 '• Konstruktion:\n'
                 'o Objekt mit indirekter Gründung auf Betonstützen\n'
                 'o Wand- und Dachkonstruktion der Halle in Stahltechnologie\n'
                 'o Hallenverkleidung in Sandwichpaneel-Technologie\n'
-                'o Dachdeckung der Halle in Stahlkonstruktion unter Verwendung '
-                'von Trapezblech, Mineralwolldämmung und PVC-Membran\n'
-                'o Gemischte Konstruktion des Bürogebäudes (Mauerwerk, '
-                'Stahlbetonkerne und Ringbalken, vorgefertigte Punktfundamente '
-                'unter Verwendung von HC-Kanalplatten)',
-          'en': 'Construction of an assembly and warehouse hall with social '
-                'and office facilities and crane equipment for production '
-                'activities involving the prefabrication of high-voltage '
-                'switchgears.\n'
+                'o Dachdeckung der Halle in Stahlkonstruktion unter Verwendung von Trapezblech, Mineralwolldämmung und '
+                'PVC-Membran\n'
+                'o Gemischte Konstruktion des Bürogebäudes (Mauerwerk, Stahlbetonkerne und Ringbalken, vorgefertigte '
+                'Punktfundamente unter Verwendung von HC-Kanalplatten)',
+          'en': 'Construction of an assembly and warehouse hall with social and office facilities and crane equipment '
+                'for production activities involving the prefabrication of high-voltage switchgears.\n'
                 '\n'
                 '• Production and warehouse area – 3,634 m2\n'
                 '• Social and office area – 250.52 m2\n'
-                '• Hall designed for two overhead cranes with a total lifting '
-                'capacity of 20 T\n'
-                '• Networks and installations for the needs of the implemented '
-                'investment\n'
+                '• Hall designed for two overhead cranes with a total lifting capacity of 20 T\n'
+                '• Networks and installations for the needs of the implemented investment\n'
                 '• Land development around the facility\n'
                 '• Structure:\n'
                 'o Facility with indirect foundation on concrete columns\n'
                 'o Wall and roof structure of the hall in steel technology\n'
                 'o Hall cladding in sandwich panel technology\n'
-                'o Hall roof covering in steel structure using trapezoidal '
-                'sheet metal, mineral wool insulation and PVC membrane\n'
-                'o Mixed structure of the office building (masonry, reinforced '
-                'concrete cores and ring beams, prefabricated footings using '
-                'HC-type channel slabs)',
-          'hu': 'Összeszerelő-raktár csarnok építése szociális-irodai '
-                'kiegészítőkkel és daruzással, nagyfeszültségű '
-                'kapcsolóberendezések előregyártására irányuló gyártási '
-                'tevékenységhez.\n'
+                'o Hall roof covering in steel structure using trapezoidal sheet metal, mineral wool insulation and '
+                'PVC membrane\n'
+                'o Mixed structure of the office building (masonry, reinforced concrete cores and ring beams, '
+                'prefabricated footings using HC-type channel slabs)',
+          'hu': 'Összeszerelő-raktár csarnok építése szociális-irodai kiegészítőkkel és daruzással, nagyfeszültségű '
+                'kapcsolóberendezések előregyártására irányuló gyártási tevékenységhez.\n'
                 '\n'
                 '• Gyártási-raktározási terület – 3634 m2\n'
                 '• Szociális-irodai terület – 250,52 m2\n'
-                '• A csarnok két daru befogadására van méretezve, 20 T '
-                'összterhelhetőséggel\n'
-                '• Hálózatok és telepítések a megvalósított beruházás '
-                'igényeihez\n'
+                '• A csarnok két daru befogadására van méretezve, 20 T összterhelhetőséggel\n'
+                '• Hálózatok és telepítések a megvalósított beruházás igényeihez\n'
                 '• A telek rendezése az objektum körül\n'
                 '• Szerkezet:\n'
                 'o Közvetett alapozású objektum betonoszlopokon\n'
                 'o A csarnok fal- és tetőszerkezete acél technológiával\n'
                 'o Csarnok burkolat szendvicspanel technológiával\n'
-                'o A csarnok tetőfedése acélszerkezettel trapézlemez, '
-                'ásványgyapot szigetelés és PVC membrán felhasználásával\n'
-                'o Az irodaépület vegyes szerkezete (falazott, vasbeton magok '
-                'és koszorúk, előregyártott talpak HC típusú csatorna lemezek '
-                'felhasználásával)',
-          'sk': 'Výstavba montážno-skladovej haly so sociálno-kancelárskym '
-                'zázemím a žeriavovým vybavením pre výrobnú činnosť '
-                'spočívajúcu v prefabrikácii silnoprúdových rozvodní.\n'
+                'o A csarnok tetőfedése acélszerkezettel trapézlemez, ásványgyapot szigetelés és PVC membrán '
+                'felhasználásával\n'
+                'o Az irodaépület vegyes szerkezete (falazott, vasbeton magok és koszorúk, előregyártott talpak HC '
+                'típusú csatorna lemezek felhasználásával)',
+          'sk': 'Výstavba montážno-skladovej haly so sociálno-kancelárskym zázemím a žeriavovým vybavením pre výrobnú '
+                'činnosť spočívajúcu v prefabrikácii silnoprúdových rozvodní.\n'
                 '\n'
                 '• Výrobno-skladová plocha – 3634 m2\n'
                 '• Sociálno-kancelárska plocha – 250,52 m2\n'
@@ -5118,12 +4567,10 @@ PROJECTS = [{'czas': '16 miesięcy',
                 'o Objekt s nepriamym založením na betónových stĺpoch\n'
                 'o Konštrukcia stien a strechy haly v oceľovej technológii\n'
                 'o Opláštenie haly v technológii sendvičových panelov\n'
-                'o Krytina strechy haly v oceľovej konštrukcii s použitím '
-                'trapézového plechu, izolácie z minerálnej vlny a PVC '
-                'membrány\n'
-                'o Zmiešaná konštrukcia kancelárskej budovy (murovaná, '
-                'železobetónové jadrá a vence, prefabrikované pätky s použitím '
-                'kanálových dosiek typu HC)'},
+                'o Krytina strechy haly v oceľovej konštrukcii s použitím trapézového plechu, izolácie z minerálnej '
+                'vlny a PVC membrány\n'
+                'o Zmiešaná konštrukcia kancelárskej budovy (murovaná, železobetónové jadrá a vence, prefabrikované '
+                'pätky s použitím kanálových dosiek typu HC)'},
   't_s': {},
   't_t': {},
   'title': 'Fiołka Racibórz',
@@ -5135,82 +4582,55 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.2689683,
   'logo': '/static/img/mbt/logo2-76e5c8f9.png',
   'longitude': 18.7209159,
-  'opis': 'Kubatura całkowita nowego obiektu wynosi 28 342 m³ Budynek biurowy '
-          'dwukondygnacyjny, z wydzieloną kondygnacją magazynową oraz '
-          'antresolą magazynową nad częścią produkcyjną, a także z '
-          'powierzchnią biurowo-socjalną na drugiej kondygnacji '
-          'Zagospodarowanie terenu wokół nowego obiektu Konstrukcja: '
-          'posadowienie „mieszane” (bezpośrednie oraz w części pośrednie) '
-          'konstrukcja nośna obiektu „mieszana” (prefabrykowane żelbetowe '
-          'słupy, elementy murowe oraz stalowa konstrukcja dachu) obudowa '
-          'obiektu „mieszana” ( tradycyjna murowa obudowa z płyty warstwowej '
-          ',w części biurowej fasada szklana) pokrycie dachu płytami z wełny '
-          'skalnej i membraną PVC W naszych mediach społecznościowych znajdują '
-          'się fotorelacje, aktualizowane na bieżąco.',
+  'opis': 'Kubatura całkowita nowego obiektu wynosi 28 342 m³ Budynek biurowy dwukondygnacyjny, z wydzieloną '
+          'kondygnacją magazynową oraz antresolą magazynową nad częścią produkcyjną, a także z powierzchnią '
+          'biurowo-socjalną na drugiej kondygnacji Zagospodarowanie terenu wokół nowego obiektu Konstrukcja: '
+          'posadowienie „mieszane” (bezpośrednie oraz w części pośrednie) konstrukcja nośna obiektu „mieszana” '
+          '(prefabrykowane żelbetowe słupy, elementy murowe oraz stalowa konstrukcja dachu) obudowa obiektu „mieszana” '
+          '( tradycyjna murowa obudowa z płyty warstwowej ,w części biurowej fasada szklana) pokrycie dachu płytami z '
+          'wełny skalnej i membraną PVC W naszych mediach społecznościowych znajdują się fotorelacje, aktualizowane na '
+          'bieżąco.',
   'order': 32,
   'slug': 'bater-gliwice',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Celkový objem nového objektu činí 28 342 m³. Dvoupodlažní '
-                'kancelářská budova s vyčleněným skladovým podlažím a '
-                'skladovým mezipatrovým prostorem nad výrobní částí, jakož i s '
-                'kancelářskými a sociálními plochami v prvním patře. Úprava '
-                'území v okolí nového objektu. Konstrukce: „smíšené" založení '
-                '(přímé a částečně nepřímé); „smíšená" nosná konstrukce '
-                'objektu (prefabrikované železobetonové sloupy, zděné prvky a '
-                'ocelová střešní konstrukce); „smíšený" plášť objektu '
-                '(tradiční zděný plášť se sendvičovými panely, v kancelářské '
-                'části prosklená fasáda); zastřešení deskami z kamenné vlny a '
-                'PVC membránou. Fotogalerie jsou průběžně aktualizovány na '
-                'našich sociálních sítích.',
-          'de': 'Gesamtvolumen des neuen Objekts: 28 342 m³. Zweigeschossiges '
-                'Bürogebäude mit einem separaten Geschoss für Lager und einer '
-                'Lagerzwischenebene über dem Produktionsteil sowie Büro- und '
-                'Sozialflächen im ersten Obergeschoss. Geländegestaltung rund '
-                'um das neue Gebäude. Konstruktion: „gemischte" Gründung '
-                '(direkt und teilweise indirekt); „gemischte" Tragstruktur '
-                '(vorgefertigte Stahlbetonstützen, Mauerwerkselemente und '
-                'Stahl-Dachkonstruktion); „gemischte" Gebäudehülle '
-                '(traditionelle Mauerwerksverkleidung mit Sandwichpaneelen, '
-                'Glasfassade im Büroteil); Dacheindeckung mit Steinwollplatten '
-                'und PVC-Membran. Aktuelle Fotoreportagen werden laufend auf '
-                'unseren Social-Media-Kanälen veröffentlicht.',
-          'en': 'Total volume of the new building: 28 342 m³. Two-storey '
-                'office building with a separate warehouse level and a storage '
-                'mezzanine above the production section, as well as office and '
-                'welfare space on the first floor. Site development around the '
-                'new building. Structure: "mixed" foundation (direct and, in '
-                'part, indirect); "mixed" load-bearing structure (precast '
-                'reinforced concrete columns, masonry elements and steel roof '
-                'structure); "mixed" envelope (traditional masonry cladding '
-                'with sandwich panels, glass façade in the office section); '
-                'roof covered with stone wool panels and PVC membrane. Photo '
-                'updates from our social media are posted on an ongoing basis.',
-          'hu': 'Az új objektum teljes térfogata 28 342 m³. Kétszintes '
-                'irodaház különálló raktárszinttel és raktári félemelettel a '
-                'gyártási rész felett, valamint irodai és szociális terekkel '
-                'az első emeleten. Az új objektum környékének tereprendezése. '
-                'Szerkezet: „vegyes" alapozás (közvetlen és részben '
-                'közvetett); „vegyes" teherhordó szerkezet (előre gyártott '
-                'vasbeton oszlopok, falazott elemek és acél tetőszerkezet); '
-                '„vegyes" épületburkolat (hagyományos falazott burkolat '
-                'szendvicspanelekkel, az irodai részben üvegezett homlokzat); '
-                'tetőfedés kőzetgyapot táblákkal és PVC membránnal. '
-                'Folyamatosan frissített fotóbeszámolók találhatók a közösségi '
-                'média felületeinken.',
-          'sk': 'Celkový objem nového objektu je 28 342 m³. Dvojpodlažná '
-                'kancelárska budova s vyčleneným skladovým podlažím a '
-                'skladovým mezanínom nad výrobnou časťou, ako aj s '
-                'kancelárskymi a sociálnymi plochami na prvom poschodí. Úprava '
-                'územia okolo nového objektu. Konštrukcia: „zmiešané" '
-                'založenie (priame a čiastočne nepriame); „zmiešaná" nosná '
-                'konštrukcia objektu (prefabrikované železobetonové stĺpy, '
-                'murované prvky a oceľová strešná konštrukcia); „zmiešaný" '
-                'plášť objektu (tradičný murovaný plášť so sendvičovými '
-                'panelmi, v kancelárskej časti presklená fasáda); zastrešenie '
-                'doskami z kamennej vlny a PVC membránou. Aktuálne fotogalérie '
-                'nájdete priebežne dopĺňané na našich sociálnych sieťach.'},
+  't_o': {'cs': 'Celkový objem nového objektu činí 28 342 m³. Dvoupodlažní kancelářská budova s vyčleněným skladovým '
+                'podlažím a skladovým mezipatrovým prostorem nad výrobní částí, jakož i s kancelářskými a sociálními '
+                'plochami v prvním patře. Úprava území v okolí nového objektu. Konstrukce: „smíšené" založení (přímé a '
+                'částečně nepřímé); „smíšená" nosná konstrukce objektu (prefabrikované železobetonové sloupy, zděné '
+                'prvky a ocelová střešní konstrukce); „smíšený" plášť objektu (tradiční zděný plášť se sendvičovými '
+                'panely, v kancelářské části prosklená fasáda); zastřešení deskami z kamenné vlny a PVC membránou. '
+                'Fotogalerie jsou průběžně aktualizovány na našich sociálních sítích.',
+          'de': 'Gesamtvolumen des neuen Objekts: 28 342 m³. Zweigeschossiges Bürogebäude mit einem separaten Geschoss '
+                'für Lager und einer Lagerzwischenebene über dem Produktionsteil sowie Büro- und Sozialflächen im '
+                'ersten Obergeschoss. Geländegestaltung rund um das neue Gebäude. Konstruktion: „gemischte" Gründung '
+                '(direkt und teilweise indirekt); „gemischte" Tragstruktur (vorgefertigte Stahlbetonstützen, '
+                'Mauerwerkselemente und Stahl-Dachkonstruktion); „gemischte" Gebäudehülle (traditionelle '
+                'Mauerwerksverkleidung mit Sandwichpaneelen, Glasfassade im Büroteil); Dacheindeckung mit '
+                'Steinwollplatten und PVC-Membran. Aktuelle Fotoreportagen werden laufend auf unseren '
+                'Social-Media-Kanälen veröffentlicht.',
+          'en': 'Total volume of the new building: 28 342 m³. Two-storey office building with a separate warehouse '
+                'level and a storage mezzanine above the production section, as well as office and welfare space on '
+                'the first floor. Site development around the new building. Structure: "mixed" foundation (direct and, '
+                'in part, indirect); "mixed" load-bearing structure (precast reinforced concrete columns, masonry '
+                'elements and steel roof structure); "mixed" envelope (traditional masonry cladding with sandwich '
+                'panels, glass façade in the office section); roof covered with stone wool panels and PVC membrane. '
+                'Photo updates from our social media are posted on an ongoing basis.',
+          'hu': 'Az új objektum teljes térfogata 28 342 m³. Kétszintes irodaház különálló raktárszinttel és raktári '
+                'félemelettel a gyártási rész felett, valamint irodai és szociális terekkel az első emeleten. Az új '
+                'objektum környékének tereprendezése. Szerkezet: „vegyes" alapozás (közvetlen és részben közvetett); '
+                '„vegyes" teherhordó szerkezet (előre gyártott vasbeton oszlopok, falazott elemek és acél '
+                'tetőszerkezet); „vegyes" épületburkolat (hagyományos falazott burkolat szendvicspanelekkel, az irodai '
+                'részben üvegezett homlokzat); tetőfedés kőzetgyapot táblákkal és PVC membránnal. Folyamatosan '
+                'frissített fotóbeszámolók találhatók a közösségi média felületeinken.',
+          'sk': 'Celkový objem nového objektu je 28 342 m³. Dvojpodlažná kancelárska budova s vyčleneným skladovým '
+                'podlažím a skladovým mezanínom nad výrobnou časťou, ako aj s kancelárskymi a sociálnymi plochami na '
+                'prvom poschodí. Úprava územia okolo nového objektu. Konštrukcia: „zmiešané" založenie (priame a '
+                'čiastočne nepriame); „zmiešaná" nosná konštrukcia objektu (prefabrikované železobetonové stĺpy, '
+                'murované prvky a oceľová strešná konštrukcia); „zmiešaný" plášť objektu (tradičný murovaný plášť so '
+                'sendvičovými panelmi, v kancelárskej časti presklená fasáda); zastrešenie doskami z kamennej vlny a '
+                'PVC membránou. Aktuálne fotogalérie nájdete priebežne dopĺňané na našich sociálnych sieťach.'},
   't_s': {},
   't_t': {},
   'title': 'Bater - Gliwice',
@@ -5218,9 +4638,9 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/cf989e76f981.webp',
+  'hero': '/static/img/mbt/1-scaled-f7ffa583.jpg',
   'latitude': 50.0019853,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/8c6b51ed721a.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 20.5066441,
   'opis': '',
   'order': 33,
@@ -5236,124 +4656,89 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/2db86077caef.webp',
+  'hero': '/static/img/mbt/6-scaled-8c1b1f01.jpg',
   'latitude': 52.6153422,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/bb10f93000a3.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 21.5111711,
-  'opis': 'Firma Warmet – doskonale znana i ceniona hurtownia alkoholi – '
-          'zyskuje nową przestrzeń do rozwoju. Realizowany przez zespół '
-          'Generalnego Wykonawcy MBT obiekt to nowoczesna hala, która będzie '
-          'pełnić funkcję głównego centrum dystrybucji naszego Inwestora.\r\n'
+  'opis': 'Firma Warmet – doskonale znana i ceniona hurtownia alkoholi – zyskuje nową przestrzeń do rozwoju. '
+          'Realizowany przez zespół Generalnego Wykonawcy MBT obiekt to nowoczesna hala, która będzie pełnić funkcję '
+          'głównego centrum dystrybucji naszego Inwestora.\r\n'
           '\r\n'
-          'W branży FMCG oraz dystrybucji napojów kluczowa jest bezbłędna '
-          'logistyka i zachowanie odpowiednich warunków magazynowania. Z myślą '
-          'o tych wymaganiach budujemy przestrzeń w pełni dostosowaną do '
-          'specyfiki operacyjnej firmy Warmet. Nowy obiekt pozwoli na '
-          'zoptymalizowanie procesów logistycznych, sprawniejszą obsługę '
-          'zamówień i zapewni solidne zaplecze dla dalszego rozwoju '
-          'biznesu.\r\n'
+          'W branży FMCG oraz dystrybucji napojów kluczowa jest bezbłędna logistyka i zachowanie odpowiednich warunków '
+          'magazynowania. Z myślą o tych wymaganiach budujemy przestrzeń w pełni dostosowaną do specyfiki operacyjnej '
+          'firmy Warmet. Nowy obiekt pozwoli na zoptymalizowanie procesów logistycznych, sprawniejszą obsługę zamówień '
+          'i zapewni solidne zaplecze dla dalszego rozwoju biznesu.\r\n'
           '\r\n'
-          'Obecnie jesteśmy po etapie symbolicznego wmurowania fundamentów. '
-          'Prace na placu budowy postępują zgodnie z harmonogramem i naszym '
-          'inżynieryjnym standardem. Dziękujemy firmie Warmet za zaufanie i '
-          'powierzenie MBT realizacji tego strategicznego projektu.',
+          'Obecnie jesteśmy po etapie symbolicznego wmurowania fundamentów. Prace na placu budowy postępują zgodnie z '
+          'harmonogramem i naszym inżynieryjnym standardem. Dziękujemy firmie Warmet za zaufanie i powierzenie MBT '
+          'realizacji tego strategicznego projektu.',
   'order': 34,
   'slug': 'warmet-hurtownia-alkocholi',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Firma Warmet – dobře známý a ceněný velkoobchod s alkoholem – '
-                'získává nový prostor pro rozvoj. Objekt realizovaný týmem '
-                'Generálního dodavatele MBT je moderní hala, která bude plnit '
-                'funkci hlavního distribučního centra našeho investora.\n'
+  't_o': {'cs': 'Firma Warmet – dobře známý a ceněný velkoobchod s alkoholem – získává nový prostor pro rozvoj. Objekt '
+                'realizovaný týmem Generálního dodavatele MBT je moderní hala, která bude plnit funkci hlavního '
+                'distribučního centra našeho investora.\n'
                 '\n'
-                'V odvětví FMCG a distribuce nápojů je klíčová bezchybná '
-                'logistika a dodržování odpovídajících skladovacích podmínek. '
-                'S ohledem na tyto požadavky budujeme prostor plně '
-                'přizpůsobený provozní specifice firmy Warmet. Nový objekt '
-                'umožní optimalizaci logistických procesů, efektivnější '
-                'vyřizování objednávek a poskytne solidní zázemí pro další '
-                'rozvoj podnikání.\n'
+                'V odvětví FMCG a distribuce nápojů je klíčová bezchybná logistika a dodržování odpovídajících '
+                'skladovacích podmínek. S ohledem na tyto požadavky budujeme prostor plně přizpůsobený provozní '
+                'specifice firmy Warmet. Nový objekt umožní optimalizaci logistických procesů, efektivnější vyřizování '
+                'objednávek a poskytne solidní zázemí pro další rozvoj podnikání.\n'
                 '\n'
-                'V současné době jsme po etapě symbolického položení '
-                'základního kamene. Práce na staveništi postupují podle '
-                'harmonogramu a našeho inženýrského standardu. Děkujeme firmě '
-                'Warmet za důvěru a svěření realizace tohoto strategického '
-                'projektu společnosti MBT.',
-          'de': 'Das Unternehmen Warmet – ein bekannter und angesehener '
-                'Großhändler für Alkohol – erhält neuen Raum für Wachstum. Das '
-                'vom Generalunternehmer-Team MBT realisierte Objekt ist eine '
-                'moderne Halle, die als Hauptvertriebszentrum unseres '
-                'Investors dienen wird.\n'
+                'V současné době jsme po etapě symbolického položení základního kamene. Práce na staveništi postupují '
+                'podle harmonogramu a našeho inženýrského standardu. Děkujeme firmě Warmet za důvěru a svěření '
+                'realizace tohoto strategického projektu společnosti MBT.',
+          'de': 'Das Unternehmen Warmet – ein bekannter und angesehener Großhändler für Alkohol – erhält neuen Raum '
+                'für Wachstum. Das vom Generalunternehmer-Team MBT realisierte Objekt ist eine moderne Halle, die als '
+                'Hauptvertriebszentrum unseres Investors dienen wird.\n'
                 '\n'
-                'In der FMCG- und Getränkedistribution sind eine reibungslose '
-                'Logistik und die Einhaltung geeigneter Lagerbedingungen '
-                'entscheidend. Mit Blick auf diese Anforderungen bauen wir '
-                'einen Raum, der vollständig auf die betrieblichen '
-                'Besonderheiten von Warmet zugeschnitten ist. Das neue Objekt '
-                'ermöglicht optimierte Logistikprozesse, eine effizientere '
-                'Auftragsabwicklung und bietet eine solide Basis für weiteres '
-                'Geschäftswachstum.\n'
+                'In der FMCG- und Getränkedistribution sind eine reibungslose Logistik und die Einhaltung geeigneter '
+                'Lagerbedingungen entscheidend. Mit Blick auf diese Anforderungen bauen wir einen Raum, der '
+                'vollständig auf die betrieblichen Besonderheiten von Warmet zugeschnitten ist. Das neue Objekt '
+                'ermöglicht optimierte Logistikprozesse, eine effizientere Auftragsabwicklung und bietet eine solide '
+                'Basis für weiteres Geschäftswachstum.\n'
                 '\n'
-                'Wir haben gerade die symbolische Grundsteinlegung '
-                'abgeschlossen. Die Arbeiten auf der Baustelle verlaufen '
-                'planmäßig und nach unserem Ingenieurstandard. Wir bedanken '
-                'uns bei Warmet für das Vertrauen und die Übertragung der '
-                'Realisierung dieses strategischen Projekts an MBT.',
-          'en': 'Warmet – a well-known and respected alcohol wholesaler – is '
-                'gaining new space for development. The facility being '
-                "delivered by MBT's General Contractor team is a modern hall "
-                'that will serve as the main distribution centre for our '
-                'Investor.\n'
+                'Wir haben gerade die symbolische Grundsteinlegung abgeschlossen. Die Arbeiten auf der Baustelle '
+                'verlaufen planmäßig und nach unserem Ingenieurstandard. Wir bedanken uns bei Warmet für das Vertrauen '
+                'und die Übertragung der Realisierung dieses strategischen Projekts an MBT.',
+          'en': 'Warmet – a well-known and respected alcohol wholesaler – is gaining new space for development. The '
+                "facility being delivered by MBT's General Contractor team is a modern hall that will serve as the "
+                'main distribution centre for our Investor.\n'
                 '\n'
-                'In the FMCG and beverage distribution industry, flawless '
-                'logistics and maintaining proper storage conditions are '
-                'essential. With these requirements in mind, we are building a '
-                'space fully tailored to the operational specifics of Warmet. '
-                'The new facility will enable optimised logistics processes, '
-                'more efficient order handling and provide a solid backbone '
-                'for further business growth.\n'
+                'In the FMCG and beverage distribution industry, flawless logistics and maintaining proper storage '
+                'conditions are essential. With these requirements in mind, we are building a space fully tailored to '
+                'the operational specifics of Warmet. The new facility will enable optimised logistics processes, more '
+                'efficient order handling and provide a solid backbone for further business growth.\n'
                 '\n'
-                'We have just completed the symbolic cornerstone-laying stage. '
-                'Works on the construction site are progressing according to '
-                'schedule and our engineering standard. We thank Warmet for '
-                'the trust and for entrusting MBT with the delivery of this '
-                'strategic project.',
-          'hu': 'A Warmet – jól ismert és elismert alkohol-nagykereskedő – új '
-                'teret kap a fejlődéshez. Az MBT Fővállalkozói csapata által '
-                'megvalósított objektum egy modern csarnok, amely befektetőnk '
-                'fő elosztóközpontjaként fog működni.\n'
+                'We have just completed the symbolic cornerstone-laying stage. Works on the construction site are '
+                'progressing according to schedule and our engineering standard. We thank Warmet for the trust and for '
+                'entrusting MBT with the delivery of this strategic project.',
+          'hu': 'A Warmet – jól ismert és elismert alkohol-nagykereskedő – új teret kap a fejlődéshez. Az MBT '
+                'Fővállalkozói csapata által megvalósított objektum egy modern csarnok, amely befektetőnk fő '
+                'elosztóközpontjaként fog működni.\n'
                 '\n'
-                'Az FMCG és az italelosztás iparágában a hibátlan logisztika '
-                'és a megfelelő tárolási feltételek betartása kulcsfontosságú. '
-                'Ezeket az igényeket szem előtt tartva olyan teret építünk, '
-                'amely teljes mértékben a Warmet működési sajátosságaihoz '
-                'igazodik. Az új objektum optimalizálja a logisztikai '
-                'folyamatokat, hatékonyabbá teszi a rendelések kezelését, és '
-                'szilárd alapot biztosít a további üzleti fejlődéshez.\n'
+                'Az FMCG és az italelosztás iparágában a hibátlan logisztika és a megfelelő tárolási feltételek '
+                'betartása kulcsfontosságú. Ezeket az igényeket szem előtt tartva olyan teret építünk, amely teljes '
+                'mértékben a Warmet működési sajátosságaihoz igazodik. Az új objektum optimalizálja a logisztikai '
+                'folyamatokat, hatékonyabbá teszi a rendelések kezelését, és szilárd alapot biztosít a további üzleti '
+                'fejlődéshez.\n'
                 '\n'
-                'Jelenleg az alapkőletétel szimbolikus szakaszánál tartunk. Az '
-                'építkezésen a munkálatok az ütemezés és mérnöki színvonalunk '
-                'szerint haladnak. Köszönjük a Warmet cég bizalmát, hogy ezt a '
-                'stratégiai projektet az MBT-re bízta.',
-          'sk': 'Firma Warmet – dobre známy a cenený veľkoobchod s alkoholom – '
-                'získava nový priestor pre rozvoj. Objekt realizovaný tímom '
-                'Generálneho dodávateľa MBT je moderná hala, ktorá bude plniť '
-                'funkciu hlavného distribučného centra nášho investora.\n'
+                'Jelenleg az alapkőletétel szimbolikus szakaszánál tartunk. Az építkezésen a munkálatok az ütemezés és '
+                'mérnöki színvonalunk szerint haladnak. Köszönjük a Warmet cég bizalmát, hogy ezt a stratégiai '
+                'projektet az MBT-re bízta.',
+          'sk': 'Firma Warmet – dobre známy a cenený veľkoobchod s alkoholom – získava nový priestor pre rozvoj. '
+                'Objekt realizovaný tímom Generálneho dodávateľa MBT je moderná hala, ktorá bude plniť funkciu '
+                'hlavného distribučného centra nášho investora.\n'
                 '\n'
-                'V odvetví FMCG a distribúcie nápojov je kľúčová bezchybná '
-                'logistika a dodržiavanie primeraných skladovacích podmienok. '
-                'S ohľadom na tieto požiadavky budujeme priestor plne '
-                'prispôsobený prevádzkovej špecifikácii firmy Warmet. Nový '
-                'objekt umožní optimalizáciu logistických procesov, '
-                'efektívnejšie vybavovanie objednávok a poskytne solídne '
-                'zázemie pre ďalší rozvoj podnikania.\n'
+                'V odvetví FMCG a distribúcie nápojov je kľúčová bezchybná logistika a dodržiavanie primeraných '
+                'skladovacích podmienok. S ohľadom na tieto požiadavky budujeme priestor plne prispôsobený '
+                'prevádzkovej špecifikácii firmy Warmet. Nový objekt umožní optimalizáciu logistických procesov, '
+                'efektívnejšie vybavovanie objednávok a poskytne solídne zázemie pre ďalší rozvoj podnikania.\n'
                 '\n'
-                'V súčasnosti sme po etape symbolického položenia základného '
-                'kameňa. Práce na stavenisku postupujú podľa harmonogramu a '
-                'nášho inžinierskeho štandardu. Ďakujeme firme Warmet za '
-                'dôveru a zverenie realizácie tohto strategického projektu '
-                'spoločnosti MBT.'},
+                'V súčasnosti sme po etape symbolického položenia základného kameňa. Práce na stavenisku postupujú '
+                'podľa harmonogramu a nášho inžinierskeho štandardu. Ďakujeme firme Warmet za dôveru a zverenie '
+                'realizácie tohto strategického projektu spoločnosti MBT.'},
   't_s': {},
   't_t': {},
   'title': 'Warmet Hurtownia Alkocholi',
@@ -5361,9 +4746,9 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/00065b4a0f4f.webp',
+  'hero': '/static/img/mbt/7-scaled-3dfac3ae.jpg',
   'latitude': 51.177,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/e257f7ae4ed2.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 16.237,
   'opis': '',
   'order': 35,
@@ -5379,9 +4764,9 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/28beeb5e020f.webp',
+  'hero': '/static/img/mbt/LessMess-5-9e410f12.jpg',
   'latitude': 54.3445279,
-  'logo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/0b6a2afd6d97.webp',
+  'logo': '/static/img/mbt/icon.svg',
   'longitude': 18.5456996,
   'opis': '',
   'order': 36,
@@ -5809,8 +5194,8 @@ SALES_REPS = [{'email': 'a.grzelak@mbt.pl',
 
 SECTORS = [{'icon': 'ri-building-2-line',
   'image': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
-  'opis': 'Obiekty dostosowane do rygorystycznych wymogów technologicznych, w '
-          'tym hale z suwnicami i zaawansowanym parkiem maszynowym.',
+  'opis': 'Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale z suwnicami i zaawansowanym '
+          'parkiem maszynowym.',
   'order': 0,
   'slug': '',
   't_o': {},
@@ -5819,8 +5204,8 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': '#gw-wycena'},
  {'icon': 'ri-tools-line',
   'image': 'https://media.mbt.pl/uploads/cfe86a26e478.webp',
-  'opis': 'Produkcja, dostawa i montaż nowoczesnych konstrukcji stalowych pod '
-          'wszelkiego rodzaju obiekty wielkopowierzchniowe.',
+  'opis': 'Produkcja, dostawa i montaż nowoczesnych konstrukcji stalowych pod wszelkiego rodzaju obiekty '
+          'wielkopowierzchniowe.',
   'order': 1,
   'slug': 'konstrukcje-stalowe',
   't_o': {},
@@ -5829,8 +5214,8 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-building-4-line',
   'image': 'https://media.mbt.pl/uploads/5c4261182884.webp',
-  'opis': 'Realizacja trwałych i ognioodpornych konstrukcji żelbetowych, od '
-          'fundamentów po skomplikowane stropy i słupy nośne.',
+  'opis': 'Realizacja trwałych i ognioodpornych konstrukcji żelbetowych, od fundamentów po skomplikowane stropy i '
+          'słupy nośne.',
   'order': 2,
   'slug': 'konstrukcje-zelbetowe',
   't_o': {},
@@ -5838,9 +5223,9 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'title': 'Konstrukcje żelbetowe',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-briefcase-4-line',
-  'image': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/151dd278be86.webp',
-  'opis': 'Nowoczesne obiekty biurowe oraz prace fit-out, dostosowane do '
-          'najwyższych standardów ergonomii i certyfikacji BREEAM.',
+  'image': '/static/img/mbt/Fronton-2-scaled-de057284.jpg',
+  'opis': 'Nowoczesne obiekty biurowe oraz prace fit-out, dostosowane do najwyższych standardów ergonomii i '
+          'certyfikacji BREEAM.',
   'order': 3,
   'slug': 'biurowce',
   't_o': {},
@@ -5849,8 +5234,8 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-shopping-bag-3-line',
   'image': 'https://media.mbt.pl/uploads/eba049e8204f.webp',
-  'opis': 'Nowoczesne parki handlowe i obiekty retail. Dbamy o '
-          'wielofunkcyjność (multi-use) i nowoczesny design elewacji.',
+  'opis': 'Nowoczesne parki handlowe i obiekty retail. Dbamy o wielofunkcyjność (multi-use) i nowoczesny design '
+          'elewacji.',
   'order': 4,
   'slug': 'parki-handlowe',
   't_o': {},
@@ -5859,8 +5244,8 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-archive-line',
   'image': 'https://media.mbt.pl/uploads/133184963a8c.webp',
-  'opis': 'Przestrzenie magazynowe wysokiego składowania, dopasowane do '
-          'specyfiki łańcucha dostaw i wymogów pożarowych.',
+  'opis': 'Przestrzenie magazynowe wysokiego składowania, dopasowane do specyfiki łańcucha dostaw i wymogów '
+          'pożarowych.',
   'order': 5,
   'slug': '',
   't_o': {},
@@ -5868,9 +5253,9 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'title': 'Magazyny',
   'view_name': 'haleMagazynowe'},
  {'icon': 'ri-box-3-line',
-  'image': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/media/uploads/ed67bb1b2b03.webp',
-  'opis': 'Nowoczesne obiekty magazynowe z kontrolowanym dostępem, '
-          'zróżnicowanymi boksami i wysokimi standardami bezpieczeństwa.',
+  'image': '/static/img/mbt/realizacja-stokado.jpg',
+  'opis': 'Nowoczesne obiekty magazynowe z kontrolowanym dostępem, zróżnicowanymi boksami i wysokimi standardami '
+          'bezpieczeństwa.',
   'order': 6,
   'slug': 'obiekty-self-storage',
   't_o': {},
@@ -5879,8 +5264,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-government-line',
   'image': '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg',
-  'opis': 'Budynki użyteczności publicznej realizowane zgodnie z najwyższymi '
-          'standardami dostępności i bezpieczeństwa.',
+  'opis': 'Budynki użyteczności publicznej realizowane zgodnie z najwyższymi standardami dostępności i bezpieczeństwa.',
   'order': 7,
   'slug': 'obiekty-uzytecznosci-publicznej',
   't_o': {},
@@ -5889,8 +5273,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-hospital-line',
   'image': 'https://media.mbt.pl/uploads/f43899b152f8.webp',
-  'opis': 'Specjalistyczne placówki ochrony zdrowia, szpitale i przychodnie '
-          'budowane z myślą o pacjentach i personelu.',
+  'opis': 'Specjalistyczne placówki ochrony zdrowia, szpitale i przychodnie budowane z myślą o pacjentach i personelu.',
   'order': 8,
   'slug': 'obiekty-medyczne-szpitale',
   't_o': {},
@@ -5898,9 +5281,8 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'title': 'Obiekty medyczne (szpitale)',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-home-8-line',
-  'image': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/4b52bd6eff86.webp',
-  'opis': 'Inwestycje deweloperskie i budynki wielorodzinne o wysokim '
-          'standardzie wykończenia.',
+  'image': '/static/img/mbt/Fronton-1-scaled-42981731.jpg',
+  'opis': 'Inwestycje deweloperskie i budynki wielorodzinne o wysokim standardzie wykończenia.',
   'order': 9,
   'slug': 'mieszkaniowka',
   't_o': {},
@@ -5909,8 +5291,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-car-line',
   'image': 'https://media.mbt.pl/uploads/a3fc2bc72cbe.webp',
-  'opis': 'Nowoczesne salony sprzedaży i autoryzowane stacje obsługi pojazdów '
-          'spełniające normy producentów.',
+  'opis': 'Nowoczesne salony sprzedaży i autoryzowane stacje obsługi pojazdów spełniające normy producentów.',
   'order': 10,
   'slug': 'salony-samochodowe',
   't_o': {},
@@ -5919,8 +5300,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-temp-cold-line',
   'image': 'https://media.mbt.pl/uploads/4e0ab68864c3.webp',
-  'opis': 'Obiekty z kontrolowaną temperaturą i rygorystycznymi normami '
-          'sanitarnymi.',
+  'opis': 'Obiekty z kontrolowaną temperaturą i rygorystycznymi normami sanitarnymi.',
   'order': 11,
   'slug': 'chlodnie-mroznie',
   't_o': {},
@@ -5929,8 +5309,8 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-shopping-cart-2-line',
   'image': 'https://media.mbt.pl/uploads/6c56aa2fb100.webp',
-  'opis': 'Nowoczesne przestrzenie logistyczne dostosowane do szybkiej obsługi '
-          'zamówień (sortownie, centra dystrybucyjne).',
+  'opis': 'Nowoczesne przestrzenie logistyczne dostosowane do szybkiej obsługi zamówień (sortownie, centra '
+          'dystrybucyjne).',
   'order': 12,
   'slug': 'obiekty-e-commerce',
   't_o': {},
@@ -5939,8 +5319,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-test-tube-line',
   'image': 'https://media.mbt.pl/uploads/a2862c2e44c5.webp',
-  'opis': 'Zaawansowane technologicznie obiekty badawcze wymagające '
-          'precyzyjnych instalacji i warunków.',
+  'opis': 'Zaawansowane technologicznie obiekty badawcze wymagające precyzyjnych instalacji i warunków.',
   'order': 13,
   'slug': 'centra-badawczo-rozwojowe',
   't_o': {},
@@ -5949,8 +5328,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-server-line',
   'image': 'https://media.mbt.pl/uploads/e832f1a38f9f.webp',
-  'opis': 'Bezpieczne i wydajne energetycznie obiekty dla infrastruktury IT o '
-          'podwyższonym standardzie zasilania.',
+  'opis': 'Bezpieczne i wydajne energetycznie obiekty dla infrastruktury IT o podwyższonym standardzie zasilania.',
   'order': 14,
   'slug': 'data-center',
   't_o': {},
@@ -5959,8 +5337,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-basketball-line',
   'image': 'https://media.mbt.pl/uploads/d2c5e6b809e6.webp',
-  'opis': 'Wielofunkcyjne obiekty sportowe, areny i hale zaprojektowane z '
-          'myślą o masowych wydarzeniach.',
+  'opis': 'Wielofunkcyjne obiekty sportowe, areny i hale zaprojektowane z myślą o masowych wydarzeniach.',
   'order': 15,
   'slug': 'hale-sportowe',
   't_o': {},
@@ -5969,8 +5346,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-shield-cross-line',
   'image': 'https://media.mbt.pl/uploads/46a252afa9c0.webp',
-  'opis': 'Obiekty o podwyższonym rygorze bezpieczeństwa i specjalistycznych '
-          'wymaganiach konstrukcyjnych.',
+  'opis': 'Obiekty o podwyższonym rygorze bezpieczeństwa i specjalistycznych wymaganiach konstrukcyjnych.',
   'order': 16,
   'slug': 'obiekty-militarne',
   't_o': {},
@@ -5979,8 +5355,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-recycle-line',
   'image': 'https://media.mbt.pl/uploads/1648f91ebdc2.webp',
-  'opis': 'Ekologiczne zakłady przetwarzania odpadów i nowoczesne instalacje '
-          'ochrony środowiska.',
+  'opis': 'Ekologiczne zakłady przetwarzania odpadów i nowoczesne instalacje ochrony środowiska.',
   'order': 17,
   'slug': 'zaklady-recyklingu',
   't_o': {},
@@ -5989,8 +5364,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-shopping-bag-line',
   'image': 'https://media.mbt.pl/uploads/8815bdaf26e7.webp',
-  'opis': 'Przestrzenie komercyjne łączące funkcje handlowe, rozrywkowe i '
-          'usługowe w atrakcyjnej formie.',
+  'opis': 'Przestrzenie komercyjne łączące funkcje handlowe, rozrywkowe i usługowe w atrakcyjnej formie.',
   'order': 18,
   'slug': 'centra-handlowe',
   't_o': {},
@@ -5999,8 +5373,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-store-2-line',
   'image': '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg',
-  'opis': 'Funkcjonalne obiekty handlowe o optymalnym układzie komunikacyjnym '
-          'dla wygody klientów.',
+  'opis': 'Funkcjonalne obiekty handlowe o optymalnym układzie komunikacyjnym dla wygody klientów.',
   'order': 19,
   'slug': 'markety',
   't_o': {},
@@ -6009,8 +5382,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-tools-line',
   'image': '/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg',
-  'opis': 'Wielkopowierzchniowe obiekty handlowe dostosowane konstrukcyjnie do '
-          'asortymentu budowlanego.',
+  'opis': 'Wielkopowierzchniowe obiekty handlowe dostosowane konstrukcyjnie do asortymentu budowlanego.',
   'order': 20,
   'slug': 'markety-budowlane',
   't_o': {},
@@ -6019,8 +5391,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-store-3-line',
   'image': 'https://media.mbt.pl/uploads/b6991aad2996.webp',
-  'opis': 'Atrakcyjne wizualnie lokale i pawilony handlowe dla różnorodnych '
-          'branż.',
+  'opis': 'Atrakcyjne wizualnie lokale i pawilony handlowe dla różnorodnych branż.',
   'order': 21,
   'slug': 'sklepy-stacjonarne',
   't_o': {},
@@ -6028,9 +5399,8 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'title': 'Sklepy stacjonarne',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-building-3-line',
-  'image': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/151dd278be86.webp',
-  'opis': 'Prestiżowe obiekty handlowe o unikalnej architekturze i wysokim '
-          'standardzie wykończenia.',
+  'image': '/static/img/mbt/Fronton-2-scaled-de057284.jpg',
+  'opis': 'Prestiżowe obiekty handlowe o unikalnej architekturze i wysokim standardzie wykończenia.',
   'order': 22,
   'slug': 'galerie-handlowe',
   't_o': {},
@@ -6039,8 +5409,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-shopping-basket-line',
   'image': 'https://media.mbt.pl/uploads/33a95c4212a6.webp',
-  'opis': 'Duże obiekty handlowe z zaawansowaną infrastrukturą towarzyszącą i '
-          'przestronnymi parkingami.',
+  'opis': 'Duże obiekty handlowe z zaawansowaną infrastrukturą towarzyszącą i przestronnymi parkingami.',
   'order': 23,
   'slug': 'hipermarkety',
   't_o': {},
@@ -6049,8 +5418,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-building-4-line',
   'image': '/static/img/mbt/3-2-scaled-38947c85.jpg',
-  'opis': 'Inwestycje w nieruchomości przeznaczone pod wynajem oraz różnorodną '
-          'działalność biznesową.',
+  'opis': 'Inwestycje w nieruchomości przeznaczone pod wynajem oraz różnorodną działalność biznesową.',
   'order': 24,
   'slug': 'nieruchomosci-komercyjne',
   't_o': {},
@@ -6059,8 +5427,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-storefront-line',
   'image': 'https://media.mbt.pl/uploads/ddb053ae7834.webp',
-  'opis': 'Nowoczesne lokale usługowe i handlowe elastycznie dostosowane do '
-          'potrzeb przyszłych najemców.',
+  'opis': 'Nowoczesne lokale usługowe i handlowe elastycznie dostosowane do potrzeb przyszłych najemców.',
   'order': 25,
   'slug': 'powierzchnie-uslugowo-handlowe',
   't_o': {},
@@ -6069,8 +5436,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-factory-line',
   'image': '/static/img/mbt/hala-1024x672-eb7144c9.jpg',
-  'opis': 'Zaawansowane zakłady przemysłowe i złożone linie produkcyjne dla '
-          'różnych sektorów gospodarki.',
+  'opis': 'Zaawansowane zakłady przemysłowe i złożone linie produkcyjne dla różnych sektorów gospodarki.',
   'order': 26,
   'slug': 'fabryki',
   't_o': {},
@@ -6079,8 +5445,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-flask-line',
   'image': 'https://media.mbt.pl/uploads/ac71356f53de.webp',
-  'opis': 'Specjalistyczne obiekty produkcyjne dopasowane do unikalnych '
-          'procesów technologicznych.',
+  'opis': 'Specjalistyczne obiekty produkcyjne dopasowane do unikalnych procesów technologicznych.',
   'order': 27,
   'slug': 'wytwornie',
   't_o': {},
@@ -6089,8 +5454,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-map-pin-line',
   'image': 'https://media.mbt.pl/uploads/9ac4af006f93.webp',
-  'opis': 'Profesjonalnie utwardzone i odpowiednio przygotowane tereny pod '
-          'bezpieczne składowanie materiałów.',
+  'opis': 'Profesjonalnie utwardzone i odpowiednio przygotowane tereny pod bezpieczne składowanie materiałów.',
   'order': 28,
   'slug': 'place-skladowe',
   't_o': {},
@@ -6099,8 +5463,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-briefcase-line',
   'image': '/static/img/mbt/ZREALIZOWANE-ATT-3-scaled-b0f20287.jpg',
-  'opis': 'Kompleksy biurowe i prestiżowe przestrzenie do prowadzenia '
-          'działalności korporacyjnej.',
+  'opis': 'Kompleksy biurowe i prestiżowe przestrzenie do prowadzenia działalności korporacyjnej.',
   'order': 29,
   'slug': 'centra-biznesowe',
   't_o': {},
@@ -6109,8 +5472,7 @@ SECTORS = [{'icon': 'ri-building-2-line',
   'view_name': 'sectorDetail'},
  {'icon': 'ri-robot-line',
   'image': 'https://media.mbt.pl/uploads/04bfb07ae41b.webp',
-  'opis': 'Nowoczesne przestrzenie magazynowe projektowane specjalnie pod '
-          'zautomatyzowane systemy logistyczne.',
+  'opis': 'Nowoczesne przestrzenie magazynowe projektowane specjalnie pod zautomatyzowane systemy logistyczne.',
   'order': 30,
   'slug': 'magazyny-automatyczne',
   't_o': {},
@@ -6139,12 +5501,12 @@ SITE = {'about_short': 'MBT Modern Building Team — generalny wykonawca hal '
  'office_katowice': 'Jankego 176/1A, 40-663 Katowice',
  'office_katowice_photo': '/static/img/mbt/o-nas-zespol.jpg',
  'office_krakow': 'Zawiła 65, bud. X lok. 5, 30-390 Kraków',
- 'office_krakow_photo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/4f6ea4c1b231.webp',
+ 'office_krakow_photo': '/static/img/mbt/o-nas-2.jpg',
  'office_site_adres': 'Adres Twojej inwestycji',
  'office_site_label': 'Twój plac budowy',
- 'office_site_photo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/4f8eaf7bbb8a.webp',
+ 'office_site_photo': '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg',
  'office_zabrze': 'Roosevelta 81, 41-800 Zabrze',
- 'office_zabrze_photo': 'https://pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev/uploads/4e175fa5f07a.webp',
+ 'office_zabrze_photo': '/static/img/mbt/o-nas-1.jpg',
  'phone': '+48 881 444 333',
  'phone_href': '+48881444333',
  'regon': '369557780',

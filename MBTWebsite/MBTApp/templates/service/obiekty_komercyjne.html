@@ -33,7 +33,7 @@
             <div class="col-lg-6">
                 <div class="gw-about-img-wrap wow animate__animated animate__fadeInLeft">
                     <div class="gw-about-img-main">
-                        <img src="{{ photos.obiekty_komercyjne_1 }}" alt="Obiekty komercyjne">
+                        <img src="{{ photos.obiekty_komercyjne_1 }}" alt="Obiekty komercyjne" onerror="this.onerror=null;this.src='/static/img/mbt/CANPACK-BSS-LAB-w-Brzesku-1-1-ee4bd957.jpg';">
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="gw-about-img-wrap wow animate__animated animate__fadeInRight" style="padding: 0;">
-                    <img src="{{ photos.obiekty_komercyjne_2 }}" alt="Wnętrza komercyjne MBT" style="border-radius: 12px;">
+                    <img src="{{ photos.obiekty_komercyjne_2 }}" alt="Wnętrza komercyjne MBT" style="border-radius: 12px;" onerror="this.onerror=null;this.src='/static/img/mbt/3-2-scaled-38947c85.jpg';">
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
             <div class="col-md-6 col-lg-4">
                 <a href="{% url 'realizacjaDetail' p.slug %}" class="gw-project-card wow animate__animated animate__fadeInUp" data-wow-delay="{% cycle '0s' '0.1s' '0.2s' %}">
                     <div class="gw-project-img">
-                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" onerror="this.onerror=null;this.src='/static/img/mbt/hala-1024x672-eb7144c9.jpg';">
                         <div class="gw-project-overlay">
                             <span class="gw-project-view"><i class="ri-arrow-right-up-line"></i></span>
                         </div>

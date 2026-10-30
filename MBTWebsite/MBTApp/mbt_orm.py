@@ -147,6 +147,72 @@ def _apply_folder_photos(project):
 
 
 
+PROJECT_HERO_FALLBACKS = {
+    'att-kokotow': '/static/img/mbt/ZREALIZOWANE-ATT-1-scaled-f12dacac.jpg',
+    'pumar': '/static/img/mbt/hala-1024x672-eb7144c9.jpg',
+    'less-mess-storage-warszawa': '/static/img/mbt/LessMess-1-3370ce84.jpg',
+    'kompania-piwowarska-tychy': '/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg',
+    'fabryka-park-katowice': '/static/img/mbt/DSC03726-scaled-04284a3e.jpeg',
+    'eurosleeve-zabrze': '/static/img/mbt/Eurosleeve-12-scaled-a4ea9500.jpg',
+    'stokado-self-storage-krakow': '/static/img/mbt/realizacja-stokado.jpg',
+    'fronton-krakow': '/static/img/mbt/Fronton-1-scaled-42981731.jpg',
+    'browar-zamkowy-raciborz': '/static/img/mbt/mbt-browar-raciborz-8-03eeadf7.jpg',
+    'stokado-self-storage-warszawa-bemowo': '/static/img/mbt/DJI_0174-scaled-5106e265.jpeg',
+    'huber-suhner-pisary': '/static/img/mbt/Huber-1-scaled-1d0326ab.jpg',
+    'euronova-kokotow-gm-wieliczka': '/static/img/mbt/realizacja-euronova.jpg',
+    'euro-trade-w-modlnicy': '/static/img/mbt/IMG_20220722_102111-scaled-1-ceffec28.jpg',
+    'kompania-piwowarska': '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg',
+    'in-post-w-legnicy': '/static/img/mbt/IMG_20220406_131518-scaled-1-84d560cd.jpg',
+    'sutco-katowice': '/static/img/mbt/jpg_22-1-1-3fa214ab.jpg',
+    'canpack-bss-lab-brzesk': '/static/img/mbt/CANPACK-BSS-LAB-w-Brzesku-3-1-f34a5df7.jpg',
+    'p1704': '/static/img/mbt/3-2-scaled-38947c85.jpg',
+    'herz-wieliczka': '/static/img/mbt/Herz-docel-2-1-scaled-1-04664ed6.jpg',
+    'toto-glogoczow': 'https://media.mbt.pl/uploads/realizacja-toto-glogoczow.webp',
+    'bts-development-park-zielona-gora': '/static/img/mbt/DJI_0181-1-scaled-b366f7fb.jpeg',
+    'byd-dabrowscy-bytom': '/static/img/mbt/DSC03980-scaled-ea8b4933.jpeg',
+    'ecowipes-nowy-dwor-mazowiecki': '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg',
+    'ponar-wadowice': '/static/img/mbt/DSC03730-scaled-ee7d1094.jpeg',
+    'VESUVIUS': '/static/img/mbt/DSC03626-scaled-6f5bda4e.jpeg',
+    'stokado-self-storage-warszawa-targowek': '/static/img/mbt/DJI_0174-scaled-5106e265.jpeg',
+    'venus-brzegi': '/static/img/mbt/venusgotowe-3c7b87fa.png',
+    'scallier-zabrze': '/static/img/mbt/scallier-logo-662a14b7.png',
+    'fiolka-raciborz': '/static/img/mbt/IMG_20220722_102326-scaled-1-fdde92f8.jpg',
+    'bater-gliwice': '/static/img/mbt/logo2-76e5c8f9.png',
+    'wessper': '/static/img/mbt/1-scaled-f7ffa583.jpg',
+    'warmet-hurtownia-alkocholi': '/static/img/mbt/6-scaled-8c1b1f01.jpg',
+    'raben': '/static/img/mbt/7-scaled-3dfac3ae.jpg',
+    'less-mess-gdansk': '/static/img/mbt/LessMess-5-9e410f12.jpg',
+}
+
+PROJECT_GALLERY_FALLBACKS = {
+    'att-kokotow': ['/static/img/mbt/ZREALIZOWANE-ATT-3-scaled-b0f20287.jpg', '/static/img/mbt/ZREALIZOWANE-ATT-4-scaled-ffc91418.jpg', '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg', '/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg', '/static/img/mbt/ZREALIZOWANE-ATT-8-c1d848dd.jpg'],
+    'less-mess-storage-warszawa': ['/static/img/mbt/LessMess-2-scaled-97b96a57.jpg', '/static/img/mbt/LessMess-3-scaled-8cef25bd.jpg', '/static/img/mbt/LessMess-4-18feb603.jpg', '/static/img/mbt/LessMess-5-9e410f12.jpg', '/static/img/mbt/LessMess-6-916e0c22.jpg'],
+    'eurosleeve-zabrze': ['/static/img/mbt/Eurosleeve-2-scaled-c2ae0cee.jpg', '/static/img/mbt/Eurosleeve-3-scaled-d1365013.jpg', '/static/img/mbt/Eurosleeve-5-scaled-bc3730ed.jpg', '/static/img/mbt/Eurosleeve-6-scaled-73fe0a94.jpg', '/static/img/mbt/Eurosleeve-7-scaled-2e508c07.jpg', '/static/img/mbt/Eurosleeve-8-scaled-f259de88.jpg', '/static/img/mbt/Eurosleeve-9-scaled-9070a8d2.jpg', '/static/img/mbt/Eurosleeve-10-scaled-fd8f7247.jpg', '/static/img/mbt/Eurosleeve-11-scaled-cebef959.jpg'],
+    'fronton-krakow': ['/static/img/mbt/Fronton-2-scaled-de057284.jpg', '/static/img/mbt/Fronton-3-scaled-1437922a.jpg', '/static/img/mbt/Fronton-4-scaled-d63c339b.jpg', '/static/img/mbt/Fronton-5-scaled-321d647a.jpg'],
+    'huber-suhner-pisary': ['/static/img/mbt/Huber-2-scaled-0183eebd.jpg', '/static/img/mbt/Huber-3-scaled-9bd9b813.jpg', '/static/img/mbt/Huber-4-scaled-9c017841.jpg', '/static/img/mbt/Huber-5-scaled-45d0b018.jpg', '/static/img/mbt/Huber-6-scaled-b00b8b23.jpg'],
+    'canpack-bss-lab-brzesk': ['/static/img/mbt/CANPACK-BSS-LAB-w-Brzesku-1-1-ee4bd957.jpg', '/static/img/mbt/CANPACK-BSS-LAB-w-Brzesku-2-1-13c84a96.jpg'],
+    'herz-wieliczka': ['/static/img/mbt/Herz-docel-3-scaled-1-89b6538a.jpg'],
+}
+
+def _sanitize_project_photos(proj):
+    if not proj:
+        return proj
+    slug = proj.get('slug', '')
+    hero = proj.get('hero') or ''
+    if not hero or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in hero:
+        proj['hero'] = PROJECT_HERO_FALLBACKS.get(slug, '/static/img/mbt/hala-1024x672-eb7144c9.jpg')
+
+    logo = proj.get('logo') or ''
+    if not logo or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in logo:
+        proj['logo'] = '/static/img/mbt/icon.svg'
+
+    gallery = proj.get('gallery') or []
+    clean_gallery = [g for g in gallery if 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' not in g]
+    if not clean_gallery and slug in PROJECT_GALLERY_FALLBACKS:
+        clean_gallery = PROJECT_GALLERY_FALLBACKS[slug]
+    proj['gallery'] = clean_gallery
+    return proj
+
 # ---------------------------------------------------------------------------
 # Projekty (realizacje)
 # ---------------------------------------------------------------------------
@@ -171,11 +237,11 @@ def get_projects(lang='pl'):
                 'longitude': p.longitude,
                 'order': p.order,
             }
-            projects.append(_apply_folder_photos(proj))
+            projects.append(_sanitize_project_photos(_apply_folder_photos(proj)))
         if projects: return projects
     except Exception:
         pass
-    return [_apply_folder_photos(_project_translate(dict(p), lang)) for p in mbt_data.PROJECTS]
+    return [_sanitize_project_photos(_apply_folder_photos(_project_translate(dict(p), lang))) for p in mbt_data.PROJECTS]
 
 
 def get_project_by_slug(slug, lang='pl'):
@@ -196,15 +262,14 @@ def get_project_by_slug(slug, lang='pl'):
                 'latitude': p.latitude,
                 'longitude': p.longitude,
             }
-            return _apply_folder_photos(proj)
+            return _sanitize_project_photos(_apply_folder_photos(proj))
         except Project.DoesNotExist:
             return None
     except Exception:
         pass
     for p in mbt_data.PROJECTS:
         if p['slug'] == slug:
-            d = _project_translate(dict(p), lang)
-            return _apply_folder_photos(d)
+            return _sanitize_project_photos(_apply_folder_photos(_project_translate(dict(p), lang)))
     return None
 
 
@@ -449,12 +514,12 @@ def get_site(lang='pl'):
                 'office_zabrze': _t(c.t_office_zabrze, lang, c.office_zabrze),
                 'office_katowice': _t(c.t_office_katowice, lang, c.office_katowice),
                 'office_krakow': _t(c.t_office_krakow, lang, c.office_krakow),
-                'office_zabrze_photo': c.office_zabrze_photo,
-                'office_katowice_photo': c.office_katowice_photo,
-                'office_krakow_photo': c.office_krakow_photo,
+                'office_zabrze_photo': '/static/img/mbt/o-nas-1.jpg' if (not c.office_zabrze_photo or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(c.office_zabrze_photo)) else c.office_zabrze_photo,
+                'office_katowice_photo': '/static/img/mbt/o-nas-zespol.jpg' if (not c.office_katowice_photo or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(c.office_katowice_photo)) else c.office_katowice_photo,
+                'office_krakow_photo': '/static/img/mbt/o-nas-2.jpg' if (not c.office_krakow_photo or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(c.office_krakow_photo)) else c.office_krakow_photo,
                 'office_site_label': c.office_site_label,
                 'office_site_adres': c.office_site_adres,
-                'office_site_photo': c.office_site_photo,
+                'office_site_photo': '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg' if (not c.office_site_photo or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(c.office_site_photo)) else c.office_site_photo,
                 'nip': c.nip,
                 'regon': c.regon,
                 'krs': c.krs,
@@ -484,6 +549,14 @@ def get_site(lang='pl'):
         pass
     # Fallback z mbt_data.py z tłumaczeniem gettext dla etykiet
     s = dict(mbt_data.SITE)
+    if 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(s.get('office_zabrze_photo', '')):
+        s['office_zabrze_photo'] = '/static/img/mbt/o-nas-1.jpg'
+    if 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(s.get('office_katowice_photo', '')):
+        s['office_katowice_photo'] = '/static/img/mbt/o-nas-zespol.jpg'
+    if 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(s.get('office_krakow_photo', '')):
+        s['office_krakow_photo'] = '/static/img/mbt/o-nas-2.jpg'
+    if 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(s.get('office_site_photo', '')):
+        s['office_site_photo'] = '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg'
     from django.utils.translation import override as _override, gettext as _gettext
     with _override(lang):
         s['tagline'] = _gettext(s.get('tagline', ''))
@@ -508,27 +581,69 @@ def get_site(lang='pl'):
 # Fotografie strony (SitePhotos) — podmienialne z admina (upload na R2)
 # ---------------------------------------------------------------------------
 
+FALLBACK_PHOTOS = {
+    'hale_przemyslowe_hero': 'https://media.mbt.pl/uploads/41003d4cca6e.webp',
+    'hale_przemyslowe_1': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
+    'hale_przemyslowe_2': '/static/img/mbt/breem-e659b8f2.jpg',
+    'hale_magazynowe_hero': 'https://media.mbt.pl/uploads/1648f91ebdc2.webp',
+    'hale_magazynowe_1': '/static/img/mbt/LessMess-4-18feb603.jpg',
+    'obiekty_komercyjne_hero': 'https://media.mbt.pl/uploads/04bfb07ae41b.webp',
+    'obiekty_komercyjne_1': '/static/img/mbt/CANPACK-BSS-LAB-w-Brzesku-1-1-ee4bd957.jpg',
+    'obiekty_komercyjne_2': '/static/img/mbt/3-2-scaled-38947c85.jpg',
+    'gw_hero': 'https://media.mbt.pl/uploads/41003d4cca6e.webp',
+    'gw_1': '/static/img/mbt/ZREALIZOWANE-ATT-1-scaled-f12dacac.jpg',
+    'gw_2': '/static/img/mbt/ZREALIZOWANE-ATT-3-scaled-b0f20287.jpg',
+    'gw_3': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
+    'gw_4': '/static/img/mbt/ZREALIZOWANE-ATT-5-scaled-b27ef1aa.jpg',
+    'gw_5': '/static/img/mbt/ZREALIZOWANE-ATT-6-scaled-e17253f9.jpg',
+    'gw_6': '/static/img/mbt/Fronton-1-scaled-42981731.jpg',
+    'gw_7': '/static/img/mbt/Fronton-2-scaled-de057284.jpg',
+    'gw_8': '/static/img/mbt/Huber-6-scaled-b00b8b23.jpg',
+    'gw_9': '/static/img/mbt/3-2-scaled-38947c85.jpg',
+    'gw_10': '/static/img/mbt/breem-e659b8f2.jpg',
+    'gw_11': '/static/img/mbt/hala-1024x672-eb7144c9.jpg',
+    'gw_12': '/static/img/mbt/realizacja-stokado.jpg',
+    'home_hero_bg': '/static/img/hero/hero_bg_3_1.png',
+    'home_att8': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
+    'home_bg_cta': '/static/img/bg/cta-bg3-1.png',
+    'home_bg_contact': '/static/img/bg/contact-bg3-1.png',
+    'home_bg_why': '/static/img/bg/why-bg3-1.png',
+    'home_client_group': '',
+    'home_testi_2': '/static/img/testimonial/testi_2_2.png',
+    'home_o_nas_2': '/static/img/mbt/o-nas-2.jpg',
+    'home_o_nas_zespol': 'https://media.mbt.pl/uploads/c4f9f468d740.webp',
+    'home_realizacja': '/static/img/mbt/realizacja-eurosleeve.jpg',
+    'bg_header': '/static/img/bg/header-1-bg.png',
+    'bg_footer': '/static/img/bg/footer-bg1-1.png',
+    'bg_breadcrumb': '/static/img/bg/breadcrumb-bg.png',
+    'about_1': '/static/img/mbt/o-nas-1.jpg',
+    'service_1': '/static/img/mbt/Eurosleeve-10-scaled-fd8f7247.jpg',
+    'service_2': '/static/img/mbt/IMG_20220722_102326-scaled-1-fdde92f8.jpg',
+    'general_contracting_1': '/static/img/mbt/LessMess-1-3370ce84.jpg',
+    'general_contracting_2': '/static/img/mbt/realizacja-stokado.jpg',
+    'work_gallery': [
+        '/static/img/mbt/DSC03626-scaled-6f5bda4e.jpeg',
+        '/static/img/mbt/DSC03726-scaled-04284a3e.jpeg',
+        '/static/img/mbt/DSC03730-scaled-ee7d1094.jpeg',
+        '/static/img/mbt/DSC03738-scaled-c238f3f3.jpeg',
+        '/static/img/mbt/DSC03980-scaled-ea8b4933.jpeg',
+        '/static/img/mbt/DJI_0174-scaled-5106e265.jpeg',
+        '/static/img/mbt/DJI_0181-1-scaled-b366f7fb.jpeg',
+        '/static/img/mbt/DJI_3-03272d0f.jpg',
+    ],
+}
+
 @_cached('photos')
 def get_photos():
     """Zwróć dict fotografie strony: klucz -> URL.
 
-    Wartości z mbt_data.PHOTOS stanowią oficjalną bazę produkcyjnych zdjęć w wysokiej rozdzielczości.
-    Wartości z bazy danych mają priorytet tylko wtedy, gdy zostały świadomie skonfigurowane
-    (np. upload na R2) i nie są starymi dummy placeholderami (1362x704, 1362x716 itp.).
+    Wartości z mbt_data.PHOTOS stanowią oficjalną bazę produkcyjnych zdjęć.
+    Wartości z bazy danych mają priorytet, jeśli nie są zablokowanym r2.dev.
+    Wszystkie zablokowane adresy r2.dev są automatycznie zastępowane przez FALLBACK_PHOTOS.
     """
     out = dict(getattr(mbt_data, 'PHOTOS', {}))
-    dummy_placeholders = {
-        '/static/img/hero/hero_bg_3_1.png',
-        '/static/img/bg/cta-bg3-1.png',
-        '/static/img/bg/contact-bg3-1.png',
-        '/static/img/bg/breadcrumb-bg.png',
-        '/static/img/normal/client_group_1-2.png',
-    }
     try:
-        try:
-            c = SitePhotos.objects.first()
-        except Exception:
-            c = None
+        c = SitePhotos.objects.first()
         if c is not None:
             for field in SitePhotos._meta.fields:
                 if field.name == 'id':
@@ -536,17 +651,26 @@ def get_photos():
                 val = getattr(c, field.name, None)
                 if not val:
                     continue
-                # Ignoruj stare atrapy z szablonów
-                if isinstance(val, str) and val.strip() in dummy_placeholders:
+                # Jeśli w bazie jest zablokowane r2.dev, ignoruj
+                if isinstance(val, str) and 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in val:
                     continue
-                # Jeśli w mbt_data mamy oficjalny pełny URL (http...), a w bazie pozostała stara relatywna ścieżka /static/img/bg/, wolimy mbt_data
-                canon = out.get(field.name)
-                if isinstance(val, str) and val.startswith('/static/img/bg/') and canon and isinstance(canon, str) and canon.startswith('http'):
-                    continue
+                if isinstance(val, list):
+                    val = [x for x in val if 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' not in str(x)]
+                    if not val:
+                        continue
                 out[field.name] = val
-            return out
     except Exception:
         pass
+
+    # Bezpieczeństwo: żaden klucz nie może wskazywać na zablokowane r2.dev ani być pusty
+    for k, v in FALLBACK_PHOTOS.items():
+        cur = out.get(k)
+        if not cur or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(cur):
+            out[k] = v
+        elif isinstance(cur, list):
+            clean_list = [x for x in cur if 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' not in str(x)]
+            out[k] = clean_list if clean_list else v
+
     return out
 
 @_cached('awards')
@@ -562,6 +686,19 @@ def get_awards():
     for a in getattr(mbt_data, 'AWARDS', []):
         awards.append(a)
     return awards
+
+
+SECTOR_FALLBACK_IMAGES = {
+    'biurowce': '/static/img/mbt/Fronton-2-scaled-de057284.jpg',
+    'obiekty-self-storage': '/static/img/mbt/realizacja-stokado.jpg',
+    'mieszkaniowka': '/static/img/mbt/Fronton-1-scaled-42981731.jpg',
+    'galerie-handlowe': '/static/img/mbt/Fronton-2-scaled-de057284.jpg',
+}
+
+def _sanitize_sector_image(slug, img):
+    if not img or 'pub-055b6d77c1e84acda77dbc29041f73ff.r2.dev' in str(img):
+        return SECTOR_FALLBACK_IMAGES.get(slug, '/static/img/mbt/hala-1024x672-eb7144c9.jpg')
+    return img
 
 
 def get_sectors(lang='pl'):
@@ -596,7 +733,7 @@ def get_sectors(lang='pl'):
                         'url': resolved_url,
                         'opis': opis,
                         'icon': s.icon,
-                        'image': s.image,
+                        'image': _sanitize_sector_image(s.slug, s.image),
                         'order': s.order,
                     })
                 return res
@@ -632,7 +769,7 @@ def get_sectors(lang='pl'):
                 "url": resolved_url,
                 "opis": opis,
                 "icon": s.get("icon"),
-                "image": s.get("image"),
+                "image": _sanitize_sector_image(s.get("slug"), s.get("image")),
                 "order": s.get("order"),
             })
     return res
