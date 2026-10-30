@@ -1,5 +1,15 @@
 {% load i18n %}
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EY06LJLW3F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EY06LJLW3F');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{% if meta_title %}{{ meta_title }}{% else %}{% if title %}{{ title }} - {% endif %}MBT Modern Building Team - {% trans 'Generalny Wykonawca Hal i Obiektów Przemysłowych' %}{% endif %}</title>

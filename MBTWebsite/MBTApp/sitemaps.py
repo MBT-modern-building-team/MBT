@@ -24,7 +24,8 @@ class SectorSitemap(Sitemap):
     changefreq = 'monthly'
     priority = 0.7
     i18n = True
-    alternates = True
+    alternates = False
+    languages = ['pl']
 
     def items(self):
         try:
@@ -81,14 +82,16 @@ class ProjectSitemap(Sitemap):
     alternates = True
 
     def items(self):
+        from MBTApp.middleware import LEGACY_PROJECT_SLUGS
+        legacy_set = {k.lower() for k in LEGACY_PROJECT_SLUGS.keys()}
         try:
-            items = list(Project.objects.all())
+            items = [p for p in Project.objects.all() if p.slug and p.slug.lower() not in legacy_set]
             if items:
                 return items
         except Exception:
             pass
         from MBTApp import mbt_data
-        return [{'slug': p['slug']} for p in getattr(mbt_data, 'PROJECTS', []) if p.get('slug')]
+        return [{'slug': p['slug']} for p in getattr(mbt_data, 'PROJECTS', []) if p.get('slug') and p['slug'].lower() not in legacy_set]
 
     def location(self, obj):
         slug = obj.slug if hasattr(obj, 'slug') else obj.get('slug')
@@ -99,7 +102,8 @@ class JobSitemap(Sitemap):
     changefreq = 'monthly'
     priority = 0.6
     i18n = True
-    alternates = True
+    alternates = False
+    languages = ['pl']
 
     def items(self):
         try:
