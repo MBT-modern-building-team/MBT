@@ -102,17 +102,16 @@ def save_uploaded_image(uploaded_file, folder='uploads'):
     if _r2_configured():
         try:
             ext = os.path.splitext(uploaded_file.name or '')[1].lower()
-            if ext not in ('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.avif'):
-                ext = '.webp'
             if ext in ('.svg',):
                 # SVG nie kompresujemy — wgrywamy oryginał
+                filename = f'{uuid.uuid4().hex[:12]}{ext}'
                 data = uploaded_file.read()
                 content_type = 'image/svg+xml'
-                filename = f'{uuid.uuid4().hex[:12]}{ext}'
             else:
-                data, content_type = _compress_image(uploaded_file)
                 filename = f'{uuid.uuid4().hex[:12]}.webp'
-            return _upload_to_r2(f'{folder}/{filename}', data, content_type)
+                data, content_type = _compress_image(uploaded_file)
+            r2_key = f'media/{folder}/{filename}' if not folder.startswith('media') else f'{folder}/{filename}'
+            return _upload_to_r2(r2_key, data, content_type)
         except Exception:
             # fallback: błąd R2 — lokalny zapis
             pass
@@ -159,7 +158,8 @@ def save_uploaded_video(uploaded_file, folder='uploads'):
     if _r2_configured():
         try:
             data = uploaded_file.read()
-            return _upload_to_r2(f'{folder}/{filename}', data, content_type)
+            r2_key = f'media/{folder}/{filename}' if not folder.startswith('media') else f'{folder}/{filename}'
+            return _upload_to_r2(r2_key, data, content_type)
         except Exception:
             pass  # fallback: lokalny zapis
 

@@ -235,7 +235,7 @@
                 {% for p in projects %}
                 <article class="project-touch-card" data-slug="{{ p.slug }}" data-type="{{ p.type }}" data-title="{{ p.title }}">
                     <div class="project-card-thumb-wrap">
-                        <img src="{{ p.hero }}" alt="{{ p.title }}" class="project-card-thumb {% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}" loading="lazy" onerror="this.src='{% static 'img/mbt/hala-1024x672-eb7144c9.jpg' %}';">
+                        <img src="{{ p.hero }}" alt="{{ p.title }}" class="project-card-thumb {% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}" loading="lazy" onerror="this.onerror=null;{% if p.type == 'realizacja-w-trakcie' %}this.src='{% static 'img/mbt/icon.svg' %}';{% else %}this.src='{% static 'img/mbt/hala-1024x672-eb7144c9.jpg' %}';{% endif %}">
                         <div class="project-card-type-tag">
                             {{ p.status }}
                         </div>

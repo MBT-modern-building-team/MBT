@@ -416,125 +416,23 @@
     <!--==============================
     Interactive Map Area  
     ==============================-->
-    <div class="map-area space-top">
+    <section class="map-area space-top space-bottom overflow-hidden" id="gdzie-budujemy">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="title-area text-center">
-                        <span class="sub-title text-theme">{% trans 'Mapa inwestycji' %} <i class="ri-arrow-right-down-line"></i></span>
-                        <h2 class="sec-title">{% trans 'Gdzie budujemy' %}</h2>
-                        <p class="sec-text">{% trans 'Nasze realizacje na terenie całej Polski' %}</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-12 text-center" id="interactive-map-container">
-                    <div class="interactive-map-wrapper" style="position: relative; max-width: 800px; margin: 0 auto; background-color: #13487F; border-radius: 20px; padding: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-                        <!-- Ozdobny gradient / glow z tyłu -->
-                        <div style="position: absolute; top: 50%; left: 50%; width: 60%; height: 60%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); transform: translate(-50%, -50%); z-index: 0; pointer-events: none;"></div>
-                        
-                        <img src="/static/img/mbt/mapa-polska-hq.webp" alt="Mapa Polski" style="width: 100%; height: auto; display: block; position: relative; z-index: 1;" width="608" height="553" loading="lazy">
-                        
-                        <!-- Warstwa z pinezkami -->
-                        <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; z-index: 2;" id="pins-layer">
-                            {% for p in projects %}
-                                {% if p.latitude and p.longitude %}
-                                <div class="map-pin" data-lat="{{ p.latitude|stringformat:'.6f' }}" data-lng="{{ p.longitude|stringformat:'.6f' }}" style="position: absolute; width: 16px; height: 16px; background: #FF5A00; border-radius: 50%; transform: translate(-50%, -50%); cursor: pointer; border: 2px solid white;">
-                                    <!-- Wewnętrzna kropka glow -->
-                                    <div style="width: 100%; height: 100%; background: #FF5A00; border-radius: 50%; filter: blur(2px); opacity: 0.8; position: absolute; top: 0; left: 0; pointer-events: none;"></div>
-                                    <!-- Tooltip (hidden by default) -->
-                                    <div class="map-tooltip" style="display: none; position: absolute; bottom: 100%; left: 50%; transform: translate(-50%, -20px); background: white; color: black; padding: 12px; border-radius: 12px; width: 240px; text-align: left; box-shadow: 0 15px 35px rgba(0,0,0,0.25); z-index: 100; opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease;">
-                                        <!-- Mały trójkącik pod dymkiem -->
-                                        <div style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid white;"></div>
-                                        <div style="overflow: hidden; border-radius: 8px; margin-bottom: 12px; background-color: {% if 'Fiołka' in p.title %}#13487F{% else %}#ffffff{% endif %}; padding: 8px; display: flex; align-items: center; justify-content: center; height: 140px;">
-                                            <img src="{{ p.logo|default:p.hero }}" alt="{{ p.title }}" loading="lazy" width="200" height="200" style="max-width: 100%; max-height: 100%; object-fit: contain; transform: scale(1); transition: transform 0.4s ease;" class="tooltip-img">
-                                        </div>
-                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #13487F; line-height: 1.3; font-weight: 700;">{{ p.title }}</h3>
-                                        <a href="{% url 'realizacjaDetail' p.slug %}" style="color: #FF5A00; font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; text-transform: uppercase; letter-spacing: 0.5px;">{% trans 'Zobacz projekt' %} <i class="ri-arrow-right-line"></i></a>
-                                    </div>
-                                </div>
-                                {% endif %}
-                            {% endfor %}
+            <div class="contact-wrap2 space overflow-hidden" data-bg-src="{{ photos.home_bg_contact }}" style="position: relative; background-color: #0c1633; background-image: radial-gradient(ellipse at 50% 20%, rgba(23, 40, 92, 0.75) 0%, rgba(11, 20, 43, 0.95) 60%, rgba(5, 10, 22, 0.98) 100%), url('{{ photos.home_bg_contact }}'); background-size: cover; background-position: center; border-radius: 28px; box-shadow: 0 25px 70px rgba(10, 16, 35, 0.35); border: 1px solid rgba(255,255,255,0.08); padding-top: 55px; padding-bottom: 55px;">
+                <div class="section-animation-shape1-1 shape-mockup animation-infinite" data-top="0" data-left="0" data-bg-src="/static/img/shape/global-line-shape1.png"></div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <div class="title-area mb-4">
+                            <span class="sub-title text-theme">{% trans 'Mapa inwestycji' %} <i class="ri-arrow-right-down-line"></i></span>
+                            <h2 class="sec-title text-white" style="color: #ffffff;">{% trans 'Gdzie budujemy' %}</h2>
+                            <p class="sec-text" style="color: rgba(255, 255, 255, 0.75);">{% trans 'Nasze realizacje na terenie całej Polski' %}</p>
                         </div>
                     </div>
                 </div>
+                {% include "partials/investment_map.html" %}
             </div>
         </div>
-    </div>
-
-    <style>
-    .map-pin::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: #FF5A00;
-        transform: translate(-50%, -50%) scale(1);
-        animation: pulse-pin 2s infinite;
-        pointer-events: none;
-        z-index: -1;
-        will-change: transform, opacity;
-    }
-    @keyframes pulse-pin {
-        0% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
-        70% { transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
-        100% { transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
-    }
-    .map-pin:hover {
-        z-index: 99 !important;
-    }
-    .map-pin:hover .map-tooltip {
-        opacity: 1 !important;
-        transform: translate(-50%, -15px) !important;
-    }
-    .map-pin:hover .tooltip-img {
-        transform: scale(1.05) !important;
-    }
-    </style>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Kalibracja ramki mapy. Dopasowana do marginesów pliku mapa-polska-hq.webp
-        // (Trzeba sprawdzić, czy plik PDF miał inne marginesy niż PNG z google my maps)
-        const mapBounds = {
-            north: 55.05,  // Góra obrazka (szerokość geogr.)
-            south: 48.8,   // Dół obrazka
-            west: 13.8,    // Lewa strona obrazka (długość geogr.)
-            east: 24.5     // Prawa strona obrazka
-        };
-
-        const pins = document.querySelectorAll('.map-pin');
-        pins.forEach(pin => {
-            const lat = parseFloat(pin.getAttribute('data-lat').replace(',', '.'));
-            const lng = parseFloat(pin.getAttribute('data-lng').replace(',', '.'));
-            
-            // X% = współrzędna od lewej do prawej
-            let xPercent = (lng - mapBounds.west) / (mapBounds.east - mapBounds.west) * 100;
-            
-            // Y% = współrzędna z góry na dół
-            let yPercent = (mapBounds.north - lat) / (mapBounds.north - mapBounds.south) * 100;
-            
-            pin.style.left = xPercent + '%';
-            pin.style.top = yPercent + '%';
-
-            pin.addEventListener('mouseenter', () => {
-                pin.querySelector('.map-tooltip').style.display = 'block';
-                pin.style.transform = 'translate(-50%, -50%) scale(1.2)';
-                pin.style.transition = 'transform 0.2s';
-                pin.style.zIndex = '100';
-            });
-            pin.addEventListener('mouseleave', () => {
-                pin.querySelector('.map-tooltip').style.display = 'none';
-                pin.style.transform = 'translate(-50%, -50%) scale(1)';
-                pin.style.zIndex = '';
-            });
-        });
-    });
-    </script>
+    </section>
 
     <!--==============================
     Portfolio Area  
@@ -559,7 +457,7 @@
                 <div class="col-md-6 col-lg-4 mbt-project-item {% if p.type == 'realizacja-zrealizow' %}completed{% else %}in-progress{% endif %}">
                     <div class="portfolio-card style2">
                         <div class="portfolio-card-thumb">
-                            <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" decoding="async" width="800" height="533" class="{% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}" onerror="this.onerror=null;this.src='/static/img/mbt/hala-1024x672-eb7144c9.jpg';">
+                            <img src="{{ p.hero }}" alt="{{ p.title }}" loading="lazy" decoding="async" width="800" height="533" class="{% if p.type == 'realizacja-w-trakcie' %}mbt-img-contain{% endif %}" onerror="this.onerror=null;{% if p.type == 'realizacja-w-trakcie' %}this.src='/static/img/mbt/icon.svg';{% else %}this.src='/static/img/mbt/hala-1024x672-eb7144c9.jpg';{% endif %}">
                             <a class="icon-btn popup-image" href="{{ p.hero }}" aria-label="{% trans 'Zobacz' %}: {{ p.title }}"><i class="ri-eye-line" aria-hidden="true"></i></a>
                             <span class="mbt-project-badge">{% trans p.status %}</span>
                         </div>
@@ -587,7 +485,7 @@
     ==============================-->
     <section class="contact-area-2 space-bottom overflow-hidden">        
         <div class="container">
-            <div class="contact-wrap2 space overflow-hidden" data-bg-src="{{ photos.home_bg_contact }}">
+            <div class="contact-wrap2 space overflow-hidden" data-bg-src="{{ photos.home_bg_contact }}" style="position: relative; background-color: #0c1633; background-image: radial-gradient(ellipse at 50% 20%, rgba(23, 40, 92, 0.75) 0%, rgba(11, 20, 43, 0.95) 60%, rgba(5, 10, 22, 0.98) 100%), url('{{ photos.home_bg_contact }}'); background-size: cover; background-position: center; border-radius: 28px; box-shadow: 0 25px 70px rgba(10, 16, 35, 0.35); border: 1px solid rgba(255,255,255,0.08);">
                 <div class="section-animation-shape1-1 shape-mockup animation-infinite" data-top="0" data-left="0" data-bg-src="/static/img/shape/global-line-shape1.png"></div>
                 <div class="row gy-60 justify-content-center text-center">
                     <div class="col-xl-10">

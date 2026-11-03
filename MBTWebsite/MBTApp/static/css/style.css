@@ -9629,6 +9629,7 @@ li.trackback {
 
 /* Contact Area 2---------------------------------- */
 .contact-wrap2 {
+  background-color: #0c1633;
   box-shadow: 0px 3px 80px rgba(21, 22, 28, 0.05);
   padding-right: 80px;
   /* Large devices */
@@ -9637,10 +9638,10 @@ li.trackback {
 }
 @media (max-width: 1199px) {
   .contact-wrap2 {
+    background-color: #0c1633;
     padding-right: 60px;
     padding-left: 60px;
     background-position: right;
-    background-image: none !important;
   }
 }
 @media (max-width: 767px) {

@@ -90,7 +90,7 @@ class Command(BaseCommand):
                 created_s += int(created)
 
         # Opinie
-        for r in mbt_data.REFERENCES:
+        for r in getattr(mbt_data, 'REFERENCES', getattr(mbt_data, 'REVIEWS', [])):
             _, created = Reference.objects.update_or_create(
                 firma=r['firma'],
                 defaults={

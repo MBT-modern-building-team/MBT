@@ -28,6 +28,8 @@ def _regenerate():
     try:
         base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         script = os.path.join(base, 'scripts', 'gen_mbt_data.py')
+        if not os.path.exists(script):
+            return
         python = sys.executable
         env = dict(os.environ)
         env.pop('PYTHONPATH', None)

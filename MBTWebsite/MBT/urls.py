@@ -31,11 +31,10 @@ sitemaps = {
 }
 
 def media_redirect_view(request, path_str):
-    if settings.DEBUG:
-        local_path = os.path.join(settings.MEDIA_ROOT, path_str)
-        if os.path.exists(local_path):
-            from django.http import FileResponse
-            return FileResponse(open(local_path, 'rb'))
+    local_path = os.path.join(settings.MEDIA_ROOT, path_str)
+    if os.path.exists(local_path):
+        from django.http import FileResponse
+        return FileResponse(open(local_path, 'rb'))
 
     # Remove 'uploads/' if it's already at the beginning of path_str
     if path_str.startswith('uploads/'):
