@@ -523,6 +523,8 @@ def get_photos():
         '/static/img/bg/contact-bg3-1.png',
         '/static/img/bg/breadcrumb-bg.png',
         '/static/img/normal/client_group_1-2.png',
+        '/static/img/mbt/o-nas-zespol.jpg',
+        '/static/img/mbt/o-nas-zespol.webp',
     }
     try:
         try:
@@ -539,9 +541,9 @@ def get_photos():
                 # Ignoruj stare atrapy z szablonów
                 if isinstance(val, str) and val.strip() in dummy_placeholders:
                     continue
-                # Jeśli w mbt_data mamy oficjalny pełny URL (http...), a w bazie pozostała stara relatywna ścieżka /static/img/bg/, wolimy mbt_data
+                # Jeśli w mbt_data mamy oficjalny pełny URL (http...), a w bazie pozostała stara relatywna ścieżka /static/img/, wolimy mbt_data
                 canon = out.get(field.name)
-                if isinstance(val, str) and val.startswith('/static/img/bg/') and canon and isinstance(canon, str) and canon.startswith('http'):
+                if isinstance(val, str) and (val.startswith('/static/img/bg/') or val.startswith('/static/img/mbt/')) and canon and isinstance(canon, str) and canon.startswith('http'):
                     continue
                 out[field.name] = val
             return out

@@ -173,7 +173,7 @@
                 <div class="col-xl-5 col-md-8">
                     <div class="about-thumb3 mb-30"> 
                         <div class="about-img-2 bg-mask" style="-webkit-mask-image: url('/static/img/normal/about_mask3-2.png'); mask-image: url('/static/img/normal/about_mask3-2.png');">
-                            <img src="{% if photos.home_o_nas_zespol == '/static/img/mbt/o-nas-zespol.jpg' %}/static/img/mbt/o-nas-zespol.webp{% else %}{{ photos.home_o_nas_zespol }}{% endif %}" width="687" height="459" alt="Zespół MBT" loading="lazy" decoding="async">
+                            <img src="{% if photos.home_o_nas_zespol and photos.home_o_nas_zespol != '/static/img/mbt/o-nas-zespol.jpg' and photos.home_o_nas_zespol != '/static/img/mbt/o-nas-zespol.webp' %}{{ photos.home_o_nas_zespol }}{% else %}https://media.mbt.pl/uploads/c4f9f468d740.webp{% endif %}" width="687" height="459" alt="Zespół MBT" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <p>{% blocktranslate %}Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby angażowania dodatkowych zasobów.{% endblocktranslate %}</p>
