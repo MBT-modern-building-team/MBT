@@ -13,7 +13,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.views.generic import RedirectView
 import os
-from MBTApp import homeViews, kioskViews
+from MBTApp import homeViews, kioskViews, admin_views
 
 def robots_txt_view(request):
     content = "User-agent: *\nAllow: /\nSitemap: https://mbt.pl/sitemap.xml\nDisallow: /admin/\nDisallow: /admin-budowa/\n"
@@ -58,6 +58,7 @@ urlpatterns = [
     path('robots.txt', robots_txt_view),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('media/<path:path_str>', media_redirect_view),
+    path('admin/api/upload-r2/', admin_views.ajax_admin_upload_r2, name='admin_ajax_upload_r2'),
     path('admin/mbtapp/', RedirectView.as_view(url='/admin/MBTApp/', permanent=False)),
     path('admin/mbtapp/<path:rest>', RedirectView.as_view(url='/admin/MBTApp/%(rest)s', permanent=False)),
     path('admin/', admin.site.urls),

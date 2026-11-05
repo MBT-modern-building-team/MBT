@@ -14,8 +14,20 @@
              data-crop="{{ widget.data_crop }}"
              {% if widget.data_aspect_ratio %}data-aspect-ratio="{{ widget.data_aspect_ratio }}"{% endif %}>
     </label>
-    <span class="mbt-upload-hint">lub wklej URL:</span>
     <input type="text" name="{{ widget.name }}" value="{{ widget.current_url|default:'' }}"
            class="mbt-upload-url vTextField" data-url-input="1">
+  </div>
+
+  <div class="mbt-r2-banner" data-r2-status="idle" style="display: none;">
+    <div class="mbt-r2-banner-main">
+      <span class="mbt-r2-banner-icon"></span>
+      <div class="mbt-r2-banner-text-wrap">
+        <span class="mbt-r2-banner-title"></span>
+        <span class="mbt-r2-banner-detail"></span>
+      </div>
+    </div>
+    <div class="mbt-r2-progress-wrap" style="display: none;">
+      <div class="mbt-r2-progress-bar" style="width: 0%;"></div>
+    </div>
   </div>
 </div>

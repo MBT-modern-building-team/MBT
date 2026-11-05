@@ -1,13 +1,155 @@
-/* MBT admin — galeria z drag & drop:
-   - przeciąganie miniaturek zmienia kolejność (aktualizuje JSON w textarea)
-   - nowe pliki dostają placeholder __new_N__ (po zapisie zamieniany na URL)
-   - przycisk × usuwa zdjęcie
+/* MBT Admin — Asynchroniczny Upload na Cloudflare R2 + Galeria z Drag & Drop:
+   - Zdjęcia są wgrywane pojedynczo przez AJAX (/admin/api/upload-r2/) bezpośrednio na R2
+   - Baner statusu pokazuje postęp i informuje, kiedy MOŻNA kliknąć „Zapisz"
+   - Przyciski zapisu są blokowane podczas trwania uploadu (zabezpieczenie przed błędem 500)
+   - Inputy type="file" są czyszczone po uploadzie — formularz wysyła wyłącznie lekkie URL-e
+   - Obsługa kadrowania (Cropper.js) i sortowania miniatur (drag & drop)
 */
 (function () {
   'use strict';
 
-  var newCounter = 0;
+  var activeUploads = 0;
 
+  /* --- Pobieranie tokenu CSRF --- */
+  function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+
+  function getCsrfToken() {
+    var csrfInput = document.querySelector('input[name="csrfmiddlewaretoken"]');
+    if (csrfInput && csrfInput.value) return csrfInput.value;
+    return getCookie('csrftoken') || '';
+  }
+
+  /* --- Zarządzanie blokadą przycisków zapisu (Save) --- */
+  function updateSubmitLock() {
+    var submitButtons = document.querySelectorAll(
+      '.submit-row input[type="submit"], .submit-row button[type="submit"], input[type="submit"].default, form input[type="submit"]'
+    );
+    var submitRows = document.querySelectorAll('.submit-row');
+
+    submitRows.forEach(function (row) {
+      var notice = row.querySelector('.mbt-submit-lock-notice');
+      if (activeUploads > 0) {
+        if (!notice) {
+          notice = document.createElement('div');
+          notice.className = 'mbt-submit-lock-notice';
+          row.insertBefore(notice, row.firstChild);
+        }
+        notice.textContent = '⏳ Trwa przesyłanie zdjęć na Cloudflare R2... Przycisk Zapisz jest zablokowany do zakończenia wgrywania.';
+      } else {
+        if (notice) notice.remove();
+      }
+    });
+
+    submitButtons.forEach(function (btn) {
+      if (activeUploads > 0) {
+        btn.disabled = true;
+        if (!btn.dataset.origTitle) btn.dataset.origTitle = btn.title || '';
+        btn.title = 'Trwa wgrywanie zdjęć na Cloudflare R2... Poczekaj przed kliknięciem Zapisz';
+      } else {
+        btn.disabled = false;
+        btn.title = btn.dataset.origTitle || '';
+      }
+    });
+  }
+
+  function startUpload() {
+    activeUploads++;
+    updateSubmitLock();
+  }
+
+  function finishUpload() {
+    activeUploads = Math.max(0, activeUploads - 1);
+    updateSubmitLock();
+  }
+
+  /* --- Kontroler Banera Statusu R2 --- */
+  function setBannerStatus(wrap, status, title, detail, progressPct) {
+    var banner = wrap.querySelector('.mbt-r2-banner');
+    if (!banner) return;
+
+    if (status === 'idle') {
+      banner.style.display = 'none';
+      banner.dataset.r2Status = 'idle';
+      return;
+    }
+
+    banner.style.display = 'flex';
+    banner.dataset.r2Status = status; // 'uploading' | 'success' | 'error'
+
+    var titleEl = banner.querySelector('.mbt-r2-banner-title');
+    if (titleEl) titleEl.textContent = title || '';
+
+    var detailEl = banner.querySelector('.mbt-r2-banner-detail');
+    if (detailEl) detailEl.textContent = detail || '';
+
+    var progressWrap = banner.querySelector('.mbt-r2-progress-wrap');
+    var progressBar = banner.querySelector('.mbt-r2-progress-bar');
+    if (progressWrap && progressBar) {
+      if (typeof progressPct === 'number' && progressPct >= 0) {
+        progressWrap.style.display = 'block';
+        progressBar.style.width = Math.min(100, Math.round(progressPct)) + '%';
+      } else {
+        progressWrap.style.display = 'none';
+      }
+    }
+  }
+
+  /* --- Wysyłanie pliku przez AJAX na backend Django (/admin/api/upload-r2/) --- */
+  function uploadFileToR2(file, folder, onProgress, onSuccess, onError) {
+    var formData = new FormData();
+    formData.append('file', file);
+    if (folder) formData.append('folder', folder);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/admin/api/upload-r2/', true);
+    xhr.setRequestHeader('X-CSRFToken', getCsrfToken());
+
+    if (xhr.upload && onProgress) {
+      xhr.upload.onprogress = function (e) {
+        if (e.lengthComputable) {
+          var pct = (e.loaded / e.total) * 100;
+          onProgress(pct);
+        }
+      };
+    }
+
+    xhr.onload = function () {
+      var data = null;
+      try {
+        data = JSON.parse(xhr.responseText);
+      } catch (err) {
+        data = null;
+      }
+
+      if (xhr.status >= 200 && xhr.status < 300 && data && data.success) {
+        onSuccess(data.url, data);
+      } else {
+        var errMsg = (data && data.error) ? data.error : ('Błąd serwera (kod ' + xhr.status + ')');
+        onError(errMsg);
+      }
+    };
+
+    xhr.onerror = function () {
+      onError('Błąd połączenia sieciowego podczas wysyłania pliku na serwer.');
+    };
+
+    xhr.send(formData);
+  }
+
+  /* --- Galeria: funkcje pomocnicze miniatur i JSON --- */
   function updateCount(wrap) {
     var thumbs = wrap.querySelectorAll('.mbt-gallery-thumb-wrap');
     var countEl = wrap.querySelector('.mbt-gallery-count');
@@ -15,24 +157,6 @@
       var n = thumbs.length;
       countEl.textContent = n + (n === 1 ? ' zdjęcie' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? ' zdjęcia' : ' zdjęć'));
     }
-  }
-
-  function showProgress(wrap, loaded, total) {
-    var bar = wrap.querySelector('.mbt-upload-progress');
-    if (!bar) return;
-    bar.hidden = false;
-    var pct = total ? Math.min(100, Math.round(loaded / total * 100)) : 0;
-    var inner = bar.querySelector('.mbt-upload-progress-bar');
-    if (inner) inner.style.width = pct + '%';
-    var txt = bar.querySelector('.mbt-upload-progress-text');
-    if (txt) txt.textContent = 'Przygotowywanie zdjęć… ' + pct + '%';
-  }
-
-  function hideProgress(wrap) {
-    var bar = wrap.querySelector('.mbt-upload-progress');
-    if (bar) bar.hidden = true;
-    var done = wrap.querySelector('.mbt-upload-done');
-    if (done) done.hidden = false;
   }
 
   function syncJson(wrap) {
@@ -43,34 +167,36 @@
     thumbs.querySelectorAll('.mbt-gallery-thumb-wrap').forEach(function (t) {
       if (t.dataset.url) {
         urls.push(t.dataset.url);
-      } else if (t.dataset.new !== undefined) {
-        urls.push('__new_' + t.dataset.new + '__');
       }
     });
     json.value = JSON.stringify(urls);
   }
 
-  function addThumb(wrap, src, data) {
+  function addThumb(wrap, url) {
     var thumbs = wrap.querySelector('.mbt-gallery-thumbs');
     var empty = wrap.querySelector('.mbt-upload-empty');
     if (empty) empty.remove();
+
     var t = document.createElement('div');
     t.className = 'mbt-gallery-thumb-wrap';
     t.draggable = true;
-    if (data.url) t.dataset.url = data.url;
-    if (data.new !== undefined) t.dataset.new = data.new;
+    t.dataset.url = url;
+
     var img = document.createElement('img');
-    img.src = src;
+    img.src = url;
     img.className = 'mbt-gallery-thumb';
     img.alt = '';
+
     var handle = document.createElement('span');
     handle.className = 'mbt-gallery-drag-handle';
     handle.textContent = '⠿';
+
     var btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'mbt-gallery-remove';
     btn.title = 'Usuń zdjęcie';
     btn.textContent = '×';
+
     t.appendChild(img);
     t.appendChild(handle);
     t.appendChild(btn);
@@ -78,64 +204,7 @@
     return t;
   }
 
-  function previewFiles(input) {
-    var files = Array.prototype.slice.call(input.files || []);
-    if (!files.length) return;
-    var wrap = input.closest('.mbt-upload, .mbt-gallery');
-
-    if (input.dataset.preview === '1') {
-      // pojedyncze zdjęcie/wideo: pokaż podgląd nowego pliku
-      var img = wrap.querySelector('.mbt-upload-img');
-      var video = wrap.querySelector('.mbt-upload-video');
-      var empty = wrap.querySelector('.mbt-upload-empty');
-      var done = wrap.querySelector('.mbt-upload-done');
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        if (video) {
-          video.src = e.target.result;
-          video.controls = true;
-          video.style.display = '';
-        } else if (img) {
-          img.src = e.target.result;
-          img.style.display = '';
-        }
-        if (empty) { empty.style.display = 'none'; }
-        if (done) { done.hidden = false; }
-      };
-      reader.readAsDataURL(files[0]);
-    }
-
-    if (input.dataset.gallery === '1') {
-      // galeria: podgląd miniatur + placeholder w JSON (kolejność = drag&drop)
-      // UWAGA: NIE czyścimy inputa (value='') — pliki muszą zostać w inputcie,
-      // żeby przy zapisie formularza poleciały na serwer (value_from_datadict).
-      var total = 0, loaded = 0;
-      files.forEach(function (f) { total += f.size || 0; });
-      files.forEach(function (f) {
-        var idx = newCounter++;
-        var reader = new FileReader();
-        reader.onprogress = function (e) {
-          if (e.lengthComputable) {
-            loaded += e.loaded;
-            showProgress(wrap, loaded, total);
-          }
-        };
-        reader.onload = (function (i) {
-          return function (e) {
-            addThumb(wrap, e.target.result, { new: i });
-            syncJson(wrap);
-            updateCount(wrap);
-            if (--pending === 0) hideProgress(wrap);
-          };
-        })(idx);
-        reader.readAsDataURL(f);
-      });
-      var pending = files.length;
-      showProgress(wrap, 0, total);
-    }
-  }
-
-  /* --- drag & drop sortowanie --- */
+  /* --- Drag & Drop w Galerii --- */
   var dragEl = null;
 
   document.addEventListener('dragstart', function (e) {
@@ -172,9 +241,9 @@
     }
     dragEl.classList.remove('mbt-dragging');
     dragEl = null;
-    var wrap = e.target.closest('.mbt-gallery');
-    syncJson(wrap);
-    updateCount(wrap);
+    var galleryWrap = wrap.closest('.mbt-gallery');
+    syncJson(galleryWrap);
+    updateCount(galleryWrap);
   });
 
   document.addEventListener('dragend', function () {
@@ -184,24 +253,20 @@
     }
   });
 
-  /* --- usuwanie zdjęcia --- */
+  /* --- Usuwanie zdjęcia z galerii --- */
   document.addEventListener('click', function (e) {
     var btn = e.target.closest('.mbt-gallery-remove');
     if (!btn) return;
-    var wrap = btn.closest('.mbt-gallery');
+    var galleryWrap = btn.closest('.mbt-gallery');
     var t = btn.closest('.mbt-gallery-thumb-wrap');
     if (t) t.remove();
-    if (wrap) { syncJson(wrap); updateCount(wrap); }
+    if (galleryWrap) {
+      syncJson(galleryWrap);
+      updateCount(galleryWrap);
+    }
   });
 
-  /* --- licznik przy starcie --- */
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.mbt-gallery').forEach(function (wrap) {
-      updateCount(wrap);
-    });
-  });
-
-  /* --- Kompresja obrazu po stronie przeglądarki (Canvas) --- */
+  /* --- Kompresja po stronie przeglądarki przed wysłaniem (Canvas) --- */
   function compressImage(file, maxDim, quality, callback) {
     if (!file || !file.type || !file.type.startsWith('image/') || file.type === 'image/svg+xml') {
       return callback(file);
@@ -228,16 +293,14 @@
         canvas.height = h;
         var ctx = canvas.getContext('2d');
 
-        // Wypełnij tło na biało w przypadku przezroczystości (konwersja na JPEG)
+        // Wypełnij tło na biało w przypadku przezroczystości
         ctx.fillStyle = '#FFFFFF';
         ctx.fillRect(0, 0, w, h);
         ctx.drawImage(img, 0, 0, w, h);
 
         var outType = 'image/jpeg';
         canvas.toBlob(function (blob) {
-          if (!blob) {
-            return callback(file);
-          }
+          if (!blob) return callback(file);
           var baseName = (file.name || 'image').replace(/\.[^/.]+$/, '');
           var compressedFile = new File([blob], baseName + '.jpg', {
             type: outType,
@@ -257,7 +320,7 @@
     reader.readAsDataURL(file);
   }
 
-  /* --- Cropper helper --- */
+  /* --- Cropper modal --- */
   function openCropper(file, aspectRatio, onCrop, onCancel) {
     var overlay = document.createElement('div');
     overlay.style.position = 'fixed';
@@ -265,7 +328,7 @@
     overlay.style.left = '0';
     overlay.style.width = '100%';
     overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.85)';
     overlay.style.zIndex = '999999';
     overlay.style.display = 'flex';
     overlay.style.flexDirection = 'column';
@@ -274,38 +337,43 @@
 
     var imgWrap = document.createElement('div');
     imgWrap.style.width = '80%';
-    imgWrap.style.height = '80%';
-    imgWrap.style.backgroundColor = '#222';
+    imgWrap.style.height = '75%';
+    imgWrap.style.backgroundColor = '#1e293b';
     imgWrap.style.marginBottom = '20px';
+    imgWrap.style.borderRadius = '8px';
+    imgWrap.style.overflow = 'hidden';
+
     var img = document.createElement('img');
     img.style.maxWidth = '100%';
     img.style.maxHeight = '100%';
     imgWrap.appendChild(img);
-    
+
     var btnWrap = document.createElement('div');
     var btnSave = document.createElement('button');
-    btnSave.textContent = 'Zapisz (Przytnij)';
+    btnSave.textContent = 'Zapisz i wgraj na R2';
     btnSave.className = 'button default';
-    btnSave.style.padding = '10px 20px';
-    btnSave.style.marginRight = '10px';
+    btnSave.style.padding = '10px 24px';
+    btnSave.style.marginRight = '12px';
     btnSave.style.cursor = 'pointer';
+    btnSave.style.fontWeight = 'bold';
     btnSave.type = 'button';
+
     var btnCancel = document.createElement('button');
     btnCancel.textContent = 'Anuluj';
     btnCancel.className = 'button';
     btnCancel.style.padding = '10px 20px';
     btnCancel.style.cursor = 'pointer';
     btnCancel.type = 'button';
+
     btnWrap.appendChild(btnSave);
     btnWrap.appendChild(btnCancel);
-
     overlay.appendChild(imgWrap);
     overlay.appendChild(btnWrap);
     document.body.appendChild(overlay);
 
     var cropper = null;
     var reader = new FileReader();
-    reader.onload = function(e) {
+    reader.onload = function (e) {
       img.src = e.target.result;
       var cropperOptions = {
         viewMode: 1,
@@ -320,23 +388,21 @@
 
     function close() {
       if (cropper) cropper.destroy();
-      if (overlay.parentNode) {
-        document.body.removeChild(overlay);
-      }
+      if (overlay.parentNode) document.body.removeChild(overlay);
     }
 
-    btnCancel.addEventListener('click', function() {
+    btnCancel.addEventListener('click', function () {
       close();
       if (onCancel) onCancel();
     });
 
-    btnSave.addEventListener('click', function() {
+    btnSave.addEventListener('click', function () {
       if (!cropper) return;
       var baseName = (file.name || 'image').replace(/\.[^/.]+$/, '');
       cropper.getCroppedCanvas({
-        maxWidth: 1600,
-        maxHeight: 1600,
-      }).toBlob(function(blob) {
+        maxWidth: 1920,
+        maxHeight: 1920,
+      }).toBlob(function (blob) {
         if (!blob) {
           close();
           return;
@@ -347,11 +413,178 @@
         });
         close();
         onCrop(croppedFile);
-      }, 'image/jpeg', 0.85);
+      }, 'image/jpeg', 0.88);
     });
   }
 
-  /* --- zmiana pliku (nowe zdjęcia) --- */
+  /* --- Obsługa wyboru pojedynczego pliku (zdjęcie / wideo) --- */
+  function handleSingleUpload(input, file) {
+    var wrap = input.closest('.mbt-upload');
+    if (!wrap) return;
+
+    var isVideo = file.type.indexOf('video') === 0;
+    var urlInput = wrap.querySelector('[data-url-input="1"]');
+    var imgEl = wrap.querySelector('.mbt-upload-img');
+    var videoEl = wrap.querySelector('.mbt-upload-video');
+    var emptyEl = wrap.querySelector('.mbt-upload-empty');
+
+    startUpload();
+    setBannerStatus(
+      wrap,
+      'uploading',
+      'Trwa przesyłanie na Cloudflare R2... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+      file.name + ' (' + (file.size / 1024).toFixed(0) + ' KB)',
+      10
+    );
+
+    uploadFileToR2(
+      file,
+      'uploads',
+      function (pct) {
+        setBannerStatus(
+          wrap,
+          'uploading',
+          'Trwa przesyłanie na Cloudflare R2 (' + Math.round(pct) + '%)... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+          file.name + ' (' + (file.size / 1024).toFixed(0) + ' KB)',
+          pct
+        );
+      },
+      function (url) {
+        // Sukces
+        if (urlInput) {
+          urlInput.value = url;
+          urlInput.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+        if (isVideo && videoEl) {
+          videoEl.src = url;
+          videoEl.controls = true;
+          videoEl.style.display = '';
+          if (emptyEl) emptyEl.style.display = 'none';
+        } else if (imgEl) {
+          imgEl.src = url;
+          imgEl.style.display = '';
+          if (emptyEl) emptyEl.style.display = 'none';
+        }
+
+        // Czyścimy plik z inputa — formularz zapisze lekki URL z urlInput!
+        input.value = '';
+
+        setBannerStatus(
+          wrap,
+          'success',
+          '✓ Zdjęcie zostało wgrane na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.',
+          url,
+          100
+        );
+        finishUpload();
+      },
+      function (errMsg) {
+        // Błąd
+        input.value = '';
+        setBannerStatus(
+          wrap,
+          'error',
+          '❌ Błąd podczas wgrywania na Cloudflare R2',
+          errMsg,
+          0
+        );
+        finishUpload();
+      }
+    );
+  }
+
+  /* --- Obsługa wyboru wielu zdjęć w galerii --- */
+  function handleGalleryUpload(input, rawFiles) {
+    var wrap = input.closest('.mbt-gallery');
+    if (!wrap) return;
+
+    var files = Array.prototype.slice.call(rawFiles || []);
+    if (!files.length) return;
+
+    var totalFiles = files.length;
+    var currentIndex = 0;
+    var successCount = 0;
+
+    startUpload();
+    setBannerStatus(
+      wrap,
+      'uploading',
+      'Wgrywanie na Cloudflare R2: plik 1 z ' + totalFiles + '... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+      files[0].name,
+      5
+    );
+
+    function uploadNext() {
+      if (currentIndex >= totalFiles) {
+        // Koniec całej kolejki galerii
+        input.value = '';
+        setBannerStatus(
+          wrap,
+          'success',
+          '✓ Wszystkie zdjęcia (' + successCount + ') zostały pomyślnie wgrane na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.',
+          'Wszystkie miniatury zostały zaktualizowane o docelowe linki media.mbt.pl.',
+          100
+        );
+        finishUpload();
+        return;
+      }
+
+      var currentFile = files[currentIndex];
+      var fileNum = currentIndex + 1;
+      var baseProgress = ((fileNum - 1) / totalFiles) * 100;
+
+      setBannerStatus(
+        wrap,
+        'uploading',
+        'Wgrywanie na Cloudflare R2: plik ' + fileNum + ' z ' + totalFiles + ' (' + Math.round(baseProgress) + '%)... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+        currentFile.name + ' (' + (currentFile.size / 1024).toFixed(0) + ' KB)',
+        baseProgress
+      );
+
+      // Najpierw kompresja Canvas (max 1920px), a potem wysyłka na R2
+      compressImage(currentFile, 1920, 0.85, function (compFile) {
+        uploadFileToR2(
+          compFile,
+          'uploads',
+          function (filePct) {
+            var totalPct = baseProgress + (filePct / totalFiles);
+            setBannerStatus(
+              wrap,
+              'uploading',
+              'Wgrywanie na Cloudflare R2: plik ' + fileNum + ' z ' + totalFiles + ' (' + Math.round(totalPct) + '%)... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+              currentFile.name,
+              totalPct
+            );
+          },
+          function (url) {
+            // Dodaj miniaturę od razu po wgraniu pliku
+            addThumb(wrap, url);
+            syncJson(wrap);
+            updateCount(wrap);
+            successCount++;
+
+            currentIndex++;
+            uploadNext();
+          },
+          function (errMsg) {
+            input.value = '';
+            setBannerStatus(
+              wrap,
+              'error',
+              '❌ Błąd wgrywania pliku ' + currentFile.name + ' na Cloudflare R2',
+              errMsg + ' (Wgrano pomyślnie ' + successCount + ' z ' + totalFiles + ' zdjęć).',
+              0
+            );
+            finishUpload();
+          }
+        );
+      });
+    }
+
+    uploadNext();
+  }
+
+  /* --- Nasłuchiwanie zmian w polach plików --- */
   document.addEventListener('change', function (e) {
     if (e.target && e.target.classList.contains('mbt-upload-file')) {
       var input = e.target;
@@ -363,69 +596,47 @@
       var isVideo = files[0].type.indexOf('video') === 0;
 
       if (input.dataset.gallery === '1') {
-        // Multi-upload galeria: automatyczna kompresja każdego zdjęcia
-        var fileList = Array.prototype.slice.call(files);
-        var compressedList = [];
-        var total = fileList.length;
-        var processed = 0;
-
-        fileList.forEach(function (f, idx) {
-          compressImage(f, 1920, 0.85, function (compFile) {
-            compressedList[idx] = compFile;
-            processed++;
-            if (processed === total) {
-              var dt = new DataTransfer();
-              compressedList.forEach(function (cf) { dt.items.add(cf); });
-              input.files = dt.files;
-              previewFiles(input);
-            }
-          });
-        });
+        // Multi-upload galeria
+        handleGalleryUpload(input, files);
       } else if (isCrop && typeof Cropper !== 'undefined' && !isVideo) {
-        // Przed otwarciem croppera zoptymalizuj ewentualne ogromne pliki z aparatu
+        // Pojedyncze zdjęcie z Cropperem
         compressImage(files[0], 2400, 0.9, function (optFile) {
-          openCropper(optFile, aspectRatio, function (croppedFile) {
-            var dt = new DataTransfer();
-            dt.items.add(croppedFile);
-            input.files = dt.files;
-            previewFiles(input);
-          }, function () {
-            input.value = '';
-          });
+          openCropper(
+            optFile,
+            aspectRatio,
+            function (croppedFile) {
+              handleSingleUpload(input, croppedFile);
+            },
+            function () {
+              input.value = '';
+            }
+          );
         });
       } else if (!isVideo) {
-        // Pojedyncze zdjęcie bez croppera: automatyczna kompresja do 1920px JPEG
-        compressImage(files[0], 1920, 0.85, function (compressedFile) {
-          var dt = new DataTransfer();
-          dt.items.add(compressedFile);
-          input.files = dt.files;
-          previewFiles(input);
+        // Pojedyncze zdjęcie bez croppera — kompresja i wysyłka
+        compressImage(files[0], 1920, 0.85, function (compFile) {
+          handleSingleUpload(input, compFile);
         });
       } else {
         // Wideo
-        previewFiles(input);
+        handleSingleUpload(input, files[0]);
       }
     }
   });
 
-  /* --- Zabezpieczenie przed limitem Vercel (4.5 MB) przy wysyłce formularza --- */
+  /* --- Zabezpieczenie przed przedwczesnym wysłaniem formularza --- */
   document.addEventListener('submit', function (e) {
-    var form = e.target;
-    if (!form || !form.querySelectorAll) return;
-    var fileInputs = form.querySelectorAll('input[type="file"]');
-    var totalBytes = 0;
-    fileInputs.forEach(function (inp) {
-      if (inp.files) {
-        for (var i = 0; i < inp.files.length; i++) {
-          totalBytes += inp.files[i].size || 0;
-        }
-      }
-    });
-    // 4.2 MB limit ostrzegawczy (Vercel payload limit to 4.5 MB)
-    if (totalBytes > 4.2 * 1024 * 1024) {
+    if (activeUploads > 0) {
       e.preventDefault();
-      alert('Rozmiar wybranych plików (' + (totalBytes / (1024 * 1024)).toFixed(1) + ' MB) przekracza dopuszczalny limit 4.5 MB na serwerze Vercel.\n\nProsimy o wybranie mniejszych plików lub zmniejszenie ich przed zapisem.');
+      alert('⚠️ Trwa przesyłanie zdjęć na Cloudflare R2!\n\nProszę poczekać na zakończenie wgrywania (zielony baner) przed zapisaniem formularza.');
       return false;
     }
+  });
+
+  /* --- Inicjalizacja przy załadowaniu DOM --- */
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.mbt-gallery').forEach(function (wrap) {
+      updateCount(wrap);
+    });
   });
 })();

@@ -35,6 +35,7 @@ def _r2_configured():
 def _upload_to_r2(key, data: bytes, content_type: str) -> str:
     """Wyślij bajty na R2 (S3-compatible API) i zwróć publiczny URL."""
     import boto3
+    from botocore.config import Config
 
     account_id = os.getenv('R2_ACCOUNT_ID')
     endpoint = f'https://{account_id}.r2.cloudflarestorage.com'
@@ -45,6 +46,7 @@ def _upload_to_r2(key, data: bytes, content_type: str) -> str:
         endpoint_url=endpoint,
         aws_access_key_id=os.getenv('R2_ACCESS_KEY_ID'),
         aws_secret_access_key=os.getenv('R2_SECRET_ACCESS_KEY'),
+        config=Config(signature_version='s3v4'),
         region_name='auto',
     )
     client.put_object(
@@ -54,12 +56,12 @@ def _upload_to_r2(key, data: bytes, content_type: str) -> str:
         ContentType=content_type,
         CacheControl='max-age=31536000, public',
     )
-    # Publiczny URL: https://pub-<hash>.r2.dev/<key> — czytany z env,
+    # Publiczny URL: https://media.mbt.pl/<key> — czytany z env,
     # fallback: endpoint z nazwą bucketa (działa, gdy bucket jest publiczny).
     public_base = os.getenv('R2_PUBLIC_URL')
     if public_base:
-        return f'{public_base.rstrip("/")}/{key}'
-    return f'https://{bucket}.{account_id}.r2.cloudflarestorage.com/{key}'
+        return f'{public_base.rstrip("/")}/{key.lstrip("/")}'
+    return f'https://{bucket}.{account_id}.r2.cloudflarestorage.com/{key.lstrip("/")}'
 
 
 def _compress_image(uploaded_file) -> tuple[bytes, str]:
@@ -77,10 +79,6 @@ def _compress_image(uploaded_file) -> tuple[bytes, str]:
     # Konwersja na RGB (WebP nie wspiera alpha w trybie P/CMYK)
     if img.mode not in ('RGB', 'RGBA'):
         img = img.convert('RGB')
-    if img.mode == 'RGBA':
-        # zachowaj przezroczystość jako białe tło? WebP wspiera alpha —
-        # zostawiamy RGBA, żeby logo/png z alpha nie dostały czarnego tła
-        pass
 
     # Zmniejszenie do MAX_DIMENSION
     w, h = img.size
@@ -89,14 +87,11 @@ def _compress_image(uploaded_file) -> tuple[bytes, str]:
         img = img.resize((int(w * ratio), int(h * ratio)), Image.Resampling.LANCZOS)
 
     buf = io.BytesIO()
-    if img.mode == 'RGBA':
-        img.save(buf, 'WEBP', quality=WEBP_QUALITY)
-    else:
-        img.save(buf, 'WEBP', quality=WEBP_QUALITY)
+    img.save(buf, 'WEBP', quality=WEBP_QUALITY)
     return buf.getvalue(), 'image/webp'
 
 
-def save_uploaded_image(uploaded_file, folder='uploads'):
+def save_uploaded_image(uploaded_file, folder='uploads', raise_on_error=False):
     """Zapisz wgrany plik graficzny i zwróć URL (str)."""
     # --- Cloudflare R2 (produkcja / gdy skonfigurowane) ---
     if _r2_configured():
@@ -110,10 +105,14 @@ def save_uploaded_image(uploaded_file, folder='uploads'):
             else:
                 filename = f'{uuid.uuid4().hex[:12]}.webp'
                 data, content_type = _compress_image(uploaded_file)
-            r2_key = f'media/{folder}/{filename}' if not folder.startswith('media') else f'{folder}/{filename}'
+            
+            clean_folder = folder.strip('/')
+            r2_key = f'{clean_folder}/{filename}' if clean_folder else filename
             return _upload_to_r2(r2_key, data, content_type)
         except Exception:
-            # fallback: błąd R2 — lokalny zapis
+            if raise_on_error:
+                raise
+            # fallback: lokalny zapis w środowisku dev bez R2
             pass
 
     # --- Lokalny zapis (MEDIA_ROOT/uploads/) ---
@@ -135,7 +134,7 @@ def save_uploaded_image(uploaded_file, folder='uploads'):
 VIDEO_EXTENSIONS = ('.mp4', '.webm', '.mov', '.ogg', '.m4v')
 
 
-def save_uploaded_video(uploaded_file, folder='uploads'):
+def save_uploaded_video(uploaded_file, folder='uploads', raise_on_error=False):
     """Zapisz wgrany plik wideo bez kompresji i zwróć URL (str).
 
     Zachowuje oryginalny format (mp4/webm/mov...) — wideo NIE jest
@@ -158,9 +157,12 @@ def save_uploaded_video(uploaded_file, folder='uploads'):
     if _r2_configured():
         try:
             data = uploaded_file.read()
-            r2_key = f'media/{folder}/{filename}' if not folder.startswith('media') else f'{folder}/{filename}'
+            clean_folder = folder.strip('/')
+            r2_key = f'{clean_folder}/{filename}' if clean_folder else filename
             return _upload_to_r2(r2_key, data, content_type)
         except Exception:
+            if raise_on_error:
+                raise
             pass  # fallback: lokalny zapis
 
     # --- Lokalny zapis (MEDIA_ROOT/uploads/) ---

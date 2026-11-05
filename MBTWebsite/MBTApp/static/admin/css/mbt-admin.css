@@ -306,3 +306,135 @@ div.breadcrumbs a:focus, div.breadcrumbs a:hover {
 .login #content {
   padding: 0;
 }
+
+/* ============================================================
+   Baner statusu uploadu Cloudflare R2 w CMS MBT
+   ============================================================ */
+.mbt-r2-banner {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mbt-r2-banner-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mbt-r2-banner-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.mbt-r2-banner-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.mbt-r2-banner-title {
+  font-weight: 700;
+}
+
+.mbt-r2-banner-detail {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.mbt-r2-progress-wrap {
+  height: 8px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+  width: 100%;
+}
+
+.mbt-r2-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #f26522, #f59e0b);
+  border-radius: 4px;
+  transition: width 0.2s ease;
+  animation: mbt-pulse-bar 1.5s infinite linear;
+}
+
+@keyframes mbt-pulse-bar {
+  0% { opacity: 0.85; }
+  50% { opacity: 1; }
+  100% { opacity: 0.85; }
+}
+
+/* Stan: Wgrywanie na R2 (uploading) */
+.mbt-r2-banner[data-r2-status="uploading"] {
+  background: #eff6ff;
+  border: 1px solid #60a5fa;
+  color: #1e40af;
+}
+.mbt-r2-banner[data-r2-status="uploading"] .mbt-r2-banner-icon::before {
+  content: "⏳";
+}
+
+/* Stan: Sukces — pliki wgrane na R2, MOŻNA ZAPISAĆ (success) */
+.mbt-r2-banner[data-r2-status="success"] {
+  background: #ecfdf5;
+  border: 2px solid #10b981;
+  color: #065f46;
+  animation: mbt-pop 0.3s ease-out;
+}
+.mbt-r2-banner[data-r2-status="success"] .mbt-r2-banner-icon::before {
+  content: "✓";
+  font-weight: 900;
+  color: #059669;
+}
+.mbt-r2-banner[data-r2-status="success"] .mbt-r2-banner-title {
+  color: #065f46;
+  font-size: 13px;
+}
+
+@keyframes mbt-pop {
+  0% { transform: scale(0.98); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Stan: Błąd zapisu na R2 (error) */
+.mbt-r2-banner[data-r2-status="error"] {
+  background: #fef2f2;
+  border: 2px solid #ef4444;
+  color: #991b1b;
+}
+.mbt-r2-banner[data-r2-status="error"] .mbt-r2-banner-icon::before {
+  content: "❌";
+}
+.mbt-r2-banner[data-r2-status="error"] .mbt-r2-banner-title {
+  font-weight: 700;
+  color: #b91c1c;
+}
+
+/* Pasek ostrzegawczy nad submit-row */
+.mbt-submit-lock-notice {
+  display: block;
+  background: #fffbeb;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Zablokowane przyciski zapisu */
+input[type=submit]:disabled, button:disabled {
+  opacity: 0.45 !important;
+  cursor: not-allowed !important;
+  filter: grayscale(40%);
+}
+
