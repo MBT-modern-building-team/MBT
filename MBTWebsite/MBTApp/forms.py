@@ -75,12 +75,12 @@ class UploadImageWidget(AdminFileWidget):
         css = {
             'all': (
                 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css',
-                '/static/admin/css/mbt-admin.css?v=11',
+                '/static/admin/css/mbt-admin.css?v=12',
             )
         }
         js = (
             'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js',
-            '/static/admin/js/upload_image.js?v=11',
+            '/static/admin/js/upload_image.js?v=12',
         )
 
     def __init__(self, *args, **kwargs):
@@ -133,8 +133,8 @@ class UploadVideoWidget(AdminFileWidget):
 
     class Media:
         # Pełna ścieżka od "/" — Django Media nie encoduje wtedy query stringa
-        css = {'all': ('/static/admin/css/mbt-admin.css?v=11',)}
-        js = ('/static/admin/js/upload_image.js?v=11',)
+        css = {'all': ('/static/admin/css/mbt-admin.css?v=12',)}
+        js = ('/static/admin/js/upload_image.js?v=12',)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -196,8 +196,8 @@ class GalleryUploadWidget(forms.Textarea):
 
     class Media:
         # Pełna ścieżka od "/" — Django Media nie encoduje wtedy query stringa
-        css = {'all': ('/static/admin/css/mbt-admin.css?v=11',)}
-        js = ('/static/admin/js/upload_image.js?v=11',)
+        css = {'all': ('/static/admin/css/mbt-admin.css?v=12',)}
+        js = ('/static/admin/js/upload_image.js?v=12',)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

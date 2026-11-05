@@ -107,8 +107,73 @@
     }
   }
 
-  /* --- Wysyłanie pliku przez AJAX na backend Django (/admin/api/upload-r2/) --- */
+  /* --- Wysyłanie pliku przez AJAX na Cloudflare R2 (bezpośrednio lub przez serwer) --- */
   function uploadFileToR2(file, folder, onProgress, onSuccess, onError) {
+    var isVideo = file.type && file.type.indexOf('video') === 0;
+    var isLarge = file.size > 3.5 * 1024 * 1024;
+
+    // Duże pliki (> 3.5 MB) lub wideo wgrywamy BEZPOŚREDNIO na Cloudflare R2 przez Presigned URL.
+    // Dzięki temu omijamy twardy limit Vercela (4.5 MB), który powodował błąd serwera (kod 413).
+    if (isVideo || isLarge) {
+      var pReq = new XMLHttpRequest();
+      pReq.open('POST', '/admin/api/upload-r2/', true);
+      pReq.setRequestHeader('X-CSRFToken', getCsrfToken());
+
+      var pData = new FormData();
+      pData.append('action', 'get_presigned_url');
+      pData.append('filename', file.name || (isVideo ? 'video.mp4' : 'file.bin'));
+      pData.append('folder', folder || 'uploads');
+      pData.append('content_type', file.type || (isVideo ? 'video/mp4' : 'application/octet-stream'));
+
+      pReq.onload = function () {
+        var pDataResp = null;
+        try { pDataResp = JSON.parse(pReq.responseText); } catch (e) {}
+
+        if (pReq.status >= 200 && pReq.status < 300 && pDataResp && pDataResp.success && pDataResp.upload_url) {
+          // Bezpośredni upload z przeglądarki na Cloudflare R2 (brak ograniczenia rozmiaru Vercela)
+          var r2Xhr = new XMLHttpRequest();
+          r2Xhr.open('PUT', pDataResp.upload_url, true);
+          if (pDataResp.content_type) {
+            r2Xhr.setRequestHeader('Content-Type', pDataResp.content_type);
+          }
+
+          if (r2Xhr.upload && onProgress) {
+            r2Xhr.upload.onprogress = function (e) {
+              if (e.lengthComputable) {
+                var pct = (e.loaded / e.total) * 100;
+                onProgress(pct);
+              }
+            };
+          }
+
+          r2Xhr.onload = function () {
+            if (r2Xhr.status >= 200 && r2Xhr.status < 300) {
+              onSuccess(pDataResp.public_url, pDataResp);
+            } else {
+              onError('Błąd bezpośredniego wgrywania na Cloudflare R2 (kod ' + r2Xhr.status + ').');
+            }
+          };
+
+          r2Xhr.onerror = function () {
+            onError('Błąd połączenia sieciowego podczas wgrywania na Cloudflare R2.');
+          };
+
+          r2Xhr.send(file);
+        } else {
+          var err = (pDataResp && pDataResp.error) ? pDataResp.error : ('Błąd inicjalizacji R2 (kod ' + pReq.status + ')');
+          onError(err);
+        }
+      };
+
+      pReq.onerror = function () {
+        onError('Błąd połączenia z serwerem podczas przygotowywania uploadu.');
+      };
+
+      pReq.send(pData);
+      return;
+    }
+
+    // Dla małych plików (np. skadrowane zdjęcia < 3.5 MB) — standardowy upload przez Django
     var formData = new FormData();
     formData.append('file', file);
     if (folder) formData.append('folder', folder);

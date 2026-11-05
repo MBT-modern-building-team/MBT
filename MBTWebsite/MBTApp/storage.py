@@ -101,6 +101,50 @@ def _upload_to_r2(key, data: bytes, content_type: str) -> str:
     return f'{public_base.rstrip("/")}/{key.lstrip("/")}'
 
 
+def generate_r2_presigned_upload_url(filename, folder='uploads', content_type=None):
+    """Generuje presigned PUT URL do bezpośredniego uploadu z przeglądarki na Cloudflare R2.
+
+    Całkowicie omija limit Vercel (4.5 MB), umożliwiając wgrywanie dużych filmów (np. 10-100 MB)
+    oraz ciężkich galerii prosto z przeglądarki klienta do R2.
+    """
+    import mimetypes
+    import boto3
+    from botocore.config import Config
+
+    account_id, access_key, secret_key, bucket, public_base = _get_r2_config()
+    endpoint = f'https://{account_id}.r2.cloudflarestorage.com'
+
+    ext = os.path.splitext(filename or '')[1].lower()
+    random_name = f'{uuid.uuid4().hex[:12]}{ext}'
+    clean_folder = (folder or 'uploads').strip('/')
+    key = f'{clean_folder}/{random_name}' if clean_folder else random_name
+
+    if not content_type:
+        content_type, _ = mimetypes.guess_type(filename or '')
+        content_type = content_type or 'application/octet-stream'
+
+    client = boto3.client(
+        's3',
+        endpoint_url=endpoint,
+        aws_access_key_id=access_key,
+        aws_secret_access_key=secret_key,
+        config=Config(signature_version='s3v4'),
+        region_name='auto',
+    )
+
+    presigned_url = client.generate_presigned_url(
+        'put_object',
+        Params={
+            'Bucket': bucket,
+            'Key': key,
+            'ContentType': content_type,
+        },
+        ExpiresIn=3600,
+    )
+    public_url = f'{public_base.rstrip("/")}/{key.lstrip("/")}'
+    return presigned_url, public_url, key, content_type
+
+
 def _compress_image(uploaded_file) -> tuple[bytes, str]:
     """Skompresuj obraz do WebP (BytesIO) — zwraca (bajty, content_type)."""
     from PIL import Image
