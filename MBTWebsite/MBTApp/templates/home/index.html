@@ -51,10 +51,14 @@
             <video class="hero-video-bg lazy-video" autoplay muted loop playsinline preload="none" aria-hidden="true"
                    poster="{{ photos.home_hero_bg }}"
                    {% if site.hero_video %}
-                   data-src-mp4="{{ site.hero_video }}"
+                     {% if site.hero_video|slice:"-5:"|lower == ".webm" %}
+                     data-src-webm="{{ site.hero_video }}"
+                     {% else %}
+                     data-src-mp4="{{ site.hero_video }}"
+                     {% endif %}
                    {% else %}
-                   data-src-webm="/static/img/hero/strona_mbt.webm"
-                   data-src-mp4="/static/img/hero/strona_mbt.mp4"
+                     data-src-webm="/static/img/hero/strona_mbt.webm"
+                     data-src-mp4="/static/img/hero/strona_mbt.mp4"
                    {% endif %}>
                 Twoja przeglądarka nie obsługuje wideo w tle.
             </video>
