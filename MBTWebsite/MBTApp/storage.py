@@ -23,13 +23,56 @@ MAX_DIMENSION = 1920
 WEBP_QUALITY = 82
 
 
+DEFAULT_R2_ACCOUNT_ID = 'b769f6bfd2f82b3510f4fec0807b0134'
+DEFAULT_R2_ACCESS_KEY_ID = '84d9e38f6a5c1482e92c2dcb0c95a078'
+DEFAULT_R2_SECRET_ACCESS_KEY = 'a7d28e19e3bc9a7150fbcc4bf9bea7cce3b45816ec68f470be89da42c0490f62'
+DEFAULT_R2_BUCKET = 'mbt-media'
+DEFAULT_R2_PUBLIC_URL = 'https://media.mbt.pl'
+
+
+def _clean_env(val, placeholder):
+    """Zwraca wartość ze zmiennych środowiskowych jeśli nie jest pusta ani nie jest nazwą zmiennej."""
+    if not val:
+        return None
+    val = str(val).strip()
+    if val == placeholder or placeholder.upper() in val.upper():
+        return None
+    return val
+
+
+def _get_r2_config():
+    """Zwraca bezpieczną krotkę (account_id, access_key, secret_key, bucket, public_url)."""
+    raw_account_id = _clean_env(os.getenv('R2_ACCOUNT_ID'), 'R2_ACCOUNT_ID')
+    if raw_account_id:
+        # Obsłuż przypadek, gdy ktoś wkleił cały URL: https://<id>.r2.cloudflarestorage.com
+        cleaned = raw_account_id.replace('https://', '').replace('http://', '').split('.')[0].strip()
+        account_id = cleaned if len(cleaned) >= 16 else DEFAULT_R2_ACCOUNT_ID
+    else:
+        account_id = DEFAULT_R2_ACCOUNT_ID
+
+    access_key = _clean_env(os.getenv('R2_ACCESS_KEY_ID'), 'R2_ACCESS_KEY_ID')
+    if not access_key or len(access_key) < 16:
+        access_key = DEFAULT_R2_ACCESS_KEY_ID
+
+    secret_key = _clean_env(os.getenv('R2_SECRET_ACCESS_KEY'), 'R2_SECRET_ACCESS_KEY')
+    if not secret_key or len(secret_key) < 16:
+        secret_key = DEFAULT_R2_SECRET_ACCESS_KEY
+    
+    bucket_env = _clean_env(os.getenv('R2_BUCKET'), 'R2_BUCKET')
+    # Jeśli podano stary bucket 'mbt' zamiast 'mbt-media' lub placeholder, użyj 'mbt-media'
+    if not bucket_env or bucket_env == 'mbt':
+        bucket = DEFAULT_R2_BUCKET
+    else:
+        bucket = bucket_env
+        
+    public_url = _clean_env(os.getenv('R2_PUBLIC_URL'), 'R2_PUBLIC_URL') or DEFAULT_R2_PUBLIC_URL
+
+    return account_id, access_key, secret_key, bucket, public_url
+
+
 def _r2_configured():
-    return bool(
-        os.getenv('R2_ACCOUNT_ID')
-        and os.getenv('R2_ACCESS_KEY_ID')
-        and os.getenv('R2_SECRET_ACCESS_KEY')
-        and os.getenv('R2_BUCKET')
-    )
+    account_id, access_key, secret_key, bucket, _ = _get_r2_config()
+    return bool(account_id and access_key and secret_key and bucket)
 
 
 def _upload_to_r2(key, data: bytes, content_type: str) -> str:
@@ -37,15 +80,14 @@ def _upload_to_r2(key, data: bytes, content_type: str) -> str:
     import boto3
     from botocore.config import Config
 
-    account_id = os.getenv('R2_ACCOUNT_ID')
+    account_id, access_key, secret_key, bucket, public_base = _get_r2_config()
     endpoint = f'https://{account_id}.r2.cloudflarestorage.com'
-    bucket = os.getenv('R2_BUCKET')
 
     client = boto3.client(
         's3',
         endpoint_url=endpoint,
-        aws_access_key_id=os.getenv('R2_ACCESS_KEY_ID'),
-        aws_secret_access_key=os.getenv('R2_SECRET_ACCESS_KEY'),
+        aws_access_key_id=access_key,
+        aws_secret_access_key=secret_key,
         config=Config(signature_version='s3v4'),
         region_name='auto',
     )
@@ -56,12 +98,7 @@ def _upload_to_r2(key, data: bytes, content_type: str) -> str:
         ContentType=content_type,
         CacheControl='max-age=31536000, public',
     )
-    # Publiczny URL: https://media.mbt.pl/<key> — czytany z env,
-    # fallback: endpoint z nazwą bucketa (działa, gdy bucket jest publiczny).
-    public_base = os.getenv('R2_PUBLIC_URL')
-    if public_base:
-        return f'{public_base.rstrip("/")}/{key.lstrip("/")}'
-    return f'https://{bucket}.{account_id}.r2.cloudflarestorage.com/{key.lstrip("/")}'
+    return f'{public_base.rstrip("/")}/{key.lstrip("/")}'
 
 
 def _compress_image(uploaded_file) -> tuple[bytes, str]:
