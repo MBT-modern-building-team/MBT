@@ -50,8 +50,12 @@
                  Jeśli brak pliku — zostaje zdjęcie (data-bg-src). Autoplay, pętla, bez dźwięku. -->
             <video class="hero-video-bg lazy-video" autoplay muted loop playsinline preload="none" aria-hidden="true"
                    poster="{{ photos.home_hero_bg }}"
-                   data-src-webm="{% if site.hero_video_webm %}{{ site.hero_video_webm }}{% else %}/static/img/hero/strona_mbt.webm{% endif %}"
-                   data-src-mp4="{% if site.hero_video %}{{ site.hero_video }}{% else %}/static/img/hero/strona_mbt.mp4{% endif %}">
+                   {% if site.hero_video %}
+                   data-src-mp4="{{ site.hero_video }}"
+                   {% else %}
+                   data-src-webm="/static/img/hero/strona_mbt.webm"
+                   data-src-mp4="/static/img/hero/strona_mbt.mp4"
+                   {% endif %}>
                 Twoja przeglądarka nie obsługuje wideo w tle.
             </video>
             <script>
@@ -65,16 +69,21 @@
                     loaded = true;
                     if (video && window.innerWidth > 768) {
                         // Tworzymy źródła i dodajemy do odtwarzacza
-                        var sourceWebM = document.createElement('source');
-                        sourceWebM.src = video.getAttribute('data-src-webm');
-                        sourceWebM.type = 'video/webm';
+                        var webmSrc = video.getAttribute('data-src-webm');
+                        if (webmSrc) {
+                            var sourceWebM = document.createElement('source');
+                            sourceWebM.src = webmSrc;
+                            sourceWebM.type = 'video/webm';
+                            video.appendChild(sourceWebM);
+                        }
                         
-                        var sourceMP4 = document.createElement('source');
-                        sourceMP4.src = video.getAttribute('data-src-mp4');
-                        sourceMP4.type = 'video/mp4';
-                        
-                        video.appendChild(sourceWebM);
-                        video.appendChild(sourceMP4);
+                        var mp4Src = video.getAttribute('data-src-mp4');
+                        if (mp4Src) {
+                            var sourceMP4 = document.createElement('source');
+                            sourceMP4.src = mp4Src;
+                            sourceMP4.type = 'video/mp4';
+                            video.appendChild(sourceMP4);
+                        }
                         
                         // Rozpoczynamy pobieranie w tle
                         video.load();

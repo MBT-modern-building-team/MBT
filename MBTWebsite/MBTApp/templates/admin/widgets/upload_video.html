@@ -8,6 +8,7 @@
         <img src="{{ widget.current_url }}" alt="podgląd" class="mbt-upload-img">
       {% endif %}
     {% else %}
+      <video class="mbt-upload-video" controls muted preload="metadata" style="display: none;"></video>
       <span class="mbt-upload-empty">Brak filmu</span>
     {% endif %}
   </div>

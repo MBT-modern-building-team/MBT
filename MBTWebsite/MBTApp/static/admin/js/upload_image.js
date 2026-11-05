@@ -472,7 +472,7 @@
         setBannerStatus(
           wrap,
           'success',
-          '✓ Zdjęcie zostało wgrane na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.',
+          isVideo ? '✓ Film został wgrany na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.' : '✓ Zdjęcie zostało wgrane na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.',
           url,
           100
         );
