@@ -137,7 +137,6 @@ def generate_r2_presigned_upload_url(filename, folder='uploads', content_type=No
         Params={
             'Bucket': bucket,
             'Key': key,
-            'ContentType': content_type,
         },
         ExpiresIn=3600,
     )

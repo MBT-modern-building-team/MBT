@@ -134,7 +134,9 @@
           var r2Xhr = new XMLHttpRequest();
           r2Xhr.open('PUT', pDataResp.upload_url, true);
           if (pDataResp.content_type) {
-            r2Xhr.setRequestHeader('Content-Type', pDataResp.content_type);
+            try {
+              r2Xhr.setRequestHeader('Content-Type', pDataResp.content_type);
+            } catch (e) {}
           }
 
           if (r2Xhr.upload && onProgress) {
@@ -154,8 +156,28 @@
             }
           };
 
-          r2Xhr.onerror = function () {
-            onError('Błąd połączenia sieciowego podczas wgrywania na Cloudflare R2.');
+          r2Xhr.onerror = function (e) {
+            console.warn('R2 XHR upload error, trying fetch fallback...', e);
+            var headers = {};
+            if (pDataResp.content_type) {
+              headers['Content-Type'] = pDataResp.content_type;
+            }
+            fetch(pDataResp.upload_url, {
+              method: 'PUT',
+              headers: headers,
+              body: file
+            })
+            .then(function (res) {
+              if (res.ok) {
+                onSuccess(pDataResp.public_url, pDataResp);
+              } else {
+                onError('Błąd bezpośredniego wgrywania na Cloudflare R2 (kod ' + res.status + ').');
+              }
+            })
+            .catch(function (fetchErr) {
+              console.error('R2 direct upload failed:', fetchErr);
+              onError('Błąd połączenia sieciowego podczas wgrywania na Cloudflare R2.');
+            });
           };
 
           r2Xhr.send(file);
