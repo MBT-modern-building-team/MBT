@@ -711,6 +711,28 @@
     }
   });
 
+  /* --- Podgląd na żywo przy wklejeniu lub wpisaniu adresu URL --- */
+  document.addEventListener('input', function (e) {
+    if (e.target && e.target.getAttribute('data-url-input') === '1') {
+      var wrap = e.target.closest('.mbt-upload');
+      if (!wrap) return;
+      var val = (e.target.value || '').trim();
+      var videoEl = wrap.querySelector('.mbt-upload-video');
+      var imgEl = wrap.querySelector('.mbt-upload-img');
+      var emptyEl = wrap.querySelector('.mbt-upload-empty');
+      if (val) {
+        if (videoEl) {
+          videoEl.src = val;
+          videoEl.style.display = '';
+        } else if (imgEl) {
+          imgEl.src = val;
+          imgEl.style.display = '';
+        }
+        if (emptyEl) emptyEl.style.display = 'none';
+      }
+    }
+  });
+
   /* --- Zabezpieczenie przed przedwczesnym wysłaniem formularza --- */
   document.addEventListener('submit', function (e) {
     if (activeUploads > 0) {
