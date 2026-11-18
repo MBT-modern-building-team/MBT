@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118g">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118h">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -161,7 +161,12 @@
             <span class="pot-bar" aria-hidden="true"></span>
         </header>
 
-        <ul class="pot-org">
+        <h2 class="pot-h3 pot-h3--lg">{% trans 'Zarząd i dyrekcja' %}</h2>
+        <ul class="pot-people">
+            {% for m in p.board %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
+        </ul>
+
+        <ul class="pot-org pot-card--mt">
             <li class="pot-org-root">
                 <div class="pot-org-board">
                     <strong>{{ p.org_head }}</strong>
@@ -189,20 +194,9 @@
 {# ===================== KADRA ===================== #}
 <section class="pot-sec pot-sec--tint" id="kadra" aria-label="{% trans 'KADRA' %}">
     <div class="container">
-        <h2 class="pot-h3 pot-h3--lg">{% trans 'Zarząd i dyrekcja' %}</h2>
-        <ul class="pot-people">
-            {% for m in p.board %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
-        </ul>
-
-        <h2 class="pot-h3 pot-h3--lg pot-card--mt">{% trans 'Kierownicy i project managerowie' %}</h2>
+        <h2 class="pot-h3 pot-h3--lg">{% trans 'Kierownicy i project managerowie' %}</h2>
         <ul class="pot-people">
             {% for m in p.managers %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
-        </ul>
-
-        <h2 class="pot-h3 pot-h3--lg pot-card--mt">{% trans 'Zespół handlowy i komunikacja' %}</h2>
-        <p class="pot-lead pot-lead--sm">{{ p.texts.zespol_lead }}</p>
-        <ul class="pot-people">
-            {% for m in p.sales_team %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
         </ul>
     </div>
 </section>
