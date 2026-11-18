@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118n">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118o">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -157,7 +157,7 @@
     <div class="container">
         <header class="pot-head">
             <p class="pot-kicker">{% trans 'STRUKTURA ORGANIZACYJNA' %}</p>
-            <h2 id="pot-org-h" class="pot-h2">{{ p.texts.struktura_h2 }}</h2>
+            <h2 id="pot-org-h" class="pot-h2">{% trans 'Zarząd i dyrekcja' %}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
         </header>
 
@@ -169,21 +169,8 @@
                 <ul class="pot-org-people" aria-label="{% trans 'Dyrekcja' %}">
                     {% for m in p.directors %}{% include 'pages/_pot_person.html' with m=m compact=True %}{% endfor %}
                 </ul>
-                <ul class="pot-org-cols">
-                    <li>
-                        <ul class="pot-org-col pot-org-col--l">
-                            {% for d in p.depts_left %}<li><strong>{{ d.name }}</strong>{% if d.head %}<em>{{ d.head }}</em>{% endif %}<span>{{ d.scope }}</span></li>{% endfor %}
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="pot-org-col pot-org-col--r">
-                            {% for d in p.depts_right %}<li><strong>{{ d.name }}</strong>{% if d.head %}<em>{{ d.head }}</em>{% endif %}<span>{{ d.scope }}</span></li>{% endfor %}
-                        </ul>
-                    </li>
-                </ul>
             </li>
         </ul>
-        {% if p.org_note %}<p class="pot-note">{{ p.org_note }}</p>{% endif %}
         {% if p.site_crew %}<p class="pot-note pot-note--accent"><i class="ri-hard-hat-line" aria-hidden="true"></i> {{ p.site_crew }}</p>{% endif %}
     </div>
 </section>
