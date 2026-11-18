@@ -35,7 +35,7 @@ _MARKER_RE = re.compile(r'\[DO (UZUPE[ŁL]NIENIA|T[ŁL]UMACZENIA)[^\]]*\]', re.I
 LOGOS = '/static/img/mbt/logos/'
 NEW_RECORDS = {
     9: LOGOS + 'eurostyl-chelmek.svg',
-    14: '/static/img/mbt/logo-stokado-CMYK.ai_01-scaled-a32efdb4.jpg',
+    14: 'https://media.mbt.pl/media/uploads/7ad52ff95b94.webp',  # logo jak w realizacji Stokado Warszawa Targówek
     31: LOGOS + 'kbh-akord.png',
     37: LOGOS + 'brembo.png',
     51: LOGOS + 'zielona-dolina.png',
