@@ -1,0 +1,1515 @@
+{
+  "_meta": {
+    "zrodlo": "Portfolio prekwalifikacyjne MBT (kanwa Design, 20 stron A4)",
+    "stan_na": "2026-11",
+    "zasada": "null = brak danych → NIE renderuj pola ani etykiety. Nigdy nie pokazuj publicznie znaczników [DO UZUPEŁNIENIA] / [DO TŁUMACZENIA]."
+  },
+  "firma": {
+    "nazwa": "MBT Modern Building Team Sp. z o.o.",
+    "forma_prawna": "spółka z ograniczoną odpowiedzialnością",
+    "na_rynku_od": 2005,
+    "prezes_zarzadu": "Tomasz Kalisz",
+    "rejestr": {
+      "krs": null,
+      "nip": null,
+      "regon": null
+    },
+    "kapital": {
+      "podstawowy": {
+        "kwota": "750000.00",
+        "wyswietl": "750 000,00 zł",
+        "w_pelni_oplacony": true
+      },
+      "zapasowy": {
+        "kwota": "15975953.90",
+        "wyswietl": "15 975 953,90 zł",
+        "w_pelni_oplacony": true
+      },
+      "lacznie_wyswietl": "16 725 953,90 zł"
+    },
+    "finanse": {
+      "przychody_netto": {
+        "2023": null,
+        "2024": null,
+        "2025": null
+      },
+      "oc_suma_gwarancyjna": null,
+      "limity_gwarancji_kontraktowych": null
+    },
+    "biura": [
+      {
+        "typ": "Centrala",
+        "miasto": "Zabrze",
+        "adres": "ul. Roosevelta 81"
+      },
+      {
+        "typ": "Biuro",
+        "miasto": "Katowice",
+        "adres": "ul. Jankego 176/1A"
+      },
+      {
+        "typ": "Biuro",
+        "miasto": "Kraków",
+        "adres": "ul. Zawiła 65 (bud. X, lok. 5)"
+      }
+    ],
+    "kontakt": {
+      "email": "kontakt@mbt.pl",
+      "telefon": "+48 881 444 333",
+      "www": "https://mbt.pl",
+      "formularz": "https://mbt.pl/kontakt/",
+      "osoba_ds_prekwalifikacji": null
+    },
+    "specjalizacje": [
+      "Centra logistyczne i hale magazynowe (klasa A, BTS)",
+      "Hale przemysłowe i zakłady produkcyjne (suwnice, strefy czyste, R&D)",
+      "Wielokondygnacyjne magazyny self-storage",
+      "Parki handlowe i obiekty wielkopowierzchniowe",
+      "Obiekty biurowo-usługowe i użyteczności publicznej",
+      "Automotive – salony dealerskie i serwisy (ASO)"
+    ],
+    "wyroznienia": [
+      "Diamenty Forbesa 2026",
+      "Gazele Biznesu"
+    ],
+    "czlonkostwa": [
+      "Regionalna Izba Gospodarcza w Katowicach"
+    ],
+    "haslo": "Budujemy bez komplikacji"
+  },
+  "liczby": {
+    "lat_na_rynku": "20+",
+    "realizacje": 54,
+    "w_realizacji": 2,
+    "sektory": 8,
+    "wojewodztwa": 8,
+    "realizacje_wg_sektora": {
+      "logistyka": 10,
+      "self-storage": 6,
+      "produkcja": 16,
+      "komercyjne": 3,
+      "czynne-zaklady": 11,
+      "rd-szkolenia": 3,
+      "publiczne-mieszkaniowe": 3,
+      "oze-infrastruktura": 2
+    },
+    "realizacje_wg_wojewodztwa": {
+      "śląskie": 24,
+      "małopolskie": 16,
+      "mazowieckie": 5,
+      "dolnośląskie": 3,
+      "pomorskie": 2,
+      "lubuskie": 1,
+      "świętokrzyskie": 1,
+      "wielkopolskie": 1
+    },
+    "realizacje_bez_wojewodztwa": 1
+  },
+  "sektory": [
+    {
+      "kod": "C1",
+      "slug": "logistyka",
+      "nazwa": "Logistyka, magazyny i centra dystrybucyjne",
+      "nazwa_krotka": "Logistyka, magazyny, centra dystrybucyjne",
+      "liczba": 10
+    },
+    {
+      "kod": "C2",
+      "slug": "self-storage",
+      "nazwa": "Magazyny samoobsługowe (self-storage)",
+      "nazwa_krotka": "Self-storage",
+      "liczba": 6
+    },
+    {
+      "kod": "C3",
+      "slug": "produkcja",
+      "nazwa": "Zakłady produkcyjne i przemysłowe",
+      "nazwa_krotka": "Zakłady produkcyjne i przemysłowe",
+      "liczba": 16
+    },
+    {
+      "kod": "C4",
+      "slug": "komercyjne",
+      "nazwa": "Parki handlowe, obiekty komercyjne i motoryzacyjne",
+      "nazwa_krotka": "Obiekty komercyjne i motoryzacyjne",
+      "liczba": 3
+    },
+    {
+      "kod": "C5",
+      "slug": "czynne-zaklady",
+      "nazwa": "Specjalistyczne prace przemysłowe i browarnictwo – w reżimie czynnych zakładów",
+      "nazwa_krotka": "Prace w czynnych zakładach i browarnictwo",
+      "liczba": 11
+    },
+    {
+      "kod": "C6",
+      "slug": "rd-szkolenia",
+      "nazwa": "Centra R&D, centra szkoleniowe i bazy operacyjne",
+      "nazwa_krotka": "R&D, centra szkoleniowe, bazy",
+      "liczba": 3
+    },
+    {
+      "kod": "C7",
+      "slug": "publiczne-mieszkaniowe",
+      "nazwa": "Obiekty użyteczności publicznej, mieszkaniowe i siedziby",
+      "nazwa_krotka": "Użyteczność publiczna, mieszkaniówka, siedziby",
+      "liczba": 3
+    },
+    {
+      "kod": "C8",
+      "slug": "oze-infrastruktura",
+      "nazwa": "Odnawialne źródła energii (OZE) i infrastruktura inżynieryjna",
+      "nazwa_krotka": "OZE i infrastruktura inżynieryjna",
+      "liczba": 2
+    }
+  ],
+  "kompetencje": [
+    {
+      "nazwa": "Hale pod suwnice natorowe",
+      "potwierdzenie": "Fiołka Racibórz, Ponar Silesia Łaziska Górne"
+    },
+    {
+      "nazwa": "Magazyny wysokiego składowania do 20 m, posadzki pod układnice",
+      "potwierdzenie": "Vesuvius Skawina"
+    },
+    {
+      "nazwa": "Strefy clean-room i reżim czystości",
+      "potwierdzenie": "HUBER+SUHNER Modlniczka, EcoWipes"
+    },
+    {
+      "nazwa": "Wielokondygnacyjne self-storage do 6 kondygnacji",
+      "potwierdzenie": "Stokado, Less Mess Storage"
+    },
+    {
+      "nazwa": "Prace w czynnych zakładach, bez przerywania produkcji",
+      "potwierdzenie": "Brembo Poland, Kompania Piwowarska"
+    },
+    {
+      "nazwa": "Przemysł obronny – podwyższony rygor bezpieczeństwa",
+      "potwierdzenie": "MESKO S.A. (Polska Grupa Zbrojeniowa)"
+    },
+    {
+      "nazwa": "Geotermia, pompy ciepła, PV i magazyny energii",
+      "potwierdzenie": "LMS Warszawa, UE Wrocław, farma PV (EPC)"
+    },
+    {
+      "nazwa": "Obiekty w strefie ochrony konserwatorskiej",
+      "potwierdzenie": "Browar Racibórz"
+    }
+  ],
+  "struktura": {
+    "zarzad": {
+      "nazwa": "Zarząd",
+      "sklad": [
+        {
+          "imie_nazwisko": "Tomasz Kalisz",
+          "funkcja": "Prezes Zarządu"
+        }
+      ]
+    },
+    "podleglosc": "Wszystkie działy podlegają bezpośrednio Zarządowi.",
+    "dzialy": [
+      {
+        "slug": "dzial-handlowy",
+        "nazwa": "Dział Handlowy",
+        "kierownik": "J. Lewandowski · A. Grzelak",
+        "zakres": "Pozyskanie inwestycji i opieka nad Inwestorem od zapytania do umowy",
+        "kolumna_desktop": "lewa"
+      },
+      {
+        "slug": "dzial-przetargow",
+        "nazwa": "Dział Przetargów",
+        "kierownik": null,
+        "zakres": "Postępowania przetargowe, prekwalifikacje, dokumentacja",
+        "kolumna_desktop": "lewa"
+      },
+      {
+        "slug": "dzial-ofert",
+        "nazwa": "Dział Ofert",
+        "kierownik": null,
+        "zakres": "Kosztorysowanie w Norma PRO, wyceny i oferty",
+        "kolumna_desktop": "lewa"
+      },
+      {
+        "slug": "dzial-umow",
+        "nazwa": "Dział Umów",
+        "kierownik": null,
+        "zakres": "Umowy z Inwestorami i podwykonawcami",
+        "kolumna_desktop": "lewa"
+      },
+      {
+        "slug": "dzial-marketingu",
+        "nazwa": "Dział Marketingu",
+        "kierownik": "Marek Dziubek",
+        "zakres": "Komunikacja, PR, identyfikacja i oznakowanie budów",
+        "kolumna_desktop": "lewa"
+      },
+      {
+        "slug": "dzial-hr",
+        "nazwa": "Dział HR",
+        "kierownik": null,
+        "zakres": "Rekrutacja, kadry, rozwój i szkolenia",
+        "kolumna_desktop": "lewa"
+      },
+      {
+        "slug": "dzial-administracji",
+        "nazwa": "Dział Administracji",
+        "kierownik": null,
+        "zakres": "Obsługa biur w Zabrzu, Katowicach i Krakowie",
+        "kolumna_desktop": "lewa"
+      },
+      {
+        "slug": "dzial-przygotowania-produkcji",
+        "nazwa": "Dział Przygotowania Produkcji",
+        "kierownik": null,
+        "zakres": "Analiza dokumentacji, Value Engineering, kontraktacja",
+        "kolumna_desktop": "prawa"
+      },
+      {
+        "slug": "dzial-realizacji",
+        "nazwa": "Dział Realizacji",
+        "kierownik": "Jakub Walczak – Dyrektor ds. Realizacji",
+        "zakres": "Kierownicy budów, inżynierowie budowy, kierownicy robót",
+        "kolumna_desktop": "prawa"
+      },
+      {
+        "slug": "dzial-gwarancji",
+        "nazwa": "Dział Gwarancji",
+        "kierownik": null,
+        "zakres": "Przeglądy gwarancyjne, usuwanie usterek, rękojmia",
+        "kolumna_desktop": "prawa"
+      },
+      {
+        "slug": "dzial-bhp",
+        "nazwa": "Dział BHP",
+        "kierownik": null,
+        "zakres": "Nadzór BHP na budowach, plany BIOZ, szkolenia",
+        "kolumna_desktop": "prawa"
+      },
+      {
+        "slug": "dzial-finansowy",
+        "nazwa": "Dział Finansowy",
+        "kierownik": "Krzysztof Filipowski – Dyrektor Finansowy",
+        "zakres": "Finanse spółki i płynność kontraktów",
+        "kolumna_desktop": "prawa"
+      },
+      {
+        "slug": "dzial-controllingu",
+        "nazwa": "Dział Controllingu",
+        "kierownik": null,
+        "zakres": "Budżety kontraktów, zaawansowanie rzeczowo-finansowe, ryzyka",
+        "kolumna_desktop": "prawa"
+      }
+    ],
+    "kadra_budow": "Kierownicy Budowy z uprawnieniami bez ograniczeń w specjalności konstrukcyjno-budowlanej (członkowie OIIB), Inżynierowie Budowy i Kierownicy Robót."
+  },
+  "kadra": [
+    {
+      "slug": "tomasz-kalisz",
+      "imie_nazwisko": "Tomasz Kalisz",
+      "stanowisko": "Prezes Zarządu",
+      "grupa": "zarzad-dyrekcja",
+      "opis": "Strategiczny nadzór nad procesami inwestycyjnymi i realizacją kontraktów spółki.",
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "jacek-lewandowski",
+      "imie_nazwisko": "Jacek Lewandowski",
+      "stanowisko": "Współzałożyciel · Dyrektor Generalny ds. Handlowych",
+      "grupa": "zarzad-dyrekcja",
+      "opis": "Przygotowanie i komercjalizacja inwestycji, optymalizacja budżetu i harmonogramu już na etapie oferty.",
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "jakub-walczak",
+      "imie_nazwisko": "Jakub Walczak",
+      "stanowisko": "Dyrektor ds. Realizacji",
+      "grupa": "zarzad-dyrekcja",
+      "opis": "Nadzór nad pionem wykonawczym i budowami: kierownikami budów, inżynierami i kierownikami robót w całej Polsce.",
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "krzysztof-filipowski",
+      "imie_nazwisko": "Krzysztof Filipowski",
+      "stanowisko": "Dyrektor Finansowy",
+      "grupa": "zarzad-dyrekcja",
+      "opis": "Zarządzanie finansami spółki i płynnością kontraktów.",
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "agnieszka-grzelak",
+      "imie_nazwisko": "Agnieszka Grzelak",
+      "stanowisko": "Manager ds. Handlowych",
+      "grupa": "handlowy",
+      "opis": "Specjalistka od inwestycji kubaturowych; prowadzi procesy inwestycyjne od A do Z.",
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "karol-pinoczek",
+      "imie_nazwisko": "Karol Pinoczek",
+      "stanowisko": "Opiekun handlowy",
+      "grupa": "handlowy",
+      "opis": "Opieka nad Inwestorem od zapytania, przez ofertę, po podpisanie umowy.",
+      "region": null,
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "marcin-kobryn",
+      "imie_nazwisko": "Marcin Kobryń",
+      "stanowisko": "Opiekun handlowy",
+      "grupa": "handlowy",
+      "opis": "Opieka nad Inwestorem od zapytania, przez ofertę, po podpisanie umowy.",
+      "region": null,
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "jaroslaw-wawrzyk",
+      "imie_nazwisko": "Jarosław Wawrzyk",
+      "stanowisko": "Opiekun handlowy",
+      "grupa": "handlowy",
+      "opis": "Opieka nad Inwestorem od zapytania, przez ofertę, po podpisanie umowy.",
+      "region": null,
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "lukasz-liszka",
+      "imie_nazwisko": "Łukasz Liszka",
+      "stanowisko": "Opiekun handlowy",
+      "grupa": "handlowy",
+      "opis": "Opieka nad Inwestorem od zapytania, przez ofertę, po podpisanie umowy.",
+      "region": null,
+      "kontakt": null,
+      "foto": null
+    },
+    {
+      "slug": "marek-dziubek",
+      "imie_nazwisko": "Marek Dziubek",
+      "stanowisko": "Full-Stack Marketing & PR Manager",
+      "grupa": "handlowy",
+      "opis": "Komunikacja i PR, identyfikacja wizualna, oznakowanie budów, dokumentacja foto/wideo.",
+      "kontakt": {
+        "email": "m.dziubek@mbt.pl",
+        "telefon": "+48 518 630 036"
+      },
+      "foto": null
+    }
+  ],
+  "kadra_techniczna": [
+    {
+      "stanowisko": "Kierownik Budowy",
+      "kwalifikacje": "Uprawnienia budowlane bez ograniczeń w specjalności konstrukcyjno-budowlanej, członkostwo w OIIB",
+      "liczba_osob": null
+    },
+    {
+      "stanowisko": "Kierownik Robót",
+      "kwalifikacje": null,
+      "liczba_osob": null
+    },
+    {
+      "stanowisko": "Inżynier Budowy",
+      "kwalifikacje": null,
+      "liczba_osob": null
+    },
+    {
+      "stanowisko": "Kosztorysant / specjalista przygotowania produkcji",
+      "kwalifikacje": "Kosztorysowanie w Norma PRO, Value Engineering, kontraktacja",
+      "liczba_osob": null
+    },
+    {
+      "stanowisko": "Specjalista ds. BHP",
+      "kwalifikacje": null,
+      "liczba_osob": null
+    },
+    {
+      "stanowisko": "Zatrudnienie ogółem (średnioroczne, ostatnie 3 lata)",
+      "kwalifikacje": null,
+      "liczba_osob": null
+    }
+  ],
+  "formuly": [
+    {
+      "slug": "gw",
+      "nazwa": "Generalne Wykonawstwo (GW)",
+      "opis": "Realizacja obiektu „pod klucz” według dokumentacji dostarczonej przez Inwestora. Jeden wykonawca odpowiada za całość robót, koordynację podwykonawców i odbiory."
+    },
+    {
+      "slug": "design-build",
+      "nazwa": "Zaprojektuj i Wybuduj (Design & Build)",
+      "opis": "Prowadzimy inwestycję od koncepcji: badania gruntu, Value Engineering, projekt i pozwolenie na budowę, realizacja, odbiory i pozwolenie na użytkowanie."
+    }
+  ],
+  "proces": [
+    "Koncepcja",
+    "Badania gruntu",
+    "Value Engineering",
+    "Projekt i PnB",
+    "Realizacja",
+    "Odbiory i PnU",
+    "Gwarancja"
+  ],
+  "bhp_jakosc": {
+    "bhp": "Dział BHP nadzoruje każdą budowę: plan BIOZ, oznakowanie budowy i tablice informacyjne, szkolenia stanowiskowe.",
+    "gwarancja": "Dział Gwarancji prowadzi przeglądy gwarancyjne i usuwanie usterek po przekazaniu obiektu.",
+    "wskazniki_wypadkowosci": null,
+    "certyfikaty_iso": null
+  },
+  "technologie": {
+    "narzedzia": [
+      {
+        "kategoria": "Oprogramowanie",
+        "nazwa": "CAD / BIM",
+        "opis": "Analiza i koordynacja dokumentacji projektowej przed wejściem na budowę.",
+        "ikona": "ri-building-2-line"
+      },
+      {
+        "kategoria": "Oprogramowanie",
+        "nazwa": "Norma PRO",
+        "opis": "Kosztorysowanie ofertowe, przedmiary i wyceny wariantowe w procesie Value Engineering.",
+        "ikona": "ri-calculator-line"
+      },
+      {
+        "kategoria": "Oprogramowanie",
+        "nazwa": "MS Project",
+        "opis": "Harmonogramy rzeczowo-finansowe, ścieżka krytyczna, planowanie Fast-Track.",
+        "ikona": "ri-calendar-schedule-line"
+      },
+      {
+        "kategoria": "Oprogramowanie",
+        "nazwa": "System ERP",
+        "opis": "Zarządzanie kontraktami, budżetami i zaawansowaniem rzeczowo-finansowym.",
+        "ikona": "ri-database-2-line"
+      },
+      {
+        "kategoria": "Narzędzia własne",
+        "nazwa": "Cyfrowy panel kierownika budowy",
+        "opis": "Generator tablic informacyjnych, banerów i tablic BIOZ oraz Karta Wykonawcy PDF do prekwalifikacji.",
+        "ikona": "ri-dashboard-line"
+      },
+      {
+        "kategoria": "Sprzęt",
+        "nazwa": "Drony",
+        "opis": "Monitoring postępu robót oraz dokumentacja foto/wideo realizacji z powietrza.",
+        "ikona": "ri-flight-takeoff-line"
+      }
+    ],
+    "zaplecze": "Zaplecze kontenerowe i sprzętowe budów zapewniamy zasobami własnymi oraz w oparciu o stałe umowy ramowe.",
+    "wykaz_sprzetu_wlasnego": null,
+    "technologie_wykonawcze": [
+      "Prefabrykaty żelbetowe i sprężone",
+      "Konstrukcje stalowe",
+      "Dźwigary z drewna klejonego",
+      "Posadzki bezspoinowe o wysokiej nośności",
+      "Posadzki pod układnice automatyczne",
+      "Posadzki chemo- i kwasoodporne",
+      "Posadzki beziskrowe",
+      "Płyty warstwowe PIR",
+      "Membrany PVC i EPDM",
+      "Suwnice natorowe",
+      "Doki i rampy przeładunkowe",
+      "HVAC i clean-room",
+      "Pompy ciepła i geotermia",
+      "Fotowoltaika i magazyny energii",
+      "Systemy BMS",
+      "Retencja wód opadowych",
+      "Monolityczne konstrukcje wielokondygnacyjne"
+    ],
+    "metodyka": [
+      {
+        "nazwa": "Value Engineering",
+        "opis": "Oszczędności na etapie projektu, a nie cięcie jakości na budowie."
+      },
+      {
+        "nazwa": "Fast-Tracking",
+        "opis": "Równoległe projektowanie i realizacja skracają czas inwestycji."
+      },
+      {
+        "nazwa": "BIM",
+        "opis": "Koordynacja branż i rozwiązań na modelu, zanim trafią na budowę."
+      },
+      {
+        "nazwa": "BHP",
+        "opis": "Standard bezpieczeństwa na każdej budowie, nadzorowany przez dział BHP."
+      }
+    ]
+  },
+  "teksty": {
+    "hero_kicker": "Potencjał i referencje",
+    "hero_h1": "Portfolio i potencjał wykonawcy",
+    "hero_lead": "Generalny Wykonawca obiektów kubaturowych dla biznesu. Generalne Wykonawstwo oraz Zaprojektuj i Wybuduj – w całej Polsce.",
+    "profil_h2": "Generalny Wykonawca obiektów kubaturowych dla biznesu",
+    "profil_lead": "Od 2005 roku realizujemy w całej Polsce obiekty kubaturowe dla biznesu – w formule Generalnego Wykonawstwa oraz Zaprojektuj i Wybuduj, od koncepcji i Value Engineering po pozwolenie na użytkowanie. Jeden zespół prowadzi cały proces i zdejmuje z Inwestora ciężar formalno-budowlany.",
+    "struktura_h2": "Zarząd i 13 wyspecjalizowanych działów",
+    "struktura_lead": "Pełne kompetencje Generalnego Wykonawcy w jednej organizacji: od pozyskania i wyceny inwestycji, przez przygotowanie produkcji i realizację, po obsługę gwarancyjną.",
+    "zespol_lead": "Każdy Inwestor ma przypisanego opiekuna handlowego właściwego dla lokalizacji inwestycji – jeden kontakt od pierwszego zapytania do podpisania umowy.",
+    "technologie_h2": "Oprogramowanie, sprzęt i technologie",
+    "realizacje_h2": "Portfolio referencyjne – 54 realizacji",
+    "realizacje_lead": "Realizacje MBT pogrupowane według sektorów. Oznaczenie „W realizacji” dotyczy inwestycji w toku.",
+    "cta_h2": "Planujesz inwestycję? Zbudujemy ją bez komplikacji.",
+    "cta_pdf": "Pobierz Kartę Wykonawcy (PDF)",
+    "cta_kontakt": "Zapytaj o ofertę"
+  },
+  "realizacje": [
+    {
+      "nr": 1,
+      "slug": "raben-logistics-gniewomierz-k-legnicy",
+      "sektor": "logistyka",
+      "nazwa": "Raben Logistics Gniewomierz (k. Legnicy)",
+      "typ": "Terminal logistyczno-dystrybucyjny typu cross-dock",
+      "lokalizacja": "Gniewomierz k. Legnicy (woj. dolnośląskie)",
+      "wojewodztwo": "dolnośląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Regionalny terminal przeładunkowy cross-dock dedykowany szybkiej obsłudze potoków drobnicowych i paletowych. Bezsłupowa hala przeładunkowa z gęstą siatką doków załadunkowych (rampy hydrauliczne, fartuchy uszczelniające po obu stronach terminala), dwukondygnacyjna część administracyjno-biurowa i socjalna dla dyspozytorów i kierowców, posadzka bezspoinowa o podwyższonej odporności dynamicznej, rozległe place manewrowe dla zestawów TIR (nawierzchnie betonowe i asfaltowe), oświetlenie LED.",
+      "kpi": [
+        "cross-dock",
+        "hala bezsłupowa"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 2,
+      "slug": "inpost-legnica",
+      "sektor": "logistyka",
+      "nazwa": "InPost Legnica",
+      "typ": "Centrum magazynowo-logistyczne z zapleczem biurowym",
+      "lokalizacja": "Legnica (woj. dolnośląskie)",
+      "wojewodztwo": "dolnośląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia magazynowo-logistyczna: 5 332 m², reprezentacyjna część biurowo-socjalna: 968 m², układ komunikacyjny i place manewrowe TIR: ok. 18 000 m². Konstrukcja mieszana żelbetowo-stalowa, strefy doków przeładunkowych, wartownia, automatyczne bramy wjazdowe, pompownia ze zbiornikiem PPOŻ.",
+      "kpi": [
+        "5 332 m² magazyn",
+        "968 m² biura",
+        "ok. 18 000 m² placów"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 3,
+      "slug": "vesuvius-skawina",
+      "sektor": "logistyka",
+      "nazwa": "Vesuvius Skawina",
+      "typ": "Automatyczny magazyn wysokiego składowania wyrobów gotowych i surowców (CWH)",
+      "lokalizacja": "Skawina (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Zaprojektuj i Wybuduj",
+      "parametry": "Powierzchnia zabudowy: ok. 6 700 m², wysokość magazynu: do 20 m. Nowoczesny magazyn automatyczny zintegrowany z częścią biurowo-socjalną, posadzka o wysokiej precyzji płaskości pod pracę automatycznych układnic magazynowych.",
+      "kpi": [
+        "ok. 6 700 m²",
+        "wys. do 20 m"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 4,
+      "slug": "koimex-bts-development-park-ploty-zielona-gora",
+      "sektor": "logistyka",
+      "nazwa": "Koimex / BTS Development Park Płoty (Zielona Góra)",
+      "typ": "Park przemysłowo-logistyczny",
+      "lokalizacja": "Płoty k. Zielonej Góry (woj. lubuskie)",
+      "wojewodztwo": "lubuskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia całkowita kompleksu: 10 000 m², wysokość robocza: 7 m, elastyczny podział modułowy na 4 niezależne moduły operacyjne (od 850 m² do 3 330 m²). Konstrukcja żelbetowo-stalowa (słupy prefabrykowane, stalowe dźwigary dachowe), energooszczędna obudowa z płyt warstwowych PIR, strefy doków i place manewrowe.",
+      "kpi": [
+        "10 000 m²",
+        "4 moduły",
+        "wys. robocza 7 m"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 5,
+      "slug": "warmet-turzyn",
+      "sektor": "logistyka",
+      "nazwa": "Warmet Turzyn",
+      "typ": "Centrum logistyczno-dystrybucyjne hurtowni napojów i alkoholi",
+      "lokalizacja": "Turzyn (woj. mazowieckie)",
+      "wojewodztwo": "mazowieckie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Strefa wysokiego składowania, doki przeładunkowe dla transportu ciężkiego, strefa kompletacji towarów, zaplecze biurowe i socjalne. Konstrukcja stalowo-żelbetowa, posadzka bezspoinowa o wysokiej nośności i odporności na ścieranie.",
+      "kpi": [
+        "wysokie składowanie"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 6,
+      "slug": "euro-trade-modlnica",
+      "sektor": "logistyka",
+      "nazwa": "Euro-Trade Modlnica",
+      "typ": "Centrum magazynowo-handlowe z zapleczem biurowym",
+      "lokalizacja": "Modlnica k. Krakowa (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa: 6 650 m² (w tym hala magazynowa, biura: 550 m², układ drogowy i place: 4 718 m²). Posadzki przemysłowe, strefa kompletacji i rozładunku, zaplecze biurowe o podwyższonym standardzie.",
+      "kpi": [
+        "6 650 m² p.u.",
+        "550 m² biura"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 7,
+      "slug": "venus-krakow-brzegi",
+      "sektor": "logistyka",
+      "nazwa": "Venus Kraków (Brzegi)",
+      "typ": "Kompleks magazynowo-biurowy",
+      "lokalizacja": "Brzegi k. Krakowa (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia terenu inwestycji: ok. 13 300 m², hala magazynowa: 3 200 m², budynek biurowy: 850 m², drogi wewnętrzne, place manewrowe i parkingi. Konstrukcja prefabrykowana żelbetowa i stalowa.",
+      "kpi": [
+        "3 200 m² hala",
+        "850 m² biura",
+        "teren ok. 13 300 m²"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 8,
+      "slug": "cdr-zory",
+      "sektor": "logistyka",
+      "nazwa": "CDR Żory",
+      "typ": "Hala przemysłowo-magazynowa z zapleczem administracyjnym",
+      "lokalizacja": "Żory (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Hala składowania z dokami rozładunkowymi, dwukondygnacyjna część socjalno-biurowa, posadzka bezspoinowa o wysokiej nośności, płyty warstwowe PIR, zbrojone place manewrowe i retencja wód deszczowych.",
+      "kpi": [],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 9,
+      "slug": "eurostyl-chelmek",
+      "sektor": "logistyka",
+      "nazwa": "Eurostyl Chełmek",
+      "typ": "Hala magazynowa z zapleczem biurowo-socjalnym",
+      "lokalizacja": "Chełmek (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Hala magazynowa z bramami rozładunkowymi, strefa kompletacji towarów, część socjalno-biurowa, zbrojony plac manewrowy pod pojazdy ciężarowe, sieci zewnętrzne i zbiornik retencyjny.",
+      "kpi": [],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 10,
+      "slug": "epco-bytom",
+      "sektor": "logistyka",
+      "nazwa": "EPCO Bytom",
+      "typ": "Rozbudowa hali magazynowej z zapleczem biurowo-socjalnym",
+      "lokalizacja": "Bytom (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Rozbudowa istniejącej hali magazynowej o dodatkową przestrzeń składowania, modernizacja części socjalno-biurowej, powiększenie układu drogowego i placów manewrowych.",
+      "kpi": [
+        "rozbudowa"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 11,
+      "slug": "stokado-krakow",
+      "sektor": "self-storage",
+      "nazwa": "Stokado Kraków",
+      "typ": "5-kondygnacyjny budynek self-storage",
+      "lokalizacja": "Kraków (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Kubatura: 17 121 m³, powierzchnia zabudowy: 911 m², 5 kondygnacji naziemnych. Konstrukcja żelbetowa monolityczna, zaawansowane systemy kontroli dostępu, windy przemysłowe, strefa rozładunku drive-in.",
+      "kpi": [
+        "17 121 m³",
+        "5 kondygnacji"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 12,
+      "slug": "stokado-warszawa-targowek",
+      "sektor": "self-storage",
+      "nazwa": "Stokado Warszawa Targówek",
+      "typ": "6-kondygnacyjny budynek self-storage",
+      "lokalizacja": "Warszawa Targówek (woj. mazowieckie)",
+      "wojewodztwo": "mazowieckie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Całkowita powierzchnia budynku: 8 269 m², kubatura: 24 458 m³, 6 kondygnacji naziemnych. Konstrukcja betonowa monolityczna posadowiona na stopach fundamentowych, elewacja z płyt warstwowych, poszycie dachu z membrany EPDM na warstwach termoizolacyjnych, wielkogabarytowe windy towarowo-osobowe.",
+      "kpi": [
+        "8 269 m²",
+        "24 458 m³",
+        "6 kondygnacji"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 13,
+      "slug": "stokado-warszawa-bemowo",
+      "sektor": "self-storage",
+      "nazwa": "Stokado Warszawa Bemowo",
+      "typ": "4-kondygnacyjny budynek self-storage z garażami",
+      "lokalizacja": "Warszawa Bemowo (woj. mazowieckie)",
+      "wojewodztwo": "mazowieckie",
+      "formula": "Buduj / Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa: 9 142 m² (powierzchnia całkowita: 6 818 m²). 4 kondygnacje nadziemne z boksami magazynowymi, garaże w przyziemiu oraz podpiwniczenie, windy towarowo-osobowe dużej nośności, system kontroli dostępu.",
+      "kpi": [
+        "4 kondygnacje + garaże"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": "DO WERYFIKACJI: p.u. 9 142 m² większa niż pow. całkowita 6 818 m²",
+      "parametry_publiczne": "4 kondygnacje nadziemne z boksami magazynowymi, garaże w przyziemiu oraz podpiwniczenie, windy towarowo-osobowe dużej nośności, system kontroli dostępu."
+    },
+    {
+      "nr": 14,
+      "slug": "stokado-gdansk",
+      "sektor": "self-storage",
+      "nazwa": "Stokado Gdańsk",
+      "typ": "Wielokondygnacyjny obiekt self-storage",
+      "lokalizacja": "Gdańsk (woj. pomorskie)",
+      "wojewodztwo": "pomorskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Wielokondygnacyjny budynek komórek lokatorskich self-storage o podwyższonym standardzie bezpieczeństwa. Indywidualne boksy magazynowe, strefa biura obsługi klienta (BOK), windy towarowo-osobowe, systemy kontroli dostępu 24/7, monitoring CCTV i zadaszona strefa rozładunkowa.",
+      "kpi": [],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 15,
+      "slug": "less-mess-storage-lms-warszawa",
+      "sektor": "self-storage",
+      "nazwa": "Less Mess Storage (LMS) Warszawa",
+      "typ": "5-kondygnacyjny budynek self-storage z geotermią",
+      "lokalizacja": "Warszawa (woj. mazowieckie – rejon lotniska)",
+      "wojewodztwo": "mazowieckie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "5-kondygnacyjny obiekt z boksami magazynowymi. Innowacyjne instalacje HVAC: ogrzewanie i chłodzenie oparte na rewersyjnych pompach ciepła zintegrowanych z odwiertami geotermalnymi, wewnętrzny układ komunikacyjny, windy towarowo-osobowe, monitoring i kontrola dostępu.",
+      "kpi": [
+        "5 kondygnacji",
+        "geotermia"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 16,
+      "slug": "less-mess-storage-lms-gdansk",
+      "sektor": "self-storage",
+      "nazwa": "Less Mess Storage (LMS) Gdańsk",
+      "typ": "Wielokondygnacyjny obiekt self-storage",
+      "lokalizacja": "Gdańsk (woj. pomorskie – ul. Marynarki Polskiej)",
+      "wojewodztwo": "pomorskie",
+      "formula": "Generalne Wykonawstwo („pod klucz”)",
+      "parametry": "Nowoczesny, pnący się w górę wielokondygnacyjny magazyn komórek lokatorskich. Monolityczna konstrukcja żelbetowa słupowo-płytowa, sztywne trzony klatek schodowych i szachtów windowych, wielkogabarytowe windy towarowo-osobowe, instalacje HVAC oparte na pompach ciepła, zadaszone strefy rozładunku, podziemna retencja wód opadowych.",
+      "kpi": [],
+      "status": "w_realizacji",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 17,
+      "slug": "artus-aircraft-gliwice",
+      "sektor": "produkcja",
+      "nazwa": "Artus Aircraft Gliwice",
+      "typ": "Zakład produkcyjny ultralekkich samolotów z hangarem lotniczym",
+      "lokalizacja": "Gliwice (woj. śląskie – sąsiedztwo lotniska)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo („pod klucz”)",
+      "parametry": "Hala produkcyjno-hangarowa: ok. 2 100 m² wraz z budynkiem biurowo-socjalnym dla kadry inżynieryjnej. Trwała konstrukcja nośna z prefabrykatów żelbetowych przygotowana pod montaż statków powietrznych, płyta przedhangarowa, strefy manewrowe i infrastruktura techniczna.",
+      "kpi": [
+        "ok. 2 100 m² hali",
+        "hangar"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 18,
+      "slug": "huber-suhner-polatis-pisary-zabierzow",
+      "sektor": "produkcja",
+      "nazwa": "HUBER+SUHNER Polatis Pisary / Zabierzów",
+      "typ": "Zakład produkcyjno-magazynowy komponentów światłowodowych (Etap I i II)",
+      "lokalizacja": "Pisary / Zabierzów k. Krakowa (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Hala produkcyjna: 3 002 m² (kubatura: 19 300 m³, wysokość: 7,5 m), dwukondygnacyjny budynek biurowy: 600 m² z zapleczem laboratoryjnym. Posadowienie na płycie fundamentowej z betonu wodoszczelnego W8, własne zbiorniki PPOŻ i retencyjne, lokalna oczyszczalnia ścieków, parkingi i place manewrowe.",
+      "kpi": [
+        "3 002 m² hali",
+        "19 300 m³",
+        "600 m² biura"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 19,
+      "slug": "huber-suhner-modlniczka",
+      "sektor": "produkcja",
+      "nazwa": "HUBER+SUHNER Modlniczka",
+      "typ": "Zakład produkcyjno-magazynowy ze strefami clean-room",
+      "lokalizacja": "Modlniczka k. Krakowa (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Precyzyjne strefy produkcyjne w standardzie clean-room (kontrolowane zapylenie i wilgotność), magazyn wysokiego składowania, ergonomiczne zaplecze biurowe. Prefabrykowany szkielet żelbetowy, dach stalowy, zaawansowane systemy wentylacji i filtracji HVAC.",
+      "kpi": [
+        "clean-room"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 20,
+      "slug": "ponar-silesia-laziska-gorne",
+      "sektor": "produkcja",
+      "nazwa": "Ponar Silesia Łaziska Górne",
+      "typ": "Hala produkcyjno-montażowa układów hydrauliki siłowej pod suwnice",
+      "lokalizacja": "Łaziska Górne (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Specjalistyczna hala pod prefabrykację, montaż i testowanie wielkogabarytowych układów hydrauliki siłowej. Obiekt zaprojektowany i wybudowany pod montaż ciężkich natorowych suwnic przemysłowych o wysokim udźwigu, strefa prób ciśnieniowych, posadzki o podwyższonej nośności punktowej, część biurowo-socjalna.",
+      "kpi": [
+        "suwnice natorowe"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 21,
+      "slug": "fiolka-raciborz",
+      "sektor": "produkcja",
+      "nazwa": "Fiołka Racibórz",
+      "typ": "Hala montażowo-magazynowa pod dwie suwnice",
+      "lokalizacja": "Racibórz (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia produkcyjno-magazynowa: 3 634 m², część socjalno-biurowa: 251 m². Hala zaprojektowana i zrealizowana pod montaż dwóch suwnic o łącznym udźwigu 20 ton.",
+      "kpi": [
+        "3 634 m²",
+        "2 suwnice"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 22,
+      "slug": "herz-wieliczka",
+      "sektor": "produkcja",
+      "nazwa": "HERZ Wieliczka",
+      "typ": "Rozbudowa zakładu produkcyjnego armatury sanitarnej i grzewczej",
+      "lokalizacja": "Wieliczka (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Zaprojektuj i Wybuduj",
+      "parametry": "Hala magazynowa: 4 500 m², mała hala produkcyjna: 500 m², układ komunikacyjny i place: 2 500 m². Konstrukcja w całości stalowa, przebudowa węzła cieplnego, podziemne zbiorniki retencyjne, żelbetowy mur oporowy o wysokości 4 m i długości 150 mb.",
+      "kpi": [
+        "4 500 m² hala",
+        "mur oporowy 150 mb"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 23,
+      "slug": "euronova-kokotow",
+      "sektor": "produkcja",
+      "nazwa": "Euronova Kokotów",
+      "typ": "Kompleks produkcyjno-biurowy mebli biurowych",
+      "lokalizacja": "Kokotów (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa: ok. 6 300 m². Dwukondygnacyjna hala produkcyjno-magazynowa oraz 3-kondygnacyjny budynek biurowy. Konstrukcja z prefabrykatów żelbetowych i sprężonych, stropy z płyt kanałowych, elewacja z wełny mineralnej, sieci i zagospodarowanie terenu.",
+      "kpi": [
+        "ok. 6 300 m² p.u."
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 24,
+      "slug": "wessper-rzezawa",
+      "sektor": "produkcja",
+      "nazwa": "Wessper Rzezawa",
+      "typ": "Zakład produkcyjno-magazynowy systemów filtracji",
+      "lokalizacja": "Rzezawa (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa: 1 227 m², wysokość zabudowy: 11,63 m. Hala magazynowo-produkcyjna z zapleczem biurowo-socjalnym zoptymalizowana pod linie konfekcjonowania i przetwórstwa tworzyw sztucznych. Strefa składowania wysokiego, doki rozładunkowe, posadzka bezspoinowa, retencja wód opadowych, łącznik z istniejącym budynkiem.",
+      "kpi": [
+        "1 227 m² p.u.",
+        "wys. 11,63 m"
+      ],
+      "status": "w_realizacji",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 25,
+      "slug": "ecowipes-nowy-dwor-mazowiecki",
+      "sektor": "produkcja",
+      "nazwa": "EcoWipes Nowy Dwór Mazowiecki",
+      "typ": "Hala produkcyjno-magazynowa wyrobów włókninowych",
+      "lokalizacja": "Nowy Dwór Mazowiecki (woj. mazowieckie)",
+      "wojewodztwo": "mazowieckie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Hala produkcyjno-magazynowa przystosowana do pracy w reżimie technologicznym czystości i wysokich norm higienicznych, posadzki przemysłowe bezpyłowe, zaplecze techniczne, strefy dostaw i magazynowania surowców.",
+      "kpi": [
+        "reżim czystości"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 26,
+      "slug": "bater-gliwice",
+      "sektor": "produkcja",
+      "nazwa": "Bater Gliwice",
+      "typ": "Dwukondygnacyjny zakład produkcji baterii przemysłowych",
+      "lokalizacja": "Gliwice (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Kubatura całkowita: 28 342 m³. Dwukondygnacyjny budynek z wydzieloną strefą magazynową, antresolą magazynową nad częścią produkcyjną, reprezentacyjną szklaną fasadą biurowca, posadowieniem mieszanym oraz kompletnym uzbrojeniem terenu.",
+      "kpi": [
+        "28 342 m³"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 27,
+      "slug": "att-kokotow",
+      "sektor": "produkcja",
+      "nazwa": "ATT Kokotów",
+      "typ": "Hala produkcyjna z budynkiem biurowo-socjalnym",
+      "lokalizacja": "Kokotów (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia hali produkcyjnej: ok. 6 500 m², trzykondygnacyjny budynek biurowo-socjalny: 1 500 m², place manewrowe, drogi dojazdowe, uzbrojenie podziemne i zagospodarowanie terenu.",
+      "kpi": [
+        "ok. 6 500 m² hali",
+        "1 500 m² biura"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 28,
+      "slug": "sutco-polska-katowice",
+      "sektor": "produkcja",
+      "nazwa": "Sutco Polska Katowice",
+      "typ": "Hala produkcyjno-magazynowa automatyki i recyklingu (H5)",
+      "lokalizacja": "Katowice (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia hali produkcyjno-magazynowej: 3 800 m². Konstrukcja przystosowana pod montaż ciężkich linii sortowniczych i recyklingowych, bramy przemysłowe, strefy składowania, zaplecze techniczne.",
+      "kpi": [
+        "3 800 m²"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 29,
+      "slug": "eurosleeve-zabrze",
+      "sektor": "produkcja",
+      "nazwa": "Eurosleeve Zabrze",
+      "typ": "Hala produkcyjno-magazynowa wyrobów opakowaniowych",
+      "lokalizacja": "Zabrze (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia hali: 2 333 m², część socjalno-biurowa: 450 m². Słupy żelbetowe prefabrykowane, stalowa konstrukcja dachu z izolacją PIR i membraną PVC, posadzka bezspoinowa.",
+      "kpi": [
+        "2 333 m² hali",
+        "450 m² biura"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 30,
+      "slug": "pumar-siemianowice-slaskie",
+      "sektor": "produkcja",
+      "nazwa": "PUMAR Siemianowice Śląskie",
+      "typ": "Hala magazynowo-produkcyjna z biurowcem",
+      "lokalizacja": "Siemianowice Śląskie (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia hali magazynowo-produkcyjnej: 2 700 m², powierzchnia części biurowej: 300 m². Stalowa konstrukcja nośna na stopach fundamentowych, place manewrowe, parkingi i pełne uzbrojenie terenu.",
+      "kpi": [
+        "2 700 m² hali",
+        "300 m² biura"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 31,
+      "slug": "kbh-akord-siemianowice-slaskie",
+      "sektor": "produkcja",
+      "nazwa": "KBH Akord Siemianowice Śląskie",
+      "typ": "Hala produkcyjno-magazynowa z zapleczem",
+      "lokalizacja": "Siemianowice Śląskie (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Ustrój mieszany żelbetowo-stalowy, energooszczędna obudowa z płyt warstwowych PIR, dach z membraną PVC, zintegrowane zaplecze administracyjno-biurowe, place manewrowe dla samochodów dostawczych i retencja wód.",
+      "kpi": [],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 32,
+      "slug": "fronton-krakow",
+      "sektor": "produkcja",
+      "nazwa": "Fronton Kraków",
+      "typ": "Hala produkcyjno-magazynowa z częścią biurową",
+      "lokalizacja": "Kraków (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Buduj / Generalne Wykonawstwo",
+      "parametry": "Powierzchnia hali: 1 469 m² (kubatura: 10 244 m³), część biurowa: 271 m², instalacje wewnętrzne, sieci zewnętrzne, drogi wewnętrzne i place manewrowe.",
+      "kpi": [
+        "1 469 m² hali",
+        "10 244 m³"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 33,
+      "slug": "invest-tdj-estate-katowice-fabryka-park",
+      "sektor": "komercyjne",
+      "nazwa": "Invest TDJ Estate Katowice (Fabryka Park)",
+      "typ": "Kompleks handlowo-usługowo-medyczny z klubem fitness",
+      "lokalizacja": "Katowice (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa: 2 490 m², kubatura brutto: 17 232 m³, powierzchnia wewnętrzna: 3 192 m². Konstrukcja szkieletowa z prefabrykowanych słupów i belek żelbetowych, stropy ze sprężonych płyt kanałowych HC, parter wykończony płytami dibond, piętra z unikatową fasadą z siatki cięto-ciągnionej, pylon reklamowy, parkingi.",
+      "kpi": [
+        "2 490 m² p.u.",
+        "17 232 m³"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 34,
+      "slug": "scallier-zabrze",
+      "sektor": "komercyjne",
+      "nazwa": "Scallier Zabrze",
+      "typ": "Park handlowy (dwa budynki komercyjne)",
+      "lokalizacja": "Zabrze (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa budynków: 2 303 m² (Budynek A: 1 359 m², Budynek B: 944 m²), zagospodarowanie terenu: 9 263 m². Dwa wolnostojące budynki handlowo-usługowe, parkingi dla klientów, strefy dostaw, podziemny zbiornik retencyjny i zbiornik wody pożarowej.",
+      "kpi": [
+        "2 303 m² p.u.",
+        "teren 9 263 m²"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 35,
+      "slug": "byd-dabrowscy-bytom",
+      "sektor": "komercyjne",
+      "nazwa": "BYD Dąbrowscy Bytom",
+      "typ": "Autoryzowany salon dealerski i serwis motoryzacyjny",
+      "lokalizacja": "Bytom (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Reprezentacyjny przeszklony salon ekspozycyjny (showroom) zgodny ze światowym standardem marki, specjalistyczna hala warsztatowo-serwisowa przystosowana do diagnostyki napędów elektrycznych (EV) i hybrydowych, magazyn części, strefa doradców, infrastruktura stacji ładowania pojazdów.",
+      "kpi": [
+        "showroom",
+        "serwis EV"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 36,
+      "slug": "mesko-s-a-skarzysko-kamienna-polska-grupa-zbrojeniowa",
+      "sektor": "czynne-zaklady",
+      "nazwa": "MESKO S.A. Skarżysko-Kamienna (Polska Grupa Zbrojeniowa)",
+      "typ": "Przebudowa i nadbudowa wiaty na budynek produkcyjny przemysłu obronnego",
+      "lokalizacja": "Skarżysko-Kamienna (woj. świętokrzyskie – Zakład Z-2)",
+      "wojewodztwo": "świętokrzyskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Częściowe rozbiórki, wzmocnienie fundamentów, nadbudowa i zmiana sposobu użytkowania wiaty na budynek produkcyjno-magazynowy z częścią socjalno-administracyjną o podwyższonym rygorze bezpieczeństwa technicznego i pożarowego. Posadzki beziskrowe, instalacje HVAC, automatyka pożarowa.",
+      "kpi": [
+        "przemysł obronny",
+        "posadzki beziskrowe"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 37,
+      "slug": "brembo-poland-dabrowa-gornicza-eco",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Brembo Poland Dąbrowa Górnicza (ECO)",
+      "typ": "Rozbudowa strefy ekologicznej w fabryce układów hamulcowych",
+      "lokalizacja": "Dąbrowa Górnicza (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo w warunkach czynnej fabryki",
+      "parametry": "Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne.",
+      "kpi": [
+        "2 101 m²",
+        "czynna fabryka"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 38,
+      "slug": "brembo-poland-dabrowa-gornicza-cnp1",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Brembo Poland Dąbrowa Górnicza (CNP1)",
+      "typ": "System śluz technologicznych i modernizacja wydziału obróbki",
+      "lokalizacja": "Dąbrowa Górnicza (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo w systemie nieprzerwanej pracy fabryki",
+      "parametry": "Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego.",
+      "kpi": [
+        "czynna fabryka"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 39,
+      "slug": "brembo-poland-dabrowa-gornicza-tucznawa",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Brembo Poland Dąbrowa Górnicza (Tucznawa)",
+      "typ": "Prace infrastrukturalne i fundamenty technologiczne w fabryce automotive",
+      "lokalizacja": "Dąbrowa Górnicza – Tucznawa / KSSE (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo na czynnym zakładzie produkcyjnym",
+      "parametry": "Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.",
+      "kpi": [
+        "czynna fabryka"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 40,
+      "slug": "tyskie-browary-ksiazece-tychy-strefa-dokow-przeladunkowych-tir",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
+      "typ": "Strefa doków przeładunkowych TIR",
+      "lokalizacja": "Tychy (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo na czynnym zakładzie",
+      "parametry": "Budowa i modernizacja strefy doków przeładunkowych dla samochodów ciężarowych. Rampy elektrohydrauliczne, fartuchy uszczelniające, automatyczne bramy dokowe, zbrojone nawierzchnie z betonu drogowego o wysokiej nośności pod intensywny ruch TIR.",
+      "kpi": [
+        "czynny zakład"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 41,
+      "slug": "lech-browary-wielkopolskie-poznan-kompania-piwowarska",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Lech Browary Wielkopolskie Poznań (Kompania Piwowarska)",
+      "typ": "Specjalistyczna hala magazynowa aromatów",
+      "lokalizacja": "Poznań (woj. wielkopolskie)",
+      "wojewodztwo": "wielkopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia hali magazynowej: 613 m², układ drogowy: 722 m². Magazyn przystosowany do rygorystycznych warunków temperaturowych składowania aromatów piwnych, posadzki chemoodporne, instalacje chłodnicze i wentylacyjne.",
+      "kpi": [
+        "613 m² hali",
+        "722 m² dróg"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 42,
+      "slug": "tyskie-browary-ksiazece-tychy-wielkogabarytowa-wiata-magazynowa",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
+      "typ": "Wielkogabarytowa wiata magazynowa",
+      "lokalizacja": "Tychy (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Stalowa konstrukcja wiaty o podwyższonej odporności na korozję (powłoki C4/C5), płyty z betonu drogowego ze spadkami pod składowanie palet z butelkami i kegami.",
+      "kpi": [
+        "powłoki C4/C5"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 43,
+      "slug": "tyskie-browary-ksiazece-tychy-zespol-wiat-magazynowych-z-placami",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
+      "typ": "Zespół wiat magazynowych z placami składowymi",
+      "lokalizacja": "Tychy (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Zadaszone przestrzenie buforowe magazynowania surowców i opakowań, zbrojone płyty betonowe z odwodnieniem liniowym, odporne na intensywny ruch wózków widłowych.",
+      "kpi": [],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 44,
+      "slug": "tyskie-browary-ksiazece-tychy-zakladowa-myjnia-pojazdow-ciezarowych",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
+      "typ": "Zakładowa myjnia pojazdów ciężarowych z oczyszczalnią ścieków",
+      "lokalizacja": "Tychy (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Specjalistyczna myjnia dla floty ciężarowej i wózków widłowych. Zamknięty obieg wody myjącej, separatory ropopochodne, osadniki zawiesin, posadzki żywiczne chemoodporne ze stali nierdzewnej w strefie cokołowej.",
+      "kpi": [
+        "zamknięty obieg wody"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 45,
+      "slug": "tyskie-browary-ksiazece-tychy-stanowisko-zrzutu-i-wylewki-piwa",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
+      "typ": "Stanowisko zrzutu i wylewki piwa z instalacją kwasoodporną",
+      "lokalizacja": "Tychy (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Strefa zrzutu i neutralizacji piwa pozaklasowego. Posadzka kwasoodporna, rurociągi ze stali kwasoodpornej AISI 316L, neutralizacja ścieków przemysłowych.",
+      "kpi": [
+        "AISI 316L"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 46,
+      "slug": "browar-raciborz",
+      "sektor": "czynne-zaklady",
+      "nazwa": "Browar Racibórz",
+      "typ": "Rozbudowa zabytkowego browaru o halę magazynowo-produkcyjną",
+      "lokalizacja": "Racibórz (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Zaprojektuj i Wybuduj",
+      "parametry": "Powierzchnia posadzki: ok. 400 m², konstrukcja stalowa posadowiona bezpośrednio z lokalną wymianą gruntu, prace prowadzone w ścisłej strefie ochrony konserwatorskiej.",
+      "kpi": [
+        "ok. 400 m²",
+        "strefa konserwatorska"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 47,
+      "slug": "canpack-brzesko-bss-lab",
+      "sektor": "rd-szkolenia",
+      "nazwa": "CANPACK Brzesko (BSS LAB)",
+      "typ": "Centrum laboratoryjno-badawcze R&D",
+      "lokalizacja": "Brzesko (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa laboratoriów i części socjalnej: ok. 420 m². Przebudowa i adaptacja dawnej hali magazynowej: antresola stalowa, specjalistyczny fundament pod prasę testową, systemy HVAC, instalacje elektryczne i termomodernizacja obiektu.",
+      "kpi": [
+        "ok. 420 m²",
+        "R&D"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 48,
+      "slug": "canpack-brzesko-excellence-centre",
+      "sektor": "rd-szkolenia",
+      "nazwa": "CANPACK Brzesko (Excellence Centre)",
+      "typ": "Centrum szkoleniowo-biurowo-warsztatowe",
+      "lokalizacja": "Brzesko (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Powierzchnia użytkowa: ok. 2 865 m². Kompleksowa przebudowa i adaptacja obiektu magazynowego na sale szkoleniowe, biura, warsztaty i zaplecze socjalne. Konstrukcja stalowa antresoli, nowe posadzki, kompleksowe instalacje sanitarne, HVAC i elektryczne, wymiana stolarki i termomodernizacja.",
+      "kpi": [
+        "ok. 2 865 m²"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 49,
+      "slug": "remondis-tarnowskie-gory",
+      "sektor": "rd-szkolenia",
+      "nazwa": "Remondis Tarnowskie Góry",
+      "typ": "Baza techniczno-operacyjna z halą warsztatowo-garażową i myjnią",
+      "lokalizacja": "Tarnowskie Góry (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Hala naprawczo-warsztatowa z kanałami rewizyjnymi, myjnia samochodowa dla floty komunalnej, magazyn części, zaplecze biurowo-socjalne, zbrojone place postojowe i manewrowe z separatorami węglowodorów.",
+      "kpi": [],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 50,
+      "slug": "uniwersytet-ekonomiczny-we-wroclawiu-centrum-sportow-rakietowych",
+      "sektor": "publiczne-mieszkaniowe",
+      "nazwa": "Uniwersytet Ekonomiczny we Wrocławiu (Centrum Sportów Rakietowych)",
+      "typ": "Wielofunkcyjny obiekt sportowy z garażem podziemnym",
+      "lokalizacja": "Wrocław (woj. dolnośląskie – kampus uniwersytecki)",
+      "wojewodztwo": "dolnośląskie",
+      "formula": "Zaprojektuj i Wybuduj (pod klucz)",
+      "parametry": "Powierzchnia hali sportowej: ponad 1 170 m². 2 turniejowe korty do padla, strefa badmintona (5 boisk), strefa tenisa stołowego (8 stołów), 4-rzędowa trybuna teleskopowa. Przeszklony łącznik z gmachem SWFiS, kondygnacja podziemna z garażem na 41 stanowisk i podgrzewaną rampą, dach z dźwigarów z drewna klejonego, instalacja fotowoltaiczna OZE, promienniki wodne i system BMS.",
+      "kpi": [
+        "ponad 1 170 m² hali",
+        "garaż 41 miejsc",
+        "PV + BMS"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 51,
+      "slug": "invest-tdj-estate-zabrze-zielona-dolina-4",
+      "sektor": "publiczne-mieszkaniowe",
+      "nazwa": "Invest TDJ Estate Zabrze (Zielona Dolina 4)",
+      "typ": "Osiedle mieszkaniowe (5 budynków wielorodzinnych + 20 domów)",
+      "lokalizacja": "Zabrze Mikulczyce (woj. śląskie)",
+      "wojewodztwo": "śląskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Kompleksowa budowa osiedla: 5 budynków mieszkalnych wielorodzinnych z podziemnymi halami garażowymi oraz 20 domów jednorodzinnych w zabudowie bliźniaczej. Pełna infrastruktura inżynieryjna (wod-kan, deszczowa ze zbiornikami retencyjnymi, gaz, prąd), drogi osiedlowe, chodniki, miejsca postojowe i tereny zielone.",
+      "kpi": [
+        "5 budynków wielorodzinnych",
+        "20 domów"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 52,
+      "slug": "mbt-krakow-siedziba-wlasna",
+      "sektor": "publiczne-mieszkaniowe",
+      "nazwa": "MBT Kraków (siedziba własna)",
+      "typ": "Adaptacja i aranżacja reprezentacyjnej siedziby biurowej",
+      "lokalizacja": "Kraków (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo",
+      "parametry": "Nowoczesne przestrzenie biurowe typu open space, gabinety zarządu, sale konferencyjne z zaawansowanymi systemami multimedialnymi, akustyczne przeszklenia w ramach loftowych, instalacje wentylacji i klimatyzacji, industrialny wystrój.",
+      "kpi": [],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 53,
+      "slug": "przemyslowa-farma-fotowoltaiczna-oze",
+      "sektor": "oze-infrastruktura",
+      "nazwa": "Przemysłowa farma fotowoltaiczna OZE",
+      "typ": "Farma PV ze stacją transformatorową i magazynem energii",
+      "lokalizacja": "Południowa Polska",
+      "wojewodztwo": null,
+      "formula": "EPC (Engineering, Procurement, Construction)",
+      "parametry": "Gruntowa instalacja fotowoltaiczna na stalowych konstrukcjach wbijanych w grunt z modułami monokrystalicznymi wysokiej sprawności, inwertery łańcuchowe, kontenerowa stacja transformatorowa SN/nn, magazyn energii, linie kablowe ziemne, ogrodzenie perymetryczne z systemem CCTV z analizą obrazu.",
+      "kpi": [
+        "EPC",
+        "magazyn energii"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    },
+    {
+      "nr": 54,
+      "slug": "fronton-krakow-podgorze",
+      "sektor": "oze-infrastruktura",
+      "nazwa": "Fronton Kraków Podgórze",
+      "typ": "Podziemny zbiornik retencyjny i rów odparowująco-odwadniający",
+      "lokalizacja": "Kraków Podgórze (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
+      "formula": "Generalne Wykonawstwo infrastruktury inżynieryjnej",
+      "parametry": "Budowa podziemnego żelbetowego zbiornika retencyjnego na wody opadowe o dużej pojemności wraz z przepompownią oraz rów odparowująco-odwadniający z układem rozsączającym.",
+      "kpi": [
+        "retencja"
+      ],
+      "status": "zrealizowana",
+      "do_weryfikacji": null,
+      "parametry_publiczne": null
+    }
+  ],
+  "do_uzupelnienia": [
+    "KRS, NIP, REGON",
+    "przychody netto 2023–2025",
+    "suma gwarancyjna OC",
+    "limity gwarancji kontraktowych",
+    "liczba osób w kadrze technicznej + specjalności uprawnień",
+    "kierownicy 9 działów bez nazwiska",
+    "regiony opiekunów handlowych",
+    "zdjęcia 10 osób (zgody na publikację wizerunku)",
+    "certyfikaty ISO (jeśli są)",
+    "wskaźniki wypadkowości",
+    "wykaz sprzętu własnego",
+    "osoba ds. prekwalifikacji",
+    "weryfikacja metraży Stokado Bemowo",
+    "potwierdzenie udźwigu suwnic Fiołka Racibórz",
+    "statusy realizacji (w toku: Wessper Rzezawa, LMS Gdańsk)"
+  ]
+}
