@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118o">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118p">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -175,18 +175,8 @@
     </div>
 </section>
 
-{# ===================== KADRA ===================== #}
-<section class="pot-sec pot-sec--tint" id="kadra" aria-label="{% trans 'KADRA' %}">
-    <div class="container">
-        <h2 class="pot-h3 pot-h3--lg">{% trans 'Kierownicy i project managerowie' %}</h2>
-        <ul class="pot-people">
-            {% for m in p.managers %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
-        </ul>
-    </div>
-</section>
-
 {# ===================== 05 KADRA TECHNICZNA I SPOSÓB REALIZACJI ===================== #}
-<section class="pot-sec" id="realizacja-procesu" aria-labelledby="pot-tech-h">
+<section class="pot-sec pot-sec--tint" id="realizacja-procesu" aria-labelledby="pot-tech-h">
     <div class="container">
         <header class="pot-head">
             <p class="pot-kicker">{% trans 'KADRA TECHNICZNA I SPOSÓB REALIZACJI' %}</p>
@@ -238,7 +228,7 @@
 </section>
 
 {# ===================== 06 TECHNOLOGIE ===================== #}
-<section class="pot-sec pot-sec--tint" id="technologie" aria-labelledby="pot-tools-h">
+<section class="pot-sec" id="technologie" aria-labelledby="pot-tools-h">
     <div class="container">
         <header class="pot-head">
             <p class="pot-kicker">{% trans 'TECHNOLOGIE I ZAPLECZE' %}</p>
@@ -272,7 +262,7 @@
 </section>
 
 {# ===================== 07 REALIZACJE ===================== #}
-<section class="pot-sec" id="realizacje" aria-labelledby="pot-proj-h">
+<section class="pot-sec pot-sec--tint" id="realizacje" aria-labelledby="pot-proj-h">
     <div class="container">
         <header class="pot-head">
             <p class="pot-kicker">{% trans 'REALIZACJE' %}</p>

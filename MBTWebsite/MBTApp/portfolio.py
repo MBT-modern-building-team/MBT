@@ -70,8 +70,6 @@ EXISTING_SLUGS = {
 TREE_TOP = ['tomasz-kalisz', 'jacek-lewandowski']
 TREE_DIRECTORS = ['jakub-walczak', 'amelia-mzyk', 'krzysztof-filipowski', 'katarzyna-knabel', 'marek-latos', 'piotr-burda']
 TREE_REPORTS = {'jakub-walczak': ['bartlomiej-potuczko', 'dariusz-kudelko', 'michal-swoboda']}
-# Pełne karty z opisem i LinkedIn (sekcja „Kierownicy i project managerowie”).
-DETAIL_CARDS = ['katarzyna-knabel', 'piotr-burda', 'dariusz-kudelko', 'bartlomiej-potuczko', 'michal-swoboda']
 
 
 def _clean(value):
@@ -275,7 +273,7 @@ def build_context(lang='pl'):
     directors = pick(TREE_DIRECTORS)
     for m in directors:
         m['reports'] = pick(TREE_REPORTS.get(m['slug'], []))
-    people = {'board': pick(TREE_TOP), 'directors': directors, 'managers': pick(DETAIL_CARDS)}
+    people = {'board': pick(TREE_TOP), 'directors': directors}
 
     # ---------- Kadra techniczna ----------
     tech_rows = [{
@@ -318,7 +316,7 @@ def build_context(lang='pl'):
             'org_note': t(st.get('podleglosc')),
             'depts_left': depts_left, 'depts_right': depts_right, 'dept_count': len(st['dzialy']),
             'site_crew': t(st.get('kadra_budow')),
-            'board': people['board'], 'directors': people['directors'], 'managers': people['managers'],
+            'board': people['board'], 'directors': people['directors'],
             'tech_rows': tech_rows, 'tech_has_count': tech_has_count, 'tech_has_qual': tech_has_qual,
             'formulas': [{'name': t(f['nazwa']), 'desc': t(f['opis'])} for f in d['formuly']],
             'process': [t(s) for s in d['proces']],
