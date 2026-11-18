@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118h">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118j">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -161,17 +161,16 @@
             <span class="pot-bar" aria-hidden="true"></span>
         </header>
 
-        <h2 class="pot-h3 pot-h3--lg">{% trans 'Zarząd i dyrekcja' %}</h2>
-        <ul class="pot-people">
-            {% for m in p.board %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
-        </ul>
-
-        <ul class="pot-org pot-card--mt">
+        <ul class="pot-org">
             <li class="pot-org-root">
-                <div class="pot-org-board">
-                    <strong>{{ p.org_head }}</strong>
-                    {% for m in p.org_head_people %}<span>{{ m.imie_nazwisko }} · {{ m.funkcja }}</span>{% endfor %}
-                </div>
+                <ul class="pot-org-people" aria-label="{{ p.org_head }}">
+                    {% for m in p.board %}
+                    <li class="pot-sq">
+                        <div class="pot-sq-photo">{% if m.photo %}<img src="{{ m.photo }}" alt="{{ m.name }}" width="300" height="300" loading="lazy" decoding="async">{% else %}<div class="pot-ph" role="img" aria-label="{{ m.name }}"><span>{{ m.initials }}</span></div>{% endif %}</div>
+                        <div class="pot-sq-name"><strong>{{ m.name }}</strong><span>{{ m.role }}</span></div>
+                    </li>
+                    {% endfor %}
+                </ul>
                 <ul class="pot-org-cols">
                     <li>
                         <ul class="pot-org-col pot-org-col--l">
