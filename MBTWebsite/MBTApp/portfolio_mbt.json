@@ -481,12 +481,12 @@
     },
     {
       "stanowisko": "Kierownik Robót",
-      "kwalifikacje": null,
+      "kwalifikacje": "Uprawnienia budowlane w odpowiedniej specjalności (w zakresie nadzorowanych robót), wpis na listę członków OIIB",
       "liczba_osob": null
     },
     {
       "stanowisko": "Inżynier Budowy",
-      "kwalifikacje": null,
+      "kwalifikacje": "Wykształcenie wyższe techniczne w zakresie budownictwa, doświadczenie na budowach; nadzór nad realizacją robót, dokumentacją i odbiorami",
       "liczba_osob": null
     },
     {
@@ -496,7 +496,7 @@
     },
     {
       "stanowisko": "Specjalista ds. BHP",
-      "kwalifikacje": null,
+      "kwalifikacje": "Kwalifikacje zgodne z wymaganiami dla służby BHP (rozporządzenie w sprawie służby BHP); plany BIOZ i nadzór BHP na budowach",
       "liczba_osob": null
     }
   ],
