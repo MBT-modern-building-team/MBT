@@ -2261,3 +2261,6 @@ msgstr "Прекваліфікаційне портфоліо MBT: капіта�
 
 msgid "Dyrekcja"
 msgstr "Директори"
+
+msgid "Podlegają"
+msgstr "Підпорядковані"

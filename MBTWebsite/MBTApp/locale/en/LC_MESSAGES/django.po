@@ -2261,3 +2261,6 @@ msgstr "MBT prequalification portfolio: company capital, organisational structur
 
 msgid "Dyrekcja"
 msgstr "Directors"
+
+msgid "Podlegają"
+msgstr "Reports"

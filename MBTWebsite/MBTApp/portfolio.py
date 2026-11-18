@@ -66,6 +66,14 @@ EXISTING_SLUGS = {
 }
 
 
+# Kto gdzie stoi w sekcji „Struktura” (kolejność = kolejność na stronie).
+TREE_TOP = ['tomasz-kalisz', 'jacek-lewandowski']
+TREE_DIRECTORS = ['jakub-walczak', 'amelia-mzyk', 'krzysztof-filipowski', 'katarzyna-knabel', 'marek-latos', 'piotr-burda']
+TREE_REPORTS = {'jakub-walczak': ['dariusz-kudelko', 'bartlomiej-potuczko', 'michal-swoboda']}
+# Pełne karty z opisem i LinkedIn (sekcja „Kierownicy i project managerowie”).
+DETAIL_CARDS = ['katarzyna-knabel', 'piotr-burda', 'dariusz-kudelko', 'bartlomiej-potuczko', 'michal-swoboda']
+
+
 def _clean(value):
     """None, puste i teksty ze znacznikami -> None; reszta bez zmian."""
     if value is None:
@@ -250,23 +258,24 @@ def build_context(lang='pl'):
     # ---------- Kadra ----------
     reps, regions = _sales_team(lang)
     photos = _worker_photos(lang)
-    people = {'board': [], 'directors': [], 'managers': [], 'sales': []}
+    cards = {}
     for k in d['kadra']:
         name = k['imie_nazwisko']
         rep = reps.get(name) or {}
-        card = {
+        cards[k['slug']] = {
+            'slug': k['slug'],
             'name': name,
             'initials': _initials(name),
             'role': t(k['stanowisko']),
             'desc': t(k.get('opis')),
             'photo': _light_photo(_clean(k.get('foto')) or photos.get(name) or _clean(rep.get('photo')) or ''),
-            'region': ', '.join(regions.get(name, [])) or None,
             'linkedin': _clean(k.get('linkedin')),
-            'email': _clean(rep.get('email')) or _clean(k.get('kontakt') and k['kontakt'].get('email')),
-            'phone': (_clean(rep.get('phone')) or '').replace('\xa0', ' ') or _clean(k.get('kontakt') and k['kontakt'].get('telefon')),
         }
-        group = {'zarzad': 'board', 'dyrekcja': 'directors', 'kierownictwo': 'managers'}.get(k['grupa'], 'sales')
-        people[group].append(card)
+    pick = lambda slugs: [dict(cards[s]) for s in slugs if s in cards]
+    directors = pick(TREE_DIRECTORS)
+    for m in directors:
+        m['reports'] = pick(TREE_REPORTS.get(m['slug'], []))
+    people = {'board': pick(TREE_TOP), 'directors': directors, 'managers': pick(DETAIL_CARDS)}
 
     # ---------- Kadra techniczna ----------
     tech_rows = [{
@@ -309,7 +318,7 @@ def build_context(lang='pl'):
             'org_note': t(st.get('podleglosc')),
             'depts_left': depts_left, 'depts_right': depts_right, 'dept_count': len(st['dzialy']),
             'site_crew': t(st.get('kadra_budow')),
-            'board': people['board'], 'directors': people['directors'], 'managers': people['managers'], 'sales_team': people['sales'],
+            'board': people['board'], 'directors': people['directors'], 'managers': people['managers'],
             'tech_rows': tech_rows, 'tech_has_count': tech_has_count, 'tech_has_qual': tech_has_qual,
             'formulas': [{'name': t(f['nazwa']), 'desc': t(f['opis'])} for f in d['formuly']],
             'process': [t(s) for s in d['proces']],
