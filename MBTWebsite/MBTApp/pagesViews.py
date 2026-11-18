@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from MBTApp import mbtViews
 
 def project(request):

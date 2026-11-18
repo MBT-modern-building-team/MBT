@@ -1,5 +1,4 @@
 import os
-import json
 
 base_dir = "/Users/marek-macbook/MBT/nowa strona/MBTWebsite/MBTApp/templates/service/sectors"
 os.makedirs(base_dir, exist_ok=True)

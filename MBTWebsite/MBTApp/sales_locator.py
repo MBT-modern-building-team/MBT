@@ -15,7 +15,7 @@ import re
 import ssl
 import urllib.parse
 import urllib.request
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Optional, Tuple
 
 from MBTApp import mbt_orm
 from MBTApp import mbt_data
@@ -679,7 +679,7 @@ def resolve_sales_rep(query: str, lang: str = 'pl') -> Dict[str, Any]:
                 rep_obj = r
                 break
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
 
     if not rep_obj:
         for r in getattr(mbt_data, 'SALES_REPS', []):

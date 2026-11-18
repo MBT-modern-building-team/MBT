@@ -1,4 +1,4 @@
-{% load i18n %}
+{% load i18n seo_tags %}
 <head>
     <!-- Google Consent Mode v2 (Zdefiniowane PRZED gtag.js zgodnie z oficjalną dokumentacją Google) -->
     <script>
@@ -43,15 +43,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{% if meta_title %}{{ meta_title }}{% else %}{% if title %}{{ title }} - {% endif %}MBT Modern Building Team - {% trans 'Generalny Wykonawca Hal i Obiektów Przemysłowych' %}{% endif %}</title>
     <meta name="description" content="{% if meta_description %}{{ meta_description }}{% elif description %}{{ description }}{% else %}{% trans 'Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!' %}{% endif %}">
-    <meta name="keywords" content="MBT, {% trans 'generalny wykonawca' %}, {% trans 'hale magazynowe' %}, {% trans 'hale produkcyjne' %}, {% trans 'obiekty przemysłowe' %}, {% trans 'budowa pod klucz' %}">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="robots" content="{% if seo_noindex %}noindex, follow{% else %}index, follow, max-image-preview:large{% endif %}">
 
 	<meta name="google-site-verification" content="qAg665ZzIpmEYcTIkNlT91UHk4f_LqmL8_QVfUAiAJ4" />
     
     <!-- Open Graph / SEO -->
     <meta property="og:title" content="{% if meta_title %}{{ meta_title }}{% else %}{% if title %}{{ title }} - {% endif %}MBT Modern Building Team{% endif %}">
     <meta property="og:description" content="{% if meta_description %}{{ meta_description }}{% elif description %}{{ description }}{% else %}{% trans 'Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!' %}{% endif %}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
+    <meta property="og:site_name" content="MBT Modern Building Team">
+    <meta property="og:locale" content="{{ LANGUAGE_CODE|og_locale }}">
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="https://mbt.pl{{ request.path }}">
     <link rel="canonical" href="https://mbt.pl{{ request.path }}">
 
@@ -63,11 +65,19 @@
     <link rel="alternate" hreflang="x-default" href="https://mbt.pl{{ translate_urls.pl }}">
     {% endif %}
 
-    {% if photos and photos.home_hero_bg %}
-    <meta property="og:image" content="{% if photos.home_hero_bg|slice:':4' == 'http' %}{{ photos.home_hero_bg }}{% else %}https://mbt.pl{{ photos.home_hero_bg }}{% endif %}">
+    {% if article.image %}
+    <meta property="og:image" content="{{ article.image|absolute_url }}">
+    {% elif project.hero %}
+    <meta property="og:image" content="{{ project.hero|absolute_url }}">
+    {% elif photos and photos.home_hero_bg %}
+    <meta property="og:image" content="{{ photos.home_hero_bg|absolute_url }}">
     {% else %}
     <meta property="og:image" content="https://mbt.pl/static/img/favicons/favicon.png">
     {% endif %}
+
+    <!-- Dane strukturalne (schema.org) -->
+    {% organization_jsonld %}
+    {% if article %}{% article_jsonld article %}{% endif %}
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -81,10 +91,12 @@
     <!--==============================
     Preloads for LCP
     ============================== -->
+    {% if is_home %}
     {% if photos and photos.home_hero_bg %}
     <link rel="preload" as="image" href="{{ photos.home_hero_bg }}" fetchpriority="high">
     {% endif %}
     <link rel="preload" as="image" href="/static/img/hero/hero_bg_mask_3_1.webp">
+    {% endif %}
 
     <!--==============================
 	Fonts
@@ -92,49 +104,42 @@
     <!-- Technor (headings) - Fontshare -->
     <link rel="preconnect" href="https://api.fontshare.com">
     <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-    <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=technor@300,400,500,600,700,800&display=swap" as="style">
-    <link href="https://api.fontshare.com/v2/css?f[]=technor@300,400,500,600,700,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://api.fontshare.com/v2/css?f[]=technor@300,400,500,600,700,800&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=technor@400,500,600,700,800&display=swap" as="style">
+    <link href="https://api.fontshare.com/v2/css?f[]=technor@400,500,600,700,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://api.fontshare.com/v2/css?f[]=technor@400,500,600,700,800&display=swap" rel="stylesheet"></noscript>
     
     <!-- Noto Sans (body) - Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"></noscript>
 
     <!--==============================
 	All CSS File
     ============================== -->
     <!-- Bootstrap -->
-    <link rel="preload" href="/static/css/bootstrap.min.css" as="style">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     
     <!-- Fontawesome Icon -->
-    <link rel="preload" href="/static/fonts/remixicon.min.css?v=20260820-swap" as="style">
     <link rel="stylesheet" href="/static/fonts/remixicon.min.css?v=20260820-swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/static/fonts/remixicon.min.css?v=20260820-swap"></noscript>
     
     <!-- Magnific Popup -->
-    <link rel="preload" href="/static/css/magnific-popup.min.css" as="style">
     <link rel="stylesheet" href="/static/css/magnific-popup.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/static/css/magnific-popup.min.css"></noscript>
     
     <!-- Slick Slider -->
-    <link rel="preload" href="/static/css/slick.min.css" as="style">
     <link rel="stylesheet" href="/static/css/slick.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/static/css/slick.min.css"></noscript>
     
     <!-- Nice Select -->
-    <link rel="preload" href="/static/css/nice-select.min.css" as="style">
     <link rel="stylesheet" href="/static/css/nice-select.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/static/css/nice-select.min.css"></noscript>
     
     <!-- Theme Custom CSS -->
-    <link rel="preload" href="/static/css/style.min.css" as="style">
     <link rel="stylesheet" href="/static/css/style.min.css">
     
     <!-- MBT Override (rebrand to mbt.pl design language) -->
-    <link rel="preload" href="/static/css/mbt-override.min.css?v=20260830-blog-date-2" as="style">
-    <link rel="stylesheet" href="/static/css/mbt-override.min.css?v=20260830-blog-date-2">
+    <link rel="stylesheet" href="/static/css/mbt-override.min.css?v=20261118-seo-section">
 </head>

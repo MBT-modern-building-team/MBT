@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.template import RequestContext
 
 def handler404(request, exception, template_name='404.html'):
     context = {

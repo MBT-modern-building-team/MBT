@@ -37,3 +37,7 @@ chrome_data/
 temp.html
 test.js
 test_clean.js
+
+# Zrzuty bazy i ciasteczka — zawierają dane wrażliwe (hashe haseł)
+datadump*.json
+cookies.txt

@@ -1,6 +1,4 @@
-from django.contrib import admin
 from django.urls import path
-from django.views.generic import RedirectView
 from MBTApp import homeViews
 from MBTApp import newsViews
 from MBTApp import oznakowanieViews
@@ -8,6 +6,7 @@ from MBTApp import pagesViews
 from MBTApp import serviceViews
 from MBTApp import mbtViews
 from MBTApp import kioskViews
+from MBTApp import portfolioViews
 
 urlpatterns = [
 
@@ -29,6 +28,9 @@ urlpatterns = [
     path('ankieta-wizerunek/', serviceViews.ankieta_wizerunek, name='ankieta_wizerunek'),
     path('uroczysosc-rozpoczencia-inwestycji/', serviceViews.uroczystosc, name='uroczystosc'),
     path('uroczystosc-rozpoczecia-inwestycji/', serviceViews.uroczystosc, name='uroczystosc_correct'),
+
+    # Potencjał i referencje (portfolio prekwalifikacyjne)
+    path('potencjal-i-referencje/', portfolioViews.potencjal, name='portfolio'),
 
     # Blog / Artykuły
     path('blog/', newsViews.blog, name='blog'),

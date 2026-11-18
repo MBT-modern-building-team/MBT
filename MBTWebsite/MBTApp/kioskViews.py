@@ -109,7 +109,6 @@ def kiosk_view(request):
         {'name': 'Epco', 'logo': '/static/img/mbt/trusted-us-epco.svg'},
         {'name': 'Pumar', 'logo': '/static/img/mbt/trusted-us-pumar.svg'},
         {'name': 'Stainless Steel', 'logo': '/static/img/mbt/trusted-us-stainless-steel-engineering.svg'},
-        {'name': 'CDR', 'logo': '/static/img/mbt/trusted-us-cdr.svg'},
     ]
 
     context = {

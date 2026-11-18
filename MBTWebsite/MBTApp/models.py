@@ -256,7 +256,7 @@ class SitePhotos(models.Model):
     podmiany (używana domyślna ścieżka statyczna). Wzorzec jak SiteConfig.
     """
 
-    home_hero_bg = models.CharField('Hero — tło/poszerzenie strony głównej', max_length=500, blank=True, default='/static/img/hero/hero_bg_3_1.png')
+    home_hero_bg = models.CharField('Hero — tło/poszerzenie strony głównej', max_length=500, blank=True, default='/static/img/hero/hero_bg_3_1.webp')
     home_att8 = models.CharField('Oferta — zdjęcie zakładki Generalne Wykonawstwo', max_length=500, blank=True, default='https://media.mbt.pl/uploads/a8d6d2908191.webp')
     home_o_nas_2 = models.CharField('Dlaczego MBT — zdjęcie sekcji (o-nas-2)', max_length=500, blank=True, default='/static/img/mbt/o-nas-2.jpg')
     home_o_nas_zespol = models.CharField('Sekcja zespołu — tło/grupa (o-nas-zespol)', max_length=500, blank=True, default='https://media.mbt.pl/uploads/c4f9f468d740.webp')

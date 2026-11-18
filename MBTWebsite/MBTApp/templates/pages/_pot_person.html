@@ -1,0 +1,7 @@
+{% load i18n %}
+<li class="pot-person">
+{% include 'pages/_pot_card.html' %}
+{% if m.reports %}<ul class="pot-org-reports" aria-label="{% trans 'Podlegają' %}">
+    {% for r in m.reports %}<li class="pot-person">{% include 'pages/_pot_card.html' with m=r compact=True %}</li>{% endfor %}
+</ul>{% endif %}
+</li>

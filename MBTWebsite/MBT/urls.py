@@ -31,8 +31,14 @@ sitemaps = {
 }
 
 def media_redirect_view(request, path_str):
-    local_path = os.path.join(settings.MEDIA_ROOT, path_str)
-    if os.path.exists(local_path):
+    # Ochrona przed path traversal (np. /media/..%2FMBT%2Fsettings.py):
+    # plik lokalny serwujemy tylko, jeśli po rozwiązaniu ścieżki leży w MEDIA_ROOT.
+    media_root = os.path.realpath(settings.MEDIA_ROOT)
+    local_path = os.path.realpath(os.path.join(media_root, path_str))
+    if '..' in path_str.replace('\\', '/').split('/') or os.path.commonpath([media_root, local_path]) != media_root:
+        from django.http import Http404
+        raise Http404()
+    if os.path.isfile(local_path):
         from django.http import FileResponse
         return FileResponse(open(local_path, 'rb'))
 
