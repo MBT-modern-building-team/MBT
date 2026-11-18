@@ -248,3 +248,6 @@
 .pot-chip-btn[aria-pressed=true]{background:var(--navy);border-color:var(--navy)}
 .pot-chip-btn{border-color:var(--navy);color:var(--navy)}
 .pot .pot-person-btn:hover{background:var(--navy);border-color:var(--navy)}
+
+/* logo klienta (realizacje w trakcie) — jak na /realizacje/ */
+.pot-proj-img img.pot-contain{object-fit:contain;padding:18px;background:#fff}

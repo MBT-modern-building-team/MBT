@@ -31,12 +31,12 @@ _MARKER_RE = re.compile(r'\[DO (UZUPE[ŁL]NIENIA|T[ŁL]UMACZENIA)[^\]]*\]', re.I
 EXISTING_SLUGS = {
     1: 'raben',
     2: 'in-post-w-legnicy',
-    3: 'VESUVIUS',
+    3: ('vesuvius-skawina', 'VESUVIUS'),
     4: 'bts-development-park-zielona-gora',
     5: 'warmet-hurtownia-alkocholi',
     6: 'euro-trade-w-modlnicy',
     7: 'venus-brzegi',
-    10: 'p1704',
+    10: ('epco-bytom', 'p1704'),
     11: 'stokado-self-storage-krakow',
     12: 'stokado-self-storage-warszawa-targowek',
     13: 'stokado-self-storage-warszawa-bemowo',
@@ -148,16 +148,33 @@ def _worker_photos(lang):
     return out
 
 
+def _existing_project(nr, projects_by_slug):
+    slugs = EXISTING_SLUGS.get(nr)
+    if not slugs:
+        return None
+    for slug in ((slugs,) if isinstance(slugs, str) else slugs):
+        if slug in projects_by_slug:
+            return projects_by_slug[slug]
+    return None
+
+
+def project_description(r, old_opis=''):
+    """Nowy opis do /realizacje/: typ obiektu + parametry z JSON (reguły publiczności jak na stronie)."""
+    params = _clean(r.get('parametry_publiczne'))
+    if not params and not r.get('do_weryfikacji'):
+        params = _clean(r.get('parametry'))
+    parts = [p for p in (_clean(r.get('typ')), params) if p]
+    old_opis = (old_opis or '').strip()
+    if not parts or (params and params in old_opis):
+        return old_opis
+    return '\n'.join(parts + ([old_opis] if old_opis else []))
+
+
 def _thumb(project):
-    """Miniatura tylko z istniejącego zdjęcia realizacji na R2 (nie logo, nie SVG)."""
+    """Zdjęcie z /realizacje/ (to samo co lista realizacji: hero, a gdy brak — pierwsze z galerii)."""
     project = project or {}
-    # Realizacje „w trakcie” bez galerii mają w hero zwykle logo klienta, nie zdjęcie budowy.
-    if project.get('type') == 'realizacja-w-trakcie' and not project.get('gallery'):
-        return ''
-    hero = project.get('hero') or ''
-    if hero.startswith('https://media.mbt.pl/') and not hero.lower().endswith('.svg') and 'logo' not in hero.lower():
-        return hero
-    return ''
+    src = project.get('hero') or ((project.get('gallery') or [''])[0])
+    return _light_photo(src)
 
 
 def build_context(lang='pl'):
@@ -179,8 +196,7 @@ def build_context(lang='pl'):
     projects = []
     for r in d['realizacje']:
         nr = r['nr']
-        ex_slug = EXISTING_SLUGS.get(nr)
-        ex = projects_by_slug.get(ex_slug) if ex_slug else None
+        ex = _existing_project(nr, projects_by_slug)
         # parametry_publiczne ma pierwszeństwo przed parametry; do_weryfikacji nigdy nie jest publiczne,
         # a gdy istnieje, surowe `parametry` (sprzeczne metraże) też nie wychodzą na stronę.
         params = _clean(r.get('parametry_publiczne'))
@@ -199,6 +215,7 @@ def build_context(lang='pl'):
             'voivodeship': r.get('wojewodztwo'),
             'url': url,
             'thumb': _thumb(ex),
+            'contain': bool(ex) and ex.get('type') == 'realizacja-w-trakcie',
         })
 
     by_sector = OrderedDict()

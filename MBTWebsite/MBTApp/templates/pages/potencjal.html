@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118r">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118s">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -284,7 +284,7 @@
                 {% for pr in g.projects %}
                 <li class="pot-proj" data-sector="{{ g.slug }}">
                     {% if pr.thumb %}
-                    <div class="pot-proj-img">{% if pr.url %}<a href="{{ pr.url }}" tabindex="-1" aria-hidden="true">{% endif %}<img src="{{ pr.thumb }}" alt="{{ pr.name }}" width="640" height="400" loading="lazy" decoding="async">{% if pr.url %}</a>{% endif %}</div>
+                    <div class="pot-proj-img">{% if pr.url %}<a href="{{ pr.url }}" tabindex="-1" aria-hidden="true">{% endif %}<img src="{{ pr.thumb }}" alt="{{ pr.name }}" width="640" height="400" loading="lazy" decoding="async"{% if pr.contain %} class="pot-contain"{% endif %}>{% if pr.url %}</a>{% endif %}</div>
                     {% endif %}
                     <div class="pot-proj-body">
                         {% if pr.in_progress %}<div class="pot-proj-top"><span class="pot-badge">{% trans 'W realizacji' %}</span></div>{% endif %}
