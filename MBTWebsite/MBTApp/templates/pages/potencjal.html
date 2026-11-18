@@ -1,0 +1,352 @@
+{% extends 'layout/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118b">
+<script type="application/ld+json">{{ json_ld_org }}</script>
+<script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
+<div class="pot">
+
+{# ===================== HERO ===================== #}
+<section class="pot-hero" aria-labelledby="pot-h1">
+    <div class="pot-hero-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="container">
+        <nav class="pot-crumbs" aria-label="{% trans 'Ścieżka nawigacji' %}">
+            <a href="{% url 'index' %}">{% trans 'HOME' %}</a> <span aria-hidden="true">/</span> <span>{{ p.texts.hero_kicker }}</span>
+        </nav>
+        <div class="pot-hero-body">
+            <p class="pot-kicker pot-kicker--light">{{ p.texts.hero_kicker }}</p>
+            <h1 id="pot-h1" class="pot-h1">{{ p.texts.hero_h1 }}</h1>
+            <p class="pot-hero-lead">{{ p.texts.hero_lead }}</p>
+            <div class="pot-cta-row">
+                {% if pdf_url %}<a class="btn mbt-cta" href="{{ pdf_url }}" data-pr-event="pr_pdf_download">{{ p.texts.cta_pdf }} <i class="ri-file-pdf-2-line" aria-hidden="true"></i></a>{% endif %}
+                <a class="btn pot-btn-ghost" href="{% url 'contact' %}" data-pr-event="pr_cta_kontakt">{{ p.texts.cta_kontakt }} <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <ul class="pot-stats">
+            {% for s in p.stats %}
+            <li><strong>{{ s.value }}</strong><span>{% if forloop.counter == 1 %}{% trans 'lat na rynku' %}{% elif forloop.counter == 2 %}{% trans 'realizacji' %}{% elif forloop.counter == 3 %}{% trans 'sektorów' %}{% else %}{% trans 'województw' %}{% endif %}</span></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+{# ===================== 01 PROFIL ===================== #}
+<section class="pot-sec" id="profil" aria-labelledby="pot-profil-h">
+    <div class="container">
+        <header class="pot-head">
+            <p class="pot-kicker">01 · {% trans 'PROFIL FIRMY' %}</p>
+            <h2 id="pot-profil-h" class="pot-h2">{{ p.texts.profil_h2 }}</h2>
+            <span class="pot-bar" aria-hidden="true"></span>
+            <p class="pot-lead">{{ p.texts.profil_lead }}</p>
+        </header>
+
+        <div class="pot-grid pot-grid--profile">
+            <div class="pot-card">
+                <h3 class="pot-h3">{% trans 'Dane rejestrowe' %}</h3>
+                <table class="pot-table">
+                    <caption class="pot-sr">{% trans 'Dane rejestrowe' %}</caption>
+                    <tbody>
+                        <tr><th scope="row">{% trans 'Nazwa' %}</th><td>{{ p.company_name }}</td></tr>
+                        {% if p.legal_form %}<tr><th scope="row">{% trans 'Forma prawna' %}</th><td>{{ p.legal_form }}</td></tr>{% endif %}
+                        <tr><th scope="row">{% trans 'Na rynku od' %}</th><td>{{ p.since }}</td></tr>
+                        {% if p.president %}<tr><th scope="row">{% trans 'Prezes Zarządu' %}</th><td>{{ p.president }}</td></tr>{% endif %}
+                        {% for label, value in p.register_rows %}<tr><th scope="row">{{ label }}</th><td>{{ value }}</td></tr>{% endfor %}
+                        {% for o in p.offices %}<tr><th scope="row">{% if o.typ == 'Centrala' %}{% trans 'Centrala' %}{% else %}{% trans 'Biuro' %}{% endif %}</th><td>{{ o.miasto }}, {{ o.adres }}</td></tr>{% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pot-capital" role="group" aria-labelledby="pot-cap-h">
+                <h3 class="pot-h3 pot-h3--light" id="pot-cap-h">{% trans 'Kapitał spółki' %}</h3>
+                <dl>
+                    <div><dt>{% trans 'Kapitał podstawowy' %}</dt><dd>{{ p.capital.basic }}{% if p.capital.basic_paid %}<small>{% trans 'w pełni opłacony' %}</small>{% endif %}</dd></div>
+                    <div><dt>{% trans 'Kapitał zapasowy' %}</dt><dd>{{ p.capital.reserve }}{% if p.capital.reserve_paid %}<small>{% trans 'w pełni opłacony' %}</small>{% endif %}</dd></div>
+                    <div class="pot-capital-sum"><dt>{% trans 'Łącznie' %}</dt><dd>{{ p.capital.total }}</dd></div>
+                </dl>
+            </div>
+        </div>
+
+        {% if p.finance_visible %}
+        <div class="pot-card pot-card--mt">
+            <h3 class="pot-h3">{% trans 'Sytuacja ekonomiczno-finansowa' %}</h3>
+            <table class="pot-table">
+                <tbody>
+                    {% for year, val in p.finance.revenue.items %}<tr><th scope="row">{% trans 'Przychody netto' %} {{ year }}</th><td>{{ val }}</td></tr>{% endfor %}
+                    {% if p.finance.oc %}<tr><th scope="row">{% trans 'Suma gwarancyjna OC' %}</th><td>{{ p.finance.oc }}</td></tr>{% endif %}
+                    {% if p.finance.guarantees %}<tr><th scope="row">{% trans 'Limity gwarancji kontraktowych' %}</th><td>{{ p.finance.guarantees }}</td></tr>{% endif %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+
+        <div class="pot-grid pot-grid--3 pot-card--mt">
+            <div>
+                <h3 class="pot-h3">{% trans 'Specjalizacje' %}</h3>
+                <ul class="pot-list">{% for s in p.specializations %}<li>{{ s }}</li>{% endfor %}</ul>
+            </div>
+            {% if p.awards %}
+            <div>
+                <h3 class="pot-h3">{% trans 'Wyróżnienia' %}</h3>
+                <ul class="pot-list">{% for s in p.awards %}<li>{{ s }}</li>{% endfor %}</ul>
+            </div>
+            {% endif %}
+            {% if p.memberships %}
+            <div>
+                <h3 class="pot-h3">{% trans 'Członkostwa' %}</h3>
+                <ul class="pot-list">{% for s in p.memberships %}<li>{{ s }}</li>{% endfor %}</ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{# ===================== 02 POTENCJAŁ W LICZBACH ===================== #}
+<section class="pot-sec pot-sec--tint" id="liczby" aria-labelledby="pot-num-h">
+    <div class="container">
+        <header class="pot-head">
+            <p class="pot-kicker">02 · {% trans 'POTENCJAŁ W LICZBACH' %}</p>
+            <h2 id="pot-num-h" class="pot-h2">{% trans 'Potencjał w liczbach' %}</h2>
+            <span class="pot-bar" aria-hidden="true"></span>
+        </header>
+
+        <div class="pot-grid pot-grid--2">
+            <figure class="pot-chart">
+                <figcaption class="pot-h3">{% trans 'Realizacje według sektora' %}</figcaption>
+                <ul class="pot-bars">
+                    {% for b in p.sector_bars %}
+                    <li><span class="pot-bars-l">{{ b.label }}</span><span class="pot-bars-t"><span class="pot-bars-f" style="width:{{ b.pct }}%"></span></span><span class="pot-bars-v">{{ b.value }}</span></li>
+                    {% endfor %}
+                </ul>
+            </figure>
+            <figure class="pot-chart">
+                <figcaption class="pot-h3">{% trans 'Realizacje według województwa' %}</figcaption>
+                <ul class="pot-bars">
+                    {% for b in p.voiv_bars %}
+                    <li><span class="pot-bars-l">{{ b.label }}</span><span class="pot-bars-t"><span class="pot-bars-f" style="width:{{ b.pct }}%"></span></span><span class="pot-bars-v">{{ b.value }}</span></li>
+                    {% endfor %}
+                </ul>
+            </figure>
+        </div>
+
+        <h3 class="pot-h3 pot-card--mt">{% trans 'Kompetencje potwierdzone realizacjami' %}</h3>
+        <ul class="pot-comp">
+            {% for c in p.competencies %}
+            <li><i class="ri-checkbox-circle-line" aria-hidden="true"></i><div><strong>{{ c.name }}</strong>{% if c.proof %}<span>{{ c.proof }}</span>{% endif %}</div></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+{# ===================== 03 STRUKTURA ===================== #}
+<section class="pot-sec" id="struktura" aria-labelledby="pot-org-h">
+    <div class="container">
+        <header class="pot-head">
+            <p class="pot-kicker">03 · {% trans 'STRUKTURA ORGANIZACYJNA' %}</p>
+            <h2 id="pot-org-h" class="pot-h2">{{ p.texts.struktura_h2 }}</h2>
+            <span class="pot-bar" aria-hidden="true"></span>
+            <p class="pot-lead">{{ p.texts.struktura_lead }}</p>
+        </header>
+
+        <ul class="pot-org">
+            <li class="pot-org-root">
+                <div class="pot-org-board">
+                    <strong>{{ p.org_head }}</strong>
+                    {% for m in p.org_head_people %}<span>{{ m.imie_nazwisko }} · {{ m.funkcja }}</span>{% endfor %}
+                </div>
+                <ul class="pot-org-cols">
+                    <li>
+                        <ul class="pot-org-col pot-org-col--l">
+                            {% for d in p.depts_left %}<li><strong>{{ d.name }}</strong>{% if d.head %}<em>{{ d.head }}</em>{% endif %}<span>{{ d.scope }}</span></li>{% endfor %}
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="pot-org-col pot-org-col--r">
+                            {% for d in p.depts_right %}<li><strong>{{ d.name }}</strong>{% if d.head %}<em>{{ d.head }}</em>{% endif %}<span>{{ d.scope }}</span></li>{% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        {% if p.org_note %}<p class="pot-note">{{ p.org_note }}</p>{% endif %}
+        {% if p.site_crew %}<p class="pot-note pot-note--accent"><i class="ri-hard-hat-line" aria-hidden="true"></i> {{ p.site_crew }}</p>{% endif %}
+    </div>
+</section>
+
+{# ===================== 04 KADRA ===================== #}
+<section class="pot-sec pot-sec--tint" id="kadra" aria-labelledby="pot-staff-h">
+    <div class="container">
+        <header class="pot-head">
+            <p class="pot-kicker">04 · {% trans 'KADRA' %}</p>
+            <h2 id="pot-staff-h" class="pot-h2">{% trans 'Ludzie, którzy prowadzą Twoją inwestycję' %}</h2>
+            <span class="pot-bar" aria-hidden="true"></span>
+        </header>
+
+        <h3 class="pot-h3">{% trans 'Zarząd i dyrekcja' %}</h3>
+        <ul class="pot-people">
+            {% for m in p.board %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
+        </ul>
+
+        <h3 class="pot-h3 pot-card--mt">{% trans 'Zespół handlowy i komunikacja' %}</h3>
+        <p class="pot-lead pot-lead--sm">{{ p.texts.zespol_lead }}</p>
+        <ul class="pot-people">
+            {% for m in p.sales_team %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
+        </ul>
+    </div>
+</section>
+
+{# ===================== 05 KADRA TECHNICZNA I SPOSÓB REALIZACJI ===================== #}
+<section class="pot-sec" id="realizacja-procesu" aria-labelledby="pot-tech-h">
+    <div class="container">
+        <header class="pot-head">
+            <p class="pot-kicker">05 · {% trans 'KADRA TECHNICZNA I SPOSÓB REALIZACJI' %}</p>
+            <h2 id="pot-tech-h" class="pot-h2">{% trans 'Kadra techniczna i sposób realizacji' %}</h2>
+            <span class="pot-bar" aria-hidden="true"></span>
+        </header>
+
+        <div class="pot-card">
+            <table class="pot-table pot-table--wide">
+                <caption class="pot-sr">{% trans 'Kadra techniczna' %}</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">{% trans 'Stanowisko' %}</th>
+                        {% if p.tech_has_qual %}<th scope="col">{% trans 'Kwalifikacje' %}</th>{% endif %}
+                        {% if p.tech_has_count %}<th scope="col">{% trans 'Liczba osób' %}</th>{% endif %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for r in p.tech_rows %}
+                    <tr>
+                        <th scope="row">{{ r.role }}</th>
+                        {% if p.tech_has_qual %}<td>{% if r.qual %}{{ r.qual }}{% endif %}</td>{% endif %}
+                        {% if p.tech_has_count %}<td>{% if r.count is not None %}{{ r.count }}{% endif %}</td>{% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pot-grid pot-grid--2 pot-card--mt">
+            {% for f in p.formulas %}
+            <article class="pot-formula">
+                <h3 class="pot-h3">{{ f.name }}</h3>
+                <p>{{ f.desc }}</p>
+            </article>
+            {% endfor %}
+        </div>
+
+        <h3 class="pot-h3 pot-card--mt">{% trans 'Proces inwestycji' %}</h3>
+        <ol class="pot-steps">
+            {% for s in p.process %}<li><span class="pot-steps-n">{{ forloop.counter }}</span><span>{{ s }}</span></li>{% endfor %}
+        </ol>
+
+        <div class="pot-grid pot-grid--2 pot-card--mt">
+            {% if p.bhp %}<div class="pot-card"><h3 class="pot-h3"><i class="ri-shield-check-line" aria-hidden="true"></i> {% trans 'BHP' %}</h3><p>{{ p.bhp }}</p></div>{% endif %}
+            {% if p.warranty %}<div class="pot-card"><h3 class="pot-h3"><i class="ri-tools-line" aria-hidden="true"></i> {% trans 'Gwarancja' %}</h3><p>{{ p.warranty }}</p></div>{% endif %}
+        </div>
+    </div>
+</section>
+
+{# ===================== 06 TECHNOLOGIE ===================== #}
+<section class="pot-sec pot-sec--tint" id="technologie" aria-labelledby="pot-tools-h">
+    <div class="container">
+        <header class="pot-head">
+            <p class="pot-kicker">06 · {% trans 'TECHNOLOGIE I ZAPLECZE' %}</p>
+            <h2 id="pot-tools-h" class="pot-h2">{{ p.texts.technologie_h2 }}</h2>
+            <span class="pot-bar" aria-hidden="true"></span>
+        </header>
+
+        <ul class="pot-tools">
+            {% for t in p.tools %}
+            <li>
+                <i class="{{ t.icon }}" aria-hidden="true"></i>
+                <small>{{ t.cat }}</small>
+                <strong>{{ t.name }}</strong>
+                <span>{{ t.desc }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+
+        {% if p.backup %}
+        <div class="pot-backup"><i class="ri-truck-line" aria-hidden="true"></i><div><h3 class="pot-h3 pot-h3--light">{% trans 'Zaplecze budów' %}</h3><p>{{ p.backup }}</p></div></div>
+        {% endif %}
+
+        <h3 class="pot-h3 pot-card--mt">{% trans 'Technologie wykonawcze' %}</h3>
+        <ul class="pot-chips">{% for x in p.exec_tech %}<li>{{ x }}</li>{% endfor %}</ul>
+
+        <h3 class="pot-h3 pot-card--mt">{% trans 'Metodyka' %}</h3>
+        <ul class="pot-method">
+            {% for m in p.methodology %}<li><strong>{{ m.name }}</strong><span>{{ m.desc }}</span></li>{% endfor %}
+        </ul>
+    </div>
+</section>
+
+{# ===================== 07 REALIZACJE ===================== #}
+<section class="pot-sec" id="realizacje" aria-labelledby="pot-proj-h">
+    <div class="container">
+        <header class="pot-head">
+            <p class="pot-kicker">07 · {% trans 'REALIZACJE' %}</p>
+            <h2 id="pot-proj-h" class="pot-h2">{{ p.texts.realizacje_h2 }}</h2>
+            <span class="pot-bar" aria-hidden="true"></span>
+            <p class="pot-lead">{{ p.texts.realizacje_lead }}</p>
+        </header>
+
+        <div class="pot-filter" id="pot-filter" role="group" aria-label="{% trans 'Filtr sektorów' %}" hidden>
+            <button type="button" class="pot-chip-btn" data-sector="all" aria-pressed="true">{% trans 'Wszystkie' %} ({{ p.total }})</button>
+            {% for g in p.sectors %}<button type="button" class="pot-chip-btn" data-sector="{{ g.slug }}" aria-pressed="false">{{ g.name }} ({{ g.count }})</button>{% endfor %}
+        </div>
+        <p class="pot-sr" id="pot-filter-status" role="status" aria-live="polite"></p>
+
+        {% for g in p.sectors %}
+        <section class="pot-group" data-sector="{{ g.slug }}" aria-labelledby="pot-g-{{ g.slug }}">
+            <h3 class="pot-group-h" id="pot-g-{{ g.slug }}"><span>{{ g.code }}</span> {{ g.full_name }} <small>({{ g.count }})</small></h3>
+            <ul class="pot-cards">
+                {% for pr in g.projects %}
+                <li class="pot-proj" data-sector="{{ g.slug }}">
+                    {% if pr.thumb %}
+                    <div class="pot-proj-img">{% if pr.url %}<a href="{{ pr.url }}" tabindex="-1" aria-hidden="true">{% endif %}<img src="{{ pr.thumb }}" alt="{{ pr.name }}" width="640" height="400" loading="lazy" decoding="async">{% if pr.url %}</a>{% endif %}</div>
+                    {% endif %}
+                    <div class="pot-proj-body">
+                        <div class="pot-proj-top">
+                            <span class="pot-proj-nr">{{ pr.nr }}</span>
+                            {% if pr.in_progress %}<span class="pot-badge">{% trans 'W realizacji' %}</span>{% endif %}
+                        </div>
+                        <h4 class="pot-proj-name">{% if pr.url %}<a href="{{ pr.url }}">{{ pr.name }}</a>{% else %}{{ pr.name }}{% endif %}</h4>
+                        <p class="pot-proj-type">{{ pr.type }}</p>
+                        <p class="pot-proj-meta">{{ pr.meta }}</p>
+                        {% if pr.kpi %}<ul class="pot-kpi">{% for k in pr.kpi %}<li>{{ k }}</li>{% endfor %}</ul>{% endif %}
+                        {% if pr.params %}<p class="pot-proj-par">{{ pr.params }}</p>{% endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endfor %}
+    </div>
+</section>
+
+{# ===================== 08 CTA ===================== #}
+<section class="pot-cta" id="kontakt" aria-labelledby="pot-cta-h">
+    <div class="pot-hero-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="container">
+        <p class="pot-kicker pot-kicker--light">08 · {% trans 'KONTAKT' %}</p>
+        <h2 id="pot-cta-h" class="pot-h2 pot-h2--light">{{ p.texts.cta_h2 }}</h2>
+        <span class="pot-bar" aria-hidden="true"></span>
+        <ul class="pot-offices">
+            {% for o in p.offices %}<li><strong>{{ o.miasto }}</strong><span>{{ o.adres }}</span></li>{% endfor %}
+        </ul>
+        <p class="pot-contact">
+            <a href="tel:{{ p.contact.telefon|cut:' ' }}"><i class="ri-phone-fill" aria-hidden="true"></i> {{ p.contact.telefon }}</a>
+            <a href="mailto:{{ p.contact.email }}"><i class="ri-mail-fill" aria-hidden="true"></i> {{ p.contact.email }}</a>
+        </p>
+        <div class="pot-cta-row">
+            <a class="btn mbt-cta" href="{% url 'contact' %}" data-pr-event="pr_cta_kontakt">{{ p.texts.cta_kontakt }} <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+            {% if pdf_url %}<a class="btn pot-btn-ghost" href="{{ pdf_url }}" data-pr-event="pr_pdf_download">{{ p.texts.cta_pdf }} <i class="ri-file-pdf-2-line" aria-hidden="true"></i></a>{% endif %}
+        </div>
+        <div class="pot-locator">{% include 'partials/sales_map.html' %}</div>
+    </div>
+</section>
+
+</div>
+<script defer src="/static/js/potencjal.js?v=20261118b"></script>
+{% endblock %}

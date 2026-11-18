@@ -1,3 +1,6 @@
+import logging
+
+logger = logging.getLogger(__name__)
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 from MBTApp.models import Article, Project, Job, Sector
@@ -13,7 +16,7 @@ class StaticViewSitemap(Sitemap):
         return [
             'index', 'about', 'service', 'generalContracting',
             'halePrzemyslowe', 'haleMagazynowe', 'obiektyKomercyjne',
-            'contact', 'blog', 'project', 'career', 'privacy'
+            'contact', 'blog', 'project', 'portfolio', 'career', 'privacy'
         ]
 
     def location(self, item):
@@ -33,7 +36,7 @@ class SectorSitemap(Sitemap):
             if db_sectors:
                 return db_sectors
         except Exception:
-            pass
+            logger.warning('Fallback po błędzie', exc_info=True)
         return [
             'biurowce', 'centra-badawczo-rozwojowe', 'centra-biznesowe', 'centra-handlowe',
             'chlodnie-mroznie', 'data-center', 'fabryki', 'galerie-handlowe',
@@ -61,7 +64,7 @@ class ArticleSitemap(Sitemap):
             if items:
                 return items
         except Exception:
-            pass
+            logger.warning('Fallback po błędzie', exc_info=True)
         from MBTApp import mbt_data
         return [{'slug': a['slug'], 'created': None} for a in getattr(mbt_data, 'ARTICLES', []) if a.get('slug')]
 
@@ -89,7 +92,7 @@ class ProjectSitemap(Sitemap):
             if items:
                 return items
         except Exception:
-            pass
+            logger.warning('Fallback po błędzie', exc_info=True)
         from MBTApp import mbt_data
         return [{'slug': p['slug']} for p in getattr(mbt_data, 'PROJECTS', []) if p.get('slug') and p['slug'].lower() not in legacy_set]
 
@@ -99,11 +102,11 @@ class ProjectSitemap(Sitemap):
 
 
 class JobSitemap(Sitemap):
+    # Oferty pracy są tłumaczone (t_title/t_text) — publikujemy wszystkie wersje językowe.
     changefreq = 'monthly'
     priority = 0.6
     i18n = True
-    alternates = False
-    languages = ['pl']
+    alternates = True
 
     def items(self):
         try:
@@ -111,7 +114,7 @@ class JobSitemap(Sitemap):
             if items:
                 return items
         except Exception:
-            pass
+            logger.warning('Fallback po błędzie', exc_info=True)
         from MBTApp import mbt_data
         return [{'slug': j['slug']} for j in getattr(mbt_data, 'JOBS', []) if j.get('slug')]
 
