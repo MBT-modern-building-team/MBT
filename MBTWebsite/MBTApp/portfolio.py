@@ -69,7 +69,7 @@ EXISTING_SLUGS = {
 # Kto gdzie stoi w sekcji „Struktura” (kolejność = kolejność na stronie).
 TREE_TOP = ['tomasz-kalisz', 'jacek-lewandowski']
 TREE_DIRECTORS = ['jakub-walczak', 'amelia-mzyk', 'krzysztof-filipowski', 'katarzyna-knabel', 'marek-latos', 'piotr-burda']
-TREE_REPORTS = {'jakub-walczak': ['dariusz-kudelko', 'bartlomiej-potuczko', 'michal-swoboda']}
+TREE_REPORTS = {'jakub-walczak': ['bartlomiej-potuczko', 'dariusz-kudelko', 'michal-swoboda']}
 # Pełne karty z opisem i LinkedIn (sekcja „Kierownicy i project managerowie”).
 DETAIL_CARDS = ['katarzyna-knabel', 'piotr-burda', 'dariusz-kudelko', 'bartlomiej-potuczko', 'michal-swoboda']
 
