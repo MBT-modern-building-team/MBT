@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118j">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118k">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -164,12 +164,7 @@
         <ul class="pot-org">
             <li class="pot-org-root">
                 <ul class="pot-org-people" aria-label="{{ p.org_head }}">
-                    {% for m in p.board %}
-                    <li class="pot-sq">
-                        <div class="pot-sq-photo">{% if m.photo %}<img src="{{ m.photo }}" alt="{{ m.name }}" width="300" height="300" loading="lazy" decoding="async">{% else %}<div class="pot-ph" role="img" aria-label="{{ m.name }}"><span>{{ m.initials }}</span></div>{% endif %}</div>
-                        <div class="pot-sq-name"><strong>{{ m.name }}</strong><span>{{ m.role }}</span></div>
-                    </li>
-                    {% endfor %}
+                    {% for m in p.board %}{% include 'pages/_pot_person.html' with m=m compact=True %}{% endfor %}
                 </ul>
                 <ul class="pot-org-cols">
                     <li>
