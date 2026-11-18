@@ -33,6 +33,8 @@
                         <div class="portfolio-card-details">
                             <span class="portfolio-card-subtitle">{% if p.formula %}{% trans p.formula %}{% else %}{% trans 'Generalne wykonawstwo' %}{% endif %}</span>
                             <h3 class="portfolio-card-title"><a href="{% url 'realizacjaDetail' p.slug %}">{{ p.title }}</a></h3>
+                            {% if p.card_type %}<p class="portofolio-card-text"><strong>{{ p.card_type }}</strong></p>{% endif %}
+                            {% if p.card_text %}<p class="portofolio-card-text">{{ p.card_text }}</p>{% endif %}
                             <p class="portofolio-card-text">{% if p.czas %}{% trans "Czas realizacji:" %} {% trans p.czas %}{% else %}{% trans 'Realizacja pod klucz' %}{% endif %}</p>
                             <a href="{% url 'realizacjaDetail' p.slug %}" class="btn-with-icon">
                                 {% trans 'Zobacz pełen opis' %}
