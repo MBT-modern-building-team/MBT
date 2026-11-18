@@ -1,4 +1,6 @@
+import os
 import re
+from unittest import mock
 
 from django.conf import settings
 from django.test import TestCase, override_settings
@@ -6,6 +8,10 @@ from django.test import TestCase, override_settings
 
 @override_settings(SECURE_SSL_REDIRECT=False, ALLOWED_HOSTS=['*'])
 class PortfolioPageTests(TestCase):
+    def setUp(self):
+        patcher = mock.patch.dict(os.environ, {'PORTFOLIO_PAGE_PUBLIC': '1'})
+        patcher.start()
+        self.addCleanup(patcher.stop)
     """Podstrona /potencjal-i-referencje/ — treść z portfolio_mbt.json."""
 
     def _get(self, lang='pl'):
@@ -80,3 +86,28 @@ class PortfolioPageTests(TestCase):
         html = self._get().content.decode()
         self.assertIn('/realizacja/eurostyl-chelmek/', html)
         self.assertIn('/static/img/mbt/logos/brembo.png', html)
+
+
+@override_settings(SECURE_SSL_REDIRECT=False, ALLOWED_HOSTS=['*'], DEBUG=False)
+class PortfolioPageHiddenTests(TestCase):
+    """Dopóki PORTFOLIO_PAGE_PUBLIC nie jest włączone, strona jest niewidoczna dla odwiedzających."""
+
+    def setUp(self):
+        patcher = mock.patch.dict(os.environ)
+        patcher.start()
+        os.environ.pop('PORTFOLIO_PAGE_PUBLIC', None)
+        self.addCleanup(patcher.stop)
+
+    def test_hidden_for_visitors_and_sitemap(self):
+        for path in ('/potencjal-i-referencje/', '/en/potencjal-i-referencje/'):
+            self.assertEqual(self.client.get(path, HTTP_HOST='localhost').status_code, 404, path)
+        sitemap = self.client.get('/sitemap.xml', HTTP_HOST='localhost').content.decode()
+        self.assertNotIn('potencjal-i-referencje', sitemap)
+
+    def test_visible_for_staff_with_noindex(self):
+        from django.contrib.auth import get_user_model
+        user = get_user_model().objects.create_user('staff', password='x', is_staff=True)
+        self.client.force_login(user)
+        resp = self.client.get('/potencjal-i-referencje/', HTTP_HOST='localhost')
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn('noindex', resp['X-Robots-Tag'])

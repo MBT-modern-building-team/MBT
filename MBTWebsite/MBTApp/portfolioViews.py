@@ -1,11 +1,14 @@
 import json
 
+from django.conf import settings
+from django.http import Http404
 from django.shortcuts import render
 from django.urls import NoReverseMatch, reverse
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext as _
 
 from MBTApp import mbt_orm, portfolio
+from MBTApp.portfolio_records import page_is_public
 
 SITE_URL = 'https://mbt.pl'
 
@@ -45,6 +48,10 @@ def _json_ld(request, ctx, lang):
 
 
 def potencjal(request):
+    public = page_is_public()
+    user = getattr(request, 'user', None)
+    if not (public or settings.DEBUG or (user is not None and user.is_staff)):
+        raise Http404()
     lang = request.LANGUAGE_CODE
     ctx = portfolio.build_context(lang)
     try:
@@ -63,4 +70,9 @@ def potencjal(request):
         'site': mbt_orm.get_site(lang),
         'breadcrumb': True,  # własny hero zamiast globalnego breadcrumb-a
     })
-    return render(request, 'pages/potencjal.html', ctx)
+    response = render(request, 'pages/potencjal.html', ctx)
+    if not public:
+        # Podgląd przed publikacją: bez indeksowania i bez cache'owania.
+        response['X-Robots-Tag'] = 'noindex, nofollow'
+        response['Cache-Control'] = 'private, no-store'
+    return response

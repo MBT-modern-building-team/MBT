@@ -13,11 +13,15 @@ class StaticViewSitemap(Sitemap):
     alternates = True
 
     def items(self):
-        return [
+        from MBTApp.portfolio_records import page_is_public
+        items = [
             'index', 'about', 'service', 'generalContracting',
             'halePrzemyslowe', 'haleMagazynowe', 'obiektyKomercyjne',
             'contact', 'blog', 'project', 'portfolio', 'career', 'privacy'
         ]
+        if not page_is_public():
+            items.remove('portfolio')  # strona jeszcze niepubliczna
+        return items
 
     def location(self, item):
         return reverse(item)
