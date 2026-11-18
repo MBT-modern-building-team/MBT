@@ -2,34 +2,50 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118b">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118e">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
 
-{# ===================== HERO ===================== #}
-<section class="pot-hero" aria-labelledby="pot-h1">
-    <div class="pot-hero-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
+{# ===================== HERO (jak /generalne-wykonawstwo/) ===================== #}
+<section class="gw-hero pot-hero" style="background-image:url('{{ photos.gw_hero }}');" aria-labelledby="pot-h1">
+    <div class="gw-hero-kenburns" style="background-image:url('{{ photos.gw_hero }}');"></div>
+    <div class="gw-hero-overlay"></div>
     <div class="container">
-        <nav class="pot-crumbs" aria-label="{% trans 'Ścieżka nawigacji' %}">
-            <a href="{% url 'index' %}">{% trans 'HOME' %}</a> <span aria-hidden="true">/</span> <span>{{ p.texts.hero_kicker }}</span>
-        </nav>
-        <div class="pot-hero-body">
-            <p class="pot-kicker pot-kicker--light">{{ p.texts.hero_kicker }}</p>
-            <h1 id="pot-h1" class="pot-h1">{{ p.texts.hero_h1 }}</h1>
-            <p class="pot-hero-lead">{{ p.texts.hero_lead }}</p>
-            <div class="pot-cta-row">
-                {% if pdf_url %}<a class="btn mbt-cta" href="{{ pdf_url }}" data-pr-event="pr_pdf_download">{{ p.texts.cta_pdf }} <i class="ri-file-pdf-2-line" aria-hidden="true"></i></a>{% endif %}
-                <a class="btn pot-btn-ghost" href="{% url 'contact' %}" data-pr-event="pr_cta_kontakt">{{ p.texts.cta_kontakt }} <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <div class="gw-hero-content">
+                    <span class="gw-hero-badge wow animate__animated animate__fadeInDown">{{ p.texts.hero_kicker }}</span>
+                    <h1 id="pot-h1" class="gw-hero-title wow animate__animated animate__fadeInUp">{{ p.texts.hero_h1 }}</h1>
+                    <p class="gw-hero-text wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">{{ p.texts.hero_lead }}</p>
+                    <div class="gw-hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <a class="btn mbt-cta" href="{% url 'contact' %}" data-pr-event="pr_cta_kontakt">{{ p.texts.cta_kontakt }} <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+                        {% if pdf_url %}<a class="btn gw-btn-outline" href="{{ pdf_url }}" data-pr-event="pr_pdf_download">{{ p.texts.cta_pdf }} <i class="ri-file-pdf-2-line" aria-hidden="true"></i></a>{% else %}<a class="btn gw-btn-outline" href="#realizacje">{% trans 'Zobacz realizacje' %} <i class="ri-arrow-down-line" aria-hidden="true"></i></a>{% endif %}
+                    </div>
+                </div>
             </div>
         </div>
-        <ul class="pot-stats">
-            {% for s in p.stats %}
-            <li><strong>{{ s.value }}</strong><span>{% if forloop.counter == 1 %}{% trans 'lat na rynku' %}{% elif forloop.counter == 2 %}{% trans 'realizacji' %}{% elif forloop.counter == 3 %}{% trans 'sektorów' %}{% else %}{% trans 'województw' %}{% endif %}</span></li>
-            {% endfor %}
-        </ul>
+    </div>
+    <div class="gw-hero-stats">
+        <div class="container">
+            <ul class="pot-stats">
+                {% for s in p.stats %}
+                <li class="gw-stat"><span class="gw-stat-num">{{ s.value }}</span><span class="gw-stat-label">{% if forloop.counter == 1 %}{% trans 'lat na rynku' %}{% elif forloop.counter == 2 %}{% trans 'realizacji' %}{% elif forloop.counter == 3 %}{% trans 'sektorów' %}{% else %}{% trans 'województw' %}{% endif %}</span></li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </section>
+
+<div class="gw-marquee" aria-hidden="true">
+    <div class="gw-marquee-track">
+        {% for rep in '12' %}
+        <ul class="gw-marquee-group">
+            {% for g in p.sectors %}<li><span>{{ g.name }}</span><i class="ri-arrow-right-up-line"></i></li>{% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+</div>
 
 {# ===================== 01 PROFIL ===================== #}
 <section class="pot-sec" id="profil" aria-labelledby="pot-profil-h">
@@ -326,7 +342,8 @@
 </section>
 
 {# ===================== 08 CTA ===================== #}
-<section class="pot-cta" id="kontakt" aria-labelledby="pot-cta-h">
+<section class="pot-cta" id="kontakt" aria-labelledby="pot-cta-h" style="background-image:url('{{ photos.home_bg_cta }}');">
+    <div class="pot-cta-overlay" aria-hidden="true"></div>
     <div class="pot-hero-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="container">
         <p class="pot-kicker pot-kicker--light">08 · {% trans 'KONTAKT' %}</p>

@@ -144,7 +144,11 @@ def _worker_photos(lang):
 
 def _thumb(project):
     """Miniatura tylko z istniejącego zdjęcia realizacji na R2 (nie logo, nie SVG)."""
-    hero = (project or {}).get('hero') or ''
+    project = project or {}
+    # Realizacje „w trakcie” bez galerii mają w hero zwykle logo klienta, nie zdjęcie budowy.
+    if project.get('type') == 'realizacja-w-trakcie' and not project.get('gallery'):
+        return ''
+    hero = project.get('hero') or ''
     if hero.startswith('https://media.mbt.pl/') and not hero.lower().endswith('.svg') and 'logo' not in hero.lower():
         return hero
     return ''
