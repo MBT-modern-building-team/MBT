@@ -7,1533 +7,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "AKTUALNOŚCI"
-msgstr "NEUIGKEITEN"
-
-msgid "Adres e-mail"
-msgstr "E-Mail-Adresse"
-
-msgid "Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu."
-msgstr ""
-"Wir analysieren Ihre Anforderungen, Ihre Geschäftsvision und die "
-"Standortbedingungen."
-
-msgid "BLOG"
-msgstr "BLOG"
-
-msgid "Biuro w Zabrzu"
-msgstr "Büro in Zabrze"
-
-msgid "Biurowiec"
-msgstr "Bürogebäude"
-
-msgid "Blog"
-msgstr "Blog"
-
-msgid "Budujemy obiekty dla <strong>sektora B2B</strong>"
-msgstr "Wir bauen für den <strong>B2B-Sektor</strong>"
-
-msgid "Budujemy:"
-msgstr "Wir bauen:"
-
-msgid "Centra logistyczne i magazyny"
-msgstr "Logistikzentren und Lager"
-
-msgid ""
-"Centralny punkt kontaktu. Synchronizacja dostaw, nadzór nad ekipami i pełna "
-"koordynacja harmonogramu."
-msgstr ""
-"Ein zentraler Ansprechpartner. Synchronisierte Lieferungen, Aufsicht über "
-"die "
-
-msgid "Co zyskujesz, wybierając <strong>nasz zespół</strong>"
-msgstr "Was Sie gewinnen, wenn Sie <strong>unser Team</strong> wählen"
-
-msgid "Czytaj więcej"
-msgstr "Read more"
-
-msgid "Dane firmy"
-msgstr "Firmendaten"
-
-msgid "Dlaczego warto wybrać MBT?"
-msgstr "Warum MBT wählen?"
-
-msgid "Dowiedz się więcej"
-msgstr "Mehr erfahren"
-
-msgid ""
-"Fotowoltaika, systemy retencji wody, stacje ładowania EV oraz obiekty zgodne"
-" z certyfikacją BREEAM."
-msgstr ""
-"Photovoltaik, Wasserrückhaltesysteme, EV-Ladestationen und BREEAM-"
-"zertifizierte "
-
-msgid "GEN. WYKONAWSTWO"
-msgstr "GENERALUNTERNEHMEN"
-
-msgid "Generalne Wykonawstwo"
-msgstr "Generalunternehmerleistung"
-
-msgid "Generalne Wykonawstwo<br>Inwestycji Budowlanych"
-msgstr "Generalunternehmer<br>für Bauprojekte"
-
-msgid "Generalny Wykonawca"
-msgstr "Generalunternehmer"
-
-msgid "Gwarancja i serwis pozakupowy"
-msgstr "Garantie und After-Sales-Service"
-
-msgid "HOME"
-msgstr "START"
-
-msgid "Hala magazynowa"
-msgstr "Lagerhalle"
-
-msgid "Hala produkcyjna"
-msgstr "Produktionshalle"
-
-msgid "Hale przemysłowe i produkcyjne"
-msgstr "Industrie- und Produktionshallen"
-
-msgid "Imię i nazwisko"
-msgstr "Vor- und Nachname"
-
-msgid "Inne"
-msgstr "Sonstiges"
-
-msgid "Inżynierska precyzja i optymalizacja"
-msgstr "Ingenieurspräzision und Optimierung"
-
-msgid "JESTEŚMY DOSTĘPNI"
-msgstr "WIR SIND ERREICHBAR"
-
-msgid "Jak wygląda proces współpracy?"
-msgstr "Wie läuft die Zusammenarbeit ab?"
-
-msgid "Jeden partner, pełna odpowiedzialność"
-msgstr "Ein Partner, volle Verantwortung"
-
-msgid ""
-"Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> "
-"Budujemy hale magazynowe, produkcyjne i usługowe pod klucz."
-msgstr ""
-"Ein Team — komplette Umsetzung. <strong>Vom Entwurf bis zum Dach!</strong> "
-
-msgid "KARIERA"
-msgstr "KARRIERE"
-
-msgid "KONTAKT"
-msgstr "KONTAKT"
-
-msgid "Kariera"
-msgstr "Karriere"
-
-msgid "Kontakt"
-msgstr "Kontakt"
-
-msgid "Masz inny typ inwestycji?"
-msgstr "Sie planen eine andere Art von Projekt?"
-
-msgid "Masz projekt w głowie?"
-msgstr "Haben Sie ein Projekt im Kopf?"
-
-msgid "Napisz do nas!"
-msgstr "Schreiben Sie uns!"
-
-msgid "Nasza Realizacja"
-msgstr "Unsere Umsetzung"
-
-msgid ""
-"Nasza opieka nie kończy się w dniu oddania kluczy — kompleksowa obsługa "
-"gwarancyjna i wsparcie serwisowe."
-msgstr ""
-"Unsere Betreuung endet nicht am Tag der Schlüsselübergabe — umfassende "
-"Garantie- "
-
-msgid "Nasze najnowsze wpisy na blogu"
-msgstr "Unsere neuesten Blogbeiträge"
-
-msgid "Nasze specjalizacje"
-msgstr "Unsere Spezialisierungen"
-
-msgid ""
-"Nawigujemy przez proces administracyjny, koordynujemy dokumentację "
-"powykonawczą i asystujemy przy pozwoleniach."
-msgstr ""
-"Wir navigieren durch die Verwaltungsverfahren, koordinieren die "
-"Bestandsdokumentation "
-
-msgid ""
-"Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i nowoczesny"
-" design elewacji."
-msgstr ""
-"Moderne Retailparks mit Multi-Use-Konzept und zeitgemäßem Fassadendesign."
-
-msgid ""
-"Nowoczesne przestrzenie magazynowe wysokiego składowania o zoptymalizowanej "
-"przepustowości."
-msgstr "Moderne Hochregallagerflächen mit optimiertem Durchsatz."
-
-msgid "Numer telefonu"
-msgstr "Telefonnummer"
-
-msgid "O NAS"
-msgstr "ÜBER UNS"
-
-msgid "O firmie"
-msgstr "Über das Unternehmen"
-
-msgid "O nas"
-msgstr "Über uns"
-
-msgid "OFERTA"
-msgstr "ANGEBOT"
-
-msgid ""
-"Obiekty dealerskie nowej generacji spełniające globalne standardy "
-"identyfikacji wizualnej marek motoryzacyjnych."
-msgstr ""
-"Dealerships der nächsten Generation, die den globalen Visual-Identity-"
-"Standards "
-
-msgid ""
-"Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale "
-"z suwnicami i zaawansowanym parkiem maszynowym."
-msgstr ""
-"Gebäude, die strengste technologische Anforderungen erfüllen — inklusive "
-"Hallen "
-
-msgid "Obiekty handlowe i usługowe"
-msgstr "Handels- und Dienstleistungsgebäude"
-
-msgid ""
-"Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów"
-" ergonomii pracy."
-msgstr ""
-"Gewerbeimmobilien und Fit-out-Arbeiten nach höchsten ergonomischen "
-"Standards."
-
-msgid "Obserwuj nas"
-msgstr "Folgen Sie uns"
-
-msgid "Z pasją budujemy Wasze biznesy"
-msgstr "Seit 20 Jahren bauen wir mit Leidenschaft Ihre Unternehmen"
-
-msgid "Od koncepcji do <strong>oddania kluczy</strong>"
-msgstr "Vom Konzept bis zur <strong>Schlüsselübergabe</strong>"
-
-msgid "Odbiór i Użytkowanie"
-msgstr "Abnahme & Betrieb"
-
-msgid "Oddział — Kraków"
-msgstr "Zweigstelle — Krakau"
-
-msgid "Oferta"
-msgstr "Angebot"
-
-msgid "Opinie naszych klientów"
-msgstr "Was unsere Kunden sagen"
-
-msgid "Opisz swój projekt..."
-msgstr "Beschreiben Sie Ihr Projekt..."
-
-msgid ""
-"Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny "
-"budżet."
-msgstr ""
-"Optimale Ingenieurlösungen, ein präziser Zeitplan und ein transparentes "
-"Budget."
-
-msgid "Polityka <strong>prywatności</strong>"
-msgstr "<strong>Datenschutz</strong>erklärung"
-
-msgid "Pon-Pt:"
-msgstr "Mo-Fr:"
-
-msgid "Porozmawiaj z nami"
-msgstr "Sprechen Sie mit uns"
-
-msgid "Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu."
-msgstr ""
-"Sprechen wir darüber — wir wählen die optimale Formel für Ihr Vorhaben."
-
-msgid "Portfolio"
-msgstr "Portfolio"
-
-msgid "Poznaj nas <strong>bliżej</strong>"
-msgstr "Lernen Sie uns <strong>näher kennen</strong>"
-
-msgid "Poznaj nasz zespół"
-msgstr "Lernen Sie unser Team kennen"
-
-msgid ""
-"Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie."
-msgstr "Fundamente, Tragwerksmontage, Installationen und Ausbauarbeiten."
-
-msgid "Projektowanie"
-msgstr "Planung"
-
-msgid "Projektowanie i Kosztorys"
-msgstr "Planung & Kostenplan"
-
-msgid "Przestrzenie biurowe"
-msgstr "Büroräume"
-
-msgid "Przydatne linki"
-msgstr "Nützliche Links"
-
-msgid "REALIZACJE"
-msgstr "REFERENZEN"
-
-msgid "Realizacja Budowy"
-msgstr "Bauausführung"
-
-msgid "Realizacje"
-msgstr "Projekte"
-
-msgid "Regulamin"
-msgstr "AGB"
-
-msgid "Rodzaj inwestycji"
-msgstr "Projektart"
-
-msgid "Rozpoznanie i Koncepcja"
-msgstr "Analyse & Konzept"
-
-msgid "Salony samochodowe (Automotive)"
-msgstr "Autohäuser (Automotive)"
-
-msgid "Siedziba"
-msgstr "Firmensitz"
-
-msgid ""
-"Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów w jakości"
-" materiałów i bezpieczeństwie."
-msgstr ""
-"Wir finden Lösungen, die Kosten und Zeit sparen — ohne Kompromisse bei "
-"Materialqualität "
-
-msgid "Te marki nam zaufały"
-msgstr "Diese Marken vertrauen uns"
-
-msgid "Technologia i innowacje"
-msgstr "Technologie und Innovation"
-
-msgid "Telefon"
-msgstr "Telefon"
-
-msgid ""
-"Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego "
-"obiektu."
-msgstr ""
-"Endtests, vollständige Dokumentation und Übergabe eines sicheren, "
-"betriebsbereiten "
-
-msgid "Twoja Wizja"
-msgstr "Ihre Vision"
-
-msgid ""
-"Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację "
-"zróżnicowanych obiektów."
-msgstr ""
-"Die fachübergreifende Erfahrung unseres Teams ermöglicht uns die Umsetzung "
-
-msgid "Wolność od formalności"
-msgstr "Formalitätenfrei bauen"
-
-msgid "Wpisz swój e-mail..."
-msgstr "Geben Sie Ihre E-Mail ein..."
-
-msgid "Wsparcie inwestorskie"
-msgstr "Bauherrenunterstützung"
-
-msgid "Wszelkie prawa zastrzeżone"
-msgstr "Alle Rechte vorbehalten"
-
-msgid ""
-"Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy "
-"detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi "
-"standardami."
-msgstr ""
-"Wählen Sie einen vertrauenswürdigen Partner, der jedes Detail Ihres Projekts"
-" "
-
-msgid "Wyceń projekt"
-msgstr "Projekt kalkulieren"
-
-msgid "Wykonawstwo"
-msgstr "Ausführung"
-
-msgid "Wyślij zapytanie"
-msgstr "Anfrage senden"
-
-msgid "ZAPISZ SIĘ"
-msgstr "ANMELDEN"
-
-msgid "Zapytaj o wycenę"
-msgstr "Angebot anfordern"
-
-msgid "Zobacz cały zespół"
-msgstr "Gesamtes Team ansehen"
-
-msgid "Zobacz efekty naszej pracy"
-msgstr "Sehen Sie die Ergebnisse unserer Arbeit"
-
-msgid "Zobacz realizacje"
-msgstr "Referenzen ansehen"
-
-msgid "Zobacz wszystkie realizacje"
-msgstr "Alle Referenzen ansehen"
-
-msgid "Zobacz wszystkie wpisy"
-msgstr "Alle Beiträge ansehen"
-
-msgid "Zrównoważone budownictwo"
-msgstr "Nachhaltiges Bauen"
-
-msgid "centra logistyczne"
-msgstr "Logistikzentren"
-
-msgid "hale produkcyjne"
-msgstr "Produktionshallen"
-
-msgid "język"
-msgstr "Sprache"
-
-msgid "lat doświadczenia"
-msgstr "Jahre Erfahrung"
-
-msgid "parki handlowe"
-msgstr "Handelsparks"
-
-msgid "biurowce"
-msgstr "Büroräume"
-
-msgid "salony samochodowe"
-msgstr "Autohäuser"
-
-msgid "zrealizowanych inwestycji"
-msgstr "realisierte Projekte"
-
-msgid "Oferta MBT"
-msgstr "MBT-Leistungen"
-
-msgid ""
-"Nie tylko generalne wykonawstwo — <strong>wybierz zakres, którego "
-"potrzebujesz</strong>"
-msgstr ""
-"Nicht nur Generalunternehmen — <strong>wählen Sie den Umfang, den Sie "
-"brauchen</strong>"
-
-msgid ""
-"Możemy zaprojektować, wybudować, a nawet pomóc tylko w pozwoleniach i "
-"formalnościach. Zamów u nas wyłącznie projekt, wyłącznie budowę lub pełne "
-"wsparcie inwestorskie — wszystko w jednym miejscu."
-msgstr ""
-"Wir können planen, bauen oder Ihnen auch nur bei Genehmigungen und "
-"Formalitäten "
-
-msgid "lat na rynku"
-msgstr "Jahre am Markt"
-
-msgid "realizacji"
-msgstr "realisierte Projekte"
-
-msgid "m² powierzchni"
-msgstr "m² Fläche"
-
-msgid "Budowa hali MBT"
-msgstr "MBT Hallenbau"
-
-msgid "Terminowość"
-msgstr "Termintreue"
-
-msgid "gwarantowana umową"
-msgstr "vertraglich garantiert"
-
-msgid "Zakres usług"
-msgstr "Leistungsumfang"
-
-msgid "Wybierz <strong>tylko to, czego potrzebujesz</strong>"
-msgstr "Wählen Sie <strong>nur, was Sie brauchen</strong>"
-
-msgid ""
-"Nie musisz zamawiać wszystkiego naraz. Projekt, budowa i formalności "
-"działają u nas również jako osobne usługi — dopasuj zakres do swojego etapu "
-"inwestycji."
-msgstr ""
-"Sie müssen nicht alles auf einmal bestellen. Planung, Bau und Formalitäten "
-
-msgid "Tylko projekt"
-msgstr "Nur Planung"
-
-msgid ""
-"Specjaliści z referencjami i wieloletnim doświadczeniem. Radzimy sobie z "
-"projektami wielobranżowymi — od instalacji, przez uzgodnienia z gestorami "
-"sieci, po ochronę pożarową i konstrukcję."
-msgstr ""
-"Spezialisten mit Referenzen und langjähriger Erfahrung. Wir meistern "
-"fachübergreifende "
-
-msgid "Trudne warunki gruntowe i wzmocnienia gruntu"
-msgstr "Schwierige Bodenverhältnisse und Baugrundverbesserung"
-
-msgid "Modelowanie BIM — projektowe i wykonawcze"
-msgstr "BIM-Modellierung — Entwurf und Ausführung"
-
-msgid "Wsparcie przy certyfikacji BREEAM"
-msgstr "Unterstützung bei der BREEAM-Zertifizierung"
-
-msgid "Tylko budowa"
-msgstr "Nur Bau"
-
-msgid ""
-"Pełna realizacja inwestycji — od przejęcia placu budowy do przekazania "
-"kluczy. Wykonujemy roboty ziemne, fundamentowe, konstrukcje, instalacje i "
-"wykończenia."
-msgstr ""
-"Komplette Projektrealisierung — von der Baustellenübernahme bis zur "
-"Schlüsselübergabe. "
-
-msgid "Zjazdy, przyłącza mediów i instalacje OZE"
-msgstr "Zufahrten, Medienanschlüsse und OZE-Anlagen"
-
-msgid "Odbiory, pozwolenie na użytkowanie i klucze"
-msgstr "Abnahmen, Nutzungsgenehmigung und Schlüssel"
-
-msgid "Tylko formalności"
-msgstr "Nur Formalitäten"
-
-msgid ""
-"Pomagamy od samego początku — od wyboru lokalizacji, przez przygotowanie "
-"materiałów do decyzji kredytowej, aż po pozwolenie na budowę i zakup "
-"działki."
-msgstr ""
-"Wir helfen von Anfang an — von der Standortwahl über die Vorbereitung der "
-"Kreditunterlagen "
-
-msgid "Wybór lokalizacji i wsparcie przy zakupie działki"
-msgstr "Standortwahl und Unterstützung beim Grundstückskauf"
-
-msgid "Pozwolenie na budowę — projekt gotowy lub od zera"
-msgstr "Baugenehmigung — bestehende Planung oder von Grund auf"
-
-msgid "Negocjacje, scalanie działek i badania gruntu"
-msgstr "Verhandlungen, Flurstückszusammenlegung und Baugrundgutachten"
-
-msgid "Elastyczny zakres współpracy"
-msgstr "Flexibler Leistungsumfang"
-
-msgid "Zamów <strong>dokładnie to, czego potrzebujesz</strong>"
-msgstr "Bestellen Sie <strong>genau, was Sie brauchen</strong>"
-
-msgid ""
-"Jesteś na etapie projektu, budowy, a może szukasz kogoś, kto załatwi "
-"pozwolenia? Wszystko możesz zamówić osobno — albo razem, jako pełne "
-"generalne wykonawstwo."
-msgstr ""
-"Befinden Sie sich in der Planungs-, Bauphase oder suchen Sie jemanden, der "
-
-msgid ""
-"Potrzebujesz gotowej dokumentacji projektowej? Zaprojektujemy halę, magazyn "
-"lub obiekt usługowy — z uzgodnieniami i pozwoleniem na budowę."
-msgstr ""
-"Sie benötigen eine fertige Planungsdokumentation? Wir entwerfen eine Halle, "
-
-msgid "Zapytaj o projekt"
-msgstr "Planung anfragen"
-
-msgid ""
-"Masz już projekt? Wybudujemy obiekt zgodnie z dokumentacją — od fundamentów "
-"po wykończenie i odbiory."
-msgstr ""
-"Sie haben schon eine Planung? Wir bauen nach Dokumentation — von den "
-"Fundamenten "
-
-msgid "Zapytaj o budowę"
-msgstr "Bau anfragen"
-
-msgid ""
-"Nie chcesz tracić czasu na urzędy? Przejmiemy pozwolenia, uzgodnienia, "
-"odbiory i dokumentację powykonawczą."
-msgstr ""
-"Sie möchten keine Zeit in Ämtern verbringen? Wir übernehmen Genehmigungen, "
-
-msgid "Zapytaj o wsparcie"
-msgstr "Unterstützung anfragen"
-
-msgid "Pełne generalne wykonawstwo"
-msgstr "Komplettes Generalunternehmen"
-
-msgid ""
-"Projekt + budowa + formalności w jednym kontrakcie. Jeden partner, pełna "
-"odpowiedzialność, zero pośredników."
-msgstr ""
-"Planung + Bau + Formalitäten in einem Vertrag. Ein Partner, volle "
-"Verantwortung, "
-
-msgid "Zobacz stronę GW"
-msgstr "GU-Seite ansehen"
-
-msgid "Formuły współpracy"
-msgstr "Kooperationsformeln"
-
-msgid "Dopasowujemy się do <strong>Twoich potrzeb</strong>"
-msgstr "Wir passen uns <strong>Ihren Bedürfnissen</strong> an"
-
-msgid "Projektuj-Buduj"
-msgstr "Planen-Bauen"
-
-msgid ""
-"Jeden kontrakt obejmuje projekt i wykonanie. Szybka realizacja, jedna "
-"odpowiedzialność, optymalizacja kosztów na etapie projektowania."
-msgstr ""
-"Ein Vertrag umfasst Planung und Ausführung. Schnelle Umsetzung, eine "
-"Verantwortung, "
-
-msgid ""
-"Przejmujemy pełną odpowiedzialność za proces budowlany — koordynacja, "
-"harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu."
-msgstr ""
-"Wir übernehmen die volle Verantwortung für den Bauprozess — Koordination, "
-"Zeitplan, "
-
-msgid "Optymalizuj-Buduj"
-msgstr "Optimieren-Bauen"
-
-msgid ""
-"Analizujemy istniejący projekt pod kątem kosztów i czasu, proponujemy "
-"oszczędności bez kompromisów jakościowych, a następnie budujemy."
-msgstr ""
-"Wir analysieren Ihre bestehende Planung auf Kosten- und Zeitersparnis, "
-"schlagen "
-
-msgid "Branże"
-msgstr "Branchen"
-
-msgid "Budujemy dla <strong>każdej branży</strong>"
-msgstr "Wir bauen für <strong>jede Branche</strong>"
-
-msgid "Hale produkcyjne"
-msgstr "Produktionshallen"
-
-msgid "Logistyka"
-msgstr "Logistik"
-
-msgid "Retail"
-msgstr "Retail"
-
-msgid "Automotive"
-msgstr "Automotive"
-
-msgid "Biura"
-msgstr "Büros"
-
-msgid "Eko / BREEAM"
-msgstr "Eco / BREEAM"
-
-msgid "Dlaczego MBT?"
-msgstr "Warum MBT?"
-
-msgid "Możesz na nas liczyć <strong>na każdym etapie</strong>"
-msgstr "Auf uns können Sie sich <strong>in jeder Phase</strong> verlassen"
-
-msgid "Realizacja MBT"
-msgstr "MBT-Projekt"
-
-msgid "Terminowość i elastyczność"
-msgstr "Termintreue und Flexibilität"
-
-msgid "Realizujemy zgodnie z harmonogramem, reagując na zmiany."
-msgstr "Wir liefern nach Zeitplan und reagieren flexibel auf Änderungen."
-
-msgid "Optymalizacja kosztów"
-msgstr "Kostenoptimierung"
-
-msgid "Oszczędności bez rezygnacji z jakości i funkcji."
-msgstr "Einsparungen ohne Verzicht auf Qualität und Funktion."
-
-msgid "Uczciwość i transparentność"
-msgstr "Ehrlichkeit und Transparenz"
-
-msgid "Pełna, przejrzysta specyfikacja w każdej ofercie."
-msgstr "Vollständige, transparente Spezifikation in jedem Angebot."
-
-msgid "Jeden zespół, pełna odpowiedzialność"
-msgstr "Ein Team, volle Verantwortung"
-
-msgid "Bez pośredników — od projektu po odbiór."
-msgstr "Keine Zwischenhändler — von der Planung bis zur Übergabe."
-
-msgid "Proces współpracy"
-msgstr "Kooperationsprozess"
-
-msgid "Jak pracujemy <strong>krok po kroku</strong>"
-msgstr "So arbeiten wir <strong>Schritt für Schritt</strong>"
-
-msgid "Analiza i koncepcja"
-msgstr "Analyse und Konzept"
-
-msgid ""
-"Poznajemy Twoje potrzeby, analizujemy teren i przygotowujemy wstępną "
-"koncepcję wraz z szacunkiem kosztów."
-msgstr ""
-"Wir lernen Ihre Anforderungen kennen, analysieren den Standort und erstellen"
-" "
-
-msgid "Projekt i oferta"
-msgstr "Planung und Angebot"
-
-msgid ""
-"Przygotowujemy projekt, harmonogram i transparentny kosztorys. Negocjujemy i"
-" ustalamy szczegóły umowy."
-msgstr ""
-"Wir erstellen die Planung, den Zeitplan und eine transparente Kalkulation. "
-
-msgid "Realizacja"
-msgstr "Ausführung"
-
-msgid ""
-"Budujemy — fundamenty, konstrukcja, instalacje, wykończenie. Na bieżąco "
-"raportujemy postęp prac."
-msgstr ""
-"Wir bauen — Fundamente, Tragwerk, Installationen, Ausbau. Wir berichten "
-"laufend "
-
-msgid "Odbiór i klucze"
-msgstr "Abnahme und Schlüssel"
-
-msgid ""
-"Testy końcowe, komplet dokumentacji, pozwolenie na użytkowanie i przekazanie"
-" gotowego obiektu."
-msgstr ""
-"Endtests, vollständige Dokumentation, Nutzungsgenehmigung und Übergabe des "
-
-msgid "Nasze obiekty <strong>mówią za nas</strong>"
-msgstr "Unsere Gebäude <strong>sprechen für sich</strong>"
-
-msgid "Zobacz realizację"
-msgstr "Projekt ansehen"
-
-msgid "Masz pytania o swoją inwestycję?"
-msgstr "Fragen zu Ihrer Investition?"
-
-msgid ""
-"Porozmawiajmy o Twoim projekcie — przygotujemy wycenę i doradzimy najlepszą "
-"formułę."
-msgstr ""
-"Lassen Sie uns über Ihr Projekt sprechen — wir erstellen ein Angebot und "
-"beraten "
-
-msgid "Skontaktuj się"
-msgstr "Kontaktieren Sie uns"
-
-msgid "O tej usłudze"
-msgstr "Über diese Leistung"
-
-msgid ""
-"Przy projektowaniu realizowanych obiektów w sposób szczególny uwzględniamy "
-"funkcjonalność, optymalne rozwiązania w zakresie posadowienia, konstrukcji i"
-" instalacji oraz estetykę obiektu."
-msgstr ""
-"Bei der Planung unserer Gebäude achten wir besonders auf Funktionalität, "
-"optimale "
-
-msgid "Funkcjonalność i estetyka obiektu"
-msgstr "Funktionalität und Ästhetik des Gebäudes"
-
-msgid ""
-"Specjalizujemy się w realizacji hal magazynowych, produkcyjnych i "
-"usługowych. Zapewniamy pełny układ komunikacyjny i obiekty inżynierskie."
-msgstr ""
-"Wir sind spezialisiert auf die Realisierung von Lager-, Produktions- und "
-"Servicehallen. "
-
-msgid ""
-"Oferujemy wsparcie na każdym etapie inwestycji: wskazanie dogodnej "
-"lokalizacji, wsparcie przy zakupie nieruchomości, proces projektowy od "
-"koncepcji do pozwolenia na budowę oraz procedowanie i wykonanie przyłączy."
-msgstr ""
-"Wir bieten Unterstützung in jeder Phase der Investition: Standortauswahl, "
-"Unterstützung "
-
-msgid "Od koncepcji do pozwolenia na budowę"
-msgstr "Vom Konzept bis zur Baugenehmigung"
-
-msgid "Hale produkcyjne, logistyka, obiekty komercyjne"
-msgstr "Produktionshallen, Logistik, Gewerbeimmobilien"
-
-msgid "Więcej szczegółów"
-msgstr "Mehr Details"
-
-msgid ""
-"Przejmujemy pełną odpowiedzialność za Twój <strong>proces budowlany</strong>"
-msgstr ""
-"Wir übernehmen die volle Verantwortung für Ihren <strong>Bauprozess</strong>"
-
-msgid ""
-"Tworzymy obiekty, które nie tylko optymalizują procesy biznesowe, ale są "
-"również przyjazne dla środowiska i oszczędne w eksploatacji. Pomagamy w "
-"realizacji wymogów środowiskowych i asystujemy w procesach uzyskiwania "
-"certyfikatów, takich jak BREEAM."
-msgstr ""
-"Wir realisieren Gebäude, die nicht nur Geschäftsprozesse optimieren, sondern"
-" "
-
-msgid "Inżynierowie z <strong>pasją do budowania</strong>"
-msgstr "Ingenieure mit <strong>Leidenschaft fürs Bauen</strong>"
-
-msgid ""
-"Przejmujemy pełną odpowiedzialność za cały proces budowlany — koordynację, "
-"harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu zamiast "
-"dziesiątek firm."
-msgstr ""
-"Wir übernehmen die volle Verantwortung für den gesamten Bauprozess — "
-"Koordination, "
-
-msgid "Skontaktuj się z <strong>nami</strong>"
-msgstr "Kontaktieren Sie <strong>uns</strong>"
-
-msgid "Twój plac budowy"
-msgstr "Ihre Baustelle"
-
-msgid "Zza kulis"
-msgstr "Hinter den Kulissen"
-
-msgid ""
-"Projektujemy z uwzględnieniem funkcjonalności, estetyki i optymalnych "
-"rozwiązań."
-msgstr ""
-"Wir planen mit Blick auf Funktionalität, Ästhetik und optimale Lösungen."
-
-msgid ""
-"Menadżerowie Projektu, Kierownicy, Inżynierowie i Projektanci — to ludzie "
-"stanowią o sile firmy."
-msgstr ""
-"Projektleiter, Bauleiter, Ingenieure und Designer — das sind die Menschen, "
-
-msgid "Zobacz pełen opis"
-msgstr "Vollständige Beschreibung ansehen"
-
-msgid "Specyfikacja"
-msgstr "Spezifikation"
-
-msgid "Status"
-msgstr "Status"
-
-msgid "Czas realizacji"
-msgstr "Projektdauer"
-
-msgid "Formuła"
-msgstr "Formel"
-
-msgid "Wykonawca"
-msgstr "Auftragnehmer"
-
-msgid "Wyceń podobny projekt"
-msgstr "Ähnliches Projekt anfragen"
-
-msgid "Galeria"
-msgstr "Galerie"
-
-msgid "Zdjęcia z realizacji"
-msgstr "Projektfotos"
-
-msgid "Szczegóły realizacji są dostępne wkrótce."
-msgstr "Projektdetails folgen in Kürze."
-
-msgid "Aktualności i <strong>artykuły</strong>"
-msgstr "Neuigkeiten und <strong>Artikel</strong>"
-
-msgid "Dołącz do <strong>MBT</strong>"
-msgstr "Werden Sie Teil von <strong>MBT</strong>"
-
-msgid "Poznaj ludzi, którzy tworzą MBT"
-msgstr "Lernen Sie die Menschen kennen, die MBT aufbauen"
-
-msgid "Aplikuj — napisz do nas"
-msgstr "Bewerben Sie sich — schreiben Sie uns"
-
-msgid ""
-"Realizacja prowadzona przez MBT Modern Building Team w formule generalnego "
-"wykonawstwa."
-msgstr "Projekt der MBT Modern Building Team in Generalunternehmerform."
+msgid "0 Formalności"
+msgstr "0 Formalitäten"
 
 msgid "0 wypadków"
 msgstr "0 Unfälle"
 
-msgid "1. Administrator danych"
-msgstr "1. Verantwortlicher"
-
-msgid "2. Zakres przetwarzania danych"
-msgstr "2. Umfang der Datenverarbeitung"
-
-msgid "3. Podstawa prawna"
-msgstr "3. Rechtsgrundlage"
-
-msgid "4. Okres przechowywania"
-msgstr "4. Speicherdauer"
-
-msgid "5. Prawa osób, których dane dotyczą"
-msgstr "5. Rechte der Betroffenen"
-
-msgid "6. Kontakt"
-msgstr "6. Kontakt"
-
-msgid "7. Pliki cookies"
-msgstr "7. Cookies"
-
-msgid "AUTOMOTIVE"
-msgstr "AUTOMOTIVE"
-
-msgid ""
-"Aby odpowiedzieć na te wyzwania, stworzyliśmy MBT – firmę, która stawia na "
-"głębokie zrozumienie potrzeb klientów."
-msgstr ""
-"Um diesen Herausforderungen zu begegnen, haben wir MBT gegründet — ein "
-"Unternehmen, "
-
-msgid "Aktualności wkrótce."
-msgstr "Neuigkeiten folgen in Kürze."
-
-msgid "Audyty i inspekcje procesów"
-msgstr "Prozessaudits und -inspektionen"
-
-msgid "BIURA"
-msgstr "BÜROS"
-
-msgid "BREEAM — zielone budownictwo"
-msgstr "BREEAM — nachhaltiges Bauen"
-
-msgid "Bezpieczeństwo BHP"
-msgstr "Arbeitsschutz"
-
-msgid "Bezpieczeństwo na budowie MBT"
-msgstr "Sicherheit auf MBT-Baustellen"
-
-msgid ""
-"Bieżący, wideo-fotograficzny podgląd postępów prac. Jako Inwestor masz pełną"
-" transparentność i kontrolę, bez wychodzenia z biura."
-msgstr ""
-"Live-Video- und Foto-Einblicke in den Baufortschritt. Als Bauherr behalten "
-
-msgid "Brak dostępnych szablonów. Poproś administratora o dodanie."
-msgstr ""
-"Keine Vorlagen verfügbar. Bitten Sie den Administrator, welche hinzuzufügen."
-
-msgid "Centrum logistyczne / magazyn"
-msgstr "Logistikzentrum / Lager"
-
-msgid "Certyfikacja BREEAM"
-msgstr "BREEAM-Zertifizierung"
-
-msgid "Cyfrowe zarządzanie projektami"
-msgstr "Digitales Projektmanagement"
-
-msgid "Cykliczne szkolenia zespołu"
-msgstr "Regelmäßige Teamschulungen"
-
-msgid "Czy realizujecie obiekty zgodne z certyfikacją BREEAM?"
-msgstr "Realisieren Sie BREEAM-zertifizierte Gebäude?"
-
-msgid "Czy zajmujecie się uzyskaniem pozwoleń i formalnościami?"
-msgstr "Übernehmen Sie Genehmigungen und Formalitäten?"
-
-msgid "Czym różni się generalny wykonawca od pojedynczych podwykonawców?"
-msgstr ""
-"Was unterscheidet einen Generalunternehmer von einzelnen Subunternehmern?"
-
-msgid "Data"
-msgstr "Datum"
-
-msgid "Dlaczego warto nas wybrać"
-msgstr "Warum Sie uns wählen sollten"
-
-msgid "ESG / Zielone budownictwo"
-msgstr "ESG / Nachhaltiges Bauen"
-
-msgid "Elektromobilność"
-msgstr "Elektromobilität"
-
-msgid "Email"
-msgstr "E-Mail"
-
-msgid "Gospodarka wodna"
-msgstr "Wassermanagement"
-
-msgid "Gruntowna realizacja"
-msgstr "Gründliche Umsetzung"
-
-msgid ""
-"Gruntowna realizacja — od koncepcji po oddanie gotowego obiektu, zawsze "
-"zgodnie z harmonogramem."
-msgstr ""
-"Gründliche Projektrealisierung — vom Konzept bis zur Übergabe des fertigen "
-
-msgid "HALE PRODUKCYJNE"
-msgstr "PRODUKTIONSHALLEN"
-
-msgid "Hala przemysłowa / produkcyjna"
-msgstr "Industrie- / Produktionshalle"
-
-msgid "Hasło"
-msgstr "Passwort"
-
-msgid "Historia pobrań"
-msgstr "Downloadhistorie"
-
-msgid "Ile trwa realizacja inwestycji w formule generalnego wykonawstwa?"
-msgstr "Wie lange dauert ein Generalunternehmer-Projekt?"
-
-msgid "Informacje"
-msgstr "Informationen"
-
-msgid "Infrastruktura pod stacje szybkiego ładowania pojazdów EV."
-msgstr "Infrastruktur für EV-Schnellladestationen."
-
-msgid "Instalacje OZE"
-msgstr "OZE-Anlagen"
-
-msgid "Jesteś kierownikiem MBT?"
-msgstr "Sind Sie MBT-Bauleiter?"
-
-msgid ""
-"Jeśli konto o podanym emailu istnieje, administrator otrzymał informację o "
-"konieczności zresetowania hasła. Skontaktujemy się wkrótce."
-msgstr ""
-"Falls ein Konto mit der angegebenen E-Mail existiert, hat der Administrator "
-
-msgid "Każda budowa pod obserwacją"
-msgstr "Jede Baustelle unter Beobachtung"
-
-msgid "Kompleksowa realizacja — od A do Z"
-msgstr "Schlüsselfertige Umsetzung — von A bis Z"
-
-msgid ""
-"Kompleksowe zarządzanie projektami budowlanymi z głębokim zrozumieniem "
-"potrzeb inwestorów."
-msgstr ""
-"Umfassendes Bauprojektmanagement mit tiefem Verständnis für die Bedürfnisse "
-
-msgid "LOGISTYKA"
-msgstr "LOGISTIK"
-
-msgid "Zaangażowania"
-msgstr "Jahre Erfahrung"
-
-msgid "Ludzie MBT"
-msgstr "MBT-Menschen"
-
-msgid "MAGAZYNY"
-msgstr "LAGER"
-
-msgid "Masz pytania dotyczące swojej inwestycji?"
-msgstr "Fragen zu Ihrem Projekt?"
-
-msgid "Menu"
-msgstr "Menü"
-
-msgid "Monitoring placu budowy 24/7"
-msgstr "24/7-Baustellenüberwachung"
-
-msgid "Monitoring z powietrza (Drony)"
-msgstr "Luftgestützte Überwachung (Drohnen)"
-
-msgid "Nasza misja"
-msgstr "Unsere Mission"
-
-msgid "Nasza wizja"
-msgstr "Unsere Vision"
-
-msgid "Nasze inwestycje"
-msgstr "Unsere Projekte"
-
-msgid "Nasze realizacje"
-msgstr "Unsere Projekte"
-
-msgid "Nowe hasło"
-msgstr "Neues Passwort"
-
-msgid ""
-"Nowoczesne oprogramowanie do zarządzania budową. Harmonogramy, raporty i "
-"obieg dokumentacji aktualizowane w czasie rzeczywistym."
-msgstr ""
-"Moderne Baumanagementsoftware. Zeitpläne, Berichte und Dokumentenflüsse in "
-
-msgid "OZNAKOWANIE"
-msgstr "BESCHILDERUNG"
-
-msgid "Obiekt handlowy / usługowy"
-msgstr "Handels- / Dienstleistungsgebäude"
-
-msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
-msgstr "Gebäude, die strenge Zertifizierungsanforderungen erfüllen."
-
-msgid ""
-"Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
-"projektu aż po dach!"
-msgstr ""
-"Seit 20 Jahren bauen wir mit Leidenschaft Ihre Unternehmen. Ein Team — "
-"vollständige "
-
-msgid "Odpowiedzialne projektowanie"
-msgstr "Verantwortungsvolle Planung"
-
-msgid "Opinie klientów"
-msgstr "Kundenstimmen"
-
-msgid "Oznakowanie budowy"
-msgstr "Baustellenbeschilderung"
-
-msgid "Oznakowanie budowy — Panel kierownika"
-msgstr "Baustellenbeschilderung — Bauleiter-Panel"
-
-msgid "Pierwsze logowanie — ustaw swoje hasło."
-msgstr "Erste Anmeldung — legen Sie Ihr Passwort fest."
-
-msgid "Pobieraj banery reklamowe i informacyjne na budowę — z Twoim logo."
-msgstr ""
-"Laden Sie Werbe- und Informationsbanner für Ihre Baustelle herunter — mit "
-"Ihrem "
-
-msgid "Pobierz baner"
-msgstr "Banner herunterladen"
-
-msgid "Podaj email — administrator zresetuje hasło i prześle tymczasowe."
-msgstr ""
-"Geben Sie Ihre E-Mail ein — der Administrator setzt Ihr Passwort zurück und "
-
-msgid "Powrót do logowania"
-msgstr "Zurück zur Anmeldung"
-
-msgid "Powrót na stronę główną"
-msgstr "Zurück zur Startseite"
-
-msgid "Powtórz hasło"
-msgstr "Passwort wiederholen"
-
-msgid "Prosto z placu budowy"
-msgstr "Direkt von der Baustelle"
-
-msgid "Prośba wysłana"
-msgstr "Anfrage gesendet"
-
-msgid "Przestrzeń biurowa"
-msgstr "Büroraum"
-
-msgid "Przez MBT"
-msgstr "Von MBT"
-
-msgid "RETAIL"
-msgstr "RETAIL"
-
-msgid "Raportowanie w czasie rzeczywistym"
-msgstr "Echtzeit-Reporting"
-
-msgid "Salon samochodowy"
-msgstr "Autohaus"
-
-msgid "Sprawdź oferty pracy"
-msgstr "Stellenangebote ansehen"
-
-msgid "Strona główna"
-msgstr "Startseite"
-
-msgid "Systemy retencji i wykorzystania wody deszczowej (szara woda)."
-msgstr "Regenwasserrückhaltung und Grauwassernutzung."
-
-msgid "Szablon"
-msgstr "Vorlage"
-
-msgid "Szablony banerów są w trakcie przygotowywania."
-msgstr "Banner-Vorlagen werden gerade vorbereitet."
-
-msgid "Szukaj"
-msgstr "Suchen"
-
-msgid "Terminowość i Elastyczność"
-msgstr "Termintreue und Flexibilität"
-
-msgid "Trwałe relacje"
-msgstr "Langfristige Beziehungen"
-
-msgid "Wgraj"
-msgstr "Hochladen"
-
-msgid "Wgraj logo aby zobaczyć podgląd"
-msgstr "Laden Sie ein Logo hoch, um eine Vorschau zu sehen"
-
-msgid "Więcej"
-msgstr "Mehr"
-
-msgid "Wnętrze hali"
-msgstr "Halleninnenraum"
-
-msgid "Wolisz porozmawiać od razu?"
-msgstr "Lieber direkt sprechen?"
-
-msgid "Wybierz logo"
-msgstr "Logo auswählen"
-
-msgid ""
-"Wydajne systemy fotowoltaiczne na dachach obiektów wielkopowierzchniowych."
-msgstr "Leistungsstarke PV-Systeme auf Dächern großer Gebäude."
-
-msgid "Wykwalifikowane kadry BHP"
-msgstr "Qualifizierte Sicherheitsfachkräfte"
-
-msgid "Wyloguj"
-msgstr "Abmelden"
-
-msgid "Wyślij prośbę"
-msgstr "Anfrage senden"
-
-msgid "Wyślij zapytanie o wycenę"
-msgstr "Anfrage für Angebot senden"
-
-msgid "Zadzwoń do nas"
-msgstr "Rufen Sie uns an"
-
-msgid "Zaloguj się"
-msgstr "Anmelden"
-
-msgid "Zaloguj się, aby pobrać banery z wgranym logo."
-msgstr "Melden Sie sich an, um Banner mit hochgeladenem Logo herunterzuladen."
-
-msgid ""
-"Zaloguj się, aby wgrać swoje logo i pobrać banery przygotowane pod druk."
-msgstr ""
-"Melden Sie sich an, laden Sie Ihr Logo hoch und laden Sie druckfertige "
-"Banner "
-
-msgid ""
-"Zanim wbijemy pierwszą łopatę, wznosimy Twój obiekt w środowisku cyfrowym. "
-"Modelowanie daje pełną kontrolę nad kolizjami projektowymi i pilnuje "
-"budżetu."
-msgstr ""
-"Bevor der erste Spatenstich erfolgt, errichten wir Ihr Gebäude in einer "
-"digitalen "
-
-msgid "Zapisz hasło"
-msgstr "Passwort speichern"
-
-msgid "Zapomniałem hasła"
-msgstr "Passwort vergessen"
-
-msgid "Zapomniałeś hasła?"
-msgstr "Passwort vergessen?"
-
-msgid ""
-"Założyciele MBT — Jacek Lewandowski i Tomasz Kalisz — zgromadzili zespół "
-"złożony z Menadżerów Projektu, Kierowników, Inżynierów i Projektantów, "
-"wiedząc, że to ludzie stanowią o sile firmy."
-msgstr ""
-"Die MBT-Gründer — Jacek Lewandowski und Tomasz Kalisz — haben ein Team aus "
-
-msgid "Zespół"
-msgstr "Team"
-
-msgid "Zespół MBT"
-msgstr "MBT-Team"
-
-msgid "Zespół specjalistów"
-msgstr "Spezialistenteam"
-
-msgid "Zmień hasło"
-msgstr "Passwort ändern"
-
-msgid "Zobacz jak pracujemy"
-msgstr "Sehen Sie, wie wir arbeiten"
-
-msgid "Zobacz wszystkie aktualności"
-msgstr "Alle Neuigkeiten ansehen"
-
-msgid "kierownik"
-msgstr "Bauleiter"
-
-msgid "min. 8 znaków"
-msgstr "min. 8 Zeichen"
-
-msgid "m² wybudowanych hal"
-msgstr "m² gebaute Hallen"
-
-msgid "oddanych „pod kluczem"
-msgstr "schlüsselfertig übergeben"
-
-msgid "95% projektów w BIM"
-msgstr "95 % der Projekte in BIM"
-
-msgid ""
-"<strong>Menadżerowie Projektu, Kierownicy, Inżynierowie i "
-"Projektanci</strong> — to ludzie stanowią o sile firmy."
-msgstr ""
-"<strong>Projektmanager, Bauleiter, Ingenieure und Designer</strong> — das "
-"sind "
-
-msgid ""
-"<strong>Obsługujemy cały proces budowy</strong>, od koncepcji po oddanie "
-"gotowego obiektu."
-msgstr ""
-"<strong>Wir betreuen den gesamten Bauprozess</strong>, vom Konzept bis zur "
-
-msgid ""
-"Administratorem danych osobowych jest MBT Modern Building Team Sp. z o.o. z "
-"siedzibą w Katowicach, ul. Jankego 176/1A, 40-663 Katowice, NIP: 9542788822,"
-" REGON: 369557780, KRS: 0000720424."
-msgstr ""
-"Verantwortlicher für personenbezogene Daten ist MBT Modern Building Team Sp."
-" "
-
-msgid "Bezkompromisowe podejście do <strong>bezpieczeństwa</strong>"
-msgstr "Ein kompromissloser Ansatz für <strong>Sicherheit</strong>"
-
-msgid "Budujemy z wykorzystaniem <strong>nowoczesnych technologii</strong>"
-msgstr "Wir bauen mit <strong>modernster Technologie</strong>"
-
-msgid ""
-"Czas zależy od skali i specyfiki obiektu — zwykle od kilku do kilkunastu "
-"miesięcy. Na etapie wyceny otrzymasz precyzyjny harmonogram dopasowany do "
-"Twoich potrzeb biznesowych."
-msgstr ""
-"Die Dauer hängt von Größe und Spezifik des Gebäudes ab — in der Regel wenige"
-" "
-
-msgid ""
-"Dane osobowe przechowywane są przez okres niezbędny do realizacji celu "
-"przetwarzania, a po jego zakończeniu — przez okres wymagany przepisami prawa"
-" lub do przedawnienia roszczeń."
-msgstr ""
-"Personenbezogene Daten werden so lange gespeichert, wie es zur Erfüllung des"
-" "
-
-msgid ""
-"Dzięki inteligentnej unifikacji osiągamy znaczne <strong>oszczędności "
-"finansowe</strong> bez zmiany ilości materiałów."
-msgstr ""
-"Durch intelligente Vereinheitlichung erreichen wir erhebliche "
-"<strong>finanzielle "
-
-msgid ""
-"Dzięki inteligentnej unifikacji osiągamy znaczne oszczędności finansowe."
-msgstr ""
-"Durch intelligente Vereinheitlichung erzielen wir deutliche "
-"Kosteneinsparungen."
-
-msgid "Generalne wykonawstwo „pod klucz” — od projektu aż po dach"
-msgstr "Schlüsselfertiges Generalunternehmen — vom Entwurf bis zum Dach"
-
-msgid "Hale magazynowe, produkcyjne i usługowe"
-msgstr "Lager-, Produktions- und Servicehallen"
-
-msgid ""
-"Inwestycje realizowane z inżynierską precyzją wymagają najlepszych narzędzi."
-" W MBT korzystamy z zaawansowanych rozwiązań cyfrowych, aby optymalizować "
-"czas i koszty Twojej budowy."
-msgstr ""
-"Mit Ingenieurspräzision realisierte Projekte verlangen die besten Werkzeuge."
-" "
-
-msgid ""
-"Jako doświadczony Generalny Wykonawca działamy w modelu, który zdejmuje z "
-"barków Inwestora ciężar koordynacji setek procesów. Nasza praca to nie tylko"
-" wznoszenie murów i montaż konstrukcji — to przede wszystkim zarządzanie "
-"procesem inwestycyjnym."
-msgstr ""
-"Als erfahrener Generalunternehmer arbeiten wir in einem Modell, das dem "
-"Bauherrn "
-
-msgid ""
-"Jesteśmy w ciągłym ruchu. Śledź postępy prac na naszych kluczowych budowach "
-"i bądź na bieżąco z życiem zespołu MBT."
-msgstr ""
-"Wir sind ständig in Bewegung. Verfolgen Sie den Fortschritt auf unseren "
-"Schlüsselbaustellen "
-
-msgid "MBT stawia na <strong>zrównoważone budownictwo</strong>"
-msgstr "MBT setzt auf <strong>nachhaltiges Bauen</strong>"
-
-msgid "Najczęściej zadawane <strong>pytania</strong>"
-msgstr "Häufig gestellte <strong>Fragen</strong>"
-
-msgid "Napisz do nas — odpowiemy w ciągu 24 godzin."
-msgstr "Schreiben Sie uns — wir antworten innerhalb von 24 Stunden."
-
-msgid ""
-"Nasz zespół to ludzie, którzy <strong>potrafią współpracować</strong> z Tobą"
-" i partnerami biznesowymi."
-msgstr ""
-"Unser Team besteht aus Menschen, die <strong>mit Ihnen und mit "
-"Geschäftspartnern "
-
-msgid "Nasze <strong>aktualności</strong>"
-msgstr "Unsere <strong>Neuigkeiten</strong>"
-
-msgid ""
-"Nasze wartości wyrażają się w nazwie Modern Building Team. Stawiamy na "
-"nowoczesność w myśleniu, zarządzaniu i relacjach."
-msgstr ""
-"Unsere Werte leben in unserem Namen — Modern Building Team. Wir stehen für "
-
-msgid ""
-"Niezależnie od tego, czy planujesz centrum logistyczne, park handlowy czy "
-"salon samochodowy — jesteśmy gotowi na nowe inżynieryjne wyzwania."
-msgstr ""
-"Ob Logistikzentrum, Handelspark oder Autohaus — wir sind bereit für neue "
-"ingenieurtechnische "
-
-msgid ""
-"Obsługujemy cały proces budowy, od koncepcji po oddanie gotowego obiektu."
-msgstr ""
-"Wir betreuen den gesamten Bauprozess — vom Konzept bis zur Übergabe des "
-"fertigen "
-
-msgid ""
-"Odpowiadamy za przygotowanie harmonogramu, opracowanie szczegółowego "
-"kosztorysu, zarządzanie podwykonawcami, aż po finalne przekazanie w pełni "
-"funkcjonalnego obiektu, gotowego do prowadzenia biznesu."
-msgstr ""
-"Wir verantworten den Terminplan, die detaillierte Kalkulation, das "
-"Subunternehmermanagement "
-
-msgid ""
-"Plac budowy to skomplikowany, żywy organizm. W MBT kultura bezpieczeństwa to"
-" absolutny fundament naszej pracy. Przestrzegamy najbardziej rygorystycznych"
-" norm BHP, stale szkolimy nasz zespół i audytujemy procesy. Dla nas "
-"bezpieczna budowa, to terminowa budowa."
-msgstr ""
-"Eine Baustelle ist ein komplexer, lebendiger Organismus. Bei MBT ist die "
-"Sicherheitskultur "
-
-msgid ""
-"Podstawą przetwarzania danych jest art. 6 ust. 1 lit. a RODO (zgoda) oraz "
-"art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora "
-"polegający na obsłudze zapytań i komunikacji z klientami)."
-msgstr ""
-"Die Grundlage der Datenverarbeitung ist Art. 6 Abs. 1 lit. a DSGVO "
-"(Einwilligung) "
-
-msgid "Polityka prywatności"
-msgstr "Datenschutzerklärung"
-
-msgid ""
-"Pracując z inwestorami i partnerami biznesowymi, zauważyliśmy, że wiele firm"
-" boryka się z trudnościami w kompleksowym zarządzaniu projektami "
-"budowlanymi. Z jednej strony brakuje im specjalistów, którzy posiadają "
-"wszechstronne doświadczenie, a z drugiej, firmy budowlane obecne na rynku "
-"często nie rozumieją specyficznych potrzeb inwestorów."
-msgstr ""
-"Bei der Zusammenarbeit mit Investoren und Geschäftspartnern haben wir "
-"festgestellt, "
-
-msgid ""
-"Profesjonalizm, precyzja i pełne zaangażowanie — dzień po dniu na Twojej "
-"budowie."
-msgstr ""
-"Professionalität, Präzision und volles Engagement — Tag für Tag auf Ihrer "
-"Baustelle."
-
-msgid ""
-"Projektujemy z uwzględnieniem <strong>funkcjonalności, estetyki i "
-"optymalnych rozwiązań</strong>."
-msgstr ""
-"Wir entwerfen unter Berücksichtigung von <strong>Funktionalität, Ästhetik "
-"und "
-
-msgid ""
-"Przetwarzamy dane osobowe podane dobrowolnie w formularzu kontaktowym „Wyceń"
-" projekt\" — w szczególności imię i nazwisko, adres e-mail, numer telefonu, "
-"nazwę firmy oraz treść wiadomości, w celu odpowiedzi na zapytanie i "
-"przygotowania wyceny."
-msgstr ""
-"Wir verarbeiten personenbezogene Daten, die freiwillig im Kontaktformular "
-"„Projekt "
-
-msgid ""
-"Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, "
-"ograniczenia przetwarzania, przenoszenia danych, wniesienia sprzeciwu oraz "
-"cofnięcia zgody w dowolnym momencie. Masz również prawo wniesienia skargi do"
-" Prezesa Urzędu Ochrony Danych Osobowych."
-msgstr ""
-"Sie haben das Recht auf Zugang zu den Daten, deren Berichtigung, Löschung, "
-
-msgid ""
-"Realizacja prowadzona przez MBT Modern Building Team w formule {{ "
-"project.formula|default:\"generalnego wykonawstwa\" }}."
-msgstr ""
-"Projekt, realisiert von MBT Modern Building Team in der Formel {{ "
-"project.formula|default:\"Generalunternehmer\" "
-
-msgid ""
-"Realizujemy Twoje projekty <strong>zgodnie z harmonogramem</strong>, nawet "
-"przy zmianach."
-msgstr ""
-"Wir realisieren Ihre Projekte <strong>gemäß Zeitplan</strong>, auch bei "
-"Änderungen."
-
-msgid ""
-"Realizujemy Twoje projekty zgodnie z harmonogramem, nawet przy zmianach."
-msgstr "Wir realisieren Ihre Projekte termingerecht, auch bei Änderungen."
-
-msgid ""
-"Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania "
-"oraz analizy ruchu. Szczegółowe informacje znajdują się w polityce plików "
-"cookies."
-msgstr ""
-"Die Website verwendet Cookies, um den ordnungsgemäßen Betrieb "
-"sicherzustellen "
-
-msgid ""
-"Tak — nawigujemy przez proces administracyjny, koordynujemy dokumentację "
-"powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU)."
-msgstr ""
-"Ja — wir navigieren durch die Verwaltungsverfahren, koordinieren die "
-"Bestandsdokumentation "
-
-msgid ""
-"Tak — wdrażamy zrównoważone technologie (fotowoltaika, retencja wody, stacje"
-" EV) i realizujemy obiekty zgodne z wymogami certyfikacji BREEAM."
-msgstr ""
-"Ja — wir implementieren nachhaltige Technologien (Photovoltaik, "
-"Wasserrückhaltung, "
-
-msgid ""
-"Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji "
-"realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby "
-"angażowania dodatkowych zasobów."
-msgstr ""
-"Wir bilden eine Gruppe von Spezialisten, die durch Sorgfalt und "
-"Kooperationsfähigkeit "
-
-msgid ""
-"We wszystkich sprawach dotyczących przetwarzania danych osobowych możesz "
-"skontaktować się z nami pod adresem e-mail: <a href=\"mailto:biuro@mbt.pl\" "
-"style=\"color:var(--theme-color);\">biuro@mbt.pl</a> lub pisemnie na adres "
-"siedziby spółki."
-msgstr ""
-"In allen Angelegenheiten bezüglich der Verarbeitung personenbezogener Daten "
-
-msgid "Wsparcie inwestorskie na każdym etapie"
-msgstr "Bauherrenunterstützung in jeder Phase"
-
-msgid ""
-"Za każdą zrealizowaną halą stoi zgrany zespół ekspertów. MBT to grupa "
-"doświadczonych inżynierów, kierowników budów i wykwalifikowanych "
-"specjalistów, dla których nie ma wyzwań niemożliwych. Budujemy nie tylko "
-"obiekty, ale i trwałe relacje."
-msgstr ""
-"Hinter jeder realisierten Halle steht ein eingespieltes Expertenteam. MBT "
-"ist "
-
-msgid "Zobacz, co już <strong>zbudowaliśmy</strong>"
-msgstr "Sehen Sie, was wir bereits <strong>gebaut haben</strong>"
-
-msgid "Zostaw dane kontaktowe, a nasi eksperci <strong>oddzwonią</strong>"
-msgstr ""
-"Hinterlassen Sie Ihre Kontaktdaten — unsere Experten <strong>rufen Sie "
-"zurück</strong>"
+msgid "1 Kontrakt"
+msgstr "1 Vertrag"
 
 msgid "1 rok"
 msgstr "1 Jahr"
+
+msgid "1. Administrator danych"
+msgstr "1. Verantwortlicher"
 
 msgid "10 Miesięcy"
 msgstr "10 Monate"
@@ -1553,8 +40,26 @@ msgstr "14 Monate"
 msgid "16 miesięcy"
 msgstr "16 Monate"
 
+msgid "2. Zakres przetwarzania danych"
+msgstr "2. Umfang der Datenverarbeitung"
+
+msgid "3. Podstawa prawna"
+msgstr "3. Rechtsgrundlage"
+
+msgid "4. Okres przechowywania"
+msgstr "4. Speicherdauer"
+
+msgid "5. Prawa osób, których dane dotyczą"
+msgstr "5. Rechte der Betroffenen"
+
 msgid "6 miesięcy"
 msgstr "6 Monate"
+
+msgid "6. Kontakt"
+msgstr "6. Kontakt"
+
+msgid "7. Pliki cookies"
+msgstr "7. Cookies"
 
 msgid "8 miesięcy"
 msgstr "8 Monate"
@@ -1562,27 +67,1604 @@ msgstr "8 Monate"
 msgid "9 miesięcy"
 msgstr "9 Monate"
 
+msgid "95% projektów w BIM"
+msgstr "95 % der Projekte in BIM"
+
+msgid "<strong>Menadżerowie Projektu, Kierownicy, Inżynierowie i Projektanci</strong> — to ludzie stanowią o sile firmy."
+msgstr "<strong>Projektmanager, Bauleiter, Ingenieure und Designer</strong> — das sind "
+
+msgid "<strong>Obsługujemy cały proces budowy</strong>, od koncepcji po oddanie gotowego obiektu."
+msgstr "<strong>Wir betreuen den gesamten Bauprozess</strong>, vom Konzept bis zur schlüsselfertigen Übergabe."
+
+msgid "AKTUALNOŚCI"
+msgstr "AKTUELLES"
+
+msgid "AUTOMOTIVE"
+msgstr "AUTOMOTIVE"
+
+msgid "Aby odpowiedzieć na te wyzwania, stworzyliśmy MBT – firmę, która stawia na głębokie zrozumienie potrzeb klientów."
+msgstr "Um diesen Herausforderungen zu begegnen, haben wir MBT gegründet — ein Unternehmen, "
+
+msgid "Administratorem danych osobowych jest MBT Modern Building Team Sp. z o.o. z siedzibą w Katowicach, ul. Jankego 176/1A, 40-663 Katowice, NIP: 9542788822, REGON: 369557780, KRS: 0000720424."
+msgstr "Verantwortlicher für personenbezogene Daten ist MBT Modern Building Team Sp. "
+
+msgid "Adres Twojej inwestycji"
+msgstr "Adresse Ihrer Investition"
+
+msgid "Adres e-mail"
+msgstr "E-Mail-Adresse"
+
+msgid "Aktualności"
+msgstr "Aktuelles"
+
+msgid "Aktualności i <strong>artykuły</strong>"
+msgstr "Neuigkeiten und <strong>Artikel</strong>"
+
+msgid "Aktualności wkrótce."
+msgstr "Neuigkeiten folgen in Kürze."
+
+msgid "Analiza alternatywnych rozwiązań"
+msgstr "Analyse alternativer Lösungen"
+
+msgid "Analiza i koncepcja"
+msgstr "Analyse und Konzept"
+
+msgid "Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu."
+msgstr "Wir analysieren Ihre Anforderungen, Ihre Geschäftsvision und die Standortbedingungen."
+
+msgid "Analizujemy istniejący projekt pod kątem kosztów i czasu, proponujemy oszczędności bez kompromisów jakościowych, a następnie budujemy."
+msgstr "Wir analysieren Ihre bestehende Planung auf Kosten- und Zeitersparnis, schlagen "
+
+msgid "Ankieta"
+msgstr "Umfrage"
+
+msgid "Ankieta Wizerunkowa"
+msgstr "Image-Umfrage"
+
+msgid "Aplikuj — napisz do nas"
+msgstr "Bewerben Sie sich — schreiben Sie uns"
+
+msgid "Architektura przeładunkowa (Cross-docking)"
+msgstr "Umschlagarchitektur (Cross-Docking)"
+
+msgid "Architektura, która sprzedaje. Łączymy rygorystyczne standardy identyfikacji wizualnej marek z maksymalną wielofunkcyjnością użytkową."
+msgstr "Architektur, die verkauft. Wir verbinden strenge Brand-Identity-Standards mit maximaler funktionaler Vielseitigkeit."
+
+msgid "Architektura, która sprzedaje. Łączymy rygorystyczne standardy identyfikacji wizualnej z wielofunkcyjnością użytkową."
+msgstr "Architektur, die verkauft. Wir verbinden strenge Corporate-Identity-Standards mit praktischer Multifunktionalität."
+
+msgid "Artykuł"
+msgstr "Artikel"
+
+msgid "Artykuł nie istnieje"
+msgstr "Artikel existiert nicht"
+
+msgid "Audyty i inspekcje procesów"
+msgstr "Prozessaudits und -inspektionen"
+
+msgid "Automatyka sterująca oświetleniem, temperaturą i wentylacją."
+msgstr "Automatisierte Steuerung von Beleuchtung, Temperatur und Lüftung."
+
+msgid "Automotive"
+msgstr "Automotive"
+
+msgid "Automotive: Rygorystyczne standardy (Corporate Identity)"
+msgstr "Automotive: Strenge Corporate-Identity-Vorgaben"
+
+msgid "BIURA"
+msgstr "BÜROS"
+
+msgid "BIURA I BIUROWCE"
+msgstr "BÜROS UND BÜROGEBÄUDE"
+
+msgid "BLOG"
+msgstr "BLOG"
+
+msgid "BREEAM & ESG"
+msgstr "BREEAM & ESG"
+
+msgid "BREEAM — zielone budownictwo"
+msgstr "BREEAM — nachhaltiges Bauen"
+
+msgid "Bez pośredników — od projektu po odbiór."
+msgstr "Keine Zwischenhändler — von der Planung bis zur Übergabe."
+
+msgid "Bezkompromisowe podejście do <strong>bezpieczeństwa</strong>"
+msgstr "Ein kompromissloser Ansatz für <strong>Sicherheit</strong>"
+
+msgid "Bezpieczeństwo BHP"
+msgstr "Arbeitsschutz"
+
+msgid "Bezpieczeństwo na budowie MBT"
+msgstr "Sicherheit auf MBT-Baustellen"
+
+msgid "Bieżący, wideo-fotograficzny podgląd postępów prac. Jako Inwestor masz pełną transparentność i kontrolę, bez wychodzenia z biura."
+msgstr "Live-Video- und Foto-Einblicke in den Baufortschritt. Als Bauherr behalten "
+
+msgid "Biura"
+msgstr "Büros"
+
+msgid "Biuro MBT w Zabrzu"
+msgstr "MBT-Büro in Zabrze"
+
+msgid "Biuro w Zabrzu"
+msgstr "Büro in Zabrze"
+
+msgid "Biuro — Zabrze"
+msgstr "Büro — Zabrze"
+
+msgid "Biurowce"
+msgstr "Bürogebäude"
+
+msgid "Biurowiec"
+msgstr "Bürogebäude"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Brak dostępnych szablonów. Poproś administratora o dodanie."
+msgstr "Keine Vorlagen verfügbar. Bitten Sie den Administrator, welche hinzuzufügen."
+
+msgid "Brak nieprzewidzianych dopłat"
+msgstr "Keine unvorhergesehenen Mehrkosten"
+
+msgid "Brak rozmytej odpowiedzialności"
+msgstr "Keine geteilte Verantwortung"
+
+msgid "Branże"
+msgstr "Branchen"
+
+msgid "Branże i zastosowania"
+msgstr "Branchen und Anwendungen"
+
+msgid "Budowa Hal Magazynowych i Centrów Logistycznych - Projekt Magazynu - MBT"
+msgstr "Bau von Lagerhallen und Logistikzentren - Lagerplanung - MBT"
+
+msgid "Budowa Obiektów Handlowych"
+msgstr "Bau von Gewerbe- und Handelsimmobilien"
+
+msgid "Budowa Obiektów Handlowych - Projektowanie Hal Komercyjnych - MBT"
+msgstr "Bau von Gewerbeobjekten - Planung von Gewerbehallen - MBT"
+
+msgid "Budowa hal magazynowych i centrów logistycznych"
+msgstr "Bau von Lagerhallen und Logistikzentren"
+
+msgid "Budowa hal magazynowych i centrów logistycznych z MBT. Tworzymy funkcjonalny projekt magazynu dopasowany do Twojego biznesu. Skontaktuj się z nami!"
+msgstr "Bau von Lagerhallen und Logistikzentren mit MBT. Wir erstellen funktionale Lagerplanungen passend für Ihr Unternehmen. Kontaktieren Sie uns!"
+
+msgid "Budowa hal przemysłowych i zakładów produkcyjnych"
+msgstr "Bau von Industriehallen und Produktionsstätten"
+
+msgid "Budowa hali MBT"
+msgstr "Bau einer MBT-Halle"
+
+msgid "Budowa salonu i serwisu to praca z niezwykle restrykcyjnymi wytycznymi globalnych marek (np. standard CI 7). Obiekty te wymagają bezbłędnego połączenia przestrzeni reprezentacyjnej (jasne, designerskie showroomy) z ciężką przestrzenią warsztatową (wyciągi spalin, infrastruktura podnosząca, wzmocniona instalacja pod ładowarki EV). Z powodzeniem zrealizowaliśmy m.in. salon dla marki BYD (Grupa Dąbrowscy)."
+msgstr "Der Bau von Autohäusern erfordert die Einhaltung strenger Herstellervorgaben (z.B. CI 7). Wir verbinden repräsentative Showrooms harmonisch mit Werkstattbereichen (Abgasabsaugung, Hebebühnen, EV-Ladeinfrastruktur), wie beim BYD-Autohaus für die Gruppe Dąbrowscy."
+
+msgid "Budownictwo"
+msgstr "Bauwesen"
+
+msgid "Budownictwo komercyjne to specyficzna gałąź inżynierii. Tutaj estetyka, prestiż lokalizacji i doskonałe wrażenia użytkownika końcowego (Customer Experience) są równie ważne co stabilność konstrukcji."
+msgstr "Gewerbebau ist ein eigenständiges Ingenieurfeld. Ästhetik, Lageprestige und erstklassiges Kundenerlebnis zählen ebenso wie konstruktive Solidität."
+
 msgid "Buduj"
 msgstr "Bauen"
 
+msgid "Budujemy <strong>z myślą o Twoim kliencie</strong>"
+msgstr "Wir bauen <strong>mit Blick auf Ihre Kunden</strong>"
+
+msgid "Budujemy dla <strong>każdej branży</strong>"
+msgstr "Wir bauen für <strong>jede Branche</strong>"
+
+msgid "Budujemy obiekty dla <strong>sektora B2B</strong>"
+msgstr "Wir bauen für den <strong>B2B-Sektor</strong>"
+
+msgid "Budujemy obiekty wielkopowierzchniowe przeznaczone na wynajem. Projektujemy elastyczne konstrukcje umożliwiające łatwy podział na niezależne moduły. Przykładem jest kompleks Fabryka Park, oraz inwestycja zarządzana przez firmę Scallier. Jesteśmy przygotowani na równoległe prowadzenie prac pod różnorodne fit-outy najemców (np. placówki medyczne Medicover czy wielkopowierzchniowe kluby fitness)."
+msgstr "Wir bauen großflächige Mietobjekte mit flexibler Raumaufteilung, wie den Komplex Fabryka Park und Investitionen für Scallier. Wir realisieren parallele Mieterausbauten (z.B. Medicover-Zentren oder Fitnessstudios)."
+
+msgid "Budujemy obiekty, w których technologia dyktuje warunki. Dostarczamy bezkompromisową jakość dla najbardziej wymagających gałęzi przemysłu."
+msgstr "Wir bauen Objekte, bei denen die Technologie den Ton angibt. Kompromisslose Qualität für anspruchsvollste Industriezweige."
+
+msgid "Budujemy obiekty, w których technologia dyktuje warunki. Dostarczamy bezkompromisową jakość dla sektora produkcyjnego."
+msgstr "Wir bauen Objekte, in denen die Technologie den Takt angibt. Wir liefern kompromisslose Qualität für den Produktionssektor."
+
+msgid "Budujemy z wykorzystaniem <strong>nowoczesnych technologii</strong>"
+msgstr "Wir bauen mit <strong>modernster Technologie</strong>"
+
+msgid "Budujemy — fundamenty, konstrukcja, instalacje, wykończenie. Na bieżąco raportujemy postęp prac."
+msgstr "Wir bauen — Fundamente, Tragwerk, Installationen, Ausbau. Wir berichten laufend "
+
+msgid "Budujemy:"
+msgstr "Wir bauen:"
+
+msgid "CENTRA DYSTRYBUCYJNE"
+msgstr "DISTRIBUTIONSCENTER"
+
+msgid "CENTRA LOGISTYCZNE"
+msgstr "LOGISTIKZENTREN"
+
+msgid "Centra logistyczne"
+msgstr "Logistikzentren"
+
+msgid "Centra logistyczne i magazyny"
+msgstr "Logistikzentren und Lager"
+
+msgid "Centralny punkt kontaktu dla całej inwestycji. Pełna synchronizacja dostaw, nadzór nad wszystkimi branżami i gwarancja dotrzymania harmonogramu."
+msgstr "Zentraler Ansprechpartner für das gesamte Projekt. Vollständige Koordination der Lieferungen, Überwachung aller Gewerke und Termingarantie."
+
+msgid "Centralny punkt kontaktu. Synchronizacja dostaw, nadzór nad ekipami i pełna koordynacja harmonogramu."
+msgstr "Zentraler Ansprechpartner. Synchronisation von Lieferungen, Teamaufsicht und vollständige Terminkoordination."
+
+msgid "Centrum logistyczne / magazyn"
+msgstr "Logistikzentrum / Lager"
+
+msgid "Certyfikacja BREEAM"
+msgstr "BREEAM-Zertifizierung"
+
+msgid "Co dla Ciebie <strong>zbudujemy?</strong>"
+msgstr "Was können wir <strong>für Sie bauen?</strong>"
+
+msgid "Co wyróżnia nasze realizacje w <strong>sektorze komercyjnym?</strong>"
+msgstr "Was zeichnet unsere Projekte im <strong>Gewerbesektor aus?</strong>"
+
+msgid "Co zyskujesz, wybierając <strong>nasz zespół</strong>"
+msgstr "Was Sie gewinnen, wenn Sie <strong>unser Team</strong> wählen"
+
+msgid "Cyfrowe zarządzanie projektami"
+msgstr "Digitales Projektmanagement"
+
+msgid "Cykliczne szkolenia zespołu"
+msgstr "Regelmäßige Teamschulungen"
+
+msgid "Czas realizacji"
+msgstr "Projektdauer"
+
+msgid "Czas realizacji:"
+msgstr "Bauzeit:"
+
+msgid "Czas zależy od skali i specyfiki obiektu — zwykle od kilku do kilkunastu miesięcy. Na etapie wyceny otrzymasz precyzyjny harmonogram dopasowany do Twoich potrzeb biznesowych."
+msgstr "Die Bauzeit hängt von Größe und Anforderungen ab – in der Regel wenige bis mehrere Monate. Im Angebot erhalten Sie einen verbindlichen Rahmenterminplan."
+
+msgid "Czy realizujecie obiekty zgodne z certyfikacją BREEAM?"
+msgstr "Realisieren Sie BREEAM-zertifizierte Gebäude?"
+
+msgid "Czy zajmujecie się uzyskaniem pozwoleń i formalnościami?"
+msgstr "Übernehmen Sie Genehmigungen und Formalitäten?"
+
+msgid "Czym różni się generalny wykonawca od pojedynczych podwykonawców?"
+msgstr "Was unterscheidet einen Generalunternehmer von einzelnen Subunternehmern?"
+
+msgid "Czytaj więcej"
+msgstr "Weiterlesen"
+
+msgid "Często realizujemy rozbudowy istniejących już kompleksów w centrach miast lub kolejne etapy parków handlowych. Mamy wypracowane precyzyjne procedury BHP, które pozwalają nam bezpiecznie prowadzić zaawansowane prace ciężkim sprzętem w bezpośrednim sąsiedztwie czynnych sklepów, minimalizując uciążliwość robót dla klientów detalicznych."
+msgstr "Wir erweitern bestehende Zentren und Fachmarktzentren im laufenden Betrieb. Unsere strengen Sicherheitskonzepte ermöglichen sichere Bauarbeiten mit schwerem Gerät direkt neben geöffneten Geschäften."
+
+msgid "Dane firmy"
+msgstr "Firmendaten"
+
+msgid "Dane osobowe przechowywane są przez okres niezbędny do realizacji celu przetwarzania, a po jego zakończeniu — przez okres wymagany przepisami prawa lub do przedawnienia roszczeń."
+msgstr "Personenbezogene Daten werden so lange gespeichert, wie es zur Erfüllung des "
+
+msgid "Data"
+msgstr "Datum"
+
+msgid "Dedykowana opieka posprzedażowa"
+msgstr "Engagierte After-Sales-Betreuung"
+
+msgid "Dedykowany Project Manager"
+msgstr "Engagierter Projektleiter"
+
+msgid "Dla branży TSL (Transport, Spedycja, Logistyka) oraz dystrybutorów (FMCG) bezawaryjność infrastruktury to podstawa. MBT jako Generalny Wykonawca wznosi nowoczesne hale magazynowe, zaawansowane parki logistyczne oraz dedykowane obiekty w formule BTS (Build-to-Suit)."
+msgstr "Für Transport, Spedition und Logistik sowie FMCG-Distributoren ist eine zuverlässige Infrastruktur unverzichtbar. MBT baut als Generalunternehmer moderne Lagerhallen, Logistikparks und maßgeschneiderte BTS-Objekte (Build-to-Suit)."
+
+msgid "Dlaczego MBT?"
+msgstr "Warum MBT?"
+
+msgid "Dlaczego warto nas wybrać"
+msgstr "Warum Sie uns wählen sollten"
+
+msgid "Dlaczego warto wybrać MBT?"
+msgstr "Warum MBT wählen?"
+
+msgid "Dopasowujemy się do <strong>Twoich potrzeb</strong>"
+msgstr "Wir passen uns <strong>Ihren Bedürfnissen</strong> an"
+
+msgid "Doradca MBT"
+msgstr "MBT-Berater"
+
+msgid "Dowiedz się więcej"
+msgstr "Mehr erfahren"
+
+msgid "Dowód naszych kompetencji"
+msgstr "Beweis unserer Kompetenz"
+
+msgid "Dołącz do <strong>MBT</strong>"
+msgstr "Werden Sie Teil von <strong>MBT</strong>"
+
+msgid "Dzięki inteligentnej unifikacji osiągamy znaczne <strong>oszczędności finansowe</strong> bez zmiany ilości materiałów."
+msgstr "Durch intelligente Typisierung erzielen wir spürbare <strong>finanzielle Einsparungen</strong> ohne Abstriche bei Qualität und Material."
+
+msgid "Dzięki inteligentnej unifikacji osiągamy znaczne oszczędności finansowe."
+msgstr "Durch intelligente Typisierung erzielen wir spürbare finanzielle Einsparungen."
+
+msgid "Dzięki wykorzystaniu nowoczesnych prefabrykatów żelbetowych oraz lekkich, ale wytrzymałych konstrukcji stalowych dachu (ustrój mieszany), błyskawicznie wznosimy obiekty o ogromnej kubaturze i minimalnej liczbie słupów wewnętrznych. Daje to inwestorom maksymalną swobodę w aranżacji regałów. Takie rozwiązania wdrożyliśmy m.in. dla Grupy Raben, firmy Wessper czy hurtowni Warmet."
+msgstr "Mit Stahlbetonfertigteilen und leichten Stahldachkonstruktionen (Mischbauweise) errichten wir rasch großvolumige Hallen mit minimaler Stützenanzahl für maximale Regalfreiheit, u.a. für Raben Gruppe, Wessper und Warmet."
+
+msgid "ESG / Zielone budownictwo"
+msgstr "ESG / Nachhaltiges Bauen"
+
+msgid "ESG i Zielone Budownictwo"
+msgstr "ESG und Nachhaltiges Bauen"
+
+msgid "Eko / BREEAM"
+msgstr "Eco / BREEAM"
+
+msgid "Elastyczny zakres współpracy"
+msgstr "Flexibler Leistungsumfang"
+
+msgid "Elektromobilność"
+msgstr "Elektromobilität"
+
+msgid "Elementy, które decydują o <strong>skutecznej logistyce</strong>"
+msgstr "Elemente für eine <strong>effiziente Logistik</strong>"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Energooszczędność i standardy <strong>Przemysłu 4.0</strong>"
+msgstr "Energieeffizienz und <strong>Industrie 4.0</strong>-Standards"
+
+msgid "Formuła"
+msgstr "Formel"
+
+msgid "Formuły współpracy"
+msgstr "Kooperationsformeln"
+
+msgid "Fotowoltaika, systemy retencji wody, stacje ładowania EV oraz obiekty zgodne z certyfikacją BREEAM."
+msgstr "Photovoltaik, Regenwasserrückhaltung, E-Ladestationen und BREEAM-zertifizierte Gebäude."
+
+msgid "Fundamentowanie pod obciążenia dynamiczne"
+msgstr "Fundamentierung für dynamische Lasten"
+
+msgid "Funkcjonalność i estetyka obiektu"
+msgstr "Funktionalität und Ästhetik des Gebäudes"
+
+msgid "GEN. WYKONAWSTWO"
+msgstr "GENERALUNTERNEHMEN"
+
+msgid "GENERALNE WYKONAWSTWO"
+msgstr "GENERALUNTERNEHMERSCHAFT"
+
+msgid "Galeria"
+msgstr "Galerie"
+
+msgid "Gdy w biznesie liczy się <strong>czas i kubatura</strong>"
+msgstr "Wenn im Geschäft <strong>Zeit und Raumvolumen</strong> zählen"
+
+msgid "Gdzie budujemy"
+msgstr "Wo wir bauen"
+
+msgid "Gdzie budujemy?"
+msgstr "Wo bauen wir?"
+
+msgid "Generalne Wykonawstwo"
+msgstr "Generalunternehmung"
+
+msgid "Generalne Wykonawstwo B2B & B2C"
+msgstr "Generalunternehmung B2B & B2C"
+
+msgid "Generalne Wykonawstwo<br>Inwestycji Budowlanych"
+msgstr "Generalunternehmer<br>für Bauprojekte"
+
 msgid "Generalne wykonawstwo"
+msgstr "Generalunternehmung"
+
+msgid "Generalne wykonawstwo „pod klucz” — od projektu aż po dach"
+msgstr "Schlüsselfertige Generalunternehmung — vom Entwurf bis zum Dach"
+
+msgid "Generalny Wykonawca"
 msgstr "Generalunternehmer"
 
-msgid ""
-"Hale magazynowe, produkcyjne i usługowe realizowane pod klucz — od projektu "
-"aż po dach."
-msgstr ""
-"Lager-, Produktions- und Servicehallen schlüsselfertig realisiert — vom "
-"Entwurf "
+msgid "Generalny Wykonawca Budowlany - MBT - Śląsk, Kraków, Małopolska"
+msgstr "Generalbauunternehmer - MBT - Schlesien, Krakau, Kleinpolen"
+
+msgid "Generalny Wykonawca Hal Przemysłowych i Produkcyjnych"
+msgstr "Generalunternehmer für Industrie- und Produktionshallen"
+
+msgid "Generalny Wykonawca Hal Przemysłowych i Produkcyjnych - Projektowanie i Budowa - MBT"
+msgstr "Generalunternehmer für Industrie- und Produktionshallen - Planung und Bau - MBT"
+
+msgid "Generalny Wykonawca Hal i Obiektów Przemysłowych"
+msgstr "Generalunternehmer für Industriehallen und Gewerbeobjekte"
+
+msgid "Gospodarka wodna"
+msgstr "Wassermanagement"
+
+msgid "Gotowość pod instalacje OZE"
+msgstr "Bereitschaft für erneuerbare Energien"
+
+msgid "Gotowy do startu produkcji?"
+msgstr "Bereit für den Produktionsstart?"
+
+msgid "Gruntowna realizacja"
+msgstr "Gründliche Umsetzung"
+
+msgid "Gruntowna realizacja — od koncepcji po oddanie gotowego obiektu, zawsze zgodnie z harmonogramem."
+msgstr "Gründliche Projektrealisierung — vom Konzept bis zur Übergabe des fertigen "
+
+msgid "Gwarancja"
+msgstr "Garantie"
+
+msgid "Gwarancja i serwis pozakupowy"
+msgstr "Garantie und After-Sales-Service"
+
+msgid "HALE PRODUKCYJNE"
+msgstr "PRODUKTIONSHALLEN"
+
+msgid "HALE STALOWE"
+msgstr "STAHLHALLEN"
+
+msgid "HOME"
+msgstr "START"
+
+msgid "Hala magazynowa"
+msgstr "Lagerhalle"
+
+msgid "Hala produkcyjna"
+msgstr "Produktionshalle"
+
+msgid "Hala produkcyjna żyje dzięki instalacjom. Zapewniamy kompleksową koordynację i montaż sieci niezbędnych do utrzymania ciągłości procesów: od instalacji sprężonego powietrza i gazów technicznych, przez układy chłodzenia, wysokowydajną wentylację, systemy odpylania, aż po rygorystyczne zabezpieczenia PPOŻ (tryskacze, klapy dymowe)."
+msgstr "Eine Produktionshalle lebt durch ihre Gebäudetechnik. Wir sichern die umfassende Koordination und Montage aller Versorgungsnetze für unterbrechungsfreie Betriebsabläufe: von Druckluft und technischen Gasen über Kühlanlagen, Hochleistungslüftung und Entstaubung bis hin zum strengen Brandschutz (Sprinkler, Rauchabzugsklappen)."
+
+msgid "Hala przemysłowa / produkcyjna"
+msgstr "Industrie- / Produktionshalle"
+
+msgid "Hala przemysłowa to nie tylko <strong>ściany i dach</strong>"
+msgstr "Eine Industriehalle ist mehr als nur <strong>Wände und ein Dach</strong>"
+
+msgid "Hale Magazynowe"
+msgstr "Lagerhallen"
+
+msgid "Hale Przemysłowe"
+msgstr "Industriehallen"
+
+msgid "Hale Przemysłowe i Produkcyjne"
+msgstr "Industrie- und Produktionshallen"
+
+msgid "Hale magazynowe, produkcyjne i usługowe"
+msgstr "Lager-, Produktions- und Servicehallen"
+
+msgid "Hale magazynowe, produkcyjne i usługowe realizowane pod klucz — od projektu aż po dach."
+msgstr "Schlüsselfertige Lager-, Produktions- und Gewerbehallen — vom Entwurf bis zum Dach."
+
+msgid "Hale produkcyjne"
+msgstr "Produktionshallen"
+
+msgid "Hale produkcyjne, logistyka, obiekty komercyjne"
+msgstr "Produktionshallen, Logistik, Gewerbeimmobilien"
+
+msgid "Hale produkcyjne, magazyny, obiekty komercyjne"
+msgstr "Produktionshallen, Lager, Gewerbeobjekte"
+
+msgid "Hale przemysłowe i produkcyjne"
+msgstr "Industrie- und Produktionshallen"
+
+msgid "Hale suwnicowe i konstrukcje ciężkie"
+msgstr "Kranhallen und schwere Stahlkonstruktionen"
+
+msgid "Hasło"
+msgstr "Passwort"
+
+msgid "Historia pobrań"
+msgstr "Downloadhistorie"
+
+msgid "Ile trwa realizacja inwestycji w formule generalnego wykonawstwa?"
+msgstr "Wie lange dauert ein Generalunternehmer-Projekt?"
+
+msgid "Imię i nazwisko"
+msgstr "Vor- und Nachname"
+
+msgid "Informacje"
+msgstr "Informationen"
+
+msgid "Infrastruktura TSL"
+msgstr "TFL-Infrastruktur"
+
+msgid "Infrastruktura pod stacje szybkiego ładowania pojazdów EV."
+msgstr "Infrastruktur für EV-Schnellladestationen."
+
+msgid "Inne"
+msgstr "Sonstiges"
+
+msgid "Inne artykuły"
+msgstr "Weitere Artikel"
+
+msgid "Instalacje OZE"
+msgstr "OZE-Anlagen"
+
+msgid "Instalujemy wydajne systemy tryskaczowe (ESFR), klapy dymowe oraz kurtyny pożarowe, precyzyjnie dzieląc halę na strefy pożarowe, zgodnie z rygorystycznymi wytycznymi."
+msgstr "Wir montieren leistungsstarke ESFR-Sprinkleranlagen, Rauch- und Wärmeabzugsanlagen sowie Brandschürzen und unterteilen die Halle in normgerechte Brandabschnitte."
+
+msgid "Integracja stref roboczych i biurowych"
+msgstr "Integration von Arbeits- und Bürobereichen"
+
+msgid "Inteligentne zarządzanie budynkiem (BMS)"
+msgstr "Intelligentes Gebäudemanagement (BMS)"
+
+msgid "Inwestycja MBT"
+msgstr "MBT-Investition"
+
+msgid "Inwestycje realizowane z inżynierską precyzją wymagają najlepszych narzędzi. W MBT korzystamy z zaawansowanych rozwiązań cyfrowych, aby optymalizować czas i koszty Twojej budowy."
+msgstr "Mit Ingenieurspräzision gebaute Objekte verlangen beste Werkzeuge. Bei MBT nutzen wir moderne digitale Tools, um Bauzeit und Baukosten zu optimieren."
+
+msgid "Inżynieria Przemysłowa"
+msgstr "Industriebau-Ingenieurwesen"
+
+msgid "Inżynierowie z <strong>pasją do budowania</strong>"
+msgstr "Ingenieure mit <strong>Leidenschaft fürs Bauen</strong>"
+
+msgid "Inżynierska precyzja i optymalizacja"
+msgstr "Ingenieurspräzision und Optimierung"
+
+msgid "JESTEŚMY DOSTĘPNI"
+msgstr "WIR SIND ERREICHBAR"
+
+msgid "Jak pracujemy <strong>krok po kroku</strong>"
+msgstr "So arbeiten wir <strong>Schritt für Schritt</strong>"
+
+msgid "Jak wygląda proces współpracy?"
+msgstr "Wie läuft die Zusammenarbeit ab?"
+
+msgid "Jako doświadczony Generalny Wykonawca działamy w modelu, który zdejmuje z barków Inwestora ciężar koordynacji setek procesów. Nasza praca to nie tylko wznoszenie murów i montaż konstrukcji — to przede wszystkim zarządzanie procesem inwestycyjnym."
+msgstr "Als erfahrener Generalunternehmer entlasten wir den Bauherrn von der Koordination hunderter Einzelprozesse. Unsere Arbeit umfasst nicht nur Rohbau und Montage, sondern ganzheitliches Baumanagement."
+
+msgid "Jako sprawdzony Generalny Wykonawca mamy na koncie realizacje nowoczesnych parków handlowych, wielkopowierzchniowych obiektów usługowych, dyskontów spożywczych, a także stacji dealerskich nowej generacji. Znamy rynek i jego restrykcyjne wymagania."
+msgstr "Als erfahrener Generalunternehmer haben wir moderne Fachmarktzentren, großflächige Dienstleistungsobjekte, Lebensmittelmärkte und moderne Autohäuser errichtet. Wir kennen den Markt und seine Anforderungen."
+
+msgid "Jeden kontrakt obejmuje projekt i wykonanie. Szybka realizacja, jedna odpowiedzialność, optymalizacja kosztów na etapie projektowania."
+msgstr "Ein Vertrag umfasst Planung und Ausführung. Schnelle Umsetzung, eine Verantwortung, "
+
+msgid "Jeden partner, pełna odpowiedzialność"
+msgstr "Ein Partner, volle Verantwortung"
+
+msgid "Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> Budujemy hale magazynowe, produkcyjne i usługowe pod klucz."
+msgstr "Ein Team – vollständige Realisierung. <strong>Vom Entwurf bis zum Dach!</strong> Wir bauen schlüsselfertige Lager-, Produktions- und Gewerbehallen."
+
+msgid "Jeden zespół, pełna odpowiedzialność"
+msgstr "Ein Team, volle Verantwortung"
+
+msgid "Jesteś kierownikiem MBT?"
+msgstr "Sind Sie MBT-Bauleiter?"
+
+msgid "Jesteś na etapie projektu, budowy, a może szukasz kogoś, kto załatwi pozwolenia? Wszystko możesz zamówić osobno — albo razem, jako pełne generalne wykonawstwo."
+msgstr "Befinden Sie sich in der Planungs-, Bauphase oder suchen Sie jemanden, der "
+
+msgid "Jesteśmy w ciągłym ruchu. Śledź postępy prac na naszych kluczowych budowach i bądź na bieżąco z życiem zespołu MBT."
+msgstr "Wir sind ständig in Bewegung. Verfolgen Sie den Baufortschritt auf unseren Baustellen und bleiben Sie über das MBT-Team informiert."
+
+msgid "Jesteśmy zespołem specjalistów, którzy dzięki trosce i umiejętności kooperacji realizują wspólne cele. Szukamy ludzi z pasją do budownictwa."
+msgstr "Wir sind ein Team von Spezialisten, die durch Sorgfalt und Kooperationsfähigkeit gemeinsame Ziele erreichen. Wir suchen Menschen mit Leidenschaft für das Bauwesen."
+
+msgid "Jeśli konto o podanym emailu istnieje, administrator otrzymał informację o konieczności zresetowania hasła. Skontaktujemy się wkrótce."
+msgstr "Falls ein Konto mit der angegebenen E-Mail existiert, hat der Administrator "
+
+msgid "KARIERA"
+msgstr "KARRIERE"
+
+msgid "KONSTRUKCJE ŻELBETOWE"
+msgstr "STAHLBETONKONSTRUKTIONEN"
+
+msgid "KONTAKT"
+msgstr "KONTAKT"
+
+msgid "Kariera"
+msgstr "Karriere"
+
+msgid "Każda budowa pod obserwacją"
+msgstr "Jede Baustelle unter Beobachtung"
+
+msgid "Kliknij dowolną pulsującą pinezkę na mapie Polski, aby poznać szczegóły budowy."
+msgstr "Klicken Sie auf eine pulsierende Stecknadel auf der Polen-Karte, um Projektdetails anzuzeigen."
+
+msgid "Kliknij na mapie swój region, aby zobaczyć bezpośredni kontakt do opiekuna Twojego regionu."
+msgstr "Klicken Sie auf Ihre Region auf der Karte, um den direkten Kontakt Ihres Ansprechpartners zu sehen."
+
+msgid "Kompleksowa realizacja obiektu kubaturowego przez Modern Building Team."
+msgstr "Umfassende Realisierung des Hochbaus durch das Modern Building Team."
+
+msgid "Kompleksowa realizacja — od A do Z"
+msgstr "Schlüsselfertige Umsetzung — von A bis Z"
+
+msgid "Kompleksowe zarządzanie projektami budowlanymi z głębokim zrozumieniem potrzeb inwestorów."
+msgstr "Umfassendes Bauprojektmanagement mit tiefem Verständnis für die Bedürfnisse "
+
+msgid "Kompleksowy <strong>Fit-Out</strong>"
+msgstr "Kompletter <strong>Innenausbau (Fit-Out)</strong>"
+
+msgid "Kompletna dokumentacja powykonawcza"
+msgstr "Vollständige Bestandsdokumentation"
+
+msgid "Konsultacja 0 zł"
+msgstr "Kostenlose Beratung (0 €)"
+
+msgid "Kontakt"
+msgstr "Kontakt"
+
+msgid "Kontrola Dostępu (KD)"
+msgstr "Zutrittskontrolle"
+
+msgid "Koordynacja wielobranżowa instalacji wewnątrz lokalu"
+msgstr "Gewerkeübergreifende Koordination der Haustechnik im Mietbereich"
+
+msgid "Koordynujemy montaż specjalistycznych sieci mediów technologicznych: rurociągów sprężonego powietrza, instalacji gazów technicznych, systemów odciągu pyłów i oparów oraz zaawansowanych stacji transformatorowych i szynoprzewodów zasilających parki maszynowe."
+msgstr "Wir koordinieren die Montage spezieller Medienleitungen: Druckluftnetze, technische Gase, Staub- und Rauchabzugsanlagen sowie Umspannstationen und Stromschienensysteme zur Maschinenversorgung."
+
+msgid "LOGISTYKA"
+msgstr "LOGISTIK"
+
+msgid "Logistyka"
+msgstr "Logistik"
+
+msgid "Logistyka w praktyce"
+msgstr "Logistik in der Praxis"
+
+msgid "Ludzie MBT"
+msgstr "MBT-Menschen"
+
+msgid "MAGAZYNY"
+msgstr "LAGER"
+
+msgid "MBT Modern Building Team — generalny wykonawca hal magazynowych, produkcyjnych i usługowych. Terminowa budowa obiektów przemysłowych pod klucz."
+msgstr "MBT Modern Building Team — Generalunternehmer für Lager-, Produktions- und Gewerbehallen. Termingerechter schlüsselfertiger Bau von Industrieobjekten."
+
+msgid "MBT stawia na <strong>zrównoważone budownictwo</strong>"
+msgstr "MBT setzt auf <strong>nachhaltiges Bauen</strong>"
+
+msgid "MBT to Generalny Wykonawca hal przemysłowych i produkcyjnych. Oferujemy projektowanie i budowę obiektów pod klucz. Poznaj naszą ofertę i realizacje!"
+msgstr "MBT ist Generalunternehmer für Industrie- und Produktionshallen. Wir bieten Planung und schlüsselfertigen Bau. Entdecken Sie unser Angebot und unsere Referenzen!"
+
+msgid "Magazynujemy wielomilionowe wartości. Zabezpieczenie ładunków przed pożarem to kluczowy element procesu projektowego."
+msgstr "Hier lagern Werte in Millionenhöhe. Der Schutz vor Brand ist ein zentraler Bestandteil unserer Planung und Ausführung."
+
+msgid "Magazyny"
+msgstr "Lager"
+
+msgid "Magazyny i Logistyka"
+msgstr "Lager & Logistik"
+
+msgid "Mapa inwestycji"
+msgstr "Investitionskarte"
+
+msgid "Mapa witryny"
+msgstr "Sitemap"
+
+msgid "Masz inny typ inwestycji?"
+msgstr "Sie planen eine andere Art von Projekt?"
+
+msgid "Masz już projekt? Wybudujemy obiekt zgodnie z dokumentacją — od fundamentów po wykończenie i odbiory."
+msgstr "Sie haben schon eine Planung? Wir bauen nach Dokumentation — von den Fundamenten "
+
+msgid "Masz projekt w głowie?"
+msgstr "Haben Sie ein Projekt im Kopf?"
+
+msgid "Masz pytania dotyczące swojej inwestycji?"
+msgstr "Fragen zu Ihrem Projekt?"
+
+msgid "Masz pytania o swoją inwestycję?"
+msgstr "Fragen zu Ihrer Investition?"
+
+msgid "Menadżerowie Projektu, Kierownicy, Inżynierowie i Projektanci — to ludzie stanowią o sile firmy."
+msgstr "Projektmanager, Bauleiter, Ingenieure und Planer — Menschen machen die Stärke unseres Unternehmens aus."
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Modelowanie BIM — projektowe i wykonawcze"
+msgstr "BIM-Modellierung — Entwurf und Ausführung"
+
+msgid "Monitoring placu budowy 24/7"
+msgstr "24/7-Baustellenüberwachung"
+
+msgid "Monitoring z powietrza (Drony)"
+msgstr "Luftgestützte Überwachung (Drohnen)"
+
+msgid "Możemy zaprojektować, wybudować, a nawet pomóc tylko w pozwoleniach i formalnościach. Zamów u nas wyłącznie projekt, wyłącznie budowę lub pełne wsparcie inwestorskie — wszystko w jednym miejscu."
+msgstr "Wir können planen, bauen oder auch nur bei Genehmigungen und Formalitäten unterstützen. Bestellen Sie nur den Entwurf, nur den Bau oder eine umfassende Bauherrenbetreuung – alles aus einer Hand."
+
+msgid "Możesz na nas liczyć <strong>na każdym etapie</strong>"
+msgstr "Auf uns können Sie sich <strong>in jeder Phase</strong> verlassen"
+
+msgid "Multi-use: Parki handlowe i elastyczne przestrzenie"
+msgstr "Multi-Use: Fachmarktzentren und flexible Flächen"
+
+msgid "Najczęściej zadawane <strong>pytania</strong>"
+msgstr "Häufig gestellte <strong>Fragen</strong>"
+
+msgid "Najnowsze wpisy z bloga budowlanego MBT"
+msgstr "Neueste Beiträge aus dem MBT-Baublog"
+
+msgid "Napisz do nas — odpowiemy w ciągu 24 godzin."
+msgstr "Schreiben Sie uns — wir antworten innerhalb von 24 Stunden."
+
+msgid "Napisz do nas!"
+msgstr "Schreiben Sie uns!"
+
+msgid "Nasi Handlowcy"
+msgstr "Unsere Kundenberater"
+
+msgid "Następne zdjęcie"
+msgstr "Nächstes Foto"
+
+msgid "Nasz zespół to ludzie, którzy <strong>potrafią współpracować</strong> z Tobą i partnerami biznesowymi."
+msgstr "Unser Team besteht aus Menschen, die <strong>partnerschaftlich und lösungsorientiert zusammenarbeiten</strong>."
+
+msgid "Nasz zespół — pracownicy"
+msgstr "Unser Team — Mitarbeiter"
+
+msgid "Nasza Realizacja"
+msgstr "Unsere Umsetzung"
+
+msgid "Nasza misja"
+msgstr "Unsere Mission"
+
+msgid "Nasza opieka nie kończy się w dniu oddania kluczy — kompleksowa obsługa gwarancyjna i wsparcie serwisowe."
+msgstr "Unsere Betreuung endet nicht am Tag der Schlüsselübergabe — umfassende Garantie- "
+
+msgid "Nasza opieka nie kończy się w dniu oddania kluczy. Zapewniamy kompleksową obsługę gwarancyjną, szybki czas reakcji i stały serwis."
+msgstr "Unsere Betreuung endet nicht mit der Schlüsselübergabe. Wir bieten umfassenden Garantieservice, schnelle Reaktionszeiten und kontinuierliche Wartung."
+
+msgid "Nasza specjalizacja"
+msgstr "Unsere Spezialisierung"
+
+msgid "Nasza wizja"
+msgstr "Unsere Vision"
+
+msgid "Nasze <strong>aktualności</strong>"
+msgstr "Unsere <strong>Neuigkeiten</strong>"
+
+msgid "Nasze inwestycje"
+msgstr "Unsere Projekte"
+
+msgid "Nasze najnowsze wpisy na blogu"
+msgstr "Unsere neuesten Blogbeiträge"
+
+msgid "Nasze obiekty <strong>mówią za nas</strong>"
+msgstr "Unsere Gebäude <strong>sprechen für sich</strong>"
+
+msgid "Nasze oddziały"
+msgstr "Unsere Niederlassungen"
+
+msgid "Nasze osiągnięcia"
+msgstr "Unsere Erfolge"
+
+msgid "Nasze realizacje"
+msgstr "Unsere Realisierungen"
+
+msgid "Nasze realizacje na terenie całej Polski"
+msgstr "Unsere Realisierungen in ganz Polen"
+
+msgid "Nasze specjalizacje"
+msgstr "Unsere Spezialisierungen"
+
+msgid "Nasze wartości wyrażają się w nazwie Modern Building Team. Stawiamy na nowoczesność w myśleniu, zarządzaniu i relacjach."
+msgstr "Unsere Werte spiegeln sich in unserem Namen wider: Modern Building Team. Wir setzen auf Modernität im Denken, Management und in Beziehungen."
+
+msgid "Nawigujemy przez proces administracyjny, koordynujemy dokumentację powykonawczą i asystujemy przy pozwoleniach."
+msgstr "Wir navigieren durch die Verwaltungsverfahren, koordinieren die Bestandsdokumentation "
+
+msgid "Nawigujemy przez proces administracyjny, koordynujemy dokumentację powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU)."
+msgstr "Wir steuern das Genehmigungsverfahren, koordinieren die Bestandsdokumentation und unterstützen bei der Nutzungsabnahme."
+
+msgid "Negocjacje, scalanie działek i badania gruntu"
+msgstr "Verhandlungen, Flurstückszusammenlegung und Baugrundgutachten"
+
+msgid "Nie chcesz tracić czasu na urzędy? Przejmiemy pozwolenia, uzgodnienia, odbiory i dokumentację powykonawczą."
+msgstr "Sie möchten keine Zeit in Ämtern verbringen? Wir übernehmen Genehmigungen, "
+
+msgid "Nie musisz zamawiać wszystkiego naraz. Projekt, budowa i formalności działają u nas również jako osobne usługi — dopasuj zakres do swojego etapu inwestycji."
+msgstr "Sie müssen nicht alles auf einmal bestellen. Planung, Bau und Formalitäten "
+
+msgid "Nie musisz zamawiać wszystkiego naraz. Projekt, budowa i formalności — wybierz tylko ten zakres, którego aktualnie potrzebujesz."
+msgstr "Sie müssen nicht alles auf einmal beauftragen. Planung, Bau und Formalitäten — wählen Sie genau den Leistungsumfang, den Sie aktuell benötigen."
+
+msgid "Nie tylko generalne wykonawstwo — <strong>wybierz zakres, którego potrzebujesz</strong>"
+msgstr "Nicht nur Generalunternehmen — <strong>wählen Sie den Umfang, den Sie brauchen</strong>"
+
+msgid "Nie tylko oddajemy bryłę budynku. Bierzemy na siebie pełną odpowiedzialność za aranżację i wykończenie wnętrz komercyjnych \"pod klucz\". Koordynujemy prace wykończeniowe zgodnie z precyzyjnymi projektami architektów wnętrz i brandbookami najemców."
+msgstr "Wir liefern nicht nur die Gebäudehülle. Wir übernehmen die schlüsselfertige Ausführung des Innenausbaus exakt nach Innenarchitekturplänen und Brandbooks der Mieter."
+
+msgid "Nie znalazłeś oferty dla siebie? Wyślij CV — zawsze rozważamy nowe talenty."
+msgstr "Nicht das Passende gefunden? Senden Sie Ihren Lebenslauf — wir prüfen immer neue Talente."
+
+msgid "Niezależnie od tego, czy planujesz centrum logistyczne, park handlowy czy salon samochodowy — jesteśmy gotowi na nowe inżynieryjne wyzwania."
+msgstr "Ganz gleich, ob Sie ein Logistikzentrum, ein Fachmarktzentrum oder ein Autohaus planen — wir sind bereit für neue bauliche Herausforderungen."
+
+msgid "Niższe rachunki za energię obiektu"
+msgstr "Niedrigere Energiekosten für Ihr Gebäude"
+
+msgid "Nowe hasło"
+msgstr "Neues Passwort"
+
+msgid "Nowoczesne fasady i wykończenia"
+msgstr "Moderne Fassaden und Ausbauten"
+
+msgid "Nowoczesne fasady i wykończenia premium"
+msgstr "Moderne Fassaden und Premium-Oberflächen"
+
+msgid "Nowoczesne oprogramowanie do zarządzania budową. Harmonogramy, raporty i obieg dokumentacji aktualizowane w czasie rzeczywistym."
+msgstr "Moderne Baumanagement-Software. Bauzeitenpläne, Berichte und Dokumentenfluss in Echtzeit aktualisiert."
+
+msgid "Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i estetyczne fasady."
+msgstr "Moderne Fachmarktzentren: wir achten auf Multifunktionalität (Multi-Use) und ansprechende Fassadengestaltung."
+
+msgid "Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i nowoczesny design elewacji."
+msgstr "Moderne Retailparks mit Multi-Use-Konzept und zeitgemäßem Fassadendesign."
+
+msgid "Nowoczesne przestrzenie magazynowe wysokiego składowania o zoptymalizowanej przepustowości."
+msgstr "Moderne Hochregallagerflächen mit optimiertem Durchsatz."
+
+msgid "Nowoczesne standardy"
+msgstr "Moderne Standards"
+
+msgid "Numer telefonu"
+msgstr "Telefonnummer"
+
+msgid "O NAS"
+msgstr "ÜBER UNS"
+
+msgid "O firmie"
+msgstr "Über das Unternehmen"
+
+msgid "O nas"
+msgstr "Über uns"
+
+msgid "O tej usłudze"
+msgstr "Über diesen Service"
+
+msgid "OBIEKTY KOMERCYJNE"
+msgstr "GEWERBEOBJEKTE"
+
+msgid "OBIEKTY PRZEMYSŁOWE"
+msgstr "INDUSTRIEOBJEKTE"
+
+msgid "OBIEKTY USŁUGOWE"
+msgstr "DIENSTLEISTUNGSOBJEKTE"
+
+msgid "OFERTA"
+msgstr "ANGEBOT"
+
+msgid "OZNAKOWANIE"
+msgstr "BESCHILDERUNG"
+
+msgid "Obiekt handlowy / usługowy"
+msgstr "Handels- / Dienstleistungsgebäude"
 
 msgid "Obiekt na posadowieniu bezpośrednim"
-msgstr "Bauwerk auf Flachgründung"
+msgstr "Objekt auf Flachgründung"
+
+msgid "Obiekty Komercyjne"
+msgstr "Gewerbeobjekte"
+
+msgid "Obiekty dealerskie nowej generacji spełniające globalne standardy identyfikacji wizualnej marek motoryzacyjnych."
+msgstr "Dealerships der nächsten Generation, die den globalen Visual-Identity-Standards "
+
+msgid "Obiekty dealerskie nowej generacji spełniające globalne standardy identyfikacji wizualnej marek."
+msgstr "Autohäuser der neuesten Generation, die weltweite Corporate-Identity-Standards der Marken erfüllen."
+
+msgid "Obiekty dostosowane do rygorystycznych wymogów technologicznych — w tym hale suwnicowe."
+msgstr "Anlagen, die strengen technischen Vorgaben entsprechen — einschließlich Kranhallen."
+
+msgid "Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale z suwnicami i zaawansowanym parkiem maszynowym."
+msgstr "Gebäude, die strengste technologische Anforderungen erfüllen — inklusive Hallen "
+
+msgid "Obiekty handlowe i usługowe"
+msgstr "Handels- und Dienstleistungsgebäude"
+
+msgid "Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów ergonomii pracy."
+msgstr "Gewerbeimmobilien und Fit-out-Arbeiten nach höchsten ergonomischen Standards."
+
+msgid "Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów nowoczesnego miejsca pracy."
+msgstr "Gewerbeobjekte und Ausbauarbeiten nach höchsten Standards moderner Arbeitsumgebungen."
+
+msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
+msgstr "Gebäude, die strenge Zertifizierungsanforderungen erfüllen."
+
+msgid "Obserwuj nas"
+msgstr "Folgen Sie uns"
+
+msgid "Obsługiwany rejon:"
+msgstr "Betreute Region:"
+
+msgid "Obsługujemy cały proces budowy, od koncepcji po oddanie gotowego obiektu."
+msgstr "Wir steuern den gesamten Bauprozess, vom Konzept bis zur schlüsselfertigen Übergabe."
+
+msgid "Ochrona przeciwpożarowa i <strong>bezpieczeństwo mienia</strong>"
+msgstr "Brandschutz und <strong>Sicherheit von Sachwerten</strong>"
+
+msgid "Od koncepcji do <strong>oddania kluczy</strong>"
+msgstr "Vom Konzept bis zur <strong>Schlüsselübergabe</strong>"
+
+msgid "Od koncepcji do pozwolenia na budowę"
+msgstr "Vom Konzept bis zur Baugenehmigung"
+
+msgid "Odbiory, pozwolenie na użytkowanie i klucze"
+msgstr "Abnahmen, Nutzungsgenehmigung und Schlüssel"
+
+msgid "Odbiór i Użytkowanie"
+msgstr "Abnahme & Betrieb"
+
+msgid "Odbiór i klucze"
+msgstr "Abnahme und Schlüssel"
+
+msgid "Oddział MBT w Krakowie"
+msgstr "MBT-Niederlassung in Krakau"
+
+msgid "Oddział — Kraków"
+msgstr "Niederlassung — Krakau"
+
+msgid "Odpowiadamy za kompleksowe zagospodarowanie terenu wokół hali. Realizujemy zoptymalizowane strefy dokowe z precyzyjnymi rampami hydraulicznymi i naprowadzaczami. Budujemy przestronne place manewrowe dla samochodów ciężarowych (TIR) odporne na głębokie koleinowanie, a także bezpieczne drogi pożarowe."
+msgstr "Wir übernehmen die gesamte Außenanlagengestaltung. Wir bauen optimierte Ladezonen mit hydraulischen Überladebrücken, langlebige Lkw-Rangierflächen und sichere Feuerwehrzufahrten."
+
+msgid "Odpowiadamy za przygotowanie harmonogramu, opracowanie szczegółowego kosztorysu, zarządzanie podwykonawcami, aż po finalne przekazanie w pełni funkcjonalnego obiektu, gotowego do prowadzenia biznesu."
+msgstr "Wir übernehmen Rahmenterminplanung, detaillierte Kostenkalkulation, Nachunternehmermanagement und schlüsselfertige Übergabe eines betriebsbereiten Objekts."
+
+msgid "Odpowiedzialne budownictwo"
+msgstr "Verantwortungsvolles Bauen"
+
+msgid "Odpowiedzialne projektowanie"
+msgstr "Verantwortungsvolle Planung"
+
+msgid "Oferta"
+msgstr "Angebot"
+
+msgid "Oferta MBT"
+msgstr "MBT-Leistungen"
+
+msgid "Oferta nie istnieje"
+msgstr "Stelle nicht gefunden"
+
+msgid "Oferta, czyli co możemy dla Ciebie zrobić"
+msgstr "Unser Angebot: Was wir für Sie tun können"
+
+msgid "Oferujemy wsparcie na każdym etapie inwestycji: wskazanie dogodnej lokalizacji, wsparcie przy zakupie nieruchomości, proces projektowy od koncepcji do pozwolenia na budowę oraz procedowanie i wykonanie przyłączy."
+msgstr "Wir unterstützen in jeder Projektphase: Standortsuche, Beratung beim Grundstückskauf, Planung vom Konzept bis zur Baugenehmigung sowie Erschließung und Anschlüsse."
+
+msgid "Okresowe przeglądy techniczne"
+msgstr "Regelmäßige technische Inspektionen"
+
+msgid "Opinie klientów"
+msgstr "Kundenstimmen"
+
+msgid "Opinie naszych klientów"
+msgstr "Was unsere Kunden über uns sagen"
+
+msgid "Opis realizacji:"
+msgstr "Projektbeschreibung:"
+
+msgid "Opisz swój projekt..."
+msgstr "Beschreiben Sie Ihr Projekt..."
+
+msgid "Optymalizacja"
+msgstr "Optimierung"
+
+msgid "Optymalizacja kosztów"
+msgstr "Kostenoptimierung"
+
+msgid "Optymalizacja kosztów utrzymania (OZE)"
+msgstr "Betriebskostenoptimierung (Erneuerbare Energien)"
+
+msgid "Optymalizuj-Buduj"
+msgstr "Optimieren-Bauen"
+
+msgid "Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny budżet."
+msgstr "Optimale Ingenieurlösungen, ein präziser Zeitplan und ein transparentes Budget."
+
+msgid "Ostatnie <strong>realizacje</strong>"
+msgstr "Aktuelle <strong>Projekte</strong>"
+
+msgid "Oszczędności bez rezygnacji z jakości i funkcji."
+msgstr "Einsparungen ohne Verzicht auf Qualität und Funktion."
+
+msgid "Otwierasz nową lokalizację dla swojego biznesu?"
+msgstr "Eröffnen Sie einen neuen Standort für Ihr Unternehmen?"
+
+msgid "Oznakowanie budowy"
+msgstr "Baustellenbeschilderung"
+
+msgid "Oznakowanie budowy — Panel kierownika"
+msgstr "Baustellenbeschilderung — Bauleiter-Panel"
+
+msgid "PARKI HANDLOWE"
+msgstr "FACHMARKTZENTREN"
+
+msgid "PRZESTRZENIE FIT-OUT"
+msgstr "FIT-OUT FLÄCHEN"
+
+msgid "Park maszynowy wymaga szczególnego podejścia do podłoża. Projektujemy i wykonujemy wzmocnione fundamenty oraz posadzki przemysłowe odporne na drgania, wibracje i punktowe, ekstremalne naciski generowane przez ciężkie urządzenia produkcyjne (prasy, obrabiarki CNC)."
+msgstr "Ein Maschinenpark erfordert ein besonderes Augenmerk auf den Untergrund. Wir planen und realisieren verstärkte Fundamente und Industrieböden, die Vibrationen, Schwingungen und extremen Punktlasten durch schwere Produktionsmaschinen (Pressen, CNC-Maschinen) standhalten."
+
+msgid "Parki handlowe"
+msgstr "Fachmarktzentren"
+
+msgid "Parki handlowe i elastyczne przestrzenie usługowe"
+msgstr "Fachmarktzentren und flexible Dienstleistungsflächen"
+
+msgid "Pewne i sprawne odbiory obiektu"
+msgstr "Sichere und reibungslose Bauabnahme"
+
+msgid "Pełna realizacja inwestycji — od przejęcia placu budowy do przekazania kluczy. Wykonujemy roboty ziemne, fundamentowe, konstrukcje, instalacje i wykończenia."
+msgstr "Komplette Projektrealisierung — von der Baustellenübernahme bis zur Schlüsselübergabe. "
+
+msgid "Pełna realizacja inwestycji — od przejęcia placu budowy do przekazania kluczy. Wykonujemy roboty ziemne, konstrukcję, obudowę, instalacje i wykończenie."
+msgstr "Komplette Realisierung — von der Baustellenübernahme bis zur Schlüsselübergabe: Erdarbeiten, Rohbau, Gebäudehülle, Haustechnik und Ausbau."
+
+msgid "Pełna, przejrzysta specyfikacja w każdej ofercie."
+msgstr "Vollständige, transparente Spezifikation in jedem Angebot."
+
+msgid "Pełne generalne wykonawstwo"
+msgstr "Komplettes Generalunternehmen"
+
+msgid "Pierwsze logowanie — ustaw swoje hasło."
+msgstr "Erste Anmeldung — legen Sie Ihr Passwort fest."
+
+msgid "Plac budowy"
+msgstr "Baustelle"
+
+msgid "Plac budowy to skomplikowany, żywy organizm. W MBT kultura bezpieczeństwa to absolutny fundament naszej pracy. Przestrzegamy najbardziej rygorystycznych norm BHP, stale szkolimy nasz zespół i audytujemy procesy. Dla nas bezpieczna budowa, to terminowa budowa."
+msgstr "Eine Baustelle ist ein komplexer Organismus. Bei MBT ist Arbeitssicherheit das Fundament unseres Handelns. Wir halten strengste Arbeitsschutzvorschriften ein, schulen Mitarbeiter und auditieren Baustellen. Sicheres Bauen bedeutet termintreues Bauen."
+
+msgid "Plac budowy — Twoja inwestycja"
+msgstr "Baustelle — Ihre Investition"
+
+msgid "Planujesz nową inwestycję?"
+msgstr "Planen Sie eine neue Investition?"
+
+msgid "Pobieraj banery reklamowe i informacyjne na budowę — z Twoim logo."
+msgstr "Laden Sie Werbe- und Informationsbanner für Ihre Baustelle herunter — mit Ihrem "
+
+msgid "Pobierz baner"
+msgstr "Banner herunterladen"
+
+msgid "Podaj email — administrator zresetuje hasło i prześle tymczasowe."
+msgstr "Geben Sie Ihre E-Mail ein — der Administrator setzt Ihr Passwort zurück und "
+
+msgid "Podstawą przetwarzania danych jest art. 6 ust. 1 lit. a RODO (zgoda) oraz art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora polegający na obsłudze zapytań i komunikacji z klientami)."
+msgstr "Die Grundlage der Datenverarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) "
+
+msgid "Polityka <strong>prywatności</strong>"
+msgstr "<strong>Datenschutz</strong>erklärung"
+
+msgid "Polityka pryw. i Regulamin"
+msgstr "Datenschutz & AGB"
+
+msgid "Polityka prywatności"
+msgstr "Datenschutzerklärung"
+
+msgid "Polityka prywatności i Regulamin"
+msgstr "Datenschutz und AGB"
+
+msgid "Pomagamy od samego początku — od wyboru lokalizacji, przez przygotowanie materiałów do decyzji kredytowej, aż po pozwolenie na budowę i zakup działki."
+msgstr "Wir helfen von Anfang an — von der Standortwahl über die Vorbereitung der Kreditunterlagen "
+
+msgid "Pomagamy od samego początku — od wyboru lokalizacji, przez przygotowanie wniosków kredytowych i audyt działki, po koncepcję architektoniczną."
+msgstr "Wir unterstützen von Anfang an — von der Standortwahl über Kreditanfragen und Grundstücksaudits bis hin zum architektonischen Konzept."
+
+msgid "Pon - Pt / 8:00 - 16:00"
+msgstr "Mo - Fr / 8:00 - 16:00"
+
+msgid "Pon-Pt:"
+msgstr "Mo-Fr:"
+
+msgid "Pon-Pt: 8:00 do 16:00"
+msgstr "Mo-Fr: 8:00 bis 16:00"
+
+msgid "Poprzednie zdjęcie"
+msgstr "Vorheriges Foto"
+
+msgid "Porozmawiaj z nami"
+msgstr "Sprechen Sie mit uns"
+
+msgid "Porozmawiajmy o Twoim projekcie"
+msgstr "Lassen Sie uns über Ihr Projekt sprechen"
+
+msgid "Porozmawiajmy o Twoim projekcie — przygotujemy wycenę i doradzimy najlepszą formułę."
+msgstr "Lassen Sie uns über Ihr Projekt sprechen — wir erstellen ein Angebot und beraten "
+
+msgid "Porozmawiajmy o parametrach Twojej hali"
+msgstr "Lassen Sie uns über die Eckdaten Ihrer Halle sprechen"
+
+msgid "Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu."
+msgstr "Sprechen wir darüber — wir wählen die optimale Formel für Ihr Vorhaben."
+
+msgid "Portfolio"
+msgstr "Portfolio"
+
+msgid "Posadzki bezspoinowe najwyższej klasy"
+msgstr "Fugenlose Industrieböden höchster Güte"
+
+msgid "Potrzebujesz gotowej dokumentacji projektowej? Zaprojektujemy halę, magazyn lub obiekt usługowy — z uzgodnieniami i pozwoleniem na budowę."
+msgstr "Sie benötigen eine fertige Planungsdokumentation? Wir entwerfen eine Halle, "
+
+msgid "Powierz budowę inżynierom, którzy rozumieją rynek komercyjny. Zbudujemy obiekt, który przyciągnie klientów i wyeksponuje Twoją markę."
+msgstr "Übergeben Sie den Bau Ingenieuren, die den Gewerbemarkt verstehen. Wir bauen ein Objekt, das Kunden anzieht und Ihre Marke inszeniert."
+
+msgid "Powrót do logowania"
+msgstr "Zurück zur Anmeldung"
+
+msgid "Powrót na stronę główną"
+msgstr "Zurück zur Startseite"
+
+msgid "Powtórz hasło"
+msgstr "Passwort wiederholen"
+
+msgid "Poznaj ludzi, którzy tworzą MBT"
+msgstr "Lernen Sie die Menschen kennen, die MBT aufbauen"
+
+msgid "Poznaj nas <strong>bliżej</strong>"
+msgstr "Lernen Sie uns <strong>näher kennen</strong>"
+
+msgid "Poznaj nasz zespół"
+msgstr "Lernen Sie unser Team kennen"
+
+msgid "Poznaj nasze główne obszary działania jako Generalnego Wykonawcy. Realizujemy obiekty na miarę Twojego biznesu."
+msgstr "Entdecken Sie unsere Kernkompetenzen als Generalunternehmer. Wir bauen maßgeschneiderte Objekte für Ihr Unternehmen."
+
+msgid "Poznaj nasze podejście"
+msgstr "Lernen Sie unseren Ansatz kennen"
+
+msgid "Poznaj nasze rozwiązania"
+msgstr "Entdecken Sie unsere Lösungen"
+
+msgid "Poznajemy Twoje potrzeby, analizujemy teren i przygotowujemy wstępną koncepcję wraz z szacunkiem kosztów."
+msgstr "Wir lernen Ihre Anforderungen kennen, analysieren den Standort und erstellen "
+
+msgid "Pozwolenie na budowę — projekt gotowy lub od zera"
+msgstr "Baugenehmigung — bestehende Planung oder von Grund auf"
+
+msgid "Południe"
+msgstr "Süd"
+
+msgid "Południowy wschód"
+msgstr "Südost"
+
+msgid "Praca MBT na budowie"
+msgstr "MBT-Arbeiten auf der Baustelle"
+
+msgid "Praca w MBT"
+msgstr "Arbeit bei MBT"
+
+msgid "Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie."
+msgstr "Fundamente, Tragwerksmontage, Installationen und Ausbauarbeiten."
+
+msgid "Prace wykończeniowe"
+msgstr "Innenausbau"
+
+msgid "Pracując z inwestorami i partnerami biznesowymi, zauważyliśmy, że wiele firm boryka się z trudnościami w kompleksowym zarządzaniu projektami budowlanymi. Z jednej strony brakuje im specjalistów, którzy posiadają wszechstronne doświadczenie, a z drugiej, firmy budowlane obecne na rynku często nie rozumieją specyficznych potrzeb inwestorów."
+msgstr "In der Zusammenarbeit mit Bauherren haben wir festgestellt, dass viele Unternehmen vor Herausforderungen bei der ganzheitlichen Bauabwicklung stehen. Einerseits fehlt oft internes Know-how, andererseits mangelt es herkömmlichen Bauunternehmen am Verständnis für betriebswirtschaftliche Anforderungen."
+
+msgid "Precyzja i technologia"
+msgstr "Präzision und Technologie"
+
+msgid "Precyzja, która <strong>napędza Twój przemysł</strong>"
+msgstr "Präzision, die <strong>Ihre Industrie antreibt</strong>"
+
+msgid "Prestiż i funkcjonalność"
+msgstr "Prestige und Funktionalität"
+
+msgid "Proces współpracy"
+msgstr "Kooperationsprozess"
+
+msgid "Profesjonalizm, precyzja i pełne zaangażowanie — dzień po dniu na Twojej budowie."
+msgstr "Professionalität, Präzision und voller Einsatz — Tag für Tag auf Ihrer Baustelle."
+
+msgid "Projekt + budowa + formalności w jednym kontrakcie. Jeden partner, pełna odpowiedzialność, zero pośredników."
+msgstr "Planung + Bau + Formalitäten in einem Vertrag. Ein Partner, volle Verantwortung, "
+
+msgid "Projekt i budowa obiektów handlowych z MBT. Tworzymy nowoczesne hale komercyjne dopasowane do Twojego biznesu. Skontaktuj się i sprawdź szczegóły!"
+msgstr "Planung und Bau von Gewerbeobjekten mit MBT. Wir schaffen moderne, maßgeschneiderte Gewerbehallen. Kontaktieren Sie uns für Details!"
+
+msgid "Projekt i oferta"
+msgstr "Planung und Angebot"
+
+msgid "Projektowanie"
+msgstr "Planung & Entwurf"
+
+msgid "Projektowanie i Kosztorys"
+msgstr "Planung & Kostenplan"
+
+msgid "Projektuj-Buduj"
+msgstr "Planen-Bauen"
 
 msgid "Projektuj-wybuduj"
 msgstr "Planen und Bauen"
 
+msgid "Projektujemy i wdrażamy technologie obniżające koszty eksploatacji: fotowoltaikę, pompy ciepła, retencję wody oraz certyfikację BREEAM."
+msgstr "Wir planen und implementieren Technologien zur Senkung der Betriebskosten: Photovoltaik, Wärmepumpen, Regenwassernutzung und BREEAM-Zertifizierung."
+
+msgid "Projektujemy i wykonujemy zbiorniki retencyjne na wodę deszczową do celów chłodniczych lub bytowych."
+msgstr "Wir planen und bauen Regenwasserrückhaltebecken zur Nutzung in Kühlkreisläufen oder im Betrieb."
+
+msgid "Projektujemy i wylewamy potężne stopy fundamentowe oraz płyty bezspoinowe zdolne do tłumienia drgań wywoływanych przez prasy, obrabiarki CNC czy ciężkie linie technologiczne. Przykładem jest nasza realizacja dla BATER w Gliwicach (fundamenty pod wanny kwasowe i prasy ołowiowe) oraz Ponar Wadowice."
+msgstr "Wir planen und betonieren massive Einzelfundamente und fugenlose Platten, die Vibrationen von Pressen, CNC-Maschinen oder schweren Anlagen dämpfen. Beispiele sind BATER in Gliwice (Fundamente für Säurebecken und Bleipressen) sowie Ponar Wadowice."
+
+msgid "Projektujemy konstrukcję dachu pod duże obciążenia instalacji fotowoltaicznych."
+msgstr "Wir dimensionieren Dachkonstruktionen für die Zusatzlasten von Photovoltaikanlagen."
+
+msgid "Projektujemy obiekty pod kątem maksymalnej redukcji kosztów operacyjnych. Wdrażamy systemy doświetlenia światłem naturalnym (pasma świetlne, świetliki na dachu), wprowadzamy wzmocnienia pod farmy fotowoltaiczne oraz projektujemy zaawansowane systemy retencji wód opadowych."
+msgstr "Wir planen Hallen zur Minimierung der Betriebskosten: Tageslichtbänder und Oberlichter, Dachverstärkungen für Photovoltaik sowie fortschrittliche Regenwasserrückhaltesysteme."
+
+msgid "Projektujemy z uwzględnieniem <strong>funkcjonalności, estetyki i optymalnych rozwiązań</strong>."
+msgstr "Wir planen mit Fokus auf <strong>Funktionalität, Ästhetik und wirtschaftlichste Lösungen</strong>."
+
+msgid "Projektujemy z uwzględnieniem funkcjonalności, estetyki i optymalnych rozwiązań."
+msgstr "Wir planen unter ganzheitlicher Berücksichtigung von Funktionalität, Ästhetik und optimierten Lösungen."
+
+msgid "Prosto z placu budowy"
+msgstr "Direkt von der Baustelle"
+
+msgid "Prośba wysłana"
+msgstr "Anfrage gesendet"
+
+msgid "Przejmiemy na siebie cały proces budowlany, abyś Ty mógł skupić się na kalibracji maszyn. Zbudujmy razem Twój nowy zakład."
+msgstr "Wir übernehmen den gesamten Bauprozess, damit Sie sich auf Ihre Maschinen konzentrieren können. Lassen Sie uns Ihr neues Werk gemeinsam errichten."
+
+msgid "Przejmujemy pełną odpowiedzialność za Twój <strong>proces budowlany</strong>"
+msgstr "Wir übernehmen die volle Verantwortung für Ihren <strong>Bauprozess</strong>"
+
+msgid "Przejmujemy pełną odpowiedzialność za cały proces budowlany — koordynację, harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu zamiast dziesiątek firm."
+msgstr "Wir übernehmen die volle Verantwortung für den gesamten Bauprozess — Koordination, "
+
+msgid "Przejmujemy pełną odpowiedzialność za proces budowlany — koordynacja, harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu."
+msgstr "Wir übernehmen die volle Verantwortung für den Bauprozess — Koordination, Zeitplan, "
+
+msgid "Przemysł"
+msgstr "Industrie"
+
+msgid "Przemysł w naszym wykonaniu"
+msgstr "Industriebau von MBT"
+
+msgid "Przeprowadzamy inwestycję przez cały proces administracyjny: pozwolenia na budowę, decyzje środowiskowe, uzgodnienia PSP/SANEPID i odbiory."
+msgstr "Wir begleiten die Investition durch das gesamte Genehmigungsverfahren: Baugenehmigungen, Umweltbeschlüsse, Brandschutz- und Hygieneabstimmungen sowie Abnahmen."
+
+msgid "Przestrzenie biurowe"
+msgstr "Büroräume"
+
+msgid "Przestrzeń biurowa"
+msgstr "Büroraum"
+
+msgid "Przetwarzamy dane osobowe podane dobrowolnie w formularzu kontaktowym „Wyceń projekt\" — w szczególności imię i nazwisko, adres e-mail, numer telefonu, nazwę firmy oraz treść wiadomości, w celu odpowiedzi na zapytanie i przygotowania wyceny."
+msgstr "Wir verarbeiten personenbezogene Daten, die freiwillig im Kontaktformular „Projekt "
+
+msgid "Przez MBT"
+msgstr "Von MBT"
+
+msgid "Przy projektowaniu realizowanych obiektów w sposób szczególny uwzględniamy funkcjonalność, optymalne rozwiązania w zakresie posadowienia, konstrukcji i instalacji oraz estetykę obiektu."
+msgstr "Bei der Planung berücksichtigen wir besonders Funktionalität, wirtschaftliche Gründungslösungen, Tragwerk, Haustechnik und Architekturästhetik."
+
+msgid "Przydatne linki"
+msgstr "Nützliche Links"
+
+msgid "Przygotowujemy projekt, harmonogram i transparentny kosztorys. Negocjujemy i ustalamy szczegóły umowy."
+msgstr "Wir erstellen die Planung, den Zeitplan und eine transparente Kalkulation. "
+
+msgid "Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych, wniesienia sprzeciwu oraz cofnięcia zgody w dowolnym momencie. Masz również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych."
+msgstr "Sie haben das Recht auf Zugang zu den Daten, deren Berichtigung, Löschung, "
+
+msgid "Północ"
+msgstr "Nord"
+
+msgid "REALIZACJE"
+msgstr "PROJEKTE"
+
+msgid "RETAIL"
+msgstr "RETAIL"
+
+msgid "RODO"
+msgstr "DSGVO"
+
+msgid "Raportowanie w czasie rzeczywistym"
+msgstr "Echtzeit-Reporting"
+
+msgid "Realizacja"
+msgstr "Ausführung"
+
+msgid "Realizacja Budowy"
+msgstr "Bauausführung"
+
+msgid "Realizacja MBT"
+msgstr "MBT-Projekt"
+
+msgid "Realizacja nie istnieje"
+msgstr "Projekt nicht gefunden"
+
 msgid "Realizacja pod klucz"
-msgstr "Schlüsselfertige Ausführung"
+msgstr "Schlüsselfertige Realisierung"
+
+msgid "Realizacja prowadzona przez MBT Modern Building Team w formule generalnego wykonawstwa."
+msgstr "Realisierung durchgeführt von MBT Modern Building Team als Generalunternehmer."
+
+msgid "Realizacja prowadzona przez MBT Modern Building Team w formule {{ project.formula|default:\"generalnego wykonawstwa\" }}."
+msgstr "Projekt, realisiert von MBT Modern Building Team in der Formel {{ project.formula|default:\"Generalunternehmer\" "
+
+msgid "Realizacje"
+msgstr "Projekte"
+
+msgid "Realizujemy Twoje projekty <strong>zgodnie z harmonogramem</strong>, nawet przy zmianach."
+msgstr "Wir realisieren Ihre Projekte <strong>gemäß Zeitplan</strong>, auch bei Änderungen."
+
+msgid "Realizujemy Twoje projekty zgodnie z harmonogramem, nawet przy zmianach."
+msgstr "Wir realisieren Ihre Projekte termintreu, auch bei nachträglichen Änderungen."
+
+msgid "Realizujemy inwestycje o różnych skalach – od potężnych hubów dystrybucyjnych po elastyczne parki magazynowe. Przykładem naszych kompetencji jest wieloetapowy projekt dla BTS Development Park, gdzie stworzyliśmy kompleks z podziałem na niezależne moduły o elastycznym metrażu, gotowe do adaptacji."
+msgstr "Wir realisieren Projekte jeder Größenordnung – von großen Distributionszentren bis zu flexiblen Gewerbeparks, wie etwa unser mehrstufiges Projekt für den BTS Development Park mit modular anpassbaren Einheiten."
+
+msgid "Realizujemy obiekty kubaturowe dopasowane do specyfiki procesów technologicznych i wymagań każdej branży."
+msgstr "Wir realisieren Hochbauten, die präzise auf die Prozessanforderungen und Spezifika jeder Branche abgestimmt sind."
+
+msgid "Realizujemy obiekty wyposażone w rozbudowaną infrastrukturę dźwignicową. Wykonujemy wytrzymałe konstrukcje stalowe lub żelbetowe przystosowane do bezpiecznego montażu i pracy suwnic o wysokim udźwigu, gwarantując bezpieczny, płynny transport wewnątrzzakładowy ciężkich gabarytów."
+msgstr "Wir realisieren Hallen mit umfangreicher Kraninfrastruktur. Wir errichten tragfähige Stahl- oder Stahlbetonkonstruktionen für den sicheren Betrieb von Schwerlastkranen und reibungslosen internen Transport."
+
+msgid "Realizujemy zgodnie z harmonogramem, reagując na zmiany."
+msgstr "Wir liefern nach Zeitplan und reagieren flexibel auf Änderungen."
+
+msgid "Regulamin"
+msgstr "AGB"
+
+msgid "Retail"
+msgstr "Retail"
+
+msgid "Retail & Auto"
+msgstr "Einzelhandel & Automotive"
+
+msgid "Retail & Automotive"
+msgstr "Einzelhandel & Automotive"
+
+msgid "Retail w naszym wykonaniu"
+msgstr "Handelsimmobilien von MBT"
+
+msgid "Rodzaj inwestycji"
+msgstr "Projektart"
+
+msgid "Rozpoznanie i Koncepcja"
+msgstr "Analyse & Konzept"
+
+msgid "Rozumiemy wyzwania związane z transformacją energetyczną. Optymalizujemy obiekty przemysłowe pod kątem redukcji śladu węglowego i kosztów operacyjnych (OPEX). Stosujemy innowacyjne rozwiązania i pomagamy w osiągnięciu rygorystycznych certyfikacji BREEAM."
+msgstr "Wir verstehen die Herausforderungen der Energiewende. Wir optimieren Industriegebäude zur Reduzierung des CO2-Fußabdrucks und der Betriebskosten (OPEX). Wir setzen innovative Lösungen ein und unterstützen BREEAM-Zertifizierungen."
+
+msgid "Rozumiemy, że w przemyśle każda wibracja, spadek napięcia czy niedoskonałość posadzki przekłada się na realne straty finansowe Inwestora. Dlatego budujemy z zegarmistrzowską precyzją, opierając się na ścisłej koordynacji branżowej i nowoczesnych systemach BIM."
+msgstr "Wir verstehen, dass in der Industrie jede Vibration, jeder Spannungsabfall oder Bodenunebenheit echte finanzielle Einbußen für den Bauherrn bedeutet. Daher bauen wir mit uhrmacherischer Präzision auf Basis enger Gewerkekoordination und moderner BIM-Systeme."
+
+msgid "Rozwiązania szyte na miarę"
+msgstr "Maßgeschneiderte Lösungen"
+
+msgid "Rygorystyczne normy"
+msgstr "Strenge Standards"
+
+msgid "Rygorystyczne standardy marek (Corporate Identity)"
+msgstr "Strenge Markenstandards (Corporate Identity)"
+
+msgid "SALONY SAMOCHODOWE"
+msgstr "AUTOHÄUSER"
+
+msgid "SELF STORAGE"
+msgstr "SELF STORAGE"
+
+msgid "SERWISY MOTORYZACYJNE"
+msgstr "KRAFTFAHRZEUG-WERKSTÄTTEN"
+
+msgid "Salon samochodowy"
+msgstr "Autohaus"
+
+msgid "Salony samochodowe (Automotive)"
+msgstr "Autohäuser (Automotive)"
+
+msgid "Sektory, dla których <strong>budujemy obiekty</strong>"
+msgstr "Branchen, für die <strong>wir Objekte bauen</strong>"
+
+msgid "Self Storage"
+msgstr "Self Storage"
+
+msgid "Siedziba"
+msgstr "Firmensitz"
+
+msgid "Siedziba MBT w Katowicach"
+msgstr "MBT-Hauptsitz in Katowice"
+
+msgid "Siedziba — Katowice"
+msgstr "Hauptsitz — Katowice"
+
+msgid "Skonsultuj projekt"
+msgstr "Projekt abstimmen"
+
+msgid "Skonsultuj projekt z inżynierem"
+msgstr "Projekt mit einem Ingenieur besprechen"
+
+msgid "Skonsultuj swoją koncepcję z naszymi inżynierami. Bezpłatnie przeanalizujemy możliwości optymalizacji kosztów i harmonogramu budowy."
+msgstr "Besprechen Sie Ihr Konzept mit unseren Ingenieuren. Wir analysieren kostenlos Optionen zur Kosten- und Terminoptimierung."
+
+msgid "Skonsultuj swój projekt z inżynierem MBT"
+msgstr "Projekt mit einem MBT-Ingenieur besprechen"
+
+msgid "Skontaktuj się"
+msgstr "Kontaktieren Sie uns"
+
+msgid "Skontaktuj się z <strong>nami</strong>"
+msgstr "Kontaktieren Sie <strong>uns</strong>"
+
+msgid "Smart Warehousing"
+msgstr "Smart Warehousing"
+
+msgid "Specjalizujemy się w realizacji hal magazynowych, produkcyjnych i usługowych. Zapewniamy pełny układ komunikacyjny i obiekty inżynierskie."
+msgstr "Wir sind auf Lager-, Produktions- und Gewerbehallen spezialisiert und realisieren die komplette Verkehrsinfrastruktur und Ingenieurbauwerke."
+
+msgid "Specjaliści z referencjami i wieloletnim doświadczeniem. Radzimy sobie z projektami wielobranżowymi — od instalacji, przez uzgodnienia z gestorami sieci, po ochronę pożarową i konstrukcję."
+msgstr "Spezialisten mit Referenzen und langjähriger Erfahrung. Wir meistern fachübergreifende "
+
+msgid "Specjaliści z referencjami i wieloletnim doświadczeniem. Radzimy sobie z trudnym gruntem, nietypową konstrukcją i skomplikowanymi instalacjami."
+msgstr "Spezialisten mit Referenzen und langjähriger Erfahrung. Wir meistern anspruchsvollen Baugrund, unkonventionelle Konstruktionen und komplexe Haustechnik."
+
+msgid "Specyfikacja"
+msgstr "Spezifikation"
+
+msgid "Spełnienie wymogów środowiskowych"
+msgstr "Erfüllung von Umweltstandards"
+
+msgid "Sprawdź co budujemy"
+msgstr "Erfahren Sie, was wir bauen"
+
+msgid "Sprawdź oferty pracy"
+msgstr "Stellenangebote ansehen"
+
+msgid "Sprawdź rozwiązania"
+msgstr "Lösungen entdecken"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Strona główna"
+msgstr "Startseite"
+
+msgid "Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania oraz analizy ruchu. Szczegółowe informacje znajdują się w polityce plików cookies."
+msgstr "Die Website verwendet Cookies, um den ordnungsgemäßen Betrieb sicherzustellen "
+
+msgid "Systemy akustyczne i oświetlenie ekspozycyjne"
+msgstr "Akustiksysteme und gezielte Akzentbeleuchtung"
+
+msgid "Systemy retencji i wykorzystania wody deszczowej (szara woda)."
+msgstr "Regenwasserrückhaltung und Grauwassernutzung."
+
+msgid "Szablon"
+msgstr "Vorlage"
+
+msgid "Szablony banerów są w trakcie przygotowywania."
+msgstr "Banner-Vorlagen werden gerade vorbereitet."
+
+msgid "Szczegóły realizacji są dostępne wkrótce."
+msgstr "Projektdetails folgen in Kürze."
+
+msgid "Szukaj"
+msgstr "Suche"
+
+msgid "Szukamy mądrych oszczędności (Value Engineering) — optymalizujemy konstrukcję i materiały bez kompromisów jakościowych i bezpieczeństwa."
+msgstr "Wir identifizieren intelligente Einsparungen (Value Engineering) — wir optimieren Konstruktion und Materialien ohne Abstriche bei Qualität und Sicherheit."
+
+msgid "Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów jakościowych i materiałowych."
+msgstr "Wir finden Lösungen zur Kosten- und Zeitoptimierung — ohne Kompromisse bei Qualität und Material."
+
+msgid "Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów w jakości materiałów i bezpieczeństwie."
+msgstr "Wir finden Lösungen, die Kosten und Zeit sparen — ohne Kompromisse bei Materialqualität "
+
+msgid "Szukasz generalnego wykonawcy? Sprawdź nasze realizacje."
+msgstr "Suchen Sie einen Generalunternehmer? Schauen Sie sich unsere Referenzen an."
+
+msgid "Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!"
+msgstr "Suchen Sie einen soliden Generalunternehmer? MBT baut Hallen, Lager und Industrieobjekte termingerecht und schlüsselfertig. Entdecken Sie unsere Referenzen!"
+
+msgid "Szybki test:"
+msgstr "Schnelltest:"
+
+msgid "Szybkość realizacji i duże rozpiętości"
+msgstr "Schnelle Realisierung und große Spannweiten"
+
+msgid "Tak — nawigujemy przez proces administracyjny, koordynujemy dokumentację powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU)."
+msgstr "Ja — wir steuern den Genehmigungsprozess, koordinieren die Bestandsunterlagen und begleiten die Erteilung der Nutzungsgenehmigung."
+
+msgid "Tak — wdrażamy zrównoważone technologie (fotowoltaika, retencja wody, stacje EV) i realizujemy obiekty zgodne z wymogami certyfikacji BREEAM."
+msgstr "Ja — wir implementieren nachhaltige Technologien (Photovoltaik, Regenwasserrückhaltung, E-Ladestationen) und bauen nach BREEAM-Standards."
+
+msgid "Te marki nam zaufały"
+msgstr "Diese Marken vertrauen uns"
+
+msgid "Technologia i innowacje"
+msgstr "Technologie und Innovation"
+
+msgid "Technologia na straży wydajności"
+msgstr "Technologie im Dienste der Effizienz"
+
+msgid "Telefon"
+msgstr "Telefon"
+
+msgid "Terminowe oddanie lokalu gotowego do zatowarowania"
+msgstr "Termingerechte Übergabe bezugs- und bestückungsfertiger Flächen"
+
+msgid "Terminowości"
+msgstr "Termintreue"
+
+msgid "Terminowość"
+msgstr "Termintreue"
+
+msgid "Terminowość i Elastyczność"
+msgstr "Termintreue und Flexibilität"
+
+msgid "Terminowość i elastyczność"
+msgstr "Termintreue und Flexibilität"
+
+msgid "Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego obiektu do użytkowania."
+msgstr "Abschlusstests, vollständige Dokumentation und Übergabe des bezugsfertigen, sicheren Objekts."
+
+msgid "Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego obiektu."
+msgstr "Endtests, vollständige Dokumentation und Übergabe eines sicheren, betriebsbereiten "
+
+msgid "Testy końcowe, komplet dokumentacji, pozwolenie na użytkowanie i przekazanie gotowego obiektu."
+msgstr "Endtests, vollständige Dokumentation, Nutzungsgenehmigung und Übergabe des "
+
+msgid "Trudne warunki gruntowe i wzmocnienia gruntu"
+msgstr "Schwierige Bodenverhältnisse und Baugrundverbesserung"
+
+msgid "Trwałe relacje"
+msgstr "Langfristige Beziehungen"
+
+msgid "Trzy biura — jeden zespół gotowy na Twoje wyzwania budowlane."
+msgstr "Drei Standorte — ein Team, bereit für Ihre Bauherausforderungen."
+
+msgid "Twoja Wizja"
+msgstr "Ihre Vision"
+
+msgid "Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby angażowania dodatkowych zasobów."
+msgstr "Wir sind ein Team von Spezialisten, das dank Sorgfalt und Kooperationsfähigkeit gemeinsame Ziele erreicht – stets bereit für Ihre Ideen, ohne zusätzlichen Ressourcenaufwand Ihrerseits."
+
+msgid "Tworzymy obiekty, które nie tylko optymalizują procesy biznesowe, ale są również przyjazne dla środowiska i oszczędne w eksploatacji. Pomagamy w realizacji wymogów środowiskowych i asystujemy w procesach uzyskiwania certyfikatów, takich jak BREEAM."
+msgstr "Wir realisieren Gebäude, die nicht nur Geschäftsprozesse optimieren, sondern "
+
+msgid "Tworzymy przestrzeń zoptymalizowaną pod kątem sprawnego łańcucha dostaw, wysokiego składowania i maksymalnej przepustowości."
+msgstr "Wir schaffen optimierte Räume für reibungslose Lieferketten, Hochregallagerung und maximalen Durchsatz."
+
+msgid "Twój Generalny"
+msgstr "Ihr General-"
+
+msgid "Twój plac budowy"
+msgstr "Ihre Baustelle"
+
+msgid "Tylko budowa"
+msgstr "Nur Bau"
+
+msgid "Tylko formalności"
+msgstr "Nur Formalitäten"
+
+msgid "Tylko projekt"
+msgstr "Nur Planung"
+
+msgid "Uczciwość i transparentność"
+msgstr "Ehrlichkeit und Transparenz"
+
+msgid "Uroczystość Rozpoczęcia Inwestycji"
+msgstr "Spatenstich-Zeremonie"
+
+msgid "Ustawienia cookies"
+msgstr "Cookie-Einstellungen"
+
+msgid "W MBT doskonale wiemy, że obiekt produkcyjny to precyzyjnie zaprojektowana obudowa dla skomplikowanych procesów technologicznych. Pełnimy funkcję Generalnego Wykonawcy dla zakładów produkcyjnych, przetwórni oraz zaawansowanych technologicznie parków maszynowych."
+msgstr "Bei MBT wissen wir genau, dass eine Produktionsstätte eine präzise konstruierte Hülle für komplexe technologische Prozesse ist. Wir agieren als Generalunternehmer für Produktionswerke, Verarbeitungsbetriebe und hochmoderne Maschinenparks."
+
+msgid "W budownictwie komercyjnym zwykła płyta warstwowa to czasem za mało. Tam, gdzie wymaga tego projekt i prestiż marki, montujemy wielkoformatowe przeszklenia aluminiowe, efektowne elewacje wentylowane, systemy z siatki cięto-ciągnionej oraz projektujemy zaawansowane, wielobarwne iluminacje świetlne elewacji budynków."
+msgstr "Im Gewerbebau reicht ein Standardpaneel oft nicht aus. Je nach Anforderung montieren wir großflächige Aluminium-Glaselemente, hinterlüftete Fassaden, Streckmetallsysteme und individuelle Architekturbeleuchtung."
+
+msgid "W magazynach wysokiego składowania posadzka to absolutny fundament sukcesu. Wylewamy zaawansowane technologicznie płyty posadzkowe o podwyższonej odporności na ścieranie i najwyższych parametrach płaskości, bezwzględnie wymaganych do bezpiecznej i szybkiej pracy nowoczesnych wózków systemowych (VNA)."
+msgstr "In Hochregallagern ist der Boden entscheidend. Wir verlegen hochmoderne Industrieböden mit hoher Abriebfestigkeit und exakter Ebenheit für den schnellen und sicheren Einsatz moderner Schmalgangstapler (VNA)."
+
+msgid "W realizacji:"
+msgstr "In Ausführung:"
 
 msgid "W trakcie Realizacji"
 msgstr "In Umsetzung"
@@ -1590,11 +1672,227 @@ msgstr "In Umsetzung"
 msgid "W trakcie realizacji"
 msgstr "In Umsetzung"
 
+msgid "Wdrażamy inteligentne systemy zarządzania dostępem do obiektu i poszczególnych stref, integrując je z monitoringiem CCTV i systemami SSWiN."
+msgstr "Wir implementieren intelligente Zutrittskontrollsysteme für das Gebäude und einzelne Zonen, integriert mit CCTV-Überwachung und Einbruchmeldeanlagen."
+
+msgid "Wdrażamy systemy odzysku ciepła odpadowego z procesów produkcyjnych (rekuperacja)."
+msgstr "Wir implementieren Abwärmenutzungssysteme aus Fertigungsprozessen (Rekuperation)."
+
+msgid "We wszystkich sprawach dotyczących przetwarzania danych osobowych możesz skontaktować się z nami pod adresem e-mail: <a href=\"mailto:biuro@mbt.pl\" style=\"color:var(--theme-color);\">biuro@mbt.pl</a> lub pisemnie na adres siedziby spółki."
+msgstr "In allen Angelegenheiten bezüglich der Verarbeitung personenbezogener Daten "
+
+msgid "Wgraj"
+msgstr "Hochladen"
+
+msgid "Wgraj logo aby zobaczyć podgląd"
+msgstr "Laden Sie ein Logo hoch, um eine Vorschau zu sehen"
+
+msgid "Wiedza z rynku budownictwa przemysłowego — prosto od naszych specjalistów."
+msgstr "Wissen aus dem industriellen Bauwesen — direkt von unseren Spezialisten."
+
+msgid "Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację zróżnicowanych obiektów."
+msgstr "Die fachübergreifende Erfahrung unseres Teams ermöglicht uns die Umsetzung "
+
+msgid "Więcej"
+msgstr "Mehr"
+
+msgid "Więcej szczegółów"
+msgstr "Mehr Details"
+
+msgid "Wnętrze hali"
+msgstr "Halleninnenraum"
+
+msgid "Wolisz porozmawiać od razu?"
+msgstr "Lieber direkt sprechen?"
+
+msgid "Wolność od formalności"
+msgstr "Formalitätenfrei bauen"
+
+msgid "Wolność od procedur i formalności"
+msgstr "Freiheit von Bürokratie und Formalitäten"
+
+msgid "Wpisz swoją miejscowość, a my dobierzemy odpowiednią osobę:"
+msgstr "Geben Sie Ihren Ort ein, und wir vermitteln Ihnen den passenden Ansprechpartner:"
+
+msgid "Wpisz swój e-mail..."
+msgstr "Geben Sie Ihre E-Mail ein..."
+
+msgid "Wschód"
+msgstr "Ost"
+
+msgid "Wsparcie inwestorskie"
+msgstr "Bauherrenberatung & Support"
+
+msgid "Wsparcie inwestorskie na każdym etapie"
+msgstr "Bauherrenunterstützung in jeder Phase"
+
+msgid "Wsparcie przy certyfikacji BREEAM"
+msgstr "Unterstützung bei der BREEAM-Zertifizierung"
+
+msgid "Współczesny przemysł to także nowoczesne zaplecze inżynieryjne i administracyjne. Płynnie łączymy surową przestrzeń halową z komfortowym, nowoczesnym biurowcem (np. inwestycja dla firmy ATT w Kokotowie). Zapewniamy odpowiednią izolację akustyczną, termiczną oraz nowoczesny fit-out przestrzeni biurowej."
+msgstr "Moderne Industrie erfordert auch ansprechende Ingenieur- und Verwaltungsbereiche. Wir verbinden Produktionshallen nahtlos mit komfortablen Bürogebäuden (z.B. ATT in Kokotow) – inklusive Schall-, Wärmeschutz und individuellem Fit-Out."
+
+msgid "Wszelkie prawa zastrzeżone"
+msgstr "Alle Rechte vorbehalten"
+
 msgid "Wszystkie"
 msgstr "Alle"
 
+msgid "Wszystkie artykuły"
+msgstr "Alle Artikel"
+
+msgid "Wszystkie realizacje"
+msgstr "Alle Projekte"
+
+msgid "Wybierz <strong>tylko to, czego potrzebujesz</strong>"
+msgstr "Wählen Sie <strong>nur, was Sie brauchen</strong>"
+
+msgid "Wybierz inwestycję na mapie"
+msgstr "Wählen Sie eine Investition auf der Karte"
+
+msgid "Wybierz logo"
+msgstr "Logo auswählen"
+
+msgid "Wybierz województwo"
+msgstr "Woiwodschaft auswählen"
+
+msgid "Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi standardami — centra logistyczne, biurowce, parki handlowe, magazyny oraz self storage."
+msgstr "Wählen Sie einen vertrauensvollen Partner, der mit Ingenieurspräzision für jedes Detail Ihrer Investition einsteht. Wir bauen schnell, zuverlässig und nach höchsten Standards — Logistikzentren, Bürogebäude, Fachmarktzentren, Lager und Self Storage."
+
+msgid "Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi standardami."
+msgstr "Wählen Sie einen verlässlichen Partner, der mit Ingenieurspräzision jedes Detail Ihrer Investition verantwortet. Wir bauen schnell, sicher und nach höchsten Standards."
+
 msgid "Wybuduj"
 msgstr "Bauen"
+
+msgid "Wybór lokalizacji i wsparcie przy zakupie działki"
+msgstr "Standortwahl und Unterstützung beim Grundstückskauf"
+
+msgid "Wyceń podobny projekt"
+msgstr "Ähnliches Projekt anfragen"
+
+msgid "Wyceń projekt"
+msgstr "Projekt anfragen"
+
+msgid "Wyceń swoją halę"
+msgstr "Kosten für Ihre Halle anfragen"
+
+msgid "Wyceń swój magazyn"
+msgstr "Lagerhalle kalkulieren"
+
+msgid "Wyceń swój projekt"
+msgstr "Projekt kalkulieren"
+
+msgid "Wyczyść"
+msgstr "Löschen"
+
+msgid "Wydajne systemy fotowoltaiczne na dachach obiektów wielkopowierzchniowych."
+msgstr "Leistungsstarke PV-Systeme auf Dächern großer Gebäude."
+
+msgid "Wykonawca"
+msgstr "unternehmer"
+
+msgid "Wykonawstwo"
+msgstr "Bauausführung"
+
+msgid "Wykończenia w standardzie premium (szkło, beton architektoniczny, forniry)"
+msgstr "Hochwertiger Ausbau (Glas, Sichtbeton, Echtholzfurniere)"
+
+msgid "Wykwalifikowane kadry BHP"
+msgstr "Qualifizierte Sicherheitsfachkräfte"
+
+msgid "Wyloguj"
+msgstr "Abmelden"
+
+msgid "Wyniki wyszukiwania"
+msgstr "Suchergebnisse"
+
+msgid "Wyróżnienia i partnerstwa"
+msgstr "Auszeichnungen & Partnerschaften"
+
+msgid "Wyzwania inżynieryjne, na które <strong>odpowiadamy</strong>"
+msgstr "Ingenieurtechnische Herausforderungen, auf die wir <strong>Antworten liefern</strong>"
+
+msgid "Wyślij prośbę"
+msgstr "Anfrage senden"
+
+msgid "Wyślij zapytanie"
+msgstr "Anfrage senden"
+
+msgid "Wyślij zapytanie o wycenę"
+msgstr "Anfrage für Angebot senden"
+
+msgid "Z pasją budujemy Wasze biznesy"
+msgstr "Mit Leidenschaft bauen wir Ihre Unternehmen"
+
+msgid "Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od projektu aż po dach!"
+msgstr "Mit Leidenschaft bauen wir Ihre Unternehmen. Ein Team – vollständige Realisierung. Vom Entwurf bis zum Dach!"
+
+msgid "ZAKŁADY PRODUKCYJNE"
+msgstr "PRODUKTIONSBETRIEBE"
+
+msgid "ZAPISZ SIĘ"
+msgstr "ANMELDEN"
+
+msgid "Za każdą zrealizowaną halą stoi zgrany zespół ekspertów. MBT to grupa doświadczonych inżynierów, kierowników budów i wykwalifikowanych specjalistów, dla których nie ma wyzwań niemożliwych. Budujemy nie tylko obiekty, ale i trwałe relacje."
+msgstr "Hinter jeder fertiggestellten Halle steht ein eingespieltes Expertenteam. MBT vereint erfahrene Ingenieure, Bauleiter und Fachkräfte, für die keine Herausforderung zu groß ist. Wir bauen Gebäude und tragfähige Partnerschaften."
+
+msgid "Zaangażowania"
+msgstr "Engagement"
+
+msgid "Zaawansowane PPOŻ"
+msgstr "Moderne Brandschutzsysteme"
+
+msgid "Zaawansowane instalacje technologiczne"
+msgstr "Moderne haustechnische und verfahrenstechnische Anlagen"
+
+msgid "Zachód"
+msgstr "West"
+
+msgid "Zadowolonych klientów"
+msgstr "Zufriedene Kunden"
+
+msgid "Zadzwoń do nas"
+msgstr "Rufen Sie uns an"
+
+msgid "Zadzwoń do nas bezpośrednio"
+msgstr "Rufen Sie uns direkt an"
+
+msgid "Zakres usług"
+msgstr "Leistungsumfang"
+
+msgid "Zaloguj się"
+msgstr "Anmelden"
+
+msgid "Zaloguj się, aby pobrać banery z wgranym logo."
+msgstr "Melden Sie sich an, um Banner mit hochgeladenem Logo herunterzuladen."
+
+msgid "Zaloguj się, aby wgrać swoje logo i pobrać banery przygotowane pod druk."
+msgstr "Melden Sie sich an, laden Sie Ihr Logo hoch und laden Sie druckfertige Banner "
+
+msgid "Zamów <strong>dokładnie to, czego potrzebujesz</strong>"
+msgstr "Bestellen Sie <strong>genau, was Sie brauchen</strong>"
+
+msgid "Zanim wbijemy pierwszą łopatę, wznosimy Twój obiekt w środowisku cyfrowym. Modelowanie daje pełną kontrolę nad kolizjami projektowymi i pilnuje budżetu."
+msgstr "Bevor der erste Spatenstich erfolgt, errichten wir Ihr Gebäude digital in BIM. Dies garantiert Kollisionsfreiheit und Budgetkontrolle."
+
+msgid "Zapewniamy odpowiednią infrastrukturę prądową i sieciową do obsługi automatyki magazynowej, robotów samojezdnych (AGV) oraz systemów zarządzania magazynem (WMS)."
+msgstr "Wir schaffen die elektrische und IT-Infrastruktur für Lagerautomatisierung, Fahrerlose Transportsysteme (FTS/AGV) und Warehouse-Management-Systeme (WMS)."
+
+msgid "Zapewniamy pełną gotowość na wymagania nowoczesnego przemysłu i standardy Przemysłu 4.0."
+msgstr "Wir gewährleisten volle Bereitschaft für moderne Industrieanforderungen und Industrie 4.0-Standards."
+
+msgid "Zapisz hasło"
+msgstr "Passwort speichern"
+
+msgid "Zaplecze biurowo-socjalne o wysokim standardzie"
+msgstr "Büro- und Sozialbereiche auf hohem Standard"
+
+msgid "Zapomniałem hasła"
+msgstr "Passwort vergessen"
+
+msgid "Zapomniałeś hasła?"
+msgstr "Passwort vergessen?"
 
 msgid "Zaprojektuj i wybuduj"
 msgstr "Planen und Bauen"
@@ -1602,125 +1900,207 @@ msgstr "Planen und Bauen"
 msgid "Zaprojektuj-wybuduj"
 msgstr "Planen und Bauen"
 
-msgid "Zrealizowane"
-msgstr "Abgeschlossen"
+msgid "Zapytaj o budowę"
+msgstr "Bau anfragen"
 
-msgid "zaprojektuj - wybuduj"
-msgstr "Planen und Bauen"
+msgid "Zapytaj o projekt"
+msgstr "Planung anfragen"
 
-msgid "Czas realizacji:"
-msgstr "Dauer:"
+msgid "Zapytaj o wsparcie"
+msgstr "Unterstützung anfragen"
 
-msgid "Biuro — Zabrze"
-msgstr "Büro — Zabrze"
+msgid "Zapytaj o wycenę"
+msgstr "Angebot anfordern"
 
-msgid "Siedziba — Katowice"
-msgstr "Hauptsitz — Katowice"
+msgid "Zapytaj o wycenę i harmonogram"
+msgstr "Angebot und Bauzeitplan anfragen"
 
-msgid "Trzy biura — jeden zespół gotowy na Twoje wyzwania budowlane."
-msgstr "Drei Büros — ein Team bereit für Ihre Bauherausforderungen."
+msgid "Zarządzanie logistyką w trudnym otoczeniu"
+msgstr "Baulogistik in anspruchsvollem Umfeld"
 
-msgid "Adres Twojej inwestycji"
-msgstr "Adresse Ihres Projekts"
+msgid "Zaufali nam"
+msgstr "Sie vertrauen uns"
 
-msgid "Biuro MBT w Zabrzu"
-msgstr "MBT-Büro in Zabrze"
+msgid "Zaufanych marek"
+msgstr "Vertrauensvolle Marken"
 
-msgid "Siedziba MBT w Katowicach"
-msgstr "MBT-Hauptsitz in Katowice"
+msgid "Założyciele MBT — Jacek Lewandowski i Tomasz Kalisz — zgromadzili zespół złożony z Menadżerów Projektu, Kierowników, Inżynierów i Projektantów, wiedząc, że to ludzie stanowią o sile firmy."
+msgstr "Die MBT-Gründer — Jacek Lewandowski und Tomasz Kalisz — haben ein Team aus "
 
-msgid "Oddział MBT w Krakowie"
-msgstr "MBT-Zweigstelle in Kraków"
+msgid "Zbudujemy magazyn, który przyspieszy Twoją dystrybucję. Pokaż nam swój biznesplan, a my dostarczymy obiekt, który sprosta Twoim ambicjom."
+msgstr "Wir bauen ein Lager, das Ihre Logistik beschleunigt. Zeigen Sie uns Ihren Businessplan – wir liefern die passende Immobilie."
 
-msgid "Plac budowy — Twoja inwestycja"
-msgstr "Baustelle — Ihre Investition"
+msgid "Zbudujmy halę produkcyjną nowej generacji"
+msgstr "Bauen wir eine Produktionshalle der neuen Generation"
 
-msgid ""
-"Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, "
-"magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i "
-"ofertę!"
-msgstr ""
-"Suchen Sie einen zuverlässigen Generalunternehmer? MBT errichtet Lager-, "
-"Produktions- "
+msgid "Zdjęcia z artykułu"
+msgstr "Fotos aus dem Artikel"
 
-msgid "Generalny Wykonawca Hal i Obiektów Przemysłowych"
-msgstr "Generalunternehmer für Industriehallen und -anlagen"
+msgid "Zdjęcia z realizacji"
+msgstr "Projektfotos"
 
-msgid "generalny wykonawca"
-msgstr "Generalunternehmer"
+msgid "Zespół"
+msgstr "Team"
 
-msgid "hale magazynowe"
-msgstr "Lagerhallen"
+msgid "Zespół MBT"
+msgstr "MBT-Team"
 
-msgid "obiekty przemysłowe"
-msgstr "Industrieobjekte"
+msgid "Zespół specjalistów"
+msgstr "Spezialistenteam"
 
-msgid "budowa pod klucz"
-msgstr "schlüsselfertiger Bau"
+msgid "Zjazdy, przyłącza mediów i instalacje OZE"
+msgstr "Zufahrten, Medienanschlüsse und OZE-Anlagen"
 
-msgid "Realizacja nie istnieje"
-msgstr "Projekt nicht gefunden"
+msgid "Zmień hasło"
+msgstr "Passwort ändern"
 
-msgid "Oferta nie istnieje"
-msgstr "Stelle nicht gefunden"
+msgid "Znajdź opiekuna dla swojego regionu"
+msgstr "Finden Sie Ihren Betreuer für Ihre Region"
 
-msgid "Artykuł nie istnieje"
-msgstr "Artikel nicht gefunden"
+msgid "Zobacz"
+msgstr "Ansehen"
 
-msgid ""
-"Jesteśmy zespołem specjalistów, którzy dzięki trosce i umiejętności "
-"kooperacji realizują wspólne cele. Szukamy ludzi z pasją do budownictwa."
-msgstr ""
-"Wir sind ein Team von Spezialisten, die durch Sorgfalt und "
-"Kooperationsfähigkeit gemeinsame Ziele erreichen. Wir suchen Menschen mit "
-"Leidenschaft für das Bauwesen."
+msgid "Zobacz cały zespół"
+msgstr "Gesamtes Team ansehen"
 
-msgid "Praca w MBT"
-msgstr "Arbeit bei MBT"
+msgid "Zobacz efekty naszej pracy"
+msgstr "Sehen Sie die Ergebnisse unserer Arbeit"
+
+msgid "Zobacz jak pracujemy"
+msgstr "Sehen Sie, wie wir arbeiten"
+
+msgid "Zobacz nasze inwestycje na interaktywnej mapie Polski"
+msgstr "Sehen Sie unsere Investitionen auf der interaktiven Polen-Karte"
 
 msgid "Zobacz ofertę"
 msgstr "Angebot ansehen"
 
-msgid ""
-"Wiedza z rynku budownictwa przemysłowego — prosto od naszych specjalistów."
-msgstr ""
-"Wissen aus dem industriellen Bauwesen — direkt von unseren Spezialisten."
+msgid "Zobacz pełen opis"
+msgstr "Vollständige Beschreibung ansehen"
 
-msgid "Budownictwo"
-msgstr "Bauwesen"
-
-msgid "Praca MBT na budowie"
-msgstr "MBT-Arbeit auf der Baustelle"
-
-msgid "Poprzednie zdjęcie"
-msgstr "Vorheriges Foto"
-
-msgid "Następne zdjęcie"
-msgstr "Nächstes Foto"
-
-msgid "Oferta, czyli co możemy dla Ciebie zrobić"
-msgstr "Unser Angebot — was wir für Sie tun können"
-
-msgid "Nasz zespół — pracownicy"
-msgstr "Unser Team — Mitarbeiter"
-
-msgid ""
-"Nie znalazłeś oferty dla siebie? Wyślij CV — zawsze rozważamy nowe talenty."
-msgstr ""
-"Nicht das Passende gefunden? Senden Sie Ihren Lebenslauf — wir prüfen immer "
-"neue Talente."
-
-msgid "Zadowolonych klientów"
-msgstr "Zufriedene Kunden"
-
-msgid "Gdzie budujemy?"
-msgstr "Wo bauen wir?"
-
-msgid "Zobacz nasze inwestycje na interaktywnej mapie Polski"
-msgstr "Sehen Sie unsere Investitionen auf der interaktiven Karte von Polen"
+msgid "Zobacz pełen opis realizacji"
+msgstr "Vollständige Projektbeschreibung ansehen"
 
 msgid "Zobacz projekt"
 msgstr "Projekt ansehen"
 
-msgid "GENERALNE WYKONAWSTWO"
-msgstr "GENERALUNTERNEHMERSCHAFT"
+msgid "Zobacz realizacje"
+msgstr "Realisierungen ansehen"
+
+msgid "Zobacz realizację"
+msgstr "Projekt ansehen"
+
+msgid "Zobacz stronę GW"
+msgstr "GU-Seite ansehen"
+
+msgid "Zobacz szczegóły realizacji"
+msgstr "Projektdetails ansehen"
+
+msgid "Zobacz wszystkie aktualności"
+msgstr "Alle Neuigkeiten ansehen"
+
+msgid "Zobacz wszystkie realizacje"
+msgstr "Alle Referenzen ansehen"
+
+msgid "Zobacz wszystkie wpisy"
+msgstr "Alle Beiträge ansehen"
+
+msgid "Zobacz, co już <strong>zbudowaliśmy</strong>"
+msgstr "Sehen Sie, was wir bereits <strong>gebaut haben</strong>"
+
+msgid "Zoptymalizuj swój łańcuch dostaw"
+msgstr "Optimieren Sie Ihre Lieferkette"
+
+msgid "Zostaw dane kontaktowe, a nasi eksperci <strong>oddzwonią</strong>"
+msgstr "Hinterlassen Sie Ihre Kontaktdaten — unsere Experten <strong>rufen Sie zurück</strong>"
+
+msgid "Zrealizowane"
+msgstr "Abgeschlossen"
+
+msgid "Zrealizowane:"
+msgstr "Realisierte:"
+
+msgid "Zrealizowanych inwestycji"
+msgstr "Realisierte Investitionen"
+
+msgid "Zrównoważone budownictwo"
+msgstr "Nachhaltiges Bauen"
+
+msgid "Zza kulis"
+msgstr "Hinter den Kulissen"
+
+msgid "biurowce"
+msgstr "Büroräume"
+
+msgid "budowa pod klucz"
+msgstr "schlüsselfertiger Bau"
+
+msgid "centra logistyczne"
+msgstr "Logistikzentren"
+
+msgid "generalny wykonawca"
+msgstr "Generalunternehmer"
+
+msgid "gwarantowana umową"
+msgstr "vertraglich garantiert"
+
+msgid "hale magazynowe"
+msgstr "Lagerhallen"
+
+msgid "hale produkcyjne"
+msgstr "Produktionshallen"
+
+msgid "język"
+msgstr "Sprache"
+
+msgid "kierownik"
+msgstr "Bauleiter"
+
+msgid "lat doświadczenia"
+msgstr "Jahre Erfahrung"
+
+msgid "lat na rynku"
+msgstr "Jahre am Markt"
+
+msgid "min. 8 znaków"
+msgstr "min. 8 Zeichen"
+
+msgid "m² powierzchni"
+msgstr "m² Fläche"
+
+msgid "m² wybudowanych hal"
+msgstr "m² gebaute Hallen"
+
+msgid "np. Warszawa, Kraków, Poznań, Gdańsk, Zabrze..."
+msgstr "z.B. Warschau, Krakau, Posen, Danzig, Hindenburg..."
+
+msgid "obiekty przemysłowe"
+msgstr "Industrieobjekte"
+
+msgid "oddanych „pod kluczem"
+msgstr "schlüsselfertig übergeben"
+
+msgid "parki handlowe"
+msgstr "Handelsparks"
+
+msgid "realizacji"
+msgstr "Projekte"
+
+msgid "salony samochodowe"
+msgstr "Autohäuser"
+
+msgid "self storage"
+msgstr "Self Storage"
+
+msgid "zaangażowania"
+msgstr "Engagement"
+
+msgid "zaprojektuj - wybuduj"
+msgstr "Planen - Bauen"
+
+msgid "zrealizowanych inwestycji"
+msgstr "realisierte Projekte"
+
+msgid "Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym."
+msgstr "Wir verbinden 20 Jahre Ingenieurerfahrung mit modernem Bauprozessmanagement."
+

@@ -16,7 +16,7 @@
         <div class="container">
             <ul class="breadcumb-menu">
                 <li><a href="{% url 'index' %}"><i class="ri-home-4-fill"></i> HOME</a></li>
-                <li><a href="{% url 'project' %}">REALIZACJE</a></li>
+                <li><a href="{% url 'project' %}">{% trans "REALIZACJE" %}</a></li>
                 <li class="active">{{ project.title }}</li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
                         {% for para in project.opis_paras %}
                         <p style="color:var(--body-color);font-size:16px;line-height:1.8;margin-bottom:18px;">{{ para }}</p>
                         {% empty %}
-                        <p style="color:var(--body-color);font-size:16px;line-height:1.8;">{% blocktranslate with formula=project.formula|default:"generalnego wykonawstwa" %}Realizacja prowadzona przez MBT Modern Building Team w formule {{ formula }}.{% endblocktranslate %}</p>
+                        <p style="color:var(--body-color);font-size:16px;line-height:1.8;">{% trans "Realizacja prowadzona przez MBT Modern Building Team w formule generalnego wykonawstwa." %}</p>
                         {% endfor %}
                     </div>
                 </div>

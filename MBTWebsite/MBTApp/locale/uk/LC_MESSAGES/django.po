@@ -7,1610 +7,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "AKTUALNOŚCI"
-msgstr "НОВИНИ"
-
-msgid "Adres e-mail"
-msgstr "Електронна адреса"
-
-msgid "Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu."
-msgstr "Ми аналізуємо ваші потреби, бізнес-бачення та умови ділянки."
-
-msgid "BLOG"
-msgstr "БЛОГ"
-
-msgid "Biuro w Zabrzu"
-msgstr "Офіс у Забже"
-
-msgid "Biurowiec"
-msgstr "Офісна будівля"
-
-msgid "Blog"
-msgstr "Блог"
-
-msgid "Budujemy obiekty dla <strong>sektora B2B</strong>"
-msgstr "Ми будуємо об'єкти для <strong>B2B-сектора</strong>"
-
-msgid "Budujemy:"
-msgstr "Ми будуємо:"
-
-msgid "Centra logistyczne i magazyny"
-msgstr "Логістичні центри та склади"
-
-msgid ""
-"Centralny punkt kontaktu. Synchronizacja dostaw, nadzór nad ekipami i pełna "
-"koordynacja harmonogramu."
-msgstr ""
-"Єдиний контактний центр. Синхронізація поставок, нагляд за бригадами та "
-"повна координація графіка."
-
-msgid "Co zyskujesz, wybierając <strong>nasz zespół</strong>"
-msgstr "Що ви отримуєте, обираючи <strong>нашу команду</strong>"
-
-msgid "Czytaj więcej"
-msgstr "Читати далі"
-
-msgid "Dane firmy"
-msgstr "Дані компанії"
-
-msgid "Dlaczego warto wybrać MBT?"
-msgstr "Чому варто обрати MBT?"
-
-msgid "Dowiedz się więcej"
-msgstr "Дізнатися більше"
-
-msgid ""
-"Fotowoltaika, systemy retencji wody, stacje ładowania EV oraz obiekty zgodne"
-" z certyfikacją BREEAM."
-msgstr ""
-"Фотоелектричні системи, системи збереження води, зарядні станції для "
-"електромобілів та об'єкти, що відповідають сертифікації BREEAM."
-
-msgid "GEN. WYKONAWSTWO"
-msgstr "ГЕНПІДРЯД"
-
-msgid "Generalne Wykonawstwo"
-msgstr "Генеральний підряд"
-
-msgid "Generalne Wykonawstwo<br>Inwestycji Budowlanych"
-msgstr "Генеральний підряд<br>будівельних інвестицій"
-
-msgid "Generalny Wykonawca"
-msgstr "Генеральний підрядник"
-
-msgid "Gwarancja i serwis pozakupowy"
-msgstr "Гарантія та післяпродажне обслуговування"
-
-msgid "HOME"
-msgstr "ГОЛОВНА"
-
-msgid "Hala magazynowa"
-msgstr "Складське приміщення"
-
-msgid "Hala produkcyjna"
-msgstr "Виробниче приміщення"
-
-msgid "Hale przemysłowe i produkcyjne"
-msgstr "Промислові та виробничі приміщення"
-
-msgid "Imię i nazwisko"
-msgstr "Ім'я та прізвище"
-
-msgid "Inne"
-msgstr "Інше"
-
-msgid "Inżynierska precyzja i optymalizacja"
-msgstr "Інженерна точність та оптимізація"
-
-msgid "JESTEŚMY DOSTĘPNI"
-msgstr "МИ НА ЗВ'ЯЗКУ"
-
-msgid "Jak wygląda proces współpracy?"
-msgstr "Як виглядає процес співпраці?"
-
-msgid "Jeden partner, pełna odpowiedzialność"
-msgstr "Один партнер, повна відповідальність"
-
-msgid ""
-"Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> "
-"Budujemy hale magazynowe, produkcyjne i usługowe pod klucz."
-msgstr ""
-"Одна команда – повна реалізація. <strong>Від проекту до даху!</strong> "
-"Будуємо складські, виробничі та комерційні приміщення під ключ."
-
-msgid "KARIERA"
-msgstr "КАР'ЄРА"
-
-msgid "KONTAKT"
-msgstr "КОНТАКТИ"
-
-msgid "Kariera"
-msgstr "Кар'єра"
-
-msgid "Kontakt"
-msgstr "Контакти"
-
-msgid "Masz inny typ inwestycji?"
-msgstr "Маєте інший тип інвестицій?"
-
-msgid "Masz projekt w głowie?"
-msgstr "Маєте ідею проекту?"
-
-msgid "Napisz do nas!"
-msgstr "Напишіть нам!"
-
-msgid "Nasza Realizacja"
-msgstr "Наш проект"
-
-msgid ""
-"Nasza opieka nie kończy się w dniu oddania kluczy — kompleksowa obsługa "
-"gwarancyjna i wsparcie serwisowe."
-msgstr ""
-"Наша опіка не закінчується в день передачі ключів — ми забезпечуємо "
-"комплексне гарантійне обслуговування та сервісну підтримку."
-
-msgid "Nasze najnowsze wpisy na blogu"
-msgstr "Наші останні публікації в блозі"
-
-msgid "Nasze specjalizacje"
-msgstr "Наша спеціалізація"
-
-msgid ""
-"Nawigujemy przez proces administracyjny, koordynujemy dokumentację "
-"powykonawczą i asystujemy przy pozwoleniach."
-msgstr ""
-"Ми супроводжуємо адміністративний процес, координуємо виконавчу документацію"
-" та допомагаємо з дозволами."
-
-msgid ""
-"Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i nowoczesny"
-" design elewacji."
-msgstr ""
-"Сучасні торгові парки, ми дбаємо про багатофункціональність (multi-use) та "
-"сучасний дизайн фасадів."
-
-msgid ""
-"Nowoczesne przestrzenie magazynowe wysokiego składowania o zoptymalizowanej "
-"przepustowości."
-msgstr ""
-"Сучасні складські приміщення високого зберігання з оптимізованою пропускною "
-"здатністю."
-
-msgid "Numer telefonu"
-msgstr "Номер телефону"
-
-msgid "O NAS"
-msgstr "ПРО НАС"
-
-msgid "O firmie"
-msgstr "Про компанію"
-
-msgid "O nas"
-msgstr "Про нас"
-
-msgid "OFERTA"
-msgstr "ПРОПОЗИЦІЯ"
-
-msgid ""
-"Obiekty dealerskie nowej generacji spełniające globalne standardy "
-"identyfikacji wizualnej marek motoryzacyjnych."
-msgstr ""
-"Дилерські центри нового покоління, що відповідають глобальним стандартам "
-"візуальної ідентифікації автомобільних брендів."
-
-msgid ""
-"Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale "
-"z suwnicami i zaawansowanym parkiem maszynowym."
-msgstr ""
-"Об'єкти, адаптовані до суворих технологічних вимог, включаючи цехи з кранами"
-" та сучасним обладнанням."
-
-msgid "Obiekty handlowe i usługowe"
-msgstr "Торгові та комерційні об'єкти"
-
-msgid ""
-"Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów"
-" ergonomii pracy."
-msgstr ""
-"Комерційні об'єкти та роботи fit-out, адаптовані до найвищих стандартів "
-"ергономіки роботи."
-
-msgid "Obserwuj nas"
-msgstr "Слідкуйте за нами"
-
-msgid "Z pasją budujemy Wasze biznesy"
-msgstr "Вже 20 років ми з пристрастю будуємо ваш бізнес"
-
-msgid "Od koncepcji do <strong>oddania kluczy</strong>"
-msgstr "Від концепції до <strong>передачі ключів</strong>"
-
-msgid "Odbiór i Użytkowanie"
-msgstr "Здача в експлуатацію"
-
-msgid "Oddział — Kraków"
-msgstr "Філія — Краків"
-
-msgid "Oferta"
-msgstr "Пропозиція"
-
-msgid "Opinie naszych klientów"
-msgstr "Відгуки наших клієнтів"
-
-msgid "Opisz swój projekt..."
-msgstr "Опишіть свій проект..."
-
-msgid ""
-"Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny "
-"budżet."
-msgstr ""
-"Optimal engineering solutions, a precise schedule and a transparent budget."
-
-msgid "Polityka <strong>prywatności</strong>"
-msgstr "Політика <strong>конфіденційності</strong>"
-
-msgid "Pon-Pt:"
-msgstr "Пн-Пт:"
-
-msgid "Porozmawiaj z nami"
-msgstr "Поговоріть з нами"
-
-msgid "Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu."
-msgstr ""
-"Давайте поговоримо — ми підберемо оптимальну формулу для вашого проекту."
-
-msgid "Portfolio"
-msgstr "Портфоліо"
-
-msgid "Poznaj nas <strong>bliżej</strong>"
-msgstr "Пізнайте нас <strong>ближче</strong>"
-
-msgid "Poznaj nasz zespół"
-msgstr "Познайомтеся з нашою командою"
-
-msgid ""
-"Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie."
-msgstr ""
-"Фундаментні роботи, зведення конструкцій, монтаж інсталяцій та оздоблення."
-
-msgid "Projektowanie"
-msgstr "Проектування"
-
-msgid "Projektowanie i Kosztorys"
-msgstr "Проектування та Кошторис"
-
-msgid "Przestrzenie biurowe"
-msgstr "Офісні приміщення"
-
-msgid "Przydatne linki"
-msgstr "Корисні посилання"
-
-msgid "REALIZACJE"
-msgstr "ПРОЕКТИ"
-
-msgid "Realizacja Budowy"
-msgstr "Будівництво"
-
-msgid "Realizacje"
-msgstr "Проекти"
-
-msgid "Regulamin"
-msgstr "Правила"
-
-msgid "Rodzaj inwestycji"
-msgstr "Тип інвестиції"
-
-msgid "Rozpoznanie i Koncepcja"
-msgstr "Аналіз та Концепція"
-
-msgid "Salony samochodowe (Automotive)"
-msgstr "Автосалони (Automotive)"
-
-msgid "Siedziba"
-msgstr "Головний офіс"
-
-msgid ""
-"Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów w jakości"
-" materiałów i bezpieczeństwie."
-msgstr ""
-"Ми шукаємо рішення, які оптимізують витрати та час — без компромісів у "
-"якості матеріалів та безпеці."
-
-msgid "Te marki nam zaufały"
-msgstr "Ці бренди нам довіряють"
-
-msgid "Technologia i innowacje"
-msgstr "Технології та інновації"
-
-msgid "Telefon"
-msgstr "Телефон"
-
-msgid ""
-"Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego "
-"obiektu."
-msgstr ""
-"Кінцеві тести, комплект документації та передача готового, безпечного "
-"об'єкта."
-
-msgid "Twoja Wizja"
-msgstr "Ваше бачення"
-
-msgid ""
-"Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację "
-"zróżnicowanych obiektów."
-msgstr ""
-"Багатопрофільний досвід нашої команди дозволяє нам реалізовувати "
-"різноманітні об'єкти."
-
-msgid "Wolność od formalności"
-msgstr "Свобода від формальностей"
-
-msgid "Wpisz swój e-mail..."
-msgstr "Введіть свій e-mail..."
-
-msgid "Wsparcie inwestorskie"
-msgstr "Підтримка інвестора"
-
-msgid "Wszelkie prawa zastrzeżone"
-msgstr "Усі права захищені"
-
-msgid ""
-"Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy "
-"detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi "
-"standardami."
-msgstr ""
-"Оберіть надійного партнера, який з інженерною точністю подбає про кожну "
-"деталь вашої інвестиції. Будуємо швидко, надійно та відповідно до найвищих "
-"стандартів."
-
-msgid "Wyceń projekt"
-msgstr "Оцінити проект"
-
-msgid "Wykonawstwo"
-msgstr "Виконання"
-
-msgid "Wyślij zapytanie"
-msgstr "Надіслати запит"
-
-msgid "ZAPISZ SIĘ"
-msgstr "ПІДПИСАТИСЯ"
-
-msgid "Zapytaj o wycenę"
-msgstr "Запитати ціну"
-
-msgid "Zobacz cały zespół"
-msgstr "Переглянути всю команду"
-
-msgid "Zobacz efekty naszej pracy"
-msgstr "Переглянути результати нашої роботи"
-
-msgid "Zobacz realizacje"
-msgstr "Переглянути проекти"
-
-msgid "Zobacz wszystkie realizacje"
-msgstr "Переглянути всі проекти"
-
-msgid "Zobacz wszystkie wpisy"
-msgstr "Переглянути всі записи"
-
-msgid "Zrównoważone budownictwo"
-msgstr "Екологічне будівництво"
-
-msgid "centra logistyczne"
-msgstr "логістичні центри"
-
-msgid "hale produkcyjne"
-msgstr "виробничі цехи"
-
-msgid "język"
-msgstr "мова"
-
-msgid "lat doświadczenia"
-msgstr "років досвіду"
-
-msgid "parki handlowe"
-msgstr "торгові парки"
-
-msgid "biurowce"
-msgstr "офісні приміщення"
-
-msgid "salony samochodowe"
-msgstr "автосалони"
-
-msgid "zrealizowanych inwestycji"
-msgstr "реалізованих проектів"
-
-msgid ""
-"Nasze wartości wyrażają się w nazwie Modern Building Team. Stawiamy na "
-"nowoczesność w myśleniu, zarządzaniu i relacjach."
-msgstr ""
-"Наші цінності відображені в назві Modern Building Team. Ми робимо ставку на "
-"сучасність у мисленні, управлінні та відносинах."
-
-msgid ""
-"Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji "
-"realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby "
-"angażowania dodatkowych zasobów."
-msgstr ""
-"Ми створюємо групу фахівців, які завдяки турботі та вмінню співпрацювати "
-"досягають спільних цілей — завжди готові до ваших ідей без необхідності "
-"залучення додаткових ресурсів."
-
-msgid "Generalne wykonawstwo „pod klucz” — od projektu aż po dach"
-msgstr "Генеральний підряд «під ключ» — від проекту до даху"
-
-msgid "Hale magazynowe, produkcyjne i usługowe"
-msgstr "Складські, виробничі та комерційні приміщення"
-
-msgid "Wsparcie inwestorskie na każdym etapie"
-msgstr "Підтримка інвестора на кожному етапі"
-
-msgid "Oferta MBT"
-msgstr "Пропозиція MBT"
-
-msgid ""
-"Nie tylko generalne wykonawstwo — <strong>wybierz zakres, którego "
-"potrzebujesz</strong>"
-msgstr ""
-"Не лише генеральний підряд — <strong>оберіть необхідний обсяг</strong>"
-
-msgid ""
-"Możemy zaprojektować, wybudować, a nawet pomóc tylko w pozwoleniach i "
-"formalnościach. Zamów u nas wyłącznie projekt, wyłącznie budowę lub pełne "
-"wsparcie inwestorskie — wszystko w jednym miejscu."
-msgstr ""
-"Ми можемо спроектувати, побудувати або навіть допомогти лише з дозволами та "
-"формальностями. Замовте у нас тільки проект, тільки будівництво або повну "
-"інвесторську підтримку — все в одному місці."
-
-msgid "lat na rynku"
-msgstr "років на ринку"
-
-msgid "realizacji"
-msgstr "реалізацій"
-
-msgid "m² powierzchni"
-msgstr "м² площі"
-
-msgid "Budowa hali MBT"
-msgstr "Будівництво залу MBT"
-
-msgid "Terminowość"
-msgstr "Вчасність"
-
-msgid "gwarantowana umową"
-msgstr "гарантована договором"
-
-msgid "Zakres usług"
-msgstr "Спектр послуг"
-
-msgid "Wybierz <strong>tylko to, czego potrzebujesz</strong>"
-msgstr "Оберіть <strong>тільки те, що вам потрібно</strong>"
-
-msgid ""
-"Nie musisz zamawiać wszystkiego naraz. Projekt, budowa i formalności "
-"działają u nas również jako osobne usługi — dopasuj zakres do swojego etapu "
-"inwestycji."
-msgstr ""
-"Вам не обов'язково замовляти все одразу. Проектування, будівництво та "
-"формальності також доступні як окремі послуги — адаптуйте обсяг до вашого "
-"етапу інвестицій."
-
-msgid "Tylko projekt"
-msgstr "Тільки проект"
-
-msgid ""
-"Specjaliści z referencjami i wieloletnim doświadczeniem. Radzimy sobie z "
-"projektami wielobranżowymi — od instalacji, przez uzgodnienia z gestorami "
-"sieci, po ochronę pożarową i konstrukcję."
-msgstr ""
-"Фахівці з рекомендаціями та багаторічним досвідом. Ми справляємося з "
-"багатопрофільними проектами — від інсталяцій та погоджень з операторами "
-"мереж до пожежної безпеки та конструкцій."
-
-msgid "Trudne warunki gruntowe i wzmocnienia gruntu"
-msgstr "Складні ґрунтові умови та посилення ґрунту"
-
-msgid "Modelowanie BIM — projektowe i wykonawcze"
-msgstr "BIM-моделювання — проектне та виконавче"
-
-msgid "Wsparcie przy certyfikacji BREEAM"
-msgstr "Підтримка сертифікації BREEAM"
-
-msgid "Tylko budowa"
-msgstr "Тільки будівництво"
-
-msgid ""
-"Pełna realizacja inwestycji — od przejęcia placu budowy do przekazania "
-"kluczy. Wykonujemy roboty ziemne, fundamentowe, konstrukcje, instalacje i "
-"wykończenia."
-msgstr ""
-"Повна реалізація інвестиції — від прийняття будівельного майданчика до "
-"передачі ключів. Виконуємо земляні, фундаментні роботи, конструкції, "
-"інсталяції та оздоблення."
-
-msgid "Zjazdy, przyłącza mediów i instalacje OZE"
-msgstr "З'їзди, підключення комунікацій та інсталяції ВДЕ"
-
-msgid "Odbiory, pozwolenie na użytkowanie i klucze"
-msgstr "Приймання, дозвіл на експлуатацію та ключі"
-
-msgid "Tylko formalności"
-msgstr "Тільки формальності"
-
-msgid ""
-"Pomagamy od samego początku — od wyboru lokalizacji, przez przygotowanie "
-"materiałów do decyzji kredytowej, aż po pozwolenie na budowę i zakup "
-"działki."
-msgstr ""
-"Допомагаємо із самого початку — від вибору локації та підготовки матеріалів "
-"для кредитного рішення до отримання дозволу на будівництво та купівлі "
-"ділянки."
-
-msgid "Wybór lokalizacji i wsparcie przy zakupie działki"
-msgstr "Вибір локації та підтримка при купівлі ділянки"
-
-msgid "Pozwolenie na budowę — projekt gotowy lub od zera"
-msgstr "Дозвіл на будівництво — готовий проект або з нуля"
-
-msgid "Negocjacje, scalanie działek i badania gruntu"
-msgstr "Переговори, об'єднання ділянок та дослідження ґрунту"
-
-msgid "Elastyczny zakres współpracy"
-msgstr "Гнучкі умови співпраці"
-
-msgid "Zamów <strong>dokładnie to, czego potrzebujesz</strong>"
-msgstr "Замовляйте <strong>саме те, що вам потрібно</strong>"
-
-msgid ""
-"Jesteś na etapie projektu, budowy, a może szukasz kogoś, kto załatwi "
-"pozwolenia? Wszystko możesz zamówić osobno — albo razem, jako pełne "
-"generalne wykonawstwo."
-msgstr ""
-"Ви на етапі проектування, будівництва чи, можливо, шукаєте когось для "
-"оформлення дозволів? Все можна замовити окремо — або разом, як комплексний "
-"генеральний підряд."
-
-msgid ""
-"Potrzebujesz gotowej dokumentacji projektowej? Zaprojektujemy halę, magazyn "
-"lub obiekt usługowy — z uzgodnieniami i pozwoleniem na budowę."
-msgstr ""
-"Потрібна готова проектна документація? Спроектуємо цех, склад або "
-"комерційний об'єкт — з усіма погодженнями та дозволом на будівництво."
-
-msgid "Zapytaj o projekt"
-msgstr "Запитати про проект"
-
-msgid ""
-"Masz już projekt? Wybudujemy obiekt zgodnie z dokumentacją — od fundamentów "
-"po wykończenie i odbiory."
-msgstr ""
-"Вже маєте проект? Ми побудуємо об'єкт відповідно до документації — від "
-"фундаменту до оздоблення і здачі."
-
-msgid "Zapytaj o budowę"
-msgstr "Запитати про будівництво"
-
-msgid ""
-"Nie chcesz tracić czasu na urzędy? Przejmiemy pozwolenia, uzgodnienia, "
-"odbiory i dokumentację powykonawczą."
-msgstr ""
-"Не хочете втрачати час на інстанції? Ми візьмемо на себе дозволи, "
-"погодження, приймання та виконавчу документацію."
-
-msgid "Zapytaj o wsparcie"
-msgstr "Запитати про підтримку"
-
-msgid "Pełne generalne wykonawstwo"
-msgstr "Повний генеральний підряд"
-
-msgid ""
-"Projekt + budowa + formalności w jednym kontrakcie. Jeden partner, pełna "
-"odpowiedzialność, zero pośredników."
-msgstr ""
-"Проект + будівництво + формальності в одному контракті. Один партнер, повна "
-"відповідальність, нуль посередників."
-
-msgid "Zobacz stronę GW"
-msgstr "Переглянути сторінку ГП"
-
-msgid "Formuły współpracy"
-msgstr "Формати співпраці"
-
-msgid "Dopasowujemy się do <strong>Twoich potrzeb</strong>"
-msgstr "Ми адаптуємося до <strong>ваших потреб</strong>"
-
-msgid "Projektuj-Buduj"
-msgstr "Проектуй-Будуй"
-
-msgid ""
-"Jeden kontrakt obejmuje projekt i wykonanie. Szybka realizacja, jedna "
-"odpowiedzialność, optymalizacja kosztów na etapie projektowania."
-msgstr ""
-"Один контракт охоплює проектування та виконання. Швидка реалізація, єдина "
-"відповідальність, оптимізація витрат на етапі проектування."
-
-msgid ""
-"Przejmujemy pełną odpowiedzialność za proces budowlany — koordynacja, "
-"harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu."
-msgstr ""
-"Ми беремо повну відповідальність за будівельний процес — координацію, "
-"графік, кошторис та якість. У вас буде один контактний центр."
-
-msgid "Optymalizuj-Buduj"
-msgstr "Оптимізуй-Будуй"
-
-msgid ""
-"Analizujemy istniejący projekt pod kątem kosztów i czasu, proponujemy "
-"oszczędności bez kompromisów jakościowych, a następnie budujemy."
-msgstr ""
-"Аналізуємо існуючий проект на предмет витрат і часу, пропонуємо економію без"
-" шкоди для якості, а потім будуємо."
-
-msgid "Branże"
-msgstr "Галузі"
-
-msgid "Budujemy dla <strong>każdej branży</strong>"
-msgstr "Будуємо для <strong>кожної галузі</strong>"
-
-msgid "Hale produkcyjne"
-msgstr "Виробничі цехи"
-
-msgid "Logistyka"
-msgstr "Логістика"
-
-msgid "Retail"
-msgstr "Рітейл"
-
-msgid "Automotive"
-msgstr "Автомобільна галузь"
-
-msgid "Biura"
-msgstr "Офіси"
-
-msgid "Eko / BREEAM"
-msgstr "Еко / BREEAM"
-
-msgid "Dlaczego MBT?"
-msgstr "Чому MBT?"
-
-msgid "Możesz na nas liczyć <strong>na każdym etapie</strong>"
-msgstr "Ви можете на нас розраховувати <strong>на кожному етапі</strong>"
-
-msgid "Realizacja MBT"
-msgstr "Проекти MBT"
-
-msgid "Terminowość i elastyczność"
-msgstr "Вчасність та гнучкість"
-
-msgid "Realizujemy zgodnie z harmonogramem, reagując na zmiany."
-msgstr "Ми працюємо за графіком, оперативно реагуючи на зміни."
-
-msgid "Optymalizacja kosztów"
-msgstr "Оптимізація витрат"
-
-msgid "Oszczędności bez rezygnacji z jakości i funkcji."
-msgstr "Економія без відмови від якості та функціональності."
-
-msgid "Uczciwość i transparentność"
-msgstr "Чесність та прозорість"
-
-msgid "Pełna, przejrzysta specyfikacja w każdej ofercie."
-msgstr "Повна, прозора специфікація в кожній пропозиції."
-
-msgid "Jeden zespół, pełna odpowiedzialność"
-msgstr "Одна команда, повна відповідальність"
-
-msgid "Bez pośredników — od projektu po odbiór."
-msgstr "Без посередників — від проекту до здачі."
-
-msgid "Proces współpracy"
-msgstr "Процес співпраці"
-
-msgid "Jak pracujemy <strong>krok po kroku</strong>"
-msgstr "Як ми працюємо <strong>крок за кроком</strong>"
-
-msgid "Analiza i koncepcja"
-msgstr "Аналіз та концепція"
-
-msgid ""
-"Poznajemy Twoje potrzeby, analizujemy teren i przygotowujemy wstępną "
-"koncepcję wraz z szacunkiem kosztów."
-msgstr ""
-"Ми вивчаємо ваші потреби, аналізуємо ділянку та готуємо попередню концепцію "
-"з оцінкою витрат."
-
-msgid "Projekt i oferta"
-msgstr "Проект та пропозиція"
-
-msgid ""
-"Przygotowujemy projekt, harmonogram i transparentny kosztorys. Negocjujemy i"
-" ustalamy szczegóły umowy."
-msgstr ""
-"Готуємо проект, графік та прозорий кошторис. Обговорюємо та фіксуємо деталі "
-"договору."
-
-msgid "Realizacja"
-msgstr "Реалізація"
-
-msgid ""
-"Budujemy — fundamenty, konstrukcja, instalacje, wykończenie. Na bieżąco "
-"raportujemy postęp prac."
-msgstr ""
-"Будуємо — фундаменти, конструкції, інсталяції, оздоблення. Регулярно "
-"звітуємо про хід робіт."
-
-msgid "Odbiór i klucze"
-msgstr "Приймання та ключі"
-
-msgid ""
-"Testy końcowe, komplet dokumentacji, pozwolenie na użytkowanie i przekazanie"
-" gotowego obiektu."
-msgstr ""
-"Кінцеві тести, комплект документації, дозвіл на експлуатацію та передача "
-"готового об'єкта."
-
-msgid "Nasze obiekty <strong>mówią za nas</strong>"
-msgstr "Наші об'єкти <strong>говорять самі за себе</strong>"
-
-msgid "Zobacz realizację"
-msgstr "Переглянути проект"
-
-msgid "Masz pytania o swoją inwestycję?"
-msgstr "Маєте запитання щодо вашої інвестиції?"
-
-msgid ""
-"Porozmawiajmy o Twoim projekcie — przygotujemy wycenę i doradzimy najlepszą "
-"formułę."
-msgstr ""
-"Давайте поговоримо про ваш проект — ми підготуємо цінову пропозицію та "
-"порадимо оптимальний формат."
-
-msgid "Skontaktuj się"
-msgstr "Зв'язатися"
-
-msgid "O tej usłudze"
-msgstr "Про послугу"
-
-msgid ""
-"Przy projektowaniu realizowanych obiektów w sposób szczególny uwzględniamy "
-"funkcjonalność, optymalne rozwiązania w zakresie posadowienia, konstrukcji i"
-" instalacji oraz estetykę obiektu."
-msgstr ""
-"При проектуванні наших об'єктів ми приділяємо особливу увагу "
-"функціональності, оптимальним рішенням для фундаменту, конструкцій та "
-"інсталяцій, а також естетиці будівлі."
-
-msgid "Funkcjonalność i estetyka obiektu"
-msgstr "Функціональність та естетика об'єкта"
-
-msgid ""
-"Specjalizujemy się w realizacji hal magazynowych, produkcyjnych i "
-"usługowych. Zapewniamy pełny układ komunikacyjny i obiekty inżynierskie."
-msgstr ""
-"Спеціалізуємося на будівництві складських, виробничих та комерційних "
-"приміщень. Забезпечуємо повну транспортну розв'язку та інженерні споруди."
-
-msgid ""
-"Oferujemy wsparcie na każdym etapie inwestycji: wskazanie dogodnej "
-"lokalizacji, wsparcie przy zakupie nieruchomości, proces projektowy od "
-"koncepcji do pozwolenia na budowę oraz procedowanie i wykonanie przyłączy."
-msgstr ""
-"Ми пропонуємо підтримку на кожному етапі інвестицій: вибір вигідної локації,"
-" допомога при купівлі нерухомості, проектування від концепції до дозволу на "
-"будівництво, а також процес узгодження і підведення комунікацій."
-
-msgid "Od koncepcji do pozwolenia na budowę"
-msgstr "Від концепції до дозволу на будівництво"
-
-msgid "Hale produkcyjne, logistyka, obiekty komercyjne"
-msgstr "Виробничі цехи, логістика, комерційні об'єкти"
-
-msgid "Więcej szczegółów"
-msgstr "Детальніше"
-
-msgid ""
-"Przejmujemy pełną odpowiedzialność za Twój <strong>proces budowlany</strong>"
-msgstr ""
-"Беремо повну відповідальність за ваш <strong>будівельний процес</strong>"
-
-msgid ""
-"Tworzymy obiekty, które nie tylko optymalizują procesy biznesowe, ale są "
-"również przyjazne dla środowiska i oszczędne w eksploatacji. Pomagamy w "
-"realizacji wymogów środowiskowych i asystujemy w procesach uzyskiwania "
-"certyfikatów, takich jak BREEAM."
-msgstr ""
-"Ми створюємо об'єкти, які не лише оптимізують бізнес-процеси, але й є "
-"екологічно безпечними та економними в експлуатації. Допомагаємо у виконанні "
-"екологічних вимог та сприяємо в отриманні сертифікатів, таких як BREEAM."
-
-msgid "Inżynierowie z <strong>pasją do budowania</strong>"
-msgstr "Інженери з <strong>пристрастю до будівництва</strong>"
-
-msgid ""
-"Przejmujemy pełną odpowiedzialność za cały proces budowlany — koordynację, "
-"harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu zamiast "
-"dziesiątek firm."
-msgstr ""
-"Беремо повну відповідальність за весь будівельний процес — координацію, "
-"графік, кошторис та якість. У вас один контактний центр замість десятків "
-"компаній."
-
-msgid "Skontaktuj się z <strong>nami</strong>"
-msgstr "Зв'яжіться з <strong>нами</strong>"
-
-msgid "Twój plac budowy"
-msgstr "Ваш будівельний майданчик"
-
-msgid "Zza kulis"
-msgstr "За лаштунками"
-
-msgid ""
-"Projektujemy z uwzględnieniem <strong>funkcjonalności, estetyki i "
-"optymalnych rozwiązań</strong>"
-msgstr ""
-"Проектуємо з урахуванням <strong>функціональності, естетики та оптимальних "
-"рішень</strong>"
-
-msgid ""
-"<strong>Menadżerowie Projektu, Kierownicy, Inżynierowie i "
-"Projektanci</strong> — to ludzie stanowią o sile firmy."
-msgstr ""
-"<strong>Керівники проектів, менеджери, інженери та проектувальники</strong> "
-"— саме люди створюють силу компанії."
-
-msgid "Zobacz pełen opis"
-msgstr "Переглянути повний опис"
-
-msgid "Specyfikacja"
-msgstr "Специфікація"
-
-msgid "Status"
-msgstr "Статус"
-
-msgid "Czas realizacji"
-msgstr "Час реалізації"
-
-msgid "Formuła"
-msgstr "Формула"
-
-msgid "Wykonawca"
-msgstr "Підрядник"
-
-msgid "Wyceń podobny projekt"
-msgstr "Оцінити подібний проект"
-
-msgid "Galeria"
-msgstr "Галерея"
-
-msgid "Zdjęcia z realizacji"
-msgstr "Фотографії з проекту"
-
-msgid "Szczegóły realizacji są dostępne wkrótce."
-msgstr "Деталі проекту будуть доступні незабаром."
-
-msgid "Realizacja"
-msgstr "Реалізація"
-
-msgid "Aktualności i <strong>artykuły</strong>"
-msgstr "Новини та <strong>статті</strong>"
-
-msgid "Dołącz do <strong>MBT</strong>"
-msgstr "Приєднуйтесь до <strong>MBT</strong>"
-
-msgid "Poznaj ludzi, którzy tworzą MBT"
-msgstr "Знайомтеся з людьми, які створюють MBT"
-
-msgid "Aplikuj — napisz do nas"
-msgstr "Подайте заявку — напишіть нам"
-
-msgid ""
-"Realizacja prowadzona przez MBT Modern Building Team w formule generalnego "
-"wykonawstwa."
-msgstr ""
-"Реалізація здійснюється компанією MBT Modern Building Team у форматі "
-"генерального підряду."
-
-msgid "Dlaczego warto nas wybrać"
-msgstr "Чому варто обрати нас"
-
-msgid ""
-"Aby odpowiedzieć na te wyzwania, stworzyliśmy MBT – firmę, która stawia na "
-"głębokie zrozumienie potrzeb klientów."
-msgstr ""
-"Щоб відповісти на ці виклики, ми створили MBT — компанію, яка спирається на "
-"глибоке розуміння потреб клієнтів."
-
-msgid "Gruntowna realizacja"
-msgstr "Досконала реалізація"
-
-msgid ""
-"Gruntowna realizacja — od koncepcji po oddanie gotowego obiektu, zawsze "
-"zgodnie z harmonogramem."
-msgstr ""
-"Досконала реалізація — від концепції до здачі готового об'єкта, завжди "
-"згідно з графіком."
-
-msgid ""
-"Kompleksowe zarządzanie projektami budowlanymi z głębokim zrozumieniem "
-"potrzeb inwestorów."
-msgstr ""
-"Комплексне управління будівельними проектами з глибоким розумінням потреб "
-"інвесторів."
-
-msgid "Zaangażowania"
-msgstr "Років досвіду"
-
-msgid "Nasza misja"
-msgstr "Наша місія"
-
-msgid "Nasza wizja"
-msgstr "Наше бачення"
-
-msgid "Odpowiedzialne projektowanie"
-msgstr "Відповідальне проектування"
-
-msgid "Opinie klientów"
-msgstr "Відгуки клієнтів"
-
-msgid "Sprawdź oferty pracy"
-msgstr "Перевірити вакансії"
-
-msgid "Terminowość i Elastyczność"
-msgstr "Вчасність та Гнучкість"
-
-msgid "Trwałe relacje"
-msgstr "Міцні відносини"
-
-msgid ""
-"Założyciele MBT — Jacek Lewandowski i Tomasz Kalisz — zgromadzili zespół "
-"złożony z Menadżerów Projektu, Kierowników, Inżynierów i Projektantów, "
-"wiedząc, że to ludzie stanowią o sile firmy."
-msgstr ""
-"Засновники MBT — Яцек Лєвандовський та Томаш Каліш — зібрали команду "
-"Керівників Проектів, Менеджерів, Інженерів і Проектувальників, знаючи, що "
-"саме люди є головною силою компанії."
-
-msgid "Zespół"
-msgstr "Команда"
-
-msgid "Zespół specjalistów"
-msgstr "Команда експертів"
+msgid "0 Formalności"
+msgstr "0 Формальностей"
 
 msgid "0 wypadków"
 msgstr "0 нещасних випадків"
 
-msgid "1. Administrator danych"
-msgstr "1. Адміністратор даних"
-
-msgid "2. Zakres przetwarzania danych"
-msgstr "2. Сфера обробки даних"
-
-msgid "3. Podstawa prawna"
-msgstr "3. Правова основа"
-
-msgid "4. Okres przechowywania"
-msgstr "4. Термін зберігання"
-
-msgid "5. Prawa osób, których dane dotyczą"
-msgstr "5. Права суб'єктів даних"
-
-msgid "6. Kontakt"
-msgstr "6. Контакти"
-
-msgid "7. Pliki cookies"
-msgstr "7. Файли cookies"
-
-msgid "95% projektów w BIM"
-msgstr "95% проектів у BIM"
-
-msgid "AUTOMOTIVE"
-msgstr "АВТОМОБІЛЬНА ГАЛУЗЬ"
-
-msgid "Aktualności wkrótce."
-msgstr "Новини незабаром."
-
-msgid "Audyty i inspekcje procesów"
-msgstr "Аудити та інспекції процесів"
-
-msgid "BIURA"
-msgstr "ОФІСИ"
-
-msgid "BREEAM — zielone budownictwo"
-msgstr "BREEAM — зелене будівництво"
-
-msgid "Bezpieczeństwo BHP"
-msgstr "Безпека та ОП"
-
-msgid "Bezpieczeństwo na budowie MBT"
-msgstr "Безпека на будівельному майданчику MBT"
-
-msgid ""
-"Bieżący, wideo-fotograficzny podgląd postępów prac. Jako Inwestor masz pełną"
-" transparentność i kontrolę, bez wychodzenia z biura."
-msgstr ""
-"Регулярний відео- та фотоогляд прогресу робіт. Як інвестор, ви маєте повну "
-"прозорість і контроль, не виходячи з офісу."
-
-msgid "Brak dostępnych szablonów. Poproś administratora o dodanie."
-msgstr "Немає доступних шаблонів. Попросіть адміністратора додати."
-
-msgid "Centrum logistyczne / magazyn"
-msgstr "Логістичний центр / склад"
-
-msgid "Certyfikacja BREEAM"
-msgstr "Сертифікація BREEAM"
-
-msgid "Cyfrowe zarządzanie projektami"
-msgstr "Цифрове управління проектами"
-
-msgid "Cykliczne szkolenia zespołu"
-msgstr "Регулярне навчання команди"
-
-msgid "Czy realizujecie obiekty zgodne z certyfikacją BREEAM?"
-msgstr "Чи реалізуєте ви об'єкти відповідно до сертифікації BREEAM?"
-
-msgid "Czy zajmujecie się uzyskaniem pozwoleń i formalnościami?"
-msgstr "Чи займаєтесь ви отриманням дозволів та формальностями?"
-
-msgid "Czym różni się generalny wykonawca od pojedynczych podwykonawców?"
-msgstr "Чим відрізняється генеральний підрядник від окремих субпідрядників?"
-
-msgid "Data"
-msgstr "Дата"
-
-msgid "ESG / Zielone budownictwo"
-msgstr "ESG / Зелене будівництво"
-
-msgid "Elektromobilność"
-msgstr "Електромобільність"
-
-msgid "Email"
-msgstr "Email"
-
-msgid "Gospodarka wodna"
-msgstr "Управління водними ресурсами"
-
-msgid "HALE PRODUKCYJNE"
-msgstr "ВИРОБНИЧІ ЦЕХИ"
-
-msgid "Hala przemysłowa / produkcyjna"
-msgstr "Промисловий / виробничий цех"
-
-msgid "Hasło"
-msgstr "Пароль"
-
-msgid "Historia pobrań"
-msgstr "Історія завантажень"
-
-msgid "Ile trwa realizacja inwestycji w formule generalnego wykonawstwa?"
-msgstr ""
-"Скільки часу займає реалізація інвестицій у форматі генерального підряду?"
-
-msgid "Informacje"
-msgstr "Інформація"
-
-msgid "Infrastruktura pod stacje szybkiego ładowania pojazdów EV."
-msgstr "Інфраструктура для станцій швидкої зарядки електромобілів (EV)."
-
-msgid "Instalacje OZE"
-msgstr "Інсталяції ВДЕ"
-
-msgid "Jesteś kierownikiem MBT?"
-msgstr "Ви керівник в MBT?"
-
-msgid ""
-"Jeśli konto o podanym emailu istnieje, administrator otrzymał informację o "
-"konieczności zresetowania hasła. Skontaktujemy się wkrótce."
-msgstr ""
-"Якщо обліковий запис із вказаною електронною адресою існує, адміністратор "
-"отримав сповіщення про необхідність скидання пароля. Ми незабаром з вами "
-"зв'яжемося."
-
-msgid "Każda budowa pod obserwacją"
-msgstr "Кожне будівництво під наглядом"
-
-msgid "Kompleksowa realizacja — od A do Z"
-msgstr "Комплексна реалізація — від А до Я"
-
-msgid "LOGISTYKA"
-msgstr "ЛОГІСТИКА"
-
-msgid "Ludzie MBT"
-msgstr "Люди MBT"
-
-msgid "MAGAZYNY"
-msgstr "СКЛАДИ"
-
-msgid "Masz pytania dotyczące swojej inwestycji?"
-msgstr "Маєте питання щодо своєї інвестиції?"
-
-msgid "Menu"
-msgstr "Меню"
-
-msgid "Monitoring placu budowy 24/7"
-msgstr "Моніторинг будівельного майданчика 24/7"
-
-msgid "Monitoring z powietrza (Drony)"
-msgstr "Моніторинг з повітря (Дрони)"
-
-msgid "Nasze inwestycje"
-msgstr "Наші інвестиції"
-
-msgid "Nasze realizacje"
-msgstr "Наші проекти"
-
-msgid "Nowe hasło"
-msgstr "Новий пароль"
-
-msgid ""
-"Nowoczesne oprogramowanie do zarządzania budową. Harmonogramy, raporty i "
-"obieg dokumentacji aktualizowane w czasie rzeczywistym."
-msgstr ""
-"Сучасне програмне забезпечення для управління будівництвом. Графіки, звіти "
-"та документообіг оновлюються в режимі реального часу."
-
-msgid "OZNAKOWANIE"
-msgstr "МАРКУВАННЯ"
-
-msgid "Obiekt handlowy / usługowy"
-msgstr "Торговий / комерційний об'єкт"
-
-msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
-msgstr "Об'єкти, що відповідають найсуворішим вимогам сертифікації."
-
-msgid ""
-"Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od "
-"projektu aż po dach!"
-msgstr ""
-"Вже 20 років ми з пристрастю будуємо ваш бізнес. Одна команда – повна "
-"реалізація. Від проекту до даху!"
-
-msgid "Oznakowanie budowy"
-msgstr "Ознакування будівництва"
-
-msgid "Oznakowanie budowy — Panel kierownika"
-msgstr "Ознакування будівництва — Панель керівника"
-
-msgid "Pierwsze logowanie — ustaw swoje hasło."
-msgstr "Перший вхід — встановіть свій пароль."
-
-msgid "Pobieraj banery reklamowe i informacyjne na budowę — z Twoim logo."
-msgstr ""
-"Завантажуйте рекламні та інформаційні банери для будівництва — з вашим "
-"логотипом."
-
-msgid "Pobierz baner"
-msgstr "Завантажити банер"
-
-msgid "Podaj email — administrator zresetuje hasło i prześle tymczasowe."
-msgstr "Введіть email — адміністратор скине пароль і надішле тимчасовий."
-
-msgid "Polityka prywatności"
-msgstr "Політика конфіденційності"
-
-msgid "Powrót do logowania"
-msgstr "Повернутися до входу"
-
-msgid "Powrót na stronę główną"
-msgstr "Повернутися на головну"
-
-msgid "Powtórz hasło"
-msgstr "Повторіть пароль"
-
-msgid "Prosto z placu budowy"
-msgstr "Прямо з будівельного майданчика"
-
-msgid "Prośba wysłana"
-msgstr "Запит надіслано"
-
-msgid "Przestrzeń biurowa"
-msgstr "Офісний простір"
-
-msgid "Przez MBT"
-msgstr "Через MBT"
-
-msgid "RETAIL"
-msgstr "РІТЕЙЛ"
-
-msgid "Raportowanie w czasie rzeczywistym"
-msgstr "Звітування в режимі реального часу"
-
-msgid "Salon samochodowy"
-msgstr "Автосалон"
-
-msgid "Strona główna"
-msgstr "Головна сторінка"
-
-msgid "Systemy retencji i wykorzystania wody deszczowej (szara woda)."
-msgstr "Системи утримання та використання дощової води (сіра вода)."
-
-msgid "Szablon"
-msgstr "Шаблон"
-
-msgid "Szablony banerów są w trakcie przygotowywania."
-msgstr "Шаблони банерів знаходяться в процесі підготовки."
-
-msgid "Szukaj"
-msgstr "Пошук"
-
-msgid "Wgraj"
-msgstr "Завантажити"
-
-msgid "Wgraj logo aby zobaczyć podgląd"
-msgstr "Завантажте логотип, щоб побачити попередній перегляд"
-
-msgid "Więcej"
-msgstr "Більше"
-
-msgid "Wnętrze hali"
-msgstr "Інтер'єр цеху"
-
-msgid "Wolisz porozmawiać od razu?"
-msgstr "Бажаєте поговорити одразу?"
-
-msgid "Wybierz logo"
-msgstr "Виберіть логотип"
-
-msgid ""
-"Wydajne systemy fotowoltaiczne na dachach obiektów wielkopowierzchniowych."
-msgstr ""
-"Високоефективні фотоелектричні системи на дахах великогабаритних об'єктів."
-
-msgid "Wykwalifikowane kadry BHP"
-msgstr "Кваліфіковані кадри з охорони праці"
-
-msgid "Wyloguj"
-msgstr "Вийти"
-
-msgid "Wyślij prośbę"
-msgstr "Надіслати запит"
-
-msgid "Wyślij zapytanie o wycenę"
-msgstr "Надіслати запит на оцінку"
-
-msgid "Zadzwoń do nas"
-msgstr "Зателефонуйте нам"
-
-msgid "Zaloguj się"
-msgstr "Увійти"
-
-msgid "Zaloguj się, aby pobrać banery z wgranym logo."
-msgstr "Увійдіть, щоб завантажити банери із завантаженим логотипом."
-
-msgid ""
-"Zaloguj się, aby wgrać swoje logo i pobrać banery przygotowane pod druk."
-msgstr ""
-"Увійдіть, щоб завантажити своє логотип і отримати банери, підготовлені до "
-"друку."
-
-msgid ""
-"Zanim wbijemy pierwszą łopatę, wznosimy Twój obiekt w środowisku cyfrowym. "
-"Modelowanie daje pełną kontrolę nad kolizjami projektowymi i pilnuje "
-"budżetu."
-msgstr ""
-"Ще до початку земляних робіт ми зводимо ваш об'єкт у цифровому середовищі. "
-"Моделювання дає повний контроль над проектними колізіями та контролює "
-"бюджет."
-
-msgid "Zapisz hasło"
-msgstr "Зберегти пароль"
-
-msgid "Zapomniałem hasła"
-msgstr "Я забув пароль"
-
-msgid "Zapomniałeś hasła?"
-msgstr "Забули пароль?"
-
-msgid "Zespół MBT"
-msgstr "Команда MBT"
-
-msgid "Zmień hasło"
-msgstr "Змінити пароль"
-
-msgid "Zobacz jak pracujemy"
-msgstr "Подивіться, як ми працюємо"
-
-msgid "Zobacz wszystkie aktualności"
-msgstr "Переглянути всі новини"
-
-msgid "kierownik"
-msgstr "керівник"
-
-msgid "min. 8 znaków"
-msgstr "мін. 8 символів"
-
-msgid "m² wybudowanych hal"
-msgstr "м² збудованих цехів"
-
-msgid "oddanych „pod kluczem"
-msgstr "зданих «під ключ»"
-
-msgid ""
-"<strong>Menadżerowie Projektu, Kierownicy, Inżynierowie i "
-"Projektanci</strong> — to ludzie stanowią o sile firmy."
-msgstr ""
-"<strong>Керівники проектів, менеджери, інженери та проектувальники</strong> "
-"— саме люди створюють силу компанії."
-
-msgid ""
-"<strong>Obsługujemy cały proces budowy</strong>, od koncepcji po oddanie "
-"gotowego obiektu."
-msgstr ""
-"<strong>Ми обслуговуємо весь будівельний процес</strong>, від концепції до "
-"здачі готового об'єкта."
-
-msgid ""
-"Administratorem danych osobowych jest MBT Modern Building Team Sp. z o.o. z "
-"siedzibą w Katowicach, ul. Jankego 176/1A, 40-663 Katowice, NIP: 9542788822,"
-" REGON: 369557780, KRS: 0000720424."
-msgstr ""
-"Адміністратором персональних даних є компанія MBT Modern Building Team Sp. z"
-" o.o., з місцезнаходженням у Катовицях, вул. Янкего 176/1A, 40-663 Катовиці,"
-" NIP: 9542788822, REGON: 369557780, KRS: 0000720424."
-
-msgid "Bezkompromisowe podejście do <strong>bezpieczeństwa</strong>"
-msgstr "Безкомпромісний підхід до <strong>безпеки</strong>"
-
-msgid "Budujemy z wykorzystaniem <strong>nowoczesnych technologii</strong>"
-msgstr "Будуємо з використанням <strong>сучасних технологій</strong>"
-
-msgid ""
-"Czas zależy od skali i specyfiki obiektu — zwykle od kilku do kilkunastu "
-"miesięcy. Na etapie wyceny otrzymasz precyzyjny harmonogram dopasowany do "
-"Twoich potrzeb biznesowych."
-msgstr ""
-"Час залежить від масштабу та специфіки об'єкта — зазвичай від кількох до "
-"більше десяти місяців. На етапі оцінки ви отримаєте точний графік, "
-"адаптований до потреб вашого бізнесу."
-
-msgid ""
-"Dane osobowe przechowywane są przez okres niezbędny do realizacji celu "
-"przetwarzania, a po jego zakończeniu — przez okres wymagany przepisami prawa"
-" lub do przedawnienia roszczeń."
-msgstr ""
-"Персональні дані зберігаються протягом періоду, необхідного для виконання "
-"мети їх обробки, а після її досягнення — протягом періоду, встановленого "
-"законом, або до закінчення терміну позовної давності."
-
-msgid ""
-"Dzięki inteligentnej unifikacji osiągamy znaczne <strong>oszczędności "
-"finansowe</strong> bez zmiany ilości materiałów."
-msgstr ""
-"Завдяки розумній уніфікації ми досягаємо значної <strong>фінансової "
-"економії</strong> без зменшення кількості матеріалів."
-
-msgid ""
-"Dzięki inteligentnej unifikacji osiągamy znaczne oszczędności finansowe."
-msgstr "Завдяки розумній уніфікації ми досягаємо значної фінансової економії."
-
-msgid ""
-"Inwestycje realizowane z inżynierską precyzją wymagają najlepszych narzędzi."
-" W MBT korzystamy z zaawansowanych rozwiązań cyfrowych, aby optymalizować "
-"czas i koszty Twojej budowy."
-msgstr ""
-"Інвестиції, що реалізуються з інженерною точністю, вимагають найкращих "
-"інструментів. У MBT ми використовуємо передові цифрові рішення, щоб "
-"оптимізувати час і витрати вашого будівництва."
-
-msgid ""
-"Jako doświadczony Generalny Wykonawca działamy w modelu, który zdejmuje z "
-"barków Inwestora ciężar koordynacji setek procesów. Nasza praca to nie tylko"
-" wznoszenie murów i montaż konstrukcji — to przede wszystkim zarządzanie "
-"procesem inwestycyjnym."
-msgstr ""
-"Як досвідчений Генеральний Підрядник, ми працюємо в моделі, що знімає з "
-"плечей Інвестора тягар координації сотень процесів. Наша робота — це не "
-"просто зведення стін і монтаж конструкцій, це насамперед управління "
-"інвестиційним процесом."
-
-msgid ""
-"Jesteśmy w ciągłym ruchu. Śledź postępy prac na naszych kluczowych budowach "
-"i bądź na bieżąco z życiem zespołu MBT."
-msgstr ""
-"Ми постійно в русі. Слідкуйте за прогресом робіт на наших ключових "
-"будівництвах та будьте в курсі життя команди MBT."
-
-msgid "MBT stawia na <strong>zrównoważone budownictwo</strong>"
-msgstr "MBT робить ставку на <strong>екологічне будівництво</strong>"
-
-msgid "Najczęściej zadawane <strong>pytania</strong>"
-msgstr "Найпоширеніші <strong>запитання</strong>"
-
-msgid "Napisz do nas — odpowiemy w ciągu 24 godzin."
-msgstr "Напишіть нам — ми відповімо протягом 24 годин."
-
-msgid ""
-"Nasz zespół to ludzie, którzy <strong>potrafią współpracować</strong> z Tobą"
-" i partnerami biznesowymi."
-msgstr ""
-"Наша команда складається з людей, які <strong>вміють співпрацювати</strong> "
-"з вами та вашими бізнес-партнерами."
-
-msgid "Nasze <strong>aktualności</strong>"
-msgstr "Наші <strong>новини</strong>"
-
-msgid ""
-"Nasze wartości wyrażają się w nazwie Modern Building Team. Stawiamy na "
-"nowoczesność w myśleniu, zarządzaniu i relacjach."
-msgstr ""
-"Наші цінності відображені в назві Modern Building Team. Ми робимо ставку на "
-"сучасність у мисленні, управлінні та відносинах."
-
-msgid ""
-"Niezależnie od tego, czy planujesz centrum logistyczne, park handlowy czy "
-"salon samochodowy — jesteśmy gotowi na nowe inżynieryjne wyzwania."
-msgstr ""
-"Незалежно від того, чи плануєте ви логістичний центр, торговельний парк чи "
-"автосалон — ми готові до нових інженерних викликів."
-
-msgid ""
-"Obsługujemy cały proces budowy, od koncepcji po oddanie gotowego obiektu."
-msgstr ""
-"Ми обслуговуємо весь будівельний процес, від концепції до здачі готового "
-"об'єкта."
-
-msgid ""
-"Odpowiadamy za przygotowanie harmonogramu, opracowanie szczegółowego "
-"kosztorysu, zarządzanie podwykonawcami, aż po finalne przekazanie w pełni "
-"funkcjonalnego obiektu, gotowego do prowadzenia biznesu."
-msgstr ""
-"Ми відповідаємо за підготовку графіка, складання детального кошторису, "
-"управління субпідрядниками і до кінцевої передачі повністю функціонального "
-"об'єкта, готового до ведення бізнесу."
-
-msgid ""
-"Plac budowy to skomplikowany, żywy organizm. W MBT kultura bezpieczeństwa to"
-" absolutny fundament naszej pracy. Przestrzegamy najbardziej rygorystycznych"
-" norm BHP, stale szkolimy nasz zespół i audytujemy procesy. Dla nas "
-"bezpieczna budowa, to terminowa budowa."
-msgstr ""
-"Будівельний майданчик — це складний, живий організм. У MBT культура безпеки "
-"є абсолютним фундаментом нашої роботи. Ми дотримуємося найсуворіших "
-"стандартів охорони праці, постійно навчаємо нашу команду та проводимо аудит "
-"процесів. Для нас безпечне будівництво — це будівництво, завершене вчасно."
-
-msgid ""
-"Podstawą przetwarzania danych jest art. 6 ust. 1 lit. a RODO (zgoda) oraz "
-"art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora "
-"polegający na obsłudze zapytań i komunikacji z klientami)."
-msgstr ""
-"Основою обробки даних є ст. 6(1)(a) GDPR (згода) та ст. 6(1)(f) GDPR "
-"(законний інтерес адміністратора, що полягає в обробці запитів та "
-"спілкуванні з клієнтами)."
-
-msgid ""
-"Pracując z inwestorami i partnerami biznesowymi, zauważyliśmy, że wiele firm"
-" boryka się z trudnościami w kompleksowym zarządzaniu projektami "
-"budowlanymi. Z jednej strony brakuje im specjalistów, którzy posiadają "
-"wszechstronne doświadczenie, a z drugiej, firmy budowlane obecne na rynku "
-"często nie rozumieją specyficznych potrzeb inwestorów."
-msgstr ""
-"Співпрацюючи з інвесторами та бізнес-партнерами, ми помітили, що багато "
-"компаній мають труднощі з комплексним управлінням будівельними проектами. З "
-"одного боку, їм не вистачає фахівців із багатим досвідом, а з іншого боку, "
-"існуючі на ринку будівельні компанії часто не розуміють специфічних потреб "
-"інвесторів."
-
-msgid ""
-"Profesjonalizm, precyzja i pełne zaangażowanie — dzień po dniu na Twojej "
-"budowie."
-msgstr ""
-"Професіоналізм, точність і повна самовіддача — день за днем на вашому "
-"будівництві."
-
-msgid ""
-"Projektujemy z uwzględnieniem <strong>funkcjonalności, estetyki i "
-"optymalnych rozwiązań</strong>."
-msgstr ""
-"Ми проектуємо з урахуванням <strong>функціональності, естетики та "
-"оптимальних рішень</strong>."
-
-msgid ""
-"Projektujemy z uwzględnieniem funkcjonalności, estetyki i optymalnych "
-"rozwiązań."
-msgstr ""
-"Ми проектуємо з урахуванням функціональності, естетики та оптимальних "
-"рішень."
-
-msgid ""
-"Przetwarzamy dane osobowe podane dobrowolnie w formularzu kontaktowym „Wyceń"
-" projekt\" — w szczególności imię i nazwisko, adres e-mail, numer telefonu, "
-"nazwę firmy oraz treść wiadomości, w celu odpowiedzi na zapytanie i "
-"przygotowania wyceny."
-msgstr ""
-"We process personal data provided voluntarily in the \"Quote a project\" "
-"contact "
-
-msgid ""
-"Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, "
-"ograniczenia przetwarzania, przenoszenia danych, wniesienia sprzeciwu oraz "
-"cofnięcia zgody w dowolnym momencie. Masz również prawo wniesienia skargi do"
-" Prezesa Urzędu Ochrony Danych Osobowych."
-msgstr ""
-"Ви маєте право на доступ до даних, їх виправлення, видалення, обмеження "
-"обробки, перенесення даних, можливість заперечити обробку або відкликати "
-"згоду в будь-який момент. Ви також маєте право подати скаргу до відповідного"
-" органу з нагляду за захистом персональних даних."
-
-msgid ""
-"Realizacja prowadzona przez MBT Modern Building Team w formule {{ "
-"project.formula|default:\"generalnego wykonawstwa\" }}."
-msgstr ""
-"Project carried out by MBT Modern Building Team in the {{ "
-"project.formula|default:\"general "
-
-msgid ""
-"Realizujemy Twoje projekty <strong>zgodnie z harmonogramem</strong>, nawet "
-"przy zmianach."
-msgstr ""
-"Ми реалізуємо ваші проекти <strong>відповідно до графіка</strong>, навіть у "
-"разі змін."
-
-msgid ""
-"Realizujemy Twoje projekty zgodnie z harmonogramem, nawet przy zmianach."
-msgstr "Ми реалізуємо ваші проекти відповідно до графіка, навіть у разі змін."
-
-msgid ""
-"Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania "
-"oraz analizy ruchu. Szczegółowe informacje znajdują się w polityce plików "
-"cookies."
-msgstr ""
-"Сайт використовує файли cookie для забезпечення належного функціонування та "
-"аналізу трафіку. Детальна інформація міститься в політиці використання "
-"файлів cookie."
-
-msgid ""
-"Tak — nawigujemy przez proces administracyjny, koordynujemy dokumentację "
-"powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU)."
-msgstr ""
-"Так — ми допомагаємо пройти адміністративний процес, координуємо виконавчу "
-"документацію та сприяємо в отриманні дозволу на експлуатацію (PnU)."
-
-msgid ""
-"Tak — wdrażamy zrównoważone technologie (fotowoltaika, retencja wody, stacje"
-" EV) i realizujemy obiekty zgodne z wymogami certyfikacji BREEAM."
-msgstr ""
-"Так — ми впроваджуємо екологічні технології (сонячні панелі, утримання води,"
-" зарядні станції для електромобілів) та реалізуємо об'єкти відповідно до "
-"вимог сертифікації BREEAM."
-
-msgid ""
-"Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji "
-"realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby "
-"angażowania dodatkowych zasobów."
-msgstr ""
-"Ми створюємо групу фахівців, які завдяки турботі та вмінню співпрацювати "
-"досягають спільних цілей — завжди готові до ваших ідей без необхідності "
-"залучення додаткових ресурсів."
-
-msgid ""
-"We wszystkich sprawach dotyczących przetwarzania danych osobowych możesz "
-"skontaktować się z nami pod adresem e-mail: <a href=\"mailto:biuro@mbt.pl\" "
-"style=\"color:var(--theme-color);\">biuro@mbt.pl</a> lub pisemnie na adres "
-"siedziby spółki."
-msgstr ""
-"For all matters concerning the processing of personal data, you can contact "
-
-msgid ""
-"Za każdą zrealizowaną halą stoi zgrany zespół ekspertów. MBT to grupa "
-"doświadczonych inżynierów, kierowników budów i wykwalifikowanych "
-"specjalistów, dla których nie ma wyzwań niemożliwych. Budujemy nie tylko "
-"obiekty, ale i trwałe relacje."
-msgstr ""
-"За кожним реалізованим проектом стоїть злагоджена команда експертів. MBT — "
-"це група досвідчених інженерів, керівників будівництва та "
-"висококваліфікованих фахівців, для яких немає нездійсненних завдань. Ми "
-"будуємо не лише об'єкти, а й міцні відносини."
-
-msgid "Zobacz, co już <strong>zbudowaliśmy</strong>"
-msgstr "Подивіться, що ми вже <strong>збудували</strong>"
-
-msgid "Zostaw dane kontaktowe, a nasi eksperci <strong>oddzwonią</strong>"
-msgstr ""
-"Залиште контактні дані, і наші експерти вам <strong>перетелефонують</strong>"
+msgid "1 Kontrakt"
+msgstr "1 Контракт"
 
 msgid "1 rok"
 msgstr "1 рік"
+
+msgid "1. Administrator danych"
+msgstr "1. Адміністратор даних"
 
 msgid "10 Miesięcy"
 msgstr "10 Місяців"
@@ -1630,8 +40,26 @@ msgstr "14 місяців"
 msgid "16 miesięcy"
 msgstr "16 місяців"
 
+msgid "2. Zakres przetwarzania danych"
+msgstr "2. Сфера обробки даних"
+
+msgid "3. Podstawa prawna"
+msgstr "3. Правова основа"
+
+msgid "4. Okres przechowywania"
+msgstr "4. Термін зберігання"
+
+msgid "5. Prawa osób, których dane dotyczą"
+msgstr "5. Права суб'єктів даних"
+
 msgid "6 miesięcy"
 msgstr "6 місяців"
+
+msgid "6. Kontakt"
+msgstr "6. Контакти"
+
+msgid "7. Pliki cookies"
+msgstr "7. Файли cookies"
 
 msgid "8 miesięcy"
 msgstr "8 місяців"
@@ -1639,27 +67,1607 @@ msgstr "8 місяців"
 msgid "9 miesięcy"
 msgstr "9 місяців"
 
+msgid "95% projektów w BIM"
+msgstr "95% проектів у BIM"
+
+msgid "<strong>Menadżerowie Projektu, Kierownicy, Inżynierowie i Projektanci</strong> — to ludzie stanowią o sile firmy."
+msgstr "<strong>Керівники проектів, менеджери, інженери та проектувальники</strong> — саме люди створюють силу компанії."
+
+msgid "<strong>Obsługujemy cały proces budowy</strong>, od koncepcji po oddanie gotowego obiektu."
+msgstr "<strong>Забезпечуємо весь процес будівництва</strong>, від концепції до здачі готового об'єкта під ключ."
+
+msgid "AKTUALNOŚCI"
+msgstr "НОВИНИ"
+
+msgid "AUTOMOTIVE"
+msgstr "АВТОМОБІЛЬНА ГАЛУЗЬ"
+
+msgid "Aby odpowiedzieć na te wyzwania, stworzyliśmy MBT – firmę, która stawia na głębokie zrozumienie potrzeb klientów."
+msgstr "Щоб відповісти на ці виклики, ми створили MBT — компанію, яка спирається на глибоке розуміння потреб клієнтів."
+
+msgid "Administratorem danych osobowych jest MBT Modern Building Team Sp. z o.o. z siedzibą w Katowicach, ul. Jankego 176/1A, 40-663 Katowice, NIP: 9542788822, REGON: 369557780, KRS: 0000720424."
+msgstr "Адміністратором персональних даних є компанія MBT Modern Building Team Sp. z o.o., з місцезнаходженням у Катовицях, вул. Янкего 176/1A, 40-663 Катовиці, NIP: 9542788822, REGON: 369557780, KRS: 0000720424."
+
+msgid "Adres Twojej inwestycji"
+msgstr "Адреса вашого об'єкта"
+
+msgid "Adres e-mail"
+msgstr "Електронна адреса"
+
+msgid "Aktualności"
+msgstr "Новини"
+
+msgid "Aktualności i <strong>artykuły</strong>"
+msgstr "Новини та <strong>статті</strong>"
+
+msgid "Aktualności wkrótce."
+msgstr "Новини незабаром."
+
+msgid "Analiza alternatywnych rozwiązań"
+msgstr "Аналіз альтернативних рішень"
+
+msgid "Analiza i koncepcja"
+msgstr "Аналіз та концепція"
+
+msgid "Analizujemy Twoje potrzeby, wizję biznesową oraz uwarunkowania terenu."
+msgstr "Ми аналізуємо ваші потреби, бізнес-бачення та умови ділянки."
+
+msgid "Analizujemy istniejący projekt pod kątem kosztów i czasu, proponujemy oszczędności bez kompromisów jakościowych, a następnie budujemy."
+msgstr "Аналізуємо існуючий проект на предмет витрат і часу, пропонуємо економію без шкоди для якості, а потім будуємо."
+
+msgid "Ankieta"
+msgstr "Опитування"
+
+msgid "Ankieta Wizerunkowa"
+msgstr "Опитування щодо бренду"
+
+msgid "Aplikuj — napisz do nas"
+msgstr "Подайте заявку — напишіть нам"
+
+msgid "Architektura przeładunkowa (Cross-docking)"
+msgstr "Перевантажувальна інфраструктура (Cross-docking)"
+
+msgid "Architektura, która sprzedaje. Łączymy rygorystyczne standardy identyfikacji wizualnej marek z maksymalną wielofunkcyjnością użytkową."
+msgstr "Архітектура, яка продає. Поєднуємо суворі стандарти корпоративного стилю з максимальною багатофункціональністю."
+
+msgid "Architektura, która sprzedaje. Łączymy rygorystyczne standardy identyfikacji wizualnej z wielofunkcyjnością użytkową."
+msgstr "Архітектура, що продає. Поєднуємо суворі стандарти візуальної ідентичності з практичною багатофункціональністю."
+
+msgid "Artykuł"
+msgstr "Стаття"
+
+msgid "Artykuł nie istnieje"
+msgstr "Стаття не існує"
+
+msgid "Audyty i inspekcje procesów"
+msgstr "Аудити та інспекції процесів"
+
+msgid "Automatyka sterująca oświetleniem, temperaturą i wentylacją."
+msgstr "Автоматизоване керування освітленням, температурою та вентиляцією."
+
+msgid "Automotive"
+msgstr "Автомобільна галузь"
+
+msgid "Automotive: Rygorystyczne standardy (Corporate Identity)"
+msgstr "Автомобільний сектор: Суворі стандарти брендбуку (CI)"
+
+msgid "BIURA"
+msgstr "ОФІСИ"
+
+msgid "BIURA I BIUROWCE"
+msgstr "ОФІСИ ТА ОФІСНІ БУДІВЛІ"
+
+msgid "BLOG"
+msgstr "БЛОГ"
+
+msgid "BREEAM & ESG"
+msgstr "BREEAM & ESG"
+
+msgid "BREEAM — zielone budownictwo"
+msgstr "BREEAM — зелене будівництво"
+
+msgid "Bez pośredników — od projektu po odbiór."
+msgstr "Без посередників — від проекту до здачі."
+
+msgid "Bezkompromisowe podejście do <strong>bezpieczeństwa</strong>"
+msgstr "Безкомпромісний підхід до <strong>безпеки</strong>"
+
+msgid "Bezpieczeństwo BHP"
+msgstr "Безпека та ОП"
+
+msgid "Bezpieczeństwo na budowie MBT"
+msgstr "Безпека на будівельному майданчику MBT"
+
+msgid "Bieżący, wideo-fotograficzny podgląd postępów prac. Jako Inwestor masz pełną transparentność i kontrolę, bez wychodzenia z biura."
+msgstr "Регулярний відео- та фотоогляд прогресу робіт. Як інвестор, ви маєте повну прозорість і контроль, не виходячи з офісу."
+
+msgid "Biura"
+msgstr "Офіси"
+
+msgid "Biuro MBT w Zabrzu"
+msgstr "Офіс MBT у Забже"
+
+msgid "Biuro w Zabrzu"
+msgstr "Офіс у Забже"
+
+msgid "Biuro — Zabrze"
+msgstr "Офіс — Забже"
+
+msgid "Biurowce"
+msgstr "Офісні центри"
+
+msgid "Biurowiec"
+msgstr "Офісна будівля"
+
+msgid "Blog"
+msgstr "Блог"
+
+msgid "Brak dostępnych szablonów. Poproś administratora o dodanie."
+msgstr "Немає доступних шаблонів. Попросіть адміністратора додати."
+
+msgid "Brak nieprzewidzianych dopłat"
+msgstr "Жодних непередбачених доплат"
+
+msgid "Brak rozmytej odpowiedzialności"
+msgstr "Чітка персональна відповідальність"
+
+msgid "Branże"
+msgstr "Галузі"
+
+msgid "Branże i zastosowania"
+msgstr "Галузі та застосування"
+
+msgid "Budowa Hal Magazynowych i Centrów Logistycznych - Projekt Magazynu - MBT"
+msgstr "Будівництво складських комплексів та логістичних центрів - Проект складу - MBT"
+
+msgid "Budowa Obiektów Handlowych"
+msgstr "Будівництво торговельних об'єктів"
+
+msgid "Budowa Obiektów Handlowych - Projektowanie Hal Komercyjnych - MBT"
+msgstr "Будівництво комерційних об'єктів - Проектування торгових площ - MBT"
+
+msgid "Budowa hal magazynowych i centrów logistycznych"
+msgstr "Будівництво складських комплексів та логістичних центрів"
+
+msgid "Budowa hal magazynowych i centrów logistycznych z MBT. Tworzymy funkcjonalny projekt magazynu dopasowany do Twojego biznesu. Skontaktuj się z nami!"
+msgstr "Будівництво складських приміщень та логістичних центрів з MBT. Створюємо функціональні проекти складів для вашого бізнесу. Зв'яжіться з нами!"
+
+msgid "Budowa hal przemysłowych i zakładów produkcyjnych"
+msgstr "Будівництво промислових цехів та виробничих підприємств"
+
+msgid "Budowa hali MBT"
+msgstr "Будівництво цеху MBT"
+
+msgid "Budowa salonu i serwisu to praca z niezwykle restrykcyjnymi wytycznymi globalnych marek (np. standard CI 7). Obiekty te wymagają bezbłędnego połączenia przestrzeni reprezentacyjnej (jasne, designerskie showroomy) z ciężką przestrzenią warsztatową (wyciągi spalin, infrastruktura podnosząca, wzmocniona instalacja pod ładowarki EV). Z powodzeniem zrealizowaliśmy m.in. salon dla marki BYD (Grupa Dąbrowscy)."
+msgstr "Будівництво автосалонів і сервісів вимагає суворого дотримання стандартів брендів (наприклад CI 7). Ми поєднуємо світлі шоуруми з важкою сервісною зоною (витяжки, підйомники, зарядки EV), як для салону BYD."
+
+msgid "Budownictwo"
+msgstr "Будівництво"
+
+msgid "Budownictwo komercyjne to specyficzna gałąź inżynierii. Tutaj estetyka, prestiż lokalizacji i doskonałe wrażenia użytkownika końcowego (Customer Experience) są równie ważne co stabilność konstrukcji."
+msgstr "Комерційне будівництво — це особлива інженерна галузь. Тут естетика, престиж локації та досвід клієнта настільки ж важливі, як і міцність споруди."
+
 msgid "Buduj"
-msgstr "Будувати"
+msgstr "Будуй"
+
+msgid "Budujemy <strong>z myślą o Twoim kliencie</strong>"
+msgstr "Будуємо <strong>з турботою про вашого клієнта</strong>"
+
+msgid "Budujemy dla <strong>każdej branży</strong>"
+msgstr "Будуємо для <strong>кожної галузі</strong>"
+
+msgid "Budujemy obiekty dla <strong>sektora B2B</strong>"
+msgstr "Ми будуємо об'єкти для <strong>B2B-сектора</strong>"
+
+msgid "Budujemy obiekty wielkopowierzchniowe przeznaczone na wynajem. Projektujemy elastyczne konstrukcje umożliwiające łatwy podział na niezależne moduły. Przykładem jest kompleks Fabryka Park, oraz inwestycja zarządzana przez firmę Scallier. Jesteśmy przygotowani na równoległe prowadzenie prac pod różnorodne fit-outy najemców (np. placówki medyczne Medicover czy wielkopowierzchniowe kluby fitness)."
+msgstr "Ми будуємо об'єкти для оренди з легким поділом на незалежні секції (Fabryka Park, Scallier), забезпечуючи паралельне оздоблення під орендарів (Medicover, фітнес-клуби)."
+
+msgid "Budujemy obiekty, w których technologia dyktuje warunki. Dostarczamy bezkompromisową jakość dla najbardziej wymagających gałęzi przemysłu."
+msgstr "Ми будуємо об'єкти, де технологія диктує умови. Забезпечуємо безкомпромісну якість для найвимогливіших галузей промисловості."
+
+msgid "Budujemy obiekty, w których technologia dyktuje warunki. Dostarczamy bezkompromisową jakość dla sektora produkcyjnego."
+msgstr "Ми будуємо об'єкти, де технологія диктує вимоги. Забезпечуємо безкомпромісну якість для виробничого сектору."
+
+msgid "Budujemy z wykorzystaniem <strong>nowoczesnych technologii</strong>"
+msgstr "Будуємо з використанням <strong>сучасних технологій</strong>"
+
+msgid "Budujemy — fundamenty, konstrukcja, instalacje, wykończenie. Na bieżąco raportujemy postęp prac."
+msgstr "Будуємо — фундаменти, конструкції, інсталяції, оздоблення. Регулярно звітуємо про хід робіт."
+
+msgid "Budujemy:"
+msgstr "Ми будуємо:"
+
+msgid "CENTRA DYSTRYBUCYJNE"
+msgstr "ДИСТРИБУЦІЙНІ ЦЕНТРИ"
+
+msgid "CENTRA LOGISTYCZNE"
+msgstr "ЛОГІСТИЧНІ ЦЕНТРИ"
+
+msgid "Centra logistyczne"
+msgstr "Логістичні центри"
+
+msgid "Centra logistyczne i magazyny"
+msgstr "Логістичні центри та склади"
+
+msgid "Centralny punkt kontaktu dla całej inwestycji. Pełna synchronizacja dostaw, nadzór nad wszystkimi branżami i gwarancja dotrzymania harmonogramu."
+msgstr "Єдиний контактний центр для всього проекту. Повна синхронізація поставок, нагляд за всіма фахівцями та гарантія дотримання графіка."
+
+msgid "Centralny punkt kontaktu. Synchronizacja dostaw, nadzór nad ekipami i pełna koordynacja harmonogramu."
+msgstr "Єдиний контактний центр. Синхронізація поставок, нагляд за бригадами та повна координація графіка."
+
+msgid "Centrum logistyczne / magazyn"
+msgstr "Логістичний центр / склад"
+
+msgid "Certyfikacja BREEAM"
+msgstr "Сертифікація BREEAM"
+
+msgid "Co dla Ciebie <strong>zbudujemy?</strong>"
+msgstr "Що ми можемо <strong>збудувати для вас?</strong>"
+
+msgid "Co wyróżnia nasze realizacje w <strong>sektorze komercyjnym?</strong>"
+msgstr "Що вирізняє наші проекти в <strong>комерційному секторі?</strong>"
+
+msgid "Co zyskujesz, wybierając <strong>nasz zespół</strong>"
+msgstr "Що ви отримуєте, обираючи <strong>нашу команду</strong>"
+
+msgid "Cyfrowe zarządzanie projektami"
+msgstr "Цифрове управління проектами"
+
+msgid "Cykliczne szkolenia zespołu"
+msgstr "Регулярне навчання команди"
+
+msgid "Czas realizacji"
+msgstr "Час реалізації"
+
+msgid "Czas realizacji:"
+msgstr "Термін реалізації:"
+
+msgid "Czas zależy od skali i specyfiki obiektu — zwykle od kilku do kilkunastu miesięcy. Na etapie wyceny otrzymasz precyzyjny harmonogram dopasowany do Twoich potrzeb biznesowych."
+msgstr "Строк залежить від масштабу та специфіки — зазвичай від кількох місяців до року. На етапі оцінки ви отримуєте точний графік робіт."
+
+msgid "Czy realizujecie obiekty zgodne z certyfikacją BREEAM?"
+msgstr "Чи реалізуєте ви об'єкти відповідно до сертифікації BREEAM?"
+
+msgid "Czy zajmujecie się uzyskaniem pozwoleń i formalnościami?"
+msgstr "Чи займаєтесь ви отриманням дозволів та формальностями?"
+
+msgid "Czym różni się generalny wykonawca od pojedynczych podwykonawców?"
+msgstr "Чим відрізняється генеральний підрядник від окремих субпідрядників?"
+
+msgid "Czytaj więcej"
+msgstr "Читати далі"
+
+msgid "Często realizujemy rozbudowy istniejących już kompleksów w centrach miast lub kolejne etapy parków handlowych. Mamy wypracowane precyzyjne procedury BHP, które pozwalają nam bezpiecznie prowadzić zaawansowane prace ciężkim sprzętem w bezpośrednim sąsiedztwie czynnych sklepów, minimalizując uciążliwość robót dla klientów detalicznych."
+msgstr "Ми розширюємо діючі центри та торгівельні парки. Наші правила охорони праці дозволяють безпечно працювати важкою технікою поруч із відкритими магазинами без перешкод для відвідувачів."
+
+msgid "Dane firmy"
+msgstr "Дані компанії"
+
+msgid "Dane osobowe przechowywane są przez okres niezbędny do realizacji celu przetwarzania, a po jego zakończeniu — przez okres wymagany przepisami prawa lub do przedawnienia roszczeń."
+msgstr "Персональні дані зберігаються протягом періоду, необхідного для виконання мети їх обробки, а після її досягнення — протягом періоду, встановленого законом, або до закінчення терміну позовної давності."
+
+msgid "Data"
+msgstr "Дата"
+
+msgid "Dedykowana opieka posprzedażowa"
+msgstr "Індивідуальна післяпродажна підтримка"
+
+msgid "Dedykowany Project Manager"
+msgstr "Індивідуальний проектний менеджер"
+
+msgid "Dla branży TSL (Transport, Spedycja, Logistyka) oraz dystrybutorów (FMCG) bezawaryjność infrastruktury to podstawa. MBT jako Generalny Wykonawca wznosi nowoczesne hale magazynowe, zaawansowane parki logistyczne oraz dedykowane obiekty w formule BTS (Build-to-Suit)."
+msgstr "Для галузі логістики (TSL) та FMCG безвідмовність інфраструктури є ключовою. MBT зводить сучасні складські комплекси, логістичні парки та об'єкти BTS (Build-to-Suit)."
+
+msgid "Dlaczego MBT?"
+msgstr "Чому MBT?"
+
+msgid "Dlaczego warto nas wybrać"
+msgstr "Чому варто обрати нас"
+
+msgid "Dlaczego warto wybrać MBT?"
+msgstr "Чому варто обрати MBT?"
+
+msgid "Dopasowujemy się do <strong>Twoich potrzeb</strong>"
+msgstr "Ми адаптуємося до <strong>ваших потреб</strong>"
+
+msgid "Doradca MBT"
+msgstr "Консультант MBT"
+
+msgid "Dowiedz się więcej"
+msgstr "Дізнатися більше"
+
+msgid "Dowód naszych kompetencji"
+msgstr "Доказ нашої компетентності"
+
+msgid "Dołącz do <strong>MBT</strong>"
+msgstr "Приєднуйтесь до <strong>MBT</strong>"
+
+msgid "Dzięki inteligentnej unifikacji osiągamy znaczne <strong>oszczędności finansowe</strong> bez zmiany ilości materiałów."
+msgstr "Завдяки інтелектуальній уніфікації ми досягаємо вагомої <strong>економії коштів</strong> без зміни кількості та якості матеріалів."
+
+msgid "Dzięki inteligentnej unifikacji osiągamy znaczne oszczędności finansowe."
+msgstr "Завдяки інтелектуальній уніфікації ми досягаємо значної економії коштів."
+
+msgid "Dzięki wykorzystaniu nowoczesnych prefabrykatów żelbetowych oraz lekkich, ale wytrzymałych konstrukcji stalowych dachu (ustrój mieszany), błyskawicznie wznosimy obiekty o ogromnej kubaturze i minimalnej liczbie słupów wewnętrznych. Daje to inwestorom maksymalną swobodę w aranżacji regałów. Takie rozwiązania wdrożyliśmy m.in. dla Grupy Raben, firmy Wessper czy hurtowni Warmet."
+msgstr "Завдяки залізобетонному збірному каркасу та сталевим фермам ми зводимо об'єкти великої кубатури з мінімумом колон, забезпечуючи свободу розстановки стелажів (Raben, Wessper, Warmet)."
+
+msgid "ESG / Zielone budownictwo"
+msgstr "ESG / Зелене будівництво"
+
+msgid "ESG i Zielone Budownictwo"
+msgstr "ESG та екологічне будівництво"
+
+msgid "Eko / BREEAM"
+msgstr "Еко / BREEAM"
+
+msgid "Elastyczny zakres współpracy"
+msgstr "Гнучкі умови співпраці"
+
+msgid "Elektromobilność"
+msgstr "Електромобільність"
+
+msgid "Elementy, które decydują o <strong>skutecznej logistyce</strong>"
+msgstr "Елементи, що визначають <strong>успішну логістику</strong>"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Energooszczędność i standardy <strong>Przemysłu 4.0</strong>"
+msgstr "Енергоефективність та стандарти <strong>Індустрії 4.0</strong>"
+
+msgid "Formuła"
+msgstr "Формула"
+
+msgid "Formuły współpracy"
+msgstr "Формати співпраці"
+
+msgid "Fotowoltaika, systemy retencji wody, stacje ładowania EV oraz obiekty zgodne z certyfikacją BREEAM."
+msgstr "Сонячні електростанції, системи ретенції води, зарядні станції EV та будівлі за сертифікацією BREEAM."
+
+msgid "Fundamentowanie pod obciążenia dynamiczne"
+msgstr "Фундаменти під динамічні навантаження"
+
+msgid "Funkcjonalność i estetyka obiektu"
+msgstr "Функціональність та естетика об'єкта"
+
+msgid "GEN. WYKONAWSTWO"
+msgstr "ГЕНПІДРЯД"
+
+msgid "GENERALNE WYKONAWSTWO"
+msgstr "GENERAL CONTRACTING"
+
+msgid "Galeria"
+msgstr "Галерея"
+
+msgid "Gdy w biznesie liczy się <strong>czas i kubatura</strong>"
+msgstr "Коли в бізнесі мають значення <strong>час та кубатура</strong>"
+
+msgid "Gdzie budujemy"
+msgstr "Де ми будуємо"
+
+msgid "Gdzie budujemy?"
+msgstr "Де ми будуємо?"
+
+msgid "Generalne Wykonawstwo"
+msgstr "Генеральний підряд"
+
+msgid "Generalne Wykonawstwo B2B & B2C"
+msgstr "Генеральний підряд B2B та B2C"
+
+msgid "Generalne Wykonawstwo<br>Inwestycji Budowlanych"
+msgstr "Генеральний підряд<br>будівельних інвестицій"
 
 msgid "Generalne wykonawstwo"
 msgstr "Генеральний підряд"
 
-msgid ""
-"Hale magazynowe, produkcyjne i usługowe realizowane pod klucz — od projektu "
-"aż po dach."
-msgstr ""
-"Складські, виробничі та комерційні приміщення під ключ — від проекту до "
-"даху."
+msgid "Generalne wykonawstwo „pod klucz” — od projektu aż po dach"
+msgstr "Генеральний підряд під ключ — від проекту до даху"
+
+msgid "Generalny Wykonawca"
+msgstr "Генеральний підрядник"
+
+msgid "Generalny Wykonawca Budowlany - MBT - Śląsk, Kraków, Małopolska"
+msgstr "Генеральний будівельний підрядник - MBT - Сілезія, Краків, Малопольща"
+
+msgid "Generalny Wykonawca Hal Przemysłowych i Produkcyjnych"
+msgstr "Генеральний підрядник промислових та виробничих будівель"
+
+msgid "Generalny Wykonawca Hal Przemysłowych i Produkcyjnych - Projektowanie i Budowa - MBT"
+msgstr "Генеральний підрядник промислових та виробничих цехів - Проектування та будівництво - MBT"
+
+msgid "Generalny Wykonawca Hal i Obiektów Przemysłowych"
+msgstr "Генеральний підрядник промислових будівель та споруд"
+
+msgid "Gospodarka wodna"
+msgstr "Управління водними ресурсами"
+
+msgid "Gotowość pod instalacje OZE"
+msgstr "Готовність до відновлюваної енергетики"
+
+msgid "Gotowy do startu produkcji?"
+msgstr "Готові до старту виробництва?"
+
+msgid "Gruntowna realizacja"
+msgstr "Досконала реалізація"
+
+msgid "Gruntowna realizacja — od koncepcji po oddanie gotowego obiektu, zawsze zgodnie z harmonogramem."
+msgstr "Досконала реалізація — від концепції до здачі готового об'єкта, завжди згідно з графіком."
+
+msgid "Gwarancja"
+msgstr "Гарантія"
+
+msgid "Gwarancja i serwis pozakupowy"
+msgstr "Гарантія та післяпродажне обслуговування"
+
+msgid "HALE PRODUKCYJNE"
+msgstr "ВИРОБНИЧІ ЦЕХИ"
+
+msgid "HALE STALOWE"
+msgstr "СТАЛЕВІ КАРКАСНІ БУДІВЛІ"
+
+msgid "HOME"
+msgstr "ГОЛОВНА"
+
+msgid "Hala magazynowa"
+msgstr "Складське приміщення"
+
+msgid "Hala produkcyjna"
+msgstr "Виробниче приміщення"
+
+msgid "Hala produkcyjna żyje dzięki instalacjom. Zapewniamy kompleksową koordynację i montaż sieci niezbędnych do utrzymania ciągłości procesów: od instalacji sprężonego powietrza i gazów technicznych, przez układy chłodzenia, wysokowydajną wentylację, systemy odpylania, aż po rygorystyczne zabezpieczenia PPOŻ (tryskacze, klapy dymowe)."
+msgstr "Виробничий цех оживає завдяки інженерним мережам. Забезпечуємо повну координацію та монтаж систем для безперервної роботи: від стисненого повітря та технічних газів до систем охолодження, потужної вентиляції, аспірації та суворої протипожежної безпеки (спринклери, димовидалення)."
+
+msgid "Hala przemysłowa / produkcyjna"
+msgstr "Промисловий / виробничий цех"
+
+msgid "Hala przemysłowa to nie tylko <strong>ściany i dach</strong>"
+msgstr "Промисловий об'єкт — це значно більше, ніж <strong>стіни та дах</strong>"
+
+msgid "Hale Magazynowe"
+msgstr "Складські комплекси"
+
+msgid "Hale Przemysłowe"
+msgstr "Промислові будівлі"
+
+msgid "Hale Przemysłowe i Produkcyjne"
+msgstr "Промислові та виробничі цехи"
+
+msgid "Hale magazynowe, produkcyjne i usługowe"
+msgstr "Складські, виробничі та комерційні приміщення"
+
+msgid "Hale magazynowe, produkcyjne i usługowe realizowane pod klucz — od projektu aż po dach."
+msgstr "Складські, виробничі та комерційні приміщення під ключ — від проекту до даху."
+
+msgid "Hale produkcyjne"
+msgstr "Виробничі цехи"
+
+msgid "Hale produkcyjne, logistyka, obiekty komercyjne"
+msgstr "Виробничі цехи, логістика, комерційні об'єкти"
+
+msgid "Hale produkcyjne, magazyny, obiekty komercyjne"
+msgstr "Виробничі приміщення, склади, комерційні об'єкти"
+
+msgid "Hale przemysłowe i produkcyjne"
+msgstr "Промислові та виробничі приміщення"
+
+msgid "Hale suwnicowe i konstrukcje ciężkie"
+msgstr "Цехи з мостовими кранами та важкі конструкції"
+
+msgid "Hasło"
+msgstr "Пароль"
+
+msgid "Historia pobrań"
+msgstr "Історія завантажень"
+
+msgid "Ile trwa realizacja inwestycji w formule generalnego wykonawstwa?"
+msgstr "Скільки часу займає реалізація інвестицій у форматі генерального підряду?"
+
+msgid "Imię i nazwisko"
+msgstr "Ім'я та прізвище"
+
+msgid "Informacje"
+msgstr "Інформація"
+
+msgid "Infrastruktura TSL"
+msgstr "Інфраструктура TSL"
+
+msgid "Infrastruktura pod stacje szybkiego ładowania pojazdów EV."
+msgstr "Інфраструктура для станцій швидкої зарядки електромобілів (EV)."
+
+msgid "Inne"
+msgstr "Інше"
+
+msgid "Inne artykuły"
+msgstr "Інші статті"
+
+msgid "Instalacje OZE"
+msgstr "Інсталяції ВДЕ"
+
+msgid "Instalujemy wydajne systemy tryskaczowe (ESFR), klapy dymowe oraz kurtyny pożarowe, precyzyjnie dzieląc halę na strefy pożarowe, zgodnie z rygorystycznymi wytycznymi."
+msgstr "Ми монтуємо спринклерні системи (ESFR), димові люки та протипожежні штори, розділяючи будівлю на безпечні відсіки."
+
+msgid "Integracja stref roboczych i biurowych"
+msgstr "Інтеграція робочих та офісних зон"
+
+msgid "Inteligentne zarządzanie budynkiem (BMS)"
+msgstr "Інтелектуальне управління будівлею (BMS)"
+
+msgid "Inwestycja MBT"
+msgstr "Інвестиція MBT"
+
+msgid "Inwestycje realizowane z inżynierską precyzją wymagają najlepszych narzędzi. W MBT korzystamy z zaawansowanych rozwiązań cyfrowych, aby optymalizować czas i koszty Twojej budowy."
+msgstr "Проекти, реалізовані з інженерною точністю, потребують найкращих інструментів. В MBT ми використовуємо передові цифрові інструменти для оптимізації строків та витрат."
+
+msgid "Inżynieria Przemysłowa"
+msgstr "Промисловий інжиніринг"
+
+msgid "Inżynierowie z <strong>pasją do budowania</strong>"
+msgstr "Інженери з <strong>пристрастю до будівництва</strong>"
+
+msgid "Inżynierska precyzja i optymalizacja"
+msgstr "Інженерна точність та оптимізація"
+
+msgid "JESTEŚMY DOSTĘPNI"
+msgstr "МИ НА ЗВ'ЯЗКУ"
+
+msgid "Jak pracujemy <strong>krok po kroku</strong>"
+msgstr "Як ми працюємо <strong>крок за кроком</strong>"
+
+msgid "Jak wygląda proces współpracy?"
+msgstr "Як виглядає процес співпраці?"
+
+msgid "Jako doświadczony Generalny Wykonawca działamy w modelu, który zdejmuje z barków Inwestora ciężar koordynacji setek procesów. Nasza praca to nie tylko wznoszenie murów i montaż konstrukcji — to przede wszystkim zarządzanie procesem inwestycyjnym."
+msgstr "Як досвідчений Генеральний підрядник, ми звільняємо Інвестора від необхідності контролювати сотні процесів. Наша робота — це не лише зведення стін і монтаж, а передусім професійний менеджмент усього проекту."
+
+msgid "Jako sprawdzony Generalny Wykonawca mamy na koncie realizacje nowoczesnych parków handlowych, wielkopowierzchniowych obiektów usługowych, dyskontów spożywczych, a także stacji dealerskich nowej generacji. Znamy rynek i jego restrykcyjne wymagania."
+msgstr "Як надійний Генеральний підрядник ми звели сучасні торгівельні парки, великі сервісні центри, супермаркети та автосалони нового покоління."
+
+msgid "Jeden kontrakt obejmuje projekt i wykonanie. Szybka realizacja, jedna odpowiedzialność, optymalizacja kosztów na etapie projektowania."
+msgstr "Один контракт охоплює проектування та виконання. Швидка реалізація, єдина відповідальність, оптимізація витрат на етапі проектування."
+
+msgid "Jeden partner, pełna odpowiedzialność"
+msgstr "Один партнер, повна відповідальність"
+
+msgid "Jeden team – pełna realizacja. <strong>Od projektu aż po dach!</strong> Budujemy hale magazynowe, produkcyjne i usługowe pod klucz."
+msgstr "Одна команда – повна реалізація. <strong>Від проекту до даху!</strong> Будуємо складські, виробничі та комерційні приміщення під ключ."
+
+msgid "Jeden zespół, pełna odpowiedzialność"
+msgstr "Одна команда, повна відповідальність"
+
+msgid "Jesteś kierownikiem MBT?"
+msgstr "Ви керівник в MBT?"
+
+msgid "Jesteś na etapie projektu, budowy, a może szukasz kogoś, kto załatwi pozwolenia? Wszystko możesz zamówić osobno — albo razem, jako pełne generalne wykonawstwo."
+msgstr "Ви на етапі проектування, будівництва чи, можливо, шукаєте когось для оформлення дозволів? Все можна замовити окремо — або разом, як комплексний генеральний підряд."
+
+msgid "Jesteśmy w ciągłym ruchu. Śledź postępy prac na naszych kluczowych budowach i bądź na bieżąco z życiem zespołu MBT."
+msgstr "Ми постійно рухаємося вперед. Слідкуйте за прогресом на наших будівельних майданчиках і дізнавайтеся про життя команди MBT."
+
+msgid "Jesteśmy zespołem specjalistów, którzy dzięki trosce i umiejętności kooperacji realizują wspólne cele. Szukamy ludzi z pasją do budownictwa."
+msgstr "Ми — команда спеціалістів, яка завдяки відданості та вмінню співпрацювати досягає спільних цілей. Ми шукаємо людей з пристрастю до будівництва."
+
+msgid "Jeśli konto o podanym emailu istnieje, administrator otrzymał informację o konieczności zresetowania hasła. Skontaktujemy się wkrótce."
+msgstr "Якщо обліковий запис із вказаною електронною адресою існує, адміністратор отримав сповіщення про необхідність скидання пароля. Ми незабаром з вами зв'яжемося."
+
+msgid "KARIERA"
+msgstr "КАР'ЄРА"
+
+msgid "KONSTRUKCJE ŻELBETOWE"
+msgstr "ЗАЛІЗОБЕТОННІ КОНСТРУКЦІЇ"
+
+msgid "KONTAKT"
+msgstr "КОНТАКТИ"
+
+msgid "Kariera"
+msgstr "Кар'єра"
+
+msgid "Każda budowa pod obserwacją"
+msgstr "Кожне будівництво під наглядом"
+
+msgid "Kliknij dowolną pulsującą pinezkę na mapie Polski, aby poznać szczegóły budowy."
+msgstr "Натисніть на будь-яку пульсуючу позначку на карті Польщі, щоб переглянути деталі проекту."
+
+msgid "Kliknij na mapie swój region, aby zobaczyć bezpośredni kontakt do opiekuna Twojego regionu."
+msgstr "Натисніть на свій регіон на карті, щоб отримати прямі контакти регіонального представника."
+
+msgid "Kompleksowa realizacja obiektu kubaturowego przez Modern Building Team."
+msgstr "Комплексна реалізація капітальної споруди від Modern Building Team."
+
+msgid "Kompleksowa realizacja — od A do Z"
+msgstr "Комплексна реалізація — від А до Я"
+
+msgid "Kompleksowe zarządzanie projektami budowlanymi z głębokim zrozumieniem potrzeb inwestorów."
+msgstr "Комплексне управління будівельними проектами з глибоким розумінням потреб інвесторів."
+
+msgid "Kompleksowy <strong>Fit-Out</strong>"
+msgstr "Комплексний <strong>Fit-Out</strong>"
+
+msgid "Kompletna dokumentacja powykonawcza"
+msgstr "Повна виконавча документація"
+
+msgid "Konsultacja 0 zł"
+msgstr "Безкоштовна консультація"
+
+msgid "Kontakt"
+msgstr "Контакти"
+
+msgid "Kontrola Dostępu (KD)"
+msgstr "Система контролю доступу (СКД)"
+
+msgid "Koordynacja wielobranżowa instalacji wewnątrz lokalu"
+msgstr "Комплексна координація внутрішніх інженерних мереж"
+
+msgid "Koordynujemy montaż specjalistycznych sieci mediów technologicznych: rurociągów sprężonego powietrza, instalacji gazów technicznych, systemów odciągu pyłów i oparów oraz zaawansowanych stacji transformatorowych i szynoprzewodów zasilających parki maszynowe."
+msgstr "Ми координуємо монтаж спеціалізованих мереж: стисненого повітря, технічних газів, аспірації та пиловидалення, трансформаторних підстанцій та шинопроводів живлення обладнання."
+
+msgid "LOGISTYKA"
+msgstr "ЛОГІСТИКА"
+
+msgid "Logistyka"
+msgstr "Логістика"
+
+msgid "Logistyka w praktyce"
+msgstr "Логістика на практиці"
+
+msgid "Ludzie MBT"
+msgstr "Люди MBT"
+
+msgid "MAGAZYNY"
+msgstr "СКЛАДИ"
+
+msgid "MBT Modern Building Team — generalny wykonawca hal magazynowych, produkcyjnych i usługowych. Terminowa budowa obiektów przemysłowych pod klucz."
+msgstr "MBT Modern Building Team — генеральний підрядник складських, виробничих та комерційних споруд. Вчасне будівництво промислових об'єктів під ключ."
+
+msgid "MBT stawia na <strong>zrównoważone budownictwo</strong>"
+msgstr "MBT робить ставку на <strong>екологічне будівництво</strong>"
+
+msgid "MBT to Generalny Wykonawca hal przemysłowych i produkcyjnych. Oferujemy projektowanie i budowę obiektów pod klucz. Poznaj naszą ofertę i realizacje!"
+msgstr "MBT — генеральний підрядник промислових та виробничих будівель. Пропонуємо проектування та будівництво під ключ. Дізнайтеся більше про наші послуги та проекти!"
+
+msgid "Magazynujemy wielomilionowe wartości. Zabezpieczenie ładunków przed pożarem to kluczowy element procesu projektowego."
+msgstr "У складах зберігаються багатомільйонні цінності. Захист вантажів від пожежі є ключовою частиною проектування."
+
+msgid "Magazyny"
+msgstr "Склади"
+
+msgid "Magazyny i Logistyka"
+msgstr "Склади та логістика"
+
+msgid "Mapa inwestycji"
+msgstr "Карта проектів"
+
+msgid "Mapa witryny"
+msgstr "Карта сайту"
+
+msgid "Masz inny typ inwestycji?"
+msgstr "Маєте інший тип інвестицій?"
+
+msgid "Masz już projekt? Wybudujemy obiekt zgodnie z dokumentacją — od fundamentów po wykończenie i odbiory."
+msgstr "Вже маєте проект? Ми побудуємо об'єкт відповідно до документації — від фундаменту до оздоблення і здачі."
+
+msgid "Masz projekt w głowie?"
+msgstr "Маєте ідею проекту?"
+
+msgid "Masz pytania dotyczące swojej inwestycji?"
+msgstr "Маєте питання щодо своєї інвестиції?"
+
+msgid "Masz pytania o swoją inwestycję?"
+msgstr "Маєте запитання щодо вашої інвестиції?"
+
+msgid "Menadżerowie Projektu, Kierownicy, Inżynierowie i Projektanci — to ludzie stanowią o sile firmy."
+msgstr "Керівники проектів, виконроби, інженери та проектувальники — саме люди визначають силу компанії."
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Modelowanie BIM — projektowe i wykonawcze"
+msgstr "BIM-моделювання — проектне та виконавче"
+
+msgid "Monitoring placu budowy 24/7"
+msgstr "Моніторинг будівельного майданчика 24/7"
+
+msgid "Monitoring z powietrza (Drony)"
+msgstr "Моніторинг з повітря (Дрони)"
+
+msgid "Możemy zaprojektować, wybudować, a nawet pomóc tylko w pozwoleniach i formalnościach. Zamów u nas wyłącznie projekt, wyłącznie budowę lub pełne wsparcie inwestorskie — wszystko w jednym miejscu."
+msgstr "Ми можемо спроектувати, побудувати або допомогти лише з дозволами та формальностями. Замовляйте виключно проект, лише будівництво або повний супровід — усе в одному місці."
+
+msgid "Możesz na nas liczyć <strong>na każdym etapie</strong>"
+msgstr "Ви можете на нас розраховувати <strong>на кожному етапі</strong>"
+
+msgid "Multi-use: Parki handlowe i elastyczne przestrzenie"
+msgstr "Multi-use: Торгівельні парки та адаптивні площі"
+
+msgid "Najczęściej zadawane <strong>pytania</strong>"
+msgstr "Найпоширеніші <strong>запитання</strong>"
+
+msgid "Najnowsze wpisy z bloga budowlanego MBT"
+msgstr "Останні публікації з будівельного блогу MBT"
+
+msgid "Napisz do nas — odpowiemy w ciągu 24 godzin."
+msgstr "Напишіть нам — ми відповімо протягом 24 годин."
+
+msgid "Napisz do nas!"
+msgstr "Напишіть нам!"
+
+msgid "Nasi Handlowcy"
+msgstr "Наші менеджери"
+
+msgid "Następne zdjęcie"
+msgstr "Наступне фото"
+
+msgid "Nasz zespół to ludzie, którzy <strong>potrafią współpracować</strong> z Tobą i partnerami biznesowymi."
+msgstr "Наша команда — це фахівці, які <strong>вміють ефективно співпрацювати</strong> з вами та вашими партнерами."
+
+msgid "Nasz zespół — pracownicy"
+msgstr "Наша команда — співробітники"
+
+msgid "Nasza Realizacja"
+msgstr "Наш проект"
+
+msgid "Nasza misja"
+msgstr "Наша місія"
+
+msgid "Nasza opieka nie kończy się w dniu oddania kluczy — kompleksowa obsługa gwarancyjna i wsparcie serwisowe."
+msgstr "Наша опіка не закінчується в день передачі ключів — ми забезпечуємо комплексне гарантійне обслуговування та сервісну підтримку."
+
+msgid "Nasza opieka nie kończy się w dniu oddania kluczy. Zapewniamy kompleksową obsługę gwarancyjną, szybki czas reakcji i stały serwis."
+msgstr "Наша турбота не завершується в день передачі ключів. Ми надаємо повне гарантійне обслуговування, швидке реагування та постійний сервіс."
+
+msgid "Nasza specjalizacja"
+msgstr "Наша спеціалізація"
+
+msgid "Nasza wizja"
+msgstr "Наше бачення"
+
+msgid "Nasze <strong>aktualności</strong>"
+msgstr "Наші <strong>новини</strong>"
+
+msgid "Nasze inwestycje"
+msgstr "Наші інвестиції"
+
+msgid "Nasze najnowsze wpisy na blogu"
+msgstr "Наші найновіші публікації в блозі"
+
+msgid "Nasze obiekty <strong>mówią za nas</strong>"
+msgstr "Наші об'єкти <strong>говорять самі за себе</strong>"
+
+msgid "Nasze oddziały"
+msgstr "Наші філії"
+
+msgid "Nasze osiągnięcia"
+msgstr "Наші досягнення"
+
+msgid "Nasze realizacje"
+msgstr "Наші проекти"
+
+msgid "Nasze realizacje na terenie całej Polski"
+msgstr "Наші реалізовані проекти по всій Польщі"
+
+msgid "Nasze specjalizacje"
+msgstr "Наша спеціалізація"
+
+msgid "Nasze wartości wyrażają się w nazwie Modern Building Team. Stawiamy na nowoczesność w myśleniu, zarządzaniu i relacjach."
+msgstr "Наші цінності відображені в назві Modern Building Team. Ми робимо ставку на сучасність у мисленні, управлінні та відносинах."
+
+msgid "Nawigujemy przez proces administracyjny, koordynujemy dokumentację powykonawczą i asystujemy przy pozwoleniach."
+msgstr "Ми супроводжуємо адміністративний процес, координуємо виконавчу документацію та допомагаємо з дозволами."
+
+msgid "Nawigujemy przez proces administracyjny, koordynujemy dokumentację powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU)."
+msgstr "Ми координуємо адміністративні процедури, виконавчу документацію та допомагаємо в отриманні дозволу на введення в експлуатацію."
+
+msgid "Negocjacje, scalanie działek i badania gruntu"
+msgstr "Переговори, об'єднання ділянок та дослідження ґрунту"
+
+msgid "Nie chcesz tracić czasu na urzędy? Przejmiemy pozwolenia, uzgodnienia, odbiory i dokumentację powykonawczą."
+msgstr "Не хочете втрачати час на інстанції? Ми візьмемо на себе дозволи, погодження, приймання та виконавчу документацію."
+
+msgid "Nie musisz zamawiać wszystkiego naraz. Projekt, budowa i formalności działają u nas również jako osobne usługi — dopasuj zakres do swojego etapu inwestycji."
+msgstr "Вам не обов'язково замовляти все одразу. Проектування, будівництво та формальності також доступні як окремі послуги — адаптуйте обсяг до вашого етапу інвестицій."
+
+msgid "Nie musisz zamawiać wszystkiego naraz. Projekt, budowa i formalności — wybierz tylko ten zakres, którego aktualnie potrzebujesz."
+msgstr "Не обов'язково замовляти все одразу. Проектування, будівництво та формальності — обирайте лише той обсяг, який вам потрібен зараз."
+
+msgid "Nie tylko generalne wykonawstwo — <strong>wybierz zakres, którego potrzebujesz</strong>"
+msgstr "Не лише генеральний підряд — <strong>оберіть необхідний обсяг</strong>"
+
+msgid "Nie tylko oddajemy bryłę budynku. Bierzemy na siebie pełną odpowiedzialność za aranżację i wykończenie wnętrz komercyjnych \"pod klucz\". Koordynujemy prace wykończeniowe zgodnie z precyzyjnymi projektami architektów wnętrz i brandbookami najemców."
+msgstr "Ми не просто здаємо коробку будівлі. Ми беремо відповідальність за внутрішнє оздоблення під ключ відповідно до дизайн-проекту та брендбуку орендаря."
+
+msgid "Nie znalazłeś oferty dla siebie? Wyślij CV — zawsze rozważamy nowe talenty."
+msgstr "Не знайшли пропозицію для себе? Надішліть резюме — ми завжди розглядаємо нові таланти."
+
+msgid "Niezależnie od tego, czy planujesz centrum logistyczne, park handlowy czy salon samochodowy — jesteśmy gotowi na nowe inżynieryjne wyzwania."
+msgstr "Незалежно від того, плануєте ви логістичний комплекс, торгівельний парк чи автосалон — ми готові до нових викликів."
+
+msgid "Niższe rachunki za energię obiektu"
+msgstr "Знижені комунальні витрати об'єкта"
+
+msgid "Nowe hasło"
+msgstr "Новий пароль"
+
+msgid "Nowoczesne fasady i wykończenia"
+msgstr "Сучасні фасади та оздоблення"
+
+msgid "Nowoczesne fasady i wykończenia premium"
+msgstr "Сучасні фасади та преміальне оздоблення"
+
+msgid "Nowoczesne oprogramowanie do zarządzania budową. Harmonogramy, raporty i obieg dokumentacji aktualizowane w czasie rzeczywistym."
+msgstr "Сучасне програмне забезпечення для управління будівництвом. Графіки, звіти та документообіг оновлюються в реальному часі."
+
+msgid "Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i estetyczne fasady."
+msgstr "Сучасні торговельні парки: ми дбаємо про багатофункціональність (multi-use) та естетичні фасади."
+
+msgid "Nowoczesne parki handlowe, dbamy o wielofunkcyjność (multi-use) i nowoczesny design elewacji."
+msgstr "Сучасні торгові парки, ми дбаємо про багатофункціональність (multi-use) та сучасний дизайн фасадів."
+
+msgid "Nowoczesne przestrzenie magazynowe wysokiego składowania o zoptymalizowanej przepustowości."
+msgstr "Сучасні складські приміщення високого зберігання з оптимізованою пропускною здатністю."
+
+msgid "Nowoczesne standardy"
+msgstr "Сучасні стандарти"
+
+msgid "Numer telefonu"
+msgstr "Номер телефону"
+
+msgid "O NAS"
+msgstr "ПРО НАС"
+
+msgid "O firmie"
+msgstr "Про компанію"
+
+msgid "O nas"
+msgstr "Про нас"
+
+msgid "O tej usłudze"
+msgstr "Про цю послугу"
+
+msgid "OBIEKTY KOMERCYJNE"
+msgstr "КОМЕРЦІЙНІ ОБ'ЄКТИ"
+
+msgid "OBIEKTY PRZEMYSŁOWE"
+msgstr "ПРОМИСЛОВІ ОБ'ЄКТИ"
+
+msgid "OBIEKTY USŁUGOWE"
+msgstr "ОБ'ЄКТИ СФЕРИ ПОСЛУГ"
+
+msgid "OFERTA"
+msgstr "ПРОПОЗИЦІЯ"
+
+msgid "OZNAKOWANIE"
+msgstr "МАРКУВАННЯ"
+
+msgid "Obiekt handlowy / usługowy"
+msgstr "Торговий / комерційний об'єкт"
 
 msgid "Obiekt na posadowieniu bezpośrednim"
-msgstr "Об'єкт на прямому фундаменті"
+msgstr "Об'єкт на мілкому закладенні"
+
+msgid "Obiekty Komercyjne"
+msgstr "Комерційні об'єкти"
+
+msgid "Obiekty dealerskie nowej generacji spełniające globalne standardy identyfikacji wizualnej marek motoryzacyjnych."
+msgstr "Дилерські центри нового покоління, що відповідають глобальним стандартам візуальної ідентифікації автомобільних брендів."
+
+msgid "Obiekty dealerskie nowej generacji spełniające globalne standardy identyfikacji wizualnej marek."
+msgstr "Дилерські автоцентри нового покоління, що відповідають світовим стандартам брендів."
+
+msgid "Obiekty dostosowane do rygorystycznych wymogów technologicznych — w tym hale suwnicowe."
+msgstr "Об'єкти, пристосовані до суворих технологічних вимог — зокрема цехи з мостовими кранами."
+
+msgid "Obiekty dostosowane do rygorystycznych wymogów technologicznych, w tym hale z suwnicami i zaawansowanym parkiem maszynowym."
+msgstr "Об'єкти, адаптовані до суворих технологічних вимог, включаючи цехи з кранами та сучасним обладнанням."
+
+msgid "Obiekty handlowe i usługowe"
+msgstr "Торгові та комерційні об'єкти"
+
+msgid "Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów ergonomii pracy."
+msgstr "Комерційні об'єкти та роботи fit-out, адаптовані до найвищих стандартів ергономіки роботи."
+
+msgid "Obiekty komercyjne oraz prace fit-out, dostosowane do najwyższych standardów nowoczesnego miejsca pracy."
+msgstr "Комерційні споруди та оздоблення відповідно до найвищих стандартів сучасного робочого простору."
+
+msgid "Obiekty zgodne z rygorystycznymi wymogami certyfikacji."
+msgstr "Об'єкти, що відповідають найсуворішим вимогам сертифікації."
+
+msgid "Obserwuj nas"
+msgstr "Слідкуйте за нами"
+
+msgid "Obsługiwany rejon:"
+msgstr "Обслуговуваний регіон:"
+
+msgid "Obsługujemy cały proces budowy, od koncepcji po oddanie gotowego obiektu."
+msgstr "Ми забезпечуємо весь процес будівництва, від концепції до здачі готового об'єкта під ключ."
+
+msgid "Ochrona przeciwpożarowa i <strong>bezpieczeństwo mienia</strong>"
+msgstr "Протипожежний захист та <strong>безпека майна</strong>"
+
+msgid "Od koncepcji do <strong>oddania kluczy</strong>"
+msgstr "Від концепції до <strong>передачі ключів</strong>"
+
+msgid "Od koncepcji do pozwolenia na budowę"
+msgstr "Від концепції до дозволу на будівництво"
+
+msgid "Odbiory, pozwolenie na użytkowanie i klucze"
+msgstr "Приймання, дозвіл на експлуатацію та ключі"
+
+msgid "Odbiór i Użytkowanie"
+msgstr "Здача в експлуатацію"
+
+msgid "Odbiór i klucze"
+msgstr "Приймання та ключі"
+
+msgid "Oddział MBT w Krakowie"
+msgstr "Філія MBT у Кракові"
+
+msgid "Oddział — Kraków"
+msgstr "Філія — Краків"
+
+msgid "Odpowiadamy za kompleksowe zagospodarowanie terenu wokół hali. Realizujemy zoptymalizowane strefy dokowe z precyzyjnymi rampami hydraulicznymi i naprowadzaczami. Budujemy przestronne place manewrowe dla samochodów ciężarowych (TIR) odporne na głębokie koleinowanie, a także bezpieczne drogi pożarowe."
+msgstr "Ми облаштовуємо всю прилеглу територію: докові зони з гідравлічними рампами, маневрові майданчики для вантажівок із захистом від колійності та пожежні проїзди."
+
+msgid "Odpowiadamy za przygotowanie harmonogramu, opracowanie szczegółowego kosztorysu, zarządzanie podwykonawcami, aż po finalne przekazanie w pełni funkcjonalnego obiektu, gotowego do prowadzenia biznesu."
+msgstr "Ми відповідаємо за графік робіт, детальний кошторис, координацію підрядників та фінальну здачу повністю функціонального об'єкта."
+
+msgid "Odpowiedzialne budownictwo"
+msgstr "Відповідальне будівництво"
+
+msgid "Odpowiedzialne projektowanie"
+msgstr "Відповідальне проектування"
+
+msgid "Oferta"
+msgstr "Пропозиція"
+
+msgid "Oferta MBT"
+msgstr "Пропозиція MBT"
+
+msgid "Oferta nie istnieje"
+msgstr "Пропозиція не знайдена"
+
+msgid "Oferta, czyli co możemy dla Ciebie zrobić"
+msgstr "Пропозиція: що ми можемо зробити для вас"
+
+msgid "Oferujemy wsparcie na każdym etapie inwestycji: wskazanie dogodnej lokalizacji, wsparcie przy zakupie nieruchomości, proces projektowy od koncepcji do pozwolenia na budowę oraz procedowanie i wykonanie przyłączy."
+msgstr "Ми надаємо підтримку на кожному етапі: підбір локації, супровід купівлі землі, проектування від концепту до дозволу на будівництво та підключення мереж."
+
+msgid "Okresowe przeglądy techniczne"
+msgstr "Періодичні технічні огляди"
+
+msgid "Opinie klientów"
+msgstr "Відгуки клієнтів"
+
+msgid "Opinie naszych klientów"
+msgstr "Відгуки наших клієнтів"
+
+msgid "Opis realizacji:"
+msgstr "Опис проекту:"
+
+msgid "Opisz swój projekt..."
+msgstr "Опишіть свій проект..."
+
+msgid "Optymalizacja"
+msgstr "Оптимізація"
+
+msgid "Optymalizacja kosztów"
+msgstr "Оптимізація витрат"
+
+msgid "Optymalizacja kosztów utrzymania (OZE)"
+msgstr "Оптимізація експлуатаційних витрат (ВДЕ)"
+
+msgid "Optymalizuj-Buduj"
+msgstr "Оптимізуй-Будуй"
+
+msgid "Optymalne rozwiązania inżynieryjne, precyzyjny harmonogram i transparentny budżet."
+msgstr "Optimal engineering solutions, a precise schedule and a transparent budget."
+
+msgid "Ostatnie <strong>realizacje</strong>"
+msgstr "Останні <strong>проекти</strong>"
+
+msgid "Oszczędności bez rezygnacji z jakości i funkcji."
+msgstr "Економія без відмови від якості та функціональності."
+
+msgid "Otwierasz nową lokalizację dla swojego biznesu?"
+msgstr "Відкриваєте нову локацію для свого бізнесу?"
+
+msgid "Oznakowanie budowy"
+msgstr "Ознакування будівництва"
+
+msgid "Oznakowanie budowy — Panel kierownika"
+msgstr "Ознакування будівництва — Панель керівника"
+
+msgid "PARKI HANDLOWE"
+msgstr "РІТЕЙЛ-ПАРКИ"
+
+msgid "PRZESTRZENIE FIT-OUT"
+msgstr "ПРОСТОРИ FIT-OUT"
+
+msgid "Park maszynowy wymaga szczególnego podejścia do podłoża. Projektujemy i wykonujemy wzmocnione fundamenty oraz posadzki przemysłowe odporne na drgania, wibracje i punktowe, ekstremalne naciski generowane przez ciężkie urządzenia produkcyjne (prasy, obrabiarki CNC)."
+msgstr "Парк верстатів потребує особливого підходу до основи. Ми проектуємо та облаштовуємо посилені фундаменти та промислові підлоги, стійкі до коливань, вібрацій та екстремальних точкових навантажень від важкого обладнання (преси, верстати з ЧПК)."
+
+msgid "Parki handlowe"
+msgstr "Рітейл-парки"
+
+msgid "Parki handlowe i elastyczne przestrzenie usługowe"
+msgstr "Торговельні парки та адаптивні сервісні площі"
+
+msgid "Pewne i sprawne odbiory obiektu"
+msgstr "Впевнене та швидке введення об'єкта в експлуатацію"
+
+msgid "Pełna realizacja inwestycji — od przejęcia placu budowy do przekazania kluczy. Wykonujemy roboty ziemne, fundamentowe, konstrukcje, instalacje i wykończenia."
+msgstr "Повна реалізація інвестиції — від прийняття будівельного майданчика до передачі ключів. Виконуємо земляні, фундаментні роботи, конструкції, інсталяції та оздоблення."
+
+msgid "Pełna realizacja inwestycji — od przejęcia placu budowy do przekazania kluczy. Wykonujemy roboty ziemne, konstrukcję, obudowę, instalacje i wykończenie."
+msgstr "Повна реалізація інвестиції — від прийняття будівельного майданчика до вручення ключів. Виконуємо земляні роботи, каркас, огороджувальні конструкції, мережі та оздоблення."
+
+msgid "Pełna, przejrzysta specyfikacja w każdej ofercie."
+msgstr "Повна, прозора специфікація в кожній пропозиції."
+
+msgid "Pełne generalne wykonawstwo"
+msgstr "Повний генеральний підряд"
+
+msgid "Pierwsze logowanie — ustaw swoje hasło."
+msgstr "Перший вхід — встановіть свій пароль."
+
+msgid "Plac budowy"
+msgstr "Будівельний майданчик"
+
+msgid "Plac budowy to skomplikowany, żywy organizm. W MBT kultura bezpieczeństwa to absolutny fundament naszej pracy. Przestrzegamy najbardziej rygorystycznych norm BHP, stale szkolimy nasz zespół i audytujemy procesy. Dla nas bezpieczna budowa, to terminowa budowa."
+msgstr "Будівельний майданчик — це живий складний організм. В MBT культура безпеки є непорушним фундаментом. Ми суворо дотримуємося норм охорони праці, навчаємо персонал і проводимо аудити. Для нас безпечне будівництво — це своєчасне будівництво."
+
+msgid "Plac budowy — Twoja inwestycja"
+msgstr "Будівельний майданчик — Ваша інвестиція"
+
+msgid "Planujesz nową inwestycję?"
+msgstr "Плануєте нову інвестицію?"
+
+msgid "Pobieraj banery reklamowe i informacyjne na budowę — z Twoim logo."
+msgstr "Завантажуйте рекламні та інформаційні банери для будівництва — з вашим логотипом."
+
+msgid "Pobierz baner"
+msgstr "Завантажити банер"
+
+msgid "Podaj email — administrator zresetuje hasło i prześle tymczasowe."
+msgstr "Введіть email — адміністратор скине пароль і надішле тимчасовий."
+
+msgid "Podstawą przetwarzania danych jest art. 6 ust. 1 lit. a RODO (zgoda) oraz art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora polegający na obsłudze zapytań i komunikacji z klientami)."
+msgstr "Основою обробки даних є ст. 6(1)(a) GDPR (згода) та ст. 6(1)(f) GDPR (законний інтерес адміністратора, що полягає в обробці запитів та спілкуванні з клієнтами)."
+
+msgid "Polityka <strong>prywatności</strong>"
+msgstr "Політика <strong>конфіденційності</strong>"
+
+msgid "Polityka pryw. i Regulamin"
+msgstr "Конфіденційність та Правила"
+
+msgid "Polityka prywatności"
+msgstr "Політика конфіденційності"
+
+msgid "Polityka prywatności i Regulamin"
+msgstr "Політика конфіденційності та Правила"
+
+msgid "Pomagamy od samego początku — od wyboru lokalizacji, przez przygotowanie materiałów do decyzji kredytowej, aż po pozwolenie na budowę i zakup działki."
+msgstr "Допомагаємо із самого початку — від вибору локації та підготовки матеріалів для кредитного рішення до отримання дозволу на будівництво та купівлі ділянки."
+
+msgid "Pomagamy od samego początku — od wyboru lokalizacji, przez przygotowanie wniosków kredytowych i audyt działki, po koncepcję architektoniczną."
+msgstr "Допомагаємо від самого початку — від вибору локації, аудиту земельної ділянки та фінансових заявок до архітектурної концепції."
+
+msgid "Pon - Pt / 8:00 - 16:00"
+msgstr "Пн - Пт / 8:00 - 16:00"
+
+msgid "Pon-Pt:"
+msgstr "Пн-Пт:"
+
+msgid "Pon-Pt: 8:00 do 16:00"
+msgstr "Пн-Пт: з 8:00 до 16:00"
+
+msgid "Poprzednie zdjęcie"
+msgstr "Попереднє фото"
+
+msgid "Porozmawiaj z nami"
+msgstr "Поговоріть з нами"
+
+msgid "Porozmawiajmy o Twoim projekcie"
+msgstr "Обговорімо ваш проект"
+
+msgid "Porozmawiajmy o Twoim projekcie — przygotujemy wycenę i doradzimy najlepszą formułę."
+msgstr "Давайте поговоримо про ваш проект — ми підготуємо цінову пропозицію та порадимо оптимальний формат."
+
+msgid "Porozmawiajmy o parametrach Twojej hali"
+msgstr "Обговорімо параметри вашого складу"
+
+msgid "Porozmawiajmy — dobierzemy optymalną formułę dla Twojego projektu."
+msgstr "Давайте поговоримо — ми підберемо оптимальну формулу для вашого проекту."
+
+msgid "Portfolio"
+msgstr "Портфоліо"
+
+msgid "Posadzki bezspoinowe najwyższej klasy"
+msgstr "Безшовні промислові підлоги найвищого класу"
+
+msgid "Potrzebujesz gotowej dokumentacji projektowej? Zaprojektujemy halę, magazyn lub obiekt usługowy — z uzgodnieniami i pozwoleniem na budowę."
+msgstr "Потрібна готова проектна документація? Спроектуємо цех, склад або комерційний об'єкт — з усіма погодженнями та дозволом на будівництво."
+
+msgid "Powierz budowę inżynierom, którzy rozumieją rynek komercyjny. Zbudujemy obiekt, który przyciągnie klientów i wyeksponuje Twoją markę."
+msgstr "Довірте будівництво інженерам, які знають комерційний ринок. Ми створимо об'єкт, що привабить клієнтів і підкреслить статус бренду."
+
+msgid "Powrót do logowania"
+msgstr "Повернутися до входу"
+
+msgid "Powrót na stronę główną"
+msgstr "Повернутися на головну"
+
+msgid "Powtórz hasło"
+msgstr "Повторіть пароль"
+
+msgid "Poznaj ludzi, którzy tworzą MBT"
+msgstr "Знайомтеся з людьми, які створюють MBT"
+
+msgid "Poznaj nas <strong>bliżej</strong>"
+msgstr "Пізнайте нас <strong>ближче</strong>"
+
+msgid "Poznaj nasz zespół"
+msgstr "Познайомтеся з нашою командою"
+
+msgid "Poznaj nasze główne obszary działania jako Generalnego Wykonawcy. Realizujemy obiekty na miarę Twojego biznesu."
+msgstr "Ознайомтеся з нашими основними напрямками як генерального підрядника. Ми будуємо об'єкти за індивідуальними потребами вашого бізнесу."
+
+msgid "Poznaj nasze podejście"
+msgstr "Дізнайтеся про наш підхід"
+
+msgid "Poznaj nasze rozwiązania"
+msgstr "Дізнайтеся про наші рішення"
+
+msgid "Poznajemy Twoje potrzeby, analizujemy teren i przygotowujemy wstępną koncepcję wraz z szacunkiem kosztów."
+msgstr "Ми вивчаємо ваші потреби, аналізуємо ділянку та готуємо попередню концепцію з оцінкою витрат."
+
+msgid "Pozwolenie na budowę — projekt gotowy lub od zera"
+msgstr "Дозвіл на будівництво — готовий проект або з нуля"
+
+msgid "Południe"
+msgstr "Південь"
+
+msgid "Południowy wschód"
+msgstr "Південний схід"
+
+msgid "Praca MBT na budowie"
+msgstr "Робота MBT на будівництві"
+
+msgid "Praca w MBT"
+msgstr "Робота в MBT"
+
+msgid "Prace fundamentowe, wznoszenie konstrukcji, montaż instalacji i wykończenie."
+msgstr "Фундаментні роботи, зведення конструкцій, монтаж інсталяцій та оздоблення."
+
+msgid "Prace wykończeniowe"
+msgstr "Оздоблювальні роботи"
+
+msgid "Pracując z inwestorami i partnerami biznesowymi, zauważyliśmy, że wiele firm boryka się z trudnościami w kompleksowym zarządzaniu projektami budowlanymi. Z jednej strony brakuje im specjalistów, którzy posiadają wszechstronne doświadczenie, a z drugiej, firmy budowlane obecne na rynku często nie rozumieją specyficznych potrzeb inwestorów."
+msgstr "Працюючи з інвесторами, ми побачили, що бізнесу важко знайти комплексний підхід до управління будівництвом. Бракує багатопрофільних спеціалістів, а підрядники на ринку часто не розуміють специфічних комерційних завдань замовника."
+
+msgid "Precyzja i technologia"
+msgstr "Точність та технології"
+
+msgid "Precyzja, która <strong>napędza Twój przemysł</strong>"
+msgstr "Точність, що <strong>рухає вашу індустрію</strong>"
+
+msgid "Prestiż i funkcjonalność"
+msgstr "Престиж та функціональність"
+
+msgid "Proces współpracy"
+msgstr "Процес співпраці"
+
+msgid "Profesjonalizm, precyzja i pełne zaangażowanie — dzień po dniu na Twojej budowie."
+msgstr "Професіоналізм, точність і повна відданість — день за днем на вашому будівництві."
+
+msgid "Projekt + budowa + formalności w jednym kontrakcie. Jeden partner, pełna odpowiedzialność, zero pośredników."
+msgstr "Проект + будівництво + формальності в одному контракті. Один партнер, повна відповідальність, нуль посередників."
+
+msgid "Projekt i budowa obiektów handlowych z MBT. Tworzymy nowoczesne hale komercyjne dopasowane do Twojego biznesu. Skontaktuj się i sprawdź szczegóły!"
+msgstr "Проектування та будівництво комерційних об'єктів з MBT. Створюємо сучасні комерційні площі для вашого бізнесу. Зв'яжіться з нами за деталями!"
+
+msgid "Projekt i oferta"
+msgstr "Проект та пропозиція"
+
+msgid "Projektowanie"
+msgstr "Проектування"
+
+msgid "Projektowanie i Kosztorys"
+msgstr "Проектування та Кошторис"
+
+msgid "Projektuj-Buduj"
+msgstr "Проектуй-Будуй"
 
 msgid "Projektuj-wybuduj"
-msgstr "Проектуй-будуй"
+msgstr "Проектуй і будуй"
+
+msgid "Projektujemy i wdrażamy technologie obniżające koszty eksploatacji: fotowoltaikę, pompy ciepła, retencję wody oraz certyfikację BREEAM."
+msgstr "Проектуємо та впроваджуємо технології для зниження експлуатаційних витрат: сонячні батареї, теплові насоси, водозатримання та сертифікацію BREEAM."
+
+msgid "Projektujemy i wykonujemy zbiorniki retencyjne na wodę deszczową do celów chłodniczych lub bytowych."
+msgstr "Проектуємо та споруджуємо резервуари для збору дощової води для охолодження чи технічних потреб."
+
+msgid "Projektujemy i wylewamy potężne stopy fundamentowe oraz płyty bezspoinowe zdolne do tłumienia drgań wywoływanych przez prasy, obrabiarki CNC czy ciężkie linie technologiczne. Przykładem jest nasza realizacja dla BATER w Gliwicach (fundamenty pod wanny kwasowe i prasy ołowiowe) oraz Ponar Wadowice."
+msgstr "Ми проектуємо та заливаємо масивні фундаменти і безшовні плити, здатні гасити вібрації від пресів, верстатів з ЧПК чи важких виробничих ліній. Прикладом є наші проекти для BATER у Глівіце та Ponar Wadowice."
+
+msgid "Projektujemy konstrukcję dachu pod duże obciążenia instalacji fotowoltaicznych."
+msgstr "Ми проектуємо покрівельні конструкції з урахуванням навантажень від сонячних електростанцій."
+
+msgid "Projektujemy obiekty pod kątem maksymalnej redukcji kosztów operacyjnych. Wdrażamy systemy doświetlenia światłem naturalnym (pasma świetlne, świetliki na dachu), wprowadzamy wzmocnienia pod farmy fotowoltaiczne oraz projektujemy zaawansowane systemy retencji wód opadowych."
+msgstr "Ми проектуємо об'єкти для зниження витрат: зенітні ліхтарі для природного світла, посилення під сонячні станції та сучасні системи збору дощової води."
+
+msgid "Projektujemy z uwzględnieniem <strong>funkcjonalności, estetyki i optymalnych rozwiązań</strong>"
+msgstr "Проектуємо з урахуванням <strong>функціональності, естетики та оптимальних рішень</strong>"
+
+msgid "Projektujemy z uwzględnieniem <strong>funkcjonalności, estetyki i optymalnych rozwiązań</strong>."
+msgstr "Ми проектуємо з урахуванням <strong>функціональності, естетики та оптимальних інженерних рішень</strong>."
+
+msgid "Projektujemy z uwzględnieniem funkcjonalności, estetyki i optymalnych rozwiązań."
+msgstr "Проектуємо з урахуванням функціональності, естетики та оптимальних рішень."
+
+msgid "Prosto z placu budowy"
+msgstr "Прямо з будівельного майданчика"
+
+msgid "Prośba wysłana"
+msgstr "Запит надіслано"
+
+msgid "Przejmiemy na siebie cały proces budowlany, abyś Ty mógł skupić się na kalibracji maszyn. Zbudujmy razem Twój nowy zakład."
+msgstr "Ми візьмемо на себе весь будівельний процес, щоб ви могли зосередитися на налаштуванні обладнання. Збудуймо ваш новий завод разом."
+
+msgid "Przejmujemy pełną odpowiedzialność za Twój <strong>proces budowlany</strong>"
+msgstr "Беремо повну відповідальність за ваш <strong>будівельний процес</strong>"
+
+msgid "Przejmujemy pełną odpowiedzialność za cały proces budowlany — koordynację, harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu zamiast dziesiątek firm."
+msgstr "Беремо повну відповідальність за весь будівельний процес — координацію, графік, кошторис та якість. У вас один контактний центр замість десятків компаній."
+
+msgid "Przejmujemy pełną odpowiedzialność za proces budowlany — koordynacja, harmonogram, kosztorys i jakość. Ty masz jeden punkt kontaktu."
+msgstr "Ми беремо повну відповідальність за будівельний процес — координацію, графік, кошторис та якість. У вас буде один контактний центр."
+
+msgid "Przemysł"
+msgstr "Промисловість"
+
+msgid "Przemysł w naszym wykonaniu"
+msgstr "Промислові об'єкти від MBT"
+
+msgid "Przeprowadzamy inwestycję przez cały proces administracyjny: pozwolenia na budowę, decyzje środowiskowe, uzgodnienia PSP/SANEPID i odbiory."
+msgstr "Супроводжуємо інвестицію на всіх етапах дозвільних процедур: дозволи на будівництво, екологічні висновки, погодження ДСНС/СЕС та введення в експлуатацію."
+
+msgid "Przestrzenie biurowe"
+msgstr "Офісні приміщення"
+
+msgid "Przestrzeń biurowa"
+msgstr "Офісний простір"
+
+msgid "Przetwarzamy dane osobowe podane dobrowolnie w formularzu kontaktowym „Wyceń projekt\" — w szczególności imię i nazwisko, adres e-mail, numer telefonu, nazwę firmy oraz treść wiadomości, w celu odpowiedzi na zapytanie i przygotowania wyceny."
+msgstr "We process personal data provided voluntarily in the \"Quote a project\" contact "
+
+msgid "Przez MBT"
+msgstr "Від MBT"
+
+msgid "Przy projektowaniu realizowanych obiektów w sposób szczególny uwzględniamy funkcjonalność, optymalne rozwiązania w zakresie posadowienia, konstrukcji i instalacji oraz estetykę obiektu."
+msgstr "Під час проектування ми приділяємо особливу увагу функціональності, оптимальним рішенням фундаментів, конструкцій, інженерних мереж та естетиці будівлі."
+
+msgid "Przydatne linki"
+msgstr "Корисні посилання"
+
+msgid "Przygotowujemy projekt, harmonogram i transparentny kosztorys. Negocjujemy i ustalamy szczegóły umowy."
+msgstr "Готуємо проект, графік та прозорий кошторис. Обговорюємо та фіксуємо деталі договору."
+
+msgid "Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych, wniesienia sprzeciwu oraz cofnięcia zgody w dowolnym momencie. Masz również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych."
+msgstr "Ви маєте право на доступ до даних, їх виправлення, видалення, обмеження обробки, перенесення даних, можливість заперечити обробку або відкликати згоду в будь-який момент. Ви також маєте право подати скаргу до відповідного органу з нагляду за захистом персональних даних."
+
+msgid "Północ"
+msgstr "Північ"
+
+msgid "REALIZACJE"
+msgstr "ПРОЕКТИ"
+
+msgid "RETAIL"
+msgstr "РІТЕЙЛ"
+
+msgid "RODO"
+msgstr "GDPR"
+
+msgid "Raportowanie w czasie rzeczywistym"
+msgstr "Звітування в режимі реального часу"
+
+msgid "Realizacja"
+msgstr "Реалізація"
+
+msgid "Realizacja Budowy"
+msgstr "Будівництво"
+
+msgid "Realizacja MBT"
+msgstr "Проекти MBT"
+
+msgid "Realizacja nie istnieje"
+msgstr "Проекту не існує"
 
 msgid "Realizacja pod klucz"
 msgstr "Реалізація під ключ"
+
+msgid "Realizacja prowadzona przez MBT Modern Building Team w formule generalnego wykonawstwa."
+msgstr "Реалізація здійснена MBT Modern Building Team у форматі генерального підряду."
+
+msgid "Realizacja prowadzona przez MBT Modern Building Team w formule {{ project.formula|default:\"generalnego wykonawstwa\" }}."
+msgstr "Project carried out by MBT Modern Building Team in the {{ project.formula|default:\"general "
+
+msgid "Realizacje"
+msgstr "Проекти"
+
+msgid "Realizujemy Twoje projekty <strong>zgodnie z harmonogramem</strong>, nawet przy zmianach."
+msgstr "Ми реалізуємо ваші проекти <strong>відповідно до графіка</strong>, навіть у разі змін."
+
+msgid "Realizujemy Twoje projekty zgodnie z harmonogramem, nawet przy zmianach."
+msgstr "Ми реалізуємо ваші проекти згідно з графіком, навіть за умови внесення змін."
+
+msgid "Realizujemy inwestycje o różnych skalach – od potężnych hubów dystrybucyjnych po elastyczne parki magazynowe. Przykładem naszych kompetencji jest wieloetapowy projekt dla BTS Development Park, gdzie stworzyliśmy kompleks z podziałem na niezależne moduły o elastycznym metrażu, gotowe do adaptacji."
+msgstr "Ми реалізуємо проекти різних масштабів — від дистриб'юторських хабів до гнучких складських парків, як-от наш багатоетапний проект для BTS Development Park із модульними площами."
+
+msgid "Realizujemy obiekty kubaturowe dopasowane do specyfiki procesów technologicznych i wymagań każdej branży."
+msgstr "Зводимо капітальні споруди з урахуванням специфіки технологічних процесів та вимог будь-якої галузі."
+
+msgid "Realizujemy obiekty wyposażone w rozbudowaną infrastrukturę dźwignicową. Wykonujemy wytrzymałe konstrukcje stalowe lub żelbetowe przystosowane do bezpiecznego montażu i pracy suwnic o wysokim udźwigu, gwarantując bezpieczny, płynny transport wewnątrzzakładowy ciężkich gabarytów."
+msgstr "Ми реалізуємо об'єкти з крановою інфраструктурою. Виконуємо надміцні металеві або залізобетонні конструкції, адаптовані для безпечної роботи мостових кранів великої вантажопідйомності."
+
+msgid "Realizujemy zgodnie z harmonogramem, reagując na zmiany."
+msgstr "Ми працюємо за графіком, оперативно реагуючи на зміни."
+
+msgid "Regulamin"
+msgstr "Правила"
+
+msgid "Retail"
+msgstr "Рітейл"
+
+msgid "Retail & Auto"
+msgstr "Торгівля та автоіндустрія"
+
+msgid "Retail & Automotive"
+msgstr "Торгівля та Автомобільний сектор"
+
+msgid "Retail w naszym wykonaniu"
+msgstr "Торговельні об'єкти від MBT"
+
+msgid "Rodzaj inwestycji"
+msgstr "Тип інвестиції"
+
+msgid "Rozpoznanie i Koncepcja"
+msgstr "Аналіз та Концепція"
+
+msgid "Rozumiemy wyzwania związane z transformacją energetyczną. Optymalizujemy obiekty przemysłowe pod kątem redukcji śladu węglowego i kosztów operacyjnych (OPEX). Stosujemy innowacyjne rozwiązania i pomagamy w osiągnięciu rygorystycznych certyfikacji BREEAM."
+msgstr "Ми розуміємо виклики енергетичного переходу. Ми оптимізуємо виробничі об'єкти для зниження вуглецевого сліду та операційних витрат (OPEX), впроваджуючи рішення для сертифікації BREEAM."
+
+msgid "Rozumiemy, że w przemyśle każda wibracja, spadek napięcia czy niedoskonałość posadzki przekłada się na realne straty finansowe Inwestora. Dlatego budujemy z zegarmistrzowską precyzją, opierając się na ścisłej koordynacji branżowej i nowoczesnych systemach BIM."
+msgstr "Ми розуміємо, що у виробництві кожна вібрація, перепад напруги чи нерівність підлоги призводять до реальних фінансових збитків інвестора. Тому ми будуємо з годинниковою точністю, покладаючись на координацію галузей та сучасні системи BIM."
+
+msgid "Rozwiązania szyte na miarę"
+msgstr "Рішення за індивідуальними потребами"
+
+msgid "Rygorystyczne normy"
+msgstr "Суворі стандарти"
+
+msgid "Rygorystyczne standardy marek (Corporate Identity)"
+msgstr "Суворі корпоративні стандарти (Corporate Identity)"
+
+msgid "SALONY SAMOCHODOWE"
+msgstr "АВТОСАЛОНИ"
+
+msgid "SELF STORAGE"
+msgstr "SELF STORAGE"
+
+msgid "SERWISY MOTORYZACYJNE"
+msgstr "АВТОСЕРВІСИ"
+
+msgid "Salon samochodowy"
+msgstr "Автосалон"
+
+msgid "Salony samochodowe (Automotive)"
+msgstr "Автосалони (Automotive)"
+
+msgid "Sektory, dla których <strong>budujemy obiekty</strong>"
+msgstr "Галузі, для яких <strong>ми будуємо об'єкти</strong>"
+
+msgid "Self Storage"
+msgstr "Self Storage"
+
+msgid "Siedziba"
+msgstr "Головний офіс"
+
+msgid "Siedziba MBT w Katowicach"
+msgstr "Головний офіс MBT в Катовицях"
+
+msgid "Siedziba — Katowice"
+msgstr "Головний офіс — Катовиці"
+
+msgid "Skonsultuj projekt"
+msgstr "Проконсультувати проект"
+
+msgid "Skonsultuj projekt z inżynierem"
+msgstr "Проконсультуватися з інженером"
+
+msgid "Skonsultuj swoją koncepcję z naszymi inżynierami. Bezpłatnie przeanalizujemy możliwości optymalizacji kosztów i harmonogramu budowy."
+msgstr "Обговоріть концепцію з нашими інженерами. Ми безкоштовно проаналізуємо можливості оптимізації витрат і графіку будівництва."
+
+msgid "Skonsultuj swój projekt z inżynierem MBT"
+msgstr "Проконсультуйтеся з інженером MBT"
+
+msgid "Skontaktuj się"
+msgstr "Зв'язатися"
+
+msgid "Skontaktuj się z <strong>nami</strong>"
+msgstr "Зв'яжіться з <strong>нами</strong>"
+
+msgid "Smart Warehousing"
+msgstr "Smart Warehousing"
+
+msgid "Specjalizujemy się w realizacji hal magazynowych, produkcyjnych i usługowych. Zapewniamy pełny układ komunikacyjny i obiekty inżynierskie."
+msgstr "Ми спеціалізуємося на зведенні складських, виробничих та сервісних приміщень. Забезпечуємо повну транспортну інфраструктуру та інженерні споруди."
+
+msgid "Specjaliści z referencjami i wieloletnim doświadczeniem. Radzimy sobie z projektami wielobranżowymi — od instalacji, przez uzgodnienia z gestorami sieci, po ochronę pożarową i konstrukcję."
+msgstr "Фахівці з рекомендаціями та багаторічним досвідом. Ми справляємося з багатопрофільними проектами — від інсталяцій та погоджень з операторами мереж до пожежної безпеки та конструкцій."
+
+msgid "Specjaliści z referencjami i wieloletnim doświadczeniem. Radzimy sobie z trudnym gruntem, nietypową konstrukcją i skomplikowanymi instalacjami."
+msgstr "Фахівці з перевіреним досвідом та портфоліо. Ми справляємося зі складними ґрунтами, нестандартними конструкціями та інженерними мережами."
+
+msgid "Specyfikacja"
+msgstr "Специфікація"
+
+msgid "Spełnienie wymogów środowiskowych"
+msgstr "Відповідність екологічним вимогам"
+
+msgid "Sprawdź co budujemy"
+msgstr "Подивіться, що ми будуємо"
+
+msgid "Sprawdź oferty pracy"
+msgstr "Перевірити вакансії"
+
+msgid "Sprawdź rozwiązania"
+msgstr "Дізнатися про рішення"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Strona główna"
+msgstr "Головна сторінка"
+
+msgid "Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania oraz analizy ruchu. Szczegółowe informacje znajdują się w polityce plików cookies."
+msgstr "Сайт використовує файли cookie для забезпечення належного функціонування та аналізу трафіку. Детальна інформація міститься в політиці використання файлів cookie."
+
+msgid "Systemy akustyczne i oświetlenie ekspozycyjne"
+msgstr "Акустичні панелі та виставкове освітлення"
+
+msgid "Systemy retencji i wykorzystania wody deszczowej (szara woda)."
+msgstr "Системи утримання та використання дощової води (сіра вода)."
+
+msgid "Szablon"
+msgstr "Шаблон"
+
+msgid "Szablony banerów są w trakcie przygotowywania."
+msgstr "Шаблони банерів знаходяться в процесі підготовки."
+
+msgid "Szczegóły realizacji są dostępne wkrótce."
+msgstr "Деталі проекту будуть доступні незабаром."
+
+msgid "Szukaj"
+msgstr "Пошук"
+
+msgid "Szukamy mądrych oszczędności (Value Engineering) — optymalizujemy konstrukcję i materiały bez kompromisów jakościowych i bezpieczeństwa."
+msgstr "Ми знаходимо розумну економію (Value Engineering) — оптимізуємо конструкцію та матеріали без компромісів щодо якості та безпеки."
+
+msgid "Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów jakościowych i materiałowych."
+msgstr "Шукаємо рішення для оптимізації вартості та строків — без компромісів щодо якості та матеріалів."
+
+msgid "Szukamy rozwiązań optymalizujących koszty i czas — bez kompromisów w jakości materiałów i bezpieczeństwie."
+msgstr "Ми шукаємо рішення, які оптимізують витрати та час — без компромісів у якості матеріалів та безпеці."
+
+msgid "Szukasz generalnego wykonawcy? Sprawdź nasze realizacje."
+msgstr "Шукаєте генерального підрядника? Перегляньте наші проекти."
+
+msgid "Szukasz solidnego generalnego wykonawcy? MBT to terminowa budowa hal, magazynów i obiektów przemysłowych pod klucz. Sprawdź nasze realizacje i ofertę!"
+msgstr "Шукаєте надійного генерального підрядника? MBT забезпечує своєчасне будівництво цехів, складів та промислових об'єктів під ключ. Ознайомтеся з проектами!"
+
+msgid "Szybki test:"
+msgstr "Швидкий тест:"
+
+msgid "Szybkość realizacji i duże rozpiętości"
+msgstr "Швидкість монтажу та великі прольоти"
+
+msgid "Tak — nawigujemy przez proces administracyjny, koordynujemy dokumentację powykonawczą i asystujemy w uzyskaniu pozwolenia na użytkowanie (PnU)."
+msgstr "Так — ми супроводжуємо адміністративний процес, формуємо виконавчу документацію та допомагаємо в отриманні дозволу на експлуатацію."
+
+msgid "Tak — wdrażamy zrównoważone technologie (fotowoltaika, retencja wody, stacje EV) i realizujemy obiekty zgodne z wymogami certyfikacji BREEAM."
+msgstr "Так — ми впроваджуємо екологічні технології (сонячні електростанції, збір води, зарядні станції EV) та зводимо об'єкти за стандартом BREEAM."
+
+msgid "Te marki nam zaufały"
+msgstr "Бренди, які нам довіряють"
+
+msgid "Technologia i innowacje"
+msgstr "Технології та інновації"
+
+msgid "Technologia na straży wydajności"
+msgstr "Технології на сторожі продуктивності"
+
+msgid "Telefon"
+msgstr "Телефон"
+
+msgid "Terminowe oddanie lokalu gotowego do zatowarowania"
+msgstr "Вчасна передача приміщення, готового до завантаження товаром"
+
+msgid "Terminowości"
+msgstr "Вчасність виконання"
+
+msgid "Terminowość"
+msgstr "Вчасність"
+
+msgid "Terminowość i Elastyczność"
+msgstr "Вчасність та Гнучкість"
+
+msgid "Terminowość i elastyczność"
+msgstr "Вчасність та гнучкість"
+
+msgid "Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego obiektu do użytkowania."
+msgstr "Фінальні випробування, повний пакет документації та здача безпечного готового об'єкта в експлуатацію."
+
+msgid "Testy końcowe, komplet dokumentacji i przekazanie gotowego, bezpiecznego obiektu."
+msgstr "Кінцеві тести, комплект документації та передача готового, безпечного об'єкта."
+
+msgid "Testy końcowe, komplet dokumentacji, pozwolenie na użytkowanie i przekazanie gotowego obiektu."
+msgstr "Кінцеві тести, комплект документації, дозвіл на експлуатацію та передача готового об'єкта."
+
+msgid "Trudne warunki gruntowe i wzmocnienia gruntu"
+msgstr "Складні ґрунтові умови та посилення ґрунту"
+
+msgid "Trwałe relacje"
+msgstr "Міцні відносини"
+
+msgid "Trzy biura — jeden zespół gotowy na Twoje wyzwania budowlane."
+msgstr "Три офіси — одна команда, готова до ваших будівельних завдань."
+
+msgid "Twoja Wizja"
+msgstr "Ваше бачення"
+
+msgid "Tworzymy grupę specjalistów, którzy dzięki trosce i umiejętności kooperacji realizują wspólne cele – zawsze gotowi na Twoje pomysły, bez potrzeby angażowania dodatkowych zasobów."
+msgstr "Ми формуємо команду фахівців, які завдяки турботі та вмілій співпраці реалізують спільні цілі — завжди готові до ваших ідей без необхідності залучати додаткові ресурси."
+
+msgid "Tworzymy obiekty, które nie tylko optymalizują procesy biznesowe, ale są również przyjazne dla środowiska i oszczędne w eksploatacji. Pomagamy w realizacji wymogów środowiskowych i asystujemy w procesach uzyskiwania certyfikatów, takich jak BREEAM."
+msgstr "Ми створюємо об'єкти, які не лише оптимізують бізнес-процеси, але й є екологічно безпечними та економними в експлуатації. Допомагаємо у виконанні екологічних вимог та сприяємо в отриманні сертифікатів, таких як BREEAM."
+
+msgid "Tworzymy przestrzeń zoptymalizowaną pod kątem sprawnego łańcucha dostaw, wysokiego składowania i maksymalnej przepustowości."
+msgstr "Ми створюємо простір, оптимізований для ефективного ланцюга поставок, висотного складування та максимальної пропускної здатності."
+
+msgid "Twój Generalny"
+msgstr "Ваш генеральний"
+
+msgid "Twój plac budowy"
+msgstr "Ваш будівельний майданчик"
+
+msgid "Tylko budowa"
+msgstr "Тільки будівництво"
+
+msgid "Tylko formalności"
+msgstr "Тільки формальності"
+
+msgid "Tylko projekt"
+msgstr "Тільки проект"
+
+msgid "Uczciwość i transparentność"
+msgstr "Чесність та прозорість"
+
+msgid "Uroczystość Rozpoczęcia Inwestycji"
+msgstr "Урочисте відкриття будівництва"
+
+msgid "Ustawienia cookies"
+msgstr "Налаштування cookies"
+
+msgid "W MBT doskonale wiemy, że obiekt produkcyjny to precyzyjnie zaprojektowana obudowa dla skomplikowanych procesów technologicznych. Pełnimy funkcję Generalnego Wykonawcy dla zakładów produkcyjnych, przetwórni oraz zaawansowanych technologicznie parków maszynowych."
+msgstr "В MBT ми чудово розуміємо, що виробничий об'єкт — це високоточна інженерна оболонка для складних технологічних процесів. Ми виступаємо Генеральним підрядником для виробничих заводів, переробних підприємств та передових машинобудівних комплексів."
+
+msgid "W budownictwie komercyjnym zwykła płyta warstwowa to czasem za mało. Tam, gdzie wymaga tego projekt i prestiż marki, montujemy wielkoformatowe przeszklenia aluminiowe, efektowne elewacje wentylowane, systemy z siatki cięto-ciągnionej oraz projektujemy zaawansowane, wielobarwne iluminacje świetlne elewacji budynków."
+msgstr "У комерційній нерухомості звичайної сендвіч-панелі замало. Ми встановлюємо вітражне алюмінієве скління, вентильовані фасади, просічно-витяжну сітку та архітектурну підсвітку."
+
+msgid "W magazynach wysokiego składowania posadzka to absolutny fundament sukcesu. Wylewamy zaawansowane technologicznie płyty posadzkowe o podwyższonej odporności na ścieranie i najwyższych parametrach płaskości, bezwzględnie wymaganych do bezpiecznej i szybkiej pracy nowoczesnych wózków systemowych (VNA)."
+msgstr "У висотних складах підлога є основою успіху. Ми влаштовуємо надміцні безшовні підлоги з ідеальною площинністю, необхідні для роботи системних навантажувачів (VNA)."
+
+msgid "W realizacji:"
+msgstr "У процесі будівництва:"
 
 msgid "W trakcie Realizacji"
 msgstr "В процесі реалізації"
@@ -1667,114 +1675,435 @@ msgstr "В процесі реалізації"
 msgid "W trakcie realizacji"
 msgstr "В процесі реалізації"
 
+msgid "Wdrażamy inteligentne systemy zarządzania dostępem do obiektu i poszczególnych stref, integrując je z monitoringiem CCTV i systemami SSWiN."
+msgstr "Ми впроваджуємо системи контролю доступу з інтеграцією відеонагляду CCTV та охоронної сигналізації."
+
+msgid "Wdrażamy systemy odzysku ciepła odpadowego z procesów produkcyjnych (rekuperacja)."
+msgstr "Впроваджуємо системи рекуперації тепла від виробничих ліній."
+
+msgid "We wszystkich sprawach dotyczących przetwarzania danych osobowych możesz skontaktować się z nami pod adresem e-mail: <a href=\"mailto:biuro@mbt.pl\" style=\"color:var(--theme-color);\">biuro@mbt.pl</a> lub pisemnie na adres siedziby spółki."
+msgstr "For all matters concerning the processing of personal data, you can contact "
+
+msgid "Wgraj"
+msgstr "Завантажити"
+
+msgid "Wgraj logo aby zobaczyć podgląd"
+msgstr "Завантажте логотип, щоб побачити попередній перегляд"
+
+msgid "Wiedza z rynku budownictwa przemysłowego — prosto od naszych specjalistów."
+msgstr "Знання з ринку промислового будівництва — безпосередньо від наших спеціалістів."
+
+msgid "Wielobranżowe doświadczenie naszego zespołu pozwala nam na realizację zróżnicowanych obiektów."
+msgstr "Багатопрофільний досвід нашої команди дозволяє нам реалізовувати різноманітні об'єкти."
+
+msgid "Więcej"
+msgstr "Більше"
+
+msgid "Więcej szczegółów"
+msgstr "Детальніше"
+
+msgid "Wnętrze hali"
+msgstr "Інтер'єр цеху"
+
+msgid "Wolisz porozmawiać od razu?"
+msgstr "Бажаєте поговорити одразу?"
+
+msgid "Wolność od formalności"
+msgstr "Свобода від формальностей"
+
+msgid "Wolność od procedur i formalności"
+msgstr "Звільнення від бюрократії та формальностей"
+
+msgid "Wpisz swoją miejscowość, a my dobierzemy odpowiednią osobę:"
+msgstr "Введіть ваше місто, і ми підберемо відповідного спеціаліста:"
+
+msgid "Wpisz swój e-mail..."
+msgstr "Введіть свій e-mail..."
+
+msgid "Wschód"
+msgstr "Схід"
+
+msgid "Wsparcie inwestorskie"
+msgstr "Підтримка інвестора"
+
+msgid "Wsparcie inwestorskie na każdym etapie"
+msgstr "Підтримка інвестора на кожному етапі"
+
+msgid "Wsparcie przy certyfikacji BREEAM"
+msgstr "Підтримка сертифікації BREEAM"
+
+msgid "Współczesny przemysł to także nowoczesne zaplecze inżynieryjne i administracyjne. Płynnie łączymy surową przestrzeń halową z komfortowym, nowoczesnym biurowcem (np. inwestycja dla firmy ATT w Kokotowie). Zapewniamy odpowiednią izolację akustyczną, termiczną oraz nowoczesny fit-out przestrzeni biurowej."
+msgstr "Сучасна індустрія потребує також комфортної адміністративної та інженерної зони. Ми бездоганно поєднуємо виробничий простір із сучасним офісним корпусом (наприклад ATT у Кокотові), гарантуючи шумоізоляцію та фінішне оздоблення."
+
+msgid "Wszelkie prawa zastrzeżone"
+msgstr "Усі права захищені"
+
 msgid "Wszystkie"
 msgstr "Всі"
 
+msgid "Wszystkie artykuły"
+msgstr "Всі статті"
+
+msgid "Wszystkie realizacje"
+msgstr "Всі проекти"
+
+msgid "Wybierz <strong>tylko to, czego potrzebujesz</strong>"
+msgstr "Оберіть <strong>тільки те, що вам потрібно</strong>"
+
+msgid "Wybierz inwestycję na mapie"
+msgstr "Оберіть проект на карті"
+
+msgid "Wybierz logo"
+msgstr "Виберіть логотип"
+
+msgid "Wybierz województwo"
+msgstr "Оберіть воєводство"
+
+msgid "Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi standardami — centra logistyczne, biurowce, parki handlowe, magazyny oraz self storage."
+msgstr "Оберіть надійного партнера, який з інженерною точністю відповідає за кожну деталь вашої інвестиції. Будуємо швидко, надійно та за найвищими стандартами — логістичні центри, офіси, торгівельні парки, склади та self storage."
+
+msgid "Wybierz zaufanego partnera, który z inżynierską precyzją odpowie za każdy detal Twojej inwestycji. Budujemy szybko, pewnie i zgodnie z najwyższymi standardami."
+msgstr "Оберіть надійного партнера, який з інженерною точністю відповідає за кожну деталь вашої інвестиції. Будуємо швидко, надійно та за найвищими стандартами."
+
 msgid "Wybuduj"
-msgstr "Збудувати"
+msgstr "Будуй"
 
-msgid "Zaprojektuj i wybuduj"
-msgstr "Спроектувати та збудувати"
+msgid "Wybór lokalizacji i wsparcie przy zakupie działki"
+msgstr "Вибір локації та підтримка при купівлі ділянки"
 
-msgid "Zaprojektuj-wybuduj"
-msgstr "Спроектуй-будуй"
+msgid "Wyceń podobny projekt"
+msgstr "Розрахувати схожий проект"
 
-msgid "Zrealizowane"
-msgstr "Завершені"
+msgid "Wyceń projekt"
+msgstr "Розрахувати проект"
 
-msgid "zaprojektuj - wybuduj"
-msgstr "спроектуй - будуй"
+msgid "Wyceń swoją halę"
+msgstr "Розрахувати вартість цеху"
 
-msgid "Czas realizacji:"
-msgstr "Час реалізації:"
+msgid "Wyceń swój magazyn"
+msgstr "Розрахувати вартість складу"
 
-msgid "Biuro — Zabrze"
-msgstr "Офіс — Забже"
+msgid "Wyceń swój projekt"
+msgstr "Розрахувати свій проект"
 
-msgid "Siedziba — Katowice"
-msgstr "Головний офіс — Катовиці"
+msgid "Wyczyść"
+msgstr "Очистити"
 
-msgid "Trzy biura — jeden zespół gotowy na Twoje wyzwania budowlane."
-msgstr "Троє офісів — одна команда, готова до ваших будівельних викликів."
+msgid "Wydajne systemy fotowoltaiczne na dachach obiektów wielkopowierzchniowych."
+msgstr "Високоефективні фотоелектричні системи на дахах великогабаритних об'єктів."
 
-msgid "Adres Twojej inwestycji"
-msgstr "Адреса вашої інвестиції"
+msgid "Wykonawca"
+msgstr "підрядник"
 
-msgid "Biuro MBT w Zabrzu"
-msgstr "Офіс MBT в Забже"
-
-msgid "Siedziba MBT w Katowicach"
-msgstr "Головний офіс MBT в Катовицях"
-
-msgid "Oddział MBT w Krakowie"
-msgstr "Філія MBT в Кракові"
-
-msgid "Plac budowy — Twoja inwestycja"
-msgstr "Будівельний майданчик — ваша інвестиція"
-
-msgid "Realizacja nie istnieje"
-msgstr "Проекту не існує"
-
-msgid "Oferta nie istnieje"
-msgstr "Пропозиція не знайдена"
-
-msgid "Artykuł nie istnieje"
-msgstr "Стаття не знайдена"
-
-msgid ""
-"Jesteśmy zespołem specjalistów, którzy dzięki trosce i umiejętności "
-"kooperacji realizują wspólne cele. Szukamy ludzi z pasją do budownictwa."
-msgstr ""
-"Ми — команда спеціалістів, яка завдяки відданості та вмінню співпрацювати "
-"досягає спільних цілей. Ми шукаємо людей з пристрастю до будівництва."
-
-msgid "Praca w MBT"
-msgstr "Робота в MBT"
-
-msgid "Zobacz ofertę"
-msgstr "Переглянути пропозицію"
-
-msgid ""
-"Wiedza z rynku budownictwa przemysłowego — prosto od naszych specjalistów."
-msgstr ""
-"Знання з ринку промислового будівництва — безпосередньо від наших "
-"спеціалістів."
-
-msgid "Budownictwo"
+msgid "Wykonawstwo"
 msgstr "Будівництво"
 
-msgid "Praca MBT na budowie"
-msgstr "Робота MBT на будівельному майданчику"
+msgid "Wykończenia w standardzie premium (szkło, beton architektoniczny, forniry)"
+msgstr "Преміальне оздоблення (скло, архітектурний бетон, шпон)"
 
-msgid "Poprzednie zdjęcie"
-msgstr "Попереднє фото"
+msgid "Wykwalifikowane kadry BHP"
+msgstr "Кваліфіковані кадри з охорони праці"
 
-msgid "Następne zdjęcie"
-msgstr "Наступне фото"
+msgid "Wyloguj"
+msgstr "Вийти"
 
-msgid "Oferta, czyli co możemy dla Ciebie zrobić"
-msgstr "Пропозиція — що ми можемо зробити для вас"
+msgid "Wyniki wyszukiwania"
+msgstr "Результати пошуку"
 
-msgid "Nasz zespół — pracownicy"
-msgstr "Наша команда — співробітники"
+msgid "Wyróżnienia i partnerstwa"
+msgstr "Відзнаки та партнерство"
 
-msgid ""
-"Nie znalazłeś oferty dla siebie? Wyślij CV — zawsze rozważamy nowe talenty."
-msgstr ""
-"Не знайшли пропозицію для себе? Надішліть резюме — ми завжди розглядаємо "
-"нові таланти."
+msgid "Wyzwania inżynieryjne, na które <strong>odpowiadamy</strong>"
+msgstr "Інженерні виклики, на які ми <strong>знаходимо рішення</strong>"
+
+msgid "Wyślij prośbę"
+msgstr "Надіслати запит"
+
+msgid "Wyślij zapytanie"
+msgstr "Надіслати запит"
+
+msgid "Wyślij zapytanie o wycenę"
+msgstr "Надіслати запит на оцінку"
+
+msgid "Z pasją budujemy Wasze biznesy"
+msgstr "З пристрастю будуємо ваш бізнес"
+
+msgid "Z pasją budujemy Wasze biznesy. Jeden team – pełna realizacja. Od projektu aż po dach!"
+msgstr "З пристрастю будуємо ваш бізнес. Одна команда – повна реалізація. Від проекту до даху!"
+
+msgid "ZAKŁADY PRODUKCYJNE"
+msgstr "ВИРОБНИЧІ ЗАВОДИ"
+
+msgid "ZAPISZ SIĘ"
+msgstr "ПІДПИСАТИСЯ"
+
+msgid "Za każdą zrealizowaną halą stoi zgrany zespół ekspertów. MBT to grupa doświadczonych inżynierów, kierowników budów i wykwalifikowanych specjalistów, dla których nie ma wyzwań niemożliwych. Budujemy nie tylko obiekty, ale i trwałe relacje."
+msgstr "За кожним збудованим об'єктом стоїть злагоджена команда експертів. MBT — це досвідчені інженери, виконроби та спеціалісти, для яких немає неможливих викликів. Ми будуємо не лише споруди, а й міцні партнерські відносини."
+
+msgid "Zaangażowania"
+msgstr "Відданість"
+
+msgid "Zaawansowane PPOŻ"
+msgstr "Передовий протипожежний захист"
+
+msgid "Zaawansowane instalacje technologiczne"
+msgstr "Передові технологічні комунікації"
+
+msgid "Zachód"
+msgstr "Захід"
 
 msgid "Zadowolonych klientów"
 msgstr "Задоволених клієнтів"
 
-msgid "Gdzie budujemy?"
-msgstr "Де ми будуємо?"
+msgid "Zadzwoń do nas"
+msgstr "Зателефонуйте нам"
+
+msgid "Zadzwoń do nas bezpośrednio"
+msgstr "Зателефонуйте нам прямо зараз"
+
+msgid "Zakres usług"
+msgstr "Спектр послуг"
+
+msgid "Zaloguj się"
+msgstr "Увійти"
+
+msgid "Zaloguj się, aby pobrać banery z wgranym logo."
+msgstr "Увійдіть, щоб завантажити банери із завантаженим логотипом."
+
+msgid "Zaloguj się, aby wgrać swoje logo i pobrać banery przygotowane pod druk."
+msgstr "Увійдіть, щоб завантажити своє логотип і отримати банери, підготовлені до друку."
+
+msgid "Zamów <strong>dokładnie to, czego potrzebujesz</strong>"
+msgstr "Замовляйте <strong>саме те, що вам потрібно</strong>"
+
+msgid "Zanim wbijemy pierwszą łopatę, wznosimy Twój obiekt w środowisku cyfrowym. Modelowanie daje pełną kontrolę nad kolizjami projektowymi i pilnuje budżetu."
+msgstr "Перш ніж розпочати земляні роботи, ми зводимо об'єкт у цифровому середовищі BIM. Моделювання дає повний контроль над колізіями та бюджетом."
+
+msgid "Zapewniamy odpowiednią infrastrukturę prądową i sieciową do obsługi automatyki magazynowej, robotów samojezdnych (AGV) oraz systemów zarządzania magazynem (WMS)."
+msgstr "Ми забезпечуємо електро- та мережеву інфраструктуру для складської автоматизації, роботів AGV та систем WMS."
+
+msgid "Zapewniamy pełną gotowość na wymagania nowoczesnego przemysłu i standardy Przemysłu 4.0."
+msgstr "Забезпечуємо повну готовність до вимог сучасної індустрії та стандартів Індустрії 4.0."
+
+msgid "Zapisz hasło"
+msgstr "Зберегти пароль"
+
+msgid "Zaplecze biurowo-socjalne o wysokim standardzie"
+msgstr "Офісно-побутовий блок високого стандарту"
+
+msgid "Zapomniałem hasła"
+msgstr "Я забув пароль"
+
+msgid "Zapomniałeś hasła?"
+msgstr "Забули пароль?"
+
+msgid "Zaprojektuj i wybuduj"
+msgstr "Проектуй і будуй"
+
+msgid "Zaprojektuj-wybuduj"
+msgstr "Проектуй і будуй"
+
+msgid "Zapytaj o budowę"
+msgstr "Запитати про будівництво"
+
+msgid "Zapytaj o projekt"
+msgstr "Запитати про проект"
+
+msgid "Zapytaj o wsparcie"
+msgstr "Запитати про підтримку"
+
+msgid "Zapytaj o wycenę"
+msgstr "Запитати про вартість"
+
+msgid "Zapytaj o wycenę i harmonogram"
+msgstr "Запитати про розрахунок вартості та графік"
+
+msgid "Zarządzanie logistyką w trudnym otoczeniu"
+msgstr "Управління логістикою у складних міських умовах"
+
+msgid "Zaufali nam"
+msgstr "Нам довіряють"
+
+msgid "Zaufanych marek"
+msgstr "Надійних брендів"
+
+msgid "Założyciele MBT — Jacek Lewandowski i Tomasz Kalisz — zgromadzili zespół złożony z Menadżerów Projektu, Kierowników, Inżynierów i Projektantów, wiedząc, że to ludzie stanowią o sile firmy."
+msgstr "Засновники MBT — Яцек Лєвандовський та Томаш Каліш — зібрали команду Керівників Проектів, Менеджерів, Інженерів і Проектувальників, знаючи, що саме люди є головною силою компанії."
+
+msgid "Zbudujemy magazyn, który przyspieszy Twoją dystrybucję. Pokaż nam swój biznesplan, a my dostarczymy obiekt, który sprosta Twoim ambicjom."
+msgstr "Ми збудуємо склад, який пришвидшить вашу логістику. Покажіть нам бізнес-план, і ми створимо об'єкт для ваших амбіцій."
+
+msgid "Zbudujmy halę produkcyjną nowej generacji"
+msgstr "Збудуймо виробничий цех нового покоління"
+
+msgid "Zdjęcia z artykułu"
+msgstr "Фотографії зі статті"
+
+msgid "Zdjęcia z realizacji"
+msgstr "Фотографії з проекту"
+
+msgid "Zespół"
+msgstr "Команда"
+
+msgid "Zespół MBT"
+msgstr "Команда MBT"
+
+msgid "Zespół specjalistów"
+msgstr "Команда експертів"
+
+msgid "Zjazdy, przyłącza mediów i instalacje OZE"
+msgstr "З'їзди, підключення комунікацій та інсталяції ВДЕ"
+
+msgid "Zmień hasło"
+msgstr "Змінити пароль"
+
+msgid "Znajdź opiekuna dla swojego regionu"
+msgstr "Знайдіть представника для свого регіону"
+
+msgid "Zobacz"
+msgstr "Переглянути"
+
+msgid "Zobacz cały zespół"
+msgstr "Подивитися всю команду"
+
+msgid "Zobacz efekty naszej pracy"
+msgstr "Переглянути результати нашої роботи"
+
+msgid "Zobacz jak pracujemy"
+msgstr "Подивіться, як ми працюємо"
 
 msgid "Zobacz nasze inwestycje na interaktywnej mapie Polski"
-msgstr "Перегляньте наші інвестиції на інтерактивній карті Польщі"
+msgstr "Перегляньте наші проекти на інтерактивній карті Польщі"
+
+msgid "Zobacz ofertę"
+msgstr "Переглянути пропозицію"
+
+msgid "Zobacz pełen opis"
+msgstr "Переглянути повний опис"
+
+msgid "Zobacz pełen opis realizacji"
+msgstr "Переглянути повний опис проекту"
 
 msgid "Zobacz projekt"
 msgstr "Переглянути проект"
 
-msgid "GENERALNE WYKONAWSTWO"
-msgstr "GENERAL CONTRACTING"
+msgid "Zobacz realizacje"
+msgstr "Дивитися проекти"
+
+msgid "Zobacz realizację"
+msgstr "Переглянути проект"
+
+msgid "Zobacz stronę GW"
+msgstr "Переглянути сторінку ГП"
+
+msgid "Zobacz szczegóły realizacji"
+msgstr "Переглянути деталі проекту"
+
+msgid "Zobacz wszystkie aktualności"
+msgstr "Переглянути всі новини"
+
+msgid "Zobacz wszystkie realizacje"
+msgstr "Переглянути всі проекти"
+
+msgid "Zobacz wszystkie wpisy"
+msgstr "Переглянути всі публікації"
+
+msgid "Zobacz, co już <strong>zbudowaliśmy</strong>"
+msgstr "Подивіться, що ми вже <strong>збудували</strong>"
+
+msgid "Zoptymalizuj swój łańcuch dostaw"
+msgstr "Оптимізуйте свій ланцюг поставок"
+
+msgid "Zostaw dane kontaktowe, a nasi eksperci <strong>oddzwonią</strong>"
+msgstr "Залиште контактні дані, і наші експерти вам <strong>перетелефонують</strong>"
+
+msgid "Zrealizowane"
+msgstr "Завершені"
+
+msgid "Zrealizowane:"
+msgstr "Завершені:"
+
+msgid "Zrealizowanych inwestycji"
+msgstr "Реалізованих проектів"
+
+msgid "Zrównoważone budownictwo"
+msgstr "Екологічне будівництво"
+
+msgid "Zza kulis"
+msgstr "За лаштунками"
+
+msgid "biurowce"
+msgstr "офісні приміщення"
+
+msgid "budowa pod klucz"
+msgstr "будівництво під ключ"
+
+msgid "centra logistyczne"
+msgstr "логістичні центри"
+
+msgid "generalny wykonawca"
+msgstr "генеральний підрядник"
+
+msgid "gwarantowana umową"
+msgstr "гарантована договором"
+
+msgid "hale magazynowe"
+msgstr "складські приміщення"
+
+msgid "hale produkcyjne"
+msgstr "виробничі цехи"
+
+msgid "język"
+msgstr "мова"
+
+msgid "kierownik"
+msgstr "керівник"
+
+msgid "lat doświadczenia"
+msgstr "років досвіду"
+
+msgid "lat na rynku"
+msgstr "років на ринку"
+
+msgid "min. 8 znaków"
+msgstr "мін. 8 символів"
+
+msgid "m² powierzchni"
+msgstr "м² площі"
+
+msgid "m² wybudowanych hal"
+msgstr "м² збудованих цехів"
+
+msgid "np. Warszawa, Kraków, Poznań, Gdańsk, Zabrze..."
+msgstr "наприклад Варшава, Краків, Познань, Гданськ, Забже..."
+
+msgid "obiekty przemysłowe"
+msgstr "промислові об'єкти"
+
+msgid "oddanych „pod kluczem"
+msgstr "зданих «під ключ»"
+
+msgid "parki handlowe"
+msgstr "торгові парки"
+
+msgid "realizacji"
+msgstr "проектів"
+
+msgid "salony samochodowe"
+msgstr "автосалони"
+
+msgid "self storage"
+msgstr "self storage"
+
+msgid "zaangażowania"
+msgstr "відданості"
+
+msgid "zaprojektuj - wybuduj"
+msgstr "проектуй - будуй"
+
+msgid "zrealizowanych inwestycji"
+msgstr "реалізованих проектів"
+
+msgid "Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym."
+msgstr "Поєднуємо 20-річний інженерний досвід із сучасним управлінням будівельним процесом."
+

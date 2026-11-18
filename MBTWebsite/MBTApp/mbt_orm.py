@@ -62,6 +62,14 @@ def _t(trans_dict, lang='pl', fallback=''):
 
     if not isinstance(trans_dict, dict):
         if fallback and lang != 'pl':
+            try:
+                from django.utils.translation import override as _override, gettext as _gettext
+                with _override(lang):
+                    gt = _gettext(fallback)
+                    if gt and gt != fallback:
+                        return gt
+            except Exception:
+                pass
             return translate(fallback, source='pl', target=lang)
         return fallback
 
@@ -71,6 +79,14 @@ def _t(trans_dict, lang='pl', fallback=''):
 
     pl_text = trans_dict.get('pl') or fallback
     if pl_text and lang != 'pl':
+        try:
+            from django.utils.translation import override as _override, gettext as _gettext
+            with _override(lang):
+                gt = _gettext(pl_text)
+                if gt and gt != pl_text:
+                    return gt
+        except Exception:
+            pass
         return translate(pl_text, source='pl', target=lang)
     
     return pl_text
