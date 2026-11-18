@@ -50,7 +50,7 @@ TITLE_FIXES = {'ponar-wadowice': 'Ponar Wadowice S.A.'}
 PHOTO_POS = {'michal-swoboda': '50% 45%'}
 OTHER_SECTOR = 'inne'  # realizacje z CMS bez przypisanego sektora w danych
 # Nowe rekordy oznaczone jako „W trakcie realizacji” (jak pozostałe karty z logo).
-IN_PROGRESS_NEW = {9, 17, 31, 50, 51}
+IN_PROGRESS_NEW = {9, 14, 17, 31, 50, 51}
 # Rekordy usunięte z serwisu całkowicie (baza + mbt_data.py) — lista w portfolio_records.py.
 REMOVED_SLUGS = _REMOVED
 # Wcześniej doklejone bloki opisu, które trzeba zdjąć przed doklejeniem nowej wersji (nr -> teksty).
