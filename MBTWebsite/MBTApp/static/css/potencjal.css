@@ -1,5 +1,5 @@
 /* Potencjał i referencje — styl MBT (prefiks .pot-). Hero/marquee/przyciski: klasy gw-* z mbt-override. */
-.pot{--navy:var(--theme-color,#2b3fd6);--blue:var(--theme-color,#2b3fd6);--or:var(--yellow-color,#EF6630);--or-txt:#C2410C;--dark:var(--black-color,#191C20);--ttl:var(--title-color,#191C20);--t1:var(--smoke-color3,#F6F8FF);--t2:var(--smoke-color,#ECF2FE);--t3:var(--smoke-color2,rgba(255,255,255,.85));--grey:var(--body-color,#4D4D4D);--sh:0 5px 25px rgba(15,30,60,.08);--sh2:0 20px 50px rgba(15,30,60,.18);color:var(--grey);font-family:var(--body-font,"Noto Sans",sans-serif);line-height:1.7}
+.pot{--navy:#023E7C;--blue:var(--theme-color,#2b3fd6);--or:var(--yellow-color,#EF6630);--or-txt:#C2410C;--dark:var(--black-color,#191C20);--ttl:var(--title-color,#191C20);--t1:var(--smoke-color3,#F6F8FF);--t2:var(--smoke-color,#ECF2FE);--t3:var(--smoke-color2,rgba(255,255,255,.85));--grey:var(--body-color,#4D4D4D);--sh:0 5px 25px rgba(15,30,60,.08);--sh2:0 20px 50px rgba(15,30,60,.18);color:var(--grey);font-family:var(--body-font,"Noto Sans",sans-serif);line-height:1.7}
 .pot *,.pot *::before,.pot *::after{box-sizing:border-box}
 .pot ul,.pot ol{list-style:none;margin:0;padding:0}
 .pot h1,.pot h2,.pot h3,.pot h4{font-family:var(--title-font,"Technor","Noto Sans",sans-serif);color:var(--ttl);margin:0;line-height:1.2}
@@ -242,3 +242,9 @@
 .pot-org-reports>li::before{content:"";position:absolute;left:50%;top:-24px;width:2px;height:24px;margin-left:-1px;background:rgba(43,63,214,.28)}
 .pot-org-reports>li{position:relative}
 }
+
+/* akcenty-wypełnienia w granacie z logo (#023E7C) */
+.pot-steps-n{background:var(--navy)}
+.pot-chip-btn[aria-pressed=true]{background:var(--navy);border-color:var(--navy)}
+.pot-chip-btn{border-color:var(--navy);color:var(--navy)}
+.pot .pot-person-btn:hover{background:var(--navy);border-color:var(--navy)}
