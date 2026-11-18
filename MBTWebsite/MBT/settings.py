@@ -27,7 +27,8 @@ load_dotenv(BASE_DIR / '.env')
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'dev-insecure-key-change-me')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
+# Domyślnie WYŁĄCZONY — lokalnie ustaw DJANGO_DEBUG=True w .env.
+DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
 # Domyślnie zezwól na localhost (dev); na produkcji ustaw DJANGO_ALLOWED_HOSTS
 # np. 'mbt-site.vercel.app,www.mbt.pl,admin.mbt.pl' (przecinkami, bez spacji).
@@ -47,6 +48,21 @@ else:
 
 CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app', 'https://*.mbt.pl', 'https://mbt.pl']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Ciasteczka tylko przez HTTPS na produkcji (sesje są w podpisanych ciasteczkach,
+# więc to one przenoszą zalogowanie do panelu admina).
+if not DEBUG:
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    LANGUAGE_COOKIE_SECURE = True
+    SESSION_COOKIE_HTTPONLY = True
+    SESSION_COOKIE_SAMESITE = 'Lax'
+    # Przekierowanie HTTP->HTTPS robi Vercel; to zabezpieczenie na wypadek innego hostingu.
+    SECURE_SSL_REDIRECT = os.getenv('DJANGO_SECURE_SSL_REDIRECT', 'True') == 'True'
+    # HSTS wysyła też vercel.json — tu dla spójności z `manage.py check --deploy`.
+    SECURE_HSTS_SECONDS = 63072000
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
 
 
 # Zezwól na osadzenie strony w iframe edytora CSS (/static/design/editor.html)
@@ -69,6 +85,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    # Musi być pierwszy — ustawia Cache-Control dla CDN po przetworzeniu odpowiedzi przez resztę.
+    'MBTApp.middleware.PublicPageCacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'MBTApp.middleware.SeoRedirectMiddleware',
@@ -142,6 +160,11 @@ if dj_database_url and db_url:
         )
     }
 else:
+    if os.getenv('VERCEL') == '1':
+        # SQLite w /tmp na Vercel jest ulotny — każda zmiana z CMS zniknie przy
+        # kolejnym zimnym starcie. Ustaw DATABASE_URL (Postgres) w panelu Vercel.
+        import sys
+        print('UWAGA: brak DATABASE_URL na Vercel — używam ulotnej kopii SQLite w /tmp.', file=sys.stderr)
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -283,6 +306,14 @@ LOGGING = {
             'backupCount': 5,
             'formatter': 'verbose',
         },
+        # Na produkcji (Vercel) logi z stderr trafiają do zakładki Logs — bez tego
+        # ostrzeżenia aplikacji przy DEBUG=False nigdzie się nie pojawiały.
+        'console_prod': {
+            'level': 'WARNING',
+            'filters': ['require_debug_false'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
         'mail_admins': {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
@@ -297,12 +328,12 @@ LOGGING = {
             'propagate': True,
         },
         'django.request': {
-            'handlers': ['mail_admins', 'file'],
+            'handlers': ['console_prod', 'mail_admins', 'file'],
             'level': 'ERROR',
             'propagate': False,
         },
         'MBTApp': {
-            'handlers': ['console', 'file'],
+            'handlers': ['console', 'console_prod', 'file'],
             'level': 'INFO',
             'propagate': False,
         },
@@ -339,6 +370,9 @@ if not LOG_TO_FILE:
 LOGIN_URL = '/admin-budowa/login/'
 LOGIN_REDIRECT_URL = '/admin-budowa/panel/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Ile sekund CDN (Vercel) może trzymać publiczne strony HTML (0 = wyłączone).
+PUBLIC_PAGE_CACHE_SECONDS = int(os.getenv('PUBLIC_PAGE_CACHE_SECONDS', '60'))
 WHITENOISE_USE_FINDERS = True
 WHITENOISE_MAX_AGE = 2592000
 

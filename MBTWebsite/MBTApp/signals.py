@@ -1,78 +1,38 @@
-"""Sygnały Django — automatyczna regeneracja mbt_data.py po zapisie w CMS.
+"""Sygnały Django — odświeżanie danych publicznej strony po zapisie w CMS.
 
-Gdy w adminie zapiszesz dowolny model (realizację, artykuł, pracownika...),
-ten moduł odtwarza MBTApp/mbt_data.py z bazy. Dzięki temu Vercel (który nie
-ma bazy SQLite) po Twoim `git push` pokazuje te same dane co localhost.
+Dane z bazy czytane są przez MBTApp.mbt_orm z krótkim cache'em w pamięci
+procesu. Po zapisie/usunięciu dowolnego modelu treści czyścimy ten cache, żeby
+zmiana z panelu admina była widoczna od razu (w tym procesie). Inne instancje
+(np. funkcje Vercel) odświeżą się po CACHE_TTL, a CDN po PUBLIC_PAGE_CACHE_SECONDS.
 """
-import os
-import subprocess
-import sys
-import threading
+import logging
 
 from django.db import transaction
-from django.db.models.signals import post_save, post_delete
-from django.dispatch import receiver
+from django.db.models.signals import post_delete, post_save
 
-from MBTApp.models import Article, Job, Project, Reference, SiteConfig, SitePhotos, Worker, SalesRepresentative, Award
+from MBTApp.models import (
+    Article, Award, Job, Project, Reference, SalesRepresentative, Sector,
+    SiteConfig, SitePhotos, Worker,
+)
 
-# Zabezpieczenie przed rekurencją: generator importuje mbt_data przy braku
-# rekordu SiteConfig — ale nie zapisuje nic do bazy, więc nie wywoła sygnału.
-_GENERATING = False
+logger = logging.getLogger(__name__)
 
-
-def _regenerate():
-    global _GENERATING
-    if _GENERATING:
-        return
-    _GENERATING = True
-    try:
-        base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        script = os.path.join(base, 'scripts', 'gen_mbt_data.py')
-        if not os.path.exists(script):
-            return
-        python = sys.executable
-        env = dict(os.environ)
-        env.pop('PYTHONPATH', None)
-        proc = subprocess.run(
-            [python, script],
-            capture_output=True, text=True, timeout=60,
-            cwd=base, env=env,
-        )
-        if proc.returncode != 0:
-            print(f'[signals] regeneracja mbt_data.py NIEUDANA: {proc.stderr[-300:]}')
-        else:
-            print('[signals] mbt_data.py zregenerowany po zapisie w CMS')
-    except Exception as e:
-        print(f'[signals] błąd regeneracji mbt_data.py: {e}')
-    finally:
-        _GENERATING = False
+_MODELS = (
+    Project, Job, Worker, Reference, Article, SiteConfig, SitePhotos,
+    SalesRepresentative, Award, Sector,
+)
 
 
-def _async_regenerate():
-    t = threading.Thread(target=_regenerate, daemon=True)
-    t.start()
+def _clear_cache():
+    from MBTApp import mbt_orm
+    mbt_orm._CACHE.clear()
 
 
-_MODELS = (Project, Job, Worker, Reference, Article, SiteConfig, SitePhotos)
-
-
-@receiver(post_save, sender=Project)
-@receiver(post_save, sender=Job)
-@receiver(post_save, sender=Worker)
-@receiver(post_save, sender=Reference)
-@receiver(post_save, sender=Article)
-@receiver(post_save, sender=SiteConfig)
-@receiver(post_save, sender=SitePhotos)
-@receiver(post_save, sender=SalesRepresentative)
-@receiver(post_save, sender=Award)
-@receiver(post_delete, sender=Project)
-@receiver(post_delete, sender=Job)
-@receiver(post_delete, sender=Worker)
-@receiver(post_delete, sender=Reference)
-@receiver(post_delete, sender=Article)
-@receiver(post_delete, sender=SiteConfig)
-@receiver(post_delete, sender=SitePhotos)
-@receiver(post_delete, sender=SalesRepresentative)
-@receiver(post_delete, sender=Award)
 def _on_change(sender, **kwargs):
-    transaction.on_commit(_async_regenerate)
+    # Po commicie, żeby kolejny odczyt widział już zapisane dane.
+    transaction.on_commit(_clear_cache)
+
+
+for _model in _MODELS:
+    post_save.connect(_on_change, sender=_model, dispatch_uid=f'mbt_cache_save_{_model.__name__}')
+    post_delete.connect(_on_change, sender=_model, dispatch_uid=f'mbt_cache_delete_{_model.__name__}')

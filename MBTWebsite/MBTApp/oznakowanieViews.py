@@ -1,11 +1,5 @@
 """Panel Oznakowanie Budowy — kierownicy pobierają banery z wgranym logo."""
-import io
-import os
-import uuid
-from datetime import datetime
-from io import BytesIO
 
-from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
@@ -16,7 +10,7 @@ from django.urls import reverse
 from django.utils import timezone
 from django.utils.translation import gettext as _
 
-from MBTApp.models import BannerDownload, BannerTemplate, UserProfile
+from MBTApp.models import BannerDownload, BannerTemplate
 
 # Lazy PIL (Pillow nie jest w .venv Django — używamy hermes-agent venv przez subprocess)
 # Na serwerze deweloperskim importujemy PIL; w razie braku zwrócimy fallback.
@@ -446,7 +440,6 @@ def _download_view(request, slug):
     from django.contrib import messages
     from datetime import datetime
     from io import BytesIO
-    import os
 
     template = BannerTemplate.objects.filter(slug=slug, is_active=True).first()
     if not template:

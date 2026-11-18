@@ -41,6 +41,12 @@ LEGACY_PROJECT_SLUGS = {
     'stokado-self-storage-cracow': 'stokado-self-storage-krakow',
     'canpack-bss-excellence-centre-brzesk': 'canpack-bss-lab-brzesk',
     'toto-golgoczow': 'toto-glogoczow',
+    'vesuvius': 'vesuvius-skawina',
+    'p1704': 'epco-bytom',
+}
+
+LEGACY_JOB_SLUGS = {
+    'p2253': 'praktyka-staz',
 }
 
 _SLUG_CACHE = None
@@ -122,6 +128,11 @@ class SeoRedirectMiddleware:
                 elif content_parts[0] == 'realizacja-w-trakcie':
                     return HttpResponsePermanentRedirect(f"{lang_prefix}/realizacje/")
 
+            if len(content_parts) > 1 and content_parts[0] == 'kariera':
+                new_job = LEGACY_JOB_SLUGS.get(content_parts[1].lower())
+                if new_job:
+                    return HttpResponsePermanentRedirect(f"{lang_prefix}/kariera/{new_job}/")
+
             if content_parts and content_parts[0] == 'realizacje-w-trakcie':
                 return HttpResponsePermanentRedirect(f"{lang_prefix}/realizacje/")
 
@@ -197,4 +208,56 @@ class AutoLanguageMiddleware:
         if set_lang:
             response.set_cookie(settings.LANGUAGE_COOKIE_NAME, set_lang)
 
+        return response
+
+
+class PublicPageCacheMiddleware:
+    """Pozwala CDN Vercela cache'ować publiczne strony HTML (s-maxage).
+
+    Bez tego każde wejście uruchamia funkcję Pythona (zimny start = kilka sekund).
+    Cache'ujemy TYLKO odpowiedzi, które są identyczne dla wszystkich odwiedzających:
+      * GET/HEAD, status 200, brak własnego Cache-Control z widoku,
+      * brak Set-Cookie w odpowiedzi i brak użytego tokenu CSRF (formularze),
+      * żądanie bez ciasteczka sesji (zalogowani admini dostają świeżą stronę),
+      * ścieżki spoza panelu/API/wyszukiwarki.
+    Zmiany z CMS są widoczne najpóźniej po PUBLIC_PAGE_CACHE_SECONDS.
+
+    Musi być PIERWSZYM middleware na liście (widzi odpowiedź po wszystkich innych).
+    """
+
+    EXCLUDED_PREFIXES = (
+        '/admin', '/admin-budowa', '/api/', '/i18n/', '/kiosk', '/media/',
+        '/szukaj', '/ankieta-wizerunek', '/uroczys',
+    )
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+        self.seconds = int(getattr(settings, 'PUBLIC_PAGE_CACHE_SECONDS', 600))
+
+    def _excluded_path(self, path):
+        stripped = path
+        lang_codes = {code for code, _ in getattr(settings, 'LANGUAGES', [])}
+        parts = path.split('/', 2)
+        if len(parts) > 2 and parts[1] in lang_codes:
+            stripped = '/' + parts[2]
+        return stripped.startswith(self.EXCLUDED_PREFIXES) or '/admin-budowa' in path
+
+    def __call__(self, request):
+        response = self.get_response(request)
+        if (
+            self.seconds <= 0
+            or settings.DEBUG
+            or request.method not in ('GET', 'HEAD')
+            or response.status_code != 200
+            or response.has_header('Cache-Control')
+            or response.cookies
+            or request.META.get('CSRF_COOKIE_NEEDS_UPDATE')
+            or settings.SESSION_COOKIE_NAME in request.COOKIES
+            or self._excluded_path(request.path)
+            or not response.get('Content-Type', '').startswith(('text/html', 'application/xml', 'text/plain'))
+        ):
+            return response
+        response['Cache-Control'] = (
+            f'public, max-age=0, s-maxage={self.seconds}, stale-while-revalidate=86400'
+        )
         return response

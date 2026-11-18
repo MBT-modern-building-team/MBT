@@ -2280,7 +2280,7 @@ JOBS = [{'order': 0,
           'wypełnić formularz. Przejdź do formularza aplikacji',
   'title': 'Manager ds. handlowych'},
  {'order': 0,
-  'slug': 'p2253',
+  'slug': 'praktyka-staz',
   't_t': {'cs': 'Praxe/Stáž',
           'de': 'Praktikum / Hospitation',
           'en': 'Internship / Placement',
@@ -2459,7 +2459,7 @@ PHOTOS = {'about_1': '/static/img/mbt/o-nas-1.jpg',
  'home_bg_cta': '/static/img/bg/cta-bg3-1.png',
  'home_bg_why': '/static/img/bg/why-bg3-1.png',
  'home_client_group': '',
- 'home_hero_bg': '/static/img/hero/hero_bg_3_1.png',
+ 'home_hero_bg': '/static/img/hero/hero_bg_3_1.webp',
  'home_o_nas_2': '/static/img/mbt/o-nas-2.jpg',
  'home_o_nas_zespol': 'https://media.mbt.pl/uploads/c4f9f468d740.webp',
  'home_realizacja': '/static/img/mbt/realizacja-eurosleeve.jpg',
@@ -2494,10 +2494,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.0199155,
   'logo': '/static/img/mbt/1718005265186-2efb17dd-48b4-4732-ac49-4f435ead9e69_1-acf11eeb.jpg',
   'longitude': 20.0948933,
-  'opis': 'Powierzchnia hali produkcyjnej: około 6500 m² Trzykondygnacyjny budynek '
-          'biurowo-socjalny o powierzchni 1500 m² Place manewrowe, drogi dojazdowe, uzbrojenie '
-          'podziemne Zagospodarowanie terenu wokół obiektu Wyposażenie wszystkich naw w suwnice '
-          'Konstrukcja hali mieszana: słupy prefabrykowane, żelbetowe dach w konstrukcji stalowej',
+  'opis': 'Hala produkcyjna z budynkiem biurowo-socjalnym\nPowierzchnia hali produkcyjnej: ok. 6 500 m², trzykondygnacyjny budynek biurowo-socjalny: 1 500 m², place manewrowe, drogi dojazdowe, uzbrojenie podziemne i zagospodarowanie terenu.\nPowierzchnia hali produkcyjnej: około 6500 m² Trzykondygnacyjny budynek biurowo-socjalny o powierzchni 1500 m² Place manewrowe, drogi dojazdowe, uzbrojenie podziemne Zagospodarowanie terenu wokół obiektu Wyposażenie wszystkich naw w suwnice Konstrukcja hali mieszana: słupy prefabrykowane, żelbetowe dach w konstrukcji stalowej',
   'order': 1,
   'slug': 'att-kokotow',
   'status': 'Zrealizowane',
@@ -2543,12 +2540,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.3232916,
   'logo': 'https://media.mbt.pl/media/uploads/fb6676b754f8.webp',
   'longitude': 19.0131504,
-  'opis': 'Budowa hali magazynowo – produkcyjnej z zapleczem socjalno-biurowym.\r\n'
-          '\r\n'
-          'Powierzchnia hali wynosi około 2700 m²\r\n'
-          'Powierzchnia części administracyjno-biurowej wynosi około 300 m²\r\n'
-          '\r\n'
-          'konstrukcja hali w pełni stalowa',
+  'opis': 'Hala magazynowo-produkcyjna z biurowcem\nPowierzchnia hali magazynowo-produkcyjnej: 2 700 m², powierzchnia części biurowej: 300 m². Stalowa konstrukcja nośna na stopach fundamentowych, place manewrowe, parkingi i pełne uzbrojenie terenu.\nBudowa hali magazynowo – produkcyjnej z zapleczem socjalno-biurowym.\r\n\r\nPowierzchnia hali wynosi około 2700 m²\r\nPowierzchnia części administracyjno-biurowej wynosi około 300 m²\r\n\r\nkonstrukcja hali w pełni stalowa',
   'order': 2,
   'slug': 'pumar',
   'status': 'Zrealizowane',
@@ -2602,10 +2594,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 52.3437589,
   'logo': '/static/img/mbt/preloader-56f61948.png',
   'longitude': 20.9503183,
-  'opis': 'Konstrukcja: żelbetowa, z optymalizacją zużycia stali Obudowa: płyty warstwowe Strop: '
-          'strop żelbetowy pełniący funkcję podłogi o wysokiej jakości wykończenia Ogrzewanie: '
-          'pompy ciepła, wymagające wcześniejszych odwiertów Wyposażenie: zróżnicowane boxy do '
-          'przechowywania, rozmieszczone zgodnie z harmonogramem dostaw i montażu',
+  'opis': '5-kondygnacyjny budynek self-storage z geotermią\n5-kondygnacyjny obiekt z boksami magazynowymi. Innowacyjne instalacje HVAC: ogrzewanie i chłodzenie oparte na rewersyjnych pompach ciepła zintegrowanych z odwiertami geotermalnymi, wewnętrzny układ komunikacyjny, windy towarowo-osobowe, monitoring i kontrola dostępu.\nKonstrukcja: żelbetowa, z optymalizacją zużycia stali Obudowa: płyty warstwowe Strop: strop żelbetowy pełniący funkcję podłogi o wysokiej jakości wykończenia Ogrzewanie: pompy ciepła, wymagające wcześniejszych odwiertów Wyposażenie: zróżnicowane boxy do przechowywania, rozmieszczone zgodnie z harmonogramem dostaw i montażu',
   'order': 3,
   'slug': 'less-mess-storage-warszawa',
   'status': 'Zrealizowane',
@@ -2654,9 +2643,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.1329145,
   'logo': 'https://media.mbt.pl/media/uploads/d0028e1be0ff.webp',
   'longitude': 18.9865084,
-  'opis': 'Na terenie zakładu Kampanii Piwowarskiej realizowaliśmy przebudowę starej hali. Projekt '
-          'zrealizowaliśmy w taki sposób aby jak najbardziej nawiązywał do historycznej '
-          'architektury browaru.',
+  'opis': 'Strefa doków TIR, wiaty magazynowe, myjnia pojazdów ciężarowych i stanowisko zrzutu piwa\nStrefa doków przeładunkowych TIR: Budowa i modernizacja strefy doków przeładunkowych dla samochodów ciężarowych. Rampy elektrohydrauliczne, fartuchy uszczelniające, automatyczne bramy dokowe, zbrojone nawierzchnie z betonu drogowego o wysokiej nośności pod intensywny ruch TIR. Wielkogabarytowa wiata magazynowa: Stalowa konstrukcja wiaty o podwyższonej odporności na korozję (powłoki C4/C5), płyty z betonu drogowego ze spadkami pod składowanie palet z butelkami i kegami. Zespół wiat magazynowych z placami składowymi: Zadaszone przestrzenie buforowe magazynowania surowców i opakowań, zbrojone płyty betonowe z odwodnieniem liniowym, odporne na intensywny ruch wózków widłowych. Zakładowa myjnia pojazdów ciężarowych z oczyszczalnią ścieków: Specjalistyczna myjnia dla floty ciężarowej i wózków widłowych. Zamknięty obieg wody myjącej, separatory ropopochodne, osadniki zawiesin, posadzki żywiczne chemoodporne ze stali nierdzewnej w strefie cokołowej. Stanowisko zrzutu i wylewki piwa z instalacją kwasoodporną: Strefa zrzutu i neutralizacji piwa pozaklasowego. Posadzka kwasoodporna, rurociągi ze stali kwasoodpornej AISI 316L, neutralizacja ścieków przemysłowych.\nNa terenie zakładu Kampanii Piwowarskiej realizowaliśmy przebudowę starej hali. Projekt zrealizowaliśmy w taki sposób aby jak najbardziej nawiązywał do historycznej architektury browaru.',
   'order': 4,
   'slug': 'kompania-piwowarska-tychy',
   'status': 'Zrealizowane',
@@ -2693,37 +2680,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.214195,
   'logo': 'https://media.mbt.pl/media/uploads/f7dbcc9a7d55.webp',
   'longitude': 18.9753366,
-  'opis': 'Jako Generalny Wykonawca zakończyliśmy budowę kolejnego etapu kompleksu Fabryka Park. '
-          'Zrealizowaliśmy trzykondygnacyjną bryłę o charakterze biurowym, która pełni funkcję '
-          'nowoczesnego parku handlowo-usługowego. Inwestycja została oddana, a obecnie wewnątrz '
-          'trwają prace fit-out prowadzone przez najemców.\r\n'
-          '\r\n'
-          'Parametry inwestycji:\r\n'
-          '\r\n'
-          'Formuła: Generalne Wykonawstwo\r\n'
-          '\r\n'
-          'Czas realizacji: 06.2025 – 04.2026\r\n'
-          '\r\n'
-          'Powierzchnia użytkowa: 2 490,14 m² (pow. wewnętrzna: 3 191,5 m²)\r\n'
-          '\r\n'
-          'Kubatura: 17 231,9 m³\r\n'
-          '\r\n'
-          'Konstrukcja: Mieszana\r\n'
-          '\r\n'
-          'Najemcy:\r\n'
-          'Główną część obiektu zajmą placówka medyczna MEDICOVER oraz klub XTREME FITNESS. Ofertę '
-          'uzupełniają mniejsze lokale: KROWA MAĆ, DR MATERAC i LIKE A PET.\r\n'
-          '\r\n'
-          'Technologia i Wyzwania:\r\n'
-          '\r\n'
-          'Elewacja: Zastosowano nowoczesną fasadę z siatki cięto-ciągnionej.\r\n'
-          '\r\n'
-          'Ekologia: Na dachu zainstalowano panele fotowoltaiczne. Obiekt jest w trakcie '
-          'procedowania certyfikatu BREEAM.\r\n'
-          '\r\n'
-          'Logistyka: Największym wyzwaniem była skomplikowana konstrukcja, napięty harmonogram '
-          'oraz prowadzenie prac w bezpośrednim sąsiedztwie czynnego parku handlowego i linii '
-          'kolejowej.',
+  'opis': 'Kompleks handlowo-usługowo-medyczny z klubem fitness\nPowierzchnia użytkowa: 2 490 m², kubatura brutto: 17 232 m³, powierzchnia wewnętrzna: 3 192 m². Konstrukcja szkieletowa z prefabrykowanych słupów i belek żelbetowych, stropy ze sprężonych płyt kanałowych HC, parter wykończony płytami dibond, piętra z unikatową fasadą z siatki cięto-ciągnionej, pylon reklamowy, parkingi.\nJako Generalny Wykonawca zakończyliśmy budowę kolejnego etapu kompleksu Fabryka Park. Zrealizowaliśmy trzykondygnacyjną bryłę o charakterze biurowym, która pełni funkcję nowoczesnego parku handlowo-usługowego. Inwestycja została oddana, a obecnie wewnątrz trwają prace fit-out prowadzone przez najemców.\r\n\r\nParametry inwestycji:\r\n\r\nFormuła: Generalne Wykonawstwo\r\n\r\nCzas realizacji: 06.2025 – 04.2026\r\n\r\nPowierzchnia użytkowa: 2 490,14 m² (pow. wewnętrzna: 3 191,5 m²)\r\n\r\nKubatura: 17 231,9 m³\r\n\r\nKonstrukcja: Mieszana\r\n\r\nNajemcy:\r\nGłówną część obiektu zajmą placówka medyczna MEDICOVER oraz klub XTREME FITNESS. Ofertę uzupełniają mniejsze lokale: KROWA MAĆ, DR MATERAC i LIKE A PET.\r\n\r\nTechnologia i Wyzwania:\r\n\r\nElewacja: Zastosowano nowoczesną fasadę z siatki cięto-ciągnionej.\r\n\r\nEkologia: Na dachu zainstalowano panele fotowoltaiczne. Obiekt jest w trakcie procedowania certyfikatu BREEAM.\r\n\r\nLogistyka: Największym wyzwaniem była skomplikowana konstrukcja, napięty harmonogram oraz prowadzenie prac w bezpośrednim sąsiedztwie czynnego parku handlowego i linii kolejowej.',
   'order': 5,
   'slug': 'fabryka-park-katowice',
   'status': 'Zrealizowane',
@@ -2908,11 +2865,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.3461723,
   'logo': '/static/img/mbt/Projekt-bez-nazwy-16-737059f4.png',
   'longitude': 18.8076197,
-  'opis': 'Powierzchnia hali: 2333,43 m² Powierzchnia części socjalno-biurowej: 449,93 m² Sieci i '
-          'instalacje na potrzeby realizowanej inwestycji Zagospodarowanie terenu Konstrukcja: '
-          'Konstrukcja hali w słupy żelbetowe prefabrykowane Konstrukcja dachu hali stalowa '
-          'Elewacja z płyt warstwowych Pokrycie dachu z izolacją z PIR i pokryciem membraną PCV '
-          'Konstrukcja budynku biurowego mieszana (murowana, stropy i płyta żelbetowa)',
+  'opis': 'Hala produkcyjno-magazynowa wyrobów opakowaniowych\nPowierzchnia hali: 2 333 m², część socjalno-biurowa: 450 m². Słupy żelbetowe prefabrykowane, stalowa konstrukcja dachu z izolacją PIR i membraną PVC, posadzka bezspoinowa.\nPowierzchnia hali: 2333,43 m² Powierzchnia części socjalno-biurowej: 449,93 m² Sieci i instalacje na potrzeby realizowanej inwestycji Zagospodarowanie terenu Konstrukcja: Konstrukcja hali w słupy żelbetowe prefabrykowane Konstrukcja dachu hali stalowa Elewacja z płyt warstwowych Pokrycie dachu z izolacją z PIR i pokryciem membraną PCV Konstrukcja budynku biurowego mieszana (murowana, stropy i płyta żelbetowa)',
   'order': 6,
   'slug': 'eurosleeve-zabrze',
   'status': 'Zrealizowane',
@@ -2984,22 +2937,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.0621679,
   'logo': 'https://media.mbt.pl/media/uploads/4070af82833b.webp',
   'longitude': 20.0025483,
-  'opis': 'Specyfikacja Powierzchnia użytkowa (łącznie): ok. 4 631 m² , w tym: • Powierzchnia pod '
-          'najem: 3 230,17 m² • Powierzchnia komunikacji: 1 296,71 m² • Powierzchnia pomieszczeń '
-          'technicznych: 44,88 m² • Powierzchnia biurowo-recepcyjna: 59,28 m² Powierzchnia terenu: '
-          '4 150,00 m² Certyfikacja: BREEAM (Very Good) Układ budynku: Budynek na planie '
-          'pięcioboku (zbliżony do prostokąta ze ścięciem), usytuowany w kierunku płd.-wsch. oraz '
-          'płn.-zach. Dach płaski Charakterystyczne przeszklenie na elewacji biegnące przez cztery '
-          'kondygnacje Infrastruktura techniczna: Instalacje OZE: Pompa ciepła, fotowoltaika '
-          'Podziemny zbiornik przeciwpożarowy oraz zbiornik retencyjny na wody deszczowe '
-          'Przebudowa istniejącej sieci wodociągowej Konstrukcja: Część podziemna: Płyta '
-          'fundamentowa monolityczna, żelbetowa Część nadziemna: 5-kondygnacyjna, żelbetowa, w '
-          'układzie słupowo-płytowym Stropy płaskie z lokalnymi pogrubieniami i belkami '
-          'krawędziowymi Sztywność zapewniona przez monolityczny trzon komunikacyjny oraz tarczę '
-          'żelbetową przy ścianie południowej Elewacja: Płyty warstwowe w układzie pionowym (kolor '
-          'szary i pomarańczowy) Fragmenty wykończone tynkiem w kolorze antracytowym '
-          'Zagospodarowanie terenu: Drogi wewnętrzne, chodniki i miejsca postojowe Oświetlenie '
-          'zewnętrzne',
+  'opis': '5-kondygnacyjny budynek self-storage\nKubatura: 17 121 m³, powierzchnia zabudowy: 911 m², 5 kondygnacji naziemnych. Konstrukcja żelbetowa monolityczna, zaawansowane systemy kontroli dostępu, windy przemysłowe, strefa rozładunku drive-in.\nSpecyfikacja Powierzchnia użytkowa (łącznie): ok. 4 631 m² , w tym: • Powierzchnia pod najem: 3 230,17 m² • Powierzchnia komunikacji: 1 296,71 m² • Powierzchnia pomieszczeń technicznych: 44,88 m² • Powierzchnia biurowo-recepcyjna: 59,28 m² Powierzchnia terenu: 4 150,00 m² Certyfikacja: BREEAM (Very Good) Układ budynku: Budynek na planie pięcioboku (zbliżony do prostokąta ze ścięciem), usytuowany w kierunku płd.-wsch. oraz płn.-zach. Dach płaski Charakterystyczne przeszklenie na elewacji biegnące przez cztery kondygnacje Infrastruktura techniczna: Instalacje OZE: Pompa ciepła, fotowoltaika Podziemny zbiornik przeciwpożarowy oraz zbiornik retencyjny na wody deszczowe Przebudowa istniejącej sieci wodociągowej Konstrukcja: Część podziemna: Płyta fundamentowa monolityczna, żelbetowa Część nadziemna: 5-kondygnacyjna, żelbetowa, w układzie słupowo-płytowym Stropy płaskie z lokalnymi pogrubieniami i belkami krawędziowymi Sztywność zapewniona przez monolityczny trzon komunikacyjny oraz tarczę żelbetową przy ścianie południowej Elewacja: Płyty warstwowe w układzie pionowym (kolor szary i pomarańczowy) Fragmenty wykończone tynkiem w kolorze antracytowym Zagospodarowanie terenu: Drogi wewnętrzne, chodniki i miejsca postojowe Oświetlenie zewnętrzne',
   'order': 7,
   'slug': 'stokado-self-storage-krakow',
   'status': 'Zrealizowane',
@@ -3095,15 +3033,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.075889,
   'logo': '/static/img/mbt/Projekt-bez-nazwy-8-4d387861.png',
   'longitude': 19.9411511,
-  'opis': 'Powierzchnia użytkowa:&nbsp; 1468,70 m² Wysokość hali:&nbsp; 8,72 m Kubatura '
-          'hali:&nbsp; 10 244 m³ Część biurowa o&nbsp;powierzchni:&nbsp; 271,2 m² Parkingi '
-          'i&nbsp;place manewrowe Zbiornik przeciwpożarowy (PPOŻ) Rozbudowa i&nbsp;budowa '
-          'infrastruktury technicznej: Kanalizacja deszczowa ze zbiornikiem retencyjnym '
-          'Kanalizacja sanitarna z&nbsp;oczyszczalnią ścieków Sieć grzewcza preizolowana '
-          'Zagospodarowanie terenu wokół obiektu Konstrukcja: Posadowienie bezpośrednio na stopach '
-          'fundamentowych, Konstrukcja hali wykonana w&nbsp;technologii prefabrykowanej '
-          'żelbetowej, dźwigary dachowe sprężone Obudowa hali z&nbsp;płyt warstwowych '
-          'z&nbsp;rdzeniem z&nbsp;wełny skalnej',
+  'opis': 'Hala produkcyjno-magazynowa z częścią biurową oraz podziemny zbiornik retencyjny z rowem odparowująco-odwadniającym\nPowierzchnia hali: 1 469 m² (kubatura: 10 244 m³), część biurowa: 271 m², instalacje wewnętrzne, sieci zewnętrzne, drogi wewnętrzne i place manewrowe. Zbiornik i rów: Budowa podziemnego żelbetowego zbiornika retencyjnego na wody opadowe o dużej pojemności wraz z przepompownią oraz rów odparowująco-odwadniający z układem rozsączającym.\nPowierzchnia użytkowa:&nbsp; 1468,70 m² Wysokość hali:&nbsp; 8,72 m Kubatura hali:&nbsp; 10 244 m³ Część biurowa o&nbsp;powierzchni:&nbsp; 271,2 m² Parkingi i&nbsp;place manewrowe Zbiornik przeciwpożarowy (PPOŻ) Rozbudowa i&nbsp;budowa infrastruktury technicznej: Kanalizacja deszczowa ze zbiornikiem retencyjnym Kanalizacja sanitarna z&nbsp;oczyszczalnią ścieków Sieć grzewcza preizolowana Zagospodarowanie terenu wokół obiektu Konstrukcja: Posadowienie bezpośrednio na stopach fundamentowych, Konstrukcja hali wykonana w&nbsp;technologii prefabrykowanej żelbetowej, dźwigary dachowe sprężone Obudowa hali z&nbsp;płyt warstwowych z&nbsp;rdzeniem z&nbsp;wełny skalnej',
   'order': 8,
   'slug': 'fronton-krakow',
   'status': 'Zrealizowane',
@@ -3205,8 +3135,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.0965337,
   'logo': '/static/img/mbt/logo-browar-3708c41b.jpg',
   'longitude': 18.2200745,
-  'opis': 'Hala magazynowa w konstrukcji stalowej Obudowa z płyt warstwowych Powierzchnia '
-          'posadzki: około 400,0 m² Posadowienie bezpośrednie z lokalną wymianą gruntu',
+  'opis': 'Rozbudowa zabytkowego browaru o halę magazynowo-produkcyjną\nPowierzchnia posadzki: ok. 400 m², konstrukcja stalowa posadowiona bezpośrednio z lokalną wymianą gruntu, prace prowadzone w ścisłej strefie ochrony konserwatorskiej.\nHala magazynowa w konstrukcji stalowej Obudowa z płyt warstwowych Powierzchnia posadzki: około 400,0 m² Posadowienie bezpośrednie z lokalną wymianą gruntu',
   'order': 9,
   'slug': 'browar-zamkowy-raciborz',
   'status': 'Zrealizowane',
@@ -3249,16 +3178,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 52.2177584,
   'logo': '/static/img/mbt/logo-stokado-CMYK.ai_01-scaled-a32efdb4.jpg',
   'longitude': 20.895744,
-  'opis': 'Specyfikacja Powierzchnia użytkowa: 6818,21 m² Powierzchnia terenu: 9142,00 m² '
-          'Certyfikacja: BREEAM (Very Good) Układ budynku: 3 kondygnacje naziemne oraz '
-          'podpiwniczenie, budynek kryty dachem płaskim Przeznaczenie i zagospodarowanie terenu: '
-          'Obiekt usługowy typu self-storage (wynajem powierzchni do przechowywania dla klientów '
-          'indywidualnych) Działalność wspierająca nowoczesną zabudowę wielorodzinną (dodatkowa '
-          'przestrzeń magazynowa dla mieszkańców osiedli) Konstrukcja: Konstrukcja żelbetowa, '
-          'słupowa Sztywność przestrzenna zapewniona przez trzony żelbetowe klatek schodowych oraz '
-          'szachty wind ze ścianami ogniowymi Elewacja: Zasadnicza część elewacji wykonana z płyt '
-          'warstwowych, z wypełnieniem z wełny mineralnej Systemowe obróbki, uszczelnienia i '
-          'elementy montażowe',
+  'opis': '4-kondygnacyjny budynek self-storage z garażami\n4 kondygnacje nadziemne z boksami magazynowymi, garaże w przyziemiu oraz podpiwniczenie, windy towarowo-osobowe dużej nośności, system kontroli dostępu.\nSpecyfikacja Powierzchnia użytkowa: 6818,21 m² Powierzchnia terenu: 9142,00 m² Certyfikacja: BREEAM (Very Good) Układ budynku: 3 kondygnacje naziemne oraz podpiwniczenie, budynek kryty dachem płaskim Przeznaczenie i zagospodarowanie terenu: Obiekt usługowy typu self-storage (wynajem powierzchni do przechowywania dla klientów indywidualnych) Działalność wspierająca nowoczesną zabudowę wielorodzinną (dodatkowa przestrzeń magazynowa dla mieszkańców osiedli) Konstrukcja: Konstrukcja żelbetowa, słupowa Sztywność przestrzenna zapewniona przez trzony żelbetowe klatek schodowych oraz szachty wind ze ścianami ogniowymi Elewacja: Zasadnicza część elewacji wykonana z płyt warstwowych, z wypełnieniem z wełny mineralnej Systemowe obróbki, uszczelnienia i elementy montażowe',
   'order': 11,
   'slug': 'stokado-self-storage-warszawa-bemowo',
   'status': 'Zrealizowane',
@@ -3373,12 +3293,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.1304881,
   'logo': '/static/img/mbt/HS_Logo_blue-scaled-c772a155.jpg',
   'longitude': 19.685079,
-  'opis': 'Powierzchnia użytkowa: 3002 m² Wysokość hali: 7,5 m Kubatura hali: 19 300 m³ Obciążenie '
-          'ogniowe, nie przekraczające 500MJ/m² Dwukondygnacyjny budynek biurowy o powierzchni '
-          '600m² Parkingi i place manewrowe Zagospodarowanie terenu wokół obiektu Konstrukcja: '
-          'posadowienie bezpośrednio na płycie fundamentowej, żelbetowe w technologii betonu '
-          'wodoszczelnego konstrukcja nośna obiektu „mieszana” (prefabrykowane słupy betonowe, '
-          'konstrukcja dachu stalowa)',
+  'opis': 'Zakład produkcyjno-magazynowy komponentów światłowodowych (Etap I i II)\nHala produkcyjna: 3 002 m² (kubatura: 19 300 m³, wysokość: 7,5 m), dwukondygnacyjny budynek biurowy: 600 m² z zapleczem laboratoryjnym. Posadowienie na płycie fundamentowej z betonu wodoszczelnego W8, własne zbiorniki PPOŻ i retencyjne, lokalna oczyszczalnia ścieków, parkingi i place manewrowe.\nPowierzchnia użytkowa: 3002 m² Wysokość hali: 7,5 m Kubatura hali: 19 300 m³ Obciążenie ogniowe, nie przekraczające 500MJ/m² Dwukondygnacyjny budynek biurowy o powierzchni 600m² Parkingi i place manewrowe Zagospodarowanie terenu wokół obiektu Konstrukcja: posadowienie bezpośrednio na płycie fundamentowej, żelbetowe w technologii betonu wodoszczelnego konstrukcja nośna obiektu „mieszana” (prefabrykowane słupy betonowe, konstrukcja dachu stalowa)',
   'order': 12,
   'slug': 'huber-suhner-pisary',
   'status': 'Zrealizowane',
@@ -3428,12 +3343,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.0235169,
   'logo': '/static/img/mbt/eu_logo-scaled-9014591f.jpg',
   'longitude': 20.0861011,
-  'opis': 'Konstrukcja: budynek produkcyjny w technologii prefabrykowanej budynek biurowy wykonany '
-          'w pełnym żelbecie Elewacja: płyty warstwowe na części przemysłowej technologia '
-          'lekka-mokra na części biurowej Dach: hala produkcyjna: kratownice, blacha trapezowa, '
-          'izolacja, membrana część biurowa: klasyczny stropodach, izolacja, membrana Wnętrza: '
-          'industrialne, surowe wykończenia, odsłonięte instalacje, beton na stropach Ogrzewanie: '
-          'technologia nadmuchowa Podłogi: gres oraz wykładzina w wybranych przestrzeniach',
+  'opis': 'Kompleks produkcyjno-biurowy mebli biurowych\nPowierzchnia użytkowa: ok. 6 300 m². Dwukondygnacyjna hala produkcyjno-magazynowa oraz 3-kondygnacyjny budynek biurowy. Konstrukcja z prefabrykatów żelbetowych i sprężonych, stropy z płyt kanałowych, elewacja z wełny mineralnej, sieci i zagospodarowanie terenu.\nKonstrukcja: budynek produkcyjny w technologii prefabrykowanej budynek biurowy wykonany w pełnym żelbecie Elewacja: płyty warstwowe na części przemysłowej technologia lekka-mokra na części biurowej Dach: hala produkcyjna: kratownice, blacha trapezowa, izolacja, membrana część biurowa: klasyczny stropodach, izolacja, membrana Wnętrza: industrialne, surowe wykończenia, odsłonięte instalacje, beton na stropach Ogrzewanie: technologia nadmuchowa Podłogi: gres oraz wykładzina w wybranych przestrzeniach',
   'order': 13,
   'slug': 'euronova-kokotow-gm-wieliczka',
   'status': 'Zrealizowane',
@@ -3494,10 +3404,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.1202424,
   'logo': '/static/img/mbt/ET_logo-ada4c441.png',
   'longitude': 19.8737154,
-  'opis': 'Powierzchnia magazynowa: 6 650 m² Powierzchnia socjalno-biurowa: 550 m² Układ '
-          'komunikacyjny: 4 718 m² Posadowienie bezpośrednie na gruncie stabilizowanym cementem '
-          'Konstrukcja hali mieszana (słupy żelbetowe, prefabrykowane; dźwigary i płatwie stalowe) '
-          'Obudowa ścian z płyty warstwowej',
+  'opis': 'Centrum magazynowo-handlowe z zapleczem biurowym\nPowierzchnia użytkowa: 6 650 m² (w tym hala magazynowa, biura: 550 m², układ drogowy i place: 4 718 m²). Posadzki przemysłowe, strefa kompletacji i rozładunku, zaplecze biurowe o podwyższonym standardzie.\nPowierzchnia magazynowa: 6 650 m² Powierzchnia socjalno-biurowa: 550 m² Układ komunikacyjny: 4 718 m² Posadowienie bezpośrednie na gruncie stabilizowanym cementem Konstrukcja hali mieszana (słupy żelbetowe, prefabrykowane; dźwigary i płatwie stalowe) Obudowa ścian z płyty warstwowej',
   'order': 14,
   'slug': 'euro-trade-w-modlnicy',
   'status': 'Zrealizowane',
@@ -3534,13 +3441,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 52.3853423,
   'logo': '/static/img/mbt/realizacje-kompania-piwowarska-logo-c686aab0.png',
   'longitude': 16.9971062,
-  'opis': 'Budowa Magazynu Aromatów z infrastrukturą techniczną i drogową na terenie Lech Browary '
-          'Wielkopolski dla Kompanii Piwowarskiej.\r\n'
-          '\r\n'
-          '•  Hala wyposażona w zaawansowane instalacje sanitarne, elektryczne i techniczne \r\n'
-          '•  Zagospodarowanie terenu wraz z przebudową istniejącej infrastruktury \r\n'
-          '•  Praca w wysokim reżimie BHP na terenie działającego zakładu przemysłowego \r\n'
-          '•  Powierzchnia zabudowy budynku 722 m2',
+  'opis': 'Specjalistyczna hala magazynowa aromatów\nPowierzchnia hali magazynowej: 613 m², układ drogowy: 722 m². Magazyn przystosowany do rygorystycznych warunków temperaturowych składowania aromatów piwnych, posadzki chemoodporne, instalacje chłodnicze i wentylacyjne.\nBudowa Magazynu Aromatów z infrastrukturą techniczną i drogową na terenie Lech Browary Wielkopolski dla Kompanii Piwowarskiej.\r\n\r\n•  Hala wyposażona w zaawansowane instalacje sanitarne, elektryczne i techniczne \r\n•  Zagospodarowanie terenu wraz z przebudową istniejącej infrastruktury \r\n•  Praca w wysokim reżimie BHP na terenie działającego zakładu przemysłowego \r\n•  Powierzchnia zabudowy budynku 722 m2',
   'order': 15,
   'slug': 'kompania-piwowarska',
   'status': 'Zrealizowane',
@@ -3602,11 +3503,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 51.1731582,
   'logo': 'https://media.mbt.pl/media/uploads/7ab29f71ec4a.svg',
   'longitude': 16.1811487,
-  'opis': 'Powierzchnia produkcyjno-magazynowa: 5331,79 m 2 Powierzchnia utwardzeń-układ '
-          'komunikacyjny: około 18000 m 2 Konstrukcja: Obiekt na posadowieniu bezpośrednim '
-          'Konstrukcja mieszana żelbetowo-stalowa Obudowa w technologii płyty warstwowej Dach w '
-          'konstrukcji stalowej z pokryciem wełną mineralna i membraną PVC Obiekt wykończony '
-          'zgodnie ze standardem Użytkownika i oddany do użytkowania',
+  'opis': 'Centrum magazynowo-logistyczne z zapleczem biurowym\nPowierzchnia magazynowo-logistyczna: 5 332 m², reprezentacyjna część biurowo-socjalna: 968 m², układ komunikacyjny i place manewrowe TIR: ok. 18 000 m². Konstrukcja mieszana żelbetowo-stalowa, strefy doków przeładunkowych, wartownia, automatyczne bramy wjazdowe, pompownia ze zbiornikiem PPOŻ.\nPowierzchnia produkcyjno-magazynowa: 5331,79 m 2 Powierzchnia utwardzeń-układ komunikacyjny: około 18000 m 2 Konstrukcja: Obiekt na posadowieniu bezpośrednim Konstrukcja mieszana żelbetowo-stalowa Obudowa w technologii płyty warstwowej Dach w konstrukcji stalowej z pokryciem wełną mineralna i membraną PVC Obiekt wykończony zgodnie ze standardem Użytkownika i oddany do użytkowania',
   'order': 16,
   'slug': 'in-post-w-legnicy',
   'status': 'Zrealizowane',
@@ -3653,11 +3550,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.2559561,
   'logo': '/static/img/mbt/realizacje-sutco-logo-a5df22a7.png',
   'longitude': 19.0571593,
-  'opis': 'Powierzchnia produkcyjno-magazynowa: 3800m² Hala wyposażona w 4 suwnice 8T '
-          'Zagospodarowanie terenu wokół nowego obiektu Konstrukcja: Obiekt na posadowieniu '
-          'bezpośrednim Konstrukcja stalowa ścian i dachu Obudowa w technologii płyty warstwowej '
-          'Dach w konstrukcji stalowej z pokryciem płytami PIR i membraną PVC Obiekt przystosowany '
-          'do wymagań produkcji konstrukcji stalowych',
+  'opis': 'Hala produkcyjno-magazynowa automatyki i recyklingu (H5)\nPowierzchnia hali produkcyjno-magazynowej: 3 800 m². Konstrukcja przystosowana pod montaż ciężkich linii sortowniczych i recyklingowych, bramy przemysłowe, strefy składowania, zaplecze techniczne.\nPowierzchnia produkcyjno-magazynowa: 3800m² Hala wyposażona w 4 suwnice 8T Zagospodarowanie terenu wokół nowego obiektu Konstrukcja: Obiekt na posadowieniu bezpośrednim Konstrukcja stalowa ścian i dachu Obudowa w technologii płyty warstwowej Dach w konstrukcji stalowej z pokryciem płytami PIR i membraną PVC Obiekt przystosowany do wymagań produkcji konstrukcji stalowych',
   'order': 17,
   'slug': 'sutco-katowice',
   'status': 'Zrealizowane',
@@ -3701,10 +3594,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 49.9771894,
   'logo': '/static/img/mbt/logo-canpack2-db627ab0.jpg',
   'longitude': 20.6219206,
-  'opis': 'Powierzchnia użytkowa pomieszczeń laboratoryjnych i socjalnych: ok. 420,0 m² Rozbiórki '
-          'ścian i instalacji Wykonanie nowej posadzki Wykonanie antresoli stalowej Wykonanie '
-          'fundamentu pod prasę Roboty wykończeniowe Termomodernizacja dachu i elewacji Nowa '
-          'stolarka okienna Wykonanie instalacji HVAC oraz elektrycznych',
+  'opis': 'Centrum laboratoryjno-badawcze R&D\nPowierzchnia użytkowa laboratoriów i części socjalnej: ok. 420 m². Przebudowa i adaptacja dawnej hali magazynowej: antresola stalowa, specjalistyczny fundament pod prasę testową, systemy HVAC, instalacje elektryczne i termomodernizacja obiektu.\nPowierzchnia użytkowa pomieszczeń laboratoryjnych i socjalnych: ok. 420,0 m² Rozbiórki ścian i instalacji Wykonanie nowej posadzki Wykonanie antresoli stalowej Wykonanie fundamentu pod prasę Roboty wykończeniowe Termomodernizacja dachu i elewacji Nowa stolarka okienna Wykonanie instalacji HVAC oraz elektrycznych',
   'order': 18,
   'slug': 'canpack-bss-lab-brzesk',
   'status': 'Zrealizowane',
@@ -3766,17 +3656,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 49.9771894,
   'logo': '/static/img/mbt/logo-canpack2-db627ab0.jpg',
   'longitude': 20.6219206,
-  'opis': 'Powierzchnia użytkowa: około 2865 m²\r\n'
-          'Roboty rozbiórkowe i wyburzeniowe\r\n'
-          'Demontaż starych instalacji\r\n'
-          'Roboty murarskie i konstrukcyjne\r\n'
-          'Konstrukcja stalowa antresoli\r\n'
-          'Wykonanie nowej posadzki\r\n'
-          'Montaż nowych instalacji sanitarnych i elektrycznych\r\n'
-          'Wymiana stolarki okiennej, bramowej i drzwiowej\r\n'
-          'Roboty wykończeniowe\r\n'
-          'Termomodernizacja dachu i elewacji\r\n'
-          'Zagospodarowanie terenów przyległych',
+  'opis': 'Centrum szkoleniowo-biurowo-warsztatowe\nPowierzchnia użytkowa: ok. 2 865 m². Kompleksowa przebudowa i adaptacja obiektu magazynowego na sale szkoleniowe, biura, warsztaty i zaplecze socjalne. Konstrukcja stalowa antresoli, nowe posadzki, kompleksowe instalacje sanitarne, HVAC i elektryczne, wymiana stolarki i termomodernizacja.\nPowierzchnia użytkowa: około 2865 m²\r\nRoboty rozbiórkowe i wyburzeniowe\r\nDemontaż starych instalacji\r\nRoboty murarskie i konstrukcyjne\r\nKonstrukcja stalowa antresoli\r\nWykonanie nowej posadzki\r\nMontaż nowych instalacji sanitarnych i elektrycznych\r\nWymiana stolarki okiennej, bramowej i drzwiowej\r\nRoboty wykończeniowe\r\nTermomodernizacja dachu i elewacji\r\nZagospodarowanie terenów przyległych',
   'order': 19,
   'slug': 'Canpack-BSS-Excellence-Centre-Brzesk',
   'status': 'Zrealizowane',
@@ -3848,11 +3728,9 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.3847018,
   'logo': '/static/img/mbt/Epcologo-7badc63b.png',
   'longitude': 18.8759491,
-  'opis': 'Rozbudowa wymagająca zarówno rozbiórek obecnego układu drogowego, jak i elementów hali '
-          'Prace wykonywane na czynnym zakładzie z zachowaniem obowiązujących standardów BHP '
-          'Dobudowa do istniejącej hali z zachowaniem formy i kolorystyki obiektu istniejącego',
+  'opis': 'Rozbudowa hali magazynowej z zapleczem biurowo-socjalnym\nRozbudowa istniejącej hali magazynowej o dodatkową przestrzeń składowania, modernizacja części socjalno-biurowej, powiększenie układu drogowego i placów manewrowych.\nRozbudowa wymagająca zarówno rozbiórek obecnego układu drogowego, jak i elementów hali Prace wykonywane na czynnym zakładzie z zachowaniem obowiązujących standardów BHP Dobudowa do istniejącej hali z zachowaniem formy i kolorystyki obiektu istniejącego',
   'order': 20,
-  'slug': 'p1704',
+  'slug': 'epco-bytom',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
@@ -3895,9 +3773,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 49.9949198,
   'logo': '/static/img/mbt/2e7538dfbcb3865df6ea9a1138c99e1c-79db89e5.jpg',
   'longitude': 20.0730015,
-  'opis': 'Powierzchnia produkcyjno-magazynowa: 4 500 m2 Powierzchnia małej hali produkcyjnej: '
-          '500m2 Układ komunikacyjny: 2 500m2 Posadowienie bezpośrednie na gruncie rodzimym '
-          'Konstrukcja hali w całości stalowa Obudowa hali z płyt warstwowych',
+  'opis': 'Rozbudowa zakładu produkcyjnego armatury sanitarnej i grzewczej\nHala magazynowa: 4 500 m², mała hala produkcyjna: 500 m², układ komunikacyjny i place: 2 500 m². Konstrukcja w całości stalowa, przebudowa węzła cieplnego, podziemne zbiorniki retencyjne, żelbetowy mur oporowy o wysokości 4 m i długości 150 mb.\nPowierzchnia produkcyjno-magazynowa: 4 500 m2 Powierzchnia małej hali produkcyjnej: 500m2 Układ komunikacyjny: 2 500m2 Posadowienie bezpośrednie na gruncie rodzimym Konstrukcja hali w całości stalowa Obudowa hali z płyt warstwowych',
   'order': 21,
   'slug': 'herz-wieliczka',
   'status': 'Zrealizowane',
@@ -4049,19 +3925,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 51.9825434,
   'logo': 'https://media.mbt.pl/media/uploads/399402210852.svg',
   'longitude': 15.4178416,
-  'opis': 'Jako Generalny Wykonawca realizujemy nowoczesny obiekt dla BTS Development Park. '
-          'Docelowo cały kompleks zaoferuje 10 000 m² zaawansowanej powierzchni biznesowej, '
-          'przeznaczonej pod działalność produkcyjną, magazynową i logistyczną.\r\n'
-          '\r\n'
-          'Inwestycja została zaprojektowana z myślą o maksymalnej elastyczności. Przestrzeń '
-          'pozwala na podział na 4 niezależne moduły o powierzchni od 850 m² do 3 330 m². Takie '
-          'rozwiązanie umożliwia precyzyjne dopasowanie układu funkcjonalnego do indywidualnych '
-          'potrzeb operacyjnych przyszłych najemców.\r\n'
-          '\r\n'
-          'Obecnie nasze prace na placu budowy koncentrują się na sprawnej realizacji pierwszej z '
-          'hal. Zgodnie ze standardami MBT, kładziemy maksymalny nacisk na precyzyjne wykonanie '
-          'każdego detalu technicznego oraz rygorystyczne przestrzeganie założonego harmonogramu '
-          'inwestycji.',
+  'opis': 'Park przemysłowo-logistyczny\nPowierzchnia całkowita kompleksu: 10 000 m², wysokość robocza: 7 m, elastyczny podział modułowy na 4 niezależne moduły operacyjne (od 850 m² do 3 330 m²). Konstrukcja żelbetowo-stalowa (słupy prefabrykowane, stalowe dźwigary dachowe), energooszczędna obudowa z płyt warstwowych PIR, strefy doków i place manewrowe.\nJako Generalny Wykonawca realizujemy nowoczesny obiekt dla BTS Development Park. Docelowo cały kompleks zaoferuje 10 000 m² zaawansowanej powierzchni biznesowej, przeznaczonej pod działalność produkcyjną, magazynową i logistyczną.\r\n\r\nInwestycja została zaprojektowana z myślą o maksymalnej elastyczności. Przestrzeń pozwala na podział na 4 niezależne moduły o powierzchni od 850 m² do 3 330 m². Takie rozwiązanie umożliwia precyzyjne dopasowanie układu funkcjonalnego do indywidualnych potrzeb operacyjnych przyszłych najemców.\r\n\r\nObecnie nasze prace na placu budowy koncentrują się na sprawnej realizacji pierwszej z hal. Zgodnie ze standardami MBT, kładziemy maksymalny nacisk na precyzyjne wykonanie każdego detalu technicznego oraz rygorystyczne przestrzeganie założonego harmonogramu inwestycji.',
   'order': 23,
   'slug': 'bts-development-park-zielona-gora',
   'status': 'W trakcie realizacji',
@@ -4145,29 +4009,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.36019,
   'logo': 'https://media.mbt.pl/media/uploads/a491138f9a7b.webp',
   'longitude': 18.90364,
-  'opis': 'Realizujemy budowę nowoczesnego obiektu dealerskiego dla marki BYD, na zlecenie Grupy '
-          'Dąbrowscy. Inwestycja obejmuje stworzenie kompleksowego salonu samochodowego nowej '
-          'generacji.\r\n'
-          '\r\n'
-          'Cała nowoczesna przestrzeń została zaprojektowana od podstaw, w rygorystycznej '
-          'zgodności z najnowszym, globalnym standardem architektonicznym i wizualnym marki – BYD '
-          'CI 7.\r\n'
-          '\r\n'
-          'Zakres realizacji obejmuje:\r\n'
-          '\r\n'
-          'Nowoczesną salę sprzedaży (Showroom): Reprezentacyjna przestrzeń ekspozycyjna, '
-          'dostosowana do najwyższych standardów prezentacji pojazdów oraz obsługi klienta.\r\n'
-          '\r\n'
-          'Zaawansowany serwis motoryzacyjny: Technologicznie przystosowana hala warsztatowa, '
-          'przygotowana do specjalistycznej diagnostyki i naprawy pojazdów elektrycznych oraz '
-          'hybrydowych.\r\n'
-          '\r\n'
-          'Kompleksową obsługę posprzedażową: W pełni zintegrowane zaplecze dedykowane doradcom '
-          'serwisowym, zapewniające sprawną realizację usług (after-sales) w komfortowych '
-          'warunkach.\r\n'
-          '\r\n'
-          'Naszym zadaniem jest precyzyjne wykonanie obiektu, który zapewni Inwestorowi optymalne '
-          'warunki operacyjne oraz w pełni odda innowacyjny charakter marki BYD.',
+  'opis': 'Autoryzowany salon dealerski i serwis motoryzacyjny\nReprezentacyjny przeszklony salon ekspozycyjny (showroom) zgodny ze światowym standardem marki, specjalistyczna hala warsztatowo-serwisowa przystosowana do diagnostyki napędów elektrycznych (EV) i hybrydowych, magazyn części, strefa doradców, infrastruktura stacji ładowania pojazdów.\nRealizujemy budowę nowoczesnego obiektu dealerskiego dla marki BYD, na zlecenie Grupy Dąbrowscy. Inwestycja obejmuje stworzenie kompleksowego salonu samochodowego nowej generacji.\r\n\r\nCała nowoczesna przestrzeń została zaprojektowana od podstaw, w rygorystycznej zgodności z najnowszym, globalnym standardem architektonicznym i wizualnym marki – BYD CI 7.\r\n\r\nZakres realizacji obejmuje:\r\n\r\nNowoczesną salę sprzedaży (Showroom): Reprezentacyjna przestrzeń ekspozycyjna, dostosowana do najwyższych standardów prezentacji pojazdów oraz obsługi klienta.\r\n\r\nZaawansowany serwis motoryzacyjny: Technologicznie przystosowana hala warsztatowa, przygotowana do specjalistycznej diagnostyki i naprawy pojazdów elektrycznych oraz hybrydowych.\r\n\r\nKompleksową obsługę posprzedażową: W pełni zintegrowane zaplecze dedykowane doradcom serwisowym, zapewniające sprawną realizację usług (after-sales) w komfortowych warunkach.\r\n\r\nNaszym zadaniem jest precyzyjne wykonanie obiektu, który zapewni Inwestorowi optymalne warunki operacyjne oraz w pełni odda innowacyjny charakter marki BYD.',
   'order': 24,
   'slug': 'byd-dabrowscy-bytom',
   'status': 'W trakcie realizacji',
@@ -4291,7 +4133,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 52.4305024,
   'logo': 'https://media.mbt.pl/media/uploads/5f295318db8b.webp',
   'longitude': 20.7349408,
-  'opis': '',
+  'opis': 'Hala produkcyjno-magazynowa wyrobów włókninowych\nHala produkcyjno-magazynowa przystosowana do pracy w reżimie technologicznym czystości i wysokich norm higienicznych, posadzki przemysłowe bezpyłowe, zaplecze techniczne, strefy dostaw i magazynowania surowców.',
   'order': 25,
   'slug': 'ecowipes-nowy-dwor-mazowiecki',
   'status': 'W trakcie Realizacji',
@@ -4309,7 +4151,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.1494206,
   'logo': 'https://media.mbt.pl/media/uploads/444dc913cea9.webp',
   'longitude': 18.8517032,
-  'opis': '',
+  'opis': 'Hala produkcyjno-montażowa układów hydrauliki siłowej pod suwnice\nSpecjalistyczna hala pod prefabrykację, montaż i testowanie wielkogabarytowych układów hydrauliki siłowej. Obiekt zaprojektowany i wybudowany pod montaż ciężkich natorowych suwnic przemysłowych o wysokim udźwigu, strefa prób ciśnieniowych, posadzki o podwyższonej nośności punktowej, część biurowo-socjalna.',
   'order': 26,
   'slug': 'ponar-wadowice',
   'status': 'W trakcie realizacji',
@@ -4327,30 +4169,9 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 49.9782175,
   'logo': 'https://media.mbt.pl/media/uploads/75844a90de04.webp',
   'longitude': 19.8201712,
-  'opis': 'Specyfikacja Powierzchnia i parametry (Łącznie): Powierzchnia całkowita: 6 650,00 m² '
-          'Powierzchnia użytkowa: 6 405,00 m² Powierzchnia zabudowy: 6 413,00 m² Kubatura: 109 795 '
-          'm³ Budynek biurowo-socjalny: Powierzchnia: ok. 347 m² Kondygnacje: 2 Konstrukcja (Hala '
-          'magazynowa): Posadowienie: Pale betonowe Słupy: Prefabrykaty żelbetowe (wysokość 20 m) '
-          'Dach: Konstrukcja prefabrykowana (rozpiętość 33 m), poszycie z blachy trapezowej z '
-          'izolacją termiczną i przeciwwodną Ściany: Obudowa z płyt warstwowych Płyta '
-          'fundamentowa: Żelbetowa, dostosowana pod regały i układnice magazynu wysokiego '
-          'składowania Posadzka: Przemysłowa, betonowa, zacierana na gładko Konstrukcja i '
-          'wykończenie (Budynek biurowo-socjalny): Konstrukcja: Murowana ze stropami '
-          'strunobetonowymi Elewacja: Płyty warstwowe Wykończenie (wysoki standard): Sufity '
-          'akustyczne, sucha zabudowa, wykładziny dywanowe i PCV, płytki gresowe, witryny '
-          'aluminiowe Urządzenia i technologia magazynowa: 6 doków przeładunkowych z rampami, w '
-          'większości wyposażonych w system automatycznej blokady kół Instalacja automatycznego '
-          'składowania (część wysoka) Regały do składowania manualnego "Magazyn ciepły" z '
-          'precyzyjną kontrolą parametrów temperaturowych Instalacje i infrastruktura (Wewnętrzna '
-          'i Zewnętrzna): Instalacje sanitarne: Wodociągowa, kanalizacja sanitarna i deszczowa, '
-          'centralne ogrzewanie Instalacje HVAC: Wentylacja mechaniczna, klimatyzacja Instalacje '
-          'elektryczne i teletechniczne: Pełny zakres Ochrona PPOŻ: System Sygnalizacji Pożaru '
-          '(SSP), instalacja gaszenia gazem, zewnętrzny zbiornik wody pożarowej, zestaw '
-          'hydroforowy Infrastruktura zewnętrzna: Przebudowa i rozbudowa instalacji (w tym sieci '
-          'cieplnej), mury oporowe, zadaszenie zewnętrzne Układ komunikacyjny: Przebudowa '
-          'istniejącego wewnętrznego układu dróg i stanowisk postojowych',
+  'opis': 'Automatyczny magazyn wysokiego składowania wyrobów gotowych i surowców (CWH)\nPowierzchnia zabudowy: ok. 6 700 m², wysokość magazynu: do 20 m. Nowoczesny magazyn automatyczny zintegrowany z częścią biurowo-socjalną, posadzka o wysokiej precyzji płaskości pod pracę automatycznych układnic magazynowych.\nSpecyfikacja Powierzchnia i parametry (Łącznie): Powierzchnia całkowita: 6 650,00 m² Powierzchnia użytkowa: 6 405,00 m² Powierzchnia zabudowy: 6 413,00 m² Kubatura: 109 795 m³ Budynek biurowo-socjalny: Powierzchnia: ok. 347 m² Kondygnacje: 2 Konstrukcja (Hala magazynowa): Posadowienie: Pale betonowe Słupy: Prefabrykaty żelbetowe (wysokość 20 m) Dach: Konstrukcja prefabrykowana (rozpiętość 33 m), poszycie z blachy trapezowej z izolacją termiczną i przeciwwodną Ściany: Obudowa z płyt warstwowych Płyta fundamentowa: Żelbetowa, dostosowana pod regały i układnice magazynu wysokiego składowania Posadzka: Przemysłowa, betonowa, zacierana na gładko Konstrukcja i wykończenie (Budynek biurowo-socjalny): Konstrukcja: Murowana ze stropami strunobetonowymi Elewacja: Płyty warstwowe Wykończenie (wysoki standard): Sufity akustyczne, sucha zabudowa, wykładziny dywanowe i PCV, płytki gresowe, witryny aluminiowe Urządzenia i technologia magazynowa: 6 doków przeładunkowych z rampami, w większości wyposażonych w system automatycznej blokady kół Instalacja automatycznego składowania (część wysoka) Regały do składowania manualnego "Magazyn ciepły" z precyzyjną kontrolą parametrów temperaturowych Instalacje i infrastruktura (Wewnętrzna i Zewnętrzna): Instalacje sanitarne: Wodociągowa, kanalizacja sanitarna i deszczowa, centralne ogrzewanie Instalacje HVAC: Wentylacja mechaniczna, klimatyzacja Instalacje elektryczne i teletechniczne: Pełny zakres Ochrona PPOŻ: System Sygnalizacji Pożaru (SSP), instalacja gaszenia gazem, zewnętrzny zbiornik wody pożarowej, zestaw hydroforowy Infrastruktura zewnętrzna: Przebudowa i rozbudowa instalacji (w tym sieci cieplnej), mury oporowe, zadaszenie zewnętrzne Układ komunikacyjny: Przebudowa istniejącego wewnętrznego układu dróg i stanowisk postojowych',
   'order': 27,
-  'slug': 'VESUVIUS',
+  'slug': 'vesuvius-skawina',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
@@ -4558,17 +4379,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 52.2917104,
   'logo': 'https://media.mbt.pl/media/uploads/4d8667558baa.webp',
   'longitude': 21.0761354,
-  'opis': 'Budowa budynku self storage przy ul. Bystrej i Kolejarskiej w Warszawie. \r\n'
-          '\r\n'
-          '•\tBudynek 6 kondygnacyjny wyposażony w duże windy towarowo-osobowe oraz ewakuacyjną '
-          'klatkę schodową. \r\n'
-          '•\tCałkowita powierzchnia budynku self storge 8 269,03 m² o kubaturze 24 458 m3\r\n'
-          '•\tBudynek powstaje jako konstrukcja betonowa monolityczna posadowiony na stopach '
-          'fundamentowych.\r\n'
-          '•\tElewacja z płyt warstwowych, poszycie dachy wykonane z membrany EPDM na warstwach '
-          'termoizolacyjnych. \r\n'
-          '•\tZagospodarowanie terenu wraz z zbiornikiem retencyjnym oraz infrastrukturą '
-          'towarzyszącą.',
+  'opis': '6-kondygnacyjny budynek self-storage\nCałkowita powierzchnia budynku: 8 269 m², kubatura: 24 458 m³, 6 kondygnacji naziemnych. Konstrukcja betonowa monolityczna posadowiona na stopach fundamentowych, elewacja z płyt warstwowych, poszycie dachu z membrany EPDM na warstwach termoizolacyjnych, wielkogabarytowe windy towarowo-osobowe.\nBudowa budynku self storage przy ul. Bystrej i Kolejarskiej w Warszawie. \r\n\r\n•\tBudynek 6 kondygnacyjny wyposażony w duże windy towarowo-osobowe oraz ewakuacyjną klatkę schodową. \r\n•\tCałkowita powierzchnia budynku self storge 8 269,03 m² o kubaturze 24 458 m3\r\n•\tBudynek powstaje jako konstrukcja betonowa monolityczna posadowiony na stopach fundamentowych.\r\n•\tElewacja z płyt warstwowych, poszycie dachy wykonane z membrany EPDM na warstwach termoizolacyjnych. \r\n•\tZagospodarowanie terenu wraz z zbiornikiem retencyjnym oraz infrastrukturą towarzyszącą.',
   'order': 28,
   'slug': 'stokado-self-storage-warszawa-targowek',
   'status': 'W trakcie realizacji',
@@ -4632,109 +4443,11 @@ PROJECTS = [{'czas': '16 miesięcy',
  {'czas': '',
   'formula': '',
   'gallery': [],
-  'hero': '/static/img/mbt/venusgotowe-3c7b87fa.png',
-  'latitude': 50.03319,
-  'logo': '/static/img/mbt/venusgotowe-3c7b87fa.png',
-  'longitude': 20.0895646,
-  'opis': 'Zagospodarowanie terenu – PZT • Powierzchnia terenu inwestycji: ok. 13 300 m² • '
-          'Powierzchnia utwardzona: ok. 850 m² Hala magazynowa + biurowiec • Powierzchnia '
-          'zabudowy: ok. 3200 m² • Powierzchnia użytkowa: ok. 3800 m² • Kubatura: ok. 33 500 m³ • '
-          'Ilość kondygnacji: 1 i 3 Konstrukcja • Konstrukcja mieszana: słupy i stropy żelbetowe, '
-          'konstrukcja dachu stalowa, ściany zewnętrzne jako wypełnienie murem oraz płyty '
-          'warstwowe, stropy monolityczne i prefabrykowane Elewacja • W hali system płyt '
-          'warstwowych, natomiast w biurowcu system płyt warstwowych oraz jako reprezentatywna '
-          'część obiektu, zastosowanie dużych przeszkleń oraz płyt kompozytowych Dach • Membrana '
-          'dachowa PVC Sieci i instalacje zewnętrzne i wewnętrzne • Na potrzeby realizowanej '
-          'inwestycji: ○ Sieci wod-kan, gaz, elektryczne ○ Kanalizacja sanitarna i deszczowa ○ '
-          'Budowa zbiornika retencyjnego W naszych mediach społecznościowych znajdują się '
-          'fotorelacje, aktualizowane na bieżąco.',
-  'order': 29,
-  'slug': 'venus-brzegi',
-  'status': 'W trakcie realizacji',
-  't_c': {},
-  't_f': {},
-  't_o': {'cs': 'Zastavovací plán – PZT • Plocha pozemku investice: cca 13 300 m² • Zpevněná '
-                'plocha: cca 850 m². Skladová hala + kancelářská budova • Zastavěná plocha: cca 3 '
-                '200 m² • Užitková plocha: cca 3 800 m² • Objem: cca 33 500 m³ • Počet podlaží: 1 '
-                'a 3. Konstrukce • Smíšená konstrukce: železobetonové sloupy a stropy, ocelová '
-                'střešní konstrukce, vnější stěny jako zděná výplň se sendvičovými panely, '
-                'monolitické a prefabrikované stropy. Fasáda • V hale systém sendvičových panelů, '
-                'v kancelářské budově systém sendvičových panelů a jako reprezentativní část '
-                'objektu velké prosklené plochy a kompozitní panely. Střecha • Střešní PVC '
-                'membrána. Vnější a vnitřní sítě a instalace • Pro potřeby realizované investice: '
-                '○ Vodovodní a kanalizační, plynové a elektrické sítě ○ Splašková a dešťová '
-                'kanalizace ○ Výstavba retenční nádrže. Fotogalerie jsou průběžně aktualizovány na '
-                'našich sociálních sítích.',
-          'de': 'Geländegestaltung – B-Plan • Grundstücksfläche der Investition: ca. 13 300 m² • '
-                'Befestigte Fläche: ca. 850 m². Lagerhalle + Bürogebäude • Grundstücksfläche: ca. '
-                '3 200 m² • Nutzfläche: ca. 3 800 m² • Volumen: ca. 33 500 m³ • Anzahl der '
-                'Geschosse: 1 und 3. Konstruktion • Gemischte Konstruktion: Stahlbetonstützen und '
-                '-decken, Stahl-Dachkonstruktion, Außenwände als Mauerwerksausfachung mit '
-                'Sandwichpaneelen, monolitische und vorgefertigte Decken. Fassade • '
-                'Sandwichpaneelsystem in der Halle; im Bürogebäude Sandwichpaneelsystem und, als '
-                'repräsentativer Teil des Gebäudes, großflächige Verglasungen und Verbundpaneele. '
-                'Dach • PVC-Dachmembran. Außen- und Innen-Netze und -Installationen • Für die '
-                'Bedürfnisse der Investition: ○ Wasser-, Kanal-, Gas- und Stromnetze ○ Schmutz- '
-                'und Regenwasserkanalisation ○ Bau eines Rückhaltebeckens. Aktuelle Fotoreportagen '
-                'werden laufend auf unseren Social-Media-Kanälen veröffentlicht.',
-          'en': 'Site development – PZT • Investment site area: approx. 13 300 m² • Paved area: '
-                'approx. 850 m². Warehouse hall + office building • Building area: approx. 3 200 '
-                'm² • Usable area: approx. 3 800 m² • Volume: approx. 33 500 m³ • Number of '
-                'storeys: 1 and 3. Structure • Mixed structure: reinforced concrete columns and '
-                'slabs, steel roof structure, external walls as masonry infill with sandwich '
-                'panels, monolithic and precast slabs. Façade • Sandwich panel system in the hall; '
-                'in the office building, sandwich panel system combined, as a representative '
-                'feature of the building, with large glazing and composite panels. Roof • PVC '
-                'roofing membrane. External and internal networks and installations • For the '
-                'needs of the investment: ○ Water and sewage, gas and electrical networks ○ '
-                'Sanitary and stormwater drainage ○ Construction of a retention tank. Photo '
-                'updates from our social media are posted on an ongoing basis.',
-          'hu': 'Területrendezés – Terv • A beruházás területének nagysága: kb. 13 300 m² • '
-                'Burkolt felület: kb. 850 m². Raktárcsarnok + irodaház • Beépített terület: kb. 3 '
-                '200 m² • Hasznos alapterület: kb. 3 800 m² • Térfogat: kb. 33 500 m³ • Szintek '
-                'száma: 1 és 3. Szerkezet • Vegyes szerkezet: vasbeton oszlopok és födémek, acél '
-                'tetőszerkezet, külső falak falazott kitöltéssel és szendvicspanelekkel, monolit '
-                'és előre gyártott födémek. Homlokzat • A csarnokban szendvicspanel rendszer, az '
-                'irodaházban szendvicspanel rendszer, valamint – az épület reprezentatív részeként '
-                '– nagyméretű üvegezések és kompozit panelek. Tető • PVC tetőmembrán. Külső és '
-                'belső hálózatok és telepítések • A megvalósuló beruházás igényeihez: ○ Víz-, '
-                'csatorna-, gáz- és elektromos hálózatok ○ Szennyvíz- és csapadékcsatorna ○ '
-                'Csapadékvíz-visszatartó tározó építése. Folyamatosan frissített fotóbeszámolók '
-                'találhatók a közösségi média felületeinken.',
-          'sk': 'Zastavovací plán – PZT • Plocha pozemku investície: cca 13 300 m² • Spevnená '
-                'plocha: cca 850 m². Skladová hala + kancelárska budova • Zastavaná plocha: cca 3 '
-                '200 m² • Úžitková plocha: cca 3 800 m² • Objem: cca 33 500 m³ • Počet podlaží: 1 '
-                'a 3. Konštrukcia • Zmiešaná konštrukcia: železobetónové stĺpy a stropy, oce�ová '
-                'strešná konštrukcia, vonkajšie steny ako murovaná výplň so sendvičovými panelmi, '
-                'monolitické a prefabrikované stropy. Fasáda • V hale systém sendvičových panelov, '
-                'v kancelárskej budove systém sendvičových panelov a ako reprezentatívna časť '
-                'objektu veľké presklené plochy a kompozitné panely. Strecha • Strešná PVC '
-                'membrána. Vonkajšie a vnútorné siete a inštalácie • Pre potreby realizovanej '
-                'investície: ○ Vodovodné a kanalizačné, plynové a elektrické siete ○ Splášková a '
-                'dažďová kanalizácia ○ Výstavba retenčnej nádrže. Aktuálne fotogalérie nájdete '
-                'priebežne dopĺňané na našich sociálnych sieťach.'},
-  't_s': {},
-  't_t': {},
-  'title': 'VENUS - Brzegi',
-  'type': 'realizacja-w-trakcie'},
- {'czas': '',
-  'formula': '',
-  'gallery': [],
   'hero': '/static/img/mbt/scallier-logo-662a14b7.png',
   'latitude': 50.2963029,
   'logo': '/static/img/mbt/scallier-logo-662a14b7.png',
   'longitude': 18.8264414,
-  'opis': '• Powierzchnia użytkowa: • Budynek A: 1 358,90 m² • Budynek B: 943,70 m² • Powierzchnia '
-          'terenu: 9 263,44 m² Układ przestrzenny: • Dwa parterowe budynki rozdzielone drogą '
-          'wjazdową, formą podążającą za linią zabudowy • Wejścia główne dla klientów od strony '
-          'parkingu (wschód) • Strefa dostaw i zaplecza techniczno-magazynowego od strony '
-          'zachodniej • Wydzielone strefy: lokale usługowe (sala sprzedaży + zaplecze), '
-          'ogólnodostępne sanitariaty, pomieszczenia techniczne Konstrukcja: • Ustrój mieszany • '
-          'Posadowienie bezpośrednie: żelbetowe ławy i stopy fundamentowe • Słupy: żelbetowe '
-          'prefabrykowane • Dach: konstrukcja stalowa Elewacja: • Płyty warstwowe Zagospodarowanie '
-          'terenu: • Parking dla samochodów osobowych wraz z chodnikami • Podziemny zbiornik na '
-          'wodę pożarową • Podziemny zbiornik retencyjny na wodę deszczową W naszych mediach '
-          'społecznościowych znajdują się fotorelacje, aktualizowane na bieżąco.',
+  'opis': 'Park handlowy (dwa budynki komercyjne)\nPowierzchnia użytkowa budynków: 2 303 m² (Budynek A: 1 359 m², Budynek B: 944 m²), zagospodarowanie terenu: 9 263 m². Dwa wolnostojące budynki handlowo-usługowe, parkingi dla klientów, strefy dostaw, podziemny zbiornik retencyjny i zbiornik wody pożarowej.\n• Powierzchnia użytkowa: • Budynek A: 1 358,90 m² • Budynek B: 943,70 m² • Powierzchnia terenu: 9 263,44 m² Układ przestrzenny: • Dwa parterowe budynki rozdzielone drogą wjazdową, formą podążającą za linią zabudowy • Wejścia główne dla klientów od strony parkingu (wschód) • Strefa dostaw i zaplecza techniczno-magazynowego od strony zachodniej • Wydzielone strefy: lokale usługowe (sala sprzedaży + zaplecze), ogólnodostępne sanitariaty, pomieszczenia techniczne Konstrukcja: • Ustrój mieszany • Posadowienie bezpośrednie: żelbetowe ławy i stopy fundamentowe • Słupy: żelbetowe prefabrykowane • Dach: konstrukcja stalowa Elewacja: • Płyty warstwowe Zagospodarowanie terenu: • Parking dla samochodów osobowych wraz z chodnikami • Podziemny zbiornik na wodę pożarową • Podziemny zbiornik retencyjny na wodę deszczową W naszych mediach społecznościowych znajdują się fotorelacje, aktualizowane na bieżąco.',
   'order': 30,
   'slug': 'scallier-zabrze',
   'status': 'W trakcie realizacji',
@@ -4817,23 +4530,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.0974579,
   'logo': 'https://media.mbt.pl/media/uploads/dbbea2e8e99b.webp',
   'longitude': 18.2342209,
-  'opis': 'Budowa hali montażowo-magazynowej wraz z zapleczem socjalno-biurowym oraz '
-          'odźwigowieniem dla działalności produkcyjnej polegającej na prefabrykacji rozdzielni '
-          'silnoprądowych. \r\n'
-          '\r\n'
-          '•\tPowierzchnia produkcyjno-magazynowa – 3634 m2 \r\n'
-          '•\tPowierzchnia socjalno-biurowa – 250,52 m2\r\n'
-          '•\tHala projektowana pod dwie suwnice o łącznym udźwigu 20 T\r\n'
-          '•\tSieci i instalacje na potrzeby realizowanej inwestycji\r\n'
-          '•\tZagospodarowanie terenu wokół obiektu \r\n'
-          '•\tKonstrukcja: \r\n'
-          'o\tObiekt o posadowieniu pośrednim na kolumnach betonowych\r\n'
-          'o\tKonstrukcja ścian i dachu hali w technologii stalowej\r\n'
-          'o\tObudowa hali w technologii płyt warstwowych\r\n'
-          'o\tPokrycie dachu hali w konstrukcji stalowej z użyciem blachy trapezowej, izolacją z '
-          'wełny mineralnej i membraną PVC \r\n'
-          'o\tKonstrukcja budynku biurowego mieszana (murowana, rdzenie i wieńce żelbetowe, '
-          'prefabrykowane stopy z użyciem płyt kanałowych typu HC)',
+  'opis': 'Hala montażowo-magazynowa pod dwie suwnice\nPowierzchnia produkcyjno-magazynowa: 3 634 m², część socjalno-biurowa: 251 m². Hala zaprojektowana i zrealizowana pod montaż dwóch suwnic o łącznym udźwigu 20 ton.\nBudowa hali montażowo-magazynowej wraz z zapleczem socjalno-biurowym oraz odźwigowieniem dla działalności produkcyjnej polegającej na prefabrykacji rozdzielni silnoprądowych. \r\n\r\n•\tPowierzchnia produkcyjno-magazynowa – 3634 m2 \r\n•\tPowierzchnia socjalno-biurowa – 250,52 m2\r\n•\tHala projektowana pod dwie suwnice o łącznym udźwigu 20 T\r\n•\tSieci i instalacje na potrzeby realizowanej inwestycji\r\n•\tZagospodarowanie terenu wokół obiektu \r\n•\tKonstrukcja: \r\no\tObiekt o posadowieniu pośrednim na kolumnach betonowych\r\no\tKonstrukcja ścian i dachu hali w technologii stalowej\r\no\tObudowa hali w technologii płyt warstwowych\r\no\tPokrycie dachu hali w konstrukcji stalowej z użyciem blachy trapezowej, izolacją z wełny mineralnej i membraną PVC \r\no\tKonstrukcja budynku biurowego mieszana (murowana, rdzenie i wieńce żelbetowe, prefabrykowane stopy z użyciem płyt kanałowych typu HC)',
   'order': 31,
   'slug': 'fiolka-raciborz',
   'status': 'W trakcie realizacji',
@@ -4934,15 +4631,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.2689683,
   'logo': '/static/img/mbt/logo2-76e5c8f9.png',
   'longitude': 18.7209159,
-  'opis': 'Kubatura całkowita nowego obiektu wynosi 28 342 m³ Budynek biurowy dwukondygnacyjny, z '
-          'wydzieloną kondygnacją magazynową oraz antresolą magazynową nad częścią produkcyjną, a '
-          'także z powierzchnią biurowo-socjalną na drugiej kondygnacji Zagospodarowanie terenu '
-          'wokół nowego obiektu Konstrukcja: posadowienie „mieszane” (bezpośrednie oraz w części '
-          'pośrednie) konstrukcja nośna obiektu „mieszana” (prefabrykowane żelbetowe słupy, '
-          'elementy murowe oraz stalowa konstrukcja dachu) obudowa obiektu „mieszana” ( tradycyjna '
-          'murowa obudowa z płyty warstwowej ,w części biurowej fasada szklana) pokrycie dachu '
-          'płytami z wełny skalnej i membraną PVC W naszych mediach społecznościowych znajdują się '
-          'fotorelacje, aktualizowane na bieżąco.',
+  'opis': 'Dwukondygnacyjny zakład produkcji baterii przemysłowych\nKubatura całkowita: 28 342 m³. Dwukondygnacyjny budynek z wydzieloną strefą magazynową, antresolą magazynową nad częścią produkcyjną, reprezentacyjną szklaną fasadą biurowca, posadowieniem mieszanym oraz kompletnym uzbrojeniem terenu.\nKubatura całkowita nowego obiektu wynosi 28 342 m³ Budynek biurowy dwukondygnacyjny, z wydzieloną kondygnacją magazynową oraz antresolą magazynową nad częścią produkcyjną, a także z powierzchnią biurowo-socjalną na drugiej kondygnacji Zagospodarowanie terenu wokół nowego obiektu Konstrukcja: posadowienie „mieszane” (bezpośrednie oraz w części pośrednie) konstrukcja nośna obiektu „mieszana” (prefabrykowane żelbetowe słupy, elementy murowe oraz stalowa konstrukcja dachu) obudowa obiektu „mieszana” ( tradycyjna murowa obudowa z płyty warstwowej ,w części biurowej fasada szklana) pokrycie dachu płytami z wełny skalnej i membraną PVC W naszych mediach społecznościowych znajdują się fotorelacje, aktualizowane na bieżąco.',
   'order': 32,
   'slug': 'bater-gliwice',
   'status': 'W trakcie realizacji',
@@ -5005,7 +4694,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 50.0019853,
   'logo': 'https://media.mbt.pl/media/uploads/8c6b51ed721a.webp',
   'longitude': 20.5066441,
-  'opis': '',
+  'opis': 'Zakład produkcyjno-magazynowy systemów filtracji\nPowierzchnia użytkowa: 1 227 m², wysokość zabudowy: 11,63 m. Hala magazynowo-produkcyjna z zapleczem biurowo-socjalnym zoptymalizowana pod linie konfekcjonowania i przetwórstwa tworzyw sztucznych. Strefa składowania wysokiego, doki rozładunkowe, posadzka bezspoinowa, retencja wód opadowych, łącznik z istniejącym budynkiem.',
   'order': 33,
   'slug': 'wessper',
   'status': 'W trakcie realizacji',
@@ -5023,19 +4712,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 52.6153422,
   'logo': 'https://media.mbt.pl/media/uploads/bb10f93000a3.webp',
   'longitude': 21.5111711,
-  'opis': 'Firma Warmet – doskonale znana i ceniona hurtownia alkoholi – zyskuje nową przestrzeń '
-          'do rozwoju. Realizowany przez zespół Generalnego Wykonawcy MBT obiekt to nowoczesna '
-          'hala, która będzie pełnić funkcję głównego centrum dystrybucji naszego Inwestora.\r\n'
-          '\r\n'
-          'W branży FMCG oraz dystrybucji napojów kluczowa jest bezbłędna logistyka i zachowanie '
-          'odpowiednich warunków magazynowania. Z myślą o tych wymaganiach budujemy przestrzeń w '
-          'pełni dostosowaną do specyfiki operacyjnej firmy Warmet. Nowy obiekt pozwoli na '
-          'zoptymalizowanie procesów logistycznych, sprawniejszą obsługę zamówień i zapewni '
-          'solidne zaplecze dla dalszego rozwoju biznesu.\r\n'
-          '\r\n'
-          'Obecnie jesteśmy po etapie symbolicznego wmurowania fundamentów. Prace na placu budowy '
-          'postępują zgodnie z harmonogramem i naszym inżynieryjnym standardem. Dziękujemy firmie '
-          'Warmet za zaufanie i powierzenie MBT realizacji tego strategicznego projektu.',
+  'opis': 'Centrum logistyczno-dystrybucyjne hurtowni napojów i alkoholi\nStrefa wysokiego składowania, doki przeładunkowe dla transportu ciężkiego, strefa kompletacji towarów, zaplecze biurowe i socjalne. Konstrukcja stalowo-żelbetowa, posadzka bezspoinowa o wysokiej nośności i odporności na ścieranie.\nFirma Warmet – doskonale znana i ceniona hurtownia alkoholi – zyskuje nową przestrzeń do rozwoju. Realizowany przez zespół Generalnego Wykonawcy MBT obiekt to nowoczesna hala, która będzie pełnić funkcję głównego centrum dystrybucji naszego Inwestora.\r\n\r\nW branży FMCG oraz dystrybucji napojów kluczowa jest bezbłędna logistyka i zachowanie odpowiednich warunków magazynowania. Z myślą o tych wymaganiach budujemy przestrzeń w pełni dostosowaną do specyfiki operacyjnej firmy Warmet. Nowy obiekt pozwoli na zoptymalizowanie procesów logistycznych, sprawniejszą obsługę zamówień i zapewni solidne zaplecze dla dalszego rozwoju biznesu.\r\n\r\nObecnie jesteśmy po etapie symbolicznego wmurowania fundamentów. Prace na placu budowy postępują zgodnie z harmonogramem i naszym inżynieryjnym standardem. Dziękujemy firmie Warmet za zaufanie i powierzenie MBT realizacji tego strategicznego projektu.',
   'order': 34,
   'slug': 'warmet-hurtownia-alkocholi',
   'status': 'W trakcie realizacji',
@@ -5127,7 +4804,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 51.177,
   'logo': 'https://media.mbt.pl/uploads/e257f7ae4ed2.webp',
   'longitude': 16.237,
-  'opis': '',
+  'opis': 'Terminal logistyczno-dystrybucyjny typu cross-dock\nRegionalny terminal przeładunkowy cross-dock dedykowany szybkiej obsłudze potoków drobnicowych i paletowych. Bezsłupowa hala przeładunkowa z gęstą siatką doków załadunkowych (rampy hydrauliczne, fartuchy uszczelniające po obu stronach terminala), dwukondygnacyjna część administracyjno-biurowa i socjalna dla dyspozytorów i kierowców, posadzka bezspoinowa o podwyższonej odporności dynamicznej, rozległe place manewrowe dla zestawów TIR (nawierzchnie betonowe i asfaltowe), oświetlenie LED.',
   'order': 35,
   'slug': 'raben',
   'status': 'W trakcie realizacji',
@@ -5145,7 +4822,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'latitude': 54.3445279,
   'logo': 'https://media.mbt.pl/uploads/0b6a2afd6d97.webp',
   'longitude': 18.5456996,
-  'opis': '',
+  'opis': 'Wielokondygnacyjny obiekt self-storage\nNowoczesny, pnący się w górę wielokondygnacyjny magazyn komórek lokatorskich. Monolityczna konstrukcja żelbetowa słupowo-płytowa, sztywne trzony klatek schodowych i szachtów windowych, wielkogabarytowe windy towarowo-osobowe, instalacje HVAC oparte na pompach ciepła, zadaszone strefy rozładunku, podziemna retencja wód opadowych.',
   'order': 36,
   'slug': 'less-mess-gdansk',
   'status': 'W trakcie realizacji',
@@ -5155,7 +4832,14 @@ PROJECTS = [{'czas': '16 miesięcy',
   't_s': {},
   't_t': {},
   'title': 'Less Mess Gdańsk',
-  'type': 'realizacja-w-trakcie'}]
+  'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/eurostyl-chelmek.svg', 'latitude': None, 'logo': '/static/img/mbt/logos/eurostyl-chelmek.svg', 'longitude': None, 'opis': 'Hala magazynowa z zapleczem biurowo-socjalnym\nHala magazynowa z bramami rozładunkowymi, strefa kompletacji towarów, część socjalno-biurowa, zbrojony plac manewrowy pod pojazdy ciężarowe, sieci zewnętrzne i zbiornik retencyjny.', 'order': 37, 'slug': 'eurostyl-chelmek', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Eurostyl Chełmek', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': 'https://media.mbt.pl/media/uploads/7ad52ff95b94.webp', 'latitude': None, 'logo': 'https://media.mbt.pl/media/uploads/7ad52ff95b94.webp', 'longitude': None, 'opis': 'Wielokondygnacyjny obiekt self-storage\nWielokondygnacyjny budynek komórek lokatorskich self-storage o podwyższonym standardzie bezpieczeństwa. Indywidualne boksy magazynowe, strefa biura obsługi klienta (BOK), windy towarowo-osobowe, systemy kontroli dostępu 24/7, monitoring CCTV i zadaszona strefa rozładunkowa.', 'order': 38, 'slug': 'stokado-gdansk', 'status': 'Zrealizowane', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Stokado Gdańsk', 'type': 'realizacja-zrealizow'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/kbh-akord.png', 'latitude': None, 'logo': '/static/img/mbt/logos/kbh-akord.png', 'longitude': None, 'opis': 'Hala produkcyjno-magazynowa z zapleczem\nUstrój mieszany żelbetowo-stalowy, energooszczędna obudowa z płyt warstwowych PIR, dach z membraną PVC, zintegrowane zaplecze administracyjno-biurowe, place manewrowe dla samochodów dostawczych i retencja wód.', 'order': 40, 'slug': 'kbh-akord-siemianowice-slaskie', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'KBH Akord Siemianowice Śląskie', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo w warunkach czynnej fabryki', 'gallery': [], 'hero': '/static/img/mbt/logos/brembo.png', 'latitude': None, 'logo': '/static/img/mbt/logos/brembo.png', 'longitude': None, 'opis': 'Modernizacje i rozbudowy w warunkach czynnej fabryki: strefa ekologiczna, śluzy technologiczne, fundamenty pod linie produkcyjne\nECO: Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne. CNP1: Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego. Tucznawa: Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.', 'order': 41, 'slug': 'brembo-poland-dabrowa-gornicza', 'status': 'Zrealizowane', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Brembo Poland Dąbrowa Górnicza', 'type': 'realizacja-zrealizow'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/zielona-dolina.png', 'latitude': None, 'logo': '/static/img/mbt/logos/zielona-dolina.png', 'longitude': None, 'opis': 'Osiedle mieszkaniowe (5 budynków wielorodzinnych + 20 domów)\nKompleksowa budowa osiedla: 5 budynków mieszkalnych wielorodzinnych z podziemnymi halami garażowymi oraz 20 domów jednorodzinnych w zabudowie bliźniaczej. Pełna infrastruktura inżynieryjna (wod-kan, deszczowa ze zbiornikami retencyjnymi, gaz, prąd), drogi osiedlowe, chodniki, miejsca postojowe i tereny zielone.', 'order': 43, 'slug': 'invest-tdj-estate-zabrze-zielona-dolina-4', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Invest TDJ Estate Zabrze (Zielona Dolina 4)', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo („pod klucz”)', 'gallery': [], 'hero': 'https://media.mbt.pl/uploads/1491284b28df.webp', 'latitude': None, 'logo': 'https://media.mbt.pl/uploads/1491284b28df.webp', 'longitude': None, 'opis': 'Zakład produkcyjny ultralekkich samolotów z hangarem lotniczym\nHala produkcyjno-hangarowa: ok. 2 100 m² wraz z budynkiem biurowo-socjalnym dla kadry inżynieryjnej. Trwała konstrukcja nośna z prefabrykatów żelbetowych przygotowana pod montaż statków powietrznych, płyta przedhangarowa, strefy manewrowe i infrastruktura techniczna.', 'order': 44, 'slug': 'artus-aircraft', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Artus Aircraft', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Zaprojektuj i Wybuduj (pod klucz)', 'gallery': [], 'hero': 'https://media.mbt.pl/uploads/4fe7e40eb483.webp', 'latitude': None, 'logo': 'https://media.mbt.pl/uploads/4fe7e40eb483.webp', 'longitude': None, 'opis': 'Wielofunkcyjny obiekt sportowy z garażem podziemnym\nPowierzchnia hali sportowej: ponad 1 170 m². 2 turniejowe korty do padla, strefa badmintona (5 boisk), strefa tenisa stołowego (8 stołów), 4-rzędowa trybuna teleskopowa. Przeszklony łącznik z gmachem SWFiS, kondygnacja podziemna z garażem na 41 stanowisk i podgrzewaną rampą, dach z dźwigarów z drewna klejonego, instalacja fotowoltaiczna OZE, promienniki wodne i system BMS.', 'order': 45, 'slug': 'centrum-sportow-rakietowych-ue-wroclaw', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Centrum Sportów Rakietowych UE Wrocław', 'type': 'realizacja-w-trakcie'}]
 
 SECTORS = [{'icon': 'ri-building-2-line',
   'image': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',

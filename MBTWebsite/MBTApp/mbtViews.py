@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.core.paginator import Paginator
 from django.http import Http404
 from django.utils.translation import gettext_lazy as _
@@ -8,14 +8,28 @@ PER_PAGE = 9  # 9 inwestycji na stronę — równa siatka 3x3 bez pustych pól
 
 
 def _project_paras(project):
-    """Podziel opis projektu na akapity (specyfikacja z XML jest jednym blokiem)."""
+    """Podziel opis projektu na akapity.
+
+    Opis uzupełniony z podstrony Potencjał i referencje ma na początku dwie linie (typ obiektu
+    i parametry) — zostają w całości. Starą specyfikację (jeden blok) dzielimy po słowach kluczowych.
+    """
+    import re
     opis = (project.get('opis') or '').strip()
     if not opis:
         return []
-    # rozbij po 'Specyfikacja', 'Powierzchnia', 'Certyfikacja' itd.
-    import re
-    parts = re.split(r'(?=(?:Specyfikacja|Powierzchnia|Certyfikacja|Układ budynku|Infrastruktura|Konstrukcja|Elewacja|Zagospodarowanie|Inwestor|Lokalizacja))', opis)
-    return [p.strip() for p in parts if p.strip()]
+    lines = [ln.strip() for ln in opis.splitlines() if ln.strip()]
+    head, rest = (lines[:2], ' '.join(lines[2:])) if len(lines) >= 2 else ([], opis)
+    parts = re.split(r'(?=(?:Specyfikacja|Powierzchnia|Certyfikacja|Układ budynku|Infrastruktura|Konstrukcja|Elewacja|Zagospodarowanie|Inwestor|Lokalizacja))', rest)
+    return head + [p.strip() for p in parts if p.strip()]
+
+
+def _card(project):
+    """Kopia projektu z krótkim opisem do karty na liście (typ obiektu + początek parametrów)."""
+    paras = _project_paras(project)
+    text = paras[1] if len(paras) > 1 else ''
+    if len(text) > 170:
+        text = text[:170].rsplit(' ', 1)[0].rstrip(',;:') + '…'
+    return dict(project, card_type=paras[0] if paras else '', card_text=text)
 
 
 def _enrich(project):
@@ -37,6 +51,7 @@ def realizacje(request, page=1):
 
     paginator = Paginator(projects, PER_PAGE)
     page_obj = paginator.get_page(page)
+    page_obj.object_list = [_card(p) for p in page_obj.object_list]
     data = {
         'title': _('Nasze realizacje'),
         'subTitle': _('Realizacje'),

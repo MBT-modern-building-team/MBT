@@ -43,7 +43,7 @@
     ==============================-->
     <div class="hero-wrapper hero-3" id="hero">
         <div class="hero-bg-3-1 bg-mask" style="-webkit-mask-image: url('/static/img/hero/hero_bg_mask_3_1.webp'); mask-image: url('/static/img/hero/hero_bg_mask_3_1.webp'); mask-size: 100% 100%; mask-repeat: no-repeat; -webkit-mask-size: 100% 100%; -webkit-mask-repeat: no-repeat;">
-            <img src="{{ photos.home_hero_bg }}" fetchpriority="high" alt="Background" width="1920" height="1080" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <img src="{{ photos.home_hero_bg }}" fetchpriority="high" alt="" width="1920" height="1080" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
             <!-- Film w tle hero: najpierw z CMS (site.hero_video), potem stały plik 'strona mbt.mov'.
                  Film renderuje się WEWNĄTRZ diva hero-bg-3-1, dzięki czemu maska CSS
                  (data-mask-src) wycina trójkątny kształt w prawym dolnym rogu.
@@ -635,11 +635,6 @@
                 </div>
                 <div class="col-lg-auto">
                     <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-cdr.svg" alt="CDR" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
                         <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-dl-invest-group.svg" alt="DL Invest Group" width="150" height="80" loading="lazy"></a>
                     </div>
                 </div>
@@ -846,33 +841,78 @@
     </section>
 
     <!--==============================
-    Text Area  
+    SEO Text Area
     ==============================-->
-    <div class="text-area space-bottom overflow-hidden">
+    <section class="mbt-seo space overflow-hidden">
         <div class="container">
-            <div class="row">                
-                <div class="col-xl-12">
-                    <p class="sec-text">{% blocktranslate %}Generalny wykonawca budowlany MBT Modern Building Team zajmuje się kompleksową realizacją obiektów przemysłowych, magazynowych i komercyjnych. Zapewniamy wsparcie od opracowania koncepcji i projektu, przez organizację prac budowlanych, aż po oddanie gotowego obiektu do użytkowania. Łączymy wiedzę inżynierską z doświadczeniem w prowadzeniu inwestycji o różnej skali.{% endblocktranslate %}</p>
-                    <h2 class="sec-title mt-25">{% blocktranslate %}Generalne wykonawstwo – od projektu po odbiór budynku{% endblocktranslate %}</h2>
-                    <p class="sec-text">{% blocktranslate %}Jako generalny wykonawca inwestycji budowlanych odpowiadamy za koordynację prac, dobór rozwiązań technicznych i nadzór nad harmonogramem. Nasza oferta obejmuje projektowanie, roboty konstrukcyjne, instalacyjne oraz zagospodarowanie terenu. Każdy etap realizacji uwzględnia wymagania technologiczne obiektu i założony budżet.{% endblocktranslate %}</p>
-                    <h2 class="sec-title mt-25">{% blocktranslate %}Generalny wykonawca ze Śląska i Małopolski – obsługa inwestycji{% endblocktranslate %}</h2>
-                    <p class="sec-text">{% blocktranslate %}Siedziba MBT znajduje się w Zabrzu, a oddział firmy działa w Krakowie. Jako generalny wykonawca ze Śląska realizujemy przedsięwzięcia dla przedsiębiorstw z różnych branż. Zapewniamy również lokalne wsparcie inwestorom z regionu.{% endblocktranslate %}</p>
-                    <p class="sec-text">{% blocktranslate %}Realizowana przez nas obsługa inwestycji budowlanych obejmuje przygotowanie dokumentacji, koordynację robót i wsparcie w formalnościach. Dzięki temu możemy prowadzić inwestycję w sposób uporządkowany, z uwzględnieniem jej specyfiki.{% endblocktranslate %}</p>
-                    <h2 class="sec-title mt-25">{% blocktranslate %}Generalny wykonawca budowlany – jakie obiekty realizujemy?{% endblocktranslate %}</h2>
-                    <p class="sec-text">{% blocktranslate %}Firma MBT specjalizuje się w budowie hal produkcyjnych, magazynów, centrów logistycznych oraz obiektów handlowo-usługowych. Dobieramy technologie do przeznaczenia budynku, planowanych obciążeń i potrzeb przyszłych użytkowników.{% endblocktranslate %}</p>
-                    <h2 class="sec-title mt-25">{% blocktranslate %}Budowa hal i obiektów komercyjnych – zakres specjalizacji MBT{% endblocktranslate %}</h2>
-                    <p class="sec-text">{% blocktranslate %}Realizujemy <a href="https://mbt.pl/hale-magazynowe/">hale magazynowe</a> i centra logistyczne dostosowane do potrzeb składowania, transportu oraz dystrybucji towarów. Uwzględniamy wymagania dotyczące układu komunikacyjnego, bezpieczeństwa pożarowego i automatyzacji magazynów.{% endblocktranslate %}</p>
-                    <p class="sec-text">{% blocktranslate %}Budujemy <a href="https://mbt.pl/hale-przemyslowe/">hale produkcyjne</a> przystosowane do określonych procesów technologicznych i obciążeń konstrukcyjnych. Realizujemy obiekty z instalacjami przemysłowymi, fundamentami pod maszyny oraz infrastrukturą dla suwnic.{% endblocktranslate %}</p>
-                    <p class="sec-text">{% blocktranslate %}Wykonujemy również <a href="https://mbt.pl/obiekty-komercyjne/">obiekty komercyjne</a>, jak parki handlowe, obiekty usługowe i salony samochodowe. Zakres prac obejmuje konstrukcję budynku, instalacje oraz wykończenie przestrzeni zgodnie z wymaganiami funkcjonalnymi i standardami danej marki.{% endblocktranslate %}</p>
-                    <h2 class="sec-title mt-25">{% blocktranslate %}FAQ – najczęściej zadawane pytania{% endblocktranslate %}</h2>
-                    <h3 class="sec-title">{% blocktranslate %}Za co odpowiada generalny wykonawca?{% endblocktranslate %}</h3>
-                    <p class="sec-text mb-25">{% blocktranslate %}Za organizację i koordynację procesu budowlanego, nadzór nad pracami oraz realizację inwestycji zgodnie z dokumentacją i harmonogramem.{% endblocktranslate %}</p>
-                    <h3 class="sec-title">{% blocktranslate %}Czy MBT oferuje realizację w formule „zaprojektuj i wybuduj”?{% endblocktranslate %}</h3>
-                    <p class="sec-text">{% blocktranslate %}Tak, firma zapewnia projektowanie i wykonawstwo w ramach jednego procesu inwestycyjnego.{% endblocktranslate %}</p>
+            <div class="mbt-seo__intro">
+                <span class="sub-title text-theme">{% trans "O firmie" %} <i class="ri-arrow-right-down-line"></i></span>
+                <p class="mbt-seo__lead">{% blocktranslate %}Generalny wykonawca budowlany MBT Modern Building Team zajmuje się kompleksową realizacją obiektów przemysłowych, magazynowych i komercyjnych. Zapewniamy wsparcie od opracowania koncepcji i projektu, przez organizację prac budowlanych, aż po oddanie gotowego obiektu do użytkowania. Łączymy wiedzę inżynierską z doświadczeniem w prowadzeniu inwestycji o różnej skali.{% endblocktranslate %}</p>
+            </div>
+
+            <div class="row gy-4 mbt-seo__cards">
+                <div class="col-lg-6">
+                    <article class="mbt-seo__card">
+                        <span class="mbt-seo__num">01</span>
+                        <i class="ri-building-4-line mbt-seo__icon"></i>
+                        <h2 class="mbt-seo__title">{% blocktranslate %}Generalne wykonawstwo – od projektu po odbiór budynku{% endblocktranslate %}</h2>
+                        <p>{% blocktranslate %}Jako generalny wykonawca inwestycji budowlanych odpowiadamy za koordynację prac, dobór rozwiązań technicznych i nadzór nad harmonogramem. Nasza oferta obejmuje projektowanie, roboty konstrukcyjne, instalacyjne oraz zagospodarowanie terenu. Każdy etap realizacji uwzględnia wymagania technologiczne obiektu i założony budżet.{% endblocktranslate %}</p>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="mbt-seo__card">
+                        <span class="mbt-seo__num">02</span>
+                        <i class="ri-map-pin-2-line mbt-seo__icon"></i>
+                        <h2 class="mbt-seo__title">{% blocktranslate %}Generalny wykonawca ze Śląska i Małopolski – obsługa inwestycji{% endblocktranslate %}</h2>
+                        <p>{% blocktranslate %}Siedziba MBT znajduje się w Zabrzu, a oddział firmy działa w Krakowie. Jako generalny wykonawca ze Śląska realizujemy przedsięwzięcia dla przedsiębiorstw z różnych branż. Zapewniamy również lokalne wsparcie inwestorom z regionu.{% endblocktranslate %}</p>
+                        <p>{% blocktranslate %}Realizowana przez nas obsługa inwestycji budowlanych obejmuje przygotowanie dokumentacji, koordynację robót i wsparcie w formalnościach. Dzięki temu możemy prowadzić inwestycję w sposób uporządkowany, z uwzględnieniem jej specyfiki.{% endblocktranslate %}</p>
+                    </article>
                 </div>
             </div>
+
+            <div class="mbt-seo__band">
+                <i class="ri-hammer-line"></i>
+                <div>
+                    <h2 class="mbt-seo__band-title">{% blocktranslate %}Generalny wykonawca budowlany – jakie obiekty realizujemy?{% endblocktranslate %}</h2>
+                    <p>{% blocktranslate %}Firma MBT specjalizuje się w budowie hal produkcyjnych, magazynów, centrów logistycznych oraz obiektów handlowo-usługowych. Dobieramy technologie do przeznaczenia budynku, planowanych obciążeń i potrzeb przyszłych użytkowników.{% endblocktranslate %}</p>
+                </div>
+            </div>
+
+            <h2 class="mbt-seo__heading">{% blocktranslate %}Budowa hal i obiektów komercyjnych – zakres specjalizacji MBT{% endblocktranslate %}</h2>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mbt-seo__obj">
+                        <i class="ri-store-3-line"></i>
+                        <p>{% blocktranslate %}Realizujemy <a href="https://mbt.pl/hale-magazynowe/">hale magazynowe</a> i centra logistyczne dostosowane do potrzeb składowania, transportu oraz dystrybucji towarów. Uwzględniamy wymagania dotyczące układu komunikacyjnego, bezpieczeństwa pożarowego i automatyzacji magazynów.{% endblocktranslate %}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mbt-seo__obj">
+                        <i class="ri-settings-3-line"></i>
+                        <p>{% blocktranslate %}Budujemy <a href="https://mbt.pl/hale-przemyslowe/">hale produkcyjne</a> przystosowane do określonych procesów technologicznych i obciążeń konstrukcyjnych. Realizujemy obiekty z instalacjami przemysłowymi, fundamentami pod maszyny oraz infrastrukturą dla suwnic.{% endblocktranslate %}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="mbt-seo__obj">
+                        <i class="ri-shopping-bag-3-line"></i>
+                        <p>{% blocktranslate %}Wykonujemy również <a href="https://mbt.pl/obiekty-komercyjne/">obiekty komercyjne</a>, jak parki handlowe, obiekty usługowe i salony samochodowe. Zakres prac obejmuje konstrukcję budynku, instalacje oraz wykończenie przestrzeni zgodnie z wymaganiami funkcjonalnymi i standardami danej marki.{% endblocktranslate %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mbt-seo__heading mbt-seo__heading--faq">{% blocktranslate %}FAQ – najczęściej zadawane pytania{% endblocktranslate %}</h2>
+            <div class="mbt-seo__faq">
+                <details class="mbt-seo__q" open>
+                    <summary><h3>{% blocktranslate %}Za co odpowiada generalny wykonawca?{% endblocktranslate %}</h3><i class="ri-add-line"></i></summary>
+                    <p>{% blocktranslate %}Za organizację i koordynację procesu budowlanego, nadzór nad pracami oraz realizację inwestycji zgodnie z dokumentacją i harmonogramem.{% endblocktranslate %}</p>
+                </details>
+                <details class="mbt-seo__q" open>
+                    <summary><h3>{% blocktranslate %}Czy MBT oferuje realizację w formule „zaprojektuj i wybuduj”?{% endblocktranslate %}</h3><i class="ri-add-line"></i></summary>
+                    <p>{% blocktranslate %}Tak, firma zapewnia projektowanie i wykonawstwo w ramach jednego procesu inwestycyjnego.{% endblocktranslate %}</p>
+                </details>
+            </div>
         </div>
-    </div>
+    </section>
 
     </main>
     <!--==============================

@@ -12,6 +12,9 @@ This view works around it by:
   2. Reversing the URL in the target language (with override()), giving the
      correctly-prefixed URL — or '/' for pl thanks to PREFIX_DEFAULT_LANGUAGE=False.
 """
+import logging
+
+logger = logging.getLogger(__name__)
 from urllib.parse import urlsplit, urlunsplit, unquote
 
 from django.conf import settings
@@ -72,7 +75,7 @@ def set_language(request):
                 try:
                     request.session[LANGUAGE_SESSION_KEY] = lang_code
                 except Exception:
-                    pass
+                    logger.warning('Fallback po błędzie', exc_info=True)
 
             response.set_cookie(
                 settings.LANGUAGE_COOKIE_NAME,

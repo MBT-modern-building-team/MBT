@@ -6,6 +6,5 @@ class MbtAppConfig(AppConfig):
     name = 'MBTApp'
 
     def ready(self):
-        # Sygnały: po zapisie w CMS automatycznie regenerują mbt_data.py
-        # (fallback dla Vercel — patrz MBTApp/signals.py)
+        # Sygnały: po zapisie w CMS czyszczą cache danych (MBTApp/signals.py)
         import MBTApp.signals  # noqa: F401

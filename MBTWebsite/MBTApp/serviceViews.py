@@ -1,3 +1,6 @@
+import logging
+
+logger = logging.getLogger(__name__)
 from django.shortcuts import render
 from django.utils.translation import gettext_lazy as _
 from MBTApp import mbt_orm
@@ -101,7 +104,7 @@ def sectorDetail(request, slug):
         from MBTApp.models import Sector
         sector_obj = Sector.objects.filter(slug=slug).first()
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
         
     if sector_obj and sector_obj.title:
         readable_title = sector_obj.title
@@ -215,7 +218,6 @@ Uwagi dodatkowe:
     }
     return render(request, "service/uroczystosc.html", data)
 
-import traceback
 
 def ankieta_wizerunek(request):
     lang = request.LANGUAGE_CODE

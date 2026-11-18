@@ -12,6 +12,9 @@ Zdjęcia realizacji: można je też wrzucać do folderów na dysku:
 Jeśli folder istnieje i zawiera zdjęcia — wygrywają one z CMS-em.
 Jeśli folder jest pusty lub nie istnieje — używane są dane z CMS (admin).
 """
+import logging
+
+logger = logging.getLogger(__name__)
 import html
 import os
 import re
@@ -69,7 +72,7 @@ def _t(trans_dict, lang='pl', fallback=''):
                     if gt and gt != fallback:
                         return gt
             except Exception:
-                pass
+                logger.warning('Fallback po błędzie', exc_info=True)
             return translate(fallback, source='pl', target=lang)
         return fallback
 
@@ -86,7 +89,7 @@ def _t(trans_dict, lang='pl', fallback=''):
                 if gt and gt != pl_text:
                     return gt
         except Exception:
-            pass
+            logger.warning('Fallback po błędzie', exc_info=True)
         return translate(pl_text, source='pl', target=lang)
     
     return pl_text
@@ -167,6 +170,17 @@ def _apply_folder_photos(project):
 # Projekty (realizacje)
 # ---------------------------------------------------------------------------
 
+def _portfolio_overlay(projects, lang):
+    """Realizacje z podstrony „Potencjał i referencje”: ukryj wycofane, dołóż nowe (z mbt_data), gdy nie ma ich jeszcze w CMS."""
+    from MBTApp.portfolio_records import NEW_SLUGS, REMOVED_SLUGS
+    out = [p for p in projects if p['slug'] not in REMOVED_SLUGS]
+    have = {p['slug'] for p in out}
+    for p in mbt_data.PROJECTS:
+        if p['slug'] in NEW_SLUGS and p['slug'] not in have:
+            out.append(_apply_folder_photos(_project_translate(dict(p), lang)))
+    return out
+
+
 @_cached('projects')
 def get_projects(lang='pl'):
     try:
@@ -188,13 +202,16 @@ def get_projects(lang='pl'):
                 'order': p.order,
             }
             projects.append(_apply_folder_photos(proj))
-        if projects: return projects
+        if projects: return _portfolio_overlay(projects, lang)
     except Exception:
-        pass
-    return [_apply_folder_photos(_project_translate(dict(p), lang)) for p in mbt_data.PROJECTS]
+        logger.warning('Fallback po błędzie', exc_info=True)
+    return _portfolio_overlay([_apply_folder_photos(_project_translate(dict(p), lang)) for p in mbt_data.PROJECTS], lang)
 
 
 def get_project_by_slug(slug, lang='pl'):
+    from MBTApp.portfolio_records import NEW_SLUGS, REMOVED_SLUGS
+    if slug in REMOVED_SLUGS:
+        return None
     try:
         try:
             p = Project.objects.get(slug=slug)
@@ -214,9 +231,10 @@ def get_project_by_slug(slug, lang='pl'):
             }
             return _apply_folder_photos(proj)
         except Project.DoesNotExist:
-            return None
+            if slug not in NEW_SLUGS:
+                return None
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     for p in mbt_data.PROJECTS:
         if p['slug'] == slug:
             d = _project_translate(dict(p), lang)
@@ -256,7 +274,7 @@ def get_jobs(lang='pl'):
             res.append(job_dict)
         if res: return res
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     
     fallback_res = []
     for j in mbt_data.JOBS:
@@ -275,7 +293,7 @@ def get_job_by_slug(slug, lang='pl'):
     except Job.DoesNotExist:
         return None
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     for j in mbt_data.JOBS:
         if j['slug'] == slug:
             t_dict = _project_translate(dict(j), lang)
@@ -298,7 +316,7 @@ def get_workers(lang='pl'):
         ]
         if res: return res
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     return [_project_translate(dict(w), lang) for w in mbt_data.WORKERS]
 
 
@@ -320,7 +338,7 @@ def get_sales_reps(lang='pl'):
                 'order': s.order
             }
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
 
     res = list(reps_by_name.values())
     res.sort(key=lambda x: (x.get('order', 999), x.get('name', '')))
@@ -345,7 +363,6 @@ _REFERENCE_LOGOS = {
     'huber': '/static/img/mbt/trusted-us-huber-suhner.svg',
     'kompania': '/static/img/mbt/trusted-us-kompania-piwowarska.svg',
     'bater': '/static/img/mbt/trusted-us-bater.svg',
-    'cdr': '/static/img/mbt/trusted-us-cdr.svg',
     'dl invest': '/static/img/mbt/trusted-us-dl-invest-group.svg',
     'epco': '/static/img/mbt/trusted-us-epco.svg',
     'stainless': '/static/img/mbt/trusted-us-stainless-steel-engineering.svg',
@@ -377,7 +394,7 @@ def get_references(lang='pl'):
             })
         if refs: return refs
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     refs = []
     for r in mbt_data.REFERENCES:
         d = _project_translate(dict(r), lang)
@@ -416,7 +433,7 @@ def get_articles(lang='pl'):
             })
         if arts: return arts
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     arts = []
     for a in mbt_data.ARTICLES:
         d = _project_translate(dict(a), lang)
@@ -431,11 +448,12 @@ def get_article_by_slug(slug, lang='pl'):
         return {
             'title': _t(a.t_title, lang, a.title), 'slug': a.slug,
             'excerpt': _t(a.t_excerpt, lang, a.excerpt), 'text': _t(a.t_text, lang, a.text), 'image': a.image, 'gallery': a.gallery,
+            'created': a.created,
         }
     except Article.DoesNotExist:
         return None
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     for a in mbt_data.ARTICLES:
         if a['slug'] == slug:
             d = _project_translate(dict(a), lang)
@@ -497,7 +515,7 @@ def get_site(lang='pl'):
                 'hero_video': c.hero_video,
             }
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     # Fallback z mbt_data.py z tłumaczeniem gettext dla etykiet
     s = dict(mbt_data.SITE)
     from django.utils.translation import override as _override, gettext as _gettext
@@ -535,6 +553,7 @@ def get_photos():
     out = dict(getattr(mbt_data, 'PHOTOS', {}))
     dummy_placeholders = {
         '/static/img/hero/hero_bg_3_1.png',
+        '/static/img/hero/hero_bg_3_1.webp',
         '/static/img/bg/cta-bg3-1.png',
         '/static/img/bg/contact-bg3-1.png',
         '/static/img/bg/breadcrumb-bg.png',
@@ -564,7 +583,7 @@ def get_photos():
                 out[field.name] = val
             return out
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     return out
 
 @_cached('awards')
@@ -573,7 +592,7 @@ def get_awards():
         res = [{'name': a.name, 'image': a.image if a.image else ''} for a in Award.objects.filter(is_active=True)]
         if res: return res
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     
     # Fallback to mbt_data on Vercel
     awards = []
@@ -622,7 +641,7 @@ def get_sectors(lang='pl'):
         except OperationalError:
             pass
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
     
     # Fallback to mbt_data
     res = []

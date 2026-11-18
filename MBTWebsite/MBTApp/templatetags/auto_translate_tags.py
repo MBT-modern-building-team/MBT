@@ -9,7 +9,6 @@ Usage in templates:
     {% end_auto_translate_block %}
 """
 from django import template
-from django.utils.safestring import mark_safe
 
 # Import the translate function lazily so module-level failures (e.g. on
 # read-only filesystems like Vercel where the SQLite cache cannot be opened)

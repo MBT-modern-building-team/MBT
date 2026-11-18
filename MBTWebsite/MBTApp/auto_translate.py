@@ -7,6 +7,16 @@ Strategy:
 3. Cache: SQLite-backed by hash(text + source + target) → translation
 4. Detects PL leftovers in rendered HTML and translates them
 
+WAŻNE (wydajność): domyślnie translate() NIE łączy się z zewnętrznym API
+podczas obsługi żądania — zwraca tylko tłumaczenie z cache (plik
+MBTApp/translation_cache.json dołączony do repo + cache SQLite/in-memory)
+albo oryginalny tekst. Połączenia sieciowe są dozwolone tylko:
+  * gdy AUTO_TRANSLATE_ONLINE=True w ustawieniach (np. lokalnie),
+  * wewnątrz `with online_translation():` (komenda prefetch_translations).
+Po dodaniu treści w CMS uruchom lokalnie:
+    python manage.py prefetch_translations
+i zacommituj zaktualizowany MBTApp/translation_cache.json.
+
 When to use:
 - Static content in templates (when {% trans %} misses) — auto-translates on first render
 - Dynamic content from admin/CMS — translates on save
@@ -55,6 +65,47 @@ def _init_sqlite():
 
 _local = threading.local()
 
+# Plik z gotowymi tłumaczeniami (read-only na produkcji, commitowany do repo).
+BUNDLED_CACHE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'translation_cache.json')
+_bundled = None
+
+
+def _get_bundled():
+    """Ładuje translation_cache.json raz na proces: {hash: translated}."""
+    global _bundled
+    if _bundled is None:
+        try:
+            import json
+            with open(BUNDLED_CACHE_PATH, encoding='utf-8') as f:
+                data = json.load(f)
+            _bundled = {k: v['translated'] if isinstance(v, dict) else v for k, v in data.items()}
+        except FileNotFoundError:
+            _bundled = {}
+        except Exception as e:
+            logger.warning(f'Bundled translation cache unreadable: {e}')
+            _bundled = {}
+    return _bundled
+
+
+_online_state = threading.local()
+
+
+class online_translation:
+    """Context manager: zezwala na zapytania do zewnętrznego API (tylko komendy/admin)."""
+
+    def __enter__(self):
+        self._prev = getattr(_online_state, 'enabled', False)
+        _online_state.enabled = True
+        return self
+
+    def __exit__(self, *exc):
+        _online_state.enabled = self._prev
+        return False
+
+
+def _online_allowed():
+    return getattr(_online_state, 'enabled', False) or getattr(settings, 'AUTO_TRANSLATE_ONLINE', False)
+
 
 def _get_conn():
     """Get thread-local SQLite connection (or None if cache disabled)."""
@@ -76,6 +127,9 @@ def _hash(text, source, target):
 def get_cached(text, source='pl', target='en'):
     """Look up translation in cache. Returns None if not cached."""
     h = _hash(text, source, target)
+    bundled = _get_bundled().get(h)
+    if bundled is not None:
+        return bundled
     conn = _get_conn()
     if conn is not None:
         try:
@@ -97,6 +151,9 @@ def set_cached(text, translated, source='pl', target='en'):
     if translated == text:
         return
     h = _hash(text, source, target)
+    recorder = getattr(_online_state, 'recorder', None)
+    if recorder is not None:
+        recorder[h] = {'source': source, 'target': target, 'original': text, 'translated': translated}
     conn = _get_conn()
     if conn is not None:
         try:
@@ -141,6 +198,11 @@ def translate(text, source='pl', target='en', use_cache=True):
         cached = get_cached(text, source, target)
         if cached is not None:
             return cached
+
+    # Bez zgody na sieć (domyślnie podczas żądania) — zwróć oryginał,
+    # zamiast blokować renderowanie strony na zapytaniach HTTP.
+    if not _online_allowed():
+        return text
 
     # Skip very short strings (likely markup/CSS/JS fragments)
     if len(text.strip()) < 3:

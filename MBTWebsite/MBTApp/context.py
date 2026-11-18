@@ -9,12 +9,25 @@ from MBTApp import mbt_orm
 from MBTApp.i18n_views import _translate_url_safe
 
 
+# Strony, których nie chcemy w wynikach wyszukiwania (wyszukiwarka, ankiety,
+# wydarzenia, panel oznakowania, kiosk, brandbook).
+NOINDEX_URL_NAMES = {
+    'search', 'ankieta_wizerunek', 'uroczystosc', 'uroczystosc_correct',
+    'kiosk', 'brandbook', 'rodo_upper',
+}
+NOINDEX_URL_PREFIXES = ('oznakowanie_', 'board_')
+
+
 def site_context(request):
     lang = getattr(request, 'LANGUAGE_CODE', 'pl')
+    match = getattr(request, 'resolver_match', None)
+    url_name = getattr(match, 'url_name', None) or ''
     return {
         'site': mbt_orm.get_site(lang),
         'articles': mbt_orm.get_articles(lang),
         'photos': mbt_orm.get_photos(),
+        'is_home': url_name == 'index',
+        'seo_noindex': url_name in NOINDEX_URL_NAMES or url_name.startswith(NOINDEX_URL_PREFIXES),
     }
 
 

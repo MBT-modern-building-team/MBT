@@ -11,6 +11,9 @@ Kompresja: oryginalne zdjęcia z aparatu ważą 13-68 MB — po konwersji do Web
 (1920px, q=82) dostajemy ~200-400 KB bez widocznej różnicy na ekranie.
 Dzięki temu R2 pozostaje lekki, a strona ładuje się szybko.
 """
+import logging
+
+logger = logging.getLogger(__name__)
 import io
 import os
 import uuid
@@ -154,7 +157,7 @@ def _compress_image(uploaded_file) -> tuple[bytes, str]:
         from PIL import ImageOps
         img = ImageOps.exif_transpose(img)
     except Exception:
-        pass
+        logger.warning('Fallback po błędzie', exc_info=True)
 
     # Konwersja na RGB (WebP nie wspiera alpha w trybie P/CMYK)
     if img.mode not in ('RGB', 'RGBA'):
