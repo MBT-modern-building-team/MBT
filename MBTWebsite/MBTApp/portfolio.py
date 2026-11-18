@@ -31,13 +31,16 @@ _MARKER_RE = re.compile(r'\[DO (UZUPE[ŁL]NIENIA|T[ŁL]UMACZENIA)[^\]]*\]', re.I
 # Tyskie Browary (nr 40), Brembo (nr 37) i Fronton (nr 32) to karty scalone z kilku wpisów JSON.
 
 # Nowe rekordy w /realizacje/ (tylko logo klienta, inwestycja zrealizowana): nr -> plik logo w static.
-# Artus (nr 17) i Centrum Sportów Rakietowych UE (nr 50) już istnieją na produkcji — mapowane, nie tworzone.
+# Artus (nr 17) i Centrum Sportów Rakietowych UE (nr 50) istnieją już na produkcji (te same slugi) —
+# komenda ich nie dubluje, a nakładka w mbt_orm pokazuje je też tam, gdzie rekordu jeszcze nie ma.
 LOGOS = '/static/img/mbt/logos/'
 NEW_RECORDS = {
     9: LOGOS + 'eurostyl-chelmek.svg',
     14: 'https://media.mbt.pl/media/uploads/7ad52ff95b94.webp',  # logo jak w realizacji Stokado Warszawa Targówek
+    17: 'https://media.mbt.pl/uploads/1491284b28df.webp',  # Artus Aircraft (jak na produkcji)
     31: LOGOS + 'kbh-akord.png',
     37: LOGOS + 'brembo.png',
+    50: 'https://media.mbt.pl/uploads/4fe7e40eb483.webp',  # Centrum Sportów Rakietowych UE Wrocław (jak na produkcji)
     51: LOGOS + 'zielona-dolina.png',
 }
 # Rekordy usunięte z serwisu całkowicie (baza + mbt_data.py) — lista w portfolio_records.py.

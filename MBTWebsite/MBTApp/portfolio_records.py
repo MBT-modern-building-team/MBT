@@ -6,6 +6,8 @@ Nakładka w mbt_orm pokazuje NEW_SLUGS (z mbt_data.PROJECTS) dopóki rekordu nie
 """
 NEW_SLUGS = [
     'eurostyl-chelmek',
+    'artus-aircraft',
+    'centrum-sportow-rakietowych-ue-wroclaw',
     'stokado-gdansk',
     'kbh-akord-siemianowice-slaskie',
     'brembo-poland-dabrowa-gornicza',
