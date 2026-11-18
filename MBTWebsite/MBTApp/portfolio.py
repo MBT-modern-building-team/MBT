@@ -20,6 +20,7 @@ from django.urls import reverse
 
 from MBTApp import mbt_orm
 from MBTApp.auto_translate import translate
+from MBTApp.portfolio_records import REMOVED_SLUGS as _REMOVED
 
 JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'portfolio_mbt.json')
 
@@ -27,7 +28,25 @@ _MARKER_RE = re.compile(r'\[DO (UZUPE[ŁL]NIENIA|T[ŁL]UMACZENIA)[^\]]*\]', re.I
 
 # nr realizacji (JSON) -> slug istniejącej realizacji w /realizacje/.
 # Tylko pewne dopasowania; reszta nie ma jeszcze rekordu (brak linku i miniatury).
-# Tyskie Browary (nr 40) to jedna karta scalona z pięciu wpisów JSON.
+# Tyskie Browary (nr 40), Brembo (nr 37) i Fronton (nr 32) to karty scalone z kilku wpisów JSON.
+
+# Nowe rekordy w /realizacje/ (tylko logo klienta, inwestycja zrealizowana): nr -> plik logo w static.
+LOGOS = '/static/img/mbt/logos/'
+NEW_RECORDS = {
+    9: LOGOS + 'eurostyl-chelmek.svg',
+    14: '/static/img/mbt/logo-stokado-CMYK.ai_01-scaled-a32efdb4.jpg',
+    17: LOGOS + 'artus-aircraft-gliwice.svg',
+    31: LOGOS + 'kbh-akord.png',
+    37: LOGOS + 'brembo.png',
+    50: LOGOS + 'uew-csr.png',
+    51: LOGOS + 'zielona-dolina.png',
+}
+# Rekordy usunięte z serwisu całkowicie (baza + mbt_data.py) — lista w portfolio_records.py.
+REMOVED_SLUGS = _REMOVED
+# Wcześniej doklejone bloki opisu, które trzeba zdjąć przed doklejeniem nowej wersji (nr -> teksty).
+LEGACY_BLOCKS = {
+    32: ['Hala produkcyjno-magazynowa z częścią biurową\nPowierzchnia hali: 1 469 m² (kubatura: 10 244 m³), część biurowa: 271 m², instalacje wewnętrzne, sieci zewnętrzne, drogi wewnętrzne i place manewrowe.'],
+}
 EXISTING_SLUGS = {
     1: 'raben',
     2: 'in-post-w-legnicy',
@@ -35,13 +54,15 @@ EXISTING_SLUGS = {
     4: 'bts-development-park-zielona-gora',
     5: 'warmet-hurtownia-alkocholi',
     6: 'euro-trade-w-modlnicy',
-    7: 'venus-brzegi',
+    9: 'eurostyl-chelmek',
     10: ('epco-bytom', 'p1704'),
     11: 'stokado-self-storage-krakow',
     12: 'stokado-self-storage-warszawa-targowek',
     13: 'stokado-self-storage-warszawa-bemowo',
+    14: 'stokado-gdansk',
     15: 'less-mess-storage-warszawa',
     16: 'less-mess-gdansk',
+    17: 'artus-aircraft-gliwice',
     18: 'huber-suhner-pisary',
     20: 'ponar-wadowice',
     21: 'fiolka-raciborz',
@@ -54,13 +75,17 @@ EXISTING_SLUGS = {
     28: 'sutco-katowice',
     29: 'eurosleeve-zabrze',
     30: 'pumar',
+    31: 'kbh-akord-siemianowice-slaskie',
     32: 'fronton-krakow',
     33: 'fabryka-park-katowice',
     34: 'scallier-zabrze',
     35: 'byd-dabrowscy-bytom',
+    37: 'brembo-poland-dabrowa-gornicza',
     40: 'kompania-piwowarska-tychy',
     41: 'kompania-piwowarska',
     46: 'browar-zamkowy-raciborz',
+    50: 'uniwersytet-ekonomiczny-we-wroclawiu-centrum-sportow-rakietowych',
+    51: 'invest-tdj-estate-zabrze-zielona-dolina-4',
     47: 'canpack-bss-lab-brzesk',
     48: 'Canpack-BSS-Excellence-Centre-Brzesk',
 }
@@ -165,6 +190,9 @@ def project_description(r, old_opis=''):
         params = _clean(r.get('parametry'))
     parts = [p for p in (_clean(r.get('typ')), params) if p]
     old_opis = (old_opis or '').strip()
+    for block in LEGACY_BLOCKS.get(r.get('nr'), []):
+        if old_opis.startswith(block):
+            old_opis = old_opis[len(block):].strip()
     if not parts or (params and params in old_opis):
         return old_opis
     return '\n'.join(parts + ([old_opis] if old_opis else []))
@@ -215,7 +243,7 @@ def build_context(lang='pl'):
             'voivodeship': r.get('wojewodztwo'),
             'url': url,
             'thumb': _thumb(ex),
-            'contain': bool(ex) and ex.get('type') == 'realizacja-w-trakcie',
+            'contain': bool(ex) and (ex.get('type') == 'realizacja-w-trakcie' or '/logos/' in (ex.get('hero') or '')),
         })
 
     by_sector = OrderedDict()

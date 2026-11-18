@@ -29,7 +29,7 @@ class PortfolioPageTests(TestCase):
         for code, _name in settings.LANGUAGES:
             html = self._get(code).content.decode()
             body = re.sub(r'<(script|svg).*?</\1>', '', html, flags=re.S)
-            for bad in ('MESKO', 'obronn', 'Zbrojeni', 'Łaziska', 'Na rynku od', 'Ponar Silesia'):
+            for bad in ('MESKO', 'obronn', 'Zbrojeni', 'Łaziska', 'Na rynku od', 'Ponar Silesia', 'Venus', 'CDR Żory', 'Remondis', 'siedziba własna', 'Przemysłowa farma fotowoltaiczna'):
                 self.assertNotIn(bad, body, f'{bad} w {code}')
         html = self._get().content.decode()
         self.assertIn('Ponar Wadowice S.A.', html)
@@ -71,3 +71,13 @@ class PortfolioPageTests(TestCase):
     def test_pdf_link_only_when_route_exists(self):
         html = self._get().content.decode()
         self.assertEqual('pobierz-pdf' in html, False)  # trasa PDF = etap 2 (nie istnieje w repo)
+
+    def test_realizacje_added_and_removed(self):
+        self.assertEqual(self.client.get('/realizacja/venus-brzegi/', HTTP_HOST='localhost').status_code, 404)
+        for slug in ('eurostyl-chelmek', 'stokado-gdansk', 'artus-aircraft-gliwice', 'kbh-akord-siemianowice-slaskie',
+                     'brembo-poland-dabrowa-gornicza', 'invest-tdj-estate-zabrze-zielona-dolina-4'):
+            resp = self.client.get(f'/realizacja/{slug}/', HTTP_HOST='localhost')
+            self.assertEqual(resp.status_code, 200, slug)
+        html = self._get().content.decode()
+        self.assertIn('/realizacja/eurostyl-chelmek/', html)
+        self.assertIn('/static/img/mbt/logos/brembo.png', html)

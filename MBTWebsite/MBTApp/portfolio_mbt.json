@@ -187,7 +187,7 @@
     },
     {
       "nazwa": "Geotermia, pompy ciepła, PV i magazyny energii",
-      "potwierdzenie": "LMS Warszawa, UE Wrocław, farma PV (EPC)"
+      "potwierdzenie": "LMS Warszawa, UE Wrocław"
     },
     {
       "nazwa": "Obiekty w strefie ochrony konserwatorskiej",
@@ -733,40 +733,6 @@
       "parametry_publiczne": null
     },
     {
-      "nr": 7,
-      "slug": "venus-krakow-brzegi",
-      "sektor": "logistyka",
-      "nazwa": "Venus Kraków (Brzegi)",
-      "typ": "Kompleks magazynowo-biurowy",
-      "lokalizacja": "Brzegi k. Krakowa (woj. małopolskie)",
-      "wojewodztwo": "małopolskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Powierzchnia terenu inwestycji: ok. 13 300 m², hala magazynowa: 3 200 m², budynek biurowy: 850 m², drogi wewnętrzne, place manewrowe i parkingi. Konstrukcja prefabrykowana żelbetowa i stalowa.",
-      "kpi": [
-        "3 200 m² hala",
-        "850 m² biura",
-        "teren ok. 13 300 m²"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 8,
-      "slug": "cdr-zory",
-      "sektor": "logistyka",
-      "nazwa": "CDR Żory",
-      "typ": "Hala przemysłowo-magazynowa z zapleczem administracyjnym",
-      "lokalizacja": "Żory (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Hala składowania z dokami rozładunkowymi, dwukondygnacyjna część socjalno-biurowa, posadzka bezspoinowa o wysokiej nośności, płyty warstwowe PIR, zbrojone place manewrowe i retencja wód deszczowych.",
-      "kpi": [],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
       "nr": 9,
       "slug": "eurostyl-chelmek",
       "sektor": "logistyka",
@@ -1167,14 +1133,15 @@
       "slug": "fronton-krakow",
       "sektor": "produkcja",
       "nazwa": "Fronton Kraków",
-      "typ": "Hala produkcyjno-magazynowa z częścią biurową",
+      "typ": "Hala produkcyjno-magazynowa z częścią biurową oraz podziemny zbiornik retencyjny z rowem odparowująco-odwadniającym",
       "lokalizacja": "Kraków (woj. małopolskie)",
       "wojewodztwo": "małopolskie",
       "formula": "Buduj / Generalne Wykonawstwo",
-      "parametry": "Powierzchnia hali: 1 469 m² (kubatura: 10 244 m³), część biurowa: 271 m², instalacje wewnętrzne, sieci zewnętrzne, drogi wewnętrzne i place manewrowe.",
+      "parametry": "Powierzchnia hali: 1 469 m² (kubatura: 10 244 m³), część biurowa: 271 m², instalacje wewnętrzne, sieci zewnętrzne, drogi wewnętrzne i place manewrowe. Zbiornik i rów: Budowa podziemnego żelbetowego zbiornika retencyjnego na wody opadowe o dużej pojemności wraz z przepompownią oraz rów odparowująco-odwadniający z układem rozsączającym.",
       "kpi": [
         "1 469 m² hali",
-        "10 244 m³"
+        "10 244 m³",
+        "retencja"
       ],
       "status": "zrealizowana",
       "do_weryfikacji": null,
@@ -1236,50 +1203,16 @@
     },
     {
       "nr": 37,
-      "slug": "brembo-poland-dabrowa-gornicza-eco",
+      "slug": "brembo-poland-dabrowa-gornicza",
       "sektor": "czynne-zaklady",
-      "nazwa": "Brembo Poland Dąbrowa Górnicza (ECO)",
-      "typ": "Rozbudowa strefy ekologicznej w fabryce układów hamulcowych",
+      "nazwa": "Brembo Poland Dąbrowa Górnicza",
+      "typ": "Modernizacje i rozbudowy w warunkach czynnej fabryki: strefa ekologiczna, śluzy technologiczne, fundamenty pod linie produkcyjne",
       "lokalizacja": "Dąbrowa Górnicza (woj. śląskie)",
       "wojewodztwo": "śląskie",
       "formula": "Generalne Wykonawstwo w warunkach czynnej fabryki",
-      "parametry": "Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne.",
+      "parametry": "ECO: Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne. CNP1: Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego. Tucznawa: Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.",
       "kpi": [
         "2 101 m²",
-        "czynna fabryka"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 38,
-      "slug": "brembo-poland-dabrowa-gornicza-cnp1",
-      "sektor": "czynne-zaklady",
-      "nazwa": "Brembo Poland Dąbrowa Górnicza (CNP1)",
-      "typ": "System śluz technologicznych i modernizacja wydziału obróbki",
-      "lokalizacja": "Dąbrowa Górnicza (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo w systemie nieprzerwanej pracy fabryki",
-      "parametry": "Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego.",
-      "kpi": [
-        "czynna fabryka"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 39,
-      "slug": "brembo-poland-dabrowa-gornicza-tucznawa",
-      "sektor": "czynne-zaklady",
-      "nazwa": "Brembo Poland Dąbrowa Górnicza (Tucznawa)",
-      "typ": "Prace infrastrukturalne i fundamenty technologiczne w fabryce automotive",
-      "lokalizacja": "Dąbrowa Górnicza – Tucznawa / KSSE (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo na czynnym zakładzie produkcyjnym",
-      "parametry": "Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.",
-      "kpi": [
         "czynna fabryka"
       ],
       "status": "zrealizowana",
@@ -1378,21 +1311,6 @@
       "parametry_publiczne": null
     },
     {
-      "nr": 49,
-      "slug": "remondis-tarnowskie-gory",
-      "sektor": "rd-szkolenia",
-      "nazwa": "Remondis Tarnowskie Góry",
-      "typ": "Baza techniczno-operacyjna z halą warsztatowo-garażową i myjnią",
-      "lokalizacja": "Tarnowskie Góry (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Hala naprawczo-warsztatowa z kanałami rewizyjnymi, myjnia samochodowa dla floty komunalnej, magazyn części, zaplecze biurowo-socjalne, zbrojone place postojowe i manewrowe z separatorami węglowodorów.",
-      "kpi": [],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
       "nr": 50,
       "slug": "uniwersytet-ekonomiczny-we-wroclawiu-centrum-sportow-rakietowych",
       "sektor": "publiczne-mieszkaniowe",
@@ -1424,56 +1342,6 @@
       "kpi": [
         "5 budynków wielorodzinnych",
         "20 domów"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 52,
-      "slug": "mbt-krakow-siedziba-wlasna",
-      "sektor": "publiczne-mieszkaniowe",
-      "nazwa": "MBT Kraków (siedziba własna)",
-      "typ": "Adaptacja i aranżacja reprezentacyjnej siedziby biurowej",
-      "lokalizacja": "Kraków (woj. małopolskie)",
-      "wojewodztwo": "małopolskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Nowoczesne przestrzenie biurowe typu open space, gabinety zarządu, sale konferencyjne z zaawansowanymi systemami multimedialnymi, akustyczne przeszklenia w ramach loftowych, instalacje wentylacji i klimatyzacji, industrialny wystrój.",
-      "kpi": [],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 53,
-      "slug": "przemyslowa-farma-fotowoltaiczna-oze",
-      "sektor": "oze-infrastruktura",
-      "nazwa": "Przemysłowa farma fotowoltaiczna OZE",
-      "typ": "Farma PV ze stacją transformatorową i magazynem energii",
-      "lokalizacja": "Południowa Polska",
-      "wojewodztwo": null,
-      "formula": "EPC (Engineering, Procurement, Construction)",
-      "parametry": "Gruntowa instalacja fotowoltaiczna na stalowych konstrukcjach wbijanych w grunt z modułami monokrystalicznymi wysokiej sprawności, inwertery łańcuchowe, kontenerowa stacja transformatorowa SN/nn, magazyn energii, linie kablowe ziemne, ogrodzenie perymetryczne z systemem CCTV z analizą obrazu.",
-      "kpi": [
-        "EPC",
-        "magazyn energii"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 54,
-      "slug": "fronton-krakow-podgorze",
-      "sektor": "oze-infrastruktura",
-      "nazwa": "Fronton Kraków Podgórze",
-      "typ": "Podziemny zbiornik retencyjny i rów odparowująco-odwadniający",
-      "lokalizacja": "Kraków Podgórze (woj. małopolskie)",
-      "wojewodztwo": "małopolskie",
-      "formula": "Generalne Wykonawstwo infrastruktury inżynieryjnej",
-      "parametry": "Budowa podziemnego żelbetowego zbiornika retencyjnego na wody opadowe o dużej pojemności wraz z przepompownią oraz rów odparowująco-odwadniający z układem rozsączającym.",
-      "kpi": [
-        "retencja"
       ],
       "status": "zrealizowana",
       "do_weryfikacji": null,
