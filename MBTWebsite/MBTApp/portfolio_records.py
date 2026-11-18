@@ -7,10 +7,8 @@ Nakładka w mbt_orm pokazuje NEW_SLUGS (z mbt_data.PROJECTS) dopóki rekordu nie
 NEW_SLUGS = [
     'eurostyl-chelmek',
     'stokado-gdansk',
-    'artus-aircraft-gliwice',
     'kbh-akord-siemianowice-slaskie',
     'brembo-poland-dabrowa-gornicza',
-    'uniwersytet-ekonomiczny-we-wroclawiu-centrum-sportow-rakietowych',
     'invest-tdj-estate-zabrze-zielona-dolina-4',
 ]
 REMOVED_SLUGS = ['venus-brzegi']

@@ -74,7 +74,7 @@ class PortfolioPageTests(TestCase):
 
     def test_realizacje_added_and_removed(self):
         self.assertEqual(self.client.get('/realizacja/venus-brzegi/', HTTP_HOST='localhost').status_code, 404)
-        for slug in ('eurostyl-chelmek', 'stokado-gdansk', 'artus-aircraft-gliwice', 'kbh-akord-siemianowice-slaskie',
+        for slug in ('eurostyl-chelmek', 'stokado-gdansk', 'kbh-akord-siemianowice-slaskie',
                      'brembo-poland-dabrowa-gornicza', 'invest-tdj-estate-zabrze-zielona-dolina-4'):
             resp = self.client.get(f'/realizacja/{slug}/', HTTP_HOST='localhost')
             self.assertEqual(resp.status_code, 200, slug)

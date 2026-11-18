@@ -31,14 +31,13 @@ _MARKER_RE = re.compile(r'\[DO (UZUPE[ŁL]NIENIA|T[ŁL]UMACZENIA)[^\]]*\]', re.I
 # Tyskie Browary (nr 40), Brembo (nr 37) i Fronton (nr 32) to karty scalone z kilku wpisów JSON.
 
 # Nowe rekordy w /realizacje/ (tylko logo klienta, inwestycja zrealizowana): nr -> plik logo w static.
+# Artus (nr 17) i Centrum Sportów Rakietowych UE (nr 50) już istnieją na produkcji — mapowane, nie tworzone.
 LOGOS = '/static/img/mbt/logos/'
 NEW_RECORDS = {
     9: LOGOS + 'eurostyl-chelmek.svg',
     14: '/static/img/mbt/logo-stokado-CMYK.ai_01-scaled-a32efdb4.jpg',
-    17: LOGOS + 'artus-aircraft-gliwice.svg',
     31: LOGOS + 'kbh-akord.png',
     37: LOGOS + 'brembo.png',
-    50: LOGOS + 'uew-csr.png',
     51: LOGOS + 'zielona-dolina.png',
 }
 # Rekordy usunięte z serwisu całkowicie (baza + mbt_data.py) — lista w portfolio_records.py.
@@ -52,7 +51,7 @@ EXISTING_SLUGS = {
     2: 'in-post-w-legnicy',
     3: ('vesuvius-skawina', 'VESUVIUS'),
     4: 'bts-development-park-zielona-gora',
-    5: 'warmet-hurtownia-alkocholi',
+    5: ('warmet-hurtownia-alkoholi', 'warmet-hurtownia-alkocholi'),
     6: 'euro-trade-w-modlnicy',
     9: 'eurostyl-chelmek',
     10: ('epco-bytom', 'p1704'),
@@ -62,7 +61,7 @@ EXISTING_SLUGS = {
     14: 'stokado-gdansk',
     15: 'less-mess-storage-warszawa',
     16: 'less-mess-gdansk',
-    17: 'artus-aircraft-gliwice',
+    17: ('artus-aircraft', 'artus-aircraft-gliwice'),
     18: 'huber-suhner-pisary',
     20: 'ponar-wadowice',
     21: 'fiolka-raciborz',
@@ -84,7 +83,7 @@ EXISTING_SLUGS = {
     40: 'kompania-piwowarska-tychy',
     41: 'kompania-piwowarska',
     46: 'browar-zamkowy-raciborz',
-    50: 'uniwersytet-ekonomiczny-we-wroclawiu-centrum-sportow-rakietowych',
+    50: ('centrum-sportow-rakietowych-ue-wroclaw', 'uniwersytet-ekonomiczny-we-wroclawiu-centrum-sportow-rakietowych'),
     51: 'invest-tdj-estate-zabrze-zielona-dolina-4',
     47: 'canpack-bss-lab-brzesk',
     48: 'Canpack-BSS-Excellence-Centre-Brzesk',
