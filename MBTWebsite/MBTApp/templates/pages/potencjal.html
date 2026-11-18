@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118q">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118r">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -303,20 +303,11 @@
 </section>
 
 {# ===================== 08 CTA ===================== #}
-<section class="pot-cta" id="kontakt" aria-labelledby="pot-cta-h" style="background-image:url('{{ photos.home_bg_cta }}');">
+<section class="pot-cta" id="kontakt" aria-label="{% trans 'KONTAKT' %}" style="background-image:url('{{ photos.home_bg_cta }}');">
     <div class="pot-cta-overlay" aria-hidden="true"></div>
     <div class="pot-hero-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="container">
-        <p class="pot-kicker pot-kicker--light">{% trans 'KONTAKT' %}</p>
-        <h2 id="pot-cta-h" class="pot-h2 pot-h2--light">{{ p.texts.cta_h2 }}</h2>
-        <span class="pot-bar" aria-hidden="true"></span>
-        <ul class="pot-offices">
-            {% for o in p.offices %}<li><strong>{{ o.miasto }}</strong><span>{{ o.adres }}</span></li>{% endfor %}
-        </ul>
-        <p class="pot-contact">
-            <a href="tel:{{ p.contact.telefon|cut:' ' }}"><i class="ri-phone-fill" aria-hidden="true"></i> {{ p.contact.telefon }}</a>
-            <a href="mailto:{{ p.contact.email }}"><i class="ri-mail-fill" aria-hidden="true"></i> {{ p.contact.email }}</a>
-        </p>
+        <h2 class="pot-sr">{% trans 'KONTAKT' %}</h2>
         <div class="pot-cta-row">
             <a class="btn mbt-cta" href="{% url 'contact' %}" data-pr-event="pr_cta_kontakt">{{ p.texts.cta_kontakt }} <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
             {% if pdf_url %}<a class="btn pot-btn-ghost" href="{{ pdf_url }}" data-pr-event="pr_pdf_download">{{ p.texts.cta_pdf }} <i class="ri-file-pdf-2-line" aria-hidden="true"></i></a>{% endif %}
