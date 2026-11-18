@@ -46,6 +46,8 @@ NEW_RECORDS = {
 }
 # Jednorazowe poprawki nazw w CMS (dalej o nazwach decyduje CMS).
 TITLE_FIXES = {'ponar-wadowice': 'Ponar Wadowice S.A.'}
+# Kadrowanie zdjęć osób (object-position), gdy twarz nie jest u góry kadru.
+PHOTO_POS = {'michal-swoboda': '50% 45%'}
 OTHER_SECTOR = 'inne'  # realizacje z CMS bez przypisanego sektora w danych
 # Nowe rekordy oznaczone jako „W trakcie realizacji” (jak pozostałe karty z logo).
 IN_PROGRESS_NEW = {9, 17, 31, 50, 51}
@@ -337,6 +339,7 @@ def build_context(lang='pl'):
             'desc': t(k.get('opis')),
             'photo': _light_photo(_clean(k.get('foto')) or photos.get(name) or _clean(rep.get('photo')) or ''),
             'linkedin': _clean(k.get('linkedin')),
+            'photo_pos': PHOTO_POS.get(k['slug'], 'center top'),
         }
     pick = lambda slugs: [dict(cards[s]) for s in slugs if s in cards]
     directors = pick(TREE_DIRECTORS)
