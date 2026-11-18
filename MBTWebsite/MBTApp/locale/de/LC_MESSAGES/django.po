@@ -2261,3 +2261,6 @@ msgstr "Direktion"
 
 msgid "Podlegają"
 msgstr "Unterstellt"
+
+msgid "Pozostałe realizacje"
+msgstr "Weitere Projekte"

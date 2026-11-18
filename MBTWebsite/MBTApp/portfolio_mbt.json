@@ -175,7 +175,7 @@
     },
     {
       "nazwa": "Strefy clean-room i reżim czystości",
-      "potwierdzenie": "HUBER+SUHNER Modlniczka, EcoWipes"
+      "potwierdzenie": "EcoWipes"
     },
     {
       "nazwa": "Wielokondygnacyjne self-storage do 6 kondygnacji",
@@ -898,23 +898,6 @@
         "3 002 m² hali",
         "19 300 m³",
         "600 m² biura"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 19,
-      "slug": "huber-suhner-modlniczka",
-      "sektor": "produkcja",
-      "nazwa": "HUBER+SUHNER Modlniczka",
-      "typ": "Zakład produkcyjno-magazynowy ze strefami clean-room",
-      "lokalizacja": "Modlniczka k. Krakowa (woj. małopolskie)",
-      "wojewodztwo": "małopolskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Precyzyjne strefy produkcyjne w standardzie clean-room (kontrolowane zapylenie i wilgotność), magazyn wysokiego składowania, ergonomiczne zaplecze biurowe. Prefabrykowany szkielet żelbetowy, dach stalowy, zaawansowane systemy wentylacji i filtracji HVAC.",
-      "kpi": [
-        "clean-room"
       ],
       "status": "zrealizowana",
       "do_weryfikacji": null,

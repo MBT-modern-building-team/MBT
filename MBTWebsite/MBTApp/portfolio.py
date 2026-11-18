@@ -17,6 +17,7 @@ from collections import Counter, OrderedDict
 from functools import lru_cache
 
 from django.urls import reverse
+from django.utils.translation import gettext as _gettext
 
 from MBTApp import mbt_orm
 from MBTApp.auto_translate import translate
@@ -43,6 +44,9 @@ NEW_RECORDS = {
     50: 'https://media.mbt.pl/uploads/4fe7e40eb483.webp',  # Centrum Sportów Rakietowych UE Wrocław (jak na produkcji)
     51: LOGOS + 'zielona-dolina.png',
 }
+# Jednorazowe poprawki nazw w CMS (dalej o nazwach decyduje CMS).
+TITLE_FIXES = {'ponar-wadowice': 'Ponar Wadowice S.A.'}
+OTHER_SECTOR = 'inne'  # realizacje z CMS bez przypisanego sektora w danych
 # Nowe rekordy oznaczone jako „W trakcie realizacji” (jak pozostałe karty z logo).
 IN_PROGRESS_NEW = {9, 17, 31, 50, 51}
 # Rekordy usunięte z serwisu całkowicie (baza + mbt_data.py) — lista w portfolio_records.py.
@@ -219,36 +223,46 @@ def build_context(lang='pl'):
     sector_by_slug = {s['slug']: s for s in sectors}
     sector_order = [s['slug'] for s in sectors]
 
-    projects_by_slug = {}
+    # Źródłem listy jest CMS (to samo co /realizacje/: nazwa, zdjęcie/logo, status, opis, kolejność, usuwanie).
+    # JSON uzupełnia tylko to, czego CMS nie ma: sektor, lokalizację, formułę, KPI i województwo.
     try:
-        projects_by_slug = {p['slug']: p for p in mbt_orm.get_projects(lang)}
+        cms_projects = mbt_orm.get_projects(lang)
     except Exception:
         logger.warning('Fallback po błędzie', exc_info=True)
+        cms_projects = []
+    slug_to_nr = {}
+    for nr_, slugs_ in EXISTING_SLUGS.items():
+        for sl_ in ((slugs_,) if isinstance(slugs_, str) else slugs_):
+            slug_to_nr[sl_] = nr_
+    data_by_nr = {r['nr']: r for r in d['realizacje']}
 
-    projects = []
-    for r in d['realizacje']:
-        nr = r['nr']
-        ex = _existing_project(nr, projects_by_slug)
-        # parametry_publiczne ma pierwszeństwo przed parametry; do_weryfikacji nigdy nie jest publiczne,
-        # a gdy istnieje, surowe `parametry` (sprzeczne metraże) też nie wychodzą na stronę.
-        params = _clean(r.get('parametry_publiczne'))
-        if not params and not r.get('do_weryfikacji'):
-            params = _clean(r.get('parametry'))
-        url = reverse('realizacjaDetail', args=[ex['slug']]) if ex else ''
+    projects, seen_nr = [], set()
+    for ex in cms_projects:
+        nr = slug_to_nr.get(ex['slug'])
+        if nr is not None and nr in seen_nr:
+            continue  # dwa rekordy CMS tego samego projektu (stary i nowy slug) — jedna karta
+        r = data_by_nr.get(nr) or {}
+        seen_nr.add(nr)
+        paras = [ln.strip() for ln in (ex.get('opis') or '').splitlines() if ln.strip()]
+        # tylko drugi akapit (parametry); dalsze akapity (np. „Specyfikacja” ze sprzecznymi metrażami Bemowa) nie trafiają na kartę
+        params = _clean(paras[1]) if len(paras) > 1 else None
+        if params and len(params) > 340:
+            params = params[:340].rsplit(' ', 1)[0].rstrip(',;:') + '…'
+        in_prog = ex.get('type') == 'realizacja-w-trakcie' or r.get('status') == 'w_realizacji'
         projects.append({
             'nr': nr,
-            'sector': r['sektor'],
-            'name': r['nazwa'],
-            'type': t(r.get('typ')),
+            'sector': r.get('sektor') or OTHER_SECTOR,
+            'name': ex['title'],
+            'type': _clean(paras[0]) if paras else None,
             'meta': ' · '.join(x for x in [t(r.get('lokalizacja')), t(r.get('formula'))] if x),
             'kpi': [t(k) for k in (r.get('kpi') or []) if _clean(k)],
-            # Plakietka „W realizacji”: status z JSON albo realizacja w trakcie w /realizacje/ (tam z logo klienta).
-            'in_progress': r.get('status') == 'w_realizacji' or bool(ex and ex.get('type') == 'realizacja-w-trakcie'),
-            'params': t(params),
+            # Plakietka „W realizacji”: realizacja w trakcie w CMS (tam z logo klienta) albo status w danych.
+            'in_progress': in_prog,
+            'params': params,
             'voivodeship': r.get('wojewodztwo'),
-            'url': url,
+            'url': reverse('realizacjaDetail', args=[ex['slug']]),
             'thumb': _thumb(ex),
-            'contain': bool(ex) and (ex.get('type') == 'realizacja-w-trakcie' or '/logos/' in (ex.get('hero') or '')),
+            'contain': ex.get('type') == 'realizacja-w-trakcie' or '/logos/' in (ex.get('hero') or ''),
         })
 
     by_sector = OrderedDict()
@@ -261,6 +275,11 @@ def build_context(lang='pl'):
             'full_name': t(s['nazwa']),
             'projects': [p for p in projects if p['sector'] == slug],
         }
+    by_sector[OTHER_SECTOR] = {
+        'slug': OTHER_SECTOR, 'code': '', 'name': _gettext('Pozostałe realizacje'),
+        'full_name': _gettext('Pozostałe realizacje'),
+        'projects': [p for p in projects if p['sector'] == OTHER_SECTOR],
+    }
     for g in by_sector.values():
         g['count'] = len(g['projects'])
 
@@ -271,7 +290,7 @@ def build_context(lang='pl'):
 
     stats = [
         {'key': 'projects', 'value': total},
-        {'key': 'sectors', 'value': len([g for g in by_sector.values() if g['count']])},
+        {'key': 'sectors', 'value': len([g for g in by_sector.values() if g['count'] and g['slug'] != OTHER_SECTOR])},
     ]
 
     # ---------- Kompetencje ----------

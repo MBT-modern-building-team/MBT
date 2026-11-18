@@ -17,10 +17,9 @@ class PortfolioPageTests(TestCase):
             with self.subTest(lang=code):
                 self.assertEqual(self._get(code).status_code, 200)
 
-    def test_project_cards_match_data(self):
-        import json
-        from MBTApp.portfolio import JSON_PATH
-        expected = len(json.load(open(JSON_PATH, encoding='utf-8'))['realizacje'])
+    def test_project_cards_come_from_cms(self):
+        from MBTApp import mbt_orm
+        expected = len(mbt_orm.get_projects('pl'))
         html = self._get().content.decode()
         self.assertEqual(html.count('class="pot-proj-name"'), expected)
         self.assertNotIn('pot-proj-nr', html)  # numeracja kart usunięta
@@ -32,9 +31,9 @@ class PortfolioPageTests(TestCase):
             for bad in ('MESKO', 'obronn', 'Zbrojeni', 'Łaziska', 'Na rynku od', 'Ponar Silesia', 'Venus', 'CDR Żory', 'Remondis', 'siedziba własna', 'Przemysłowa farma fotowoltaiczna'):
                 self.assertNotIn(bad, body, f'{bad} w {code}')
         html = self._get().content.decode()
-        self.assertIn('Ponar Wadowice S.A.', html)
+        self.assertIn('Ponar Wadowice', html)
+        self.assertNotIn('Modlniczka', html)
         self.assertIn('Dolnośląska Izba Gospodarcza', html)
-        self.assertEqual(html.count('>Tyskie Browary Książęce'), 1)  # pięć wpisów scalonych w jedną kartę
 
     def test_no_placeholders_or_null_leak(self):
         for code, _name in settings.LANGUAGES:

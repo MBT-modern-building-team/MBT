@@ -2264,3 +2264,6 @@ msgstr "Directors"
 
 msgid "Podlegają"
 msgstr "Reports"
+
+msgid "Pozostałe realizacje"
+msgstr "Other projects"

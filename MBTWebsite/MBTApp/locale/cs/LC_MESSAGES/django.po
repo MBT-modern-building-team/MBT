@@ -2261,3 +2261,6 @@ msgstr "Ředitelé"
 
 msgid "Podlegają"
 msgstr "Podřízení"
+
+msgid "Pozostałe realizacje"
+msgstr "Další realizace"

@@ -47,6 +47,13 @@ class Command(BaseCommand):
                 )
                 order += 1
 
+        for slug, title in portfolio.TITLE_FIXES.items():
+            qs = Project.objects.filter(slug=slug).exclude(title=title)
+            if qs.exists():
+                self.stdout.write(f'{tag}nazwa: {slug} -> {title}')
+                if not dry:
+                    qs.update(title=title)
+
         for slug in portfolio.REMOVED_SLUGS:
             qs = Project.objects.filter(slug=slug)
             if qs.exists():

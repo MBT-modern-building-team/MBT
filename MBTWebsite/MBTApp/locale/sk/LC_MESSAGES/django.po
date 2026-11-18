@@ -2261,3 +2261,6 @@ msgstr "Riaditelia"
 
 msgid "Podlegają"
 msgstr "Podriadení"
+
+msgid "Pozostałe realizacje"
+msgstr "Ďalšie realizácie"
