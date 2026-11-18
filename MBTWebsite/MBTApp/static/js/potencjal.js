@@ -7,7 +7,11 @@
 
   function push(o) { try { dl.push(o); } catch (e) {} }
 
-  if (bar) {
+  var pb = document.getElementById('pot-print');
+  if (pb) pb.addEventListener('click', function () { window.print(); });
+
+  var pdfMode = /[?&]pdf=1/.test(location.search);
+  if (bar && !pdfMode) {
     var buttons = [].slice.call(bar.querySelectorAll('button'));
     var groups = [].slice.call(document.querySelectorAll('.pot-group'));
     var slugs = buttons.map(function (b) { return b.getAttribute('data-sector'); });

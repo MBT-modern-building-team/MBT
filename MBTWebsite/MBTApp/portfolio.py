@@ -37,7 +37,7 @@ _MARKER_RE = re.compile(r'\[DO (UZUPE[ŁL]NIENIA|T[ŁL]UMACZENIA)[^\]]*\]', re.I
 LOGOS = '/static/img/mbt/logos/'
 NEW_RECORDS = {
     9: LOGOS + 'eurostyl-chelmek.svg',
-    14: 'https://media.mbt.pl/media/uploads/7ad52ff95b94.webp',  # logo jak w realizacji Stokado Warszawa Targówek
+    14: LOGOS + 'stokado-self-storage.webp',  # logo jak w realizacji Stokado Warszawa Targówek
     17: 'https://media.mbt.pl/uploads/1491284b28df.webp',  # Artus Aircraft (jak na produkcji)
     31: LOGOS + 'kbh-akord.png',
     37: LOGOS + 'brembo.png',
@@ -285,7 +285,7 @@ def build_context(lang='pl'):
 
     total = len(projects)
     voiv_counter = Counter(p['voivodeship'] for p in projects if p['voivodeship'])
-    sector_counter = [(g['name'], g['count']) for g in by_sector.values()]
+    sector_counter = [(g['name'], g['count']) for g in by_sector.values() if g['count']]
     in_progress = sum(1 for p in projects if p['in_progress'])
 
     stats = [

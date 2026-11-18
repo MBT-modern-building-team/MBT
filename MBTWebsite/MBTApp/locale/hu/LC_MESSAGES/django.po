@@ -2264,3 +2264,18 @@ msgstr "Beosztottak"
 
 msgid "Pozostałe realizacje"
 msgstr "Egyéb referenciák"
+
+msgid "Zapisz jako PDF"
+msgstr "Mentés PDF-ként"
+
+msgid "Format 16:9, poziomo"
+msgstr "16:9, fekvő"
+
+msgid "Sposób realizacji"
+msgstr "Megvalósítás módja"
+
+msgid "KOMPETENCJE"
+msgstr "KOMPETENCIÁK"
+
+msgid "Pod kierownictwem"
+msgstr "Vezeti"

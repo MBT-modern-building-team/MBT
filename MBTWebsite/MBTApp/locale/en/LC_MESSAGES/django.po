@@ -2267,3 +2267,18 @@ msgstr "Reports"
 
 msgid "Pozostałe realizacje"
 msgstr "Other projects"
+
+msgid "Zapisz jako PDF"
+msgstr "Save as PDF"
+
+msgid "Format 16:9, poziomo"
+msgstr "16:9, landscape"
+
+msgid "Sposób realizacji"
+msgstr "Delivery method"
+
+msgid "KOMPETENCJE"
+msgstr "COMPETENCES"
+
+msgid "Pod kierownictwem"
+msgstr "Led by"

@@ -87,6 +87,19 @@ class PortfolioPageTests(TestCase):
         self.assertIn('/realizacja/eurostyl-chelmek/', html)
         self.assertIn('/static/img/mbt/logos/brembo.png', html)
 
+    def test_pdf_mode_slides_16x9(self):
+        from MBTApp import mbt_orm
+        for code, _name in settings.LANGUAGES:
+            path = '/potencjal-i-referencje/' if code == 'pl' else f'/{code}/potencjal-i-referencje/'
+            resp = self.client.get(path + '?pdf=1', HTTP_HOST='localhost')
+            self.assertEqual(resp.status_code, 200, code)
+            html = resp.content.decode()
+            self.assertIn('size:1600px 900px', html)
+            self.assertEqual(html.count('class="proj"'), len(mbt_orm.get_projects(code)), code)
+            text = re.sub(r'<(script|style).*?</\1>', '', html, flags=re.S)
+            for bad in ('[DO UZUPE', '[DO T', 'None', 'MESKO', 'Venus'):
+                self.assertNotIn(bad, re.sub(r'<[^>]+>', ' ', text), f'{bad} w {code}')
+
 
 @override_settings(SECURE_SSL_REDIRECT=False, ALLOWED_HOSTS=['*'], DEBUG=False)
 class PortfolioPageHiddenTests(TestCase):

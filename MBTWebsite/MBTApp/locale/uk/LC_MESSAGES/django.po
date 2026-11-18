@@ -2267,3 +2267,18 @@ msgstr "Підпорядковані"
 
 msgid "Pozostałe realizacje"
 msgstr "Інші реалізації"
+
+msgid "Zapisz jako PDF"
+msgstr "Зберегти як PDF"
+
+msgid "Format 16:9, poziomo"
+msgstr "16:9, альбомна"
+
+msgid "Sposób realizacji"
+msgstr "Спосіб реалізації"
+
+msgid "KOMPETENCJE"
+msgstr "КОМПЕТЕНЦІЇ"
+
+msgid "Pod kierownictwem"
+msgstr "Під керівництвом"

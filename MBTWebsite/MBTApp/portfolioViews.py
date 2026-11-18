@@ -47,6 +47,22 @@ def _json_ld(request, ctx, lang):
     return mark_safe(dump(org)), mark_safe(dump(crumbs))
 
 
+def _project_slides(sectors):
+    """Realizacje do PDF: wiersze po 4 karty, 2 wiersze na slajd; nagłówek sektora tylko gdy się zmienia."""
+    rows = []
+    for g in sectors:
+        for i in range(0, len(g['projects']), 4):
+            rows.append({'sector': g['slug'], 'code': g['code'], 'name': g['full_name'],
+                         'cards': g['projects'][i:i + 4], 'first': i == 0})
+    slides = [rows[i:i + 2] for i in range(0, len(rows), 2)]
+    for slide in slides:
+        prev = None
+        for row in slide:
+            row['show_head'] = row['sector'] != prev
+            prev = row['sector']
+    return slides
+
+
 def potencjal(request):
     public = page_is_public()
     user = getattr(request, 'user', None)
@@ -69,8 +85,15 @@ def potencjal(request):
         'json_ld_breadcrumbs': ld_crumbs,
         'site': mbt_orm.get_site(lang),
         'breadcrumb': True,  # własny hero zamiast globalnego breadcrumb-a
+        'pdf_mode': request.GET.get('pdf') == '1',  # eksport do PDF: bez lazy-load, wszystkie realizacje
+        'show_pdf_button': settings.DEBUG or bool(user is not None and user.is_staff),
     })
-    response = render(request, 'pages/potencjal.html', ctx)
+    if ctx['pdf_mode']:
+        ctx['project_slides'] = _project_slides(ctx['p']['sectors'])
+        ctx['print_now'] = request.GET.get('print') == '1'
+        response = render(request, 'pages/potencjal_pdf.html', ctx)
+    else:
+        response = render(request, 'pages/potencjal.html', ctx)
     if not public:
         # Podgląd przed publikacją: bez indeksowania i bez cache'owania.
         response['X-Robots-Tag'] = 'noindex, nofollow'

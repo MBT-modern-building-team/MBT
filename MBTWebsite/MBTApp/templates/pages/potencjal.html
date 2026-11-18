@@ -2,10 +2,10 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118s">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118u">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
-<div class="pot">
+<div class="pot{% if pdf_mode %} pot-pdfmode{% endif %}">
 
 {# ===================== HERO (jak /generalne-wykonawstwo/) ===================== #}
 <section class="gw-hero pot-hero" style="background-image:url('{{ photos.gw_hero }}');" aria-labelledby="pot-h1">
@@ -284,7 +284,7 @@
                 {% for pr in g.projects %}
                 <li class="pot-proj" data-sector="{{ g.slug }}">
                     {% if pr.thumb %}
-                    <div class="pot-proj-img">{% if pr.url %}<a href="{{ pr.url }}" tabindex="-1" aria-hidden="true">{% endif %}<img src="{{ pr.thumb }}" alt="{{ pr.name }}" width="640" height="400" loading="lazy" decoding="async"{% if pr.contain %} class="pot-contain"{% endif %}>{% if pr.url %}</a>{% endif %}</div>
+                    <div class="pot-proj-img">{% if pr.url %}<a href="{{ pr.url }}" tabindex="-1" aria-hidden="true">{% endif %}<img src="{{ pr.thumb }}" alt="{{ pr.name }}" width="640" height="400" loading="{% if pdf_mode %}eager{% else %}lazy{% endif %}" decoding="async"{% if pr.contain %} class="pot-contain"{% endif %}>{% if pr.url %}</a>{% endif %}</div>
                     {% endif %}
                     <div class="pot-proj-body">
                         {% if pr.in_progress %}<div class="pot-proj-top"><span class="pot-badge">{% trans 'W realizacji' %}</span></div>{% endif %}
@@ -316,6 +316,7 @@
     </div>
 </section>
 
+{% if show_pdf_button %}<a class="pot-print-btn" href="?pdf=1&amp;print=1" target="_blank" rel="noopener"><i class="ri-file-pdf-2-line" aria-hidden="true"></i> {% trans 'Zapisz jako PDF' %}</a>{% endif %}
 </div>
-<script defer src="/static/js/potencjal.js?v=20261118b"></script>
+<script defer src="/static/js/potencjal.js?v=20261118bb"></script>
 {% endblock %}

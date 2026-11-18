@@ -2264,3 +2264,18 @@ msgstr "Podriadení"
 
 msgid "Pozostałe realizacje"
 msgstr "Ďalšie realizácie"
+
+msgid "Zapisz jako PDF"
+msgstr "Uložiť ako PDF"
+
+msgid "Format 16:9, poziomo"
+msgstr "16:9, na šírku"
+
+msgid "Sposób realizacji"
+msgstr "Spôsob realizácie"
+
+msgid "KOMPETENCJE"
+msgstr "KOMPETENCIE"
+
+msgid "Pod kierownictwem"
+msgstr "Pod vedením"

@@ -2264,3 +2264,18 @@ msgstr "Unterstellt"
 
 msgid "Pozostałe realizacje"
 msgstr "Weitere Projekte"
+
+msgid "Zapisz jako PDF"
+msgstr "Als PDF speichern"
+
+msgid "Format 16:9, poziomo"
+msgstr "16:9, Querformat"
+
+msgid "Sposób realizacji"
+msgstr "Realisierungsweise"
+
+msgid "KOMPETENCJE"
+msgstr "KOMPETENZEN"
+
+msgid "Pod kierownictwem"
+msgstr "Unter der Leitung von"

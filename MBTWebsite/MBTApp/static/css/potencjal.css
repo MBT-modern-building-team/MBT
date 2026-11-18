@@ -193,7 +193,6 @@
 @media (max-width:575px){.pot-hero .gw-hero-content{padding-top:120px}.pot-sec{padding:56px 0}}
 
 @media (prefers-reduced-motion:reduce){.pot *{transition:none!important;animation:none!important;scroll-behavior:auto!important}.pot-hero .gw-hero-kenburns,.gw-marquee-track{animation:none!important}}
-@media print{@page{size:A4;margin:12mm}header,footer,.nav-header,.cookie-banner,#scrollTop,.scroll-top,.pot-filter,.pot-cta-row,.pot-locator,.pot-hero-stripes,.gw-marquee,.gw-hero-actions,.pot-cta-overlay{display:none!important}.pot-group[hidden]{display:block!important}.pot-sec{padding:18px 0}.pot-hero{min-height:0}.pot-hero .gw-hero-content{padding:10px 0}.gw-hero-kenburns,.gw-hero-overlay{display:none}.pot-hero,.pot-cta{background:#fff!important;color:#000}.gw-hero-title,.gw-hero-text,.pot-h2--light,.pot-cta a,.pot-stats .gw-stat-num,.pot-stats .gw-stat-label{color:#000!important}.pot-proj,.pot-person,.pot-card,.pot-formula,.pot-chart,.pot-org-col li,.pot-tools li{break-inside:avoid}.pot-cards{grid-template-columns:repeat(2,1fr)}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 .pot a.btn{color:inherit}
 .pot .gw-hero-title{color:#fff}
 .pot a.btn.gw-btn-outline,.pot a.btn.pot-btn-ghost{color:#fff}
@@ -251,3 +250,29 @@
 
 /* logo klienta (realizacje w trakcie) — jak na /realizacje/ */
 .pot-proj-img img.pot-contain{object-fit:contain;padding:18px;background:#fff}
+
+/* przycisk „Zapisz jako PDF” (tylko lokalnie / personel) */
+.pot-print-btn{position:fixed;right:24px;bottom:96px;z-index:50;background:var(--navy);color:#fff;border:0;border-radius:999px;padding:12px 20px;font:600 14px var(--body-font,sans-serif);cursor:pointer;box-shadow:var(--sh2)}
+.pot-print-btn:hover{background:var(--or);color:var(--black-color)}
+.pot a.pot-print-btn{color:#fff;text-decoration:none}
+.pot a.pot-print-btn:hover{color:var(--black-color)}
+
+/* ===== PDF 16:9 (poziomo): strona 1600x900 px ===== */
+@media print{
+@page{size:1600px 900px;margin:36px 0}
+@page :first{margin:0}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{background:#fff!important;width:1600px}
+body>*:not(main){display:none!important}
+.pot-print-btn,.pot-filter,.pot-hero-stripes,.gw-marquee,.gw-hero-actions,.pot-cta,#pot-filter-status,.pot-sr{display:none!important}
+.pot .container{max-width:1480px;padding:0 60px}
+.pot [hidden]{display:block!important}
+.pot-hero{min-height:900px;height:900px;break-after:page}
+.pot .gw-hero-content{padding-top:210px}
+.gw-hero-kenburns{animation:none!important}
+.pot-sec,.pot-sec--tint{background:#fff!important;padding:26px 0 18px;break-before:page}
+.pot-head{margin-bottom:22px}
+.pot-card,.pot-chart,.pot-formula,.pot-capital,.pot-comp li,.pot-proj,.pot-person,.pot-tools li,.pot-method li,.pot-steps li,.pot-note,.pot-bars li{break-inside:avoid}
+.pot-group-h{break-after:avoid}
+.pot-person,.pot-proj,.pot-card,.pot-chart,.pot-tools li,.pot-method li,.pot-comp li{box-shadow:none!important;border:1px solid #D6E3FF}
+}
