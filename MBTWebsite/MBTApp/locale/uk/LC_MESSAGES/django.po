@@ -2107,3 +2107,154 @@ msgstr "реалізованих проектів"
 msgid "Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym."
 msgstr "Поєднуємо 20-річний інженерний досвід із сучасним управлінням будівельним процесом."
 
+
+# --- Potencjał i referencje ---
+msgid "Ścieżka nawigacji"
+msgstr "Навігаційний шлях"
+
+msgid "sektorów"
+msgstr "секторів"
+
+msgid "województw"
+msgstr "воєводств"
+
+msgid "PROFIL FIRMY"
+msgstr "ПРОФІЛЬ КОМПАНІЇ"
+
+msgid "Dane rejestrowe"
+msgstr "Реєстраційні дані"
+
+msgid "Nazwa"
+msgstr "Назва"
+
+msgid "Forma prawna"
+msgstr "Правова форма"
+
+msgid "Na rynku od"
+msgstr "На ринку з"
+
+msgid "Prezes Zarządu"
+msgstr "Голова правління"
+
+msgid "Centrala"
+msgstr "Головний офіс"
+
+msgid "Biuro"
+msgstr "Офіс"
+
+msgid "Kapitał spółki"
+msgstr "Капітал компанії"
+
+msgid "Kapitał podstawowy"
+msgstr "Статутний капітал"
+
+msgid "w pełni opłacony"
+msgstr "повністю сплачений"
+
+msgid "Kapitał zapasowy"
+msgstr "Резервний капітал"
+
+msgid "Łącznie"
+msgstr "Разом"
+
+msgid "Sytuacja ekonomiczno-finansowa"
+msgstr "Економічно-фінансовий стан"
+
+msgid "Przychody netto"
+msgstr "Чистий дохід"
+
+msgid "Suma gwarancyjna OC"
+msgstr "Страхова сума цивільної відповідальності"
+
+msgid "Limity gwarancji kontraktowych"
+msgstr "Ліміти контрактних гарантій"
+
+msgid "Specjalizacje"
+msgstr "Спеціалізації"
+
+msgid "Wyróżnienia"
+msgstr "Відзнаки"
+
+msgid "Członkostwa"
+msgstr "Членство"
+
+msgid "POTENCJAŁ W LICZBACH"
+msgstr "ПОТЕНЦІАЛ У ЦИФРАХ"
+
+msgid "Potencjał w liczbach"
+msgstr "Потенціал у цифрах"
+
+msgid "Realizacje według sektora"
+msgstr "Реалізації за секторами"
+
+msgid "Realizacje według województwa"
+msgstr "Реалізації за воєводствами"
+
+msgid "Kompetencje potwierdzone realizacjami"
+msgstr "Компетенції, підтверджені реалізаціями"
+
+msgid "STRUKTURA ORGANIZACYJNA"
+msgstr "ОРГАНІЗАЦІЙНА СТРУКТУРА"
+
+msgid "KADRA"
+msgstr "КОМАНДА"
+
+msgid "Ludzie, którzy prowadzą Twoją inwestycję"
+msgstr "Люди, які ведуть вашу інвестицію"
+
+msgid "Zarząd i dyrekcja"
+msgstr "Правління та директори"
+
+msgid "Zespół handlowy i komunikacja"
+msgstr "Команда продажів і комунікацій"
+
+msgid "KADRA TECHNICZNA I SPOSÓB REALIZACJI"
+msgstr "ТЕХНІЧНИЙ ПЕРСОНАЛ І СПОСІБ РЕАЛІЗАЦІЇ"
+
+msgid "Kadra techniczna i sposób realizacji"
+msgstr "Технічний персонал і спосіб реалізації"
+
+msgid "Kadra techniczna"
+msgstr "Технічний персонал"
+
+msgid "Stanowisko"
+msgstr "Посада"
+
+msgid "Kwalifikacje"
+msgstr "Кваліфікація"
+
+msgid "Liczba osób"
+msgstr "Кількість осіб"
+
+msgid "Proces inwestycji"
+msgstr "Процес інвестиції"
+
+msgid "BHP"
+msgstr "Охорона праці"
+
+msgid "TECHNOLOGIE I ZAPLECZE"
+msgstr "ТЕХНОЛОГІЇ ТА ЗАПЛЕЧЧЯ"
+
+msgid "Zaplecze budów"
+msgstr "Забезпечення будівництв"
+
+msgid "Technologie wykonawcze"
+msgstr "Технології виконання"
+
+msgid "Metodyka"
+msgstr "Методика"
+
+msgid "Filtr sektorów"
+msgstr "Фільтр секторів"
+
+msgid "W realizacji"
+msgstr "У процесі реалізації"
+
+msgid "Potencjał i referencje"
+msgstr "Потенціал і референції"
+
+msgid "Potencjał i referencje – %(n)s realizacji, kadra, struktura | MBT Modern Building Team"
+msgstr "Потенціал і референції – %(n)s реалізацій, команда, структура | MBT Modern Building Team"
+
+msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
+msgstr "Прекваліфікаційне портфоліо MBT: капітал компанії, структура, команда, технології та %(n)s реалізацій у %(s)s секторах. Генеральний підряд і Design & Build."

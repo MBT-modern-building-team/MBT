@@ -2104,3 +2104,154 @@ msgstr "dokončených investic"
 msgid "Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym."
 msgstr "Spojujeme 20 let inženýrských zkušeností s moderním řízením stavebního procesu."
 
+
+# --- Potencjał i referencje ---
+msgid "Ścieżka nawigacji"
+msgstr "Drobečková navigace"
+
+msgid "sektorów"
+msgstr "sektorů"
+
+msgid "województw"
+msgstr "vojvodství"
+
+msgid "PROFIL FIRMY"
+msgstr "PROFIL FIRMY"
+
+msgid "Dane rejestrowe"
+msgstr "Registrační údaje"
+
+msgid "Nazwa"
+msgstr "Název"
+
+msgid "Forma prawna"
+msgstr "Právní forma"
+
+msgid "Na rynku od"
+msgstr "Na trhu od"
+
+msgid "Prezes Zarządu"
+msgstr "Předseda představenstva"
+
+msgid "Centrala"
+msgstr "Centrála"
+
+msgid "Biuro"
+msgstr "Kancelář"
+
+msgid "Kapitał spółki"
+msgstr "Kapitál společnosti"
+
+msgid "Kapitał podstawowy"
+msgstr "Základní kapitál"
+
+msgid "w pełni opłacony"
+msgstr "plně splacený"
+
+msgid "Kapitał zapasowy"
+msgstr "Rezervní kapitál"
+
+msgid "Łącznie"
+msgstr "Celkem"
+
+msgid "Sytuacja ekonomiczno-finansowa"
+msgstr "Ekonomická a finanční situace"
+
+msgid "Przychody netto"
+msgstr "Čisté tržby"
+
+msgid "Suma gwarancyjna OC"
+msgstr "Pojistná částka OC"
+
+msgid "Limity gwarancji kontraktowych"
+msgstr "Limity smluvních záruk"
+
+msgid "Specjalizacje"
+msgstr "Specializace"
+
+msgid "Wyróżnienia"
+msgstr "Ocenění"
+
+msgid "Członkostwa"
+msgstr "Členství"
+
+msgid "POTENCJAŁ W LICZBACH"
+msgstr "POTENCIÁL V ČÍSLECH"
+
+msgid "Potencjał w liczbach"
+msgstr "Potenciál v číslech"
+
+msgid "Realizacje według sektora"
+msgstr "Realizace podle sektoru"
+
+msgid "Realizacje według województwa"
+msgstr "Realizace podle vojvodství"
+
+msgid "Kompetencje potwierdzone realizacjami"
+msgstr "Kompetence potvrzené realizacemi"
+
+msgid "STRUKTURA ORGANIZACYJNA"
+msgstr "ORGANIZAČNÍ STRUKTURA"
+
+msgid "KADRA"
+msgstr "TÝM"
+
+msgid "Ludzie, którzy prowadzą Twoją inwestycję"
+msgstr "Lidé, kteří povedou vaši investici"
+
+msgid "Zarząd i dyrekcja"
+msgstr "Představenstvo a ředitelé"
+
+msgid "Zespół handlowy i komunikacja"
+msgstr "Obchodní a komunikační tým"
+
+msgid "KADRA TECHNICZNA I SPOSÓB REALIZACJI"
+msgstr "TECHNICKÝ TÝM A ZPŮSOB REALIZACE"
+
+msgid "Kadra techniczna i sposób realizacji"
+msgstr "Technický tým a způsob realizace"
+
+msgid "Kadra techniczna"
+msgstr "Technický tým"
+
+msgid "Stanowisko"
+msgstr "Pozice"
+
+msgid "Kwalifikacje"
+msgstr "Kvalifikace"
+
+msgid "Liczba osób"
+msgstr "Počet osob"
+
+msgid "Proces inwestycji"
+msgstr "Proces investice"
+
+msgid "BHP"
+msgstr "BOZP"
+
+msgid "TECHNOLOGIE I ZAPLECZE"
+msgstr "TECHNOLOGIE A ZÁZEMÍ"
+
+msgid "Zaplecze budów"
+msgstr "Zázemí staveb"
+
+msgid "Technologie wykonawcze"
+msgstr "Realizační technologie"
+
+msgid "Metodyka"
+msgstr "Metodika"
+
+msgid "Filtr sektorów"
+msgstr "Filtr sektorů"
+
+msgid "W realizacji"
+msgstr "V realizaci"
+
+msgid "Potencjał i referencje"
+msgstr "Potenciál a reference"
+
+msgid "Potencjał i referencje – %(n)s realizacji, kadra, struktura | MBT Modern Building Team"
+msgstr "Potenciál a reference – %(n)s realizací, tým, struktura | MBT Modern Building Team"
+
+msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
+msgstr "Prekvalifikační portfolio MBT: kapitál společnosti, organizační struktura, tým, technologie a %(n)s realizací v %(s)s sektorech. Generální dodávky a Design & Build."

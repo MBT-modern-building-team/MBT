@@ -2107,3 +2107,154 @@ msgstr "completed projects"
 msgid "Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym."
 msgstr "We combine 20 years of engineering experience with modern construction management."
 
+
+# --- Potencjał i referencje ---
+msgid "Ścieżka nawigacji"
+msgstr "Breadcrumb"
+
+msgid "sektorów"
+msgstr "sectors"
+
+msgid "województw"
+msgstr "voivodeships"
+
+msgid "PROFIL FIRMY"
+msgstr "COMPANY PROFILE"
+
+msgid "Dane rejestrowe"
+msgstr "Registration data"
+
+msgid "Nazwa"
+msgstr "Name"
+
+msgid "Forma prawna"
+msgstr "Legal form"
+
+msgid "Na rynku od"
+msgstr "On the market since"
+
+msgid "Prezes Zarządu"
+msgstr "President of the Management Board"
+
+msgid "Centrala"
+msgstr "Headquarters"
+
+msgid "Biuro"
+msgstr "Office"
+
+msgid "Kapitał spółki"
+msgstr "Company capital"
+
+msgid "Kapitał podstawowy"
+msgstr "Share capital"
+
+msgid "w pełni opłacony"
+msgstr "fully paid up"
+
+msgid "Kapitał zapasowy"
+msgstr "Reserve capital"
+
+msgid "Łącznie"
+msgstr "Total"
+
+msgid "Sytuacja ekonomiczno-finansowa"
+msgstr "Economic and financial standing"
+
+msgid "Przychody netto"
+msgstr "Net revenue"
+
+msgid "Suma gwarancyjna OC"
+msgstr "Liability insurance sum insured"
+
+msgid "Limity gwarancji kontraktowych"
+msgstr "Contract guarantee limits"
+
+msgid "Specjalizacje"
+msgstr "Specialisations"
+
+msgid "Wyróżnienia"
+msgstr "Awards"
+
+msgid "Członkostwa"
+msgstr "Memberships"
+
+msgid "POTENCJAŁ W LICZBACH"
+msgstr "POTENTIAL IN NUMBERS"
+
+msgid "Potencjał w liczbach"
+msgstr "Potential in numbers"
+
+msgid "Realizacje według sektora"
+msgstr "Projects by sector"
+
+msgid "Realizacje według województwa"
+msgstr "Projects by voivodeship"
+
+msgid "Kompetencje potwierdzone realizacjami"
+msgstr "Competences proven by projects"
+
+msgid "STRUKTURA ORGANIZACYJNA"
+msgstr "ORGANISATIONAL STRUCTURE"
+
+msgid "KADRA"
+msgstr "TEAM"
+
+msgid "Ludzie, którzy prowadzą Twoją inwestycję"
+msgstr "The people who run your investment"
+
+msgid "Zarząd i dyrekcja"
+msgstr "Management Board and directors"
+
+msgid "Zespół handlowy i komunikacja"
+msgstr "Sales and communication team"
+
+msgid "KADRA TECHNICZNA I SPOSÓB REALIZACJI"
+msgstr "TECHNICAL STAFF AND DELIVERY METHOD"
+
+msgid "Kadra techniczna i sposób realizacji"
+msgstr "Technical staff and delivery method"
+
+msgid "Kadra techniczna"
+msgstr "Technical staff"
+
+msgid "Stanowisko"
+msgstr "Position"
+
+msgid "Kwalifikacje"
+msgstr "Qualifications"
+
+msgid "Liczba osób"
+msgstr "Headcount"
+
+msgid "Proces inwestycji"
+msgstr "Investment process"
+
+msgid "BHP"
+msgstr "Health and safety"
+
+msgid "TECHNOLOGIE I ZAPLECZE"
+msgstr "TECHNOLOGY AND RESOURCES"
+
+msgid "Zaplecze budów"
+msgstr "Site facilities"
+
+msgid "Technologie wykonawcze"
+msgstr "Construction technologies"
+
+msgid "Metodyka"
+msgstr "Methodology"
+
+msgid "Filtr sektorów"
+msgstr "Sector filter"
+
+msgid "W realizacji"
+msgstr "In progress"
+
+msgid "Potencjał i referencje"
+msgstr "Potential and references"
+
+msgid "Potencjał i referencje – %(n)s realizacji, kadra, struktura | MBT Modern Building Team"
+msgstr "Potential and references – %(n)s projects, team, structure | MBT Modern Building Team"
+
+msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
+msgstr "MBT prequalification portfolio: company capital, organisational structure, team, technology and %(n)s projects in %(s)s sectors. General Contracting and Design & Build."

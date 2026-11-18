@@ -2104,3 +2104,154 @@ msgstr "megvalósított beruházás"
 msgid "Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym."
 msgstr "20 éves mérnöki tapasztalatunkat ötvözzük a korszerű építési folyamatmenedzsmenttel."
 
+
+# --- Potencjał i referencje ---
+msgid "Ścieżka nawigacji"
+msgstr "Navigációs útvonal"
+
+msgid "sektorów"
+msgstr "ágazat"
+
+msgid "województw"
+msgstr "vajdaság"
+
+msgid "PROFIL FIRMY"
+msgstr "CÉGPROFIL"
+
+msgid "Dane rejestrowe"
+msgstr "Cégadatok"
+
+msgid "Nazwa"
+msgstr "Név"
+
+msgid "Forma prawna"
+msgstr "Jogi forma"
+
+msgid "Na rynku od"
+msgstr "A piacon"
+
+msgid "Prezes Zarządu"
+msgstr "Igazgatósági elnök"
+
+msgid "Centrala"
+msgstr "Központ"
+
+msgid "Biuro"
+msgstr "Iroda"
+
+msgid "Kapitał spółki"
+msgstr "A társaság tőkéje"
+
+msgid "Kapitał podstawowy"
+msgstr "Jegyzett tőke"
+
+msgid "w pełni opłacony"
+msgstr "teljesen befizetett"
+
+msgid "Kapitał zapasowy"
+msgstr "Tartalék tőke"
+
+msgid "Łącznie"
+msgstr "Összesen"
+
+msgid "Sytuacja ekonomiczno-finansowa"
+msgstr "Gazdasági és pénzügyi helyzet"
+
+msgid "Przychody netto"
+msgstr "Nettó árbevétel"
+
+msgid "Suma gwarancyjna OC"
+msgstr "Felelősségbiztosítási összeg"
+
+msgid "Limity gwarancji kontraktowych"
+msgstr "Szerződéses garanciakeretek"
+
+msgid "Specjalizacje"
+msgstr "Szakterületek"
+
+msgid "Wyróżnienia"
+msgstr "Elismerések"
+
+msgid "Członkostwa"
+msgstr "Tagságok"
+
+msgid "POTENCJAŁ W LICZBACH"
+msgstr "POTENCIÁL SZÁMOKBAN"
+
+msgid "Potencjał w liczbach"
+msgstr "Potenciál számokban"
+
+msgid "Realizacje według sektora"
+msgstr "Projektek ágazat szerint"
+
+msgid "Realizacje według województwa"
+msgstr "Projektek vajdaság szerint"
+
+msgid "Kompetencje potwierdzone realizacjami"
+msgstr "Referenciákkal igazolt kompetenciák"
+
+msgid "STRUKTURA ORGANIZACYJNA"
+msgstr "SZERVEZETI FELÉPÍTÉS"
+
+msgid "KADRA"
+msgstr "CSAPAT"
+
+msgid "Ludzie, którzy prowadzą Twoją inwestycję"
+msgstr "Az emberek, akik a beruházását vezetik"
+
+msgid "Zarząd i dyrekcja"
+msgstr "Igazgatóság és vezetők"
+
+msgid "Zespół handlowy i komunikacja"
+msgstr "Értékesítési és kommunikációs csapat"
+
+msgid "KADRA TECHNICZNA I SPOSÓB REALIZACJI"
+msgstr "MŰSZAKI STÁB ÉS MEGVALÓSÍTÁS"
+
+msgid "Kadra techniczna i sposób realizacji"
+msgstr "Műszaki stáb és a megvalósítás módja"
+
+msgid "Kadra techniczna"
+msgstr "Műszaki stáb"
+
+msgid "Stanowisko"
+msgstr "Beosztás"
+
+msgid "Kwalifikacje"
+msgstr "Képesítések"
+
+msgid "Liczba osób"
+msgstr "Létszám"
+
+msgid "Proces inwestycji"
+msgstr "Beruházási folyamat"
+
+msgid "BHP"
+msgstr "Munkavédelem"
+
+msgid "TECHNOLOGIE I ZAPLECZE"
+msgstr "TECHNOLÓGIA ÉS HÁTTÉR"
+
+msgid "Zaplecze budów"
+msgstr "Építési háttér"
+
+msgid "Technologie wykonawcze"
+msgstr "Kivitelezési technológiák"
+
+msgid "Metodyka"
+msgstr "Módszertan"
+
+msgid "Filtr sektorów"
+msgstr "Ágazati szűrő"
+
+msgid "W realizacji"
+msgstr "Kivitelezés alatt"
+
+msgid "Potencjał i referencje"
+msgstr "Potenciál és referenciák"
+
+msgid "Potencjał i referencje – %(n)s realizacji, kadra, struktura | MBT Modern Building Team"
+msgstr "Potenciál és referenciák – %(n)s projekt, csapat, struktúra | MBT Modern Building Team"
+
+msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
+msgstr "MBT előminősítési portfólió: társasági tőke, szervezeti felépítés, csapat, technológiák és %(n)s projekt %(s)s ágazatban. Generálkivitelezés és Design & Build."

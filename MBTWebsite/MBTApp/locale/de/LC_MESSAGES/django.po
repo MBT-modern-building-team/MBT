@@ -2104,3 +2104,154 @@ msgstr "realisierte Projekte"
 msgid "Łączymy 20-letnie doświadczenie inżynierskie z nowoczesnym zarządzaniem procesem budowlanym."
 msgstr "Wir verbinden 20 Jahre Ingenieurerfahrung mit modernem Bauprozessmanagement."
 
+
+# --- Potencjał i referencje ---
+msgid "Ścieżka nawigacji"
+msgstr "Brotkrumennavigation"
+
+msgid "sektorów"
+msgstr "Sektoren"
+
+msgid "województw"
+msgstr "Woiwodschaften"
+
+msgid "PROFIL FIRMY"
+msgstr "FIRMENPROFIL"
+
+msgid "Dane rejestrowe"
+msgstr "Registerdaten"
+
+msgid "Nazwa"
+msgstr "Name"
+
+msgid "Forma prawna"
+msgstr "Rechtsform"
+
+msgid "Na rynku od"
+msgstr "Am Markt seit"
+
+msgid "Prezes Zarządu"
+msgstr "Vorstandsvorsitzender"
+
+msgid "Centrala"
+msgstr "Zentrale"
+
+msgid "Biuro"
+msgstr "Büro"
+
+msgid "Kapitał spółki"
+msgstr "Gesellschaftskapital"
+
+msgid "Kapitał podstawowy"
+msgstr "Stammkapital"
+
+msgid "w pełni opłacony"
+msgstr "voll eingezahlt"
+
+msgid "Kapitał zapasowy"
+msgstr "Kapitalrücklage"
+
+msgid "Łącznie"
+msgstr "Insgesamt"
+
+msgid "Sytuacja ekonomiczno-finansowa"
+msgstr "Wirtschaftliche und finanzielle Lage"
+
+msgid "Przychody netto"
+msgstr "Nettoumsatz"
+
+msgid "Suma gwarancyjna OC"
+msgstr "OC-Versicherungssumme"
+
+msgid "Limity gwarancji kontraktowych"
+msgstr "Limits für Vertragsgarantien"
+
+msgid "Specjalizacje"
+msgstr "Spezialisierungen"
+
+msgid "Wyróżnienia"
+msgstr "Auszeichnungen"
+
+msgid "Członkostwa"
+msgstr "Mitgliedschaften"
+
+msgid "POTENCJAŁ W LICZBACH"
+msgstr "POTENZIAL IN ZAHLEN"
+
+msgid "Potencjał w liczbach"
+msgstr "Potenzial in Zahlen"
+
+msgid "Realizacje według sektora"
+msgstr "Projekte nach Sektor"
+
+msgid "Realizacje według województwa"
+msgstr "Projekte nach Woiwodschaft"
+
+msgid "Kompetencje potwierdzone realizacjami"
+msgstr "Durch Projekte belegte Kompetenzen"
+
+msgid "STRUKTURA ORGANIZACYJNA"
+msgstr "ORGANISATIONSSTRUKTUR"
+
+msgid "KADRA"
+msgstr "TEAM"
+
+msgid "Ludzie, którzy prowadzą Twoją inwestycję"
+msgstr "Die Menschen, die Ihr Bauvorhaben führen"
+
+msgid "Zarząd i dyrekcja"
+msgstr "Vorstand und Direktion"
+
+msgid "Zespół handlowy i komunikacja"
+msgstr "Vertriebs- und Kommunikationsteam"
+
+msgid "KADRA TECHNICZNA I SPOSÓB REALIZACJI"
+msgstr "TECHNISCHES PERSONAL UND REALISIERUNG"
+
+msgid "Kadra techniczna i sposób realizacji"
+msgstr "Technisches Personal und Art der Realisierung"
+
+msgid "Kadra techniczna"
+msgstr "Technisches Personal"
+
+msgid "Stanowisko"
+msgstr "Position"
+
+msgid "Kwalifikacje"
+msgstr "Qualifikationen"
+
+msgid "Liczba osób"
+msgstr "Anzahl Personen"
+
+msgid "Proces inwestycji"
+msgstr "Investitionsprozess"
+
+msgid "BHP"
+msgstr "Arbeitsschutz"
+
+msgid "TECHNOLOGIE I ZAPLECZE"
+msgstr "TECHNOLOGIE UND AUSSTATTUNG"
+
+msgid "Zaplecze budów"
+msgstr "Baustelleneinrichtung"
+
+msgid "Technologie wykonawcze"
+msgstr "Ausführungstechnologien"
+
+msgid "Metodyka"
+msgstr "Methodik"
+
+msgid "Filtr sektorów"
+msgstr "Sektorenfilter"
+
+msgid "W realizacji"
+msgstr "In Ausführung"
+
+msgid "Potencjał i referencje"
+msgstr "Potenzial und Referenzen"
+
+msgid "Potencjał i referencje – %(n)s realizacji, kadra, struktura | MBT Modern Building Team"
+msgstr "Potenzial und Referenzen – %(n)s Projekte, Team, Struktur | MBT Modern Building Team"
+
+msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
+msgstr "MBT-Präqualifikationsportfolio: Gesellschaftskapital, Organisationsstruktur, Team, Technologien und %(n)s Projekte in %(s)s Sektoren. Generalunternehmer und Planen & Bauen."
