@@ -2255,3 +2255,6 @@ msgstr "Potenzial und Referenzen – %(n)s Projekte, Team, Struktur | MBT Modern
 
 msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
 msgstr "MBT-Präqualifikationsportfolio: Gesellschaftskapital, Organisationsstruktur, Team, Technologien und %(n)s Projekte in %(s)s Sektoren. Generalunternehmer und Planen & Bauen."
+
+msgid "Dyrekcja"
+msgstr "Direktion"

@@ -250,7 +250,7 @@ def build_context(lang='pl'):
     # ---------- Kadra ----------
     reps, regions = _sales_team(lang)
     photos = _worker_photos(lang)
-    people = {'board': [], 'managers': [], 'sales': []}
+    people = {'board': [], 'directors': [], 'managers': [], 'sales': []}
     for k in d['kadra']:
         name = k['imie_nazwisko']
         rep = reps.get(name) or {}
@@ -265,7 +265,7 @@ def build_context(lang='pl'):
             'email': _clean(rep.get('email')) or _clean(k.get('kontakt') and k['kontakt'].get('email')),
             'phone': (_clean(rep.get('phone')) or '').replace('\xa0', ' ') or _clean(k.get('kontakt') and k['kontakt'].get('telefon')),
         }
-        group = {'zarzad-dyrekcja': 'board', 'kierownictwo': 'managers'}.get(k['grupa'], 'sales')
+        group = {'zarzad': 'board', 'dyrekcja': 'directors', 'kierownictwo': 'managers'}.get(k['grupa'], 'sales')
         people[group].append(card)
 
     # ---------- Kadra techniczna ----------
@@ -309,7 +309,7 @@ def build_context(lang='pl'):
             'org_note': t(st.get('podleglosc')),
             'depts_left': depts_left, 'depts_right': depts_right, 'dept_count': len(st['dzialy']),
             'site_crew': t(st.get('kadra_budow')),
-            'board': people['board'], 'managers': people['managers'], 'sales_team': people['sales'],
+            'board': people['board'], 'directors': people['directors'], 'managers': people['managers'], 'sales_team': people['sales'],
             'tech_rows': tech_rows, 'tech_has_count': tech_has_count, 'tech_has_qual': tech_has_qual,
             'formulas': [{'name': t(f['nazwa']), 'desc': t(f['opis'])} for f in d['formuly']],
             'process': [t(s) for s in d['proces']],

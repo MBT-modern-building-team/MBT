@@ -305,7 +305,7 @@
       "slug": "tomasz-kalisz",
       "imie_nazwisko": "Tomasz Kalisz",
       "stanowisko": "Prezes Zarządu",
-      "grupa": "zarzad-dyrekcja",
+      "grupa": "zarzad",
       "opis": "Jestem inżynierem z wykształcenia i liderem z 15-letnim doświadczeniem w realizacji wymagających projektów budowlanych w Polsce i za granicą, specjalizując się w budownictwie infrastrukturalnym i przemysłowym. W 2018 roku, wspólnie z Jackiem, założyłem MBT Modern Building Team – firmę skupiającą się na dostarczaniu niezawodnych rozwiązań w najbardziej skomplikowanych projektach. Relacje oparte na szczerości i przejrzystości stanowią dla mnie fundament skutecznej współpracy z inwestorami i zespołem.",
       "kontakt": null,
       "foto": null,
@@ -315,7 +315,7 @@
       "slug": "jacek-lewandowski",
       "imie_nazwisko": "Jacek Lewandowski",
       "stanowisko": "Wiceprezes",
-      "grupa": "zarzad-dyrekcja",
+      "grupa": "zarzad",
       "opis": "Od 2003 roku działam w branży budowlanej i mimo braku wykształcenia inżynierskiego, swobodnie poruszam się w jej realiach. Jestem handlowcem i negocjatorem z natury, zawsze znajduję sposób, by osiągnąć cel. Cenię relacje oparte na zaufaniu i wzajemnym szacunku. Wierzę, że każde doświadczenie w życiu ma sens, celebruję sukcesy i wyciągam wnioski z porażek.",
       "kontakt": null,
       "foto": null,
@@ -329,13 +329,13 @@
       "stanowisko": "Dyrektor Controllingu",
       "opis": "Jestem inżynierem budownictwa, od ponad 20 lat związana z finansami i controllingiem. W obecnej roli łączę analityczne myślenie z praktycznym podejściem do projektów. Wierzę, że kluczem do sukcesu są ludzie, wspólne wartości i współpraca, aby osiągnąć założony cel.",
       "linkedin": "https://www.linkedin.com/in/amelia-mzyk-91a98b71/",
-      "grupa": "zarzad-dyrekcja"
+      "grupa": "dyrekcja"
     },
     {
       "slug": "jakub-walczak",
       "imie_nazwisko": "Jakub Walczak",
       "stanowisko": "Dyrektor Działu Realizacji",
-      "grupa": "zarzad-dyrekcja",
+      "grupa": "dyrekcja",
       "opis": "Jestem inżynierem, który zdobył doświadczenie, przechodząc przez wszystkie szczeble kariery, aby teraz dzielić się nim z zespołem i stale się rozwijać. Każdy dzień to dla mnie okazja do pracy nad ambitnymi projektami, które stanowią prawdziwe wyzwanie.",
       "kontakt": null,
       "foto": null,
@@ -345,7 +345,7 @@
       "slug": "krzysztof-filipowski",
       "imie_nazwisko": "Krzysztof Filipowski",
       "stanowisko": "Dyrektor ds. finansowych",
-      "grupa": "zarzad-dyrekcja",
+      "grupa": "dyrekcja",
       "opis": "Jestem odpowiedzialny za finanse firmy, koncentrując się na jej stabilnym rozwoju. Moim celem jest maksymalizacja efektywności zarządzania zasobami finansowymi, by wspierać dalszy wzrost.",
       "kontakt": null,
       "foto": null,
@@ -359,17 +359,7 @@
       "stanowisko": "Dyrektor Oddziału Kraków",
       "opis": "Mam 20 lat doświadczenia w branży budowlanej, zbieram doświadczenie zarówno w sektorze przemysłowym, jak i w sektorze kubaturowym. Zarządzam inwestycjami prywatnymi i publicznymi, wykorzystując wiedzę techniczną i formalną.",
       "linkedin": "https://www.linkedin.com/in/marek-lato%C5%9B-4aa93233b/",
-      "grupa": "zarzad-dyrekcja"
-    },
-    {
-      "slug": "katarzyna-knabel",
-      "imie_nazwisko": "Katarzyna Knabel",
-      "kontakt": null,
-      "foto": null,
-      "stanowisko": "Kierownik ds. przygotowania produkcji",
-      "opis": "Zarządzam zespołem Działu Przygotowania Produkcji, który ściśle współpracuje z Działem Realizacji projektów budowlanych realizowanych przez MBT. Jako inżynier, łączę techniczne myślenie z dobrą organizacją i zdolnościami komunikacyjnymi. Jestem typem lidera, prowadzę swój zespół z pełnym wsparciem, dzieląc się swoim doświadczeniem. Jednocześnie sama stale się rozwijam. Mawiają o mnie: „Sprawy niemożliwe załatwia od ręki, na cuda trzeba poczekać.”",
-      "linkedin": "https://www.linkedin.com/in/katarzyna-knabel-1286451ba/",
-      "grupa": "kierownictwo"
+      "grupa": "dyrekcja"
     },
     {
       "slug": "piotr-burda",
@@ -379,6 +369,16 @@
       "stanowisko": "Kierownik Działu Ofertowego",
       "opis": "Zarządzam zespołem ofertowym, łącząc wiedzę techniczną z doświadczeniem w projektach budowlanych. Tworzę precyzyjne oferty, dopasowane do wymagań klienta i warunków rynkowych.",
       "linkedin": "https://www.linkedin.com/company/modern-building-team/",
+      "grupa": "dyrekcja"
+    },
+    {
+      "slug": "katarzyna-knabel",
+      "imie_nazwisko": "Katarzyna Knabel",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Kierownik ds. przygotowania produkcji",
+      "opis": "Zarządzam zespołem Działu Przygotowania Produkcji, który ściśle współpracuje z Działem Realizacji projektów budowlanych realizowanych przez MBT. Jako inżynier, łączę techniczne myślenie z dobrą organizacją i zdolnościami komunikacyjnymi. Jestem typem lidera, prowadzę swój zespół z pełnym wsparciem, dzieląc się swoim doświadczeniem. Jednocześnie sama stale się rozwijam. Mawiają o mnie: „Sprawy niemożliwe załatwia od ręki, na cuda trzeba poczekać.”",
+      "linkedin": "https://www.linkedin.com/in/katarzyna-knabel-1286451ba/",
       "grupa": "kierownictwo"
     },
     {

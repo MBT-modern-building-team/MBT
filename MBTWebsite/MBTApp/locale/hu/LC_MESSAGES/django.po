@@ -2255,3 +2255,6 @@ msgstr "Potenciál és referenciák – %(n)s projekt, csapat, struktúra | MBT 
 
 msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
 msgstr "MBT előminősítési portfólió: társasági tőke, szervezeti felépítés, csapat, technológiák és %(n)s projekt %(s)s ágazatban. Generálkivitelezés és Design & Build."
+
+msgid "Dyrekcja"
+msgstr "Vezetők"

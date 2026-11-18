@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118k">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118l">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -163,8 +163,11 @@
 
         <ul class="pot-org">
             <li class="pot-org-root">
-                <ul class="pot-org-people" aria-label="{{ p.org_head }}">
+                <ul class="pot-org-top" aria-label="{{ p.org_head }}">
                     {% for m in p.board %}{% include 'pages/_pot_person.html' with m=m compact=True %}{% endfor %}
+                </ul>
+                <ul class="pot-org-people" aria-label="{% trans 'Dyrekcja' %}">
+                    {% for m in p.directors %}{% include 'pages/_pot_person.html' with m=m compact=True %}{% endfor %}
                 </ul>
                 <ul class="pot-org-cols">
                     <li>

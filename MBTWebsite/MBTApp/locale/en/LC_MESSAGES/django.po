@@ -2258,3 +2258,6 @@ msgstr "Potential and references – %(n)s projects, team, structure | MBT Moder
 
 msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
 msgstr "MBT prequalification portfolio: company capital, organisational structure, team, technology and %(n)s projects in %(s)s sectors. General Contracting and Design & Build."
+
+msgid "Dyrekcja"
+msgstr "Directors"

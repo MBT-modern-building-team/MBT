@@ -2255,3 +2255,6 @@ msgstr "Potenciál a reference – %(n)s realizací, tým, struktura | MBT Moder
 
 msgid "Portfolio prekwalifikacyjne MBT: kapitał spółki, struktura organizacyjna, kadra, technologie oraz %(n)s realizacji w %(s)s sektorach. Generalne Wykonawstwo i Zaprojektuj i Wybuduj."
 msgstr "Prekvalifikační portfolio MBT: kapitál společnosti, organizační struktura, tým, technologie a %(n)s realizací v %(s)s sektorech. Generální dodávky a Design & Build."
+
+msgid "Dyrekcja"
+msgstr "Ředitelé"
