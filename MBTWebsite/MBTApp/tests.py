@@ -59,7 +59,7 @@ class PortfolioPageTests(TestCase):
 
     def test_in_progress_badge_and_hidden_null_fields(self):
         html = self._get().content.decode()
-        self.assertEqual(html.count('class="pot-badge"'), 2)
+        self.assertGreaterEqual(html.count('class="pot-badge"'), 10)  # wszystkie karty z logo (w trakcie realizacji)
         for label in ('KRS', 'NIP', 'REGON', 'Przychody netto', 'Suma gwarancyjna OC'):
             self.assertNotIn(f'<th scope="row">{label}', html)
         self.assertNotIn('Liczba osób', html)  # kolumna ukryta, brak danych

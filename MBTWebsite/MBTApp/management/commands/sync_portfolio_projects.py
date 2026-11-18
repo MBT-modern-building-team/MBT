@@ -39,7 +39,9 @@ class Command(BaseCommand):
             self.stdout.write(f'{tag}nowa realizacja: {slug} ({r["nazwa"]})')
             if not dry:
                 Project.objects.create(
-                    title=r['nazwa'], slug=slug, type='realizacja-zrealizow', status='Zrealizowane',
+                    title=r['nazwa'], slug=slug,
+                    type='realizacja-w-trakcie' if nr in portfolio.IN_PROGRESS_NEW else 'realizacja-zrealizow',
+                    status='W trakcie realizacji' if nr in portfolio.IN_PROGRESS_NEW else 'Zrealizowane',
                     formula=r.get('formula') or '', opis=portfolio.project_description(r),
                     logo=logo, hero=logo, gallery=[], order=order,
                 )

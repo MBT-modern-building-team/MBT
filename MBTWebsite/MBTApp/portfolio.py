@@ -43,6 +43,8 @@ NEW_RECORDS = {
     50: 'https://media.mbt.pl/uploads/4fe7e40eb483.webp',  # Centrum Sportów Rakietowych UE Wrocław (jak na produkcji)
     51: LOGOS + 'zielona-dolina.png',
 }
+# Nowe rekordy oznaczone jako „W trakcie realizacji” (jak pozostałe karty z logo).
+IN_PROGRESS_NEW = {9, 17, 31, 50, 51}
 # Rekordy usunięte z serwisu całkowicie (baza + mbt_data.py) — lista w portfolio_records.py.
 REMOVED_SLUGS = _REMOVED
 # Wcześniej doklejone bloki opisu, które trzeba zdjąć przed doklejeniem nowej wersji (nr -> teksty).
@@ -240,7 +242,8 @@ def build_context(lang='pl'):
             'type': t(r.get('typ')),
             'meta': ' · '.join(x for x in [t(r.get('lokalizacja')), t(r.get('formula'))] if x),
             'kpi': [t(k) for k in (r.get('kpi') or []) if _clean(k)],
-            'in_progress': r.get('status') == 'w_realizacji',
+            # Plakietka „W realizacji”: status z JSON albo realizacja w trakcie w /realizacje/ (tam z logo klienta).
+            'in_progress': r.get('status') == 'w_realizacji' or bool(ex and ex.get('type') == 'realizacja-w-trakcie'),
             'params': t(params),
             'voivodeship': r.get('wojewodztwo'),
             'url': url,
