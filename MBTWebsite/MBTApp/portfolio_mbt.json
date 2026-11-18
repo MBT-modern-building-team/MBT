@@ -73,7 +73,8 @@
       "Gazele Biznesu"
     ],
     "czlonkostwa": [
-      "Regionalna Izba Gospodarcza w Katowicach"
+      "Regionalna Izba Gospodarcza w Katowicach",
+      "Dolnośląska Izba Gospodarcza"
     ],
     "haslo": "Budujemy bez komplikacji"
   },
@@ -166,7 +167,7 @@
   "kompetencje": [
     {
       "nazwa": "Hale pod suwnice natorowe",
-      "potwierdzenie": "Fiołka Racibórz, Ponar Silesia Łaziska Górne"
+      "potwierdzenie": "Fiołka Racibórz, Ponar Wadowice S.A."
     },
     {
       "nazwa": "Magazyny wysokiego składowania do 20 m, posadzki pod układnice",
@@ -183,10 +184,6 @@
     {
       "nazwa": "Prace w czynnych zakładach, bez przerywania produkcji",
       "potwierdzenie": "Brembo Poland, Kompania Piwowarska"
-    },
-    {
-      "nazwa": "Przemysł obronny – podwyższony rygor bezpieczeństwa",
-      "potwierdzenie": "MESKO S.A. (Polska Grupa Zbrojeniowa)"
     },
     {
       "nazwa": "Geotermia, pompy ciepła, PV i magazyny energii",
@@ -309,36 +306,110 @@
       "imie_nazwisko": "Tomasz Kalisz",
       "stanowisko": "Prezes Zarządu",
       "grupa": "zarzad-dyrekcja",
-      "opis": "Strategiczny nadzór nad procesami inwestycyjnymi i realizacją kontraktów spółki.",
+      "opis": "Jestem inżynierem z wykształcenia i liderem z 15-letnim doświadczeniem w realizacji wymagających projektów budowlanych w Polsce i za granicą, specjalizując się w budownictwie infrastrukturalnym i przemysłowym. W 2018 roku, wspólnie z Jackiem, założyłem MBT Modern Building Team – firmę skupiającą się na dostarczaniu niezawodnych rozwiązań w najbardziej skomplikowanych projektach. Relacje oparte na szczerości i przejrzystości stanowią dla mnie fundament skutecznej współpracy z inwestorami i zespołem.",
       "kontakt": null,
-      "foto": null
+      "foto": null,
+      "linkedin": "https://www.linkedin.com/in/tomasz-kalisz-28917386/"
     },
     {
       "slug": "jacek-lewandowski",
       "imie_nazwisko": "Jacek Lewandowski",
-      "stanowisko": "Współzałożyciel · Dyrektor Generalny ds. Handlowych",
+      "stanowisko": "Wiceprezes",
       "grupa": "zarzad-dyrekcja",
-      "opis": "Przygotowanie i komercjalizacja inwestycji, optymalizacja budżetu i harmonogramu już na etapie oferty.",
+      "opis": "Od 2003 roku działam w branży budowlanej i mimo braku wykształcenia inżynierskiego, swobodnie poruszam się w jej realiach. Jestem handlowcem i negocjatorem z natury, zawsze znajduję sposób, by osiągnąć cel. Cenię relacje oparte na zaufaniu i wzajemnym szacunku. Wierzę, że każde doświadczenie w życiu ma sens, celebruję sukcesy i wyciągam wnioski z porażek.",
       "kontakt": null,
-      "foto": null
+      "foto": null,
+      "linkedin": "https://www.linkedin.com/in/jacek-lewandowski-7a348b9b/"
+    },
+    {
+      "slug": "amelia-mzyk",
+      "imie_nazwisko": "Amelia Mzyk",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Dyrektor Controllingu",
+      "opis": "Jestem inżynierem budownictwa, od ponad 20 lat związana z finansami i controllingiem. W obecnej roli łączę analityczne myślenie z praktycznym podejściem do projektów. Wierzę, że kluczem do sukcesu są ludzie, wspólne wartości i współpraca, aby osiągnąć założony cel.",
+      "linkedin": "https://www.linkedin.com/in/amelia-mzyk-91a98b71/",
+      "grupa": "zarzad-dyrekcja"
     },
     {
       "slug": "jakub-walczak",
       "imie_nazwisko": "Jakub Walczak",
-      "stanowisko": "Dyrektor ds. Realizacji",
+      "stanowisko": "Dyrektor Działu Realizacji",
       "grupa": "zarzad-dyrekcja",
-      "opis": "Nadzór nad pionem wykonawczym i budowami: kierownikami budów, inżynierami i kierownikami robót w całej Polsce.",
+      "opis": "Jestem inżynierem, który zdobył doświadczenie, przechodząc przez wszystkie szczeble kariery, aby teraz dzielić się nim z zespołem i stale się rozwijać. Każdy dzień to dla mnie okazja do pracy nad ambitnymi projektami, które stanowią prawdziwe wyzwanie.",
       "kontakt": null,
-      "foto": null
+      "foto": null,
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
     },
     {
       "slug": "krzysztof-filipowski",
       "imie_nazwisko": "Krzysztof Filipowski",
-      "stanowisko": "Dyrektor Finansowy",
+      "stanowisko": "Dyrektor ds. finansowych",
       "grupa": "zarzad-dyrekcja",
-      "opis": "Zarządzanie finansami spółki i płynnością kontraktów.",
+      "opis": "Jestem odpowiedzialny za finanse firmy, koncentrując się na jej stabilnym rozwoju. Moim celem jest maksymalizacja efektywności zarządzania zasobami finansowymi, by wspierać dalszy wzrost.",
       "kontakt": null,
-      "foto": null
+      "foto": null,
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/"
+    },
+    {
+      "slug": "marek-latos",
+      "imie_nazwisko": "Marek Latoś",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Dyrektor Oddziału Kraków",
+      "opis": "Mam 20 lat doświadczenia w branży budowlanej, zbieram doświadczenie zarówno w sektorze przemysłowym, jak i w sektorze kubaturowym. Zarządzam inwestycjami prywatnymi i publicznymi, wykorzystując wiedzę techniczną i formalną.",
+      "linkedin": "https://www.linkedin.com/in/marek-lato%C5%9B-4aa93233b/",
+      "grupa": "zarzad-dyrekcja"
+    },
+    {
+      "slug": "katarzyna-knabel",
+      "imie_nazwisko": "Katarzyna Knabel",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Kierownik ds. przygotowania produkcji",
+      "opis": "Zarządzam zespołem Działu Przygotowania Produkcji, który ściśle współpracuje z Działem Realizacji projektów budowlanych realizowanych przez MBT. Jako inżynier, łączę techniczne myślenie z dobrą organizacją i zdolnościami komunikacyjnymi. Jestem typem lidera, prowadzę swój zespół z pełnym wsparciem, dzieląc się swoim doświadczeniem. Jednocześnie sama stale się rozwijam. Mawiają o mnie: „Sprawy niemożliwe załatwia od ręki, na cuda trzeba poczekać.”",
+      "linkedin": "https://www.linkedin.com/in/katarzyna-knabel-1286451ba/",
+      "grupa": "kierownictwo"
+    },
+    {
+      "slug": "piotr-burda",
+      "imie_nazwisko": "Piotr Burda",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Kierownik Działu Ofertowego",
+      "opis": "Zarządzam zespołem ofertowym, łącząc wiedzę techniczną z doświadczeniem w projektach budowlanych. Tworzę precyzyjne oferty, dopasowane do wymagań klienta i warunków rynkowych.",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/",
+      "grupa": "kierownictwo"
+    },
+    {
+      "slug": "dariusz-kudelko",
+      "imie_nazwisko": "Dariusz Kudełko",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Kierownik Projektu",
+      "opis": "Jestem inżynierem budownictwa związanym z wykonawstwem od 2015 roku. Przeszedłem wszystkie etapy – od Inżyniera Budowy po Kierownika Projektu, realizując obiekty mieszkaniowe i przemysłowe, takie jak zakłady produkcyjne, oczyszczalnie ścieków oraz rafinerie. W pracy stawiam na jakość, terminowość i dopracowanie każdego szczegółu.",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/",
+      "grupa": "kierownictwo"
+    },
+    {
+      "slug": "bartlomiej-potuczko",
+      "imie_nazwisko": "Bartłomiej Potuczko",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Project Manager",
+      "opis": "Pracuję w budownictwie od ponad dekady, realizując projekty przemysłowe, drogowe i konserwatorskie. Szybko się adaptuję i wprowadzam nowatorskie rozwiązania.",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/",
+      "grupa": "kierownictwo"
+    },
+    {
+      "slug": "michal-swoboda",
+      "imie_nazwisko": "Michał Swoboda",
+      "kontakt": null,
+      "foto": null,
+      "stanowisko": "Kierownik Projektu",
+      "opis": "Od pierwszych konstrukcji z piasku po wielkoskalowe inwestycje – budownictwo zawsze było częścią mojego świata. Jako Kierownik Projektu łączę techniczne podejście z praktycznym doświadczeniem. Lubię, gdy praca łączy ludzi, a wspólny wysiłek przekłada się na realny, trwały efekt, który zostaje na lata.",
+      "linkedin": "https://www.linkedin.com/company/modern-building-team/",
+      "grupa": "kierownictwo"
     },
     {
       "slug": "agnieszka-grzelak",
@@ -890,12 +961,12 @@
     },
     {
       "nr": 20,
-      "slug": "ponar-silesia-laziska-gorne",
+      "slug": "ponar-wadowice-sa",
       "sektor": "produkcja",
-      "nazwa": "Ponar Silesia Łaziska Górne",
+      "nazwa": "Ponar Wadowice S.A.",
       "typ": "Hala produkcyjno-montażowa układów hydrauliki siłowej pod suwnice",
-      "lokalizacja": "Łaziska Górne (woj. śląskie)",
-      "wojewodztwo": "śląskie",
+      "lokalizacja": "Wadowice (woj. małopolskie)",
+      "wojewodztwo": "małopolskie",
       "formula": "Generalne Wykonawstwo",
       "parametry": "Specjalistyczna hala pod prefabrykację, montaż i testowanie wielkogabarytowych układów hydrauliki siłowej. Obiekt zaprojektowany i wybudowany pod montaż ciężkich natorowych suwnic przemysłowych o wysokim udźwigu, strefa prób ciśnieniowych, posadzki o podwyższonej nośności punktowej, część biurowo-socjalna.",
       "kpi": [
@@ -1169,24 +1240,6 @@
       "parametry_publiczne": null
     },
     {
-      "nr": 36,
-      "slug": "mesko-s-a-skarzysko-kamienna-polska-grupa-zbrojeniowa",
-      "sektor": "czynne-zaklady",
-      "nazwa": "MESKO S.A. Skarżysko-Kamienna (Polska Grupa Zbrojeniowa)",
-      "typ": "Przebudowa i nadbudowa wiaty na budynek produkcyjny przemysłu obronnego",
-      "lokalizacja": "Skarżysko-Kamienna (woj. świętokrzyskie – Zakład Z-2)",
-      "wojewodztwo": "świętokrzyskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Częściowe rozbiórki, wzmocnienie fundamentów, nadbudowa i zmiana sposobu użytkowania wiaty na budynek produkcyjno-magazynowy z częścią socjalno-administracyjną o podwyższonym rygorze bezpieczeństwa technicznego i pożarowego. Posadzki beziskrowe, instalacje HVAC, automatyka pożarowa.",
-      "kpi": [
-        "przemysł obronny",
-        "posadzki beziskrowe"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
       "nr": 37,
       "slug": "brembo-poland-dabrowa-gornicza-eco",
       "sektor": "czynne-zaklady",
@@ -1240,16 +1293,19 @@
     },
     {
       "nr": 40,
-      "slug": "tyskie-browary-ksiazece-tychy-strefa-dokow-przeladunkowych-tir",
+      "slug": "tyskie-browary-ksiazece-tychy",
       "sektor": "czynne-zaklady",
       "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
-      "typ": "Strefa doków przeładunkowych TIR",
+      "typ": "Strefa doków TIR, wiaty magazynowe, myjnia pojazdów ciężarowych i stanowisko zrzutu piwa",
       "lokalizacja": "Tychy (woj. śląskie)",
       "wojewodztwo": "śląskie",
       "formula": "Generalne Wykonawstwo na czynnym zakładzie",
-      "parametry": "Budowa i modernizacja strefy doków przeładunkowych dla samochodów ciężarowych. Rampy elektrohydrauliczne, fartuchy uszczelniające, automatyczne bramy dokowe, zbrojone nawierzchnie z betonu drogowego o wysokiej nośności pod intensywny ruch TIR.",
+      "parametry": "Strefa doków przeładunkowych TIR: Budowa i modernizacja strefy doków przeładunkowych dla samochodów ciężarowych. Rampy elektrohydrauliczne, fartuchy uszczelniające, automatyczne bramy dokowe, zbrojone nawierzchnie z betonu drogowego o wysokiej nośności pod intensywny ruch TIR. Wielkogabarytowa wiata magazynowa: Stalowa konstrukcja wiaty o podwyższonej odporności na korozję (powłoki C4/C5), płyty z betonu drogowego ze spadkami pod składowanie palet z butelkami i kegami. Zespół wiat magazynowych z placami składowymi: Zadaszone przestrzenie buforowe magazynowania surowców i opakowań, zbrojone płyty betonowe z odwodnieniem liniowym, odporne na intensywny ruch wózków widłowych. Zakładowa myjnia pojazdów ciężarowych z oczyszczalnią ścieków: Specjalistyczna myjnia dla floty ciężarowej i wózków widłowych. Zamknięty obieg wody myjącej, separatory ropopochodne, osadniki zawiesin, posadzki żywiczne chemoodporne ze stali nierdzewnej w strefie cokołowej. Stanowisko zrzutu i wylewki piwa z instalacją kwasoodporną: Strefa zrzutu i neutralizacji piwa pozaklasowego. Posadzka kwasoodporna, rurociągi ze stali kwasoodpornej AISI 316L, neutralizacja ścieków przemysłowych.",
       "kpi": [
-        "czynny zakład"
+        "czynny zakład",
+        "powłoki C4/C5",
+        "zamknięty obieg wody",
+        "AISI 316L"
       ],
       "status": "zrealizowana",
       "do_weryfikacji": null,
@@ -1268,72 +1324,6 @@
       "kpi": [
         "613 m² hali",
         "722 m² dróg"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 42,
-      "slug": "tyskie-browary-ksiazece-tychy-wielkogabarytowa-wiata-magazynowa",
-      "sektor": "czynne-zaklady",
-      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
-      "typ": "Wielkogabarytowa wiata magazynowa",
-      "lokalizacja": "Tychy (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Stalowa konstrukcja wiaty o podwyższonej odporności na korozję (powłoki C4/C5), płyty z betonu drogowego ze spadkami pod składowanie palet z butelkami i kegami.",
-      "kpi": [
-        "powłoki C4/C5"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 43,
-      "slug": "tyskie-browary-ksiazece-tychy-zespol-wiat-magazynowych-z-placami",
-      "sektor": "czynne-zaklady",
-      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
-      "typ": "Zespół wiat magazynowych z placami składowymi",
-      "lokalizacja": "Tychy (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Zadaszone przestrzenie buforowe magazynowania surowców i opakowań, zbrojone płyty betonowe z odwodnieniem liniowym, odporne na intensywny ruch wózków widłowych.",
-      "kpi": [],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 44,
-      "slug": "tyskie-browary-ksiazece-tychy-zakladowa-myjnia-pojazdow-ciezarowych",
-      "sektor": "czynne-zaklady",
-      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
-      "typ": "Zakładowa myjnia pojazdów ciężarowych z oczyszczalnią ścieków",
-      "lokalizacja": "Tychy (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Specjalistyczna myjnia dla floty ciężarowej i wózków widłowych. Zamknięty obieg wody myjącej, separatory ropopochodne, osadniki zawiesin, posadzki żywiczne chemoodporne ze stali nierdzewnej w strefie cokołowej.",
-      "kpi": [
-        "zamknięty obieg wody"
-      ],
-      "status": "zrealizowana",
-      "do_weryfikacji": null,
-      "parametry_publiczne": null
-    },
-    {
-      "nr": 45,
-      "slug": "tyskie-browary-ksiazece-tychy-stanowisko-zrzutu-i-wylewki-piwa",
-      "sektor": "czynne-zaklady",
-      "nazwa": "Tyskie Browary Książęce (Kompania Piwowarska) Tychy",
-      "typ": "Stanowisko zrzutu i wylewki piwa z instalacją kwasoodporną",
-      "lokalizacja": "Tychy (woj. śląskie)",
-      "wojewodztwo": "śląskie",
-      "formula": "Generalne Wykonawstwo",
-      "parametry": "Strefa zrzutu i neutralizacji piwa pozaklasowego. Posadzka kwasoodporna, rurociągi ze stali kwasoodpornej AISI 316L, neutralizacja ścieków przemysłowych.",
-      "kpi": [
-        "AISI 316L"
       ],
       "status": "zrealizowana",
       "do_weryfikacji": null,

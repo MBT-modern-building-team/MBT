@@ -1,14 +1,16 @@
 {% load i18n %}
 <li class="pot-person">
     <div class="pot-person-photo">
-        {% if m.photo %}<img src="{{ m.photo }}" alt="{{ m.name }}" width="400" height="500" loading="lazy" decoding="async">
+        {% if m.photo %}<img src="{{ m.photo }}" alt="{{ m.name }}" width="600" height="400" loading="lazy" decoding="async">
         {% else %}<div class="pot-ph" role="img" aria-label="{{ m.name }}"><span>{{ m.initials }}</span></div>{% endif %}
     </div>
-    <div class="pot-person-banner"><strong>{{ m.name }}</strong><span>{{ m.role }}</span></div>
     <div class="pot-person-body">
-        {% if m.desc %}<p>{{ m.desc }}</p>{% endif %}
+        <h3 class="pot-person-name">{{ m.name }}</h3>
+        <p class="pot-person-role">{{ m.role }}</p>
+        {% if m.desc %}<p class="pot-person-desc">{{ m.desc }}</p>{% endif %}
         {% if m.region %}<p class="pot-person-reg"><i class="ri-map-pin-2-line" aria-hidden="true"></i> {{ m.region }}</p>{% endif %}
-        {% if m.phone or m.email %}<p class="pot-person-contact">
+        {% if m.phone or m.email or m.linkedin %}<p class="pot-person-foot">
+            {% if m.linkedin %}<a class="pot-person-btn" href="{{ m.linkedin }}" target="_blank" rel="noopener"><i class="ri-linkedin-box-fill" aria-hidden="true"></i> LinkedIn</a>{% endif %}
             {% if m.phone %}<a href="tel:{{ m.phone|cut:' ' }}">{{ m.phone }}</a>{% endif %}
             {% if m.email %}<a href="mailto:{{ m.email }}">{{ m.email }}</a>{% endif %}
         </p>{% endif %}

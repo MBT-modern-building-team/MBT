@@ -17,11 +17,24 @@ class PortfolioPageTests(TestCase):
             with self.subTest(lang=code):
                 self.assertEqual(self._get(code).status_code, 200)
 
-    def test_54_unique_project_cards(self):
+    def test_project_cards_match_data(self):
+        import json
+        from MBTApp.portfolio import JSON_PATH
+        expected = len(json.load(open(JSON_PATH, encoding='utf-8'))['realizacje'])
         html = self._get().content.decode()
-        nrs = re.findall(r'class="pot-proj-nr">(\d+)<', html)
-        self.assertEqual(sorted(map(int, nrs)), list(range(1, 55)))
-        self.assertEqual(len(set(nrs)), 54)
+        self.assertEqual(html.count('class="pot-proj-name"'), expected)
+        self.assertNotIn('pot-proj-nr', html)  # numeracja kart usunięta
+
+    def test_removed_content_not_present(self):
+        for code, _name in settings.LANGUAGES:
+            html = self._get(code).content.decode()
+            body = re.sub(r'<(script|svg).*?</\1>', '', html, flags=re.S)
+            for bad in ('MESKO', 'obronn', 'Zbrojeni', 'Łaziska', 'Na rynku od', 'Ponar Silesia'):
+                self.assertNotIn(bad, body, f'{bad} w {code}')
+        html = self._get().content.decode()
+        self.assertIn('Ponar Wadowice S.A.', html)
+        self.assertIn('Dolnośląska Izba Gospodarcza', html)
+        self.assertEqual(html.count('>Tyskie Browary Książęce'), 1)  # pięć wpisów scalonych w jedną kartę
 
     def test_no_placeholders_or_null_leak(self):
         for code, _name in settings.LANGUAGES:

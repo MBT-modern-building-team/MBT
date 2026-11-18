@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118f">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118g">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot">
@@ -30,7 +30,7 @@
         <div class="container">
             <ul class="pot-stats">
                 {% for s in p.stats %}
-                <li class="gw-stat"><span class="gw-stat-num">{{ s.value }}</span><span class="gw-stat-label">{% if forloop.counter == 1 %}{% trans 'lat na rynku' %}{% elif forloop.counter == 2 %}{% trans 'realizacji' %}{% elif forloop.counter == 3 %}{% trans 'sektorów' %}{% else %}{% trans 'województw' %}{% endif %}</span></li>
+                <li class="gw-stat"><span class="gw-stat-num">{{ s.value }}</span><span class="gw-stat-label">{% if s.key == 'projects' %}{% trans 'realizacji' %}{% else %}{% trans 'sektorów' %}{% endif %}</span></li>
                 {% endfor %}
             </ul>
         </div>
@@ -51,10 +51,9 @@
 <section class="pot-sec" id="profil" aria-labelledby="pot-profil-h">
     <div class="container">
         <header class="pot-head">
-            <p class="pot-kicker">01 · {% trans 'PROFIL FIRMY' %}</p>
+            <p class="pot-kicker">{% trans 'PROFIL FIRMY' %}</p>
             <h2 id="pot-profil-h" class="pot-h2">{{ p.texts.profil_h2 }}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
-            <p class="pot-lead">{{ p.texts.profil_lead }}</p>
         </header>
 
         <div class="pot-grid pot-grid--profile">
@@ -65,7 +64,6 @@
                     <tbody>
                         <tr><th scope="row">{% trans 'Nazwa' %}</th><td>{{ p.company_name }}</td></tr>
                         {% if p.legal_form %}<tr><th scope="row">{% trans 'Forma prawna' %}</th><td>{{ p.legal_form }}</td></tr>{% endif %}
-                        <tr><th scope="row">{% trans 'Na rynku od' %}</th><td>{{ p.since }}</td></tr>
                         {% if p.president %}<tr><th scope="row">{% trans 'Prezes Zarządu' %}</th><td>{{ p.president }}</td></tr>{% endif %}
                         {% for label, value in p.register_rows %}<tr><th scope="row">{{ label }}</th><td>{{ value }}</td></tr>{% endfor %}
                         {% for o in p.offices %}<tr><th scope="row">{% if o.typ == 'Centrala' %}{% trans 'Centrala' %}{% else %}{% trans 'Biuro' %}{% endif %}</th><td>{{ o.miasto }}, {{ o.adres }}</td></tr>{% endfor %}
@@ -121,7 +119,7 @@
 <section class="pot-sec pot-sec--tint" id="liczby" aria-labelledby="pot-num-h">
     <div class="container">
         <header class="pot-head">
-            <p class="pot-kicker">02 · {% trans 'POTENCJAŁ W LICZBACH' %}</p>
+            <p class="pot-kicker">{% trans 'POTENCJAŁ W LICZBACH' %}</p>
             <h2 id="pot-num-h" class="pot-h2">{% trans 'Potencjał w liczbach' %}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
         </header>
@@ -158,10 +156,9 @@
 <section class="pot-sec" id="struktura" aria-labelledby="pot-org-h">
     <div class="container">
         <header class="pot-head">
-            <p class="pot-kicker">03 · {% trans 'STRUKTURA ORGANIZACYJNA' %}</p>
+            <p class="pot-kicker">{% trans 'STRUKTURA ORGANIZACYJNA' %}</p>
             <h2 id="pot-org-h" class="pot-h2">{{ p.texts.struktura_h2 }}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
-            <p class="pot-lead">{{ p.texts.struktura_lead }}</p>
         </header>
 
         <ul class="pot-org">
@@ -189,21 +186,20 @@
     </div>
 </section>
 
-{# ===================== 04 KADRA ===================== #}
-<section class="pot-sec pot-sec--tint" id="kadra" aria-labelledby="pot-staff-h">
+{# ===================== KADRA ===================== #}
+<section class="pot-sec pot-sec--tint" id="kadra" aria-label="{% trans 'KADRA' %}">
     <div class="container">
-        <header class="pot-head">
-            <p class="pot-kicker">04 · {% trans 'KADRA' %}</p>
-            <h2 id="pot-staff-h" class="pot-h2">{% trans 'Ludzie, którzy prowadzą Twoją inwestycję' %}</h2>
-            <span class="pot-bar" aria-hidden="true"></span>
-        </header>
-
-        <h3 class="pot-h3">{% trans 'Zarząd i dyrekcja' %}</h3>
+        <h2 class="pot-h3 pot-h3--lg">{% trans 'Zarząd i dyrekcja' %}</h2>
         <ul class="pot-people">
             {% for m in p.board %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
         </ul>
 
-        <h3 class="pot-h3 pot-card--mt">{% trans 'Zespół handlowy i komunikacja' %}</h3>
+        <h2 class="pot-h3 pot-h3--lg pot-card--mt">{% trans 'Kierownicy i project managerowie' %}</h2>
+        <ul class="pot-people">
+            {% for m in p.managers %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
+        </ul>
+
+        <h2 class="pot-h3 pot-h3--lg pot-card--mt">{% trans 'Zespół handlowy i komunikacja' %}</h2>
         <p class="pot-lead pot-lead--sm">{{ p.texts.zespol_lead }}</p>
         <ul class="pot-people">
             {% for m in p.sales_team %}{% include 'pages/_pot_person.html' with m=m %}{% endfor %}
@@ -215,7 +211,7 @@
 <section class="pot-sec" id="realizacja-procesu" aria-labelledby="pot-tech-h">
     <div class="container">
         <header class="pot-head">
-            <p class="pot-kicker">05 · {% trans 'KADRA TECHNICZNA I SPOSÓB REALIZACJI' %}</p>
+            <p class="pot-kicker">{% trans 'KADRA TECHNICZNA I SPOSÓB REALIZACJI' %}</p>
             <h2 id="pot-tech-h" class="pot-h2">{% trans 'Kadra techniczna i sposób realizacji' %}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
         </header>
@@ -267,7 +263,7 @@
 <section class="pot-sec pot-sec--tint" id="technologie" aria-labelledby="pot-tools-h">
     <div class="container">
         <header class="pot-head">
-            <p class="pot-kicker">06 · {% trans 'TECHNOLOGIE I ZAPLECZE' %}</p>
+            <p class="pot-kicker">{% trans 'TECHNOLOGIE I ZAPLECZE' %}</p>
             <h2 id="pot-tools-h" class="pot-h2">{{ p.texts.technologie_h2 }}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
         </header>
@@ -301,7 +297,7 @@
 <section class="pot-sec" id="realizacje" aria-labelledby="pot-proj-h">
     <div class="container">
         <header class="pot-head">
-            <p class="pot-kicker">07 · {% trans 'REALIZACJE' %}</p>
+            <p class="pot-kicker">{% trans 'REALIZACJE' %}</p>
             <h2 id="pot-proj-h" class="pot-h2">{{ p.texts.realizacje_h2 }}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
             <p class="pot-lead">{{ p.texts.realizacje_lead }}</p>
@@ -323,10 +319,7 @@
                     <div class="pot-proj-img">{% if pr.url %}<a href="{{ pr.url }}" tabindex="-1" aria-hidden="true">{% endif %}<img src="{{ pr.thumb }}" alt="{{ pr.name }}" width="640" height="400" loading="lazy" decoding="async">{% if pr.url %}</a>{% endif %}</div>
                     {% endif %}
                     <div class="pot-proj-body">
-                        <div class="pot-proj-top">
-                            <span class="pot-proj-nr">{{ pr.nr }}</span>
-                            {% if pr.in_progress %}<span class="pot-badge">{% trans 'W realizacji' %}</span>{% endif %}
-                        </div>
+                        {% if pr.in_progress %}<div class="pot-proj-top"><span class="pot-badge">{% trans 'W realizacji' %}</span></div>{% endif %}
                         <h4 class="pot-proj-name">{% if pr.url %}<a href="{{ pr.url }}">{{ pr.name }}</a>{% else %}{{ pr.name }}{% endif %}</h4>
                         <p class="pot-proj-type">{{ pr.type }}</p>
                         <p class="pot-proj-meta">{{ pr.meta }}</p>
@@ -346,7 +339,7 @@
     <div class="pot-cta-overlay" aria-hidden="true"></div>
     <div class="pot-hero-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="container">
-        <p class="pot-kicker pot-kicker--light">08 · {% trans 'KONTAKT' %}</p>
+        <p class="pot-kicker pot-kicker--light">{% trans 'KONTAKT' %}</p>
         <h2 id="pot-cta-h" class="pot-h2 pot-h2--light">{{ p.texts.cta_h2 }}</h2>
         <span class="pot-bar" aria-hidden="true"></span>
         <ul class="pot-offices">

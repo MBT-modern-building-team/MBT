@@ -27,8 +27,7 @@ _MARKER_RE = re.compile(r'\[DO (UZUPE[ŁL]NIENIA|T[ŁL]UMACZENIA)[^\]]*\]', re.I
 
 # nr realizacji (JSON) -> slug istniejącej realizacji w /realizacje/.
 # Tylko pewne dopasowania; reszta nie ma jeszcze rekordu (brak linku i miniatury).
-# Wątpliwe, celowo niezmapowane: nr 20 (Ponar Silesia Łaziska Górne vs „Ponar Wadowice”)
-# oraz nr 42–45 (kolejne etapy Tyskich Browarów — jeden rekord istnieje, nr 40).
+# Tyskie Browary (nr 40) to jedna karta scalona z pięciu wpisów JSON.
 EXISTING_SLUGS = {
     1: 'raben',
     2: 'in-post-w-legnicy',
@@ -44,6 +43,7 @@ EXISTING_SLUGS = {
     15: 'less-mess-storage-warszawa',
     16: 'less-mess-gdansk',
     18: 'huber-suhner-pisary',
+    20: 'ponar-wadowice',
     21: 'fiolka-raciborz',
     22: 'herz-wieliczka',
     23: 'euronova-kokotow-gm-wieliczka',
@@ -117,8 +117,8 @@ def _sales_team(lang):
     return reps, {k: sorted(v) for k, v in regions.items()}
 
 
-def _light_photo(path, limit=1_000_000):
-    """Lokalne zdjęcie (/static/...) cięższe niż ~1 MB nie trafia na kartę (placeholder zamiast niego)."""
+def _light_photo(path, limit=4_000_000):
+    """Lokalne zdjęcie (/static/...) cięższe niż ~4 MB nie trafia na kartę (placeholder zamiast niego)."""
     if not path or not path.startswith('/static/'):
         return path
     from django.conf import settings
@@ -214,10 +214,8 @@ def build_context(lang='pl'):
     in_progress = sum(1 for p in projects if p['in_progress'])
 
     stats = [
-        {'value': d['liczby']['lat_na_rynku'], 'label': 'lat na rynku'},
-        {'value': total, 'label': 'realizacji'},
-        {'value': len([g for g in by_sector.values() if g['count']]), 'label': 'sektorów'},
-        {'value': len(voiv_counter), 'label': 'województw'},
+        {'key': 'projects', 'value': total},
+        {'key': 'sectors', 'value': len([g for g in by_sector.values() if g['count']])},
     ]
 
     # ---------- Kompetencje ----------
@@ -252,7 +250,7 @@ def build_context(lang='pl'):
     # ---------- Kadra ----------
     reps, regions = _sales_team(lang)
     photos = _worker_photos(lang)
-    people = {'board': [], 'sales': []}
+    people = {'board': [], 'managers': [], 'sales': []}
     for k in d['kadra']:
         name = k['imie_nazwisko']
         rep = reps.get(name) or {}
@@ -263,10 +261,12 @@ def build_context(lang='pl'):
             'desc': t(k.get('opis')),
             'photo': _light_photo(_clean(k.get('foto')) or photos.get(name) or _clean(rep.get('photo')) or ''),
             'region': ', '.join(regions.get(name, [])) or None,
+            'linkedin': _clean(k.get('linkedin')),
             'email': _clean(rep.get('email')) or _clean(k.get('kontakt') and k['kontakt'].get('email')),
             'phone': (_clean(rep.get('phone')) or '').replace('\xa0', ' ') or _clean(k.get('kontakt') and k['kontakt'].get('telefon')),
         }
-        people['board' if k['grupa'] == 'zarzad-dyrekcja' else 'sales'].append(card)
+        group = {'zarzad-dyrekcja': 'board', 'kierownictwo': 'managers'}.get(k['grupa'], 'sales')
+        people[group].append(card)
 
     # ---------- Kadra techniczna ----------
     tech_rows = [{
@@ -282,7 +282,8 @@ def build_context(lang='pl'):
 
     return {
         'p': {
-            'texts': {k: t(v) for k, v in d['teksty'].items()},
+            'texts': {k: re.sub(r'\b54\b', str(total), t(v)) if isinstance(t(v), str) else t(v)
+                      for k, v in d['teksty'].items()},
             'company_name': firma['nazwa'],
             'legal_form': t(firma.get('forma_prawna')),
             'since': firma['na_rynku_od'],
@@ -308,7 +309,7 @@ def build_context(lang='pl'):
             'org_note': t(st.get('podleglosc')),
             'depts_left': depts_left, 'depts_right': depts_right, 'dept_count': len(st['dzialy']),
             'site_crew': t(st.get('kadra_budow')),
-            'board': people['board'], 'sales_team': people['sales'],
+            'board': people['board'], 'managers': people['managers'], 'sales_team': people['sales'],
             'tech_rows': tech_rows, 'tech_has_count': tech_has_count, 'tech_has_qual': tech_has_qual,
             'formulas': [{'name': t(f['nazwa']), 'desc': t(f['opis'])} for f in d['formuly']],
             'process': [t(s) for s in d['proces']],
