@@ -12,14 +12,14 @@ from django.db.models.signals import post_delete, post_save
 
 from MBTApp.models import (
     Article, Award, Job, Project, Reference, SalesRepresentative, Sector,
-    SiteConfig, SitePhotos, Worker,
+    SiteConfig, SitePhotos, TrustedBrand, Worker,
 )
 
 logger = logging.getLogger(__name__)
 
 _MODELS = (
     Project, Job, Worker, Reference, Article, SiteConfig, SitePhotos,
-    SalesRepresentative, Award, Sector,
+    SalesRepresentative, Award, Sector, TrustedBrand,
 )
 
 

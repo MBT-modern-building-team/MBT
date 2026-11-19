@@ -25,7 +25,7 @@ TR_DESCRIPTION = 'Wpisz tłumaczenie w polu danego języka. Puste pole = na stro
 # ============================================================
 
 ADMIN_GROUPS = (
-    ('Treści strony', ('Project', 'Article', 'Sector', 'Job', 'Reference', 'Award')),
+    ('Treści strony', ('Project', 'Article', 'Sector', 'Job', 'Reference', 'Award', 'TrustedBrand')),
     ('Zespół i handlowcy', ('Worker', 'SalesRepresentative')),
     ('Dane firmy i zdjęcia', ('SiteConfig', 'SitePhotos')),
     ('Oznakowanie budowy', ('BannerTemplate', 'BannerDownload', 'UserProfile')),
@@ -389,6 +389,19 @@ class UserProfileAdmin(MBTModelAdmin):
 @admin.register(models.Award)
 class AwardAdmin(MBTModelAdmin):
     form = mbt_forms.AwardForm
+    list_display = ('miniatura', 'name', 'order', 'is_active')
+    list_display_links = ('miniatura', 'name')
+    list_editable = ('order', 'is_active')
+    search_fields = ('name',)
+
+    @admin.display(description='')
+    def miniatura(self, obj):
+        return _thumb(obj.image)
+
+
+@admin.register(models.TrustedBrand)
+class TrustedBrandAdmin(MBTModelAdmin):
+    form = mbt_forms.TrustedBrandForm
     list_display = ('miniatura', 'name', 'order', 'is_active')
     list_display_links = ('miniatura', 'name')
     list_editable = ('order', 'is_active')

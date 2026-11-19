@@ -45,7 +45,7 @@ def _cached(key_prefix):
         return wrapper
     return decorator
 
-from MBTApp.models import Project, Job, Worker, Reference, Article, SiteConfig, SitePhotos, SalesRepresentative, Award
+from MBTApp.models import Project, Job, Worker, Reference, Article, SiteConfig, SitePhotos, SalesRepresentative, Award, TrustedBrand
 
 
 # ---------------------------------------------------------------------------
@@ -599,6 +599,15 @@ def get_awards():
     for a in getattr(mbt_data, 'AWARDS', []):
         awards.append(a)
     return awards
+
+
+@_cached('trusted_brands')
+def get_trusted_brands():
+    try:
+        return [{'name': b.name, 'image': b.image} for b in TrustedBrand.objects.filter(is_active=True) if b.image]
+    except Exception:
+        logger.warning('Fallback po błędzie', exc_info=True)
+        return []
 
 
 def get_sectors(lang='pl'):

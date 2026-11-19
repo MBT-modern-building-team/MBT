@@ -22,7 +22,7 @@ import threading
 from django import forms
 from django.contrib.admin.widgets import AdminFileWidget
 
-from MBTApp.models import Award, Article, Project, SiteConfig, SitePhotos, Worker, SalesRepresentative, Sector
+from MBTApp.models import Award, Article, Project, SiteConfig, SitePhotos, Worker, SalesRepresentative, Sector, TrustedBrand
 from MBTApp.storage import save_uploaded_image
 
 
@@ -457,6 +457,20 @@ class SitePhotosForm(forms.ModelForm):
         model = SitePhotos
         fields = '__all__'
         widgets = {'_multipart': forms.HiddenInput()}
+
+class TrustedBrandForm(forms.ModelForm):
+    image = UploadUrlField(label='Logotyp')
+    _multipart = forms.FileField(required=False, widget=forms.HiddenInput())
+
+    def __init__(self, *args, **kwargs):
+        _clear_upload_cache()
+        super().__init__(*args, **kwargs)
+
+    class Meta:
+        model = TrustedBrand
+        fields = '__all__'
+        widgets = {'_multipart': forms.HiddenInput()}
+
 
 class AwardForm(forms.ModelForm):
     image = UploadUrlField(label='Logotyp / Grafika')

@@ -17,6 +17,7 @@ def home(request):
         'references': mbt_orm.get_references(lang),
         'sales_reps': mbt_orm.get_sales_reps(lang),
         'awards': mbt_orm.get_awards(),
+        'trusted_brands': mbt_orm.get_trusted_brands(),
     }
     return render(request, "home/index.html", data)
 

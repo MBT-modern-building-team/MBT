@@ -471,6 +471,22 @@ class Award(models.Model):
         return self.name
 
 
+class TrustedBrand(models.Model):
+    """Logotypy marek w sekcji „Zaufali nam" na stronie głównej."""
+    name = models.CharField('Nazwa', max_length=200)
+    image = models.CharField('Logotyp (URL)', max_length=500, blank=True)
+    order = models.PositiveIntegerField('Kolejność', default=0)
+    is_active = models.BooleanField('Aktywne', default=True)
+
+    class Meta:
+        ordering = ['order', 'name']
+        verbose_name = 'Marka (Zaufali nam)'
+        verbose_name_plural = 'Zaufali nam (logotypy)'
+
+    def __str__(self):
+        return self.name
+
+
 class Sector(models.Model):
     """Sektor B2B (np. Hale przemysłowe) — sekcja Nasze specjalizacje na stronie GW."""
 

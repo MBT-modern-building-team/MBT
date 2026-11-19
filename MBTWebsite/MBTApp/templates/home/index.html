@@ -618,101 +618,13 @@
                 </div>
             </div>
             <div class="row global-carousel client-slider2" data-slide-show="5" data-lg-slide-show="4" data-md-slide-show="3" data-sm-slide-show="2">
+                {% for brand in trusted_brands %}
                 <div class="col-lg-auto">
                     <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-bater.svg" alt="Bater" width="150" height="80" loading="lazy"></a>
+                        <a href="{% url 'index' %}"><img src="{{ brand.image }}" alt="{{ brand.name }}" width="150" height="80" loading="lazy"></a>
                     </div>
                 </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-browar-zamkowy.svg" alt="Browar Zamkowy" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-canpack.svg" alt="Canpack" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-dl-invest-group.svg" alt="DL Invest Group" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-epco.svg" alt="Epco" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-euro-trade.svg" alt="Euro-Trade" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-euronova.svg" alt="Euronova" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-herz.svg" alt="Herz" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-huber-suhner.svg" alt="Huber+Suhner" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-kompania-piwowarska.svg" alt="Kompania Piwowarska" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-less-mess-storage.svg" alt="Less Mess Storage" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-pumar.svg" alt="Pumar" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-stainless-steel-engineering.svg" alt="Stainless Steel Engineering" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-sutco-polska.svg" alt="Sutco Polska" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-toto.svg" alt="TOTO" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-bater.svg" alt="Bater" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-canpack.svg" alt="Canpack" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-euro-trade.svg" alt="Euro-Trade" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="client-logo">
-                        <a href="{% url 'index' %}"><img src="/static/img/mbt/trusted-us-herz.svg" alt="Herz" width="150" height="80" loading="lazy"></a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div> 
