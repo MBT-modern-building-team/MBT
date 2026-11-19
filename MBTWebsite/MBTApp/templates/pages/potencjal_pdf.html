@@ -60,6 +60,7 @@ h3.sub{font-size:23px;margin-bottom:12px}
 .subs-r li{position:relative;padding:1px 0 1px 24px;font-weight:600;color:var(--ink)}
 .subs-r li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:8px;background:var(--or);clip-path:polygon(30% 0,100% 0,70% 100%,0 100%)}
 .subs-r .close{font-weight:600;color:var(--navy)}
+.tech table{font-size:15.5px}.tech tbody th{width:27%}.tech th,.tech td{padding:5px 14px}.tech .card{padding:12px 18px}.tech .sub{font-size:20px;margin-bottom:8px}.tech .cards-side{font-size:15px}
 /* okładka */
 .cover{background:var(--navy) center/cover no-repeat}
 .cover::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(2,20,50,.93) 0%,rgba(2,20,50,.78) 55%,rgba(2,20,50,.55) 100%)}
@@ -275,7 +276,7 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 {# ---------- 6. Kadra techniczna ---------- #}
 <section class="slide"><div class="in">
   <div class="head"><p class="kick">{% trans 'KADRA TECHNICZNA I SPOSÓB REALIZACJI' %}</p><h2 class="title">{% trans 'Kadra techniczna' %}</h2><span class="bar"></span></div>
-  <div class="cols2" style="grid-template-columns:1.6fr 1fr;align-items:start">
+  <div class="cols2 tech" style="grid-template-columns:2.5fr 1fr;align-items:start;gap:26px">
     <div class="card"><table>
       <thead><tr><th>{% trans 'Stanowisko' %}</th>{% if p.tech_has_qual %}<th>{% trans 'Kwalifikacje' %}</th>{% endif %}{% if p.tech_has_count %}<th>{% trans 'Liczba osób' %}</th>{% endif %}</tr></thead>
       <tbody>{% for r in p.tech_rows %}<tr><th>{{ r.role }}</th>{% if p.tech_has_qual %}<td>{% if r.qual %}{{ r.qual }}{% endif %}</td>{% endif %}{% if p.tech_has_count %}<td>{% if r.count is not None %}{{ r.count }}{% endif %}</td>{% endif %}</tr>{% endfor %}</tbody>
@@ -285,7 +286,7 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
       {% if p.warranty %}<div class="card" style="background:var(--t2);border:0"><h3 class="sub"><i class="ri-tools-line" style="color:var(--or-txt)"></i> {% trans 'Gwarancja' %}</h3>{{ p.warranty }}</div>{% endif %}
     </div>
   </div>
-  {% if p.site_crew %}<p class="note" style="margin-top:26px"><i class="ri-hard-hat-line" style="color:var(--or-txt)"></i> {{ p.site_crew }}</p>{% endif %}
+  {% if p.site_crew %}<p class="note" style="margin-top:12px;padding:12px 24px;font-size:17px"><i class="ri-hard-hat-line" style="color:var(--or-txt)"></i> {{ p.site_crew }}</p>{% endif %}
 </div>{% include 'pages/_pot_pdf_foot.html' with n=6 %}</section>
 
 {# ---------- 7. Sposób realizacji ---------- #}

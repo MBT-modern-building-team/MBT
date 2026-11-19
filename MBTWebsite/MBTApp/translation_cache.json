@@ -1,4 +1,10 @@
 {
+"0009babf173ad45577bee1d8a52d3266": {
+"original": "Nadzór kierownika budowy nad jakością i odbiorami",
+"source": "pl",
+"target": "sk",
+"translated": "Dohľad stavbyvedúceho nad kvalitou a preberaním"
+},
 "00168d2c94cefd33ee9ea65cc7449a0a": {
 "original": "Generalny Wykonawca obiektów kubaturowych dla biznesu",
 "source": "pl",
@@ -256,6 +262,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "místopředseda"
+},
+"045fb81fab88de13a8509014c8b419f4": {
+"original": "CANPACK BSS LAB - Brzesko",
+"source": "pl",
+"target": "de",
+"translated": "CANPACK BSS LAB – Brzesko"
 },
 "046deb9dd9a602103262c8dd635e510c": {
 "original": "Kwalifikacje zgodne z wymaganiami dla służby BHP (rozporządzenie w sprawie służby BHP); plany BIOZ i nadzór BHP na budowach",
@@ -515,6 +527,12 @@
 "target": "en",
 "translated": "garage with 41 spaces"
 },
+"07cdc33f992e610b9d8b835adee2f516": {
+"original": "Sprawdzeni podwykonawcy",
+"source": "pl",
+"target": "sk",
+"translated": "Overení subdodávatelia"
+},
 "07d7d969b51de45d84cb340d11397be1": {
 "original": "Browar Zamkowy - Racibórz",
 "source": "pl",
@@ -574,6 +592,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "Хіміко- та кислотостійкі підлоги"
+},
+"08aec2da0a978f04ac9915c2250bb68e": {
+"original": "BTS Development Park Zielona Góra",
+"source": "pl",
+"target": "uk",
+"translated": "Бізнес-парк BTS Development Park у Зеленій Гурі"
 },
 "08ebd391c2815b43cabbb14764e3bf4d": {
 "original": "Badania gruntu",
@@ -724,6 +748,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "5patrová budova s ​​vlastním skladem"
+},
+"0add503047fd26985e56a81979005f12": {
+"original": "Jeden partner i jedno miejsce odpowiedzialności dla inwestora",
+"source": "pl",
+"target": "de",
+"translated": "Ein Partner und ein Verantwortungsort für den Investor"
 },
 "0af4b9442086f11b3c6bd8eb40c2d510": {
 "original": "Powierzchnia hali magazynowej: 613 m², układ drogowy: 722 m². Magazyn przystosowany do rygorystycznych warunków temperaturowych składowania aromatów piwnych, posadzki chemoodporne, instalacje chłodnicze i wentylacyjne.",
@@ -977,6 +1007,12 @@
 "target": "hu",
 "translated": "Kevesebb tárhely – Varsó"
 },
+"0fb11022c97841c2435a853267819a74": {
+"original": "Podwykonawców dobieramy na podstawie realizacji: pracujemy z firmami, które już dowiozły termin i jakość.",
+"source": "pl",
+"target": "cs",
+"translated": "Subdodavatele vybíráme na základě realizace: spolupracujeme s firmami, které již dodaly včas a kvalitně."
+},
 "0fef1e565aca84d679ab297a51e78e0a": {
 "original": "Jestem inżynierem budownictwa związanym z wykonawstwem od 2015 roku. Przeszedłem wszystkie etapy – od Inżyniera Budowy po Kierownika Projektu, realizując obiekty mieszkaniowe i przemysłowe, takie jak zakłady produkcyjne, oczyszczalnie ścieków oraz rafinerie. W pracy stawiam na jakość, terminowość i dopracowanie każdego szczegółu.",
 "source": "pl",
@@ -988,6 +1024,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "területe 9263 m²"
+},
+"103a7e4f23698f77a861eb9385bf91fa": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych; odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji",
+"source": "pl",
+"target": "uk",
+"translated": "Технічна освіта в будівництві, досвід проведення промислових інвестицій; несе відповідальність за бюджет, графік та контакт з Інвестором на всьому етапі впровадження"
 },
 "103e05e52fe53b0260bbd02a55c04da8": {
 "original": "Doki i rampy przeładunkowe",
@@ -1079,6 +1121,12 @@
 "target": "cs",
 "translated": "Hala 4500 m²"
 },
+"118f5661cd1631c5d840c696390a850f": {
+"original": "Nadzór kierownika budowy nad jakością i odbiorami",
+"source": "pl",
+"target": "cs",
+"translated": "Dohled stavbyvedoucího nad kvalitou a přejímkou"
+},
 "11907896ffa52bd92222b78b24bb860f": {
 "original": "Rozbudowa zakładu produkcyjnego armatury sanitarnej i grzewczej",
 "source": "pl",
@@ -1144,6 +1192,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "cca. 18 000 m² čtverců"
+},
+"121cc0f6d30449e76e9ef83fb9391dc6": {
+"original": "Nadzór kierownika budowy nad jakością i odbiorami",
+"source": "pl",
+"target": "en",
+"translated": "Construction manager's supervision over quality and acceptance"
 },
 "121d0123fea8be4af0e527612d5fd460": {
 "original": "Wessper",
@@ -1427,6 +1481,12 @@
 "target": "sk",
 "translated": "Finančný riaditeľ"
 },
+"165c7b0b277682dc8b484aae7d97ebfa": {
+"original": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
+"source": "pl",
+"target": "en",
+"translated": "We carry out each implementation with companies that we know from previous construction sites. Our team is responsible for everything: the construction manager coordinates the work of the industries, supervises the schedule and acceptance, and the investor has one partner and one place of responsibility."
+},
 "166cb3d2980bb2aa84db7c78b1b7f7a1": {
 "original": "4 kondygnacje nadziemne z boksami magazynowymi, garaże w przyziemiu oraz podpiwniczenie, windy towarowo-osobowe dużej nośności, system kontroli dostępu.",
 "source": "pl",
@@ -1528,6 +1588,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Cross-dock logisztikai és elosztó terminál\nRegionális cross-dock átrakodási terminál, amely az általános rakomány- és raklapáramlás gyors kezelésére szolgál. Oszlopmentes átrakodócsarnok sűrű rakodó-hálózattal (hidraulikus rámpák, tömítőkötények a terminál két oldalán), kétszintes adminisztratív, irodai és szociális terület diszpécserek és sofőrök számára, fugamentes padlózat fokozott dinamikus ellenállással, kiterjedt manőverezőterületek TIR-készletekhez (beton és aszfalt felületek), LED világítás."
+},
+"176a84d031265d374b7922f343c11964": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie na stanowiskach Inżyniera Budowy i Kierownika Robót; prowadzi projekt od przygotowania do odbioru, koordynuje branże i podwykonawców",
+"source": "pl",
+"target": "sk",
+"translated": "Technické vzdelanie v stavebníctve, prax ako stavebný inžinier a vedúci prác; vedie projekt od prípravy až po kolaudáciu, koordinuje odvetvia a subdodávateľov"
 },
 "17865eb44e6e46733c6b477367f4b005": {
 "original": "Opieka nad Inwestorem od zapytania, przez ofertę, po podpisanie umowy.",
@@ -1745,6 +1811,12 @@
 "target": "de",
 "translated": "Produktions- und Lageranlage für Glasfaserkomponenten (Stufe I und II)"
 },
+"1b61d75a16a8bc10d6cf58b2dd4d8ecb": {
+"original": "Dzięki temu inwestor nie musi sam składać zespołu wykonawców. Budujemy bez komplikacji.",
+"source": "pl",
+"target": "de",
+"translated": "Dadurch muss der Investor kein Team von Auftragnehmern selbst zusammenstellen. Wir bauen ohne Komplikationen."
+},
 "1b6a4bb6393dc64a3214410df046e41d": {
 "original": "4 500 m² hala",
 "source": "pl",
@@ -1870,6 +1942,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Leiter der Implementierungsabteilung"
+},
+"1df474e790ed8e225c4e4f98f7fb8f38": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie na stanowiskach Inżyniera Budowy i Kierownika Robót; prowadzi projekt od przygotowania do odbioru, koordynuje branże i podwykonawców",
+"source": "pl",
+"target": "en",
+"translated": "Technical education in construction, experience as a Construction Engineer and Works Manager; leads the project from preparation to acceptance, coordinates industries and subcontractors"
 },
 "1e054e9e5aec3ebef7324e4f52c2587a": {
 "original": "Poznań (woj. wielkopolskie)",
@@ -2327,6 +2405,12 @@
 "target": "hu",
 "translated": "Költségbecslés/gyártás-előkészítő szakember"
 },
+"2428c093f826af04a41891e685f52e0d": {
+"original": "Podwykonawców dobieramy na podstawie realizacji: pracujemy z firmami, które już dowiozły termin i jakość.",
+"source": "pl",
+"target": "en",
+"translated": "We select subcontractors based on implementation: we work with companies that have already delivered on time and with quality."
+},
 "2441e44ec656d5f412a86e2e422c70d1": {
 "original": "Obiekty Self storage",
 "source": "pl",
@@ -2398,6 +2482,12 @@
 "source": "pl",
 "target": "en",
 "translated": "Retail parks and large-scale facilities"
+},
+"2564eb8b83b2f3e911d2e35559265742": {
+"original": "CANPACK BSS Excellence Centre - Brzesko",
+"source": "pl",
+"target": "en",
+"translated": "CANPACK BSS Excellence Center - Brzesko"
 },
 "2579289ed83d4935437b439e562b6600": {
 "original": "Browar Lech - Poznań",
@@ -2560,6 +2650,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Stahlbetonkonstruktionen"
+},
+"2763164c2bc311b4613e9d4d002435a3": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych; odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji",
+"source": "pl",
+"target": "en",
+"translated": "Technical education in construction, experience in conducting industrial investments; is responsible for the budget, schedule and contact with the Investor throughout the entire implementation stage"
 },
 "2766a18538abc032b1e2fe7a0fe99a3e": {
 "original": "Strefy clean-room i reżim czystości",
@@ -2842,6 +2938,12 @@
 "source": "pl",
 "target": "sk",
 "translated": "Moderné kancelárske priestory a vybavenie, prispôsobené najvyšším ergonomickým štandardom a certifikácii BREEAM."
+},
+"2b36dc0d227b90403be01edf99431d9c": {
+"original": "Podwykonawców dobieramy na podstawie realizacji: pracujemy z firmami, które już dowiozły termin i jakość.",
+"source": "pl",
+"target": "sk",
+"translated": "Subdodávateľov vyberáme na základe realizácie: spolupracujeme s firmami, ktoré už dodali včas a kvalitne."
 },
 "2b48599439b60597d0edacc18f7fc1d8": {
 "original": "5-kondygnacyjny budynek self-storage",
@@ -3167,6 +3269,12 @@
 "target": "cs",
 "translated": "Hypermarkety"
 },
+"2ff8460700b78c5f9bffea8ea5fc45ef": {
+"original": "Dyrektor Generalny ds. Handlowych, współzałożyciel",
+"source": "pl",
+"target": "de",
+"translated": "Generaldirektor für kommerzielle Angelegenheiten, Mitbegründer"
+},
 "3003cf42d760f04065aec8056a3aed20": {
 "original": "Piotr Kowalski",
 "source": "pl",
@@ -3377,6 +3485,12 @@
 "target": "uk",
 "translated": "Повні компетенції Генпідрядника в одній організації: від придбання та оцінки інвестицій, через підготовку виробництва та впровадження до гарантійного обслуговування."
 },
+"32f25d88257ca0cdc822de00b2b0b81a": {
+"original": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
+"source": "pl",
+"target": "uk",
+"translated": "Кожну реалізацію ми здійснюємо з компаніями, які знаємо з попередніх будівельних майданчиків. За все відповідає наша команда: керівник будівництва координує роботу виробництв, контролює графік і приймання, а в інвестора один партнер і одне місце відповідальності."
+},
 "330d07033330b24ec2a8c2219246b24f": {
 "original": "R&D, centra szkoleniowe, bazy",
 "source": "pl",
@@ -3424,6 +3538,12 @@
 "source": "pl",
 "target": "sk",
 "translated": "Skladová hala: 4 500 m², malá výrobná hala: 500 m², komunikačný systém a dvory: 2 500 m². Celooceľová konštrukcia, rekonštrukcia výhrevne, podzemné zásobníky, železobetónový oporný múr 4 m vysoký a 150 m dlhý."
+},
+"33b4ce1ae519b99cae2ee0a30c807829": {
+"original": "Dzięki temu inwestor nie musi sam składać zespołu wykonawców. Budujemy bez komplikacji.",
+"source": "pl",
+"target": "en",
+"translated": "Thanks to this, the investor does not have to assemble a team of contractors himself. We build without complications."
 },
 "33c3179771b8e8bed5a2cf4b4a95d1bf": {
 "original": "ECO: Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne. CNP1: Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego. Tucznawa: Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.",
@@ -3491,6 +3611,12 @@
 "target": "sk",
 "translated": "Rozloha skladovej a výrobnej haly: 2 700 m², plocha kancelárskej časti: 300 m². Oceľová nosná konštrukcia na základových pätkách, manévrovacie plochy, parkoviská a celoplošná zástavba."
 },
+"34b1a9478260d5c490a14baa498101c7": {
+"original": "Podwykonawców dobieramy na podstawie realizacji: pracujemy z firmami, które już dowiozły termin i jakość.",
+"source": "pl",
+"target": "hu",
+"translated": "Az alvállalkozókat a kivitelezés alapján választjuk ki: olyan cégekkel dolgozunk, akik már határidőre és minőségben szállítottak."
+},
 "34b1c17a13e965983fc14d3916e8c72d": {
 "original": "Stokado Self-Storage – Warszawa Targówek",
 "source": "pl",
@@ -3539,11 +3665,23 @@
 "target": "cs",
 "translated": "Pivovar Ratiboř"
 },
+"356487fac5a9925aec7cf04ada231b46": {
+"original": "CANPACK BSS Excellence Centre - Brzesko",
+"source": "pl",
+"target": "hu",
+"translated": "CANPACK BSS Kiválósági Központ - Brzesko"
+},
 "3570bac058f9a30e8568429ea622542b": {
 "original": "Gwarancja",
 "source": "pl",
 "target": "de",
 "translated": "Garantie"
+},
+"357f493e2f512fa9363626381ed217cb": {
+"original": "Warmet Hurtownia Alkoholi",
+"source": "pl",
+"target": "cs",
+"translated": "Velkoobchod s teplým alkoholem"
 },
 "3585676e6ff0c38c63dd9b0979d27269": {
 "original": "rozbudowa",
@@ -3863,6 +4001,12 @@
 "target": "sk",
 "translated": "Kokotów (Malopoľské vojvodstvo)"
 },
+"3ba1858c67804b7952638570446caca8": {
+"original": "Sprawdzeni podwykonawcy",
+"source": "pl",
+"target": "uk",
+"translated": "Перевірені субпідрядники"
+},
 "3ba23c28db4cdf08562cb656108cc0b7": {
 "original": "HERZ - Wieliczka",
 "source": "pl",
@@ -3959,6 +4103,12 @@
 "target": "en",
 "translated": "Occupational health and safety specialist"
 },
+"3d41a037339ab8765d62738f8d235533": {
+"original": "Dzięki temu inwestor nie musi sam składać zespołu wykonawców. Budujemy bez komplikacji.",
+"source": "pl",
+"target": "cs",
+"translated": "Díky tomu si investor nemusí sestavovat tým zhotovitelů sám. Stavíme bez komplikací."
+},
 "3d4528b2ef2a7da2d55cc131719047f2": {
 "original": "Automotive – salony dealerskie i serwisy (ASO)",
 "source": "pl",
@@ -3982,6 +4132,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "Huber + Suhner – «Пісари»"
+},
+"3d90d722fcc81d678d333ce3b64fc49d": {
+"original": "Dzięki temu inwestor nie musi sam składać zespołu wykonawców. Budujemy bez komplikacji.",
+"source": "pl",
+"target": "sk",
+"translated": "Vďaka tomu si investor nemusí zostavovať tím zhotoviteľov sám. Staviame bez komplikácií."
 },
 "3d9e0f584f93c12dfbe8f1bc43decde1": {
 "original": "Wielokondygnacyjny budynek komórek lokatorskich self-storage o podwyższonym standardzie bezpieczeństwa. Indywidualne boksy magazynowe, strefa biura obsługi klienta (BOK), windy towarowo-osobowe, systemy kontroli dostępu 24/7, monitoring CCTV i zadaszona strefa rozładunkowa.",
@@ -4133,6 +4289,12 @@
 "target": "cs",
 "translated": "6patrová budova s ​​vlastním skladem"
 },
+"40651c3dfadeb3cf10f1b6c2d74e3920": {
+"original": "Koordynacja branż w ramach jednego harmonogramu",
+"source": "pl",
+"target": "cs",
+"translated": "Koordinace průmyslových odvětví pod jedním harmonogramem"
+},
 "40717bd435d3a497f7f9af24161b8340": {
 "original": "Browar Racibórz",
 "source": "pl",
@@ -4234,6 +4396,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Fläche Produktionshalle: ca. 6.500 m², dreigeschossiges Büro- und Sozialgebäude: 1.500 m², Rollflächen, Zufahrtsstraßen, unterirdische Versorgungsleitungen und Grundstückserschließung."
+},
+"4263dfd66e39b722e87fba91a3641fca": {
+"original": "Gazele Biznesu 2024, 2025",
+"source": "pl",
+"target": "de",
+"translated": "Geschäftsgazellen 2024, 2025"
 },
 "426851a31d165a9b790e946b383a8ed7": {
 "original": "Canpack BSS Excellence Centre - Brzesk",
@@ -4457,6 +4625,12 @@
 "target": "cs",
 "translated": "Design & Build – proč je to nejbezpečnější investiční model implementace v roce 2026?"
 },
+"452aa0f8d0aed59bbd4ed31fe9ec460f": {
+"original": "BTS Development Park Zielona Góra",
+"source": "pl",
+"target": "hu",
+"translated": "BTS Fejlesztési Park Zielona Góra"
+},
 "452cc19e3d0f00d0ac28aa15ec0c542e": {
 "original": "Kierownik Budowy",
 "source": "pl",
@@ -4498,6 +4672,12 @@
 "source": "pl",
 "target": "sk",
 "translated": "600 m² kancelárskych priestorov"
+},
+"45d0a7905d4737a159d62b584b64ae9b": {
+"original": "Koordynacja branż w ramach jednego harmonogramu",
+"source": "pl",
+"target": "uk",
+"translated": "Координація галузей за одним графіком"
 },
 "45edec43fcce49f30abd796c061f16d4": {
 "original": "2 490 m² p.u.",
@@ -4547,6 +4727,12 @@
 "target": "cs",
 "translated": "6 pater"
 },
+"470259cf36c1f5a927c8a30aed3af08c": {
+"original": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
+"source": "pl",
+"target": "de",
+"translated": "Wir führen jede Umsetzung mit Unternehmen durch, die wir von früheren Baustellen kennen. Unser Team ist für alles verantwortlich: Der Bauleiter koordiniert die Arbeit der Gewerke, überwacht den Zeitplan und die Abnahme und der Investor hat einen Partner und einen Verantwortungsort."
+},
 "472ebb199dbd20f00d9ee362a177c4a0": {
 "original": "Kierownik Projektu",
 "source": "pl",
@@ -4594,6 +4780,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Zabrze Mikulczyce (Woiwodschaft Schlesien)"
+},
+"47bdb1f872eef868393b5bd0b26b760e": {
+"original": "Jeden partner i jedno miejsce odpowiedzialności dla inwestora",
+"source": "pl",
+"target": "cs",
+"translated": "Jeden partner a jedno místo odpovědnosti za investora"
 },
 "47e222ad9e848709cf0dd45a5c8a47f0": {
 "original": "Zaprojektuj i wybuduj (Design & Build) – dlaczego to najbezpieczniejszy model realizacji inwestycji w 2026 roku?",
@@ -4666,6 +4858,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Vorgefertigte Stahl- und Spannbetonelemente"
+},
+"491a6764fae378a3e78b0dc98f34bc93": {
+"original": "Koordynacja branż w ramach jednego harmonogramu",
+"source": "pl",
+"target": "de",
+"translated": "Koordination der Branchen nach einem Zeitplan"
 },
 "49343ccaa49bd727699c44757cc68fc2": {
 "original": "Park handlowy (dwa budynki komercyjne)",
@@ -4822,6 +5020,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Potenzial und Referenzen"
+},
+"4b777f39314829518df0771f6d503477": {
+"original": "Jeden partner i jedno miejsce odpowiedzialności dla inwestora",
+"source": "pl",
+"target": "hu",
+"translated": "Egy partner és egy felelősségi hely a befektetőnek"
 },
 "4b82a5707dbd143471ab72b5d9142458": {
 "original": "Specjalistyczne placówki ochrony zdrowia, szpitale i przychodnie budowane z myślą o pacjentach i personelu.",
@@ -5087,6 +5291,12 @@
 "target": "hu",
 "translated": "Automatizálási és újrahasznosítási gyártó- és raktárcsarnok (H5)"
 },
+"4fb2621336432181a191ef4cc56dcfd3": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie na stanowiskach Inżyniera Budowy i Kierownika Robót; prowadzi projekt od przygotowania do odbioru, koordynuje branże i podwykonawców",
+"source": "pl",
+"target": "de",
+"translated": "Technische Ausbildung im Bauwesen, Erfahrung als Bauingenieur und Betriebsleiter; leitet das Projekt von der Vorbereitung bis zur Abnahme, koordiniert Branchen und Subunternehmer"
+},
 "4fe260c0ee39c0cb71a185031f9ca301": {
 "original": "Epco - Bytom",
 "source": "pl",
@@ -5099,11 +5309,23 @@
 "target": "sk",
 "translated": "Fotovoltika a skladovanie energie"
 },
+"5005c29af654c64d76aee469e0c6798b": {
+"original": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
+"source": "pl",
+"target": "hu",
+"translated": "Minden kivitelezést olyan cégekkel hajtunk végre, amelyeket korábbi építkezésekről ismerünk. Csapatunk mindenért felelős: az építésvezető koordinálja az iparágak munkáját, felügyeli az ütemezést és az átvételt, a beruházónak pedig egy partnere és egy felelősségi helye van."
+},
 "5032c67c37030e61c3815dfc32d474ea": {
 "original": "Posadzki bezspoinowe o wysokiej nośności",
 "source": "pl",
 "target": "sk",
 "translated": "Bezškárové podlahy s vysokou nosnosťou"
+},
+"5035bd9ae278013f6f7f47deb99ffd4f": {
+"original": "Warmet Hurtownia Alkoholi",
+"source": "pl",
+"target": "en",
+"translated": "Warmet Alcohol Wholesaler"
 },
 "504b1199cfec1cd99c5202c8066d7111": {
 "original": "Michał Kopiec",
@@ -5158,6 +5380,12 @@
 "source": "pl",
 "target": "en",
 "translated": "over 1,170 m² of hall"
+},
+"50de9e4d81c18a2cb8a8113a40f96ca8": {
+"original": "Nadzór kierownika budowy nad jakością i odbiorami",
+"source": "pl",
+"target": "de",
+"translated": "Überwachung der Qualität und Abnahme durch den Bauleiter"
 },
 "50e2ea2dc4bbceaeeae0c2493cf46a65": {
 "original": "Kierownicy budów, inżynierowie budowy, kierownicy robót",
@@ -5260,6 +5488,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Cross-Dock-Logistik- und Vertriebsterminal\nRegionales Cross-Dock-Umschlagterminal für die schnelle Abwicklung von Stückgut- und Palettenströmen. Eine säulenfreie Umladehalle mit einem dichten Netz an Verladerampen (hydraulische Rampen, Dichtschürzen auf beiden Seiten des Terminals), ein zweigeschossiger Verwaltungs-, Büro- und Sozialbereich für Disponenten und Fahrer, ein fugenloser Boden mit erhöhtem dynamischen Widerstand, weitläufige Manövrierflächen für TIR-Sets (Beton- und Asphaltflächen), LED-Beleuchtung."
+},
+"521ad76e2ac9d1b8d5861c56938570ab": {
+"original": "CANPACK BSS Excellence Centre - Brzesko",
+"source": "pl",
+"target": "de",
+"translated": "CANPACK BSS Excellence Center – Brzesko"
 },
 "52267a152cc58f11ea988217affef543": {
 "original": "Jestem inżynierem budownictwa związanym z wykonawstwem od 2015 roku. Przeszedłem wszystkie etapy – od Inżyniera Budowy po Kierownika Projektu, realizując obiekty mieszkaniowe i przemysłowe, takie jak zakłady produkcyjne, oczyszczalnie ścieków oraz rafinerie. W pracy stawiam na jakość, terminowość i dopracowanie każdego szczegółu.",
@@ -5675,6 +5909,12 @@
 "target": "hu",
 "translated": "BMS rendszerek"
 },
+"59261d72aac6cac8273622e1bea45566": {
+"original": "Sprawdzeni podwykonawcy",
+"source": "pl",
+"target": "hu",
+"translated": "Ellenőrzött alvállalkozók"
+},
 "592acb7399ad7563e03ffa0c8ec49758": {
 "original": "8 269 m²",
 "source": "pl",
@@ -5771,6 +6011,12 @@
 "target": "hu",
 "translated": "5332 m²-es raktár"
 },
+"5aa42901932bdca8492be4835ac328ef": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych; odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji",
+"source": "pl",
+"target": "cs",
+"translated": "Technické vzdělání ve stavebnictví, zkušenosti s prováděním průmyslových investic; odpovídá za rozpočet, harmonogram a kontakt s Investorem po celou dobu realizace"
+},
 "5aa9efbd1817fe74270fd88450b29c80": {
 "original": "6-kondygnacyjny budynek self-storage",
 "source": "pl",
@@ -5836,6 +6082,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Fővállalkozás aktív gyár körülményei között"
+},
+"5b88809cf0c23fbe5bfa7a87b1b547a9": {
+"original": "CANPACK BSS Excellence Centre - Brzesko",
+"source": "pl",
+"target": "uk",
+"translated": "CANPACK BSS Excellence Center - Бжесько"
 },
 "5ba1b72a79bf69cf3452503518a7c7fa": {
 "original": "Od 2005 roku realizujemy w całej Polsce obiekty kubaturowe dla biznesu – w formule Generalnego Wykonawstwa oraz Zaprojektuj i Wybuduj, od koncepcji i Value Engineering po pozwolenie na użytkowanie. Jeden zespół prowadzi cały proces i zdejmuje z Inwestora ciężar formalno-budowlany.",
@@ -6010,6 +6262,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "Кросс-док логістичний та розподільний термінал"
+},
+"5e1e925c25c18ad83f646677975f3e37": {
+"original": "CANPACK BSS LAB - Brzesko",
+"source": "pl",
+"target": "sk",
+"translated": "CANPACK BSS LAB – Brzesko"
 },
 "5e4ac7686e91fbd75ab788fb86fcc4d3": {
 "original": "968 m² biura",
@@ -6449,6 +6707,12 @@
 "target": "cs",
 "translated": "Nákupní centra"
 },
+"647c1bfecfd683c61725d6c525e6e177": {
+"original": "Warmet Hurtownia Alkoholi",
+"source": "pl",
+"target": "sk",
+"translated": "Veľkoobchod s teplým alkoholom"
+},
 "647f4a65191558a5c43ea3b6cd3a59f1": {
 "original": "Racibórz (woj. śląskie)",
 "source": "pl",
@@ -6713,6 +6977,12 @@
 "target": "uk",
 "translated": "5-поверховий власний склад з геотермальною енергією"
 },
+"69e0c5096d5c317c07744177e5309499": {
+"original": "Jeden partner i jedno miejsce odpowiedzialności dla inwestora",
+"source": "pl",
+"target": "sk",
+"translated": "Jeden partner a jedno miesto zodpovednosti pre investora"
+},
 "69fc5a601f17f3e1b1847a82dbcacc4b": {
 "original": "Wielofunkcyjne obiekty sportowe, areny i hale zaprojektowane z myślą o masowych wydarzeniach.",
 "source": "pl",
@@ -6749,6 +7019,12 @@
 "target": "cs",
 "translated": "Dąbrowa Górnicza (Slezské vojvodství)"
 },
+"6a6120c4f5033a59feae58279945701d": {
+"original": "Sprawdzeni podwykonawcy",
+"source": "pl",
+"target": "en",
+"translated": "Verified subcontractors"
+},
 "6a65d3042cce3c13bd07ace6b5d3f38d": {
 "original": "zamknięty obieg wody",
 "source": "pl",
@@ -6766,6 +7042,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "Професійно вимощені та належним чином підготовлені майданчики для безпечного зберігання матеріалів."
+},
+"6aab36b5ccbf21082334a103e5c59783": {
+"original": "Gazele Biznesu 2024, 2025",
+"source": "pl",
+"target": "en",
+"translated": "Business Gazelles 2024, 2025"
 },
 "6ac070fb6a787466f148b64ee5c2ab03": {
 "original": "3 634 m²",
@@ -6910,6 +7192,12 @@
 "source": "pl",
 "target": "en",
 "translated": "Design & Build"
+},
+"6c1eb05a917f27b9bea72284dbb86489": {
+"original": "CANPACK BSS Excellence Centre - Brzesko",
+"source": "pl",
+"target": "sk",
+"translated": "CANPACK BSS Excellence Center - Brzesko"
 },
 "6c25cd0ce54881d74e00cef8dd2b086f": {
 "original": "3 800 m²",
@@ -7145,6 +7433,12 @@
 "target": "hu",
 "translated": "Támogatás a zabrzei, katowicei és krakkói irodákhoz"
 },
+"6e902a8c99cb7c4fcdf59416f8e729a7": {
+"original": "CANPACK BSS LAB - Brzesko",
+"source": "pl",
+"target": "uk",
+"translated": "CANPACK BSS LAB - Бжесько"
+},
 "6e9bb06c84ee8070c5c10b87951d38f5": {
 "original": "Powierzchnia produkcyjno-magazynowa: 3 634 m², część socjalno-biurowa: 251 m². Hala zaprojektowana i zrealizowana pod montaż dwóch suwnic o łącznym udźwigu 20 ton.",
 "source": "pl",
@@ -7180,6 +7474,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "Рітейл парк (дві комерційні будівлі)\nКорисна площа будівель: 2303 м² (Будівля А: 1359 м², Корпус Б: 944 м²), земельна забудова: 9263 м². Дві окремо стоячі торгово-сервісні будівлі, стоянки для клієнтів, місця доставки, підземний резервуар для зберігання та протипожежний резервуар.\n• Корисна площа: • Будинок A: 1358,90 м² • Будівля B: 943,70 м² • Земельна площа: 9263,44 м² Об’ємне планування: • Два одноповерхових будинки, розділені під’їздом, форма повторює лінію забудови • Головні входи для клієнтів зі стоянки (схід) • Доставочна та технічно-складська зона із заходу • Окремо зони: службові приміщення (торговий зал + бек-офіс), громадські туалети, технічні приміщення Конструкція: • Змішана конструкція • Прямий фундамент: залізобетонні фундаменти та фундаментні фундаменти • Колони: збірні залізобетонні • Покрівля: металоконструкція Фасад: • Сендвіч-панелі Забудова території: • Автостоянка для легкових автомобілів з тротуарами • Підземний протипожежний резервуар • Підземний резервуар для дощової води. У наших соціальних мережах є фотозвіти, які регулярно оновлюються."
+},
+"6fcc3f93c8f303eaa2c923d3a4f8c6ad": {
+"original": "BTS Development Park Zielona Góra",
+"source": "pl",
+"target": "de",
+"translated": "BTS-Entwicklungspark Zielona Góra"
 },
 "6ff4a59067832862c11f35861ef42254": {
 "original": "Wiceprezes",
@@ -7258,6 +7558,12 @@
 "source": "pl",
 "target": "en",
 "translated": "Automatic warehouses"
+},
+"717df0800b447260f3218c1df4e99ad3": {
+"original": "Warmet Hurtownia Alkoholi",
+"source": "pl",
+"target": "uk",
+"translated": "Оптовий продавець алкоголю Warmet"
 },
 "717f568602a02ec8dd658dae6c234796": {
 "original": "Sutco - Katowice",
@@ -7367,6 +7673,12 @@
 "target": "de",
 "translated": "ca. 6.700 m²"
 },
+"730906ada4d55a1a0b4c45f664d57e18": {
+"original": "Koordynacja branż w ramach jednego harmonogramu",
+"source": "pl",
+"target": "en",
+"translated": "Coordination of industries under one schedule"
+},
 "730bf4c312ebcec21d037e01f8ec031a": {
 "original": "wys. 11,63 m",
 "source": "pl",
@@ -7450,6 +7762,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "Rzezawa (Малопольське воєводство)"
+},
+"7414e88f7f942d57ac88e0e523720d51": {
+"original": "Dyrektor Generalny ds. Handlowych, współzałożyciel",
+"source": "pl",
+"target": "en",
+"translated": "General Director of Commercial Affairs, co-founder"
 },
 "741bc8cb0d68d146662e494802260080": {
 "original": "Self-storage",
@@ -7793,6 +8111,12 @@
 "target": "cs",
 "translated": "Vlastní nářadí"
 },
+"7939af41b979540e4c642cc15cd2cf7b": {
+"original": "Dzięki temu inwestor nie musi sam składać zespołu wykonawców. Budujemy bez komplikacji.",
+"source": "pl",
+"target": "uk",
+"translated": "Завдяки цьому інвестору не потрібно самому збирати команду підрядників. Будуємо без ускладнень."
+},
 "794e82ee34086809f99a9d2a1df1a788": {
 "original": "Zarządzam zespołem ofertowym, łącząc wiedzę techniczną z doświadczeniem w projektach budowlanych. Tworzę precyzyjne oferty, dopasowane do wymagań klienta i warunków rynkowych.",
 "source": "pl",
@@ -8003,6 +8327,12 @@
 "target": "en",
 "translated": "Public utility buildings, residential buildings and offices"
 },
+"7cf5b58272fbbdc131aa8f8b76b7d206": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych; odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji",
+"source": "pl",
+"target": "de",
+"translated": "Technische Ausbildung im Bauwesen, Erfahrung in der Durchführung von Industrieinvestitionen; ist während der gesamten Umsetzungsphase für das Budget, den Zeitplan und den Kontakt mit dem Investor verantwortlich"
+},
 "7d0070a6acf3ff9a660e0cf22c9a6bc0": {
 "original": "Parki handlowe, obiekty komercyjne i motoryzacyjne",
 "source": "pl",
@@ -8194,6 +8524,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Öffentliche Versorgungsgebäude, Wohngebäude und Büros"
+},
+"80152246c3c2c3101e144df2c8c8a2a7": {
+"original": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
+"source": "pl",
+"target": "sk",
+"translated": "Každú realizáciu realizujeme s firmami, ktoré poznáme z predchádzajúcich stavieb. Náš tím je zodpovedný za všetko: stavbyvedúci koordinuje prácu odvetví, dohliada na harmonogram a preberanie a investor má jedného partnera a jedno miesto zodpovednosti."
 },
 "803914e39e4b230b9deead6962cc586f": {
 "original": "6 kondygnacji",
@@ -8632,6 +8968,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "VÉNUSZ - Brzegi"
+},
+"87f34af3abcfae431ff8173cb5225df7": {
+"original": "Gazele Biznesu 2024, 2025",
+"source": "pl",
+"target": "uk",
+"translated": "Бізнес Газелі 2024, 2025"
 },
 "881950ba5dd6e526fd88d497b55c083e": {
 "original": "Powierzchnia użytkowa: 6 650 m² (w tym hala magazynowa, biura: 550 m², układ drogowy i place: 4 718 m²). Posadzki przemysłowe, strefa kompletacji i rozładunku, zaplecze biurowe o podwyższonym standardzie.",
@@ -9569,6 +9911,12 @@
 "target": "cs",
 "translated": "Kokotów (Malopolské vojvodství)"
 },
+"9757c77c7c08268ef852880daebddcc1": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych; odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji",
+"source": "pl",
+"target": "hu",
+"translated": "Építőipari műszaki végzettség, ipari beruházások lebonyolításában szerzett tapasztalat; felelős a költségvetésért, ütemezésért és a Beruházóval való kapcsolattartásért a megvalósítás teljes szakaszában"
+},
 "976dd5d7ede4d6ed506b31cfc83176d1": {
 "original": "2 333 m² hali",
 "source": "pl",
@@ -9718,6 +10066,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "Реалізація"
+},
+"992ce2a872fe76733ab09fa1770e9ec9": {
+"original": "Nadzór kierownika budowy nad jakością i odbiorami",
+"source": "pl",
+"target": "uk",
+"translated": "Нагляд керівника будівництва за якістю та прийманням"
 },
 "993a1cfd7a9fc9303b7c62b72ba818e3": {
 "original": "Inwestycje deweloperskie i budynki wielorodzinne o wysokim standardzie wykończenia.",
@@ -9982,6 +10336,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Nutzfläche: ca. 2.865 m². Umfassender Umbau und Umbau einer Lageranlage in Schulungsräume, Büros, Werkstätten und Sozialräume. Stahlkonstruktion des Zwischengeschosses, neue Böden, umfassende Sanitär-, Heizungs-, Lüftungs- und Elektroinstallationen, Austausch der Tischlerei und thermische Modernisierung."
+},
+"9cf0bf3ed6c5fbb3852e0c1e699cff49": {
+"original": "Dyrektor Generalny ds. Handlowych, współzałożyciel",
+"source": "pl",
+"target": "hu",
+"translated": "Kereskedelmi ügyek vezérigazgatója, társalapítója"
 },
 "9cf7f12418f98ed53fd6c6a0182591a3": {
 "original": "Kierownik Działu Ofertowego",
@@ -10409,6 +10769,12 @@
 "target": "cs",
 "translated": "Obchodní oddělení"
 },
+"a414f43b0b8317b003bc14b9cf58083a": {
+"original": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
+"source": "pl",
+"target": "cs",
+"translated": "Každou realizaci provádíme s firmami, které známe z předchozích staveb. Za vše zodpovídá náš tým: stavbyvedoucí koordinuje práce průmyslových odvětví, dohlíží na harmonogram a přejímku, investor má jednoho partnera a jedno místo odpovědnosti."
+},
 "a42211664c85faf558745b282ad2a5c4": {
 "original": "Centra logistyczne i hale magazynowe (klasa A, BTS)",
 "source": "pl",
@@ -10444,6 +10810,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Fejlett ipari üzemek és komplex gyártósorok különböző gazdasági ágazatok számára."
+},
+"a44d475cdf17709d8215674fbc8981bf": {
+"original": "CANPACK BSS LAB - Brzesko",
+"source": "pl",
+"target": "en",
+"translated": "CANPACK BSS LAB – Brzesko"
 },
 "a461b9e712b44c5f70266739ba4ab11f": {
 "original": "ECO: Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne. CNP1: Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego. Tucznawa: Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.",
@@ -10708,6 +11080,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Térfogata: 17 121 m³, épület területe: 911 m², 5 föld feletti szint. Monolit vasbeton szerkezet, korszerű beléptetőrendszerek, ipari liftek, behajtásos kirakodó zóna."
+},
+"a9ccb04d4e10e10df0b47c7189c7ca48": {
+"original": "Gazele Biznesu 2024, 2025",
+"source": "pl",
+"target": "cs",
+"translated": "Gazely podnikání 2024, 2025"
 },
 "a9fbbc170bb9e2ca51e7fc20486c9258": {
 "original": "Prowadzimy inwestycję od koncepcji: badania gruntu, Value Engineering, projekt i pozwolenie na budowę, realizacja, odbiory i pozwolenie na użytkowanie.",
@@ -11207,6 +11585,12 @@
 "target": "sk",
 "translated": "Výrobná a skladovacia hala na balenie produktov"
 },
+"b1552c5809b7758a920af9b02d0e2f88": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie na stanowiskach Inżyniera Budowy i Kierownika Robót; prowadzi projekt od przygotowania do odbioru, koordynuje branże i podwykonawców",
+"source": "pl",
+"target": "cs",
+"translated": "Technické vzdělání ve stavebnictví, praxe stavebního inženýra a vedoucího provozu; vede projekt od přípravy po přijetí, koordinuje průmyslová odvětví a subdodavatele"
+},
 "b1583a80cf671162c1d878c2ab4af9e5": {
 "original": "Buduj / Generalne Wykonawstwo",
 "source": "pl",
@@ -11519,6 +11903,12 @@
 "target": "sk",
 "translated": "Analýza a koordinácia projektovej dokumentácie pred vstupom na stavenisko."
 },
+"b5b898096d0705122771af71125bf488": {
+"original": "Jeden partner i jedno miejsce odpowiedzialności dla inwestora",
+"source": "pl",
+"target": "en",
+"translated": "One partner and one place of responsibility for the investor"
+},
 "b5cd020adef467a6643945a2ad72cb45": {
 "original": "Rekrutacja, kadry, rozwój i szkolenia",
 "source": "pl",
@@ -11572,6 +11962,12 @@
 "source": "pl",
 "target": "sk",
 "translated": "obchodné centrá"
+},
+"b68a8c5d594d18a28d84091ccdf88b5c": {
+"original": "Podwykonawców dobieramy na podstawie realizacji: pracujemy z firmami, które już dowiozły termin i jakość.",
+"source": "pl",
+"target": "de",
+"translated": "Wir wählen Subunternehmer nach der Umsetzung aus: Wir arbeiten mit Unternehmen zusammen, die bereits pünktlich und mit Qualität geliefert haben."
 },
 "b693863124c0db2791b69446d01b2bd0": {
 "original": "Hala produkcyjno-magazynowa automatyki i recyklingu (H5)",
@@ -11668,6 +12064,12 @@
 "source": "pl",
 "target": "sk",
 "translated": "Kontajnerové a vybavenie stavieb zabezpečujeme vlastnými prostriedkami a na základe trvalých rámcových zmlúv."
+},
+"b8cef1718ff997fae96fc9a2b40e150e": {
+"original": "Gazele Biznesu 2024, 2025",
+"source": "pl",
+"target": "sk",
+"translated": "Gazely podnikania 2024, 2025"
 },
 "b8dde2ba3cc7ac9555d197dcaba41484": {
 "original": "Wielokondygnacyjny obiekt self-storage",
@@ -12095,6 +12497,12 @@
 "target": "hu",
 "translated": "Adminisztrációs Osztály"
 },
+"be996cc651ab8f2d1559551a5f7092df": {
+"original": "Sprawdzeni podwykonawcy",
+"source": "pl",
+"target": "de",
+"translated": "Verifizierte Subunternehmer"
+},
 "bea3ff7b69d484beff4c3e68cc6bfcef": {
 "original": "Jestem inżynierem budownictwa związanym z wykonawstwem od 2015 roku. Przeszedłem wszystkie etapy – od Inżyniera Budowy po Kierownika Projektu, realizując obiekty mieszkaniowe i przemysłowe, takie jak zakłady produkcyjne, oczyszczalnie ścieków oraz rafinerie. W pracy stawiam na jakość, terminowość i dopracowanie każdego szczegółu.",
 "source": "pl",
@@ -12124,6 +12532,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "BYD Dąbrowski - Bytom"
+},
+"bee591b9cf7180a32474310482baeb5b": {
+"original": "Koordynacja branż w ramach jednego harmonogramu",
+"source": "pl",
+"target": "sk",
+"translated": "Koordinácia odvetví pod jedným harmonogramom"
 },
 "bee957b8de31a2816fb560eed2111dfb": {
 "original": "6 650 m² p.u.",
@@ -12365,6 +12779,12 @@
 "target": "hu",
 "translated": "fejlesztés"
 },
+"c340b7f9e41ce8b7c63a187fe3fd4855": {
+"original": "Nadzór kierownika budowy nad jakością i odbiorami",
+"source": "pl",
+"target": "hu",
+"translated": "Építésvezetői minőség- és átvételi felügyelet"
+},
 "c35e18631632d4140a113fd8bdd84d3b": {
 "original": "Sklepy stacjonarne",
 "source": "pl",
@@ -12455,6 +12875,12 @@
 "target": "sk",
 "translated": "Záruka"
 },
+"c4c9ffac960e5bd0a640234da6428843": {
+"original": "3 002 m² hali",
+"source": "pl",
+"target": "cs",
+"translated": "3 002 m² haly"
+},
 "c4e6e8247516d7f6d7500cbea6a8466e": {
 "original": "Dyrektor Controllingu",
 "source": "pl",
@@ -12502,6 +12928,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Raktár és gyártócsarnok irodaházzal"
+},
+"c59206f7b45c44627f1ee7d1a731103f": {
+"original": "Dyrektor Generalny ds. Handlowych, współzałożyciel",
+"source": "pl",
+"target": "sk",
+"translated": "Generálny riaditeľ pre obchodné záležitosti, spoluzakladateľ"
 },
 "c594ba44bdcd1496c6c57de47a1e8eda": {
 "original": "4 kondygnacje nadziemne z boksami magazynowymi, garaże w przyziemiu oraz podpiwniczenie, windy towarowo-osobowe dużej nośności, system kontroli dostępu.",
@@ -12742,6 +13174,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "5 emelet"
+},
+"c96b3843e603b546f5aeb989df03ec4f": {
+"original": "Dyrektor Generalny ds. Handlowych, współzałożyciel",
+"source": "pl",
+"target": "cs",
+"translated": "Generální ředitel pro obchodní záležitosti, spoluzakladatel"
 },
 "c96ca3c0c7276c3cbbb465bd608f909f": {
 "original": "Dział Ofert",
@@ -13397,6 +13835,12 @@
 "target": "hu",
 "translated": "Általános szerződéskötés"
 },
+"d438a24805e08531759197f93f9a92f7": {
+"original": "Warmet Hurtownia Alkoholi",
+"source": "pl",
+"target": "de",
+"translated": "Warmer Alkoholgroßhändler"
+},
 "d47466075e86c2273e3ad8b7971543aa": {
 "original": "wysokie składowanie",
 "source": "pl",
@@ -13697,6 +14141,18 @@
 "target": "cs",
 "translated": "450 m² kancelářských prostor"
 },
+"d9acbf0baa01a0d19d1fdce919db43fb": {
+"original": "CANPACK BSS LAB - Brzesko",
+"source": "pl",
+"target": "hu",
+"translated": "CANPACK BSS LAB – Brzesko"
+},
+"d9b239b777b885d9d4c0123fec30a3a4": {
+"original": "Koordynacja branż w ramach jednego harmonogramu",
+"source": "pl",
+"target": "hu",
+"translated": "Iparágak koordinálása egy ütemterv alatt"
+},
 "d9b6639aad299eb3f8557525ec2fe1b2": {
 "original": "Pumar - Siemianowice",
 "source": "pl",
@@ -13931,11 +14387,23 @@
 "target": "cs",
 "translated": "Rozšíření stávající skladové haly o další skladovací prostory, modernizace společenské a kancelářské části, rozšíření systému komunikací a manévrovacích ploch."
 },
+"dcefeed8f1f4322b64390c0948a22d01": {
+"original": "CANPACK BSS Excellence Centre - Brzesko",
+"source": "pl",
+"target": "cs",
+"translated": "CANPACK BSS Excellence Center - Brzesko"
+},
 "dcfc1d893b7f65d9bfb194fd392f0e08": {
 "original": "6-kondygnacyjny budynek self-storage",
 "source": "pl",
 "target": "hu",
 "translated": "6 szintes öntároló épület"
+},
+"dd099940d251bd0dca95b98d603ac8cf": {
+"original": "Gazele Biznesu 2024, 2025",
+"source": "pl",
+"target": "hu",
+"translated": "Üzleti Gazellák 2024, 2025"
 },
 "dd129b9294d012c310359361307538cb": {
 "original": "Funkcjonalne obiekty handlowe o optymalnym układzie komunikacyjnym dla wygody klientów.",
@@ -14171,6 +14639,12 @@
 "target": "hu",
 "translated": "Piacok"
 },
+"e0b69a60ac6fa601c1a59723dd1e65b7": {
+"original": "Dzięki temu inwestor nie musi sam składać zespołu wykonawców. Budujemy bez komplikacji.",
+"source": "pl",
+"target": "hu",
+"translated": "Ennek köszönhetően a beruházónak nem kell magának összeállítania egy vállalkozói csapatot. Bonyodalmak nélkül építünk."
+},
 "e0c476d757430534ad8fe0525a508814": {
 "original": "Powierzone prace zostały wykonane zgodnie ze sztuką budowlaną, w pełni profesjonalnie i w wyznaczonych harmonogramem terminach. Rekomenduję firmę MBT Modern Building Team Sp. z o.o. jako rzetelną i w pełni przygotowaną do prowadzenia inwestycji budowlanych w formule Generalnego Wykonawstwa.",
 "source": "pl",
@@ -14267,6 +14741,12 @@
 "target": "cs",
 "translated": "Stokado, méně nepořádek úložiště"
 },
+"e2173b86621673cbe33da1061555e6a2": {
+"original": "BTS Development Park Zielona Góra",
+"source": "pl",
+"target": "cs",
+"translated": "BTS Development Park Zelená Hora"
+},
 "e22223e2164dd34f8684269a2fcff29b": {
 "original": "Strefa wysokiego składowania, doki przeładunkowe dla transportu ciężkiego, strefa kompletacji towarów, zaplecze biurowe i socjalne. Konstrukcja stalowo-żelbetowa, posadzka bezspoinowa o wysokiej nośności i odporności na ścieranie.",
 "source": "pl",
@@ -14284,6 +14764,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "✈️ Історичний момент в аеропорту Глівіце. Закладання наріжного каменя для інвестицій в Artus Aircraft!"
+},
+"e24d224b7aa486db17246c6b4d3f1747": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie na stanowiskach Inżyniera Budowy i Kierownika Robót; prowadzi projekt od przygotowania do odbioru, koordynuje branże i podwykonawców",
+"source": "pl",
+"target": "hu",
+"translated": "Építőipari műszaki végzettség, építőmérnöki és munkavezetői gyakorlat; vezeti a projektet az előkészítéstől az átvételig, koordinálja az iparágakat és az alvállalkozókat"
 },
 "e261b9c55c2bbb41e8792d7614f428cb": {
 "original": "Potencjał i referencje",
@@ -14464,6 +14950,12 @@
 "source": "pl",
 "target": "uk",
 "translated": "«Фіолка Рацибуж», «Понар Вадовіце» С.А."
+},
+"e480257e83dd19740543935b734f6917": {
+"original": "Ponar Wadowice S.A.",
+"source": "pl",
+"target": "en",
+"translated": "PONAR Wadowice S.A."
 },
 "e480ab21fc837ae210e858887e614ce0": {
 "original": "Nowy Dwór Mazowiecki (woj. mazowieckie)",
@@ -14687,6 +15179,12 @@
 "target": "en",
 "translated": "Large commercial facilities with advanced accompanying infrastructure and spacious parking lots."
 },
+"e7d0e0ee08bec611c7edf6adf9fb6361": {
+"original": "Warmet Hurtownia Alkoholi",
+"source": "pl",
+"target": "hu",
+"translated": "Warmet alkohol nagykereskedés"
+},
 "e7ed16a7d7134f40e6aa1ddd90344c16": {
 "original": "Kompleks produkcyjno-biurowy mebli biurowych",
 "source": "pl",
@@ -14800,6 +15298,12 @@
 "source": "pl",
 "target": "en",
 "translated": "Violet Racibórz"
+},
+"e8feb35567e237573b6ec940909cb830": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych; odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji",
+"source": "pl",
+"target": "sk",
+"translated": "Technické vzdelanie v stavebníctve, skúsenosti s realizáciou priemyselných investícií; zodpovedá za rozpočet, harmonogram a kontakt s Investorom počas celej etapy realizácie"
 },
 "e90b416b77507ff6e5afb1fbf99bef76": {
 "original": "2 303 m² p.u.",
@@ -15047,6 +15551,12 @@
 "target": "sk",
 "translated": "Full-Stack Marketing & PR manažér"
 },
+"ed7aab48db5e4d44ecc52b55bd1e1eed": {
+"original": "Ponar Wadowice S.A.",
+"source": "pl",
+"target": "uk",
+"translated": "АТ «Понар Вадовіце» (Ponar Wadowice S.A.)"
+},
 "ed8e17d3a3fb648cba31dc9f04ddea82": {
 "original": "Analiza dokumentacji, Value Engineering, kontraktacja",
 "source": "pl",
@@ -15094,6 +15604,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "Płoty u Zelené Hory (Lubušské vojvodství)"
+},
+"ee2e7b4e819b3a7ae747edf3e7e5475b": {
+"original": "Jeden partner i jedno miejsce odpowiedzialności dla inwestora",
+"source": "pl",
+"target": "uk",
+"translated": "Один партнер і одне місце відповідальності для інвестора"
 },
 "ee3ca2146afdfb83dee56b92e386d148": {
 "original": "Magazyny wysokiego składowania do 20 m, posadzki pod układnice",
@@ -15611,6 +16127,12 @@
 "target": "hu",
 "translated": "Rzezawa (Kis-Lengyelországi vajdaság)"
 },
+"f5762a1be2006c0e7a8795a3533ea74c": {
+"original": "Dyrektor Generalny ds. Handlowych, współzałożyciel",
+"source": "pl",
+"target": "uk",
+"translated": "Генеральний директор з комерційних питань, співзасновник"
+},
 "f5825337c08b7bda5431ae8131b58937": {
 "original": "Osiedle mieszkaniowe (5 budynków wielorodzinnych + 20 domów)",
 "source": "pl",
@@ -15701,6 +16223,12 @@
 "target": "sk",
 "translated": "spoločnosť s ručením obmedzeným"
 },
+"f6c09a3a5e006db119496a0316495ede": {
+"original": "19 300 m³",
+"source": "pl",
+"target": "cs",
+"translated": "19 300 m³"
+},
 "f6d830f27ebca9b88197b908a8288bce": {
 "original": "Less Mess Gdańsk",
 "source": "pl",
@@ -15718,6 +16246,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "Kvalifikace dle požadavků na BOZP (předpis o BOZP); Plány BIOZ a dozor BOZP na stavbách"
+},
+"f70af17b412b145a8ae1905b4c771c10": {
+"original": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie na stanowiskach Inżyniera Budowy i Kierownika Robót; prowadzi projekt od przygotowania do odbioru, koordynuje branże i podwykonawców",
+"source": "pl",
+"target": "uk",
+"translated": "Технічна будівельна освіта, досвід роботи інженером-будівельником та керівником робіт; веде проект від підготовки до приймання, координує галузі та субпідрядників"
 },
 "f7146ca8e4656cfd4665c8675d84be24": {
 "original": "Obiekty użyteczności publicznej",
@@ -15863,6 +16397,12 @@
 "target": "sk",
 "translated": "Koordinácia odvetví a riešení na modeli predtým, ako idú do výstavby."
 },
+"f856e69359bcf870353a85147994d779": {
+"original": "Podwykonawców dobieramy na podstawie realizacji: pracujemy z firmami, które już dowiozły termin i jakość.",
+"source": "pl",
+"target": "uk",
+"translated": "Ми підбираємо субпідрядників за принципом реалізації: працюємо з компаніями, які вже вчасно та якісно поставили."
+},
 "f85b68ae7865098608917a102b4bd2bd": {
 "original": "Powierzchnia użytkowa budynków: 2 303 m² (Budynek A: 1 359 m², Budynek B: 944 m²), zagospodarowanie terenu: 9 263 m². Dwa wolnostojące budynki handlowo-usługowe, parkingi dla klientów, strefy dostaw, podziemny zbiornik retencyjny i zbiornik wody pożarowej.",
 "source": "pl",
@@ -15934,6 +16474,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Nyilvános létesítmények"
+},
+"f9d5c23fa89ca81df0df0501e4353f24": {
+"original": "CANPACK BSS LAB - Brzesko",
+"source": "pl",
+"target": "cs",
+"translated": "CANPACK BSS LAB – Brzesko"
 },
 "f9e0f4ac6685ee70e1320eaf11bfc934": {
 "original": "Generalne Wykonawstwo na czynnym zakładzie",
@@ -16204,6 +16750,12 @@
 "source": "pl",
 "target": "de",
 "translated": "Industrie- und Logistikpark"
+},
+"ff1d3eb1b19b867f0eaf5529b374ee93": {
+"original": "Sprawdzeni podwykonawcy",
+"source": "pl",
+"target": "cs",
+"translated": "Ověření subdodavatelé"
 },
 "ff88aeddb49a7d0f8400dc25b70eef01": {
 "original": "Kierownik Robót",

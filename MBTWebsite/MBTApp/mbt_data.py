@@ -2500,28 +2500,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Plocha výrobní haly: přibližně 6500 m² Třípatrová kancelářsko-sociální budova o '
-                'ploše 1500 m² Manévrovací plochy, příjezdové komunikace, podzemní vedení Úprava '
-                'terénu kolem objektu Vybavení všech polí jeřáby Smíšená konstrukce haly: '
-                'prefabrikované sloupy, železobetonové, střecha v ocelové konstrukci',
-          'de': 'Produktionshallenfläche: ca. 6.500 m² Dreigeschossiges Büro- und Sozialgebäude '
-                'mit einer Fläche von 1.500 m² Rangierflächen, Zufahrtsstraßen, unterirdische '
-                'Erschließung Gestaltung des Geländes um das Objekt Ausstattung aller Felder mit '
-                'Kranen Gemischte Hallenkonstruktion: vorgefertigte Stützen, Stahlbeton, Dach in '
-                'Stahlkonstruktion',
-          'en': 'Production hall area: approximately 6,500 m² Three-storey office-social building '
-                'with an area of 1,500 m² Manoeuvring areas, access roads, underground utilities '
-                'Land development around the facility Equipping all bays with overhead cranes '
-                'Mixed hall structure: prefabricated columns, reinforced concrete, roof in steel '
-                'structure',
-          'hu': 'Gyártócsarnok alapterülete: kb. 6500 m² Háromszintes iroda-szociális épület 1500 '
-                'm² alapterülettel Manőverezési területek, bekötő utak, földalatti közművek A '
-                'telek rendezése az objektum körül Minden mező felszerelése darukkal Vegyes '
-                'csarnokszerkezet: előregyártott oszlopok, vasbeton, acélszerkezetű tető',
-          'sk': 'Plocha výrobnej haly: približne 6500 m² Trojpodlažná kancelársko-sociálna budova '
-                's plochou 1500 m² Manévrovacie plochy, príjazdové cesty, podzemné vedenia Úprava '
-                'terénu okolo objektu Vybavenie všetkých polí žeriavmi Zmiešaná konštrukcia haly: '
-                'prefabrikované stĺpy, železobetónové, strecha v oceľovej konštrukcii'},
+  't_o': {'cs': 'Výrobní hala s kancelářskou a sociální budovou\nPlocha výrobní haly: cca. 6 500 m², třípatrová kancelář a sociální budova: 1 500 m², manévrovací plochy, příjezdové cesty, inženýrské sítě a pozemková úprava.\nPlocha výrobní haly: přibližně 6500 m² Třípatrová kancelářsko-sociální budova o ploše 1500 m² Manévrovací plochy, příjezdové komunikace, podzemní vedení Úprava terénu kolem objektu Vybavení všech polí jeřáby Smíšená konstrukce haly: prefabrikované sloupy, železobetonové, střecha v ocelové konstrukci', 'de': 'Produktionshalle mit Büro- und Sozialgebäude\nFläche Produktionshalle: ca. 6.500 m², dreigeschossiges Büro- und Sozialgebäude: 1.500 m², Rollflächen, Zufahrtsstraßen, unterirdische Versorgungsleitungen und Grundstückserschließung.\nProduktionshallenfläche: ca. 6.500 m² Dreigeschossiges Büro- und Sozialgebäude mit einer Fläche von 1.500 m² Rangierflächen, Zufahrtsstraßen, unterirdische Erschließung Gestaltung des Geländes um das Objekt Ausstattung aller Felder mit Kranen Gemischte Hallenkonstruktion: vorgefertigte Stützen, Stahlbeton, Dach in Stahlkonstruktion', 'en': 'Production hall with an office and social building\nProduction hall area: approx. 6,500 m², three-story office and social building: 1,500 m², maneuvering areas, access roads, underground utilities and land development.\nProduction hall area: approximately 6,500 m² Three-storey office-social building with an area of 1,500 m² Manoeuvring areas, access roads, underground utilities Land development around the facility Equipping all bays with overhead cranes Mixed hall structure: prefabricated columns, reinforced concrete, roof in steel structure', 'hu': 'Gyártócsarnok irodával és szociális épülettel\nGyártócsarnok területe: kb. 6500 m², háromszintes iroda és szociális épület: 1500 m², manőverező területek, bekötőutak, földalatti közművek és telekalakítás.\nGyártócsarnok alapterülete: kb. 6500 m² Háromszintes iroda-szociális épület 1500 m² alapterülettel Manőverezési területek, bekötő utak, földalatti közművek A telek rendezése az objektum körül Minden mező felszerelése darukkal Vegyes csarnokszerkezet: előregyártott oszlopok, vasbeton, acélszerkezetű tető', 'sk': 'Výrobná hala s administratívnou a sociálnou budovou\nRozloha výrobnej haly: cca. 6 500 m², trojposchodová kancelária a sociálna budova: 1 500 m², manévrovacie plochy, prístupové cesty, inžinierske siete a pozemková úprava.\nPlocha výrobnej haly: približne 6500 m² Trojpodlažná kancelársko-sociálna budova s plochou 1500 m² Manévrovacie plochy, príjazdové cesty, podzemné vedenia Úprava terénu okolo objektu Vybavenie všetkých polí žeriavmi Zmiešaná konštrukcia haly: prefabrikované stĺpy, železobetónové, strecha v oceľovej konštrukcii'},
   't_s': {},
   't_t': {},
   'title': 'ATT - Kokotów',
@@ -2546,37 +2525,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba skladově-výrobní haly se sociálně-kancelářským zázemím.\n'
-                '\n'
-                'Plocha haly činí přibližně 2 700 m²\n'
-                'Plocha administrativně-kancelářské části činí přibližně 300 m²\n'
-                '\n'
-                'konstrukce haly je kompletně ocelová',
-          'de': 'Bau einer Lager- und Produktionshalle mit Sozial- und Büroräumen.\n'
-                '\n'
-                'Hallenfläche ca. 2.700 m²\n'
-                'Verwaltungs- und Bürofläche ca. 300 m²\n'
-                '\n'
-                'Hallenkonstruktion vollständig in Stahl',
-          'en': 'Construction of a warehouse and production hall with social and office '
-                'facilities.\n'
-                '\n'
-                'Hall area of approximately 2,700 m²\n'
-                'Administrative and office area of approximately 300 m²\n'
-                '\n'
-                'Fully steel structure of the hall',
-          'hu': 'Raktár- és termelőcsarnok építése szociális és irodai kiszolgálórésszel.\n'
-                '\n'
-                'A csarnok alapterülete kb. 2 700 m²\n'
-                'Az adminisztratív-irodai rész alapterülete kb. 300 m²\n'
-                '\n'
-                'a csarnok szerkezete teljes egészében acél',
-          'sk': 'Výstavba skladovo-výrobnej haly so sociálno-kancelárskym zázemím.\n'
-                '\n'
-                'Plocha haly je približne 2 700 m²\n'
-                'Plocha administratívno-kancelárskej časti je približne 300 m²\n'
-                '\n'
-                'konštrukcia haly je celooková'},
+  't_o': {'cs': 'Skladová a výrobní hala s administrativní budovou\nPlocha skladové a výrobní haly: 2700 m², plocha kancelářské části: 300 m². Ocelová nosná konstrukce na základových patkách, manévrovací plochy, parkoviště a celoplošná zástavba.\nVýstavba skladově-výrobní haly se sociálně-kancelářským zázemím.\n\nPlocha haly činí přibližně 2 700 m²\nPlocha administrativně-kancelářské části činí přibližně 300 m²\n\nkonstrukce haly je kompletně ocelová', 'de': 'Lager- und Produktionshalle mit Bürogebäude\nFläche der Lager- und Produktionshalle: 2.700 m², Fläche des Büroteils: 300 m². Stahltragwerk auf Fundamentfundamenten, Rollflächen, Parkplätzen und Vollflächenbebauung.\nBau einer Lager- und Produktionshalle mit Sozial- und Büroräumen.\n\nHallenfläche ca. 2.700 m²\nVerwaltungs- und Bürofläche ca. 300 m²\n\nHallenkonstruktion vollständig in Stahl', 'en': 'Warehouse and production hall with an office building\nArea of \u200b\u200bthe warehouse and production hall: 2,700 m², area of \u200b\u200bthe office part: 300 m². Steel supporting structure on foundation footings, maneuvering areas, parking lots and full area development.\nConstruction of a warehouse and production hall with social and office facilities.\n\nHall area of approximately 2,700 m²\nAdministrative and office area of approximately 300 m²\n\nFully steel structure of the hall', 'hu': 'Raktár és gyártócsarnok irodaházzal\nA raktár és gyártócsarnok területe: 2700 m², az irodarész területe: 300 m². Acél tartószerkezet alapozásra, manőverező területekre, parkolókra és teljes területfejlesztésre.\nRaktár- és termelőcsarnok építése szociális és irodai kiszolgálórésszel.\n\nA csarnok alapterülete kb. 2 700 m²\nAz adminisztratív-irodai rész alapterülete kb. 300 m²\n\na csarnok szerkezete teljes egészében acél', 'sk': 'Skladová a výrobná hala s administratívnou budovou\nRozloha skladovej a výrobnej haly: 2 700 m², plocha kancelárskej časti: 300 m². Oceľová nosná konštrukcia na základových pätkách, manévrovacie plochy, parkoviská a celoplošná zástavba.\nVýstavba skladovo-výrobnej haly so sociálno-kancelárskym zázemím.\n\nPlocha haly je približne 2 700 m²\nPlocha administratívno-kancelárskej časti je približne 300 m²\n\nkonštrukcia haly je celooková'},
   't_s': {},
   't_t': {},
   'title': 'Pumar - Siemianowice',
@@ -2600,29 +2549,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Konstrukce: železobetonová, s optimalizací spotřeby oceli. Plášť: sendvičové '
-                'panely. Strop: železobetonový strop plnící funkci podlahy s vysoce kvalitní '
-                'povrchovou úpravou. Vytápění: tepelná čerpadla vyžadující předchozí vrty. '
-                'Vybavení: rozmanité boxy pro skladování, rozmístěné dle harmonogramu dodávek a '
-                'montáže.',
-          'de': 'Konstruktion: Stahlbeton, mit optimiertem Stahlverbrauch. Hülle: Sandwichpaneele. '
-                'Decke: Stahlbeton-Decke als hochwertig ausgeführter Boden. Heizung: Wärmepumpen, '
-                'die vorherige Bohrungen erfordern. Ausstattung: unterschiedliche Lagerboxen, '
-                'angeordnet nach Liefer- und Montageplan.',
-          'en': 'Structure: reinforced concrete, with optimised steel consumption. Envelope: '
-                'sandwich panels. Floor: reinforced concrete slab serving as a high-quality '
-                'finished floor. Heating: heat pumps requiring prior boreholes. Equipment: varied '
-                'storage boxes arranged in line with the delivery and installation schedule.',
-          'hu': 'Szerkezet: vasbeton, optimalizált acélfelhasználással. Burkolat: '
-                'szendvicspanelek. Födém: vasbeton födém, amely kiváló minőségű padlóburkolatként '
-                'funkcionál. Fűtés: hőszivattyúk, amelyek előzetes fúrásokat igényelnek. '
-                'Felszerelés: változatos tárolóboxok, a szállítási és szerelési ütemterv szerint '
-                'elhelyezve.',
-          'sk': 'Konštrukcia: železobetónová, s optimalizáciou spotreby ocele. Plášť: sendvičové '
-                'panely. Strop: železobetónový strop plniaci funkciu podlahy s vysoko kvalitnou '
-                'povrchovou úpravou. Vykurovanie: tepelné čerpadlá vyžadujúce predchádzajúce vrty. '
-                'Vybavenie: rozmanité boxy na skladovanie, rozmiestnené podľa harmonogramu dodávok '
-                'a montáže.'},
+  't_o': {'cs': '5patrová akumulační budova s \u200b\u200bgeotermální energií\n5patrový objekt s úložnými boxy. Inovativní instalace HVAC: vytápění a chlazení založené na reverzibilních tepelných čerpadlech integrovaných s geotermálními vrty, vnitřní komunikační systém, nákladní a osobní výtahy, monitorování a řízení přístupu.\nKonstrukce: železobetonová, s optimalizací spotřeby oceli. Plášť: sendvičové panely. Strop: železobetonový strop plnící funkci podlahy s vysoce kvalitní povrchovou úpravou. Vytápění: tepelná čerpadla vyžadující předchozí vrty. Vybavení: rozmanité boxy pro skladování, rozmístěné dle harmonogramu dodávek a montáže.', 'de': '5-stöckiges Selfstorage-Gebäude mit Geothermie\n5-stöckige Anlage mit Lagerboxen. Innovative HVAC-Installationen: Heizung und Kühlung auf Basis von reversiblen Wärmepumpen, integriert in geothermische Brunnen, internes Kommunikationssystem, Lasten- und Personenaufzüge, Überwachung und Zugangskontrolle.\nKonstruktion: Stahlbeton, mit optimiertem Stahlverbrauch. Hülle: Sandwichpaneele. Decke: Stahlbeton-Decke als hochwertig ausgeführter Boden. Heizung: Wärmepumpen, die vorherige Bohrungen erfordern. Ausstattung: unterschiedliche Lagerboxen, angeordnet nach Liefer- und Montageplan.', 'en': '5-story self-storage building with geothermal energy\n5-story facility with storage boxes. Innovative HVAC installations: heating and cooling based on reversible heat pumps integrated with geothermal wells, internal communication system, freight and passenger elevators, monitoring and access control.\nStructure: reinforced concrete, with optimised steel consumption. Envelope: sandwich panels. Floor: reinforced concrete slab serving as a high-quality finished floor. Heating: heat pumps requiring prior boreholes. Equipment: varied storage boxes arranged in line with the delivery and installation schedule.', 'hu': '5 szintes öntároló épület geotermikus energiával\n5 szintes létesítmény tároló dobozokkal. Innovatív HVAC berendezések: geotermikus kutakba integrált reverzibilis hőszivattyús fűtés és hűtés, belső kommunikációs rendszer, teher- és személylift, felügyelet és beléptetés.\nSzerkezet: vasbeton, optimalizált acélfelhasználással. Burkolat: szendvicspanelek. Födém: vasbeton födém, amely kiváló minőségű padlóburkolatként funkcionál. Fűtés: hőszivattyúk, amelyek előzetes fúrásokat igényelnek. Felszerelés: változatos tárolóboxok, a szállítási és szerelési ütemterv szerint elhelyezve.', 'sk': '5-poschodová autonómna budova s \u200b\u200bgeotermálnou energiou\n5-poschodový objekt s úložnými boxmi. Inovatívne inštalácie HVAC: vykurovanie a chladenie založené na reverzibilných tepelných čerpadlách integrovaných s geotermálnymi vrtmi, interným komunikačným systémom, nákladnými a osobnými výťahmi, monitorovaním a kontrolou prístupu.\nKonštrukcia: železobetónová, s optimalizáciou spotreby ocele. Plášť: sendvičové panely. Strop: železobetónový strop plniaci funkciu podlahy s vysoko kvalitnou povrchovou úpravou. Vykurovanie: tepelné čerpadlá vyžadujúce predchádzajúce vrty. Vybavenie: rozmanité boxy na skladovanie, rozmiestnené podľa harmonogramu dodávok a montáže.'},
   't_s': {},
   't_t': {},
   'title': 'Less Mess Storage – Warszawa',
@@ -2649,21 +2576,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'V areálu pivovaru Kompania Piwowarska jsme realizovali přestavbu staré haly. '
-                'Projekt jsme provedli tak, aby co nejvíce navazoval na historickou architekturu '
-                'pivovaru.',
-          'de': 'Auf dem Gelände der Brauerei Kompania Piwowarska haben wir den Umbau einer alten '
-                'Halle realisiert. Wir haben das Projekt so umgesetzt, dass es möglichst stark an '
-                'die historische Architektur der Brauerei anknüpft.',
-          'en': 'Within the Kompania Piwowarska brewery facility, we carried out the '
-                'reconstruction of an old hall. We delivered the project in a way that refers as '
-                'much as possible to the historic architecture of the brewery.',
-          'hu': 'A Kompania Piwowarska sörgyár területén egy régi csarnok átépítését valósítottuk '
-                'meg. A projektet úgy valósítottuk meg, hogy a lehető legjobban illeszkedjen a '
-                'sörgyár történelmi építészetéhez.',
-          'sk': 'V areáli pivovaru Kompania Piwowarska sme realizovali prestavbu starej haly. '
-                'Projekt sme zrealizovali tak, aby čo najviac nadväzoval na historickú '
-                'architektúru pivovaru.'},
+  't_o': {'cs': 'Přístaviště pro kamiony, skladovací přístřešky, myčka nákladních aut a stanice na skládku piva\nZóna překladiště TIR: Výstavba a modernizace zóny překladiště pro kamiony. Elektrohydraulické rampy, těsnící zástěry, automatická vrata, železobetonové povrchy vozovek s vysokou únosností pro intenzivní kamionovou dopravu. Velkorozměrový skladový přístřešek: Ocelová konstrukce přístřešku se zvýšenou odolností proti korozi (nátěry C4/C5), silniční betonové desky se sklony pro uložení palet s lahvemi a sudy. Komplex skladových přístřešků se skladovými dvory: Zastřešené vyrovnávací prostory pro skladování surovin a obalů, železobetonové desky s lineárním odvodněním, odolné vůči intenzivnímu provozu vysokozdvižných vozíků. Firemní myčka nákladních vozidel s čističkou: Specializovaná myčka pro vozový park a vysokozdvižné vozíky. Uzavřený oběh mycí vody, odlučovače oleje, suspenzní nádrže, chemicky odolné pryskyřičné podlahy z nerezové oceli v oblasti soklu. Vypouštěcí a nalévací stanice piva s kyselinovzdornou instalací: Vypouštěcí a neutralizační zóna pro netřídní pivo. Kyselina odolná podlaha, potrubí z AISI 316L kyselinovzdorné oceli, neutralizace průmyslových odpadních vod.\nV areálu pivovaru Kompania Piwowarska jsme realizovali přestavbu staré haly. Projekt jsme provedli tak, aby co nejvíce navazoval na historickou architekturu pivovaru.', 'de': 'LKW-Dockbereich, Lagerhallen, LKW-Waschanlage und Bierabladestation\nTIR-Umladezone: Bau und Modernisierung der Umladezone für LKW. Elektrohydraulische Rampen, Abdichtschürzen, automatische Hafentore, verstärkte Straßenbetonflächen mit hoher Tragfähigkeit für intensiven LKW-Verkehr. Großformatige Lagerhalle: Stahlkonstruktion der Halle mit erhöhter Korrosionsbeständigkeit (C4/C5-Beschichtung), Straßenbetonplatten mit Gefällen zur Lagerung von Paletten mit Flaschen und Fässern. Ein Komplex von Lagerhallen mit Lagerplätzen: Überdachte Pufferräume zur Lagerung von Rohstoffen und Verpackungen, Stahlbetonplatten mit Linienentwässerung, resistent gegen intensiven Gabelstaplerverkehr. Firmeneigene LKW-Waschanlage mit Kläranlage: Eine Spezialwaschanlage für LKW-Flotten und Gabelstapler. Geschlossener Waschwasserkreislauf, Ölabscheider, Suspensionstanks, chemikalienbeständige Harzböden aus Edelstahl im Sockelbereich. Bieraustrags- und -ausgießstation mit säurefester Anlage: Austrags- und Neutralisationszone für Fremdbier. Säurebeständiger Boden, Rohrleitungen aus säurebeständigem Stahl AISI 316L, Neutralisierung von Industrieabwässern.\nAuf dem Gelände der Brauerei Kompania Piwowarska haben wir den Umbau einer alten Halle realisiert. Wir haben das Projekt so umgesetzt, dass es möglichst stark an die historische Architektur der Brauerei anknüpft.', 'en': 'Truck dock area, storage shelters, truck wash and beer dump station\nTIR reloading dock zone: Construction and modernization of the reloading dock zone for trucks. Electro-hydraulic ramps, sealing aprons, automatic dock gates, reinforced road concrete surfaces with high load-bearing capacity for intensive truck traffic. Large-size storage shelter: Steel structure of the shelter with increased corrosion resistance (C4/C5 coatings), road concrete slabs with slopes for storing pallets with bottles and kegs. A complex of warehouse shelters with storage yards: Roofed buffer spaces for storing raw materials and packaging, reinforced concrete slabs with linear drainage, resistant to intensive forklift traffic. Company truck wash with sewage treatment plant: A specialized wash for truck fleets and forklifts. Closed washing water circulation, oil separators, suspension tanks, chemically resistant resin floors made of stainless steel in the plinth area. Beer discharge and pouring station with acid-resistant installation: Discharge and neutralization zone for out-of-class beer. Acid-resistant floor, pipelines made of AISI 316L acid-resistant steel, neutralization of industrial sewage.\nWithin the Kompania Piwowarska brewery facility, we carried out the reconstruction of an old hall. We delivered the project in a way that refers as much as possible to the historic architecture of the brewery.', 'hu': 'Teherautódokk területe, tárolóhelyek, kamionmosó és sörlerakó állomás\nTIR átrakó dokk zóna: Teherautók átrakodó zóna építése, korszerűsítése. Elektrohidraulikus rámpák, tömítőkötények, automata kikötőkapuk, nagy teherbírású vasbeton útburkolatok intenzív kamionforgalomhoz. Nagyméretű tároló óvóhely: Az óvóhely acél szerkezete fokozott korrózióállósággal (C4/C5 bevonatok), útbeton födémek lejtéssel palackos és hordós raklapok tárolására. Raktári óvóhelyek komplexum tárolóudvarral: Fedett pufferterek alapanyagok és csomagolóanyagok tárolására, vasbeton födémek lineáris vízelvezetéssel, ellenállnak az intenzív targoncaforgalomnak. Céges kamionmosó szennyvíztisztítóval: Teherautóflották és targoncák speciális mosója. Zárt mosóvíz cirkuláció, olajleválasztók, felfüggesztő tartályok, vegyszerálló műgyanta padlók rozsdamentes acélból a lábazati területen. Sörürítő és kiöntő állomás saválló beépítéssel: Kiürítő és semlegesítő zóna osztályon kívüli sörhöz. Saválló padló, AISI 316L saválló acél csővezetékek, ipari szennyvíz semlegesítés.\nA Kompania Piwowarska sörgyár területén egy régi csarnok átépítését valósítottuk meg. A projektet úgy valósítottuk meg, hogy a lehető legjobban illeszkedjen a sörgyár történelmi építészetéhez.', 'sk': 'Prístavisko pre nákladné autá, skladovacie prístrešky, umývačka nákladných áut a stanica na skládku piva\nZóna prekladiska TIR: Výstavba a modernizácia zóny prekladiska pre kamióny. Elektrohydraulické rampy, tesniace zástery, automatické vráta dokov, spevnené cestné betónové plochy s vysokou nosnosťou pre intenzívnu kamiónovú dopravu. Veľkorozmerný skladový prístrešok: Oceľová konštrukcia prístrešku so zvýšenou odolnosťou proti korózii (nátery C4/C5), cestné betónové platne so sklonmi na skladovanie paliet s fľašami a sudmi. Komplex skladových prístreškov so skladovými dvormi: Zastrešené nárazníkové priestory na skladovanie surovín a obalov, železobetónové dosky s lineárnym odvodnením, odolné voči intenzívnej premávke vysokozdvižných vozíkov. Firemná umývačka nákladných vozidiel s čističkou odpadových vôd: Špecializovaná umývačka pre vozové parky a vysokozdvižné vozíky. Uzavretý obeh umývacej vody, odlučovače oleja, suspenzné nádrže, chemicky odolné živicové podlahy z nerezovej ocele v oblasti sokla. Vypúšťacia a nalievacia stanica piva s kyselinovzdornou inštaláciou: Vypúšťacia a neutralizačná zóna pre pivo mimo triedy. Kyselinovzdorná podlaha, potrubia z AISI 316L kyselinovzdornej ocele, neutralizácia priemyselných odpadových vôd.\nV areáli pivovaru Kompania Piwowarska sme realizovali prestavbu starej haly. Projekt sme zrealizovali tak, aby čo najviac nadväzoval na historickú architektúru pivovaru.'},
   't_s': {},
   't_t': {},
   'title': 'Kompania Piwowarska Tychy',
@@ -2686,165 +2599,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Jako Generální dodavatel jsme dokončili výstavbu další etapy komplexu Fabryka '
-                'Park. Realizovali jsme třípatrovou budovu kancelářského charakteru, která plní '
-                'funkci moderního obchodně-služebního parku. Investice byla předána a v současné '
-                'době probíhají uvnitř fit-out práce nájemců.\n'
-                '\n'
-                'Parametry investice:\n'
-                '\n'
-                'Formule: Generální dodavatelství\n'
-                '\n'
-                'Doba realizace: 06.2025 – 04.2026\n'
-                '\n'
-                'Užitková plocha: 2 490,14 m² (vnitřní plocha: 3 191,5 m²)\n'
-                '\n'
-                'Objem: 17 231,9 m³\n'
-                '\n'
-                'Konstrukce: Smíšená\n'
-                '\n'
-                'Nájemci:\n'
-                'Hlavní část objektu obsadí zdravotnické zařízení MEDICOVER a klub XTREME FITNESS. '
-                'Nabídku doplňují menší provozovny: KROWA MAĆ, DR MATERAC a LIKE A PET.\n'
-                '\n'
-                'Technologie a výzvy:\n'
-                '\n'
-                'Fasáda: Byla použita moderní fasáda z taženého a řezaného kovového pletiva.\n'
-                '\n'
-                'Ekologie: Na střeše byly instalovány fotovoltaické panely. Objekt je v procesu '
-                'certifikace BREEAM.\n'
-                '\n'
-                'Logistika: Největší výzvou byla složitá konstrukce, napjatý harmonogram a '
-                'provádění prací v bezprostřední blízkosti aktivního obchodního parku a železniční '
-                'trati.',
-          'de': 'Als Generalunternehmer haben wir den Bau der nächsten Etappe des Komplexes '
-                'Fabryka Park abgeschlossen. Wir haben einen dreigeschossigen Baukörper mit '
-                'Bürocharakter realisiert, der als moderner Handels- und Dienstleistungspark '
-                'fungiert. Die Investition wurde übergeben, derzeit laufen im Inneren die '
-                'Mieterausbauten.\n'
-                '\n'
-                'Investitionsparameter:\n'
-                '\n'
-                'Formel: Generalunternehmer\n'
-                '\n'
-                'Realisierungszeitraum: 06.2025 – 04.2026\n'
-                '\n'
-                'Nutzfläche: 2.490,14 m² (Innenfläche: 3.191,5 m²)\n'
-                '\n'
-                'Volumen: 17.231,9 m³\n'
-                '\n'
-                'Konstruktion: Gemischt\n'
-                '\n'
-                'Mieter:\n'
-                'Den Hauptteil des Objekts belegen die medizinische Einrichtung MEDICOVER und der '
-                'XTREME FITNESS Club. Kleinere Einheiten – KROWA MAĆ, DR MATERAC und LIKE A PET – '
-                'ergänzen das Angebot.\n'
-                '\n'
-                'Technologie und Herausforderungen:\n'
-                '\n'
-                'Fassade: Eine moderne Fassade aus Streckmetall wurde eingesetzt.\n'
-                '\n'
-                'Ökologie: Auf dem Dach wurden Photovoltaikmodule installiert. Das Objekt befindet '
-                'sich im BREEAM-Zertifizierungsprozess.\n'
-                '\n'
-                'Logistik: Die größten Herausforderungen waren die komplexe Konstruktion, ein '
-                'enger Zeitplan und die Durchführung der Arbeiten in unmittelbarer Nähe eines '
-                'aktiven Handelsparks und einer Bahnlinie.',
-          'en': 'As the General Contractor, we have completed the construction of the next stage '
-                'of the Fabryka Park complex. We have delivered a three-storey office-style '
-                'building that serves as a modern retail and service park. The investment has been '
-                'handed over, and tenants are currently carrying out fit-out works inside.\n'
-                '\n'
-                'Investment parameters:\n'
-                '\n'
-                'Formula: General Contracting\n'
-                '\n'
-                'Implementation period: 06.2025 – 04.2026\n'
-                '\n'
-                'Usable area: 2,490.14 m² (internal area: 3,191.5 m²)\n'
-                '\n'
-                'Volume: 17,231.9 m³\n'
-                '\n'
-                'Structure: Mixed\n'
-                '\n'
-                'Tenants:\n'
-                'The main part of the building will be occupied by the MEDICOVER medical facility '
-                'and the XTREME FITNESS club. Smaller premises – KROWA MAĆ, DR MATERAC and LIKE A '
-                'PET – complement the offering.\n'
-                '\n'
-                'Technology and Challenges:\n'
-                '\n'
-                'Façade: A modern façade made of expanded metal mesh was used.\n'
-                '\n'
-                'Ecology: Photovoltaic panels have been installed on the roof. The facility is '
-                'currently undergoing BREEAM certification.\n'
-                '\n'
-                'Logistics: The biggest challenges were the complex structure, a tight schedule '
-                'and conducting works in the immediate vicinity of an operating retail park and a '
-                'railway line.',
-          'hu': 'Mint Fővállalkozó befejeztük a Fabryka Park komplexum következő ütemének '
-                'építését. Megvalósítottunk egy háromszintes, irodai jellegű épülettömböt, amely '
-                'modern kereskedelmi-szolgáltató park funkcióját tölti be. A beruházás átadásra '
-                'került, jelenleg a bérlők fit-out munkálatai zajlanak az épületen belül.\n'
-                '\n'
-                'A beruházás paraméterei:\n'
-                '\n'
-                'Forma: Fővállalkozás\n'
-                '\n'
-                'Megvalósítás időtartama: 06.2025 – 04.2026\n'
-                '\n'
-                'Hasznos alapterület: 2 490,14 m² (belső terület: 3 191,5 m²)\n'
-                '\n'
-                'Térfogat: 17 231,9 m³\n'
-                '\n'
-                'Szerkezet: Vegyes\n'
-                '\n'
-                'Bérlők:\n'
-                'Az objektum fő részét a MEDICOVER egészségügyi intézmény és az XTREME FITNESS '
-                'klub foglalja el. A kínálatot kisebb egységek egészítik ki: KROWA MAĆ, DR MATERAC '
-                'és LIKE A PET.\n'
-                '\n'
-                'Technológia és kihívások:\n'
-                '\n'
-                'Homlokzat: Modern, nyújtott és vágott fémhálós homlokzatot alkalmaztunk.\n'
-                '\n'
-                'Ökológia: A tetőn napelemeket telepítettünk. Az objektum jelenleg BREEAM '
-                'tanúsítási folyamatban van.\n'
-                '\n'
-                'Logisztika: A legnagyobb kihívást az összetett szerkezet, a feszített ütemezés és '
-                'a munkavégzés volt egy működő kereskedelmi park és vasútvonal közvetlen '
-                'közelében.',
-          'sk': 'Ako Generálny dodávateľ sme dokončili výstavbu ďalšej etapy komplexu Fabryka '
-                'Park. Zrealizovali sme trojpodlažnú budovu kancelárskeho charakteru, ktorá plní '
-                'funkciu moderného obchodno-služobného parku. Investícia bola odovzdaná a v '
-                'súčasnosti prebiehajú vo vnútri fit-out práce nájomcov.\n'
-                '\n'
-                'Parametre investície:\n'
-                '\n'
-                'Formul: Generálne dodávateľstvo\n'
-                '\n'
-                'Doba realizácie: 06.2025 – 04.2026\n'
-                '\n'
-                'Úžitková plocha: 2 490,14 m² (vnútorná plocha: 3 191,5 m²)\n'
-                '\n'
-                'Objem: 17 231,9 m³\n'
-                '\n'
-                'Konštrukcia: Zmiešaná\n'
-                '\n'
-                'Nájomcovia:\n'
-                'Hlavnú časť objektu obsadí zdravotnícke zariadenie MEDICOVER a klub XTREME '
-                'FITNESS. Ponuku dop�ňajú menšie prevádzky: KROWA MAĆ, DR MATERAC a LIKE A PET.\n'
-                '\n'
-                'Technológia a výzvy:\n'
-                '\n'
-                'Fasáda: Bola použitá moderná fasáda z ťahaného a rezaného kovového pletiva.\n'
-                '\n'
-                'Ekológia: Na streche boli inštalované fotovoltické panely. Objekt je v procese '
-                'certifikácie BREEAM.\n'
-                '\n'
-                'Logistika: Najväčšou výzvou bola zložitá konštrukcia, napätý harmonogram a '
-                'vykonávanie prác v bezprostrednej blízkosti aktívneho obchodného parku a '
-                'železničnej trate.'},
+  't_o': {'cs': 'Obchodní, servisní a lékařský komplex s fitness klubem\nUžitná plocha: 2 490 m², hrubý objem: 17 232 m³, vnitřní plocha: 3 192 m². Skeletová konstrukce z prefabrikovaných železobetonových sloupů a nosníků, stropy z předpjatých dutinkových desek HC, přízemí ukončeno deskami dibond, patra s unikátní fasádou z tahokovu, reklamní pylon, parkoviště.\nJako Generální dodavatel jsme dokončili výstavbu další etapy komplexu Fabryka Park. Realizovali jsme třípatrovou budovu kancelářského charakteru, která plní funkci moderního obchodně-služebního parku. Investice byla předána a v současné době probíhají uvnitř fit-out práce nájemců.\n\nParametry investice:\n\nFormule: Generální dodavatelství\n\nDoba realizace: 06.2025 – 04.2026\n\nUžitková plocha: 2 490,14 m² (vnitřní plocha: 3 191,5 m²)\n\nObjem: 17 231,9 m³\n\nKonstrukce: Smíšená\n\nNájemci:\nHlavní část objektu obsadí zdravotnické zařízení MEDICOVER a klub XTREME FITNESS. Nabídku doplňují menší provozovny: KROWA MAĆ, DR MATERAC a LIKE A PET.\n\nTechnologie a výzvy:\n\nFasáda: Byla použita moderní fasáda z taženého a řezaného kovového pletiva.\n\nEkologie: Na střeše byly instalovány fotovoltaické panely. Objekt je v procesu certifikace BREEAM.\n\nLogistika: Největší výzvou byla složitá konstrukce, napjatý harmonogram a provádění prací v bezprostřední blízkosti aktivního obchodního parku a železniční trati.', 'de': 'Ein Gewerbe-, Dienstleistungs- und Medizinkomplex mit Fitnessclub\nNutzfläche: 2.490 m², Bruttovolumen: 17.232 m³, Innenfläche: 3.192 m². Skelettkonstruktion aus vorgefertigten Stahlbetonstützen und -trägern, Decken aus vorgespannten HC-Hohlplatten, Erdgeschoss mit Dibond-Platten verkleidet, Obergeschoss mit einzigartiger Fassade aus Streckmetall, Werbepylon, Parkplätze.\nAls Generalunternehmer haben wir den Bau der nächsten Etappe des Komplexes Fabryka Park abgeschlossen. Wir haben einen dreigeschossigen Baukörper mit Bürocharakter realisiert, der als moderner Handels- und Dienstleistungspark fungiert. Die Investition wurde übergeben, derzeit laufen im Inneren die Mieterausbauten.\n\nInvestitionsparameter:\n\nFormel: Generalunternehmer\n\nRealisierungszeitraum: 06.2025 – 04.2026\n\nNutzfläche: 2.490,14 m² (Innenfläche: 3.191,5 m²)\n\nVolumen: 17.231,9 m³\n\nKonstruktion: Gemischt\n\nMieter:\nDen Hauptteil des Objekts belegen die medizinische Einrichtung MEDICOVER und der XTREME FITNESS Club. Kleinere Einheiten – KROWA MAĆ, DR MATERAC und LIKE A PET – ergänzen das Angebot.\n\nTechnologie und Herausforderungen:\n\nFassade: Eine moderne Fassade aus Streckmetall wurde eingesetzt.\n\nÖkologie: Auf dem Dach wurden Photovoltaikmodule installiert. Das Objekt befindet sich im BREEAM-Zertifizierungsprozess.\n\nLogistik: Die größten Herausforderungen waren die komplexe Konstruktion, ein enger Zeitplan und die Durchführung der Arbeiten in unmittelbarer Nähe eines aktiven Handelsparks und einer Bahnlinie.', 'en': 'A commercial, service and medical complex with a fitness club\nUsable area: 2,490 m², gross volume: 17,232 m³, internal area: 3,192 m². Skeletal structure made of prefabricated reinforced concrete columns and beams, ceilings made of prestressed HC hollow-core slabs, ground floor finished with dibond boards, first floors with a unique facade made of expanded metal, advertising pylon, parking lots.\nAs the General Contractor, we have completed the construction of the next stage of the Fabryka Park complex. We have delivered a three-storey office-style building that serves as a modern retail and service park. The investment has been handed over, and tenants are currently carrying out fit-out works inside.\n\nInvestment parameters:\n\nFormula: General Contracting\n\nImplementation period: 06.2025 – 04.2026\n\nUsable area: 2,490.14 m² (internal area: 3,191.5 m²)\n\nVolume: 17,231.9 m³\n\nStructure: Mixed\n\nTenants:\nThe main part of the building will be occupied by the MEDICOVER medical facility and the XTREME FITNESS club. Smaller premises – KROWA MAĆ, DR MATERAC and LIKE A PET – complement the offering.\n\nTechnology and Challenges:\n\nFaçade: A modern façade made of expanded metal mesh was used.\n\nEcology: Photovoltaic panels have been installed on the roof. The facility is currently undergoing BREEAM certification.\n\nLogistics: The biggest challenges were the complex structure, a tight schedule and conducting works in the immediate vicinity of an operating retail park and a railway line.', 'hu': 'Kereskedelmi, szolgáltató és egészségügyi komplexum fitneszklubbal\nHasznos terület: 2.490 m², bruttó térfogat: 17.232 m³, belső terület: 3.192 m². Előregyártott vasbeton oszlopokból és gerendákból készült vázszerkezet, feszített HC üreges födémből készült födémek, földszint dibond táblás kivitelezés, első emeletek egyedi homlokzattal duzzasztott fémből, hirdetőoszlop, parkolók.\nMint Fővállalkozó befejeztük a Fabryka Park komplexum következő ütemének építését. Megvalósítottunk egy háromszintes, irodai jellegű épülettömböt, amely modern kereskedelmi-szolgáltató park funkcióját tölti be. A beruházás átadásra került, jelenleg a bérlők fit-out munkálatai zajlanak az épületen belül.\n\nA beruházás paraméterei:\n\nForma: Fővállalkozás\n\nMegvalósítás időtartama: 06.2025 – 04.2026\n\nHasznos alapterület: 2 490,14 m² (belső terület: 3 191,5 m²)\n\nTérfogat: 17 231,9 m³\n\nSzerkezet: Vegyes\n\nBérlők:\nAz objektum fő részét a MEDICOVER egészségügyi intézmény és az XTREME FITNESS klub foglalja el. A kínálatot kisebb egységek egészítik ki: KROWA MAĆ, DR MATERAC és LIKE A PET.\n\nTechnológia és kihívások:\n\nHomlokzat: Modern, nyújtott és vágott fémhálós homlokzatot alkalmaztunk.\n\nÖkológia: A tetőn napelemeket telepítettünk. Az objektum jelenleg BREEAM tanúsítási folyamatban van.\n\nLogisztika: A legnagyobb kihívást az összetett szerkezet, a feszített ütemezés és a munkavégzés volt egy működő kereskedelmi park és vasútvonal közvetlen közelében.', 'sk': 'Obchodný, servisný a zdravotnícky komplex s fitness klubom\nÚžitková plocha: 2 490 m², celkový objem: 17 232 m³, vnútorná plocha: 3 192 m². Skeletová konštrukcia z prefabrikovaných železobetónových stĺpov a nosníkov, stropy z predpätých dutinkových dosiek HC, prízemie ukončené dibondovými doskami, poschodia s unikátnou fasádou z ťahokovu, reklamný pylón, parkoviská.\nAko Generálny dodávateľ sme dokončili výstavbu ďalšej etapy komplexu Fabryka Park. Zrealizovali sme trojpodlažnú budovu kancelárskeho charakteru, ktorá plní funkciu moderného obchodno-služobného parku. Investícia bola odovzdaná a v súčasnosti prebiehajú vo vnútri fit-out práce nájomcov.\n\nParametre investície:\n\nFormul: Generálne dodávateľstvo\n\nDoba realizácie: 06.2025 – 04.2026\n\nÚžitková plocha: 2 490,14 m² (vnútorná plocha: 3 191,5 m²)\n\nObjem: 17 231,9 m³\n\nKonštrukcia: Zmiešaná\n\nNájomcovia:\nHlavnú časť objektu obsadí zdravotnícke zariadenie MEDICOVER a klub XTREME FITNESS. Ponuku dop�ňajú menšie prevádzky: KROWA MAĆ, DR MATERAC a LIKE A PET.\n\nTechnológia a výzvy:\n\nFasáda: Bola použitá moderná fasáda z ťahaného a rezaného kovového pletiva.\n\nEkológia: Na streche boli inštalované fotovoltické panely. Objekt je v procese certifikácie BREEAM.\n\nLogistika: Najväčšou výzvou bola zložitá konštrukcia, napätý harmonogram a vykonávanie prác v bezprostrednej blízkosti aktívneho obchodného parku a železničnej trate.'},
   't_s': {},
   't_t': {},
   'title': 'Fabryka Park Katowice',
@@ -2871,58 +2626,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Plocha haly: 2 333,43 m²\n'
-                'Plocha sociálně-kancelářské části: 449,93 m²\n'
-                'Sítě a instalace pro potřeby realizované investice\n'
-                'Krajinářské úpravy pozemku\n'
-                'Konstrukce:\n'
-                'Konstrukce haly s prefabrikovanými železobetonovými sloupy\n'
-                'Ocelová konstrukce střechy haly\n'
-                'Fasáda ze sendvičových panelů\n'
-                'Střešní krytina s izolací z PIR a membránou z PVC\n'
-                'Smíšená konstrukce kancelářské budovy (zděná, stropy a železobetonová deska)',
-          'de': 'Hallenfläche: 2.333,43 m²\n'
-                'Sozial- und Bürofläche: 449,93 m²\n'
-                'Netze und Installationen für die Anforderungen der Investition\n'
-                'Freiflächengestaltung\n'
-                'Konstruktion:\n'
-                'Hallenkonstruktion mit Stahlbeton-Fertigteilstützen\n'
-                'Stahldachkonstruktion der Halle\n'
-                'Fassade aus Sandwichpaneelen\n'
-                'Dacheindeckung mit PIR-Dämmung und PVC-Membran\n'
-                'Gemischte Konstruktion des Bürogebäudes (Mauerwerk, Stahlbetondecken und -platte)',
-          'en': 'Hall area: 2,333.43 m²\n'
-                'Social and office area: 449.93 m²\n'
-                'Networks and installations for the needs of the project\n'
-                'Site development\n'
-                'Structure:\n'
-                'Hall structure with precast reinforced concrete columns\n'
-                'Steel roof structure of the hall\n'
-                'Façade made of sandwich panels\n'
-                'Roof covering with PIR insulation and PVC membrane\n'
-                'Mixed structure of the office building (masonry, reinforced concrete floors and '
-                'slab)',
-          'hu': 'Csarnok területe: 2 333,43 m²\n'
-                'Szociális-irodai rész területe: 449,93 m²\n'
-                'Hálózatok és installációk a megvalósított beruházás igényei szerint\n'
-                'Telekrendezés\n'
-                'Szerkezet:\n'
-                'A csarnok szerkezete előregyártott vasbeton oszlopokkal\n'
-                'Acél tetőszerkezetű csarnok\n'
-                'Homlokzat szendvicspanelekből\n'
-                'Tetőfedés PIR hőszigeteléssel és PVC membránnal\n'
-                'Az irodaépület vegyes szerkezetű (falazott, vasbeton födémek és lemez)',
-          'sk': 'Plocha haly: 2 333,43 m²\n'
-                'Plocha sociálno-kancelárskej časti: 449,93 m²\n'
-                'Siete a inštalácie pre potreby realizovanej investície\n'
-                'Krajinné úpravy pozemku\n'
-                'Konštrukcia:\n'
-                'Konštrukcia haly s prefabrikovanými železobetónovými stĺpmi\n'
-                'Oceľová konštrukcia strechy haly\n'
-                'Fasáda zo sendvičových panelov\n'
-                'Strešná krytina s izoláciou z PIR a membránou z PVC\n'
-                'Zmiešaná konštrukcia kancelárskej budovy (murovaná, stropy a železobetónová '
-                'doska)'},
+  't_o': {'cs': 'Výrobní a skladovací hala pro balení výrobků\nPlocha sálu: 2 333 m², společenská a kancelářská plocha: 450 m². Prefabrikované železobetonové sloupy, ocelová střešní konstrukce s PIR izolací a PVC membránou, podlaha bez spár.\nPlocha haly: 2 333,43 m²\nPlocha sociálně-kancelářské části: 449,93 m²\nSítě a instalace pro potřeby realizované investice\nKrajinářské úpravy pozemku\nKonstrukce:\nKonstrukce haly s prefabrikovanými železobetonovými sloupy\nOcelová konstrukce střechy haly\nFasáda ze sendvičových panelů\nStřešní krytina s izolací z PIR a membránou z PVC\nSmíšená konstrukce kancelářské budovy (zděná, stropy a železobetonová deska)', 'de': 'Produktions- und Lagerhalle für Verpackungsprodukte\nHallenfläche: 2.333 m², Sozial- und Bürofläche: 450 m². Vorgefertigte Stahlbetonstützen, Stahldachkonstruktion mit PIR-Isolierung und PVC-Membran, fugenloser Boden.\nHallenfläche: 2.333,43 m²\nSozial- und Bürofläche: 449,93 m²\nNetze und Installationen für die Anforderungen der Investition\nFreiflächengestaltung\nKonstruktion:\nHallenkonstruktion mit Stahlbeton-Fertigteilstützen\nStahldachkonstruktion der Halle\nFassade aus Sandwichpaneelen\nDacheindeckung mit PIR-Dämmung und PVC-Membran\nGemischte Konstruktion des Bürogebäudes (Mauerwerk, Stahlbetondecken und -platte)', 'en': 'Production and storage hall for packaging products\nHall area: 2,333 m², social and office area: 450 m². Prefabricated reinforced concrete columns, steel roof structure with PIR insulation and PVC membrane, jointless floor.\nHall area: 2,333.43 m²\nSocial and office area: 449.93 m²\nNetworks and installations for the needs of the project\nSite development\nStructure:\nHall structure with precast reinforced concrete columns\nSteel roof structure of the hall\nFaçade made of sandwich panels\nRoof covering with PIR insulation and PVC membrane\nMixed structure of the office building (masonry, reinforced concrete floors and slab)', 'hu': 'Csomagolási termékek gyártó- és raktárcsarnoka\nCsarnok területe: 2333 m², szociális és irodaterület: 450 m². Előregyártott vasbeton oszlopok, acél tetőszerkezet PIR szigeteléssel és PVC membránnal, fugamentes födém.\nCsarnok területe: 2 333,43 m²\nSzociális-irodai rész területe: 449,93 m²\nHálózatok és installációk a megvalósított beruházás igényei szerint\nTelekrendezés\nSzerkezet:\nA csarnok szerkezete előregyártott vasbeton oszlopokkal\nAcél tetőszerkezetű csarnok\nHomlokzat szendvicspanelekből\nTetőfedés PIR hőszigeteléssel és PVC membránnal\nAz irodaépület vegyes szerkezetű (falazott, vasbeton födémek és lemez)', 'sk': 'Výrobná a skladovacia hala na balenie produktov\nRozloha sály: 2 333 m², spoločenská a kancelárska plocha: 450 m². Prefabrikované železobetónové stĺpy, oceľová strešná konštrukcia s PIR izoláciou a PVC membránou, bezškárová podlaha.\nPlocha haly: 2 333,43 m²\nPlocha sociálno-kancelárskej časti: 449,93 m²\nSiete a inštalácie pre potreby realizovanej investície\nKrajinné úpravy pozemku\nKonštrukcia:\nKonštrukcia haly s prefabrikovanými železobetónovými stĺpmi\nOceľová konštrukcia strechy haly\nFasáda zo sendvičových panelov\nStrešná krytina s izoláciou z PIR a membránou z PVC\nZmiešaná konštrukcia kancelárskej budovy (murovaná, stropy a železobetónová doska)'},
   't_s': {},
   't_t': {},
   'title': 'Eurosleeve – Zabrze',
@@ -2943,81 +2647,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Specifikace Užitková plocha (celkem): cca 4 631 m², z toho: • Plocha k pronájmu: '
-                '3 230,17 m² • Komunikační plocha: 1 296,71 m² • Plocha technických místností: '
-                '44,88 m² • Kancelářsko-recepční plocha: 59,28 m² Plocha pozemku: 4 150,00 m² '
-                'Certifikace: BREEAM (Very Good) Dispozice budovy: Budova na pětiúhelníkovém '
-                'půdorysu (blízký obdélníku se seříznutím), orientovaná směrem JV a SZ. Plochá '
-                'střecha. Charakteristické prosklení na fasádě probíhající přes čtyři podlaží. '
-                'Technická infrastruktura: Instalace OZE: Tepelné čerpadlo, fotovoltaika. Podzemní '
-                'požární nádrž a retenční nádrž na dešťovou vodu. Přestavba stávající vodovodní '
-                'sítě. Konstrukce: Podzemní část: Monolitická železobetonová základová deska. '
-                'Nadzemní část: 5podlažní, železobetonová, ve sloupovo-deskovém uspořádání. Ploché '
-                'stropy s lokálními zesíleními a krajními nosníky. Tuhost zajištěna monolitickým '
-                'komunikačním jádrem a železobetonovou stěnou u jižní stěny. Fasáda: Sendvičové '
-                'panely ve svislém uspořádání (šedá a oranžová barva). Fragmenty dokončené omítkou '
-                'v antracitové barvě. Úprava terénu: Vnitřní komunikace, chodníky a parkovací '
-                'stání. Venkovní osvětlení.',
-          'de': 'Spezifikation Nutzfläche (insgesamt): ca. 4.631 m², davon: • Mietfläche: 3.230,17 '
-                'm² • Verkehrsfläche: 1.296,71 m² • Fläche der Technikräume: 44,88 m² • Büro- und '
-                'Empfangsfläche: 59,28 m² Grundstücksfläche: 4.150,00 m² Zertifizierung: BREEAM '
-                '(Very Good) Gebäudegrundriss: Gebäude auf fünfeckigem Grundriss (annahernd '
-                'Rechteck mit Abschrägung), orientiert in Richtung SO und NW. Flachdach. '
-                'Charakteristische Verglasung an der Fassade über vier Geschosse. Technische '
-                'Infrastruktur: EE-Anlagen: Wärmepumpe, Photovoltaik. Unterirdischer '
-                'Löschwassertank und Regenwasserrückhaltebecken. Umbau des bestehenden '
-                'Wasserversorgungsnetzes. Konstruktion: Unterirdischer Teil: Monolithische '
-                'Stahlbeton-Fundamentplatte. Oberirdischer Teil: 5-geschossig, Stahlbeton, in '
-                'Stützen-Platten-Anordnung. Flache Decken mit lokalen Verstärkungen und '
-                'Randträgern. Steifigkeit durch monolithischen Erschließungskern und '
-                'Stahlbeton-Scheibe an der Südwand. Fassade: Sandwichpaneele in vertikaler '
-                'Anordnung (grau und orange). Fragmente in anthrazitfarbenem Putz. '
-                'Geländegestaltung: Innenstraßen, Gehwege und Parkplätze. Außenbeleuchtung.',
-          'en': 'Specification Usable area (total): approx. 4,631 m², including: • Rental area: '
-                '3,230.17 m² • Circulation area: 1,296.71 m² • Technical rooms area: 44.88 m² • '
-                'Office and reception area: 59.28 m² Plot area: 4,150.00 m² Certification: BREEAM '
-                '(Very Good) Building layout: A pentagonal building plan (close to a rectangle '
-                'with a cut), oriented towards SE and NW. Flat roof. Characteristic glazing on the '
-                'façade running through four storeys. Technical infrastructure: RES installations: '
-                'Heat pump, photovoltaics. Underground fire water tank and rainwater retention '
-                'tank. Reconstruction of the existing water supply network. Structure: Underground '
-                'part: Monolithic reinforced concrete foundation slab. Above-ground part: '
-                '5-storey, reinforced concrete, in column-slab layout. Flat ceilings with local '
-                'thickenings and edge beams. Stiffness provided by a monolithic communication core '
-                'and a reinforced concrete diaphragm at the south wall. Façade: Sandwich panels in '
-                'a vertical layout (grey and orange colour). Fragments finished with '
-                'anthracite-coloured plaster. Land development: Internal roads, pavements and '
-                'parking spaces. Outdoor lighting.',
-          'hu': 'Specifikáció Hasznos alapterület (összesen): kb. 4 631 m², ebből: • Bérbe adható '
-                'terület: 3 230,17 m² • Közlekedési terület: 1 296,71 m² • Műszaki helyiségek '
-                'területe: 44,88 m² • Iroda és recepció területe: 59,28 m² Telek területe: 4 '
-                '150,00 m² Tanúsítás: BREEAM (Very Good) Épület elrendezése: Ötszögletű alaprajzú '
-                'épület (téglalaphoz közeli levágással), DK és ÉNy irányba tájolva. Lapos tető. '
-                'Jellegzetes üvegezés a homlokzaton, négy szinten átívelve. Műszaki '
-                'infrastruktúra: Megújuló energia berendezések: Hőszivattyú, napelemes rendszer. '
-                'Földalatti tűzivíz-tartály és esővíz-visszatartó tartály. Meglévő vízellátó '
-                'hálózat átépítése. Szerkezet: Földalatti rész: Monolit vasbeton alaplemez. Föld '
-                'feletti rész: 5 szintes, vasbeton, oszlop-lemez elrendezésben. Lapos födémek '
-                'helyi vastagításokkal és szélső gerendákkal. A merevséget monolitikus közlekedő '
-                'mag és déli falnál lévő vasbeton fal biztosítja. Homlokzat: Szendvicspanelek '
-                'függőleges elrendezésben (szürke és narancssárga szín). Töredékek antracit színű '
-                'vakolattal. Telekrendezés: Belső utak, járdák és parkolóhelyek. Kültéri '
-                'világítás.',
-          'sk': 'Špecifikácia Úžitková plocha (spolu): cca 4 631 m², z toho: • Plocha na prenájom: '
-                '3 230,17 m² • Komunikačná plocha: 1 296,71 m² • Plocha technických miestností: '
-                '44,88 m² • Kancelársko-recepčná plocha: 59,28 m² Plocha pozemku: 4 150,00 m² '
-                'Certifikácia: BREEAM (Very Good) Dispozícia budovy: Budova na päťuholníkovom '
-                'pôdoryse (blízky obd�žniku so skosením), orientovaná smerom JV a SZ. Plochá '
-                'strecha. Charakteristické presklenie na fasáde prebiehajúce cez štyri podlažia. '
-                'Technická infraštruktúra: Inštalácie OZE: Tepelné čerpadlo, fotovoltika. Podzemný '
-                'požiarny zásobník a retenčný zásobník na dažďovú vodu. Prestavba existujúcej '
-                'vodovodnej siete. Konštrukcia: Podzemná časť: Monolitická železobetonová '
-                'základová doska. Nadzemná časť: 5-podlažná, železobetonová, v stĺpovo-doskovom '
-                'usporiadaní. Ploché stropy s lokálnymi zhrubnutiami a krajnými nosníkmi. Tuhosť '
-                'zabezpečená monolitickým komunikačným jadrom a železobetónovou stenou pri južnej '
-                'stene. Fasáda: Sendvičové panely vo zvislom usporiadaní (sivá a oranžová farba). '
-                'Fragmenty dokončené omietkou v antracitovej farbe. Úprava terénu: Vnútorné '
-                'komunikácie, chodníky a parkovacie miesta. Vonkajšie osvetlenie.'},
+  't_o': {'cs': '5patrová budova s \u200b\u200bvlastním skladem\nObjem: 17 121 m³, stavební plocha: 911 m², 5 nadzemních podlaží. Monolitická železobetonová konstrukce, pokročilé systémy kontroly přístupu, průmyslové výtahy, vjezdová vykládací zóna.\nSpecifikace Užitková plocha (celkem): cca 4 631 m², z toho: • Plocha k pronájmu: 3 230,17 m² • Komunikační plocha: 1 296,71 m² • Plocha technických místností: 44,88 m² • Kancelářsko-recepční plocha: 59,28 m² Plocha pozemku: 4 150,00 m² Certifikace: BREEAM (Very Good) Dispozice budovy: Budova na pětiúhelníkovém půdorysu (blízký obdélníku se seříznutím), orientovaná směrem JV a SZ. Plochá střecha. Charakteristické prosklení na fasádě probíhající přes čtyři podlaží. Technická infrastruktura: Instalace OZE: Tepelné čerpadlo, fotovoltaika. Podzemní požární nádrž a retenční nádrž na dešťovou vodu. Přestavba stávající vodovodní sítě. Konstrukce: Podzemní část: Monolitická železobetonová základová deska. Nadzemní část: 5podlažní, železobetonová, ve sloupovo-deskovém uspořádání. Ploché stropy s lokálními zesíleními a krajními nosníky. Tuhost zajištěna monolitickým komunikačním jádrem a železobetonovou stěnou u jižní stěny. Fasáda: Sendvičové panely ve svislém uspořádání (šedá a oranžová barva). Fragmenty dokončené omítkou v antracitové barvě. Úprava terénu: Vnitřní komunikace, chodníky a parkovací stání. Venkovní osvětlení.', 'de': '5-stöckiges Selfstorage-Gebäude\nVolumen: 17.121 m³, Gebäudefläche: 911 m², 5 oberirdische Stockwerke. Monolithische Stahlbetonkonstruktion, fortschrittliche Zugangskontrollsysteme, Industrieaufzüge, befahrbare Entladezone.\nSpezifikation Nutzfläche (insgesamt): ca. 4.631 m², davon: • Mietfläche: 3.230,17 m² • Verkehrsfläche: 1.296,71 m² • Fläche der Technikräume: 44,88 m² • Büro- und Empfangsfläche: 59,28 m² Grundstücksfläche: 4.150,00 m² Zertifizierung: BREEAM (Very Good) Gebäudegrundriss: Gebäude auf fünfeckigem Grundriss (annahernd Rechteck mit Abschrägung), orientiert in Richtung SO und NW. Flachdach. Charakteristische Verglasung an der Fassade über vier Geschosse. Technische Infrastruktur: EE-Anlagen: Wärmepumpe, Photovoltaik. Unterirdischer Löschwassertank und Regenwasserrückhaltebecken. Umbau des bestehenden Wasserversorgungsnetzes. Konstruktion: Unterirdischer Teil: Monolithische Stahlbeton-Fundamentplatte. Oberirdischer Teil: 5-geschossig, Stahlbeton, in Stützen-Platten-Anordnung. Flache Decken mit lokalen Verstärkungen und Randträgern. Steifigkeit durch monolithischen Erschließungskern und Stahlbeton-Scheibe an der Südwand. Fassade: Sandwichpaneele in vertikaler Anordnung (grau und orange). Fragmente in anthrazitfarbenem Putz. Geländegestaltung: Innenstraßen, Gehwege und Parkplätze. Außenbeleuchtung.', 'en': '5-story self-storage building\nVolume: 17,121 m³, building area: 911 m², 5 above-ground floors. Monolithic reinforced concrete structure, advanced access control systems, industrial elevators, drive-in unloading zone.\nSpecification Usable area (total): approx. 4,631 m², including: • Rental area: 3,230.17 m² • Circulation area: 1,296.71 m² • Technical rooms area: 44.88 m² • Office and reception area: 59.28 m² Plot area: 4,150.00 m² Certification: BREEAM (Very Good) Building layout: A pentagonal building plan (close to a rectangle with a cut), oriented towards SE and NW. Flat roof. Characteristic glazing on the façade running through four storeys. Technical infrastructure: RES installations: Heat pump, photovoltaics. Underground fire water tank and rainwater retention tank. Reconstruction of the existing water supply network. Structure: Underground part: Monolithic reinforced concrete foundation slab. Above-ground part: 5-storey, reinforced concrete, in column-slab layout. Flat ceilings with local thickenings and edge beams. Stiffness provided by a monolithic communication core and a reinforced concrete diaphragm at the south wall. Façade: Sandwich panels in a vertical layout (grey and orange colour). Fragments finished with anthracite-coloured plaster. Land development: Internal roads, pavements and parking spaces. Outdoor lighting.', 'hu': '5 szintes öntároló épület\nTérfogata: 17 121 m³, épület területe: 911 m², 5 föld feletti szint. Monolit vasbeton szerkezet, korszerű beléptetőrendszerek, ipari liftek, behajtásos kirakodó zóna.\nSpecifikáció Hasznos alapterület (összesen): kb. 4 631 m², ebből: • Bérbe adható terület: 3 230,17 m² • Közlekedési terület: 1 296,71 m² • Műszaki helyiségek területe: 44,88 m² • Iroda és recepció területe: 59,28 m² Telek területe: 4 150,00 m² Tanúsítás: BREEAM (Very Good) Épület elrendezése: Ötszögletű alaprajzú épület (téglalaphoz közeli levágással), DK és ÉNy irányba tájolva. Lapos tető. Jellegzetes üvegezés a homlokzaton, négy szinten átívelve. Műszaki infrastruktúra: Megújuló energia berendezések: Hőszivattyú, napelemes rendszer. Földalatti tűzivíz-tartály és esővíz-visszatartó tartály. Meglévő vízellátó hálózat átépítése. Szerkezet: Földalatti rész: Monolit vasbeton alaplemez. Föld feletti rész: 5 szintes, vasbeton, oszlop-lemez elrendezésben. Lapos födémek helyi vastagításokkal és szélső gerendákkal. A merevséget monolitikus közlekedő mag és déli falnál lévő vasbeton fal biztosítja. Homlokzat: Szendvicspanelek függőleges elrendezésben (szürke és narancssárga szín). Töredékek antracit színű vakolattal. Telekrendezés: Belső utak, járdák és parkolóhelyek. Kültéri világítás.', 'sk': '5-poschodová budova s \u200b\u200bvlastným skladom\nObjem: 17 121 m³, zastavaná plocha: 911 m², 5 nadzemných podlaží. Monolitická železobetónová konštrukcia, pokročilé systémy kontroly prístupu, priemyselné výťahy, vjazdová vykladacia zóna.\nŠpecifikácia Úžitková plocha (spolu): cca 4 631 m², z toho: • Plocha na prenájom: 3 230,17 m² • Komunikačná plocha: 1 296,71 m² • Plocha technických miestností: 44,88 m² • Kancelársko-recepčná plocha: 59,28 m² Plocha pozemku: 4 150,00 m² Certifikácia: BREEAM (Very Good) Dispozícia budovy: Budova na päťuholníkovom pôdoryse (blízky obd�žniku so skosením), orientovaná smerom JV a SZ. Plochá strecha. Charakteristické presklenie na fasáde prebiehajúce cez štyri podlažia. Technická infraštruktúra: Inštalácie OZE: Tepelné čerpadlo, fotovoltika. Podzemný požiarny zásobník a retenčný zásobník na dažďovú vodu. Prestavba existujúcej vodovodnej siete. Konštrukcia: Podzemná časť: Monolitická železobetonová základová doska. Nadzemná časť: 5-podlažná, železobetonová, v stĺpovo-doskovom usporiadaní. Ploché stropy s lokálnymi zhrubnutiami a krajnými nosníkmi. Tuhosť zabezpečená monolitickým komunikačným jadrom a železobetónovou stenou pri južnej stene. Fasáda: Sendvičové panely vo zvislom usporiadaní (sivá a oranžová farba). Fragmenty dokončené omietkou v antracitovej farbe. Úprava terénu: Vnútorné komunikácie, chodníky a parkovacie miesta. Vonkajšie osvetlenie.'},
   't_s': {},
   't_t': {},
   'title': 'Stokado Self-Storage Kraków',
@@ -3039,85 +2669,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Užitková plocha: 1 468,70 m²\n'
-                'Výška haly: 8,72 m\n'
-                'Objem haly: 10 244 m³\n'
-                'Kancelářská část o ploše: 271,2 m²\n'
-                'Parkoviště a manipulační plochy\n'
-                'Požární nádrž (PPOŽ)\n'
-                'Rozšíření a výstavba technické infrastruktury:\n'
-                'Dešťová kanalizace s retenční nádrží\n'
-                'Sanitární kanalizace s čistírnou odpadních vod\n'
-                'Předizolovaná tepelná síť\n'
-                'Krajinářské úpravy okolí objektu\n'
-                'Konstrukce:\n'
-                'Přímé založení na patkových základech,\n'
-                'Konstrukce haly provedena v prefabrikované železobetonové technologii, střešní '
-                'vazníky předpjaté\n'
-                'Opláštění haly ze sendvičových panelů s jádrem ze skalní vlny',
-          'de': 'Nutzfläche: 1.468,70 m²\n'
-                'Hallenhöhe: 8,72 m\n'
-                'Hallen-Volumen: 10.244 m³\n'
-                'Bürofläche von: 271,2 m²\n'
-                'Parkplätze und Manövrierflächen\n'
-                'Löschwassertank (PPOŻ)\n'
-                'Erweiterung und Bau der technischen Infrastruktur:\n'
-                'Regenwasserkanalisation mit Rückhaltebecken\n'
-                'Schmutzwasserkanalisation mit Kläranlage\n'
-                'Vorgedämmtes Fernwärmenetz\n'
-                'Gestaltung der Außenanlagen rund um das Gebäude\n'
-                'Konstruktion:\n'
-                'Direkte Gründung auf Einzelfundamenten,\n'
-                'Hallenkonstruktion in Stahlbeton-Fertigteilbauweise, vorgespannte Dachbinder\n'
-                'Hallenverkleidung aus Sandwichpaneelen mit Kern aus Steinwolle',
-          'en': 'Usable area: 1,468.70 m²\n'
-                'Hall height: 8.72 m\n'
-                'Hall volume: 10,244 m³\n'
-                'Office area of: 271.2 m²\n'
-                'Parking and manoeuvring areas\n'
-                'Fire-water tank (PPOŻ)\n'
-                'Extension and construction of technical infrastructure:\n'
-                'Stormwater drainage with retention tank\n'
-                'Sanitary sewerage with wastewater treatment plant\n'
-                'Pre-insulated heating network\n'
-                'Landscaping of the area around the building\n'
-                'Structure:\n'
-                'Direct foundation on pad footings,\n'
-                'Hall structure made using precast reinforced concrete technology, prestressed '
-                'roof beams\n'
-                'Hall cladding made of sandwich panels with a rock-wool core',
-          'hu': 'Hasznos alapterület: 1 468,70 m²\n'
-                'Csarnokmagasság: 8,72 m\n'
-                'Csarnok térfogata: 10 244 m³\n'
-                'Irodai rész alapterülete: 271,2 m²\n'
-                'Parkolók és manőverező területek\n'
-                'Tűzivíztározó (PPOŻ)\n'
-                'A műszaki infrastruktúra bővítése és építése:\n'
-                'Csapadékvíz-csatorna visszatartó tározóval\n'
-                'Szennyvíz-csatorna szennyvíztisztítóval\n'
-                'Előszigetelt távhőhálózat\n'
-                'Az épület környezetének rendezése\n'
-                'Szerkezet:\n'
-                'Közvetlen alapozás pontalapokon,\n'
-                'A csarnok szerkezete előregyártott vasbeton technológiával készült, feszített '
-                'tetőgerendák\n'
-                'A csarnok burkolata kőzetgyapot magos szendvicspanelekből',
-          'sk': 'Úžitková plocha: 1 468,70 m²\n'
-                'Výška haly: 8,72 m\n'
-                'Objem haly: 10 244 m³\n'
-                'Kancelárska časť s plochou: 271,2 m²\n'
-                'Parkoviská a manipulačné plochy\n'
-                'Požiarna nádrž (PPOŽ)\n'
-                'Rozšírenie a výstavba technickej infraštruktúry:\n'
-                'Dažďová kanalizácia s retenčnou nádržou\n'
-                'Sanitárna kanalizácia s čistiarňou odpadových vôd\n'
-                'Preizolovaná tepelná sieť\n'
-                'Krajinné úpravy okolia objektu\n'
-                'Konštrukcia:\n'
-                'Priame založenie na pätkových základoch,\n'
-                'Konštrukcia haly vyhotovená v prefabrikovanej železobetónovej technológii, '
-                'strešné väzníky predpäté\n'
-                'Opláštenie haly zo sendvičových panelov s jadrom zo skalnej vlny'},
+  't_o': {'cs': 'Výrobní a skladová hala s kancelářskou plochou a podzemním zásobníkem s odpařovacím a odvodňovacím příkopem\nPlocha haly: 1 469 m² (objem: 10 244 m³), \u200b\u200bkancelářská plocha: 271 m², vnitřní instalace, vnější sítě, vnitřní komunikace a manévrovací plochy. Nádrž a příkop: Vybudování podzemní železobetonové retenční nádrže na dešťovou vodu s velkou kapacitou spolu s čerpací stanicí, odpařovací a drenážní příkop s vsakovacím systémem.\nUžitková plocha: 1 468,70 m²\nVýška haly: 8,72 m\nObjem haly: 10 244 m³\nKancelářská část o ploše: 271,2 m²\nParkoviště a manipulační plochy\nPožární nádrž (PPOŽ)\nRozšíření a výstavba technické infrastruktury:\nDešťová kanalizace s retenční nádrží\nSanitární kanalizace s čistírnou odpadních vod\nPředizolovaná tepelná síť\nKrajinářské úpravy okolí objektu\nKonstrukce:\nPřímé založení na patkových základech,\nKonstrukce haly provedena v prefabrikované železobetonové technologii, střešní vazníky předpjaté\nOpláštění haly ze sendvičových panelů s jádrem ze skalní vlny', 'de': 'Produktions- und Lagerhalle mit Bürobereich und unterirdischem Lagertank mit Verdunstungs- und Entwässerungsgraben\nHallenfläche: 1.469 m² (Volumen: 10.244 m³), \u200b\u200bBürofläche: 271 m², interne Installationen, externe Netzwerke, interne Straßen und Manöverflächen. Stausee und Graben: Bau eines unterirdischen Rückhaltebeckens aus Stahlbeton für Regenwasser mit großem Fassungsvermögen samt Pumpstation sowie eines Verdunstungs- und Entwässerungsgrabens mit Versickerungssystem.\nNutzfläche: 1.468,70 m²\nHallenhöhe: 8,72 m\nHallen-Volumen: 10.244 m³\nBürofläche von: 271,2 m²\nParkplätze und Manövrierflächen\nLöschwassertank (PPOŻ)\nErweiterung und Bau der technischen Infrastruktur:\nRegenwasserkanalisation mit Rückhaltebecken\nSchmutzwasserkanalisation mit Kläranlage\nVorgedämmtes Fernwärmenetz\nGestaltung der Außenanlagen rund um das Gebäude\nKonstruktion:\nDirekte Gründung auf Einzelfundamenten,\nHallenkonstruktion in Stahlbeton-Fertigteilbauweise, vorgespannte Dachbinder\nHallenverkleidung aus Sandwichpaneelen mit Kern aus Steinwolle', 'en': 'Production and warehouse hall with an office area and an underground storage tank with an evaporation and drainage ditch\nHall area: 1,469 m² (volume: 10,244 m³), \u200b\u200boffice area: 271 m², internal installations, external networks, internal roads and maneuvering areas. Reservoir and ditch: Construction of an underground reinforced concrete retention tank for rainwater with a large capacity, together with a pumping station, and an evaporation and drainage ditch with an infiltration system.\nUsable area: 1,468.70 m²\nHall height: 8.72 m\nHall volume: 10,244 m³\nOffice area of: 271.2 m²\nParking and manoeuvring areas\nFire-water tank (PPOŻ)\nExtension and construction of technical infrastructure:\nStormwater drainage with retention tank\nSanitary sewerage with wastewater treatment plant\nPre-insulated heating network\nLandscaping of the area around the building\nStructure:\nDirect foundation on pad footings,\nHall structure made using precast reinforced concrete technology, prestressed roof beams\nHall cladding made of sandwich panels with a rock-wool core', 'hu': 'Gyártó- és raktárcsarnok irodarésszel, földalatti tároló tartályral párologtató és vízelvezető árokkal\nCsarnok területe: 1.469 m² (térfogat: 10.244 m³), \u200b\u200birodaterület: 271 m², belső berendezések, külső hálózatok, belső utak és manőverező területek. Tározó és árok: Nagy kapacitású csapadékvíz földalatti vasbeton visszatartó tartály építése szivattyúteleppel együtt, párologtató és vízelvezető árok beszivárgó rendszerrel.\nHasznos alapterület: 1 468,70 m²\nCsarnokmagasság: 8,72 m\nCsarnok térfogata: 10 244 m³\nIrodai rész alapterülete: 271,2 m²\nParkolók és manőverező területek\nTűzivíztározó (PPOŻ)\nA műszaki infrastruktúra bővítése és építése:\nCsapadékvíz-csatorna visszatartó tározóval\nSzennyvíz-csatorna szennyvíztisztítóval\nElőszigetelt távhőhálózat\nAz épület környezetének rendezése\nSzerkezet:\nKözvetlen alapozás pontalapokon,\nA csarnok szerkezete előregyártott vasbeton technológiával készült, feszített tetőgerendák\nA csarnok burkolata kőzetgyapot magos szendvicspanelekből', 'sk': 'Výrobná a skladová hala s kancelárskym priestorom a podzemným zásobníkom s odparovacou a drenážnou priekopou\nPlocha haly: 1 469 m² (objem: 10 244 m³), \u200b\u200bkancelárska plocha: 271 m², vnútorné inštalácie, vonkajšie siete, vnútorné komunikácie a manévrovacie plochy. Nádrž a priekopa: Vybudovanie podzemnej železobetónovej retenčnej nádrže na dažďovú vodu s veľkým objemom spolu s čerpacou stanicou, odparovacou a drenážnou priekopou s vsakovacím systémom.\nÚžitková plocha: 1 468,70 m²\nVýška haly: 8,72 m\nObjem haly: 10 244 m³\nKancelárska časť s plochou: 271,2 m²\nParkoviská a manipulačné plochy\nPožiarna nádrž (PPOŽ)\nRozšírenie a výstavba technickej infraštruktúry:\nDažďová kanalizácia s retenčnou nádržou\nSanitárna kanalizácia s čistiarňou odpadových vôd\nPreizolovaná tepelná sieť\nKrajinné úpravy okolia objektu\nKonštrukcia:\nPriame založenie na pätkových základoch,\nKonštrukcia haly vyhotovená v prefabrikovanej železobetónovej technológii, strešné väzníky predpäté\nOpláštenie haly zo sendvičových panelov s jadrom zo skalnej vlny'},
   't_s': {},
   't_t': {},
   'title': 'Fronton – Kraków',
@@ -3141,26 +2693,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Skladová hala v ocelové konstrukci\n'
-                'Opláštění ze sendvičových panelů\n'
-                'Plocha podlahy: přibližně 400,0 m²\n'
-                'Přímé založení s lokální výměnou zeminy',
-          'de': 'Lagerhalle in Stahlkonstruktion\n'
-                'Verkleidung aus Sandwichpaneelen\n'
-                'Bodenfläche: ca. 400,0 m²\n'
-                'Direkte Gründung mit lokalem Bodenaustausch',
-          'en': 'Warehouse hall in steel structure\n'
-                'Cladding made of sandwich panels\n'
-                'Floor area: approximately 400.0 m²\n'
-                'Direct foundation with localised soil replacement',
-          'hu': 'Raktárcsarnok acélszerkezettel\n'
-                'Burkolat szendvicspanelekből\n'
-                'Padlófelület: kb. 400,0 m²\n'
-                'Közvetlen alapozás helyi talajcserével',
-          'sk': 'Skladová hala v oceľovej konštrukcii\n'
-                'Opláštenie zo sendvičových panelov\n'
-                'Plocha podlahy: približne 400,0 m²\n'
-                'Priame založenie s lokálnou výmenou zeminy'},
+  't_o': {'cs': 'Rozšíření historického pivovaru o sklad a výrobní halu\nFloor area: approx. 400 m², ocelová konstrukce umístěná přímo s místní výměnou zeminy, práce prováděné v přísné ochranné zóně.\nSkladová hala v ocelové konstrukci\nOpláštění ze sendvičových panelů\nPlocha podlahy: přibližně 400,0 m²\nPřímé založení s lokální výměnou zeminy', 'de': 'Erweiterung der historischen Brauerei um eine Lager- und Produktionshalle\nGrundfläche: ca. 400 m², Stahlkonstruktion direkt mit lokalem Bodenersatz platziert, Arbeiten in einer strengen Denkmalschutzzone durchgeführt.\nLagerhalle in Stahlkonstruktion\nVerkleidung aus Sandwichpaneelen\nBodenfläche: ca. 400,0 m²\nDirekte Gründung mit lokalem Bodenaustausch', 'en': 'Expansion of the historic brewery with a warehouse and production hall\nFloor area: approx. 400 m², steel structure placed directly with local soil replacement, works carried out in a strict conservation protection zone.\nWarehouse hall in steel structure\nCladding made of sandwich panels\nFloor area: approximately 400.0 m²\nDirect foundation with localised soil replacement', 'hu': 'A történelmi sörfőzde bővítése raktárral és gyártócsarnokkal\nAlapterület: kb. 400 m²-es, közvetlenül elhelyezett acélszerkezet helyi talajcserével, szigorú természetvédelmi övezetben végzett munkák.\nRaktárcsarnok acélszerkezettel\nBurkolat szendvicspanelekből\nPadlófelület: kb. 400,0 m²\nKözvetlen alapozás helyi talajcserével', 'sk': 'Rozšírenie historického pivovaru o sklad a výrobnú halu\nPodlahová plocha: cca. 400 m², oceľová konštrukcia umiestnená priamo s lokálnou výmenou pôdy, práce vykonávané v zóne prísnej ochrany.\nSkladová hala v oceľovej konštrukcii\nOpláštenie zo sendvičových panelov\nPlocha podlahy: približne 400,0 m²\nPriame založenie s lokálnou výmenou zeminy'},
   't_s': {},
   't_t': {},
   'title': 'Browar Zamkowy - Racibórz',
@@ -3184,95 +2717,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Specifikace\n'
-                'Užitková plocha: 6 818,21 m²\n'
-                'Plocha pozemku: 9 142,00 m²\n'
-                'Certifikace: BREEAM (Very Good)\n'
-                'Dispozice budovy: 3 nadzemní podlaží a podsklepení, budova krytá plochou '
-                'střechou\n'
-                'Určení a využití pozemku:\n'
-                'Služební objekt typu self-storage (pronájem skladovacích prostor individuálním '
-                'zákazníkům)\n'
-                'Činnost podporující moderní vícepodlažní bytovou výstavbu (dodatečný skladovací '
-                'prostor pro obyvatele sídlišť)\n'
-                'Konstrukce:\n'
-                'Železobetonová sloupová konstrukce\n'
-                'Prostorová tuhost zajištěna železobetonovými jádry schodišť a šachtami výtahů s '
-                'požárně odolnými stěnami\n'
-                'Fasáda:\n'
-                'Hlavní část fasády provedena ze sendvičových panelů s výplní z minerální vlny\n'
-                'Systémové oplechování, těsnění a montážní prvky',
-          'de': 'Spezifikation\n'
-                'Nutzfläche: 6.818,21 m²\n'
-                'Grundstücksfläche: 9.142,00 m²\n'
-                'Zertifizierung: BREEAM (Very Good)\n'
-                'Gebäudestruktur: 3 Obergeschosse sowie ein Untergeschoss, Flachdach\n'
-                'Nutzung und Erschließung:\n'
-                'Gewerbliche Anlage vom Typ Self-Storage (Vermietung von Lagerflächen an '
-                'Privatkunden)\n'
-                'Unterstützung des modernen Geschosswohnungsbaus (zusätzliche Lagerfläche für die '
-                'Bewohner der Siedlungen)\n'
-                'Konstruktion:\n'
-                'Stützenbauweise in Stahlbeton\n'
-                'Räumliche Steifigkeit durch Stahlbeton-Treppenhauskerne und Aufzugsschächte mit '
-                'Brandwänden\n'
-                'Fassade:\n'
-                'Hauptteil der Fassade aus Sandwichpaneelen mit Mineralwollkern\n'
-                'System-Verblechungen, Dichtungen und Montageelemente',
-          'en': 'Specification\n'
-                'Usable area: 6,818.21 m²\n'
-                'Land area: 9,142.00 m²\n'
-                'Certification: BREEAM (Very Good)\n'
-                'Building layout: 3 above-ground storeys plus a basement, building covered by a '
-                'flat roof\n'
-                'Purpose and site development:\n'
-                'Service facility of the self-storage type (rental of storage space to individual '
-                'customers)\n'
-                'Operations supporting modern multi-family housing development (additional storage '
-                'space for residents of the estates)\n'
-                'Structure:\n'
-                'Reinforced concrete column structure\n'
-                'Spatial stiffness provided by reinforced concrete stairwell cores and lift shafts '
-                'with fire-rated walls\n'
-                'Façade:\n'
-                'Main part of the façade made of sandwich panels with mineral wool core\n'
-                'System flashings, sealants and assembly components',
-          'hu': 'Specifikáció\n'
-                'Hasznos alapterület: 6 818,21 m²\n'
-                'Telek területe: 9 142,00 m²\n'
-                'Tanúsítás: BREEAM (Very Good)\n'
-                'Épület elrendezése: 3 föld feletti szint és pinceszint, lapostetős épület\n'
-                'Rendeltetés és telekhasználat:\n'
-                'Önkiszolgáló raktár (self-storage) típusú szolgáltató létesítmény (tárolóterület '
-                'bérbeadása magánszemélyeknek)\n'
-                'A modern többlakásos lakóépületeket kiegészítő tevékenység (kiegészítő '
-                'tárolóterület a lakótelepi lakók számára)\n'
-                'Szerkezet:\n'
-                'Vasbeton pillérvázas szerkezet\n'
-                'Térbeli merevséget a vasbeton lépcsőház-magok és a tűzgátló falú liftaknák '
-                'biztosítják\n'
-                'Homlokzat:\n'
-                'A homlokzat fő része ásványgyapot kitöltésű szendvicspanelekből készül\n'
-                'Rendszer-illesztések, tömítések és szerelési elemek',
-          'sk': 'Špecifikácia\n'
-                'Úžitková plocha: 6 818,21 m²\n'
-                'Plocha pozemku: 9 142,00 m²\n'
-                'Certifikácia: BREEAM (Very Good)\n'
-                'Dispozícia budovy: 3 nadzemné podlažia a podpivničenie, budova krytá plochou '
-                'strechou\n'
-                'Určenie a využitie pozemku:\n'
-                'Služobný objekt typu self-storage (prenájom skladovacích priestorov individuálnym '
-                'zákazníkom)\n'
-                'Činnosť podporujúca modernú viacpodlažnú bytovú výstavbu (dodatočný skladovací '
-                'priestor pre obyvateľov sídlisk)\n'
-                'Konštrukcia:\n'
-                'Železobetónová stĺpová konštrukcia\n'
-                'Priestorová tuhosť zabezpečená železobetónovými jadrami schodísk a šachtami '
-                'výťahov s požiarne odolnými stenami\n'
-                'Fasáda:\n'
-                'Hlavná časť fasády vyhotovená zo sendvičových panelov s výplňou z minerálnej '
-                'vlny\n'
-                'Systémové oplechovanie, tesnenia a montážne prvky'},
+  't_o': {'cs': '4patrová budova s \u200b\u200bvlastním skladem s garážemi\n4 nadzemní podlaží se skladovými boxy, garáže v přízemí a suterénu, velkokapacitní nákladní a osobní výtahy, systém kontroly vstupu.\nSpecifikace\nUžitková plocha: 6 818,21 m²\nPlocha pozemku: 9 142,00 m²\nCertifikace: BREEAM (Very Good)\nDispozice budovy: 3 nadzemní podlaží a podsklepení, budova krytá plochou střechou\nUrčení a využití pozemku:\nSlužební objekt typu self-storage (pronájem skladovacích prostor individuálním zákazníkům)\nČinnost podporující moderní vícepodlažní bytovou výstavbu (dodatečný skladovací prostor pro obyvatele sídlišť)\nKonstrukce:\nŽelezobetonová sloupová konstrukce\nProstorová tuhost zajištěna železobetonovými jádry schodišť a šachtami výtahů s požárně odolnými stěnami\nFasáda:\nHlavní část fasády provedena ze sendvičových panelů s výplní z minerální vlny\nSystémové oplechování, těsnění a montážní prvky', 'de': '4-stöckiges Selfstorage-Gebäude mit Garagen\n4 oberirdische Etagen mit Lagerboxen, Garagen im Erdgeschoss und Keller, leistungsstarke Lasten- und Personenaufzüge, Zugangskontrollsystem.\nSpezifikation\nNutzfläche: 6.818,21 m²\nGrundstücksfläche: 9.142,00 m²\nZertifizierung: BREEAM (Very Good)\nGebäudestruktur: 3 Obergeschosse sowie ein Untergeschoss, Flachdach\nNutzung und Erschließung:\nGewerbliche Anlage vom Typ Self-Storage (Vermietung von Lagerflächen an Privatkunden)\nUnterstützung des modernen Geschosswohnungsbaus (zusätzliche Lagerfläche für die Bewohner der Siedlungen)\nKonstruktion:\nStützenbauweise in Stahlbeton\nRäumliche Steifigkeit durch Stahlbeton-Treppenhauskerne und Aufzugsschächte mit Brandwänden\nFassade:\nHauptteil der Fassade aus Sandwichpaneelen mit Mineralwollkern\nSystem-Verblechungen, Dichtungen und Montageelemente', 'en': '4-story self-storage building with garages\n4 above-ground floors with storage boxes, garages on the ground floor and basement, high-capacity freight and passenger elevators, access control system.\nSpecification\nUsable area: 6,818.21 m²\nLand area: 9,142.00 m²\nCertification: BREEAM (Very Good)\nBuilding layout: 3 above-ground storeys plus a basement, building covered by a flat roof\nPurpose and site development:\nService facility of the self-storage type (rental of storage space to individual customers)\nOperations supporting modern multi-family housing development (additional storage space for residents of the estates)\nStructure:\nReinforced concrete column structure\nSpatial stiffness provided by reinforced concrete stairwell cores and lift shafts with fire-rated walls\nFaçade:\nMain part of the façade made of sandwich panels with mineral wool core\nSystem flashings, sealants and assembly components', 'hu': '4 szintes öntároló épület garázzsal\n4 földszint feletti tároló boxokkal, földszinten és pincében garázsok, nagy kapacitású teher- és személylift, beléptető rendszer.\nSpecifikáció\nHasznos alapterület: 6 818,21 m²\nTelek területe: 9 142,00 m²\nTanúsítás: BREEAM (Very Good)\nÉpület elrendezése: 3 föld feletti szint és pinceszint, lapostetős épület\nRendeltetés és telekhasználat:\nÖnkiszolgáló raktár (self-storage) típusú szolgáltató létesítmény (tárolóterület bérbeadása magánszemélyeknek)\nA modern többlakásos lakóépületeket kiegészítő tevékenység (kiegészítő tárolóterület a lakótelepi lakók számára)\nSzerkezet:\nVasbeton pillérvázas szerkezet\nTérbeli merevséget a vasbeton lépcsőház-magok és a tűzgátló falú liftaknák biztosítják\nHomlokzat:\nA homlokzat fő része ásványgyapot kitöltésű szendvicspanelekből készül\nRendszer-illesztések, tömítések és szerelési elemek', 'sk': '4-poschodová budova s \u200b\u200bvlastným skladom s garážami\n4 nadzemné podlažia so skladovými boxmi, garáže na prízemí a suteréne, veľkokapacitné nákladné a osobné výťahy, systém kontroly vstupu.\nŠpecifikácia\nÚžitková plocha: 6 818,21 m²\nPlocha pozemku: 9 142,00 m²\nCertifikácia: BREEAM (Very Good)\nDispozícia budovy: 3 nadzemné podlažia a podpivničenie, budova krytá plochou strechou\nUrčenie a využitie pozemku:\nSlužobný objekt typu self-storage (prenájom skladovacích priestorov individuálnym zákazníkom)\nČinnosť podporujúca modernú viacpodlažnú bytovú výstavbu (dodatočný skladovací priestor pre obyvateľov sídlisk)\nKonštrukcia:\nŽelezobetónová stĺpová konštrukcia\nPriestorová tuhosť zabezpečená železobetónovými jadrami schodísk a šachtami výťahov s požiarne odolnými stenami\nFasáda:\nHlavná časť fasády vyhotovená zo sendvičových panelov s výplňou z minerálnej vlny\nSystémové oplechovanie, tesnenia a montážne prvky'},
   't_s': {},
   't_t': {},
   'title': 'Stokado Self-Storage Warszawa Bemowo',
@@ -3299,36 +2744,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Užitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 m³ Požární zatížení '
-                'nepřekračující 500 MJ/m² Dvoupodlažní kancelářská budova o ploše 600 m² '
-                'Parkoviště a manévrovací plochy Úprava terénu kolem objektu Konstrukce: založení '
-                'přímo na základové desce, železobetonová v technologii vodostavebního betonu; '
-                'nosná konstrukce objektu „smíšená" (prefabrikované betonové sloupy, ocelová '
-                'konstrukce střechy)',
-          'de': 'Nutzfläche: 3.002 m² Hallenhöhe: 7,5 m Volumen: 19.300 m³ Brandlast, die 500 '
-                'MJ/m² nicht überschreitet Zweigeschossiges Bürogebäude mit einer Fläche von 600 '
-                'm² Parkplätze und Rangierflächen Gestaltung des Geländes um das Objekt '
-                'Konstruktion: Gründung direkt auf einer Fundamentplatte, Stahlbeton in '
-                'WU-Beton-Technologie; Tragkonstruktion des Objekts „gemischt" (vorgefertigte '
-                'Betonstützen, Stahltragwerk des Daches)',
-          'en': 'Usable area: 3,002 m² Hall height: 7.5 m Volume: 19,300 m³ Fire load not '
-                'exceeding 500 MJ/m² Two-storey office building with an area of 600 m² Parking '
-                'lots and manoeuvring areas Land development around the facility Structure: '
-                'foundation directly on a foundation slab, reinforced concrete in waterproof '
-                'concrete technology; load-bearing structure of the facility is "mixed" '
-                '(prefabricated concrete columns, steel roof structure)',
-          'hu': 'Hasznos alapterület: 3002 m² Csarnok magassága: 7,5 m Térfogat: 19 300 m³ '
-                'Tűzterhelés, nem haladja meg az 500 MJ/m²-t Kétszintes irodaépület 600 m² '
-                'alapterülettel Parkolók és manőverezési területek A telek rendezése az objektum '
-                'körül Szerkezet: alapozás közvetlenül alaplemezre, vasbeton vízzáró beton '
-                'technológiával; az objektum teherhordó szerkezete „vegyes" (előregyártott '
-                'betonoszlopok, acél tetőszerkezet)',
-          'sk': 'Úžitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 m³ Požiarne '
-                'zaťaženie neprekračujúce 500 MJ/m² Dvojpodlažná kancelárska budova s plochou 600 '
-                'm² Parkoviská a manévrovacie plochy Úprava terénu okolo objektu Konštrukcia: '
-                'založenie priamo na základovej doske, železobetónová v technológii vodostavebného '
-                'betónu; nosná konštrukcia objektu „zmiešaná" (prefabrikované betónové stĺpy, '
-                'oceľová konštrukcia strechy)'},
+  't_o': {'cs': 'Závod na výrobu a skladování komponentů z optických vláken (I. a II. etapa)\nVýrobní hala: 3 002 m² (objem: 19 300 m³, výška: 7,5 m), dvoupatrová kancelářská budova: 600 m² s laboratorním zázemím. Založení na základové desce z vodonepropustného betonu W8, vlastní protipožární a retenční nádrže, místní čistírna odpadních vod, parkoviště a manévrovací plochy.\nUžitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 m³ Požární zatížení nepřekračující 500 MJ/m² Dvoupodlažní kancelářská budova o ploše 600 m² Parkoviště a manévrovací plochy Úprava terénu kolem objektu Konstrukce: založení přímo na základové desce, železobetonová v technologii vodostavebního betonu; nosná konstrukce objektu „smíšená" (prefabrikované betonové sloupy, ocelová konstrukce střechy)', 'de': 'Produktions- und Lageranlage für Glasfaserkomponenten (Stufe I und II)\nProduktionshalle: 3.002 m² (Volumen: 19.300 m³, Höhe: 7,5 m), zweistöckiges Bürogebäude: 600 m² mit Laborräumen. Gründung auf einer Fundamentplatte aus WU-Beton W8, eigene Brandschutz- und Rückhaltebecken, örtliche Kläranlage, Parkplätze und Rollflächen.\nNutzfläche: 3.002 m² Hallenhöhe: 7,5 m Volumen: 19.300 m³ Brandlast, die 500 MJ/m² nicht überschreitet Zweigeschossiges Bürogebäude mit einer Fläche von 600 m² Parkplätze und Rangierflächen Gestaltung des Geländes um das Objekt Konstruktion: Gründung direkt auf einer Fundamentplatte, Stahlbeton in WU-Beton-Technologie; Tragkonstruktion des Objekts „gemischt" (vorgefertigte Betonstützen, Stahltragwerk des Daches)', 'en': 'Fiber optic components production and storage plant (Stage I and II)\nProduction hall: 3,002 m² (volume: 19,300 m³, height: 7.5 m), two-story office building: 600 m² with laboratory facilities. Foundation on a foundation slab made of waterproof concrete W8, own fire protection and retention tanks, local sewage treatment plant, parking lots and maneuvering areas.\nUsable area: 3,002 m² Hall height: 7.5 m Volume: 19,300 m³ Fire load not exceeding 500 MJ/m² Two-storey office building with an area of 600 m² Parking lots and manoeuvring areas Land development around the facility Structure: foundation directly on a foundation slab, reinforced concrete in waterproof concrete technology; load-bearing structure of the facility is "mixed" (prefabricated concrete columns, steel roof structure)', 'hu': 'Száloptikai alkatrészeket gyártó és tároló üzem (I. és II. szakasz)\nGyártócsarnok: 3002 m² (térfogat: 19 300 m³, magasság: 7,5 m), kétszintes irodaház: 600 m² laboratóriumi felszereléssel. Alapozás W8 vízálló betonból készült alaplapra, saját tűzvédelmi és visszatartó tartályok, helyi szennyvíztisztító telep, parkolók és manőverező területek.\nHasznos alapterület: 3002 m² Csarnok magassága: 7,5 m Térfogat: 19 300 m³ Tűzterhelés, nem haladja meg az 500 MJ/m²-t Kétszintes irodaépület 600 m² alapterülettel Parkolók és manőverezési területek A telek rendezése az objektum körül Szerkezet: alapozás közvetlenül alaplemezre, vasbeton vízzáró beton technológiával; az objektum teherhordó szerkezete „vegyes" (előregyártott betonoszlopok, acél tetőszerkezet)', 'sk': 'Závod na výrobu a skladovanie komponentov z optických vlákien (I. a II. etapa)\nVýrobná hala: 3 002 m² (objem: 19 300 m³, výška: 7,5 m), dvojposchodová administratívna budova: 600 m² s laboratórnym zázemím. Založenie na základovej doske z vodonepriepustného betónu W8, vlastné protipožiarne a retenčné nádrže, miestna čistička odpadových vôd, parkoviská a manévrovacie plochy.\nÚžitková plocha: 3002 m² Výška haly: 7,5 m Objem haly: 19 300 m³ Požiarne zaťaženie neprekračujúce 500 MJ/m² Dvojpodlažná kancelárska budova s plochou 600 m² Parkoviská a manévrovacie plochy Úprava terénu okolo objektu Konštrukcia: založenie priamo na základovej doske, železobetónová v technológii vodostavebného betónu; nosná konštrukcia objektu „zmiešaná" (prefabrikované betónové stĺpy, oceľová konštrukcia strechy)'},
   't_s': {},
   't_t': {},
   'title': 'Huber + Suhner – Pisary',
@@ -3349,42 +2765,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Konstrukce: výrobní budova v prefabrikované technologii; kancelářská budova '
-                'provedena v plném železobetonu. Fasáda: sendvičové panely v průmyslové části; '
-                'lehká mokrá technologie v kancelářské části. Střecha: výrobní hala: příhradové '
-                'vazníky, trapézový plech, izolace, membrána; kancelářská část: klasický plochý '
-                'střešní plášť, izolace, membrána. Interiéry: industriální, surové povrchové '
-                'úpravy, odhalené instalace, beton na stropech. Vytápění: technologie '
-                'teplovzdušného ofukování. Podlahy: slinutá dlažba a koberce ve vybraných '
-                'prostorech.',
-          'de': 'Konstruktion: Produktionsgebäude in Fertigteil-Bauweise; Bürogebäude in '
-                'Massiv-Stahlbetonbauweise. Fassade: Sandwichpaneele im industriellen Teil; '
-                'Leichtbau-Nassputz-Technologie im Büroteil. Dach: Produktionshalle: '
-                'Fachwerkbinder, Trapezblech, Dämmung, Membran; Büroteil: klassisches Flachdach, '
-                'Dämmung, Membran. Innenräume: industriell, rohe Oberflächen, sichtbare '
-                'Installationen, Beton an den Decken. Heizung: Luftumwälztechnik. Böden: '
-                'Feinsteinzeug und Teppichboden in ausgewählten Bereichen.',
-          'en': 'Structure: production building in precast technology; office building executed '
-                'entirely in reinforced concrete. Façade: sandwich panels on the industrial '
-                'section; lightweight-wet technology on the office section. Roof: production hall: '
-                'trusses, trapezoidal sheet, insulation, membrane; office section: classic flat '
-                'roof, insulation, membrane. Interiors: industrial, raw finishes, exposed '
-                'installations, concrete on ceilings. Heating: blown-air technology. Floors: '
-                'stoneware tiles and carpet in selected areas.',
-          'hu': 'Szerkezet: előre gyártott technológiájú gyártócsarnok; teljes vasbeton szerkezetű '
-                'irodaház. Homlokzat: szendvicspanelek az ipari részen; könnyű-nedves technológia '
-                'az irodai részen. Tető: gyártócsarnok: rácsos tartók, trapézlemez, szigetelés, '
-                'membrán; irodai rész: klasszikus lapostető, szigetelés, membrán. Belső terek: '
-                'ipari, nyers felületek, látható telepítések, beton a födémeken. Fűtés: befúvásos '
-                'technológia. Padlók: kőporcelán és szőnyegpadló a kiválasztott terekben.',
-          'sk': 'Konštrukcia: výrobná budova v prefabrikovanej technológii; kancelárska budova '
-                'realizovaná v plnom železobetóne. Fasáda: sendvičové panely v priemyselnej časti; '
-                'ľahká mokrá technológia v kancelárskej časti. Strecha: výrobná hala: priehradové '
-                'väzníky, trapézový plech, izolácia, membrána; kancelárska časť: klasický plochý '
-                'strešný plášť, izolácia, membrána. Interiéry: industriálne, surové povrchové '
-                'úpravy, odhalené inštalácie, betón na stropoch. Vykurovanie: technológia '
-                'teplovzdušného fúkania. Podlahy: slinutá dlažba a koberce vo vybraných '
-                'priestoroch.'},
+  't_o': {'cs': 'Výroba kancelářského nábytku a kancelářský komplex\nUžitná plocha: cca. 6 300 m². Dvoupodlažní výrobní a skladová hala a 3podlažní administrativní budova. Konstrukce z prefabrikovaných železobetonových a předpjatých betonových prvků, stropy z dutinových desek, fasáda z minerální vlny, sítě a terénní úpravy.\nKonstrukce: výrobní budova v prefabrikované technologii; kancelářská budova provedena v plném železobetonu. Fasáda: sendvičové panely v průmyslové části; lehká mokrá technologie v kancelářské části. Střecha: výrobní hala: příhradové vazníky, trapézový plech, izolace, membrána; kancelářská část: klasický plochý střešní plášť, izolace, membrána. Interiéry: industriální, surové povrchové úpravy, odhalené instalace, beton na stropech. Vytápění: technologie teplovzdušného ofukování. Podlahy: slinutá dlažba a koberce ve vybraných prostorech.', 'de': 'Büromöbelproduktion und Bürokomplex\nNutzfläche: ca. 6.300 m². Eine zweistöckige Produktions- und Lagerhalle und ein dreistöckiges Bürogebäude. Struktur aus vorgefertigten Stahl- und Spannbetonelementen, Decken aus Hohlkörperplatten, Fassade aus Mineralwolle, Netzwerke und Landschaftsgestaltung.\nKonstruktion: Produktionsgebäude in Fertigteil-Bauweise; Bürogebäude in Massiv-Stahlbetonbauweise. Fassade: Sandwichpaneele im industriellen Teil; Leichtbau-Nassputz-Technologie im Büroteil. Dach: Produktionshalle: Fachwerkbinder, Trapezblech, Dämmung, Membran; Büroteil: klassisches Flachdach, Dämmung, Membran. Innenräume: industriell, rohe Oberflächen, sichtbare Installationen, Beton an den Decken. Heizung: Luftumwälztechnik. Böden: Feinsteinzeug und Teppichboden in ausgewählten Bereichen.', 'en': 'Office furniture production and office complex\nUsable area: approx. 6,300 m². A two-story production and warehouse hall and a 3-story office building. Structure made of prefabricated reinforced and prestressed concrete elements, ceilings made of hollow core slabs, façade made of mineral wool, networks and landscaping.\nStructure: production building in precast technology; office building executed entirely in reinforced concrete. Façade: sandwich panels on the industrial section; lightweight-wet technology on the office section. Roof: production hall: trusses, trapezoidal sheet, insulation, membrane; office section: classic flat roof, insulation, membrane. Interiors: industrial, raw finishes, exposed installations, concrete on ceilings. Heating: blown-air technology. Floors: stoneware tiles and carpet in selected areas.', 'hu': 'Irodabútor gyártás és irodakomplexum\nFelhasználható terület: kb. 6300 m². Egy kétszintes termelő és raktárcsarnok és egy 3 szintes irodaház. Szerkezet előregyártott vasbeton és feszített beton elemekből, födém üreges födémből, homlokzat ásványgyapotból, hálózatok és tereprendezés.\nSzerkezet: előre gyártott technológiájú gyártócsarnok; teljes vasbeton szerkezetű irodaház. Homlokzat: szendvicspanelek az ipari részen; könnyű-nedves technológia az irodai részen. Tető: gyártócsarnok: rácsos tartók, trapézlemez, szigetelés, membrán; irodai rész: klasszikus lapostető, szigetelés, membrán. Belső terek: ipari, nyers felületek, látható telepítések, beton a födémeken. Fűtés: befúvásos technológia. Padlók: kőporcelán és szőnyegpadló a kiválasztott terekben.', 'sk': 'Výroba kancelárskeho nábytku a kancelársky komplex\nÚžitková plocha: cca. 6 300 m². Dvojposchodová výrobná a skladová hala a 3-poschodová administratívna budova. Konštrukcia z prefabrikovaných železobetónových a predpätých betónových prvkov, stropy z dutinových dosiek, fasáda z minerálnej vlny, siete a terénne úpravy.\nKonštrukcia: výrobná budova v prefabrikovanej technológii; kancelárska budova realizovaná v plnom železobetóne. Fasáda: sendvičové panely v priemyselnej časti; ľahká mokrá technológia v kancelárskej časti. Strecha: výrobná hala: priehradové väzníky, trapézový plech, izolácia, membrána; kancelárska časť: klasický plochý strešný plášť, izolácia, membrána. Interiéry: industriálne, surové povrchové úpravy, odhalené inštalácie, betón na stropoch. Vykurovanie: technológia teplovzdušného fúkania. Podlahy: slinutá dlažba a koberce vo vybraných priestoroch.'},
   't_s': {},
   't_t': {},
   'title': 'Euronova – Kokotów, gm. Wieliczka',
@@ -3410,26 +2791,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Skladová plocha: 6 650 m². Sociální a kancelářská plocha: 550 m². Dopravní '
-                'řešení: 4 718 m². Přímé založení na zemině stabilizované cementem. Smíšená '
-                'konstrukce haly (železobetonové prefabrikované sloupy; ocelové vaznice a '
-                'průvlaky). Plášť stěn ze sendvičových panelů.',
-          'de': 'Lagerfläche: 6 650 m². Sozial- und Bürofläche: 550 m². Verkehrserschließung: 4 '
-                '718 m². Direkte Gründung auf zementstabilisiertem Boden. Gemischte '
-                'Hallenkonstruktion (Stahlbeton-Fertigteilstützen; Stahlbinder und Pfetten). '
-                'Wandverkleidung aus Sandwichpaneelen.',
-          'en': 'Warehouse area: 6 650 m². Welfare and office area: 550 m². Transport layout: 4 '
-                '718 m². Direct foundation on cement-stabilised ground. Mixed hall structure '
-                '(precast reinforced concrete columns; steel beams and purlins). Wall cladding '
-                'with sandwich panels.',
-          'hu': 'Raktárterület: 6 650 m². Szociális és irodai terület: 550 m². Közlekedési '
-                'kialakítás: 4 718 m². Közvetlen alapozás cementtel stabilizált talajon. Vegyes '
-                'csarnokszerkezet (előre gyártott vasbeton oszlopok; acél főtartók és szelemenek). '
-                'Falburkolat szendvicspanelekből.',
-          'sk': 'Skladová plocha: 6 650 m². Sociálna a kancelárska plocha: 550 m². Dopravné '
-                'riešenie: 4 718 m². Priame založenie na podloží stabilizovanom cementom. Zmiešaná '
-                'konštrukcia haly (železobetónové prefabrikované stĺpy; oceľové nosníky a '
-                'väznice). Plášť stien zo sendvičových panelov.'},
+  't_o': {'cs': 'Skladové a obchodní centrum s kancelářským zázemím\nUžitná plocha: 6 650 m² (včetně skladu, kanceláří: 550 m², silniční sítě a náměstí: 4 718 m²). Průmyslové podlahy, vychystávací a vykládací plocha, kancelářské zázemí vyššího standardu.\nSkladová plocha: 6 650 m². Sociální a kancelářská plocha: 550 m². Dopravní řešení: 4 718 m². Přímé založení na zemině stabilizované cementem. Smíšená konstrukce haly (železobetonové prefabrikované sloupy; ocelové vaznice a průvlaky). Plášť stěn ze sendvičových panelů.', 'de': 'Lager- und Handelszentrum mit Büroeinrichtungen\nNutzfläche: 6.650 m² (inkl. Lager, Büros: 550 m², Straßenanlage und Plätze: 4.718 m²). Industrieböden, Kommissionier- und Entladebereich, Büroräume mit höherem Standard.\nLagerfläche: 6 650 m². Sozial- und Bürofläche: 550 m². Verkehrserschließung: 4 718 m². Direkte Gründung auf zementstabilisiertem Boden. Gemischte Hallenkonstruktion (Stahlbeton-Fertigteilstützen; Stahlbinder und Pfetten). Wandverkleidung aus Sandwichpaneelen.', 'en': 'Warehouse and commercial center with office facilities\nUsable area: 6,650 m² (including warehouse, offices: 550 m², road system and squares: 4,718 m²). Industrial floors, picking and unloading area, office facilities of a higher standard.\nWarehouse area: 6 650 m². Welfare and office area: 550 m². Transport layout: 4 718 m². Direct foundation on cement-stabilised ground. Mixed hall structure (precast reinforced concrete columns; steel beams and purlins). Wall cladding with sandwich panels.', 'hu': 'Raktár és kereskedelmi központ irodai lehetőségekkel\nHasznos terület: 6.650 m² (beleértve a raktárt, irodákat: 550 m², útrendszert és tereket: 4.718 m²). Ipari padlók, komissiózó és kirakodó tér, magasabb színvonalú irodai létesítmények.\nRaktárterület: 6 650 m². Szociális és irodai terület: 550 m². Közlekedési kialakítás: 4 718 m². Közvetlen alapozás cementtel stabilizált talajon. Vegyes csarnokszerkezet (előre gyártott vasbeton oszlopok; acél főtartók és szelemenek). Falburkolat szendvicspanelekből.', 'sk': 'Skladové a obchodné centrum s kancelárskymi priestormi\nÚžitková plocha: 6 650 m² (vrátane skladu, kancelárií: 550 m², cestnej siete a námestí: 4 718 m²). Priemyselné podlahy, vychystávacia a vykladacia plocha, kancelárske priestory vyššieho štandardu.\nSkladová plocha: 6 650 m². Sociálna a kancelárska plocha: 550 m². Dopravné riešenie: 4 718 m². Priame založenie na podloží stabilizovanom cementom. Zmiešaná konštrukcia haly (železobetónové prefabrikované stĺpy; oceľové nosníky a väznice). Plášť stien zo sendvičových panelov.'},
   't_s': {},
   't_t': {},
   'title': 'Euro-Trade - Modlnica',
@@ -3447,48 +2809,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba Skladu Aromatů s technickou a dopravní infrastrukturou v areálu Lech '
-                'Browary Wielkopolski pro Kompania Piwowarska.\n'
-                '\n'
-                '•  Hala vybavená pokročilými sanitárními, elektrickými a technickými '
-                'instalacemi \n'
-                '•  Úprava území včetně přestavby stávající infrastruktury \n'
-                '•  Práce probíhající ve vysokém režimu BOZP v areálu fungujícího průmyslového '
-                'závodu \n'
-                '•  Zastavěná plocha budovy 722 m²',
-          'de': 'Bau des Aromen-Lagers mit technischer und Straßeninfrastruktur auf dem Gelände '
-                'von Lech Browary Wielkopolski für Kompania Piwowarska.\n'
-                '\n'
-                '•  Halle mit fortschrittlichen Sanitär-, Elektro- und technischen '
-                'Installationen \n'
-                '•  Geländegestaltung einschließlich Umbau der bestehenden Infrastruktur \n'
-                '•  Arbeiten unter strengen Arbeitsschutzauflagen auf dem Gelände eines in Betrieb '
-                'befindlichen Industrieunternehmens \n'
-                '•  Grundstücksfläche des Gebäudes: 722 m²',
-          'en': 'Construction of the Aromatics Warehouse with technical and road infrastructure on '
-                'the premises of Lech Browary Wielkopolski for Kompania Piwowarska.\n'
-                '\n'
-                '•  Hall equipped with advanced sanitary, electrical and technical installations \n'
-                '•  Site development including reconstruction of the existing infrastructure \n'
-                '•  Work carried out under strict H&S standards on the premises of an operating '
-                'industrial facility \n'
-                '•  Building area: 722 m²',
-          'hu': 'Az Aromaraktár építése műszaki és közlekedési infrastruktúrával a Lech Browary '
-                'Wielkopolski területén, a Kompania Piwowarska számára.\n'
-                '\n'
-                '•  Fejlett higiéniai, elektromos és műszaki telepítésekkel felszerelt csarnok \n'
-                '•  Területrendezés a meglévő infrastruktúra átépítésével együtt \n'
-                '•  Munkavégzés szigorú munkavédelmi előírások mellett egy működő ipari üzem '
-                'területén \n'
-                '•  Beépített terület: 722 m²',
-          'sk': 'Výstavba Skladu Aromatov s technickou a dopravnou infraštruktúrou v areáli Lech '
-                'Browary Wielkopolski pre Kompania Piwowarska.\n'
-                '\n'
-                '•  Hala vybavená pokročilými sanitárnymi, elektrickými a technickými '
-                'inštaláciami \n'
-                '•  Úprava územia vrátane prestavby existujúcej infraštruktúry \n'
-                '•  Práca vo vysokom režime BOZP v areáli fungujúceho priemyselného závodu \n'
-                '•  Zastavaná plocha budovy 722 m²'},
+  't_o': {'cs': 'Specializovaná hala pro skladování aroma\nPlocha skladové haly: 613 m², silniční síť: 722 m². Sklad přizpůsobený přísným teplotním podmínkám pro skladování pivních aromat, chemicky odolné podlahy, chladicí a ventilační zařízení.\nVýstavba Skladu Aromatů s technickou a dopravní infrastrukturou v areálu Lech Browary Wielkopolski pro Kompania Piwowarska.\n\n•  Hala vybavená pokročilými sanitárními, elektrickými a technickými instalacemi \n•  Úprava území včetně přestavby stávající infrastruktury \n•  Práce probíhající ve vysokém režimu BOZP v areálu fungujícího průmyslového závodu \n•  Zastavěná plocha budovy 722 m²', 'de': 'Spezialisierte Aromalagerhalle\nFläche der Lagerhalle: 613 m², Straßenanlage: 722 m². An strenge Temperaturbedingungen angepasstes Lager für die Lagerung von Bieraromen, chemisch beständige Böden, Kühl- und Lüftungsanlagen.\nBau des Aromen-Lagers mit technischer und Straßeninfrastruktur auf dem Gelände von Lech Browary Wielkopolski für Kompania Piwowarska.\n\n•  Halle mit fortschrittlichen Sanitär-, Elektro- und technischen Installationen \n•  Geländegestaltung einschließlich Umbau der bestehenden Infrastruktur \n•  Arbeiten unter strengen Arbeitsschutzauflagen auf dem Gelände eines in Betrieb befindlichen Industrieunternehmens \n•  Grundstücksfläche des Gebäudes: 722 m²', 'en': 'Specialized aroma storage hall\nArea of \u200b\u200bthe warehouse hall: 613 m², road system: 722 m². Warehouse adapted to rigorous temperature conditions for storing beer aromas, chemically resistant floors, refrigeration and ventilation installations.\nConstruction of the Aromatics Warehouse with technical and road infrastructure on the premises of Lech Browary Wielkopolski for Kompania Piwowarska.\n\n•  Hall equipped with advanced sanitary, electrical and technical installations \n•  Site development including reconstruction of the existing infrastructure \n•  Work carried out under strict H&S standards on the premises of an operating industrial facility \n•  Building area: 722 m²', 'hu': 'Speciális aromatároló csarnok\nRaktárcsarnok területe: 613 m², úthálózat: 722 m². Szigorú hőmérsékleti feltételekhez igazított raktár söraromák, vegyszerálló padlók, hűtő- és szellőzőberendezések tárolására.\nAz Aromaraktár építése műszaki és közlekedési infrastruktúrával a Lech Browary Wielkopolski területén, a Kompania Piwowarska számára.\n\n•  Fejlett higiéniai, elektromos és műszaki telepítésekkel felszerelt csarnok \n•  Területrendezés a meglévő infrastruktúra átépítésével együtt \n•  Munkavégzés szigorú munkavédelmi előírások mellett egy működő ipari üzem területén \n•  Beépített terület: 722 m²', 'sk': 'Špecializovaná hala na skladovanie aróm\nPlocha skladovej haly: 613 m², cestný systém: 722 m². Sklad prispôsobený náročným teplotným podmienkam na skladovanie pivných aróm, chemicky odolné podlahy, chladiace a ventilačné zariadenia.\nVýstavba Skladu Aromatov s technickou a dopravnou infraštruktúrou v areáli Lech Browary Wielkopolski pre Kompania Piwowarska.\n\n•  Hala vybavená pokročilými sanitárnymi, elektrickými a technickými inštaláciami \n•  Úprava územia vrátane prestavby existujúcej infraštruktúry \n•  Práca vo vysokom režime BOZP v areáli fungujúceho priemyselného závodu \n•  Zastavaná plocha budovy 722 m²'},
   't_s': {},
   't_t': {},
   'title': 'Browar Lech - Poznań',
@@ -3509,31 +2830,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výrobně-skladovací plocha: 5 331,79 m². Plocha zpevnění – dopravní řešení: '
-                'přibližně 18 000 m². Konstrukce: Objekt na přímém založení. Smíšená '
-                'železobeton-ocelová konstrukce. Plášť v technologii sendvičových panelů. Střecha '
-                'v ocelové konstrukci s krytinou z minerální vlny a PVC membrány. Objekt dokončený '
-                'dle standardu Uživatele a předaný do užívání.',
-          'de': 'Produktions- und Lagerfläche: 5.331,79 m². Befestigte Fläche – '
-                'Verkehrserschließung: ca. 18 000 m². Konstruktion: Gebäude auf direkter Gründung. '
-                'Gemischte Stahlbeton-Stahl-Konstruktion. Sandwichpaneel-Hülle. '
-                'Stahldachkonstruktion mit Mineralwolldämmung und PVC-Membran. Gebäude nach dem '
-                'Standard des Nutzers fertiggestellt und in Betrieb genommen.',
-          'en': 'Production and warehouse area: 5,331.79 m². Hardstand area – transport layout: '
-                'approx. 18 000 m². Structure: Building on a direct foundation. Mixed reinforced '
-                'concrete and steel structure. Sandwich panel envelope. Steel roof structure '
-                "covered with mineral wool and PVC membrane. Building finished to the User's "
-                'standard and commissioned.',
-          'hu': 'Gyártási és raktározási terület: 5 331,79 m². Burkolt felület – közlekedési '
-                'kialakítás: kb. 18 000 m². Szerkezet: Az objektum közvetlen alapozású. Vegyes '
-                'vasbeton-acél szerkezet. Szendvicspanel burkolat. Acél tetőszerkezet ásványgyapot '
-                'és PVC membrán szigeteléssel. Az objektum a Használó szabványa szerint '
-                'kivitelezve és átadva.',
-          'sk': 'Výrobná a skladová plocha: 5 331,79 m². Plocha spevnenia – dopravné riešenie: '
-                'približne 18 000 m². Konštrukcia: Objekt na priamom založení. Zmiešaná '
-                'železobetónovo-oceľová konštrukcia. Plášť v technológii sendvičových panelov. '
-                'Strecha v oceľovej konštrukcii s krytinou z minerálnej vlny a PVC membrány. '
-                'Objekt dokončený podľa štandardu Užívateľa a odovzdaný do užívania.'},
+  't_o': {'cs': 'Skladové a logistické centrum s kancelářským zázemím\nSkladová a logistická plocha: 5 332 m², reprezentativní kancelář a společenská plocha: 968 m², komunikační systém a manévrovací plochy TIR: cca. 18 000 m². Smíšená železobetonová a ocelová konstrukce, zóny nakládacího doku, strážnice, automatické vjezdové brány, čerpací stanice s protipožární nádrží.\nVýrobně-skladovací plocha: 5 331,79 m². Plocha zpevnění – dopravní řešení: přibližně 18 000 m². Konstrukce: Objekt na přímém založení. Smíšená železobeton-ocelová konstrukce. Plášť v technologii sendvičových panelů. Střecha v ocelové konstrukci s krytinou z minerální vlny a PVC membrány. Objekt dokončený dle standardu Uživatele a předaný do užívání.', 'de': 'Lager- und Logistikzentrum mit Büroräumen\nLager- und Logistikfläche: 5.332 m², Repräsentanz- und Sozialfläche: 968 m², Kommunikationsanlage und TIR-Manöverflächen: ca. 18.000 m². Mischkonstruktion aus Stahlbeton und Stahl, Verladezonen, Wachhaus, automatische Eingangstore, Pumpenraum mit Brandschutztank.\nProduktions- und Lagerfläche: 5.331,79 m². Befestigte Fläche – Verkehrserschließung: ca. 18 000 m². Konstruktion: Gebäude auf direkter Gründung. Gemischte Stahlbeton-Stahl-Konstruktion. Sandwichpaneel-Hülle. Stahldachkonstruktion mit Mineralwolldämmung und PVC-Membran. Gebäude nach dem Standard des Nutzers fertiggestellt und in Betrieb genommen.', 'en': "Warehouse and logistics center with office facilities\nWarehouse and logistics area: 5,332 m², representative office and social area: 968 m², communication system and TIR maneuvering areas: approx. 18,000 m². Mixed reinforced concrete and steel structure, loading dock zones, guardhouse, automatic entrance gates, pump room with a fire protection tank.\nProduction and warehouse area: 5,331.79 m². Hardstand area – transport layout: approx. 18 000 m². Structure: Building on a direct foundation. Mixed reinforced concrete and steel structure. Sandwich panel envelope. Steel roof structure covered with mineral wool and PVC membrane. Building finished to the User's standard and commissioned.", 'hu': 'Raktár és logisztikai központ irodai lehetőségekkel\nRaktár és logisztikai terület: 5332 m², képviseleti iroda és szociális terület: 968 m², kommunikációs rendszer és TIR manőverezési területek: kb. 18 000 m². Vegyes vasbeton és acél szerkezet, rakodó zónák, őrház, automata bejárati kapuk, szivattyúház tűzvédelmi tartállyal.\nGyártási és raktározási terület: 5 331,79 m². Burkolt felület – közlekedési kialakítás: kb. 18 000 m². Szerkezet: Az objektum közvetlen alapozású. Vegyes vasbeton-acél szerkezet. Szendvicspanel burkolat. Acél tetőszerkezet ásványgyapot és PVC membrán szigeteléssel. Az objektum a Használó szabványa szerint kivitelezve és átadva.', 'sk': 'Skladové a logistické centrum s kancelárskymi priestormi\nSkladová a logistická plocha: 5 332 m², reprezentatívna kancelária a spoločenská plocha: 968 m², komunikačný systém a manévrovacie plochy TIR: cca. 18 000 m². Zmiešaná železobetónová a oceľová konštrukcia, zóny nákladného doku, strážnica, automatické vjazdové brány, čerpacia stanica s protipožiarnou nádržou.\nVýrobná a skladová plocha: 5 331,79 m². Plocha spevnenia – dopravné riešenie: približne 18 000 m². Konštrukcia: Objekt na priamom založení. Zmiešaná železobetónovo-oceľová konštrukcia. Plášť v technológii sendvičových panelov. Strecha v oceľovej konštrukcii s krytinou z minerálnej vlny a PVC membrány. Objekt dokončený podľa štandardu Užívateľa a odovzdaný do užívania.'},
   't_s': {},
   't_t': {},
   'title': 'InPost - Legnica',
@@ -3556,31 +2853,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výrobně-skladovací plocha: 3 800 m². Hala vybavená 4 mostovými jeřáby o nosnosti '
-                '8 t. Úprava území v okolí nového objektu. Konstrukce: Objekt na přímém založení. '
-                'Ocelová konstrukce stěn a střechy. Plášť v technologii sendvičových panelů. '
-                'Střecha v ocelové konstrukci s krytinou z PIR panelů a PVC membrány. Objekt '
-                'přizpůsobený požadavkům výroby ocelových konstrukcí.',
-          'de': 'Produktions- und Lagerfläche: 3 800 m². Halle mit 4 Kranen zu je 8 t. '
-                'Geländegestaltung rund um das neue Gebäude. Konstruktion: Gebäude auf direkter '
-                'Gründung. Stahlkonstruktion der Wände und des Daches. Sandwichpaneel-Hülle. '
-                'Stahldachkonstruktion mit PIR-Platten und PVC-Membran. Gebäude an die '
-                'Anforderungen der Stahlbaufertigung angepasst.',
-          'en': 'Production and warehouse area: 3 800 m². Hall equipped with 4 overhead cranes of '
-                '8 t. Site development around the new building. Structure: Building on a direct '
-                'foundation. Steel structure of walls and roof. Sandwich panel envelope. Steel '
-                'roof structure covered with PIR panels and PVC membrane. Building adapted to the '
-                'requirements of steel structure production.',
-          'hu': 'Gyártási és raktározási terület: 3 800 m². A csarnok 4 darab 8 tonnás daruval '
-                'felszerelt. Az új objektum környékének tereprendezése. Szerkezet: Az objektum '
-                'közvetlen alapozású. Falak és tető acélszerkezete. Szendvicspanel burkolat. Acél '
-                'tetőszerkezet PIR panelekkel és PVC membránnal. Az objektum az '
-                'acélszerkezet-gyártás követelményeihez igazítva.',
-          'sk': 'Výrobná a skladová plocha: 3 800 m². Hala vybavená 4 mostovými žeriavmi s '
-                'nosnosťou 8 t. Úprava územia okolo nového objektu. Konštrukcia: Objekt na priamom '
-                'založení. Oceľová konštrukcia stien a strechy. Plášť v technológii sendvičových '
-                'panelov. Strecha v oceľovej konštrukcii s krytinou z PIR panelov a PVC membrány. '
-                'Objekt prispôsobený požiadavkám výroby oceľových konštrukcií.'},
+  't_o': {'cs': 'Výrobní a skladovací hala pro automatizaci a recyklaci (H5)\nPlocha výrobní a skladové haly: 3 800 m². Konstrukce je uzpůsobena pro instalaci těžkých třídicích a recyklačních linek, průmyslových vrat, skladovacích prostor a technického zázemí.\nVýrobně-skladovací plocha: 3 800 m². Hala vybavená 4 mostovými jeřáby o nosnosti 8 t. Úprava území v okolí nového objektu. Konstrukce: Objekt na přímém založení. Ocelová konstrukce stěn a střechy. Plášť v technologii sendvičových panelů. Střecha v ocelové konstrukci s krytinou z PIR panelů a PVC membrány. Objekt přizpůsobený požadavkům výroby ocelových konstrukcí.', 'de': 'Automatisierungs- und Recycling-Produktions- und Lagerhalle (H5)\nFläche der Produktions- und Lagerhalle: 3.800 m². Die Struktur ist für die Installation von schweren Sortier- und Recyclinglinien, Industrietoren, Lagerbereichen und technischen Einrichtungen geeignet.\nProduktions- und Lagerfläche: 3 800 m². Halle mit 4 Kranen zu je 8 t. Geländegestaltung rund um das neue Gebäude. Konstruktion: Gebäude auf direkter Gründung. Stahlkonstruktion der Wände und des Daches. Sandwichpaneel-Hülle. Stahldachkonstruktion mit PIR-Platten und PVC-Membran. Gebäude an die Anforderungen der Stahlbaufertigung angepasst.', 'en': 'Automation and recycling production and storage hall (H5)\nArea of \u200b\u200bthe production and warehouse hall: 3,800 m². The structure is adapted for the installation of heavy sorting and recycling lines, industrial gates, storage areas, and technical facilities.\nProduction and warehouse area: 3 800 m². Hall equipped with 4 overhead cranes of 8 t. Site development around the new building. Structure: Building on a direct foundation. Steel structure of walls and roof. Sandwich panel envelope. Steel roof structure covered with PIR panels and PVC membrane. Building adapted to the requirements of steel structure production.', 'hu': 'Automatizálási és újrahasznosítási gyártó- és raktárcsarnok (H5)\nA gyártó- és raktárcsarnok területe: 3800 m². A szerkezet alkalmas nehéz válogató és újrahasznosító sorok, ipari kapuk, raktárterületek, műszaki létesítmények telepítésére.\nGyártási és raktározási terület: 3 800 m². A csarnok 4 darab 8 tonnás daruval felszerelt. Az új objektum környékének tereprendezése. Szerkezet: Az objektum közvetlen alapozású. Falak és tető acélszerkezete. Szendvicspanel burkolat. Acél tetőszerkezet PIR panelekkel és PVC membránnal. Az objektum az acélszerkezet-gyártás követelményeihez igazítva.', 'sk': 'Výrobná a skladovacia hala pre automatizáciu a recykláciu (H5)\nPlocha výrobnej a skladovej haly: 3 800 m². Konštrukcia je prispôsobená na inštaláciu ťažkých triediacich a recyklačných liniek, priemyselných brán, skladovacích priestorov a technických zariadení.\nVýrobná a skladová plocha: 3 800 m². Hala vybavená 4 mostovými žeriavmi s nosnosťou 8 t. Úprava územia okolo nového objektu. Konštrukcia: Objekt na priamom založení. Oceľová konštrukcia stien a strechy. Plášť v technológii sendvičových panelov. Strecha v oceľovej konštrukcii s krytinou z PIR panelov a PVC membrány. Objekt prispôsobený požiadavkám výroby oceľových konštrukcií.'},
   't_s': {},
   't_t': {},
   'title': 'Sutco - Katowice',
@@ -3600,51 +2873,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Užitková plocha laboratorních a sociálních místností: cca 420,0 m²\n'
-                'Demolice stěn a instalací\n'
-                'Provedení nové podlahy\n'
-                'Provedení ocelové mezipatrové konstrukce\n'
-                'Provedení základu pod lis\n'
-                'Dokončovací práce\n'
-                'Tepelná modernizace střechy a fasády\n'
-                'Nová okenní tesařská a zámečnická konstrukce\n'
-                'Provedení HVAC a elektrických instalací',
-          'de': 'Nutzfläche der Labor- und Sozialräume: ca. 420,0 m²\n'
-                'Abriss von Wänden und Installationen\n'
-                'Herstellung eines neuen Bodenbelags\n'
-                'Herstellung einer Stahl-Zwischendecke\n'
-                'Herstellung des Fundaments für die Presse\n'
-                'Ausbauarbeiten\n'
-                'Thermische Modernisierung von Dach und Fassade\n'
-                'Neue Fensterelemente\n'
-                'Herstellung von HVAC- und Elektroinstallationen',
-          'en': 'Usable area of laboratory and staff facilities: approx. 420.0 m²\n'
-                'Demolition of walls and installations\n'
-                'New floor slab\n'
-                'Steel mezzanine structure\n'
-                'Foundation for the press\n'
-                'Finishing works\n'
-                'Thermal modernisation of the roof and façade\n'
-                'New window joinery\n'
-                'HVAC and electrical installations',
-          'hu': 'Laboratóriumi és szociális helyiségek hasznos alapterülete: kb. 420,0 m²\n'
-                'Falak és installációk bontása\n'
-                'Új padlóburkolat kivitelezése\n'
-                'Acél félemeleti szint kivitelezése\n'
-                'Présalap kivitelezése\n'
-                'Befejező munkák\n'
-                'Tető és homlokzat hőszigetelő korszerűsítése\n'
-                'Új nyílászárók\n'
-                'HVAC és elektromos installációk kivitelezése',
-          'sk': 'Úžitková plocha laboratórnych a sociálnych priestorov: cca 420,0 m²\n'
-                'Demolície stien a inštalácií\n'
-                'Vyhotovenie novej podlahy\n'
-                'Vyhotovenie oceľovej medziposchodovej konštrukcie\n'
-                'Vyhotovenie základu pod lis\n'
-                'Dokončovacie práce\n'
-                'Tepelná modernizácia strechy a fasády\n'
-                'Nové okenné konštrukcie\n'
-                'Vyhotovenie HVAC a elektrických inštalácií'},
+  't_o': {'cs': 'R&D laboratoř a výzkumné centrum\nUžitná plocha laboratoří a společenských prostor: cca. 420 m². Rekonstrukce a adaptace bývalé skladové haly: ocelové mezipatro, specializovaný základ pro zkušební lis, VZT systémy, elektroinstalace a tepelná modernizace objektu.\nUžitková plocha laboratorních a sociálních místností: cca 420,0 m²\nDemolice stěn a instalací\nProvedení nové podlahy\nProvedení ocelové mezipatrové konstrukce\nProvedení základu pod lis\nDokončovací práce\nTepelná modernizace střechy a fasády\nNová okenní tesařská a zámečnická konstrukce\nProvedení HVAC a elektrických instalací', 'de': 'F&E-Labor und Forschungszentrum\nNutzfläche Labore und Sozialbereiche: ca. 420 m². Umbau und Adaptierung einer ehemaligen Lagerhalle: Stahlzwischengeschoss, Spezialfundament für eine Testpresse, HVAC-Systeme, Elektroinstallationen und thermische Modernisierung der Anlage.\nNutzfläche der Labor- und Sozialräume: ca. 420,0 m²\nAbriss von Wänden und Installationen\nHerstellung eines neuen Bodenbelags\nHerstellung einer Stahl-Zwischendecke\nHerstellung des Fundaments für die Presse\nAusbauarbeiten\nThermische Modernisierung von Dach und Fassade\nNeue Fensterelemente\nHerstellung von HVAC- und Elektroinstallationen', 'en': 'R&D laboratory and research center\nUsable area of \u200b\u200blaboratories and social areas: approx. 420 m². Reconstruction and adaptation of a former warehouse hall: steel mezzanine, specialized foundation for a test press, HVAC systems, electrical installations and thermal modernization of the facility.\nUsable area of laboratory and staff facilities: approx. 420.0 m²\nDemolition of walls and installations\nNew floor slab\nSteel mezzanine structure\nFoundation for the press\nFinishing works\nThermal modernisation of the roof and façade\nNew window joinery\nHVAC and electrical installations', 'hu': 'K+F laboratórium és kutatóközpont\nLaboratóriumok és szociális területek hasznos területe: kb. 420 m². Egykori raktárcsarnok rekonstrukciója, adaptálása: acélmezzanin, próbaprés speciális alapozása, HVAC rendszerek, elektromos szerelések és a létesítmény hőtechnikai korszerűsítése.\nLaboratóriumi és szociális helyiségek hasznos alapterülete: kb. 420,0 m²\nFalak és installációk bontása\nÚj padlóburkolat kivitelezése\nAcél félemeleti szint kivitelezése\nPrésalap kivitelezése\nBefejező munkák\nTető és homlokzat hőszigetelő korszerűsítése\nÚj nyílászárók\nHVAC és elektromos installációk kivitelezése', 'sk': 'Výskumné a vývojové laboratórium a výskumné centrum\nÚžitková plocha laboratórií a spoločenských priestorov: cca. 420 m². Rekonštrukcia a adaptácia bývalej skladovej haly: oceľový medziposchod, špecializovaný základ pre skúšobný lis, vzduchotechnické systémy, elektroinštalácie a tepelná modernizácia objektu.\nÚžitková plocha laboratórnych a sociálnych priestorov: cca 420,0 m²\nDemolície stien a inštalácií\nVyhotovenie novej podlahy\nVyhotovenie oceľovej medziposchodovej konštrukcie\nVyhotovenie základu pod lis\nDokončovacie práce\nTepelná modernizácia strechy a fasády\nNové okenné konštrukcie\nVyhotovenie HVAC a elektrických inštalácií'},
   't_s': {},
   't_t': {},
   'title': 'CANPACK BSS LAB - Brzesko',
@@ -3662,61 +2891,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Užitková plocha: přibližně 2 865 m²\n'
-                'Demolice a bourací práce\n'
-                'Demontáž starých instalací\n'
-                'Zednické a konstrukční práce\n'
-                'Ocelová konstrukce mezipatra\n'
-                'Provedení nové podlahy\n'
-                'Montáž nových sanitárních a elektrických instalací\n'
-                'Výměna oken, vrat a dveří\n'
-                'Dokončovací práce\n'
-                'Tepelná modernizace střechy a fasády\n'
-                'Úprava přilehlých ploch',
-          'de': 'Nutzfläche: ca. 2 865 m²\n'
-                'Abbrucharbeiten\n'
-                'Demontage alter Installationen\n'
-                'Mauer- und Konstruktionsarbeiten\n'
-                'Stahlkonstruktion des Zwischengeschosses\n'
-                'Herstellung des neuen Estrichs\n'
-                'Montage neuer Sanitär- und Elektroinstallationen\n'
-                'Austausch von Fenstern, Toren und Türen\n'
-                'Ausbauarbeiten\n'
-                'Thermische Sanierung von Dach und Fassade\n'
-                'Gestaltung der angrenzenden Flächen',
-          'en': 'Usable area: approximately 2 865 m²\n'
-                'Demolition works\n'
-                'Dismantling of old installations\n'
-                'Masonry and structural works\n'
-                'Steel structure of the mezzanine\n'
-                'New floor screed\n'
-                'Installation of new sanitary and electrical systems\n'
-                'Replacement of windows, gates and doors\n'
-                'Finishing works\n'
-                'Thermal upgrade of the roof and façade\n'
-                'Development of adjacent areas',
-          'hu': 'Hasznos alapterület: kb. 2 865 m²\n'
-                'Bontási munkálatok\n'
-                'Régi telepítések leszerelése\n'
-                'Falazó és szerkezeti munkák\n'
-                'A félemelet acélszerkezete\n'
-                'Új padlóburkolat kivitelezése\n'
-                'Új higiéniai és elektromos telepítések szerelése\n'
-                'Ablakok, kapuk és ajtók cseréje\n'
-                'Befejező munkák\n'
-                'A tető és a homlokzat hőszigetelése\n'
-                'A szomszédos területek rendezése',
-          'sk': 'Úžitková plocha: približne 2 865 m²\n'
-                'Búracie práce\n'
-                'Demontáž starých inštalácií\n'
-                'Murovské a konštrukčné práce\n'
-                'Oceľová konštrukcia mezanínu\n'
-                'Realizácia novej podlahy\n'
-                'Montáž nových sanitárnych a elektrických inštalácií\n'
-                'Výmena okien, brán a dverí\n'
-                'Dokončovacie práce\n'
-                'Tepelná modernizácia strechy a fasády\n'
-                'Úprava priľahlých plôch'},
+  't_o': {'cs': 'Školicí, kancelářské a dílenské centrum\nUžitná plocha: cca. 2 865 m². Komplexní rekonstrukce a adaptace skladového prostoru na školící místnosti, kanceláře, dílny a sociální zázemí. Ocelová konstrukce mezipatra, nové podlahy, komplexní sanita, vzduchotechnika a elektroinstalace, výměna truhlářských výrobků a tepelná modernizace.\nUžitková plocha: přibližně 2 865 m²\nDemolice a bourací práce\nDemontáž starých instalací\nZednické a konstrukční práce\nOcelová konstrukce mezipatra\nProvedení nové podlahy\nMontáž nových sanitárních a elektrických instalací\nVýměna oken, vrat a dveří\nDokončovací práce\nTepelná modernizace střechy a fasády\nÚprava přilehlých ploch', 'de': 'Schulungs-, Büro- und Werkstattzentrum\nNutzfläche: ca. 2.865 m². Umfassender Umbau und Umbau einer Lageranlage in Schulungsräume, Büros, Werkstätten und Sozialräume. Stahlkonstruktion des Zwischengeschosses, neue Böden, umfassende Sanitär-, Heizungs-, Lüftungs- und Elektroinstallationen, Austausch der Tischlerei und thermische Modernisierung.\nNutzfläche: ca. 2 865 m²\nAbbrucharbeiten\nDemontage alter Installationen\nMauer- und Konstruktionsarbeiten\nStahlkonstruktion des Zwischengeschosses\nHerstellung des neuen Estrichs\nMontage neuer Sanitär- und Elektroinstallationen\nAustausch von Fenstern, Toren und Türen\nAusbauarbeiten\nThermische Sanierung von Dach und Fassade\nGestaltung der angrenzenden Flächen', 'en': 'Training, office and workshop center\nUsable area: approx. 2,865 m². Comprehensive reconstruction and adaptation of a warehouse facility into training rooms, offices, workshops and social facilities. Steel structure of the mezzanine, new floors, comprehensive sanitary, HVAC and electrical installations, replacement of joinery and thermal modernization.\nUsable area: approximately 2 865 m²\nDemolition works\nDismantling of old installations\nMasonry and structural works\nSteel structure of the mezzanine\nNew floor screed\nInstallation of new sanitary and electrical systems\nReplacement of windows, gates and doors\nFinishing works\nThermal upgrade of the roof and façade\nDevelopment of adjacent areas', 'hu': 'Oktatási, irodai és műhelyközpont\nFelhasználható terület: kb. 2865 m². Raktári létesítmény átfogó rekonstrukciója és adaptálása oktatótermekké, irodákká, műhelyekké és szociális helyiségekké. A félemelet acélszerkezete, új padlók, átfogó szaniter-, klíma- és villanyszerelés, asztalos csere és hőkorszerűsítés.\nHasznos alapterület: kb. 2 865 m²\nBontási munkálatok\nRégi telepítések leszerelése\nFalazó és szerkezeti munkák\nA félemelet acélszerkezete\nÚj padlóburkolat kivitelezése\nÚj higiéniai és elektromos telepítések szerelése\nAblakok, kapuk és ajtók cseréje\nBefejező munkák\nA tető és a homlokzat hőszigetelése\nA szomszédos területek rendezése', 'sk': 'Školiace, kancelárske a dielenské centrum\nÚžitková plocha: cca. 2 865 m². Komplexná rekonštrukcia a úprava skladových priestorov na školiace miestnosti, kancelárie, dielne a sociálne zariadenia. Oceľová konštrukcia medziposchodia, nové podlahy, komplexná sanita, vzduchotechnika a elektroinštalácia, výmena stolárskych výrobkov a tepelná modernizácia.\nÚžitková plocha: približne 2 865 m²\nBúracie práce\nDemontáž starých inštalácií\nMurovské a konštrukčné práce\nOceľová konštrukcia mezanínu\nRealizácia novej podlahy\nMontáž nových sanitárnych a elektrických inštalácií\nVýmena okien, brán a dverí\nDokončovacie práce\nTepelná modernizácia strechy a fasády\nÚprava priľahlých plôch'},
   't_s': {},
   't_t': {},
   'title': 'CANPACK BSS Excellence Centre - Brzesko',
@@ -3734,33 +2909,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Rozšíření vyžadující jak demolice stávajícího dopravního uspořádání, tak i '
-                'vybraných prvků haly\n'
-                'Práce prováděné na provozovaném závodě při dodržení platných norem BOZP\n'
-                'Přístavba ke stávající hale se zachováním tvaru a barevnosti stávajícího objektu',
-          'de': 'Erweiterung mit erforderlichem Abriss der bestehenden Verkehrsführung sowie '
-                'ausgewählter Hallenelemente\n'
-                'Arbeiten an einem in Betrieb befindlichen Werk unter Einhaltung der geltenden '
-                'Arbeitsschutzstandards\n'
-                'Anbau an die bestehende Halle unter Wahrung von Form und Farbgebung des '
-                'bestehenden Objekts',
-          'en': 'Extension requiring demolition of the existing road layout as well as selected '
-                'hall elements\n'
-                'Works carried out on an operating facility in compliance with applicable H&S '
-                'standards\n'
-                'Extension to the existing hall, matching the form and colour scheme of the '
-                'existing building',
-          'hu': 'Bővítés, amely a meglévő úthálózat és a csarnok egyes elemeinek elbontását '
-                'egyaránt megköveteli\n'
-                'Munkavégzés üzemelő gyár területén a hatályos munkavédelmi előírások '
-                'betartásával\n'
-                'Hozzáépítés a meglévő csarnokhoz a meglévő épület formájának és színvilágának '
-                'megőrzésével',
-          'sk': 'Rozšírenie vyžadujúce ako demolície súčasného dopravného usporiadania, tak aj '
-                'vybraných prvkov haly\n'
-                'Práce vykonávané na prevádzkovanom závode pri dodržaní platných noriem BOZP\n'
-                'Prístavba k jestvujúcej hale so zachovaním tvaru a farebnosti jestvujúceho '
-                'objektu'},
+  't_o': {'cs': 'Rozšíření skladové haly o kancelář a sociální zázemí\nRozšíření stávající skladové haly o další skladovací prostory, modernizace společenské a kancelářské části, rozšíření systému komunikací a manévrovacích ploch.\nRozšíření vyžadující jak demolice stávajícího dopravního uspořádání, tak i vybraných prvků haly\nPráce prováděné na provozovaném závodě při dodržení platných norem BOZP\nPřístavba ke stávající hale se zachováním tvaru a barevnosti stávajícího objektu', 'de': 'Erweiterung der Lagerhalle mit Büro- und Sozialräumen\nErweiterung der bestehenden Lagerhalle um zusätzliche Lagerflächen, Modernisierung des Sozial- und Büroteils, Erweiterung des Straßennetzes und der Rangierflächen.\nErweiterung mit erforderlichem Abriss der bestehenden Verkehrsführung sowie ausgewählter Hallenelemente\nArbeiten an einem in Betrieb befindlichen Werk unter Einhaltung der geltenden Arbeitsschutzstandards\nAnbau an die bestehende Halle unter Wahrung von Form und Farbgebung des bestehenden Objekts', 'en': 'Expansion of the warehouse hall with office and social facilities\nExpansion of the existing warehouse hall with additional storage space, modernization of the social and office part, enlargement of the road system and maneuvering areas.\nExtension requiring demolition of the existing road layout as well as selected hall elements\nWorks carried out on an operating facility in compliance with applicable H&S standards\nExtension to the existing hall, matching the form and colour scheme of the existing building', 'hu': 'Raktárcsarnok bővítése irodai és szociális helyiségekkel\nMeglévő raktárcsarnok bővítése további tárolóhellyel, szociális és irodai rész korszerűsítése, útrendszer és manőverező területek bővítése.\nBővítés, amely a meglévő úthálózat és a csarnok egyes elemeinek elbontását egyaránt megköveteli\nMunkavégzés üzemelő gyár területén a hatályos munkavédelmi előírások betartásával\nHozzáépítés a meglévő csarnokhoz a meglévő épület formájának és színvilágának megőrzésével', 'sk': 'Rozšírenie skladovej haly s kanceláriou a sociálnym zázemím\nRozšírenie existujúcej skladovej haly o ďalšie skladové priestory, modernizácia spoločenskej a kancelárskej časti, rozšírenie cestného systému a manévrovacích plôch.\nRozšírenie vyžadujúce ako demolície súčasného dopravného usporiadania, tak aj vybraných prvkov haly\nPráce vykonávané na prevádzkovanom závode pri dodržaní platných noriem BOZP\nPrístavba k jestvujúcej hale so zachovaním tvaru a farebnosti jestvujúceho objektu'},
   't_s': {},
   't_t': {},
   'title': 'Epco - Bytom',
@@ -3779,36 +2928,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'Zrealizowane',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výrobní a skladová plocha: 4 500 m²\n'
-                'Plocha malé výrobní haly: 500 m²\n'
-                'Komunikační uspořádání: 2 500 m²\n'
-                'Přímé založení na rostlé zemině\n'
-                'Konstrukce haly je kompletně ocelová\n'
-                'Opláštění haly ze sendvičových panelů',
-          'de': 'Produktions- und Lagerfläche: 4.500 m²\n'
-                'Fläche der kleinen Produktionshalle: 500 m²\n'
-                'Verkehrsfläche: 2.500 m²\n'
-                'Direkte Gründung auf gewachsenem Boden\n'
-                'Hallenkonstruktion vollständig in Stahl\n'
-                'Hallenverkleidung aus Sandwichpaneelen',
-          'en': 'Production and warehouse area: 4,500 m²\n'
-                'Small production hall area: 500 m²\n'
-                'Traffic layout: 2,500 m²\n'
-                'Direct foundation on native soil\n'
-                'Fully steel structure of the hall\n'
-                'Wall cladding made of sandwich panels',
-          'hu': 'Termelő és raktározási terület: 4 500 m²\n'
-                'Kis termelőcsarnok területe: 500 m²\n'
-                'Közlekedési rendszer: 2 500 m²\n'
-                'Közvetlen alapozás anyaföldön\n'
-                'A csarnok szerkezete teljes egészében acél\n'
-                'A csarnok burkolata szendvicspanelekből',
-          'sk': 'Výrobná a skladová plocha: 4 500 m²\n'
-                'Plocha malej výrobnej haly: 500 m²\n'
-                'Komunikačné usporiadanie: 2 500 m²\n'
-                'Priame založenie na rastlom teréne\n'
-                'Konštrukcia haly je celooková\n'
-                'Opláštenie haly zo sendvičových panelov'},
+  't_o': {'cs': 'Rozšíření závodu na výrobu sanitárních a topenářských armatur\nSkladová hala: 4 500 m², malá výrobní hala: 500 m², komunikační systém a dvory: 2 500 m². Celoocelová konstrukce, rekonstrukce teplárny, podzemní zásobníky, železobetonová opěrná zeď 4 m vysoká a 150 m dlouhá.\nVýrobní a skladová plocha: 4 500 m²\nPlocha malé výrobní haly: 500 m²\nKomunikační uspořádání: 2 500 m²\nPřímé založení na rostlé zemině\nKonstrukce haly je kompletně ocelová\nOpláštění haly ze sendvičových panelů', 'de': 'Erweiterung der Produktionsstätte für Sanitär- und Heizungsarmaturen\nLagerhalle: 4.500 m², kleine Produktionshalle: 500 m², Kommunikationsanlage und Höfe: 2.500 m². Ganzstahlkonstruktion, Umbau des Heizwerks, unterirdische Lagertanks, Stahlbetonstützmauer 4 m hoch und 150 m lang.\nProduktions- und Lagerfläche: 4.500 m²\nFläche der kleinen Produktionshalle: 500 m²\nVerkehrsfläche: 2.500 m²\nDirekte Gründung auf gewachsenem Boden\nHallenkonstruktion vollständig in Stahl\nHallenverkleidung aus Sandwichpaneelen', 'en': 'Expansion of the sanitary and heating fittings production plant\nWarehouse hall: 4,500 m², small production hall: 500 m², communication system and yards: 2,500 m². All-steel structure, reconstruction of the heating station, underground storage tanks, reinforced concrete retaining wall 4 m high and 150 m long.\nProduction and warehouse area: 4,500 m²\nSmall production hall area: 500 m²\nTraffic layout: 2,500 m²\nDirect foundation on native soil\nFully steel structure of the hall\nWall cladding made of sandwich panels', 'hu': 'Szaniter- és fűtési szerelvénygyártó üzem bővítése\nRaktárcsarnok: 4500 m², kis gyártócsarnok: 500 m², kommunikációs rendszer és udvarok: 2500 m². Teljesen acél szerkezet, hőközpont rekonstrukciója, földalatti tároló tartályok, vasbeton támfal 4 m magas és 150 m hosszú.\nTermelő és raktározási terület: 4 500 m²\nKis termelőcsarnok területe: 500 m²\nKözlekedési rendszer: 2 500 m²\nKözvetlen alapozás anyaföldön\nA csarnok szerkezete teljes egészében acél\nA csarnok burkolata szendvicspanelekből', 'sk': 'Rozšírenie závodu na výrobu sanitárnych a vykurovacích armatúr\nSkladová hala: 4 500 m², malá výrobná hala: 500 m², komunikačný systém a dvory: 2 500 m². Celooceľová konštrukcia, rekonštrukcia výhrevne, podzemné zásobníky, železobetónový oporný múr 4 m vysoký a 150 m dlhý.\nVýrobná a skladová plocha: 4 500 m²\nPlocha malej výrobnej haly: 500 m²\nKomunikačné usporiadanie: 2 500 m²\nPriame založenie na rastlom teréne\nKonštrukcia haly je celooková\nOpláštenie haly zo sendvičových panelov'},
   't_s': {},
   't_t': {},
   'title': 'HERZ - Wieliczka',
@@ -3931,73 +3051,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Jako Generální dodavatel realizujeme moderní objekt pro BTS Development Park. V '
-                'konečném důsledku celý komplex nabídne 10 000 m² pokročilé obchodní plochy určené '
-                'pro výrobní, skladovou a logistickou činnost.\n'
-                '\n'
-                'Investice byla navržena s ohledem na maximální flexibilitu. Prostor umožňuje '
-                'rozdělení na 4 nezávislé moduly s plochou od 850 m² do 3 330 m². Takové řešení '
-                'umožňuje přesné přizpůsobení funkčního uspořádání individuálním provozním '
-                'potřebám budoucích nájemců.\n'
-                '\n'
-                'V současné době se naše práce na staveništi soustředí na efektivní realizaci '
-                'první z hal. V souladu se standardy MBT klademe maximální důraz na přesné '
-                'provedení každého technického detailu a důsledné dodržování stanoveného '
-                'harmonogramu investice.',
-          'de': 'Als Generalunternehmer realisieren wir ein modernes Objekt für den BTS '
-                'Development Park. Letztendlich wird der gesamte Komplex 10.000 m² hochwertige '
-                'Geschäftsfläche bieten, die für Produktions-, Lager- und Logistikaktivitäten '
-                'bestimmt ist.\n'
-                '\n'
-                'Die Investition wurde mit Blick auf maximale Flexibilität konzipiert. Die Fläche '
-                'lässt sich in 4 unabhängige Module mit Flächen zwischen 850 m² und 3.330 m² '
-                'unterteilen. Eine solche Lösung ermöglicht die präzise Anpassung des '
-                'Funktionslayouts an die individuellen betrieblichen Anforderungen der künftigen '
-                'Mieter.\n'
-                '\n'
-                'Derzeit konzentrieren sich unsere Arbeiten auf der Baustelle auf die reibungslose '
-                'Realisierung der ersten Halle. Gemäß den MBT-Standards legen wir höchsten Wert '
-                'auf die präzise Ausführung jedes technischen Details und die strikte Einhaltung '
-                'des festgelegten Investitionszeitplans.',
-          'en': 'As the General Contractor, we are delivering a modern facility for BTS '
-                'Development Park. Ultimately, the entire complex will offer 10,000 m² of advanced '
-                'business space, intended for production, warehousing and logistics operations.\n'
-                '\n'
-                'The investment has been designed with maximum flexibility in mind. The space can '
-                'be divided into 4 independent modules with areas ranging from 850 m² to 3,330 m². '
-                'Such a solution enables precise tailoring of the functional layout to the '
-                'individual operational needs of future tenants.\n'
-                '\n'
-                'Currently, our work on the construction site focuses on the efficient delivery of '
-                "the first of the halls. In line with MBT's standards, we place maximum emphasis "
-                'on the precise execution of every technical detail and strict adherence to the '
-                'assumed investment schedule.',
-          'hu': 'Mint Fővállalkozó modern objektumot valósítunk meg a BTS Development Park '
-                'számára. Végső soron a teljes komplexum 10 000 m² fejlett üzleti területet kínál '
-                'majd, amely gyártási, raktározási és logisztikai tevékenységekre lesz alkalmas.\n'
-                '\n'
-                'A beruházást a maximális rugalmasság szem előtt tartásával terveztük. A tér 4 '
-                'független modulra osztható, 850 m² és 3 330 m² közötti alapterülettel. Ez a '
-                'megoldás lehetővé teszi a funkcionális elrendezés pontos testreszabását a '
-                'jövőbeli bérlők egyedi működési igényeihez.\n'
-                '\n'
-                'Jelenleg az építkezésen végzett munkánk az első csarnok hatékony megvalósítására '
-                'összpontosít. Az MBT szabványainak megfelelően maximális hangsúlyt fektetünk '
-                'minden műszaki részlet precíz kivitelezésére és a beruházás tervezett '
-                'ütemezésének szigorú betartására.',
-          'sk': 'Ako Generálny dodávateľ realizujeme moderný objekt pre BTS Development Park. V '
-                'konečnom dôsledku celý komplex ponúkne 10 000 m² pokročilej obchodnej plochy '
-                'určenej na výrobnú, skladovú a logistickú činnosť.\n'
-                '\n'
-                'Investícia bola navrhnutá s ohľadom na maximálnu flexibilitu. Priestor umožňuje '
-                'rozdelenie na 4 nezávislé moduly s plochou od 850 m² do 3 330 m². Takéto riešenie '
-                'umožňuje presné prispôsobenie funkčného usporiadania individuálnym prevádzkovým '
-                'potrebám budúcich nájomcov.\n'
-                '\n'
-                'V súčasnosti sa naše práce na stavenisku sústreďujú na efektívnu realizáciu prvej '
-                'z hál. V súlade so štandardmi MBT kladieme maximálny dôraz na presné vykonanie '
-                'každého technického detailu a dôsledné dodržiavanie stanoveného harmonogramu '
-                'investície.'},
+  't_o': {'cs': 'Průmyslový a logistický park\nCelková plocha komplexu: 10 000 m², pracovní výška: 7 m, flexibilní modulární dělení na 4 nezávislé provozní moduly (od 850 m² do 3 330 m²). Železobetonová a ocelová konstrukce (prefabrikované sloupy, ocelové střešní nosníky), energeticky úsporné opláštění z PIR sendvičových panelů, dokovací zóny a manévrovací plochy.\nJako Generální dodavatel realizujeme moderní objekt pro BTS Development Park. V konečném důsledku celý komplex nabídne 10 000 m² pokročilé obchodní plochy určené pro výrobní, skladovou a logistickou činnost.\n\nInvestice byla navržena s ohledem na maximální flexibilitu. Prostor umožňuje rozdělení na 4 nezávislé moduly s plochou od 850 m² do 3 330 m². Takové řešení umožňuje přesné přizpůsobení funkčního uspořádání individuálním provozním potřebám budoucích nájemců.\n\nV současné době se naše práce na staveništi soustředí na efektivní realizaci první z hal. V souladu se standardy MBT klademe maximální důraz na přesné provedení každého technického detailu a důsledné dodržování stanoveného harmonogramu investice.', 'de': 'Industrie- und Logistikpark\nGesamtfläche des Komplexes: 10.000 m², Arbeitshöhe: 7 m, flexible modulare Aufteilung in 4 unabhängige Betriebsmodule (von 850 m² bis 3.330 m²). Stahlbeton- und Stahlkonstruktion (Fertigstützen, Dachträger aus Stahl), energiesparende Ummantelung aus PIR-Sandwichpaneelen, Dockzonen und Manövrierflächen.\nAls Generalunternehmer realisieren wir ein modernes Objekt für den BTS Development Park. Letztendlich wird der gesamte Komplex 10.000 m² hochwertige Geschäftsfläche bieten, die für Produktions-, Lager- und Logistikaktivitäten bestimmt ist.\n\nDie Investition wurde mit Blick auf maximale Flexibilität konzipiert. Die Fläche lässt sich in 4 unabhängige Module mit Flächen zwischen 850 m² und 3.330 m² unterteilen. Eine solche Lösung ermöglicht die präzise Anpassung des Funktionslayouts an die individuellen betrieblichen Anforderungen der künftigen Mieter.\n\nDerzeit konzentrieren sich unsere Arbeiten auf der Baustelle auf die reibungslose Realisierung der ersten Halle. Gemäß den MBT-Standards legen wir höchsten Wert auf die präzise Ausführung jedes technischen Details und die strikte Einhaltung des festgelegten Investitionszeitplans.', 'en': "Industrial and logistics park\nTotal area of \u200b\u200bthe complex: 10,000 m², working height: 7 m, flexible modular division into 4 independent operational modules (from 850 m² to 3,330 m²). Reinforced concrete and steel structure (prefabricated columns, steel roof girders), energy-saving casing made of PIR sandwich panels, dock zones and maneuvering areas.\nAs the General Contractor, we are delivering a modern facility for BTS Development Park. Ultimately, the entire complex will offer 10,000 m² of advanced business space, intended for production, warehousing and logistics operations.\n\nThe investment has been designed with maximum flexibility in mind. The space can be divided into 4 independent modules with areas ranging from 850 m² to 3,330 m². Such a solution enables precise tailoring of the functional layout to the individual operational needs of future tenants.\n\nCurrently, our work on the construction site focuses on the efficient delivery of the first of the halls. In line with MBT's standards, we place maximum emphasis on the precise execution of every technical detail and strict adherence to the assumed investment schedule.", 'hu': 'Ipari és logisztikai park\nA komplexum összterülete: 10 000 m², munkamagasság: 7 m, rugalmas moduláris felosztás 4 független működési modulra (850 m²-től 3 330 m²-ig). Vasbeton és acél szerkezet (előregyártott oszlopok, acél tetőgerendák), energiatakarékos burkolat PIR szendvicspanelekből, dokkolózónák és manőverező területek.\nMint Fővállalkozó modern objektumot valósítunk meg a BTS Development Park számára. Végső soron a teljes komplexum 10 000 m² fejlett üzleti területet kínál majd, amely gyártási, raktározási és logisztikai tevékenységekre lesz alkalmas.\n\nA beruházást a maximális rugalmasság szem előtt tartásával terveztük. A tér 4 független modulra osztható, 850 m² és 3 330 m² közötti alapterülettel. Ez a megoldás lehetővé teszi a funkcionális elrendezés pontos testreszabását a jövőbeli bérlők egyedi működési igényeihez.\n\nJelenleg az építkezésen végzett munkánk az első csarnok hatékony megvalósítására összpontosít. Az MBT szabványainak megfelelően maximális hangsúlyt fektetünk minden műszaki részlet precíz kivitelezésére és a beruházás tervezett ütemezésének szigorú betartására.', 'sk': 'Priemyselný a logistický park\nCelková plocha komplexu: 10 000 m², pracovná výška: 7 m, flexibilné modulárne členenie na 4 nezávislé prevádzkové moduly (od 850 m² do 3 330 m²). Železobetónová a oceľová konštrukcia (prefabrikované stĺpy, oceľové strešné nosníky), energeticky úsporné opláštenie z PIR sendvičových panelov, dokovacie zóny a manévrovacie plochy.\nAko Generálny dodávateľ realizujeme moderný objekt pre BTS Development Park. V konečnom dôsledku celý komplex ponúkne 10 000 m² pokročilej obchodnej plochy určenej na výrobnú, skladovú a logistickú činnosť.\n\nInvestícia bola navrhnutá s ohľadom na maximálnu flexibilitu. Priestor umožňuje rozdelenie na 4 nezávislé moduly s plochou od 850 m² do 3 330 m². Takéto riešenie umožňuje presné prispôsobenie funkčného usporiadania individuálnym prevádzkovým potrebám budúcich nájomcov.\n\nV súčasnosti sa naše práce na stavenisku sústreďujú na efektívnu realizáciu prvej z hál. V súlade so štandardmi MBT kladieme maximálny dôraz na presné vykonanie každého technického detailu a dôsledné dodržiavanie stanoveného harmonogramu investície.'},
   't_s': {},
   't_t': {},
   'title': 'BTS Development Park Zielona Góra',
@@ -4015,113 +3069,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Realizujeme výstavbu moderního dealerství pro značku BYD, na objednávku skupiny '
-                'Dąbrowscy. Investice zahrnuje vytvoření komplexního autosalonu nové generace.\n'
-                '\n'
-                'Celý moderní prostor byl navržen od základu, v přísném souladu s nejnovějším '
-                'globálním architektonickým a vizuálním standardem značky – BYD CI 7.\n'
-                '\n'
-                'Rozsah realizace zahrnuje:\n'
-                '\n'
-                'Moderní prodejní sal (Showroom): Reprezentativní výstavní prostor přizpůsobený '
-                'nejvyšším standardům prezentace vozidel a zákaznického servisu.\n'
-                '\n'
-                'Pokročilý autoservis: Technologicky vybavená dílenská hala připravená pro '
-                'specializovanou diagnostiku a opravy elektrických a hybridních vozidel.\n'
-                '\n'
-                'Komplexní poprodejní služby: Plně integrované zázemí určené servisním poradcům, '
-                'zajišťující efektivní poskytování služeb (after-sales) v komfortních podmínkách.\n'
-                '\n'
-                'Naším úkolem je precizní provedení objektu, který investorovi poskytne optimální '
-                'provozní podmínky a plně vyjádří inovativní charakter značky BYD.',
-          'de': 'Wir realisieren den Bau eines modernen Händlerobjekts für die Marke BYD, im '
-                'Auftrag der Gruppe Dąbrowscy. Die Investition umfasst die Errichtung eines '
-                'umfassenden Autohauses der neuen Generation.\n'
-                '\n'
-                'Der gesamte moderne Raum wurde von Grund auf geplant, in strikter Übereinstimmung '
-                'mit dem neuesten globalen Architektur- und Visualstandard der Marke – BYD CI 7.\n'
-                '\n'
-                'Der Realisierungsumfang umfasst:\n'
-                '\n'
-                'Moderner Showroom (Showroom): Ein repräsentativer Ausstellungsraum, der den '
-                'höchsten Standards für Fahrzeugpräsentation und Kundenservice entspricht.\n'
-                '\n'
-                'Fortschrittlicher Automobilservice: Eine technologisch ausgestattete '
-                'Werkstatthalle, die für die fachgerechte Diagnose und Reparatur von Elektro- und '
-                'Hybridfahrzeugen vorbereitet ist.\n'
-                '\n'
-                'Umfassender After-Sales-Service: Ein voll integriertes Backoffice für '
-                'Serviceberater, das eine effiziente Abwicklung der Dienstleistungen (After-Sales) '
-                'unter komfortablen Bedingungen gewährleistet.\n'
-                '\n'
-                'Unsere Aufgabe ist die präzise Ausführung eines Objekts, das dem Investor '
-                'optimale Betriebsbedingungen bietet und den innovativen Charakter der Marke BYD '
-                'vollständig zum Ausdruck bringt.',
-          'en': 'We are constructing a modern dealership facility for the BYD brand, commissioned '
-                'by Grupa Dąbrowscy. The investment covers the creation of a comprehensive, '
-                'next-generation car showroom.\n'
-                '\n'
-                'The entire modern space has been designed from scratch, in strict compliance with '
-                'the latest global architectural and visual standard of the brand – BYD CI 7.\n'
-                '\n'
-                'Scope of work includes:\n'
-                '\n'
-                'Modern showroom (Showroom): A representative exhibition space, tailored to the '
-                'highest standards of vehicle presentation and customer service.\n'
-                '\n'
-                'Advanced automotive service: A technologically equipped workshop hall, prepared '
-                'for specialist diagnostics and repair of electric and hybrid vehicles.\n'
-                '\n'
-                'Comprehensive after-sales support: A fully integrated facility dedicated to '
-                'service advisors, ensuring efficient delivery of services (after-sales) in '
-                'comfortable conditions.\n'
-                '\n'
-                'Our task is to precisely deliver a facility that will provide the Investor with '
-                'optimal operational conditions and fully reflect the innovative character of the '
-                'BYD brand.',
-          'hu': 'Modern márkakereskedelmi objektumot építünk a BYD márka számára, a Dąbrowscy '
-                'Csoport megbízásából. A beruházás egy új generációs, komplex autószalon '
-                'létrehozását foglalja magában.\n'
-                '\n'
-                'A teljes modern teret a nulláról terveztük, szigorúan a márka legújabb globális '
-                'építészeti és vizuális szabványának – BYD CI 7 – megfelelően.\n'
-                '\n'
-                'A megvalósítás terjedelme:\n'
-                '\n'
-                'Modern értékesítési terem (Showroom): Reprezentatív kiállítási tér, a járművek '
-                'bemutatásának és az ügyfélkiszolgálásnak a legmagasabb színvonalához igazítva.\n'
-                '\n'
-                'Fejlett gépjárműszerviz: Technológiailag felszerelt műhelycsarnok, amely '
-                'elektromos és hibrid járművek speciális diagnosztikájára és javítására készült.\n'
-                '\n'
-                'Átfogó értékesítés utáni szolgáltatás: Teljes mértékben integrált háttér a '
-                'szerviz-tanácsadók számára, amely kényelmes körülmények között biztosítja a '
-                'szolgáltatások (after-sales) hatékony megvalósítását.\n'
-                '\n'
-                'Feladatunk egy olyan objektum precíz kivitelezése, amely optimális működési '
-                'feltételeket biztosít a befektető számára, és teljes mértékben tükrözi a BYD '
-                'márka innovatív jellegét.',
-          'sk': 'Realizujeme výstavbu moderného dealerského objektu pre značku BYD, na objednávku '
-                'skupiny Dąbrowscy. Investícia zahŕňa vytvorenie komplexného autosalónu novej '
-                'generácie.\n'
-                '\n'
-                'Celý moderný priestor bol navrhnutý od základu, v prísnom súlade s najnovším '
-                'globálnym architektonickým a vizuálnym štandardom značky – BYD CI 7.\n'
-                '\n'
-                'Rozsah realizácie zahŕňa:\n'
-                '\n'
-                'Modernú predajnú sálu (Showroom): Reprezentatívny výstavný priestor prispôsobený '
-                'najvyšším štandardom prezentácie vozidiel a zákazníckeho servisu.\n'
-                '\n'
-                'Pokročilý autoservis: Technologicky vybavená dielenská hala pripravená na '
-                'špecializovanú diagnostiku a opravu elektrických a hybridných vozidiel.\n'
-                '\n'
-                'Komplexný popredajný servis: Plne integrované zázemie určené servisným poradcom, '
-                'zabezpečujúce efektívne poskytovanie služieb (after-sales) v komfortných '
-                'podmienkach.\n'
-                '\n'
-                'Našou úlohou je precízne vykonanie objektu, ktorý investorovi poskytne optimálne '
-                'prevádzkové podmínky a plne vyjadrí inovatívny charakter značky BYD.'},
+  't_o': {'cs': 'Autorizovaný prodejce a autoservis\nReprezentativní prosklený showroom v souladu s globálním standardem značky, specializovaná dílna a servisní hala uzpůsobená pro diagnostiku elektrických (EV) a hybridních pohonů, sklad náhradních dílů, poradenská zóna a infrastruktura dobíjecích stanic pro vozidla.\nRealizujeme výstavbu moderního dealerství pro značku BYD, na objednávku skupiny Dąbrowscy. Investice zahrnuje vytvoření komplexního autosalonu nové generace.\n\nCelý moderní prostor byl navržen od základu, v přísném souladu s nejnovějším globálním architektonickým a vizuálním standardem značky – BYD CI 7.\n\nRozsah realizace zahrnuje:\n\nModerní prodejní sal (Showroom): Reprezentativní výstavní prostor přizpůsobený nejvyšším standardům prezentace vozidel a zákaznického servisu.\n\nPokročilý autoservis: Technologicky vybavená dílenská hala připravená pro specializovanou diagnostiku a opravy elektrických a hybridních vozidel.\n\nKomplexní poprodejní služby: Plně integrované zázemí určené servisním poradcům, zajišťující efektivní poskytování služeb (after-sales) v komfortních podmínkách.\n\nNaším úkolem je precizní provedení objektu, který investorovi poskytne optimální provozní podmínky a plně vyjádří inovativní charakter značky BYD.', 'de': 'Autorisierter Händler und Kfz-Service\nEin repräsentativer Glasausstellungsraum nach dem globalen Standard der Marke, eine spezialisierte Werkstatt und Servicehalle für die Diagnose von Elektro- (EV) und Hybridantrieben, ein Teilelager, eine Beraterzone und eine Infrastruktur für Fahrzeugladestationen.\nWir realisieren den Bau eines modernen Händlerobjekts für die Marke BYD, im Auftrag der Gruppe Dąbrowscy. Die Investition umfasst die Errichtung eines umfassenden Autohauses der neuen Generation.\n\nDer gesamte moderne Raum wurde von Grund auf geplant, in strikter Übereinstimmung mit dem neuesten globalen Architektur- und Visualstandard der Marke – BYD CI 7.\n\nDer Realisierungsumfang umfasst:\n\nModerner Showroom (Showroom): Ein repräsentativer Ausstellungsraum, der den höchsten Standards für Fahrzeugpräsentation und Kundenservice entspricht.\n\nFortschrittlicher Automobilservice: Eine technologisch ausgestattete Werkstatthalle, die für die fachgerechte Diagnose und Reparatur von Elektro- und Hybridfahrzeugen vorbereitet ist.\n\nUmfassender After-Sales-Service: Ein voll integriertes Backoffice für Serviceberater, das eine effiziente Abwicklung der Dienstleistungen (After-Sales) unter komfortablen Bedingungen gewährleistet.\n\nUnsere Aufgabe ist die präzise Ausführung eines Objekts, das dem Investor optimale Betriebsbedingungen bietet und den innovativen Charakter der Marke BYD vollständig zum Ausdruck bringt.', 'en': "Authorized dealership and automotive service\nA representative glass showroom in line with the brand's global standard, a specialized workshop and service hall adapted for the diagnosis of electric (EV) and hybrid drives, a parts warehouse, an advisor zone, and vehicle charging station infrastructure.\nWe are constructing a modern dealership facility for the BYD brand, commissioned by Grupa Dąbrowscy. The investment covers the creation of a comprehensive, next-generation car showroom.\n\nThe entire modern space has been designed from scratch, in strict compliance with the latest global architectural and visual standard of the brand – BYD CI 7.\n\nScope of work includes:\n\nModern showroom (Showroom): A representative exhibition space, tailored to the highest standards of vehicle presentation and customer service.\n\nAdvanced automotive service: A technologically equipped workshop hall, prepared for specialist diagnostics and repair of electric and hybrid vehicles.\n\nComprehensive after-sales support: A fully integrated facility dedicated to service advisors, ensuring efficient delivery of services (after-sales) in comfortable conditions.\n\nOur task is to precisely deliver a facility that will provide the Investor with optimal operational conditions and fully reflect the innovative character of the BYD brand.", 'hu': 'Hivatalos márkakereskedés és autószerviz\nA márka globális szabványának megfelelő reprezentatív üvegbemutató, elektromos (EV) és hibrid hajtások diagnosztizálására alkalmas speciális műhely és szervizcsarnok, alkatrészraktár, tanácsadó zóna, járműtöltőállomás-infrastruktúra.\nModern márkakereskedelmi objektumot építünk a BYD márka számára, a Dąbrowscy Csoport megbízásából. A beruházás egy új generációs, komplex autószalon létrehozását foglalja magában.\n\nA teljes modern teret a nulláról terveztük, szigorúan a márka legújabb globális építészeti és vizuális szabványának – BYD CI 7 – megfelelően.\n\nA megvalósítás terjedelme:\n\nModern értékesítési terem (Showroom): Reprezentatív kiállítási tér, a járművek bemutatásának és az ügyfélkiszolgálásnak a legmagasabb színvonalához igazítva.\n\nFejlett gépjárműszerviz: Technológiailag felszerelt műhelycsarnok, amely elektromos és hibrid járművek speciális diagnosztikájára és javítására készült.\n\nÁtfogó értékesítés utáni szolgáltatás: Teljes mértékben integrált háttér a szerviz-tanácsadók számára, amely kényelmes körülmények között biztosítja a szolgáltatások (after-sales) hatékony megvalósítását.\n\nFeladatunk egy olyan objektum precíz kivitelezése, amely optimális működési feltételeket biztosít a befektető számára, és teljes mértékben tükrözi a BYD márka innovatív jellegét.', 'sk': 'Autorizovaný predajca a autoservis\nReprezentatívny sklenený showroom v súlade s globálnym štandardom značky, špecializovaná dielňa a servisná hala prispôsobená na diagnostiku elektrických (EV) a hybridných pohonov, sklad dielov, poradenská zóna a infraštruktúra nabíjacích staníc pre vozidlá.\nRealizujeme výstavbu moderného dealerského objektu pre značku BYD, na objednávku skupiny Dąbrowscy. Investícia zahŕňa vytvorenie komplexného autosalónu novej generácie.\n\nCelý moderný priestor bol navrhnutý od základu, v prísnom súlade s najnovším globálnym architektonickým a vizuálnym štandardom značky – BYD CI 7.\n\nRozsah realizácie zahŕňa:\n\nModernú predajnú sálu (Showroom): Reprezentatívny výstavný priestor prispôsobený najvyšším štandardom prezentácie vozidiel a zákazníckeho servisu.\n\nPokročilý autoservis: Technologicky vybavená dielenská hala pripravená na špecializovanú diagnostiku a opravu elektrických a hybridných vozidiel.\n\nKomplexný popredajný servis: Plne integrované zázemie určené servisným poradcom, zabezpečujúce efektívne poskytovanie služieb (after-sales) v komfortných podmienkach.\n\nNašou úlohou je precízne vykonanie objektu, ktorý investorovi poskytne optimálne prevádzkové podmínky a plne vyjadrí inovatívny charakter značky BYD.'},
   't_s': {},
   't_t': {},
   'title': 'BYD Dąbrowscy - Bytom',
@@ -4139,7 +3087,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie Realizacji',
   't_c': {},
   't_f': {},
-  't_o': {},
+  't_o': {'cs': 'Výrobní a skladovací hala pro netkané výrobky\nVýrobní a skladová hala uzpůsobená pro práci v technologickém režimu čistoty a vysokých hygienických standardů, bezprašné průmyslové podlahy, technické zázemí, výdejní a skladovací plochy surovin.', 'de': 'Produktions- und Lagerhalle für Vliesstoffprodukte\nEine Produktions- und Lagerhalle, die für den Betrieb unter einem technologischen Regime von Sauberkeit und hohen Hygienestandards, staubfreien Industrieböden, technischen Einrichtungen, Liefer- und Lagerbereichen für Rohstoffe geeignet ist.', 'en': 'Production and storage hall for nonwoven products\nA production and warehouse hall adapted to work in a technological regime of cleanliness and high hygiene standards, dust-free industrial floors, technical facilities, delivery and storage areas for raw materials.', 'hu': 'Nemszőtt termékek gyártó- és raktárcsarnoka\nGyártó- és raktárcsarnok, amely a tisztaság és a magas higiéniai szabványok technológiai rendszeréhez igazított, pormentes ipari padlók, műszaki létesítmények, nyersanyagok szállítási és raktározási területei.', 'sk': 'Výrobná a skladovacia hala pre netkané výrobky\nVýrobná a skladová hala prispôsobená na prácu v technologickom režime čistoty a vysokých hygienických štandardov, bezprašné priemyselné podlahy, technické zázemie, výdajné a skladovacie plochy surovín.', 'uk': 'Цех виробництва та зберігання нетканих матеріалів\nВиробничо-складський зал, пристосований для роботи в технологічному режимі чистоти та високих санітарно-гігієнічних норм, незапилені виробничі підлоги, технічні приміщення, зони доставки та зберігання сировини.'},
   't_s': {},
   't_t': {},
   'title': 'EcoWipes Nowy Dwór Mazowiecki',
@@ -4157,7 +3105,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {},
+  't_o': {'cs': 'Výrobní a montážní hala silových hydraulických systémů pro mostové jeřáby\nSpecializovaná hala pro prefabrikaci, montáž a testování rozsáhlých hydraulických systémů. Objekt byl navržen a postaven pro instalaci těžkých průmyslových kolejových jeřábů s vysokou nosností, zónou tlakové zkoušky, podlah se zvýšenou bodovou nosností, kancelářských a společenských prostor.', 'de': 'Produktions- und Montagehalle für Krafthydrauliksysteme für Laufkrane\nEine Spezialhalle für die Vorfertigung, Montage und Prüfung großer hydraulischer Systeme. Die Anlage wurde für die Installation von schweren industriellen Raupenkranen mit hoher Tragfähigkeit, einer Druckprüfzone, Böden mit erhöhter Punktlastkapazität sowie einem Büro- und Sozialbereich konzipiert und gebaut.', 'en': 'Production and assembly hall for power hydraulic systems for overhead cranes\nA specialized hall for prefabrication, assembly and testing of large-scale hydraulic systems. The facility was designed and built for the installation of heavy industrial track cranes with high lifting capacity, pressure testing zone, floors with increased point load capacity, office and social area.', 'hu': 'Függőleges daruk erőhidraulikus rendszereinek gyártó- és szerelőcsarnoka\nSpeciális csarnok nagyméretű hidraulikus rendszerek előregyártására, összeszerelésére és tesztelésére. A létesítményt nagy teherbírású nehézipari vágánydaruk, nyomáspróbazónák, megnövelt pontterhelhetőségű padlók, iroda- és szociális terület beépítésére tervezték és építették.', 'sk': 'Výrobná a montážna hala pre silové hydraulické systémy pre mostové žeriavy\nŠpecializovaná hala na prefabrikáciu, montáž a testovanie veľkých hydraulických systémov. Objekt bol navrhnutý a vybudovaný pre montáž ťažkých priemyselných dráhových žeriavov s vysokou nosnosťou, zónou tlakovej skúšky, podláh so zvýšenou bodovou nosnosťou, kancelárskych a spoločenských priestorov.', 'uk': 'Виробничо-монтажний цех силових гідравлічних систем для мостових кранів\nСпеціалізований цех для виготовлення, монтажу та випробувань великогабаритних гідравлічних систем. Об’єкт спроектовано та побудовано для встановлення важких промислових колійних кранів підвищеної вантажопідйомності, зони випробування тиском, перекриттів з підвищеною точковою навантаженням, офісної та соціальної зони.'},
   't_s': {},
   't_t': {},
   'title': 'Ponar Wadowice',
@@ -4175,199 +3123,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Specifikace\n'
-                'Plochy a parametry (Celkem):\n'
-                'Celková plocha: 6 650,00 m²\n'
-                'Užitková plocha: 6 405,00 m²\n'
-                'Zastavěná plocha: 6 413,00 m²\n'
-                'Objem: 109 795 m³\n'
-                'Kancelářsko-sociální budova:\n'
-                'Plocha: cca 347 m²\n'
-                'Podlaží: 2\n'
-                'Konstrukce (Skladová hala):\n'
-                'Založení: betonové piloty\n'
-                'Sloupy: prefabrikované železobetonové (výška 20 m)\n'
-                'Střecha: prefabrikovaná konstrukce (rozpětí 33 m), opláštění z trapézového plechu '
-                's tepelnou a protivodní izolací\n'
-                'Stěny: opláštění ze sendvičových panelů\n'
-                'Základová deska: železobetonová, přizpůsobená pro regály a zakladače vysokého '
-                'skladu\n'
-                'Podlaha: průmyslová betonová, hladce zahlazená\n'
-                'Konstrukce a dokončení (Kancelářsko-sociální budova):\n'
-                'Konstrukce: zděná se stropy z předpjatého betonu\n'
-                'Fasáda: sendvičové panely\n'
-                'Dokončení (vysoký standard): akustické podhledy, suchá výstavba, kobercové a PVC '
-                'krytiny, gresové dlaždice, hliníkové výlohy\n'
-                'Zařízení a skladovací technologie:\n'
-                '6 překládacích doků s rampami, převážně vybavených systémem automatického '
-                'blokování kol\n'
-                'Instalace automatického skladování (vysoká část)\n'
-                'Regály pro manuální skladování\n'
-                '"Teplý sklad" s přesnou kontrolou teplotních parametrů\n'
-                'Instalace a infrastruktura (Vnitřní i vnější):\n'
-                'Sanitární instalace: vodovod, kanalizace sanitární a dešťová, ústřední vytápění\n'
-                'HVAC instalace: mechanická ventilace, klimatizace\n'
-                'Elektrické a slaboproudé instalace: v plném rozsahu\n'
-                'PO požární ochrana: systém požární signalizace (EPS), instalace plynového hašení, '
-                'vnější nádrž požární vody, hydroforová sestava\n'
-                'Vnější infrastruktura: přestavba a rozšíření instalací (včetně teplovodní sítě), '
-                'opěrné zdi, vnější přístřešky\n'
-                'Dopravní uspořádání: přestavba stávajícího vnitřního uspořádání komunikací a '
-                'parkovacích stání',
-          'de': 'Spezifikation\n'
-                'Flächen und Parameter (Gesamt):\n'
-                'Gesamtfläche: 6.650,00 m²\n'
-                'Nutzfläche: 6.405,00 m²\n'
-                'Grundstücksfläche: 6.413,00 m²\n'
-                'Volumen: 109.795 m³\n'
-                'Büro- und Sozialgebäude:\n'
-                'Fläche: ca. 347 m²\n'
-                'Geschosszahl: 2\n'
-                'Konstruktion (Lagerhalle):\n'
-                'Gründung: Betonpfähle\n'
-                'Stützen: Stahlbeton-Fertigteile (Höhe 20 m)\n'
-                'Dach: Fertigteilkonstruktion (Spannweite 33 m), Trapezblechverkleidung mit '
-                'Wärmedämmung und Abdichtung\n'
-                'Wände: Verkleidung aus Sandwichpaneelen\n'
-                'Bodenplatte: Stahlbeton, ausgelegt für Hochregal-Lager und Regalbediengeräte\n'
-                'Boden: Industriebeton, glatt maschinengeschliffen\n'
-                'Konstruktion und Ausbau (Büro- und Sozialgebäude):\n'
-                'Konstruktion: Mauerwerk mit Spannbetondecken\n'
-                'Fassade: Sandwichpaneele\n'
-                'Ausbau (hochwertig): Akustikdecken, Trockenbau, Teppich- und PVC-Beläge, '
-                'Feinsteinzeugfliesen, Aluminium-Schaufenster\n'
-                'Ausstattung und Lagertechnik:\n'
-                '6 Verladedocks mit Rampen, überwiegend mit automatischer Radblockierung '
-                'ausgestattet\n'
-                'Automatische Lagereinrichtung (Hochregalbereich)\n'
-                'Regale für manuelle Lagerung\n'
-                '„Warmes Lager" mit präziser Temperaturparameter-Überwachung\n'
-                'Installationen und Infrastruktur (Innen und Außen):\n'
-                'Sanitärinstallationen: Wasserleitung, Schmutz- und Regenwasserkanalisation, '
-                'Zentralheizung\n'
-                'HVAC-Installationen: Mechanische Lüftung, Klimatisierung\n'
-                'Elektro- und Fernmeldetechnik: Vollständiger Umfang\n'
-                'Brandschutz: Brandmeldeanlage (BMA), Gaslöschanlage, außenliegender '
-                'Löschwassertank, Druckerhöhungsanlage\n'
-                'Außenanlagen: Umbau und Erweiterung der Installationen (einschließlich '
-                'Wärmenetz), Stützmauern, Außenüberdachungen\n'
-                'Verkehrsanlagen: Umbau der bestehenden inneren Wege- und Stellplatzanordnung',
-          'en': 'Specification\n'
-                'Areas and parameters (Total):\n'
-                'Total area: 6,650.00 m²\n'
-                'Usable area: 6,405.00 m²\n'
-                'Building area: 6,413.00 m²\n'
-                'Volume: 109,795 m³\n'
-                'Office and welfare building:\n'
-                'Area: approx. 347 m²\n'
-                'Storeys: 2\n'
-                'Structure (Warehouse hall):\n'
-                'Foundation: Concrete piles\n'
-                'Columns: Precast reinforced concrete (height 20 m)\n'
-                'Roof: Precast structure (span 33 m), trapezoidal sheet metal cladding with '
-                'thermal and waterproof insulation\n'
-                'Walls: Sandwich panel cladding\n'
-                'Foundation slab: Reinforced concrete, designed for high-bay racking and '
-                'storage/retrieval systems\n'
-                'Floor: Industrial concrete floor, power-trowelled to a smooth finish\n'
-                'Structure and finishes (Office and welfare building):\n'
-                'Structure: Masonry with prestressed concrete floors\n'
-                'Façade: Sandwich panels\n'
-                'Finishes (high standard): Acoustic ceilings, drywall, carpet and PVC floor '
-                'coverings, stoneware tiles, aluminium storefronts\n'
-                'Equipment and storage technology:\n'
-                '6 loading docks with ramps, mostly equipped with automatic wheel-locking systems\n'
-                'Automated storage installation (high-bay section)\n'
-                'Manual storage racking\n'
-                '"Heated warehouse" with precise temperature parameter control\n'
-                'Installations and infrastructure (Internal and External):\n'
-                'Sanitary installations: Water supply, sanitary and stormwater drainage, central '
-                'heating\n'
-                'HVAC installations: Mechanical ventilation, air conditioning\n'
-                'Electrical and teletechnical installations: Full scope\n'
-                'Fire protection: Fire alarm system (SSP), gas extinguishing system, external '
-                'fire-water tank, booster set\n'
-                'External infrastructure: Reconstruction and extension of installations (including '
-                'heating network), retaining walls, external canopies\n'
-                'Traffic layout: Reconstruction of the existing internal road and parking layout',
-          'hu': 'Specifikáció\n'
-                'Területek és paraméterek (Összesen):\n'
-                'Teljes terület: 6 650,00 m²\n'
-                'Hasznos alapterület: 6 405,00 m²\n'
-                'Beépített terület: 6 413,00 m²\n'
-                'Térfogat: 109 795 m³\n'
-                'Irodai és szociális épület:\n'
-                'Terület: kb. 347 m²\n'
-                'Szintek: 2\n'
-                'Szerkezet (Raktárcsarnok):\n'
-                'Alapozás: beton cölöpök\n'
-                'Oszlopok: előregyártott vasbeton (magasság 20 m)\n'
-                'Tető: előregyártott szerkezet (fesztáv 33 m), trapézlemez burkolat hő- és '
-                'vízszigeteléssel\n'
-                'Falak: szendvicspanel burkolat\n'
-                'Alaplemez: vasbeton, magasraktári állványokhoz és rakodógépekhez igazítva\n'
-                'Padló: ipari beton, simára csiszolt\n'
-                'Szerkezet és kivitelezés (Irodai és szociális épület):\n'
-                'Szerkezet: falazott, feszített beton födémekkel\n'
-                'Homlokzat: szendvicspanelek\n'
-                'Kivitelezés (magas színvonalú): akusztikus álmennyezetek, szárazépítészet, '
-                'szőnyeg- és PVC padlóburkolatok, greslapok, alumínium kirakatok\n'
-                'Berendezések és raktártechnológia:\n'
-                '6 átfejtő dokk rámpákkal, többnyire automata kerékblokkoló rendszerrel '
-                'felszerelve\n'
-                'Automata tároló berendezés (magas rész)\n'
-                'Kézi tárolásra szolgáló állványok\n'
-                '„Meleg raktár" precíz hőmérséklet-paraméter ellenőrzéssel\n'
-                'Installációk és infrastruktúra (Belső és külső):\n'
-                'Szaniter installációk: vízvezeték, szennyvíz- és csapadékvíz-csatorna, központi '
-                'fűtés\n'
-                'HVAC installációk: gépi szellőzés, klíma\n'
-                'Elektromos és gyengeáramú installációk: teljes körű\n'
-                'Tűzvédelem: tűzjelző rendszer (SSP), gázzal oltó rendszer, külső tűzivíztározó, '
-                'hidrofor egység\n'
-                'Külső infrastruktúra: installációk át- és kiépítése (beleértve a távhőhálózatot), '
-                'támfalak, külső előtetők\n'
-                'Közlekedési rendszer: a meglévő belső út- és parkolóelrendezés átépítése',
-          'sk': 'Špecifikácia\n'
-                'Plochy a parametre (Spolu):\n'
-                'Celková plocha: 6 650,00 m²\n'
-                'Úžitková plocha: 6 405,00 m²\n'
-                'Zastavaná plocha: 6 413,00 m²\n'
-                'Objem: 109 795 m³\n'
-                'Kancelársko-sociálna budova:\n'
-                'Plocha: cca 347 m²\n'
-                'Podlažia: 2\n'
-                'Konštrukcia (Skladová hala):\n'
-                'Založenie: betónové pilóty\n'
-                'Stĺpy: prefabrikované železobetónové (výška 20 m)\n'
-                'Strecha: prefabrikovaná konštrukcia (rozpätie 33 m), opláštenie z trapézového '
-                'plechu s tepelnou a protivodnou izoláciou\n'
-                'Steny: opláštenie zo sendvičových panelov\n'
-                'Základová doska: železobetónová, prispôsobená pre regále a zakladače vysokého '
-                'skladu\n'
-                'Podlaha: priemyselná betónová, hladko zahladená\n'
-                'Konštrukcia a dokončenie (Kancelársko-sociálna budova):\n'
-                'Konštrukcia: murovaná so stropmi z predpätého betónu\n'
-                'Fasáda: sendvičové panely\n'
-                'Dokončenie (vysoký štandard): akustické podh�ady, suchá výstavba, kobercové a PVC '
-                'krytiny, gresové dlaždice, hliníkové výklady\n'
-                'Zariadenia a skladovacia technológia:\n'
-                '6 prekladaných dokov s rampami, prevažne vybavených systémom automatického '
-                'blokovania kolies\n'
-                'Inštalácia automatického skladovania (vysoká časť)\n'
-                'Regále pre manuálne skladovanie\n'
-                '"Teplý sklad" s presnou kontrolou teplotných parametrov\n'
-                'Inštalácie a infraštruktúra (Vnútorná a vonkajšia):\n'
-                'Sanitárne inštalácie: vodovod, kanalizácia sanitárna a dažďová, ústredné '
-                'vykurovanie\n'
-                'HVAC inštalácie: mechanická ventilácia, klimatizácia\n'
-                'Elektrické a slaboprúdové inštalácie: v plnom rozsahu\n'
-                'PO protipožiarna ochrana: systém požiarnej signalizácie (EPS), inštalácia '
-                'plynového hasenia, vonkajšia nádrž požiarnej vody, hydroforová zostava\n'
-                'Vonkajšia infraštruktúra: prestavba a rozšírenie inštalácií (vrátane teplovodnej '
-                'siete), oporné múry, vonkajšie prístrešky\n'
-                'Dopravné usporiadanie: prestavba jestvujúceho vnútorného usporiadania komunikácií '
-                'a parkovacích státí'},
+  't_o': {'cs': 'Automatický výškový sklad pro hotové výrobky a suroviny (CWH)\nStavební plocha: cca. 6 700 m², výška skladu: do 20 m. Moderní automatický sklad integrovaný s kancelářskou a sociální částí, vysoce přesná rovná podlaha pro obsluhu automatických skladových zakladačů.\nSpecifikace\nPlochy a parametry (Celkem):\nCelková plocha: 6 650,00 m²\nUžitková plocha: 6 405,00 m²\nZastavěná plocha: 6 413,00 m²\nObjem: 109 795 m³\nKancelářsko-sociální budova:\nPlocha: cca 347 m²\nPodlaží: 2\nKonstrukce (Skladová hala):\nZaložení: betonové piloty\nSloupy: prefabrikované železobetonové (výška 20 m)\nStřecha: prefabrikovaná konstrukce (rozpětí 33 m), opláštění z trapézového plechu s tepelnou a protivodní izolací\nStěny: opláštění ze sendvičových panelů\nZákladová deska: železobetonová, přizpůsobená pro regály a zakladače vysokého skladu\nPodlaha: průmyslová betonová, hladce zahlazená\nKonstrukce a dokončení (Kancelářsko-sociální budova):\nKonstrukce: zděná se stropy z předpjatého betonu\nFasáda: sendvičové panely\nDokončení (vysoký standard): akustické podhledy, suchá výstavba, kobercové a PVC krytiny, gresové dlaždice, hliníkové výlohy\nZařízení a skladovací technologie:\n6 překládacích doků s rampami, převážně vybavených systémem automatického blokování kol\nInstalace automatického skladování (vysoká část)\nRegály pro manuální skladování\n"Teplý sklad" s přesnou kontrolou teplotních parametrů\nInstalace a infrastruktura (Vnitřní i vnější):\nSanitární instalace: vodovod, kanalizace sanitární a dešťová, ústřední vytápění\nHVAC instalace: mechanická ventilace, klimatizace\nElektrické a slaboproudé instalace: v plném rozsahu\nPO požární ochrana: systém požární signalizace (EPS), instalace plynového hašení, vnější nádrž požární vody, hydroforová sestava\nVnější infrastruktura: přestavba a rozšíření instalací (včetně teplovodní sítě), opěrné zdi, vnější přístřešky\nDopravní uspořádání: přestavba stávajícího vnitřního uspořádání komunikací a parkovacích stání', 'de': 'Automatisches Hochregallager für Fertigprodukte und Rohstoffe (CWH)\nBaufläche: ca. 6.700 m², Lagerhöhe: bis zu 20 m. Ein modernes automatisches Lager, das in den Büro- und Sozialbereich integriert ist, hochpräziser Ebenheitsboden für den Betrieb automatischer Lagerstapler.\nSpezifikation\nFlächen und Parameter (Gesamt):\nGesamtfläche: 6.650,00 m²\nNutzfläche: 6.405,00 m²\nGrundstücksfläche: 6.413,00 m²\nVolumen: 109.795 m³\nBüro- und Sozialgebäude:\nFläche: ca. 347 m²\nGeschosszahl: 2\nKonstruktion (Lagerhalle):\nGründung: Betonpfähle\nStützen: Stahlbeton-Fertigteile (Höhe 20 m)\nDach: Fertigteilkonstruktion (Spannweite 33 m), Trapezblechverkleidung mit Wärmedämmung und Abdichtung\nWände: Verkleidung aus Sandwichpaneelen\nBodenplatte: Stahlbeton, ausgelegt für Hochregal-Lager und Regalbediengeräte\nBoden: Industriebeton, glatt maschinengeschliffen\nKonstruktion und Ausbau (Büro- und Sozialgebäude):\nKonstruktion: Mauerwerk mit Spannbetondecken\nFassade: Sandwichpaneele\nAusbau (hochwertig): Akustikdecken, Trockenbau, Teppich- und PVC-Beläge, Feinsteinzeugfliesen, Aluminium-Schaufenster\nAusstattung und Lagertechnik:\n6 Verladedocks mit Rampen, überwiegend mit automatischer Radblockierung ausgestattet\nAutomatische Lagereinrichtung (Hochregalbereich)\nRegale für manuelle Lagerung\n„Warmes Lager" mit präziser Temperaturparameter-Überwachung\nInstallationen und Infrastruktur (Innen und Außen):\nSanitärinstallationen: Wasserleitung, Schmutz- und Regenwasserkanalisation, Zentralheizung\nHVAC-Installationen: Mechanische Lüftung, Klimatisierung\nElektro- und Fernmeldetechnik: Vollständiger Umfang\nBrandschutz: Brandmeldeanlage (BMA), Gaslöschanlage, außenliegender Löschwassertank, Druckerhöhungsanlage\nAußenanlagen: Umbau und Erweiterung der Installationen (einschließlich Wärmenetz), Stützmauern, Außenüberdachungen\nVerkehrsanlagen: Umbau der bestehenden inneren Wege- und Stellplatzanordnung', 'en': 'Automatic high-bay warehouse for finished products and raw materials (CWH)\nBuilding area: approx. 6,700 m², warehouse height: up to 20 m. A modern automatic warehouse integrated with the office and social part, high-precision flatness floor for the operation of automatic warehouse stackers.\nSpecification\nAreas and parameters (Total):\nTotal area: 6,650.00 m²\nUsable area: 6,405.00 m²\nBuilding area: 6,413.00 m²\nVolume: 109,795 m³\nOffice and welfare building:\nArea: approx. 347 m²\nStoreys: 2\nStructure (Warehouse hall):\nFoundation: Concrete piles\nColumns: Precast reinforced concrete (height 20 m)\nRoof: Precast structure (span 33 m), trapezoidal sheet metal cladding with thermal and waterproof insulation\nWalls: Sandwich panel cladding\nFoundation slab: Reinforced concrete, designed for high-bay racking and storage/retrieval systems\nFloor: Industrial concrete floor, power-trowelled to a smooth finish\nStructure and finishes (Office and welfare building):\nStructure: Masonry with prestressed concrete floors\nFaçade: Sandwich panels\nFinishes (high standard): Acoustic ceilings, drywall, carpet and PVC floor coverings, stoneware tiles, aluminium storefronts\nEquipment and storage technology:\n6 loading docks with ramps, mostly equipped with automatic wheel-locking systems\nAutomated storage installation (high-bay section)\nManual storage racking\n"Heated warehouse" with precise temperature parameter control\nInstallations and infrastructure (Internal and External):\nSanitary installations: Water supply, sanitary and stormwater drainage, central heating\nHVAC installations: Mechanical ventilation, air conditioning\nElectrical and teletechnical installations: Full scope\nFire protection: Fire alarm system (SSP), gas extinguishing system, external fire-water tank, booster set\nExternal infrastructure: Reconstruction and extension of installations (including heating network), retaining walls, external canopies\nTraffic layout: Reconstruction of the existing internal road and parking layout', 'hu': 'Automatikus magasraktár késztermékek és nyersanyagok számára (CWH)\nÉpítési terület: kb. 6700 m², raktármagasság: 20 m-ig. Irodai és szociális résszel integrált modern automata raktár, nagy pontosságú síkpadló automata raktári targonca üzemeltetéséhez.\nSpecifikáció\nTerületek és paraméterek (Összesen):\nTeljes terület: 6 650,00 m²\nHasznos alapterület: 6 405,00 m²\nBeépített terület: 6 413,00 m²\nTérfogat: 109 795 m³\nIrodai és szociális épület:\nTerület: kb. 347 m²\nSzintek: 2\nSzerkezet (Raktárcsarnok):\nAlapozás: beton cölöpök\nOszlopok: előregyártott vasbeton (magasság 20 m)\nTető: előregyártott szerkezet (fesztáv 33 m), trapézlemez burkolat hő- és vízszigeteléssel\nFalak: szendvicspanel burkolat\nAlaplemez: vasbeton, magasraktári állványokhoz és rakodógépekhez igazítva\nPadló: ipari beton, simára csiszolt\nSzerkezet és kivitelezés (Irodai és szociális épület):\nSzerkezet: falazott, feszített beton födémekkel\nHomlokzat: szendvicspanelek\nKivitelezés (magas színvonalú): akusztikus álmennyezetek, szárazépítészet, szőnyeg- és PVC padlóburkolatok, greslapok, alumínium kirakatok\nBerendezések és raktártechnológia:\n6 átfejtő dokk rámpákkal, többnyire automata kerékblokkoló rendszerrel felszerelve\nAutomata tároló berendezés (magas rész)\nKézi tárolásra szolgáló állványok\n„Meleg raktár" precíz hőmérséklet-paraméter ellenőrzéssel\nInstallációk és infrastruktúra (Belső és külső):\nSzaniter installációk: vízvezeték, szennyvíz- és csapadékvíz-csatorna, központi fűtés\nHVAC installációk: gépi szellőzés, klíma\nElektromos és gyengeáramú installációk: teljes körű\nTűzvédelem: tűzjelző rendszer (SSP), gázzal oltó rendszer, külső tűzivíztározó, hidrofor egység\nKülső infrastruktúra: installációk át- és kiépítése (beleértve a távhőhálózatot), támfalak, külső előtetők\nKözlekedési rendszer: a meglévő belső út- és parkolóelrendezés átépítése', 'sk': 'Automatický výškový sklad hotových výrobkov a surovín (CWH)\nZastavaná plocha: cca 6 700 m², výška skladu: do 20 m. Moderný automatizovaný sklad integrovaný s kancelárskou a sociálnou časťou, podlaha s vysokou presnosťou rovinnosti pre prevádzku automatických skladových regálových zakladačov.\nŠpecifikácia\nPlochy a parametre (Spolu):\nCelková plocha: 6 650,00 m²\nÚžitková plocha: 6 405,00 m²\nZastavaná plocha: 6 413,00 m²\nObjem: 109 795 m³\nKancelársko-sociálna budova:\nPlocha: cca 347 m²\nPodlažia: 2\nKonštrukcia (Skladová hala):\nZaloženie: betónové pilóty\nStĺpy: prefabrikované železobetónové (výška 20 m)\nStrecha: prefabrikovaná konštrukcia (rozpätie 33 m), opláštenie z trapézového plechu s tepelnou a protivodnou izoláciou\nSteny: opláštenie zo sendvičových panelov\nZákladová doska: železobetónová, prispôsobená pre regále a zakladače vysokého skladu\nPodlaha: priemyselná betónová, hladko zahladená\nKonštrukcia a dokončenie (Kancelársko-sociálna budova):\nKonštrukcia: murovaná so stropmi z predpätého betónu\nFasáda: sendvičové panely\nDokončenie (vysoký štandard): akustické podh�ady, suchá výstavba, kobercové a PVC krytiny, gresové dlaždice, hliníkové výklady\nZariadenia a skladovacia technológia:\n6 prekladaných dokov s rampami, prevažne vybavených systémom automatického blokovania kolies\nInštalácia automatického skladovania (vysoká časť)\nRegále pre manuálne skladovanie\n"Teplý sklad" s presnou kontrolou teplotných parametrov\nInštalácie a infraštruktúra (Vnútorná a vonkajšia):\nSanitárne inštalácie: vodovod, kanalizácia sanitárna a dažďová, ústredné vykurovanie\nHVAC inštalácie: mechanická ventilácia, klimatizácia\nElektrické a slaboprúdové inštalácie: v plnom rozsahu\nPO protipožiarna ochrana: systém požiarnej signalizácie (EPS), inštalácia plynového hasenia, vonkajšia nádrž požiarnej vody, hydroforová zostava\nVonkajšia infraštruktúra: prestavba a rozšírenie inštalácií (vrátane teplovodnej siete), oporné múry, vonkajšie prístrešky\nDopravné usporiadanie: prestavba jestvujúceho vnútorného usporiadania komunikácií a parkovacích státí'},
   't_s': {},
   't_t': {},
   'title': 'VESUVIUS Skawina',
@@ -4385,57 +3141,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba budovy self storage u ul. Bystréj a Kolejarské ve Varšavě.\n'
-                '\n'
-                '• 6podlažní budova vybavená velkými nákladně-osobními výtahy a únikovým '
-                'schodištěm.\n'
-                '• Celková plocha budovy self storage 8 269,03 m² o objemu 24 458 m3\n'
-                '• Budova je realizována jako monolitická betonová konstrukce založená na '
-                'základových patkách.\n'
-                '• Fasáda ze sendvičových panelů, opláštění střechy provedeno z EPDM membrány na '
-                'tepelněizolačních vrstvách.\n'
-                '• Úprava terénu včetně retenční nádrže a doprovodné infrastruktury.',
-          'de': 'Bau eines Self-Storage-Gebäudes an der ul. Bystra und Kolejarska in Warschau.\n'
-                '\n'
-                '• 6-geschossiges Gebäude, ausgestattet mit großen Lasten- und Personenaufzügen '
-                'sowie einem Fluchttreppenhaus.\n'
-                '• Gesamtfläche des Self-Storage-Gebäudes 8.269,03 m² mit einem Volumen von 24.458 '
-                'm3\n'
-                '• Das Gebäude wird als monolithische Betonkonstruktion auf Punktfundamenten '
-                'errichtet.\n'
-                '• Fassade aus Sandwichpaneelen, Dacheindeckung aus EPDM-Membran auf '
-                'Wärmedämmschichten.\n'
-                '• Geländegestaltung einschließlich Rückhaltetank und zugehöriger Infrastruktur.',
-          'en': 'Construction of a self-storage building at ul. Bystra and Kolejarska in Warsaw.\n'
-                '\n'
-                '• 6-storey building equipped with large cargo and passenger lifts and an '
-                'evacuation staircase.\n'
-                '• Total area of the self-storage building 8,269.03 m² with a volume of 24,458 m3\n'
-                '• The building is being built as a monolithic concrete structure founded on '
-                'foundation footings.\n'
-                '• Façade of sandwich panels, roof covering made of EPDM membrane on thermal '
-                'insulation layers.\n'
-                '• Land development including a retention tank and accompanying infrastructure.',
-          'hu': 'Önkiszolgáló tároló (self storage) épület építése a varsói ul. Bystra és '
-                'Kolejarska utcánál.\n'
-                '\n'
-                '• 6 szintes épület, nagy teher- és személyfelvonókkal, valamint menekülési '
-                'lépcsőházzal felszerelve.\n'
-                '• A self storage épület teljes alapterülete 8 269,03 m², térfogata 24 458 m3\n'
-                '• Az épület monolitikus betonszerkezetként készül, pontalapokon.\n'
-                '• Szendvicspanel homlokzat, a tetőfedés EPDM membránból készült hőszigetelő '
-                'rétegeken.\n'
-                '• Telekrendezés visszatartó tartállyal és kísérő infrastruktúrával.',
-          'sk': 'Výstavba budovy self storage pri ul. Bystrej a Kolejarskej vo Varšave.\n'
-                '\n'
-                '• 6-podlažná budova vybavená veľkými nákladno-osobnými výťahmi a únikovým '
-                'schodiskom.\n'
-                '• Celková plocha budovy self storage 8 269,03 m² s objemom 24 458 m3\n'
-                '• Budova je realizovaná ako monolitická betónová konštrukcia založená na '
-                'základových pätkách.\n'
-                '• Fasáda zo sendvičových panelov, opláštenie strechy vykonané z EPDM membrány na '
-                'tepelnoizolačných vrstvách.\n'
-                '• Úprava terénu vrátane retenčnej nádrže a sprievodnej infraštruktúry.'},
+  't_o': {'cs': '6patrová budova s \u200b\u200bvlastním skladem\nCelková plocha budovy: 8 269 m², objem: 24 458 m³, 6 nadzemních podlaží. Monolitická betonová konstrukce na základových patkách, fasáda ze sendvičových panelů, střešní krytina z EPDM membrány na tepelně izolačních vrstvách, velkoprostorové nákladní a osobní výtahy.\nVýstavba budovy self storage u ul. Bystréj a Kolejarské ve Varšavě.\n\n• 6podlažní budova vybavená velkými nákladně-osobními výtahy a únikovým schodištěm.\n• Celková plocha budovy self storage 8 269,03 m² o objemu 24 458 m3\n• Budova je realizována jako monolitická betonová konstrukce založená na základových patkách.\n• Fasáda ze sendvičových panelů, opláštění střechy provedeno z EPDM membrány na tepelněizolačních vrstvách.\n• Úprava terénu včetně retenční nádrže a doprovodné infrastruktury.', 'de': '6-stöckiges Selfstorage-Gebäude\nGesamtgebäudefläche: 8.269 m², Volumen: 24.458 m³, 6 oberirdische Stockwerke. Monolithische Betonkonstruktion auf Fundamentfundamenten, Fassade aus Sandwichpaneelen, Dacheindeckung aus EPDM-Membran auf Wärmedämmschichten, großformatige Lasten- und Personenaufzüge.\nBau eines Self-Storage-Gebäudes an der ul. Bystra und Kolejarska in Warschau.\n\n• 6-geschossiges Gebäude, ausgestattet mit großen Lasten- und Personenaufzügen sowie einem Fluchttreppenhaus.\n• Gesamtfläche des Self-Storage-Gebäudes 8.269,03 m² mit einem Volumen von 24.458 m3\n• Das Gebäude wird als monolithische Betonkonstruktion auf Punktfundamenten errichtet.\n• Fassade aus Sandwichpaneelen, Dacheindeckung aus EPDM-Membran auf Wärmedämmschichten.\n• Geländegestaltung einschließlich Rückhaltetank und zugehöriger Infrastruktur.', 'en': '6-story self-storage building\nTotal building area: 8,269 m², volume: 24,458 m³, 6 above-ground floors. Monolithic concrete structure placed on foundation footings, façade made of sandwich panels, roof covering made of EPDM membrane on thermal insulation layers, large-size freight and passenger elevators.\nConstruction of a self-storage building at ul. Bystra and Kolejarska in Warsaw.\n\n• 6-storey building equipped with large cargo and passenger lifts and an evacuation staircase.\n• Total area of the self-storage building 8,269.03 m² with a volume of 24,458 m3\n• The building is being built as a monolithic concrete structure founded on foundation footings.\n• Façade of sandwich panels, roof covering made of EPDM membrane on thermal insulation layers.\n• Land development including a retention tank and accompanying infrastructure.', 'hu': '6 szintes öntároló épület\nTeljes épületterület: 8.269 m², térfogat: 24.458 m³, 6 föld feletti szint. Alapozásra helyezett monolit betonszerkezet, szendvicspanel homlokzat, hőszigetelő rétegeken EPDM membrán tetőfedés, nagyméretű teher- és személylift.\nÖnkiszolgáló tároló (self storage) épület építése a varsói ul. Bystra és Kolejarska utcánál.\n\n• 6 szintes épület, nagy teher- és személyfelvonókkal, valamint menekülési lépcsőházzal felszerelve.\n• A self storage épület teljes alapterülete 8 269,03 m², térfogata 24 458 m3\n• Az épület monolitikus betonszerkezetként készül, pontalapokon.\n• Szendvicspanel homlokzat, a tetőfedés EPDM membránból készült hőszigetelő rétegeken.\n• Telekrendezés visszatartó tartállyal és kísérő infrastruktúrával.', 'sk': '6-poschodová budova s \u200b\u200bvlastným skladom\nCelková plocha budovy: 8 269 m², objem: 24 458 m³, 6 nadzemných podlaží. Monolitická betónová konštrukcia uložená na základových pätkách, fasáda zo sendvičových panelov, strešná krytina z EPDM membrány na tepelnoizolačných vrstvách, veľkorozmerné nákladné a osobné výťahy.\nVýstavba budovy self storage pri ul. Bystrej a Kolejarskej vo Varšave.\n\n• 6-podlažná budova vybavená veľkými nákladno-osobnými výťahmi a únikovým schodiskom.\n• Celková plocha budovy self storage 8 269,03 m² s objemom 24 458 m3\n• Budova je realizovaná ako monolitická betónová konštrukcia založená na základových pätkách.\n• Fasáda zo sendvičových panelov, opláštenie strechy vykonané z EPDM membrány na tepelnoizolačných vrstvách.\n• Úprava terénu vrátane retenčnej nádrže a sprievodnej infraštruktúry.'},
   't_s': {},
   't_t': {},
   'title': 'Stokado Self-Storage – Warszawa Targówek',
@@ -4453,72 +3159,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': '• Užitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 m² • Plocha '
-                'pozemku: 9 263,44 m²\n'
-                'Prostorové uspořádání: • Dva jednopodlažní objekty oddělené příjezdovou '
-                'komunikací, tvarově sledující linii zástavby • Hlavní vstupy pro zákazníky ze '
-                'strany parkoviště (východ) • Zóna zásobování a technicko-skladového zázemí ze '
-                'západní strany • Vymezené zóny: obchodní jednotky (prodejní sál + zázemí), '
-                'veřejně přístupné toalety, technické místnosti\n'
-                'Konstrukce: • Smíšený nosný systém • Přímé založení: železobetonové pasy a patky '
-                '• Sloupy: prefabrikované železobetonové • Střecha: ocelová konstrukce\n'
-                'Fasáda: • Sendvičové panely\n'
-                'Krajinářské úpravy: • Parkoviště pro osobní automobily včetně chodníků • Podzemní '
-                'požární nádrž na vodu • Podzemní retenční nádrž na dešťovou vodu\n'
-                'Na našich sociálních sítích naleznete průběžně aktualizované fotoreportáže.',
-          'de': '• Nutzfläche: • Gebäude A: 1.358,90 m² • Gebäude B: 943,70 m² • '
-                'Grundstücksfläche: 9.263,44 m²\n'
-                'Räumliche Anordnung: • Zwei eingeschossige Gebäude, getrennt durch eine '
-                'Zufahrtsstraße, deren Form der Bebauungslinie folgt • Haupteingänge für Kunden '
-                'von der Parkplatzseite (Osten) • Anlieferungs- und Technik-/Lagerzone auf der '
-                'Westseite • Abgegrenzte Zonen: Geschäftseinheiten (Verkaufsraum + Back-of-House), '
-                'öffentlich zugängliche Sanitärräume, Technikräume\n'
-                'Konstruktion: • Gemischtes Tragsystem • Direkte Gründung: Stahlbeton-Streifen- '
-                'und Punktfundamente • Stützen: Stahlbeton-Fertigteile • Dach: Stahlkonstruktion\n'
-                'Fassade: • Sandwichpaneele\n'
-                'Freiflächengestaltung: • PKW-Parkplatz mit Gehwegen • Unterirdischer '
-                'Löschwassertank • Unterirdischer Regenwasserrückhaltetank\n'
-                'In unseren sozialen Medien finden Sie laufend aktualisierte Fotodokumentationen.',
-          'en': '• Usable area: • Building A: 1,358.90 m² • Building B: 943.70 m² • Land area: '
-                '9,263.44 m²\n'
-                'Spatial layout: • Two single-storey buildings separated by an access road, '
-                'following the building line • Main customer entrances from the parking side '
-                '(east) • Delivery and technical/back-of-house zone on the west side • Separated '
-                'zones: retail units (sales floor + back-of-house), public restrooms, technical '
-                'rooms\n'
-                'Structure: • Mixed structural system • Direct foundation: reinforced-concrete '
-                'strip and pad footings • Columns: precast reinforced concrete • Roof: steel '
-                'structure\n'
-                'Façade: • Sandwich panels\n'
-                'Site development: • Car park with pedestrian walkways • Underground fire-water '
-                'tank • Underground stormwater retention tank\n'
-                'Our social media channels feature regular photo updates from the project.',
-          'hu': '• Hasznos alapterület: • A épület: 1 358,90 m² • B épület: 943,70 m² • Telek '
-                'területe: 9 263,44 m²\n'
-                'Térbeli elrendezés: • Két földszintes épület, amelyeket behajtó út választ el, a '
-                'beépítési vonalat követő formával • Főbejáratok az ügyfelek számára a parkoló '
-                'felől (kelet) • Áruátvételi és műszaki-raktári zóna a nyugati oldalon • '
-                'Elkülönített zónák: üzlethelyiségek (értékesítési tér + kiszolgálórész), '
-                'nyilvános mosdók, műszaki helyiségek\n'
-                'Szerkezet: • Vegyes tartószerkezet • Közvetlen alapozás: vasbeton sávalapok és '
-                'pontalapok • Oszlopok: előregyártott vasbeton • Tető: acélszerkezet\n'
-                'Homlokzat: • Szendvicspanelek\n'
-                'Telekrendezés: • Személygépkocsi-parkoló járdákkal • Föld alatti tűzivíztározó • '
-                'Föld alatti csapadékvíz-visszatartó tározó\n'
-                'Közösségi média felületeinken rendszeresen frissített fotódokumentációt talál.',
-          'sk': '• Úžitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 m² • Plocha '
-                'pozemku: 9 263,44 m²\n'
-                'Priestorové usporiadanie: • Dva jednopodlažné objekty oddelené príjazdovou '
-                'komunikáciou, tvarovo sledujúce líniu zástavby • Hlavné vstupy pre zákazníkov zo '
-                'strany parkoviska (východ) • Zóna zásobovania a technicko-skladového zázemia zo '
-                'západnej strany • Vymedzené zóny: obchodné jednotky (predajný priestor + '
-                'zázemie), verejne prístupné toalety, technické miestnosti\n'
-                'Konštrukcia: • Zmiešaný nosný systém • Priame založenie: železobetónové pásy a '
-                'pätky • Stĺpy: prefabrikované železobetónové • Strecha: oceľová konštrukcia\n'
-                'Fasáda: • Sendvičové panely\n'
-                'Krajinné úpravy: • Parkovisko pre osobné automobily vrátane chodníkov • Podzemná '
-                'požiarna nádrž na vodu • Podzemná retenčná nádrž na dažďovú vodu\n'
-                'Na našich sociálnych sieťach nájdete priebežne aktualizované fotoreportáže.'},
+  't_o': {'cs': 'Retail park (dvě komerční budovy)\nUžitná plocha budov: 2 303 m² (budova A: 1 359 m², budova B: 944 m²), zastavěná plocha: 9 263 m². Dvě samostatně stojící obchodní a servisní budovy, zákaznická parkoviště, výdejní plochy, podzemní zásobník a nádrž na požární vodu.\n• Užitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 m² • Plocha pozemku: 9 263,44 m²\nProstorové uspořádání: • Dva jednopodlažní objekty oddělené příjezdovou komunikací, tvarově sledující linii zástavby • Hlavní vstupy pro zákazníky ze strany parkoviště (východ) • Zóna zásobování a technicko-skladového zázemí ze západní strany • Vymezené zóny: obchodní jednotky (prodejní sál + zázemí), veřejně přístupné toalety, technické místnosti\nKonstrukce: • Smíšený nosný systém • Přímé založení: železobetonové pasy a patky • Sloupy: prefabrikované železobetonové • Střecha: ocelová konstrukce\nFasáda: • Sendvičové panely\nKrajinářské úpravy: • Parkoviště pro osobní automobily včetně chodníků • Podzemní požární nádrž na vodu • Podzemní retenční nádrž na dešťovou vodu\nNa našich sociálních sítích naleznete průběžně aktualizované fotoreportáže.', 'de': 'Fachmarktzentrum (zwei Gewerbegebäude)\nNutzfläche der Gebäude: 2.303 m² (Gebäude A: 1.359 m², Gebäude B: 944 m²), Grundstücksbebauung: 9.263 m². Zwei freistehende Gewerbe- und Dienstleistungsgebäude, Kundenparkplätze, Anlieferungsbereiche, ein unterirdischer Lagertank und ein Löschwassertank.\n• Nutzfläche: • Gebäude A: 1.358,90 m² • Gebäude B: 943,70 m² • Grundstücksfläche: 9.263,44 m²\nRäumliche Anordnung: • Zwei eingeschossige Gebäude, getrennt durch eine Zufahrtsstraße, deren Form der Bebauungslinie folgt • Haupteingänge für Kunden von der Parkplatzseite (Osten) • Anlieferungs- und Technik-/Lagerzone auf der Westseite • Abgegrenzte Zonen: Geschäftseinheiten (Verkaufsraum + Back-of-House), öffentlich zugängliche Sanitärräume, Technikräume\nKonstruktion: • Gemischtes Tragsystem • Direkte Gründung: Stahlbeton-Streifen- und Punktfundamente • Stützen: Stahlbeton-Fertigteile • Dach: Stahlkonstruktion\nFassade: • Sandwichpaneele\nFreiflächengestaltung: • PKW-Parkplatz mit Gehwegen • Unterirdischer Löschwassertank • Unterirdischer Regenwasserrückhaltetank\nIn unseren sozialen Medien finden Sie laufend aktualisierte Fotodokumentationen.', 'en': 'Retail park (two commercial buildings)\nUsable area of \u200b\u200bbuildings: 2,303 m² (Building A: 1,359 m², Building B: 944 m²), land development: 9,263 m². Two free-standing commercial and service buildings, customer parking lots, delivery areas, an underground storage tank and a fire water tank.\n• Usable area: • Building A: 1,358.90 m² • Building B: 943.70 m² • Land area: 9,263.44 m²\nSpatial layout: • Two single-storey buildings separated by an access road, following the building line • Main customer entrances from the parking side (east) • Delivery and technical/back-of-house zone on the west side • Separated zones: retail units (sales floor + back-of-house), public restrooms, technical rooms\nStructure: • Mixed structural system • Direct foundation: reinforced-concrete strip and pad footings • Columns: precast reinforced concrete • Roof: steel structure\nFaçade: • Sandwich panels\nSite development: • Car park with pedestrian walkways • Underground fire-water tank • Underground stormwater retention tank\nOur social media channels feature regular photo updates from the project.', 'hu': 'Kiskereskedelmi park (két kereskedelmi épület)\nÉpületek hasznos területe: 2.303 m² (A épület: 1.359 m², B épület: 944 m²), telekalakítás: 9.263 m². Két szabadon álló kereskedelmi és szolgáltató épület, vásárlói parkolók, szállítási területek, földalatti tároló és tűzivíz tartály.\n• Hasznos alapterület: • A épület: 1 358,90 m² • B épület: 943,70 m² • Telek területe: 9 263,44 m²\nTérbeli elrendezés: • Két földszintes épület, amelyeket behajtó út választ el, a beépítési vonalat követő formával • Főbejáratok az ügyfelek számára a parkoló felől (kelet) • Áruátvételi és műszaki-raktári zóna a nyugati oldalon • Elkülönített zónák: üzlethelyiségek (értékesítési tér + kiszolgálórész), nyilvános mosdók, műszaki helyiségek\nSzerkezet: • Vegyes tartószerkezet • Közvetlen alapozás: vasbeton sávalapok és pontalapok • Oszlopok: előregyártott vasbeton • Tető: acélszerkezet\nHomlokzat: • Szendvicspanelek\nTelekrendezés: • Személygépkocsi-parkoló járdákkal • Föld alatti tűzivíztározó • Föld alatti csapadékvíz-visszatartó tározó\nKözösségi média felületeinken rendszeresen frissített fotódokumentációt talál.', 'sk': 'Retail park (dve komerčné budovy)\nÚžitková plocha budov: 2 303 m² (budova A: 1 359 m², budova B: 944 m²), zastavaná plocha: 9 263 m². Dva samostatne stojace obchodné a obslužné objekty, zákaznícke parkoviská, výdajné plochy, podzemný zásobník a nádrž na požiarnu vodu.\n• Úžitková plocha: • Budova A: 1 358,90 m² • Budova B: 943,70 m² • Plocha pozemku: 9 263,44 m²\nPriestorové usporiadanie: • Dva jednopodlažné objekty oddelené príjazdovou komunikáciou, tvarovo sledujúce líniu zástavby • Hlavné vstupy pre zákazníkov zo strany parkoviska (východ) • Zóna zásobovania a technicko-skladového zázemia zo západnej strany • Vymedzené zóny: obchodné jednotky (predajný priestor + zázemie), verejne prístupné toalety, technické miestnosti\nKonštrukcia: • Zmiešaný nosný systém • Priame založenie: železobetónové pásy a pätky • Stĺpy: prefabrikované železobetónové • Strecha: oceľová konštrukcia\nFasáda: • Sendvičové panely\nKrajinné úpravy: • Parkovisko pre osobné automobily vrátane chodníkov • Podzemná požiarna nádrž na vodu • Podzemná retenčná nádrž na dažďovú vodu\nNa našich sociálnych sieťach nájdete priebežne aktualizované fotoreportáže.'},
   't_s': {},
   't_t': {},
   'title': 'Scallier - Zabrze',
@@ -4536,90 +3177,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Výstavba montážně-skladové haly se sociálně-kancelářským zázemím a jeřábovým '
-                'vybavením pro výrobní činnost spočívající v prefabrikaci silnoproudých rozvoden.\n'
-                '\n'
-                '• Výrobně-skladová plocha – 3634 m2\n'
-                '• Sociálně-kancelářská plocha – 250,52 m2\n'
-                '• Hala navržena pro dvě jeřáby o celkové nosnosti 20 T\n'
-                '• Sítě a instalace pro potřeby realizované investice\n'
-                '• Úprava terénu kolem objektu\n'
-                '• Konstrukce:\n'
-                'o Objekt s nepřímým založením na betonových sloupech\n'
-                'o Konstrukce stěn a střechy haly v ocelové technologii\n'
-                'o Opláštění haly v technologii sendvičových panelů\n'
-                'o Krytina střechy haly v ocelové konstrukci s použitím trapézového plechu, '
-                'izolace z minerální vlny a PVC membrány\n'
-                'o Smíšená konstrukce kancelářské budovy (zděná, železobetonová jádra a věnce, '
-                'prefabrikované patky s použitím kanálových desek typu HC)',
-          'de': 'Bau einer Montage- und Lagerhalle mit Sozial- und Büroräumen sowie Kranausrüstung '
-                'für die Produktionstätigkeit im Bereich der Vorfertigung von '
-                'Hochspannungsschaltanlagen.\n'
-                '\n'
-                '• Produktions- und Lagerfläche – 3.634 m2\n'
-                '• Sozial- und Bürofläche – 250,52 m2\n'
-                '• Halle ausgelegt für zwei Krane mit einer Gesamtragfähigkeit von 20 T\n'
-                '• Netze und Installationen für die Bedürfnisse der realisierten Investition\n'
-                '• Geländegestaltung um das Objekt\n'
-                '• Konstruktion:\n'
-                'o Objekt mit indirekter Gründung auf Betonstützen\n'
-                'o Wand- und Dachkonstruktion der Halle in Stahltechnologie\n'
-                'o Hallenverkleidung in Sandwichpaneel-Technologie\n'
-                'o Dachdeckung der Halle in Stahlkonstruktion unter Verwendung von Trapezblech, '
-                'Mineralwolldämmung und PVC-Membran\n'
-                'o Gemischte Konstruktion des Bürogebäudes (Mauerwerk, Stahlbetonkerne und '
-                'Ringbalken, vorgefertigte Punktfundamente unter Verwendung von HC-Kanalplatten)',
-          'en': 'Construction of an assembly and warehouse hall with social and office facilities '
-                'and crane equipment for production activities involving the prefabrication of '
-                'high-voltage switchgears.\n'
-                '\n'
-                '• Production and warehouse area – 3,634 m2\n'
-                '• Social and office area – 250.52 m2\n'
-                '• Hall designed for two overhead cranes with a total lifting capacity of 20 T\n'
-                '• Networks and installations for the needs of the implemented investment\n'
-                '• Land development around the facility\n'
-                '• Structure:\n'
-                'o Facility with indirect foundation on concrete columns\n'
-                'o Wall and roof structure of the hall in steel technology\n'
-                'o Hall cladding in sandwich panel technology\n'
-                'o Hall roof covering in steel structure using trapezoidal sheet metal, mineral '
-                'wool insulation and PVC membrane\n'
-                'o Mixed structure of the office building (masonry, reinforced concrete cores and '
-                'ring beams, prefabricated footings using HC-type channel slabs)',
-          'hu': 'Összeszerelő-raktár csarnok építése szociális-irodai kiegészítőkkel és '
-                'daruzással, nagyfeszültségű kapcsolóberendezések előregyártására irányuló '
-                'gyártási tevékenységhez.\n'
-                '\n'
-                '• Gyártási-raktározási terület – 3634 m2\n'
-                '• Szociális-irodai terület – 250,52 m2\n'
-                '• A csarnok két daru befogadására van méretezve, 20 T összterhelhetőséggel\n'
-                '• Hálózatok és telepítések a megvalósított beruházás igényeihez\n'
-                '• A telek rendezése az objektum körül\n'
-                '• Szerkezet:\n'
-                'o Közvetett alapozású objektum betonoszlopokon\n'
-                'o A csarnok fal- és tetőszerkezete acél technológiával\n'
-                'o Csarnok burkolat szendvicspanel technológiával\n'
-                'o A csarnok tetőfedése acélszerkezettel trapézlemez, ásványgyapot szigetelés és '
-                'PVC membrán felhasználásával\n'
-                'o Az irodaépület vegyes szerkezete (falazott, vasbeton magok és koszorúk, '
-                'előregyártott talpak HC típusú csatorna lemezek felhasználásával)',
-          'sk': 'Výstavba montážno-skladovej haly so sociálno-kancelárskym zázemím a žeriavovým '
-                'vybavením pre výrobnú činnosť spočívajúcu v prefabrikácii silnoprúdových '
-                'rozvodní.\n'
-                '\n'
-                '• Výrobno-skladová plocha – 3634 m2\n'
-                '• Sociálno-kancelárska plocha – 250,52 m2\n'
-                '• Hala navrhnutá pre dva žeriavy s celkovou nosnosťou 20 T\n'
-                '• Siete a inštalácie pre potreby realizovanej investície\n'
-                '• Úprava terénu okolo objektu\n'
-                '• Konštrukcia:\n'
-                'o Objekt s nepriamym založením na betónových stĺpoch\n'
-                'o Konštrukcia stien a strechy haly v oceľovej technológii\n'
-                'o Opláštenie haly v technológii sendvičových panelov\n'
-                'o Krytina strechy haly v oceľovej konštrukcii s použitím trapézového plechu, '
-                'izolácie z minerálnej vlny a PVC membrány\n'
-                'o Zmiešaná konštrukcia kancelárskej budovy (murovaná, železobetónové jadrá a '
-                'vence, prefabrikované pätky s použitím kanálových dosiek typu HC)'},
+  't_o': {'cs': 'Montážní a skladovací hala pro dva mostové jeřáby\nVýrobní a skladová plocha: 3 634 m², společenská a kancelářská plocha: 251 m². Hala byla navržena a postavena pro instalaci dvou mostových jeřábů o celkové nosnosti 20 tun.\nVýstavba montážně-skladové haly se sociálně-kancelářským zázemím a jeřábovým vybavením pro výrobní činnost spočívající v prefabrikaci silnoproudých rozvoden.\n\n• Výrobně-skladová plocha – 3634 m2\n• Sociálně-kancelářská plocha – 250,52 m2\n• Hala navržena pro dvě jeřáby o celkové nosnosti 20 T\n• Sítě a instalace pro potřeby realizované investice\n• Úprava terénu kolem objektu\n• Konstrukce:\no Objekt s nepřímým založením na betonových sloupech\no Konstrukce stěn a střechy haly v ocelové technologii\no Opláštění haly v technologii sendvičových panelů\no Krytina střechy haly v ocelové konstrukci s použitím trapézového plechu, izolace z minerální vlny a PVC membrány\no Smíšená konstrukce kancelářské budovy (zděná, železobetonová jádra a věnce, prefabrikované patky s použitím kanálových desek typu HC)', 'de': 'Montage- und Lagerhalle für zwei Brückenkräne\nProduktions- und Lagerfläche: 3.634 m², Sozial- und Bürofläche: 251 m². Die Halle wurde für die Montage von zwei Brückenkranen mit einer Gesamttragfähigkeit von 20 Tonnen konzipiert und gebaut.\nBau einer Montage- und Lagerhalle mit Sozial- und Büroräumen sowie Kranausrüstung für die Produktionstätigkeit im Bereich der Vorfertigung von Hochspannungsschaltanlagen.\n\n• Produktions- und Lagerfläche – 3.634 m2\n• Sozial- und Bürofläche – 250,52 m2\n• Halle ausgelegt für zwei Krane mit einer Gesamtragfähigkeit von 20 T\n• Netze und Installationen für die Bedürfnisse der realisierten Investition\n• Geländegestaltung um das Objekt\n• Konstruktion:\no Objekt mit indirekter Gründung auf Betonstützen\no Wand- und Dachkonstruktion der Halle in Stahltechnologie\no Hallenverkleidung in Sandwichpaneel-Technologie\no Dachdeckung der Halle in Stahlkonstruktion unter Verwendung von Trapezblech, Mineralwolldämmung und PVC-Membran\no Gemischte Konstruktion des Bürogebäudes (Mauerwerk, Stahlbetonkerne und Ringbalken, vorgefertigte Punktfundamente unter Verwendung von HC-Kanalplatten)', 'en': 'Assembly and storage hall for two overhead cranes\nProduction and warehouse area: 3,634 m², social and office area: 251 m². The hall was designed and constructed for the installation of two overhead cranes with a total lifting capacity of 20 tons.\nConstruction of an assembly and warehouse hall with social and office facilities and crane equipment for production activities involving the prefabrication of high-voltage switchgears.\n\n• Production and warehouse area – 3,634 m2\n• Social and office area – 250.52 m2\n• Hall designed for two overhead cranes with a total lifting capacity of 20 T\n• Networks and installations for the needs of the implemented investment\n• Land development around the facility\n• Structure:\no Facility with indirect foundation on concrete columns\no Wall and roof structure of the hall in steel technology\no Hall cladding in sandwich panel technology\no Hall roof covering in steel structure using trapezoidal sheet metal, mineral wool insulation and PVC membrane\no Mixed structure of the office building (masonry, reinforced concrete cores and ring beams, prefabricated footings using HC-type channel slabs)', 'hu': 'Összeszerelő és raktárcsarnok két felső daru számára\nGyártási és raktárterület: 3.634 m², szociális és irodaterület: 251 m². A csarnokot két darab, 20 tonna összteherbírású függődaru beépítésére tervezték és építették.\nÖsszeszerelő-raktár csarnok építése szociális-irodai kiegészítőkkel és daruzással, nagyfeszültségű kapcsolóberendezések előregyártására irányuló gyártási tevékenységhez.\n\n• Gyártási-raktározási terület – 3634 m2\n• Szociális-irodai terület – 250,52 m2\n• A csarnok két daru befogadására van méretezve, 20 T összterhelhetőséggel\n• Hálózatok és telepítések a megvalósított beruházás igényeihez\n• A telek rendezése az objektum körül\n• Szerkezet:\no Közvetett alapozású objektum betonoszlopokon\no A csarnok fal- és tetőszerkezete acél technológiával\no Csarnok burkolat szendvicspanel technológiával\no A csarnok tetőfedése acélszerkezettel trapézlemez, ásványgyapot szigetelés és PVC membrán felhasználásával\no Az irodaépület vegyes szerkezete (falazott, vasbeton magok és koszorúk, előregyártott talpak HC típusú csatorna lemezek felhasználásával)', 'sk': 'Montážna a skladovacia hala pre dva mostové žeriavy\nVýrobná a skladová plocha: 3 634 m², spoločenská a kancelárska plocha: 251 m². Hala bola navrhnutá a skonštruovaná pre inštaláciu dvoch mostových žeriavov s celkovou nosnosťou 20 ton.\nVýstavba montážno-skladovej haly so sociálno-kancelárskym zázemím a žeriavovým vybavením pre výrobnú činnosť spočívajúcu v prefabrikácii silnoprúdových rozvodní.\n\n• Výrobno-skladová plocha – 3634 m2\n• Sociálno-kancelárska plocha – 250,52 m2\n• Hala navrhnutá pre dva žeriavy s celkovou nosnosťou 20 T\n• Siete a inštalácie pre potreby realizovanej investície\n• Úprava terénu okolo objektu\n• Konštrukcia:\no Objekt s nepriamym založením na betónových stĺpoch\no Konštrukcia stien a strechy haly v oceľovej technológii\no Opláštenie haly v technológii sendvičových panelov\no Krytina strechy haly v oceľovej konštrukcii s použitím trapézového plechu, izolácie z minerálnej vlny a PVC membrány\no Zmiešaná konštrukcia kancelárskej budovy (murovaná, železobetónové jadrá a vence, prefabrikované pätky s použitím kanálových dosiek typu HC)'},
   't_s': {},
   't_t': {},
   'title': 'Fiołka Racibórz',
@@ -4637,52 +3195,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Celkový objem nového objektu činí 28 342 m³. Dvoupodlažní kancelářská budova s '
-                'vyčleněným skladovým podlažím a skladovým mezipatrovým prostorem nad výrobní '
-                'částí, jakož i s kancelářskými a sociálními plochami v prvním patře. Úprava území '
-                'v okolí nového objektu. Konstrukce: „smíšené" založení (přímé a částečně '
-                'nepřímé); „smíšená" nosná konstrukce objektu (prefabrikované železobetonové '
-                'sloupy, zděné prvky a ocelová střešní konstrukce); „smíšený" plášť objektu '
-                '(tradiční zděný plášť se sendvičovými panely, v kancelářské části prosklená '
-                'fasáda); zastřešení deskami z kamenné vlny a PVC membránou. Fotogalerie jsou '
-                'průběžně aktualizovány na našich sociálních sítích.',
-          'de': 'Gesamtvolumen des neuen Objekts: 28 342 m³. Zweigeschossiges Bürogebäude mit '
-                'einem separaten Geschoss für Lager und einer Lagerzwischenebene über dem '
-                'Produktionsteil sowie Büro- und Sozialflächen im ersten Obergeschoss. '
-                'Geländegestaltung rund um das neue Gebäude. Konstruktion: „gemischte" Gründung '
-                '(direkt und teilweise indirekt); „gemischte" Tragstruktur (vorgefertigte '
-                'Stahlbetonstützen, Mauerwerkselemente und Stahl-Dachkonstruktion); „gemischte" '
-                'Gebäudehülle (traditionelle Mauerwerksverkleidung mit Sandwichpaneelen, '
-                'Glasfassade im Büroteil); Dacheindeckung mit Steinwollplatten und PVC-Membran. '
-                'Aktuelle Fotoreportagen werden laufend auf unseren Social-Media-Kanälen '
-                'veröffentlicht.',
-          'en': 'Total volume of the new building: 28 342 m³. Two-storey office building with a '
-                'separate warehouse level and a storage mezzanine above the production section, as '
-                'well as office and welfare space on the first floor. Site development around the '
-                'new building. Structure: "mixed" foundation (direct and, in part, indirect); '
-                '"mixed" load-bearing structure (precast reinforced concrete columns, masonry '
-                'elements and steel roof structure); "mixed" envelope (traditional masonry '
-                'cladding with sandwich panels, glass façade in the office section); roof covered '
-                'with stone wool panels and PVC membrane. Photo updates from our social media are '
-                'posted on an ongoing basis.',
-          'hu': 'Az új objektum teljes térfogata 28 342 m³. Kétszintes irodaház különálló '
-                'raktárszinttel és raktári félemelettel a gyártási rész felett, valamint irodai és '
-                'szociális terekkel az első emeleten. Az új objektum környékének tereprendezése. '
-                'Szerkezet: „vegyes" alapozás (közvetlen és részben közvetett); „vegyes" '
-                'teherhordó szerkezet (előre gyártott vasbeton oszlopok, falazott elemek és acél '
-                'tetőszerkezet); „vegyes" épületburkolat (hagyományos falazott burkolat '
-                'szendvicspanelekkel, az irodai részben üvegezett homlokzat); tetőfedés '
-                'kőzetgyapot táblákkal és PVC membránnal. Folyamatosan frissített fotóbeszámolók '
-                'találhatók a közösségi média felületeinken.',
-          'sk': 'Celkový objem nového objektu je 28 342 m³. Dvojpodlažná kancelárska budova s '
-                'vyčleneným skladovým podlažím a skladovým mezanínom nad výrobnou časťou, ako aj s '
-                'kancelárskymi a sociálnymi plochami na prvom poschodí. Úprava územia okolo nového '
-                'objektu. Konštrukcia: „zmiešané" založenie (priame a čiastočne nepriame); '
-                '„zmiešaná" nosná konštrukcia objektu (prefabrikované železobetonové stĺpy, '
-                'murované prvky a oceľová strešná konštrukcia); „zmiešaný" plášť objektu (tradičný '
-                'murovaný plášť so sendvičovými panelmi, v kancelárskej časti presklená fasáda); '
-                'zastrešenie doskami z kamennej vlny a PVC membránou. Aktuálne fotogalérie nájdete '
-                'priebežne dopĺňané na našich sociálnych sieťach.'},
+  't_o': {'cs': 'Dvoupatrový závod na výrobu průmyslových baterií\nCelkový objem: 28 342 m³. Dvoupodlažní budova se samostatným skladovým prostorem, skladovým mezaninem nad výrobním prostorem, reprezentativní prosklenou fasádou administrativní budovy, smíšeným základem a kompletní areálovou infrastrukturou.\nCelkový objem nového objektu činí 28 342 m³. Dvoupodlažní kancelářská budova s vyčleněným skladovým podlažím a skladovým mezipatrovým prostorem nad výrobní částí, jakož i s kancelářskými a sociálními plochami v prvním patře. Úprava území v okolí nového objektu. Konstrukce: „smíšené" založení (přímé a částečně nepřímé); „smíšená" nosná konstrukce objektu (prefabrikované železobetonové sloupy, zděné prvky a ocelová střešní konstrukce); „smíšený" plášť objektu (tradiční zděný plášť se sendvičovými panely, v kancelářské části prosklená fasáda); zastřešení deskami z kamenné vlny a PVC membránou. Fotogalerie jsou průběžně aktualizovány na našich sociálních sítích.', 'de': 'Eine zweistöckige industrielle Batterieproduktionsanlage\nGesamtvolumen: 28.342 m³. Ein zweigeschossiges Gebäude mit separatem Lagerbereich, einem Lagermezzanin über dem Produktionsbereich, einer repräsentativen Glasfassade des Bürogebäudes, einem gemischten Fundament und kompletter Flächeninfrastruktur.\nGesamtvolumen des neuen Objekts: 28 342 m³. Zweigeschossiges Bürogebäude mit einem separaten Geschoss für Lager und einer Lagerzwischenebene über dem Produktionsteil sowie Büro- und Sozialflächen im ersten Obergeschoss. Geländegestaltung rund um das neue Gebäude. Konstruktion: „gemischte" Gründung (direkt und teilweise indirekt); „gemischte" Tragstruktur (vorgefertigte Stahlbetonstützen, Mauerwerkselemente und Stahl-Dachkonstruktion); „gemischte" Gebäudehülle (traditionelle Mauerwerksverkleidung mit Sandwichpaneelen, Glasfassade im Büroteil); Dacheindeckung mit Steinwollplatten und PVC-Membran. Aktuelle Fotoreportagen werden laufend auf unseren Social-Media-Kanälen veröffentlicht.', 'en': 'A two-story industrial battery production plant\nTotal volume: 28,342 m³. A two-story building with a separate warehouse area, a storage mezzanine above the production area, a representative glass facade of the office building, a mixed foundation and complete area infrastructure.\nTotal volume of the new building: 28 342 m³. Two-storey office building with a separate warehouse level and a storage mezzanine above the production section, as well as office and welfare space on the first floor. Site development around the new building. Structure: "mixed" foundation (direct and, in part, indirect); "mixed" load-bearing structure (precast reinforced concrete columns, masonry elements and steel roof structure); "mixed" envelope (traditional masonry cladding with sandwich panels, glass façade in the office section); roof covered with stone wool panels and PVC membrane. Photo updates from our social media are posted on an ongoing basis.', 'hu': 'Kétszintes ipari akkumulátorgyártó üzem\nTeljes térfogat: 28 342 m³. Kétszintes épület külön raktárrésszel, a termelőterület feletti tároló félemelettel, az irodaház reprezentatív üveghomlokzatával, vegyes alapozással és teljes területi infrastruktúrával.\nAz új objektum teljes térfogata 28 342 m³. Kétszintes irodaház különálló raktárszinttel és raktári félemelettel a gyártási rész felett, valamint irodai és szociális terekkel az első emeleten. Az új objektum környékének tereprendezése. Szerkezet: „vegyes" alapozás (közvetlen és részben közvetett); „vegyes" teherhordó szerkezet (előre gyártott vasbeton oszlopok, falazott elemek és acél tetőszerkezet); „vegyes" épületburkolat (hagyományos falazott burkolat szendvicspanelekkel, az irodai részben üvegezett homlokzat); tetőfedés kőzetgyapot táblákkal és PVC membránnal. Folyamatosan frissített fotóbeszámolók találhatók a közösségi média felületeinken.', 'sk': 'Dvojposchodový závod na výrobu priemyselných batérií\nCelkový objem: 28 342 m³. Dvojpodlažná budova so samostatným skladovým priestorom, skladovým medziposchodím nad výrobným priestorom, reprezentatívnou presklenou fasádou administratívnej budovy, zmiešaným základom a kompletnou areálovou infraštruktúrou.\nCelkový objem nového objektu je 28 342 m³. Dvojpodlažná kancelárska budova s vyčleneným skladovým podlažím a skladovým mezanínom nad výrobnou časťou, ako aj s kancelárskymi a sociálnymi plochami na prvom poschodí. Úprava územia okolo nového objektu. Konštrukcia: „zmiešané" založenie (priame a čiastočne nepriame); „zmiešaná" nosná konštrukcia objektu (prefabrikované železobetonové stĺpy, murované prvky a oceľová strešná konštrukcia); „zmiešaný" plášť objektu (tradičný murovaný plášť so sendvičovými panelmi, v kancelárskej časti presklená fasáda); zastrešenie doskami z kamennej vlny a PVC membránou. Aktuálne fotogalérie nájdete priebežne dopĺňané na našich sociálnych sieťach.'},
   't_s': {},
   't_t': {},
   'title': 'Bater - Gliwice',
@@ -4700,7 +3213,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {},
+  't_o': {'cs': 'Výrobní a skladovací zařízení pro filtrační systémy\nUžitná plocha: 1 227 m², výška budovy: 11,63 m. Skladová a výrobní hala s kancelářským a sociálním zázemím, optimalizovaná pro obalové a plastikářské linky. Vysoká skladovací zóna, vykládací doky, bezespárá podlaha, zadržování dešťové vody, propojení se stávající budovou.', 'de': 'Produktions- und Lageranlage für Filtersysteme\nNutzfläche: 1.227 m², Gebäudehöhe: 11,63 m. Lager- und Produktionshalle mit Büro- und Sozialräumen, optimiert für Verpackungs- und Kunststoffverarbeitungslinien. Hoher Lagerbereich, Entladerampen, nahtloser Boden, Regenwasserrückhaltung, Anschluss an das bestehende Gebäude.', 'en': 'Production and storage plant for filtration systems\nUsable area: 1,227 m², building height: 11.63 m. Warehouse and production hall with office and social facilities, optimized for packaging and plastics processing lines. High storage zone, unloading docks, seamless floor, rainwater retention, connector with the existing building.', 'hu': 'Gyártó és tároló üzem szűrőrendszerekhez\nHasznos alapterület: 1227 m², épületmagasság: 11,63 m. Raktár és gyártócsarnok irodai és szociális helyiségekkel, csomagoló- és műanyagfeldolgozó sorokhoz optimalizálva. Magas tárolózóna, kirakodó dokkok, varratmentes padló, esővíz visszatartás, csatlakozás a meglévő épülethez.', 'sk': 'Výrobný a skladovací závod pre filtračné systémy\nÚžitková plocha: 1 227 m², výška budovy: 11,63 m. Skladová a výrobná hala s kancelárskym a sociálnym zázemím, optimalizovaná pre obalové a plastové linky. Vysoká skladovacia zóna, vykladacie doky, bezšvíková podlaha, zadržiavanie dažďovej vody, prepojenie s existujúcou budovou.', 'uk': 'Цех з виробництва та зберігання систем фільтрації\nКорисна площа: 1227 м², висота будівлі: 11,63 м. Складсько-виробниче приміщення з офісними та соціальними приміщеннями, оптимізоване для ліній упаковки та переробки пластмас. Висока складська зона, розвантажувальні доки, безшовна підлога, утримання дощової води, сполучення з існуючою будівлею.'},
   't_s': {},
   't_t': {},
   'title': 'Wessper',
@@ -4718,81 +3231,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {'cs': 'Firma Warmet – dobře známý a ceněný velkoobchod s alkoholem – získává nový '
-                'prostor pro rozvoj. Objekt realizovaný týmem Generálního dodavatele MBT je '
-                'moderní hala, která bude plnit funkci hlavního distribučního centra našeho '
-                'investora.\n'
-                '\n'
-                'V odvětví FMCG a distribuce nápojů je klíčová bezchybná logistika a dodržování '
-                'odpovídajících skladovacích podmínek. S ohledem na tyto požadavky budujeme '
-                'prostor plně přizpůsobený provozní specifice firmy Warmet. Nový objekt umožní '
-                'optimalizaci logistických procesů, efektivnější vyřizování objednávek a poskytne '
-                'solidní zázemí pro další rozvoj podnikání.\n'
-                '\n'
-                'V současné době jsme po etapě symbolického položení základního kamene. Práce na '
-                'staveništi postupují podle harmonogramu a našeho inženýrského standardu. Děkujeme '
-                'firmě Warmet za důvěru a svěření realizace tohoto strategického projektu '
-                'společnosti MBT.',
-          'de': 'Das Unternehmen Warmet – ein bekannter und angesehener Großhändler für Alkohol – '
-                'erhält neuen Raum für Wachstum. Das vom Generalunternehmer-Team MBT realisierte '
-                'Objekt ist eine moderne Halle, die als Hauptvertriebszentrum unseres Investors '
-                'dienen wird.\n'
-                '\n'
-                'In der FMCG- und Getränkedistribution sind eine reibungslose Logistik und die '
-                'Einhaltung geeigneter Lagerbedingungen entscheidend. Mit Blick auf diese '
-                'Anforderungen bauen wir einen Raum, der vollständig auf die betrieblichen '
-                'Besonderheiten von Warmet zugeschnitten ist. Das neue Objekt ermöglicht '
-                'optimierte Logistikprozesse, eine effizientere Auftragsabwicklung und bietet eine '
-                'solide Basis für weiteres Geschäftswachstum.\n'
-                '\n'
-                'Wir haben gerade die symbolische Grundsteinlegung abgeschlossen. Die Arbeiten auf '
-                'der Baustelle verlaufen planmäßig und nach unserem Ingenieurstandard. Wir '
-                'bedanken uns bei Warmet für das Vertrauen und die Übertragung der Realisierung '
-                'dieses strategischen Projekts an MBT.',
-          'en': 'Warmet – a well-known and respected alcohol wholesaler – is gaining new space for '
-                "development. The facility being delivered by MBT's General Contractor team is a "
-                'modern hall that will serve as the main distribution centre for our Investor.\n'
-                '\n'
-                'In the FMCG and beverage distribution industry, flawless logistics and '
-                'maintaining proper storage conditions are essential. With these requirements in '
-                'mind, we are building a space fully tailored to the operational specifics of '
-                'Warmet. The new facility will enable optimised logistics processes, more '
-                'efficient order handling and provide a solid backbone for further business '
-                'growth.\n'
-                '\n'
-                'We have just completed the symbolic cornerstone-laying stage. Works on the '
-                'construction site are progressing according to schedule and our engineering '
-                'standard. We thank Warmet for the trust and for entrusting MBT with the delivery '
-                'of this strategic project.',
-          'hu': 'A Warmet – jól ismert és elismert alkohol-nagykereskedő – új teret kap a '
-                'fejlődéshez. Az MBT Fővállalkozói csapata által megvalósított objektum egy modern '
-                'csarnok, amely befektetőnk fő elosztóközpontjaként fog működni.\n'
-                '\n'
-                'Az FMCG és az italelosztás iparágában a hibátlan logisztika és a megfelelő '
-                'tárolási feltételek betartása kulcsfontosságú. Ezeket az igényeket szem előtt '
-                'tartva olyan teret építünk, amely teljes mértékben a Warmet működési '
-                'sajátosságaihoz igazodik. Az új objektum optimalizálja a logisztikai '
-                'folyamatokat, hatékonyabbá teszi a rendelések kezelését, és szilárd alapot '
-                'biztosít a további üzleti fejlődéshez.\n'
-                '\n'
-                'Jelenleg az alapkőletétel szimbolikus szakaszánál tartunk. Az építkezésen a '
-                'munkálatok az ütemezés és mérnöki színvonalunk szerint haladnak. Köszönjük a '
-                'Warmet cég bizalmát, hogy ezt a stratégiai projektet az MBT-re bízta.',
-          'sk': 'Firma Warmet – dobre známy a cenený veľkoobchod s alkoholom – získava nový '
-                'priestor pre rozvoj. Objekt realizovaný tímom Generálneho dodávateľa MBT je '
-                'moderná hala, ktorá bude plniť funkciu hlavného distribučného centra nášho '
-                'investora.\n'
-                '\n'
-                'V odvetví FMCG a distribúcie nápojov je kľúčová bezchybná logistika a '
-                'dodržiavanie primeraných skladovacích podmienok. S ohľadom na tieto požiadavky '
-                'budujeme priestor plne prispôsobený prevádzkovej špecifikácii firmy Warmet. Nový '
-                'objekt umožní optimalizáciu logistických procesov, efektívnejšie vybavovanie '
-                'objednávok a poskytne solídne zázemie pre ďalší rozvoj podnikania.\n'
-                '\n'
-                'V súčasnosti sme po etape symbolického položenia základného kameňa. Práce na '
-                'stavenisku postupujú podľa harmonogramu a nášho inžinierskeho štandardu. Ďakujeme '
-                'firme Warmet za dôveru a zverenie realizácie tohto strategického projektu '
-                'spoločnosti MBT.'},
+  't_o': {'cs': 'Logistické a distribuční centrum pro velkoobchodníky s nápoji a alkoholem\nVysoká skladovací zóna, překládací doky pro těžkou přepravu, zóna vychystávání zboží, kancelářské a sociální zázemí. Ocelová a železobetonová konstrukce, bezespárová podlaha s vysokou nosností a otěruvzdorností.\nFirma Warmet – dobře známý a ceněný velkoobchod s alkoholem – získává nový prostor pro rozvoj. Objekt realizovaný týmem Generálního dodavatele MBT je moderní hala, která bude plnit funkci hlavního distribučního centra našeho investora.\n\nV odvětví FMCG a distribuce nápojů je klíčová bezchybná logistika a dodržování odpovídajících skladovacích podmínek. S ohledem na tyto požadavky budujeme prostor plně přizpůsobený provozní specifice firmy Warmet. Nový objekt umožní optimalizaci logistických procesů, efektivnější vyřizování objednávek a poskytne solidní zázemí pro další rozvoj podnikání.\n\nV současné době jsme po etapě symbolického položení základního kamene. Práce na staveništi postupují podle harmonogramu a našeho inženýrského standardu. Děkujeme firmě Warmet za důvěru a svěření realizace tohoto strategického projektu společnosti MBT.', 'de': 'Logistik- und Distributionszentrum für Getränke- und Alkoholgroßhändler\nHochlagerzone, Umladerampen für Schwertransporte, Warenkommissionierzone, Büro- und Sozialräume. Stahl- und Stahlbetonkonstruktion, fugenloser Boden mit hoher Tragfähigkeit und Abriebfestigkeit.\nDas Unternehmen Warmet – ein bekannter und angesehener Großhändler für Alkohol – erhält neuen Raum für Wachstum. Das vom Generalunternehmer-Team MBT realisierte Objekt ist eine moderne Halle, die als Hauptvertriebszentrum unseres Investors dienen wird.\n\nIn der FMCG- und Getränkedistribution sind eine reibungslose Logistik und die Einhaltung geeigneter Lagerbedingungen entscheidend. Mit Blick auf diese Anforderungen bauen wir einen Raum, der vollständig auf die betrieblichen Besonderheiten von Warmet zugeschnitten ist. Das neue Objekt ermöglicht optimierte Logistikprozesse, eine effizientere Auftragsabwicklung und bietet eine solide Basis für weiteres Geschäftswachstum.\n\nWir haben gerade die symbolische Grundsteinlegung abgeschlossen. Die Arbeiten auf der Baustelle verlaufen planmäßig und nach unserem Ingenieurstandard. Wir bedanken uns bei Warmet für das Vertrauen und die Übertragung der Realisierung dieses strategischen Projekts an MBT.', 'en': "Logistics and distribution center for beverage and alcohol wholesalers\nHigh storage zone, reloading docks for heavy transport, goods picking zone, office and social facilities. Steel and reinforced concrete structure, jointless floor with high load-bearing capacity and abrasion resistance.\nWarmet – a well-known and respected alcohol wholesaler – is gaining new space for development. The facility being delivered by MBT's General Contractor team is a modern hall that will serve as the main distribution centre for our Investor.\n\nIn the FMCG and beverage distribution industry, flawless logistics and maintaining proper storage conditions are essential. With these requirements in mind, we are building a space fully tailored to the operational specifics of Warmet. The new facility will enable optimised logistics processes, more efficient order handling and provide a solid backbone for further business growth.\n\nWe have just completed the symbolic cornerstone-laying stage. Works on the construction site are progressing according to schedule and our engineering standard. We thank Warmet for the trust and for entrusting MBT with the delivery of this strategic project.", 'hu': 'Logisztikai és elosztó központ ital- és alkohol-nagykereskedők számára\nMagas raktározási zóna, átrakodó dokkok nehézszállításhoz, árufelvételi zóna, irodai és szociális létesítmények. Acél és vasbeton szerkezet, fugamentes födém nagy teherbíró képességgel és kopásállósággal.\nA Warmet – jól ismert és elismert alkohol-nagykereskedő – új teret kap a fejlődéshez. Az MBT Fővállalkozói csapata által megvalósított objektum egy modern csarnok, amely befektetőnk fő elosztóközpontjaként fog működni.\n\nAz FMCG és az italelosztás iparágában a hibátlan logisztika és a megfelelő tárolási feltételek betartása kulcsfontosságú. Ezeket az igényeket szem előtt tartva olyan teret építünk, amely teljes mértékben a Warmet működési sajátosságaihoz igazodik. Az új objektum optimalizálja a logisztikai folyamatokat, hatékonyabbá teszi a rendelések kezelését, és szilárd alapot biztosít a további üzleti fejlődéshez.\n\nJelenleg az alapkőletétel szimbolikus szakaszánál tartunk. Az építkezésen a munkálatok az ütemezés és mérnöki színvonalunk szerint haladnak. Köszönjük a Warmet cég bizalmát, hogy ezt a stratégiai projektet az MBT-re bízta.', 'sk': 'Logistické a distribučné centrum pre veľkoobchodníkov s nápojmi a alkoholom\nVysoká skladová zóna, prekládkové doky pre ťažkú \u200b\u200bprepravu, zóna vychystávania tovaru, kancelárske a sociálne zariadenia. Oceľová a železobetónová konštrukcia, bezškárová podlaha s vysokou nosnosťou a oteruvzdornosťou.\nFirma Warmet – dobre známy a cenený veľkoobchod s alkoholom – získava nový priestor pre rozvoj. Objekt realizovaný tímom Generálneho dodávateľa MBT je moderná hala, ktorá bude plniť funkciu hlavného distribučného centra nášho investora.\n\nV odvetví FMCG a distribúcie nápojov je kľúčová bezchybná logistika a dodržiavanie primeraných skladovacích podmienok. S ohľadom na tieto požiadavky budujeme priestor plne prispôsobený prevádzkovej špecifikácii firmy Warmet. Nový objekt umožní optimalizáciu logistických procesov, efektívnejšie vybavovanie objednávok a poskytne solídne zázemie pre ďalší rozvoj podnikania.\n\nV súčasnosti sme po etape symbolického položenia základného kameňa. Práce na stavenisku postupujú podľa harmonogramu a nášho inžinierskeho štandardu. Ďakujeme firme Warmet za dôveru a zverenie realizácie tohto strategického projektu spoločnosti MBT.'},
   't_s': {},
   't_t': {},
   'title': 'Warmet Hurtownia Alkoholi',
@@ -4810,7 +3249,7 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {},
+  't_o': {'cs': 'Cross-dock logistický a distribuční terminál\nRegionální překládací terminál v cross-docku určený pro rychlou manipulaci s běžným nákladem a toky palet. Bezsloupová překládací hala s hustou sítí nakládacích ramp (hydraulické rampy, těsnící zástěry na obou stranách terminálu), dvoupodlažní administrativní, kancelářský a společenský prostor pro dispečery a řidiče, bezespárová podlaha se zvýšenou dynamickou odolností, rozsáhlé manévrovací plochy pro soupravy TIR (betonové a asfaltové povrchy), LED osvětlení.', 'de': 'Cross-Dock-Logistik- und Vertriebsterminal\nRegionales Cross-Dock-Umschlagterminal für die schnelle Abwicklung von Stückgut- und Palettenströmen. Eine säulenfreie Umladehalle mit einem dichten Netz an Verladerampen (hydraulische Rampen, Dichtschürzen auf beiden Seiten des Terminals), ein zweigeschossiger Verwaltungs-, Büro- und Sozialbereich für Disponenten und Fahrer, ein fugenloser Boden mit erhöhtem dynamischen Widerstand, weitläufige Manövrierflächen für TIR-Sets (Beton- und Asphaltflächen), LED-Beleuchtung.', 'en': 'Cross-dock logistics and distribution terminal\nRegional cross-dock transhipment terminal dedicated to quick handling of general cargo and pallet flows. A column-free reloading hall with a dense network of loading docks (hydraulic ramps, sealing aprons on both sides of the terminal), a two-story administrative, office and social area for dispatchers and drivers, a jointless floor with increased dynamic resistance, extensive maneuvering areas for TIR sets (concrete and asphalt surfaces), LED lighting.', 'hu': 'Cross-dock logisztikai és elosztó terminál\nRegionális cross-dock átrakodási terminál, amely az általános rakomány- és raklapáramlás gyors kezelésére szolgál. Oszlopmentes átrakodócsarnok sűrű rakodó-hálózattal (hidraulikus rámpák, tömítőkötények a terminál két oldalán), kétszintes adminisztratív, irodai és szociális terület diszpécserek és sofőrök számára, fugamentes padlózat fokozott dinamikus ellenállással, kiterjedt manőverezőterületek TIR-készletekhez (beton és aszfalt felületek), LED világítás.', 'sk': 'Cross-dock logistický a distribučný terminál\nRegionálny cross-dockový prekládkový terminál určený na rýchlu manipuláciu s bežným nákladom a tokom paliet. Bezstĺpová prekládková hala s hustou sieťou nakladacích dokov (hydraulické rampy, tesniace zástery na oboch stranách terminálu), dvojpodlažný administratívny, kancelársky a spoločenský priestor pre dispečerov a vodičov, bezškárová podlaha so zvýšenou dynamickou odolnosťou, rozsiahle manévrovacie plochy pre súpravy TIR (betónové a asfaltové povrchy), LED osvetlenie.', 'uk': 'Кросс-док логістичний та розподільний термінал\nРегіональний крос-док-перевантажувальний термінал, призначений для швидкої обробки генеральних вантажів і потоків піддонів. Безколонний перевантажувальний зал з густою мережею навантажувальних доків (гідравлічні рампи, ущільнювальні фартухи з обох боків терміналу), двоповерхова адміністративно-офісна та громадська зона для диспетчерів і водіїв, безстикова підлога з підвищеним динамічним опором, широкі зони маневрування для TIR-комплектів (бетонне та асфальтове покриття), світлодіодне освітлення.'},
   't_s': {},
   't_t': {},
   'title': 'Raben',
@@ -4828,18 +3267,18 @@ PROJECTS = [{'czas': '16 miesięcy',
   'status': 'W trakcie realizacji',
   't_c': {},
   't_f': {},
-  't_o': {},
+  't_o': {'cs': 'Vícepodlažní samoskladovací zařízení\nModerní, rostoucí vícepatrový sklad. Monolitická železobetonová sloupová a desková konstrukce, tuhá jádra schodišť a výtahových šachet, velkorozměrové nákladní a osobní výtahy, vzduchotechnické instalace na bázi tepelných čerpadel, zastřešené vykládací zóny, podzemní zadržování dešťové vody.', 'de': 'Mehrstöckige Selfstorage-Anlage\nEin modernes, aufsteigendes mehrstöckiges Lagerhaus. Monolithische Säulen- und Plattenkonstruktion aus Stahlbeton, starre Kerne von Treppenhäusern und Aufzugsschächten, große Lasten- und Personenaufzüge, HVAC-Anlagen auf Basis von Wärmepumpen, überdachte Entladezonen, unterirdische Regenwasserrückhaltung.', 'en': 'Multi-story self-storage facility\nA modern, rising multi-story storage warehouse. Monolithic reinforced concrete column and slab structure, rigid cores of staircases and elevator shafts, large-size freight and passenger elevators, HVAC installations based on heat pumps, roofed unloading zones, underground rainwater retention.', 'hu': 'Többszintes öntároló létesítmény\nModern, felemelkedő többszintes tárolóraktár. Monolit vasbeton oszlop- és födémszerkezet, lépcsőházak és liftaknák merev magjai, nagyméretű teher- és személyliftek, hőszivattyús HVAC-berendezések, fedett leürítő zónák, földalatti csapadékvíz visszatartás.', 'sk': 'Viacposchodové samostatné skladovacie zariadenie\nModerný, rastúci viacposchodový sklad. Monolitická železobetónová stĺpová a dosková konštrukcia, pevné jadrá schodísk a výťahových šácht, veľkorozmerné nákladné a osobné výťahy, vzduchotechnické inštalácie na báze tepelných čerpadiel, zastrešené vykladacie zóny, podzemné zadržiavanie dažďovej vody.', 'uk': 'Багатоповерхове власне складське приміщення\nСучасний багатоповерховий склад, що розвивається. Монолітна залізобетонна колонно-плитна конструкція, жорсткі ядра сходових маршів і ліфтових шахт, великогабаритні вантажно-пасажирські ліфти, вентиляційні установки на базі теплових насосів, криті розвантажувальні зони, підземне утримання дощової води.'},
   't_s': {},
   't_t': {},
   'title': 'Less Mess Gdańsk',
   'type': 'realizacja-w-trakcie'},
- {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/eurostyl-chelmek.svg', 'latitude': None, 'logo': '/static/img/mbt/logos/eurostyl-chelmek.svg', 'longitude': None, 'opis': 'Hala magazynowa z zapleczem biurowo-socjalnym\nHala magazynowa z bramami rozładunkowymi, strefa kompletacji towarów, część socjalno-biurowa, zbrojony plac manewrowy pod pojazdy ciężarowe, sieci zewnętrzne i zbiornik retencyjny.', 'order': 37, 'slug': 'eurostyl-chelmek', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Eurostyl Chełmek', 'type': 'realizacja-w-trakcie'},
- {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/stokado-self-storage.webp', 'latitude': None, 'logo': '/static/img/mbt/logos/stokado-self-storage.webp', 'longitude': None, 'opis': 'Wielokondygnacyjny obiekt self-storage\nWielokondygnacyjny budynek komórek lokatorskich self-storage o podwyższonym standardzie bezpieczeństwa. Indywidualne boksy magazynowe, strefa biura obsługi klienta (BOK), windy towarowo-osobowe, systemy kontroli dostępu 24/7, monitoring CCTV i zadaszona strefa rozładunkowa.', 'order': 38, 'slug': 'stokado-gdansk', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Stokado Gdańsk', 'type': 'realizacja-w-trakcie'},
- {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/kbh-akord.png', 'latitude': None, 'logo': '/static/img/mbt/logos/kbh-akord.png', 'longitude': None, 'opis': 'Hala produkcyjno-magazynowa z zapleczem\nUstrój mieszany żelbetowo-stalowy, energooszczędna obudowa z płyt warstwowych PIR, dach z membraną PVC, zintegrowane zaplecze administracyjno-biurowe, place manewrowe dla samochodów dostawczych i retencja wód.', 'order': 40, 'slug': 'kbh-akord-siemianowice-slaskie', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'KBH Akord Siemianowice Śląskie', 'type': 'realizacja-w-trakcie'},
- {'czas': '', 'formula': 'Generalne Wykonawstwo w warunkach czynnej fabryki', 'gallery': [], 'hero': '/static/img/mbt/logos/brembo.png', 'latitude': None, 'logo': '/static/img/mbt/logos/brembo.png', 'longitude': None, 'opis': 'Modernizacje i rozbudowy w warunkach czynnej fabryki: strefa ekologiczna, śluzy technologiczne, fundamenty pod linie produkcyjne\nECO: Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne. CNP1: Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego. Tucznawa: Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.', 'order': 41, 'slug': 'brembo-poland-dabrowa-gornicza', 'status': 'Zrealizowane', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Brembo Poland Dąbrowa Górnicza', 'type': 'realizacja-zrealizow'},
- {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/zielona-dolina.png', 'latitude': None, 'logo': '/static/img/mbt/logos/zielona-dolina.png', 'longitude': None, 'opis': 'Osiedle mieszkaniowe (5 budynków wielorodzinnych + 20 domów)\nKompleksowa budowa osiedla: 5 budynków mieszkalnych wielorodzinnych z podziemnymi halami garażowymi oraz 20 domów jednorodzinnych w zabudowie bliźniaczej. Pełna infrastruktura inżynieryjna (wod-kan, deszczowa ze zbiornikami retencyjnymi, gaz, prąd), drogi osiedlowe, chodniki, miejsca postojowe i tereny zielone.', 'order': 43, 'slug': 'invest-tdj-estate-zabrze-zielona-dolina-4', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Invest TDJ Estate Zabrze (Zielona Dolina 4)', 'type': 'realizacja-w-trakcie'},
- {'czas': '', 'formula': 'Generalne Wykonawstwo („pod klucz”)', 'gallery': [], 'hero': 'https://media.mbt.pl/uploads/1491284b28df.webp', 'latitude': None, 'logo': 'https://media.mbt.pl/uploads/1491284b28df.webp', 'longitude': None, 'opis': 'Zakład produkcyjny ultralekkich samolotów z hangarem lotniczym\nHala produkcyjno-hangarowa: ok. 2 100 m² wraz z budynkiem biurowo-socjalnym dla kadry inżynieryjnej. Trwała konstrukcja nośna z prefabrykatów żelbetowych przygotowana pod montaż statków powietrznych, płyta przedhangarowa, strefy manewrowe i infrastruktura techniczna.', 'order': 44, 'slug': 'artus-aircraft', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Artus Aircraft', 'type': 'realizacja-w-trakcie'},
- {'czas': '', 'formula': 'Zaprojektuj i Wybuduj (pod klucz)', 'gallery': [], 'hero': 'https://media.mbt.pl/uploads/4fe7e40eb483.webp', 'latitude': None, 'logo': 'https://media.mbt.pl/uploads/4fe7e40eb483.webp', 'longitude': None, 'opis': 'Wielofunkcyjny obiekt sportowy z garażem podziemnym\nPowierzchnia hali sportowej: ponad 1 170 m². 2 turniejowe korty do padla, strefa badmintona (5 boisk), strefa tenisa stołowego (8 stołów), 4-rzędowa trybuna teleskopowa. Przeszklony łącznik z gmachem SWFiS, kondygnacja podziemna z garażem na 41 stanowisk i podgrzewaną rampą, dach z dźwigarów z drewna klejonego, instalacja fotowoltaiczna OZE, promienniki wodne i system BMS.', 'order': 45, 'slug': 'centrum-sportow-rakietowych-ue-wroclaw', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {}, 't_s': {}, 't_t': {}, 'title': 'Centrum Sportów Rakietowych UE Wrocław', 'type': 'realizacja-w-trakcie'}]
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/eurostyl-chelmek.svg', 'latitude': None, 'logo': '/static/img/mbt/logos/eurostyl-chelmek.svg', 'longitude': None, 'opis': 'Hala magazynowa z zapleczem biurowo-socjalnym\nHala magazynowa z bramami rozładunkowymi, strefa kompletacji towarów, część socjalno-biurowa, zbrojony plac manewrowy pod pojazdy ciężarowe, sieci zewnętrzne i zbiornik retencyjny.', 'order': 37, 'slug': 'eurostyl-chelmek', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {'cs': 'Skladová hala s kanceláří a sociálním zázemím\nSkladová hala s vykládacími vraty, zóna pro vychystávání zboží, společenská a kancelářská část, zpevněná manévrovací plocha pro kamiony, vnější sítě a retenční nádrž.', 'de': 'Lagerhalle mit Büro- und Sozialräumen\nEine Lagerhalle mit Entladetoren, einer Warenkommissionierzone, einem Sozial- und Bürobereich, einem verstärkten Rangierbereich für LKWs, externen Netzwerken und einem Rückhaltetank.', 'en': 'Warehouse hall with office and social facilities\nA warehouse hall with unloading gates, a goods picking zone, a social and office area, a reinforced maneuvering area for trucks, external networks and a retention tank.', 'hu': 'Raktárcsarnok irodai és szociális helyiségekkel\nRaktárcsarnok kirakodókapukkal, komissiózási zóna, szociális és irodaterület, teherautók megerősített manőverező területe, külső hálózatok és visszatartó tartály.', 'sk': 'Skladová hala s kanceláriou a sociálnym zázemím\nSkladová hala s vykladacími bránami, zóna vychystávania tovaru, spoločenský a kancelársky priestor, spevnená manévrovacia plocha pre kamióny, vonkajšie siete a retenčná nádrž.', 'uk': 'Складський зал з офісними та соціальними приміщеннями\nСкладський зал з розвантажувальними воротами, зоною комплектування товарів, соціально-офісною зоною, посиленою маневровою зоною для вантажівок, зовнішніми мережами та резервуаром.'}, 't_s': {}, 't_t': {}, 'title': 'Eurostyl Chełmek', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/stokado-self-storage.webp', 'latitude': None, 'logo': '/static/img/mbt/logos/stokado-self-storage.webp', 'longitude': None, 'opis': 'Wielokondygnacyjny obiekt self-storage\nWielokondygnacyjny budynek komórek lokatorskich self-storage o podwyższonym standardzie bezpieczeństwa. Indywidualne boksy magazynowe, strefa biura obsługi klienta (BOK), windy towarowo-osobowe, systemy kontroli dostępu 24/7, monitoring CCTV i zadaszona strefa rozładunkowa.', 'order': 38, 'slug': 'stokado-gdansk', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {'cs': 'Vícepodlažní samoskladovací zařízení\nVícepodlažní samoskladovací budova s \u200b\u200bvyšším bezpečnostním standardem. Individuální skladovací boxy, zákaznický servis (CSC), nákladní a osobní výtahy, 24/7 přístupové systémy, CCTV monitoring a zastřešená vykládací plocha.', 'de': 'Mehrstöckige Selfstorage-Anlage\nEin mehrstöckiges Selfstorage-Gebäude mit höherem Sicherheitsstandard. Individuelle Lagerboxen, Kundendienstbereich (CSC), Lasten- und Personenaufzüge, 24/7-Zugangskontrollsysteme, Videoüberwachung und ein überdachter Entladebereich.', 'en': 'Multi-story self-storage facility\nA multi-story self-storage building with a higher security standard. Individual storage boxes, customer service area (CSC), freight and passenger elevators, 24/7 access control systems, CCTV monitoring and a roofed unloading area.', 'hu': 'Többszintes öntároló létesítmény\nMagasabb biztonsági színvonalú, többszintes öntároló épület. Egyedi tárolódobozok, ügyfélszolgálati terület (CSC), teher- és személyliftek, 24 órás beléptetőrendszerek, CCTV felügyelet és fedett kirakodótér.', 'sk': 'Viacposchodové samostatné skladovacie zariadenie\nViacposchodová samoskladovacia budova s \u200b\u200bvyšším bezpečnostným štandardom. Samostatné skladové boxy, priestor pre zákaznícky servis (CSC), nákladné a osobné výťahy, 24/7 prístupové systémy, CCTV monitorovanie a zastrešená vykladacia plocha.', 'uk': 'Багатоповерхове власне складське приміщення\nБагатоповерхова будівля власного складу підвищеного рівня безпеки. Індивідуальні складські бокси, зона обслуговування клієнтів (ЦСК), вантажний та пасажирський ліфти, цілодобова система контролю доступу, відеоспостереження та крита зона розвантаження.'}, 't_s': {}, 't_t': {}, 'title': 'Stokado Gdańsk', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/kbh-akord.png', 'latitude': None, 'logo': '/static/img/mbt/logos/kbh-akord.png', 'longitude': None, 'opis': 'Hala produkcyjno-magazynowa z zapleczem\nUstrój mieszany żelbetowo-stalowy, energooszczędna obudowa z płyt warstwowych PIR, dach z membraną PVC, zintegrowane zaplecze administracyjno-biurowe, place manewrowe dla samochodów dostawczych i retencja wód.', 'order': 40, 'slug': 'kbh-akord-siemianowice-slaskie', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {'cs': 'Výrobní a skladová hala se zázemím\nSmíšená železobetonová a ocelová konstrukce, energeticky úsporné opláštění z PIR sendvičových panelů, střecha s PVC membránou, integrované administrativní a kancelářské zázemí, manévrovací plochy pro rozvozové vozy a zadržování vody.', 'de': 'Produktions- und Lagerhalle mit Einrichtungen\nMischkonstruktion aus Stahlbeton und Stahl, energiesparendes Gehäuse aus PIR-Sandwichpaneelen, Dach mit PVC-Folie, integrierte Verwaltungs- und Büroräume, Rangierflächen für Lieferfahrzeuge und Wasserrückhaltung.', 'en': 'Production and warehouse hall with facilities\nMixed reinforced concrete and steel structure, energy-saving casing made of PIR sandwich panels, roof with PVC membrane, integrated administrative and office facilities, maneuvering areas for delivery vehicles and water retention.', 'hu': 'Termelő és raktárcsarnok felszereltséggel\nVegyes vasbeton és acél szerkezet, energiatakarékos PIR szendvicspanel burkolat, PVC membrános tető, integrált adminisztrációs és irodai létesítmények, manőverező területek szállító járművekhez és vízvisszatartáshoz.', 'sk': 'Výrobná a skladová hala so zázemím\nZmiešaná železobetónová a oceľová konštrukcia, energeticky úsporné opláštenie z PIR sendvičových panelov, strecha s PVC membránou, integrované administratívne a kancelárske priestory, manévrovacie plochy pre rozvozové vozidlá a zadržiavanie vody.', 'uk': 'Виробничо-складський зал з обладнанням\nЗмішана залізобетонна та металоконструкція, енергозберігаючий корпус з сендвіч-панелей PIR, дах з ПВХ мембраною, інтегровані адміністративно-офісні приміщення, майданчики для маневру транспорту та водозатримки.'}, 't_s': {}, 't_t': {}, 'title': 'KBH Akord Siemianowice Śląskie', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo w warunkach czynnej fabryki', 'gallery': [], 'hero': '/static/img/mbt/logos/brembo.png', 'latitude': None, 'logo': '/static/img/mbt/logos/brembo.png', 'longitude': None, 'opis': 'Modernizacje i rozbudowy w warunkach czynnej fabryki: strefa ekologiczna, śluzy technologiczne, fundamenty pod linie produkcyjne\nECO: Powierzchnia strefy: 2 101 m². Roboty rozbiórkowe, ziemne, żelbetowe płyty denne pod urządzenia technologiczne odzysku surowców, konstrukcje stalowe, instalacje technologiczne i kanalizacyjne. CNP1: Budowa systemu śluz technologicznych, montaż bram szybkobieżnych, przegród ogniowych, instalacji wentylacyjnych i zabezpieczeń transportu wewnętrznego. Tucznawa: Zbrojone fundamenty pod zautomatyzowane linie produkcyjne tarcz hamulcowych, roboty kubaturowe i modernizacja infrastruktury przemysłowej.', 'order': 41, 'slug': 'brembo-poland-dabrowa-gornicza', 'status': 'Zrealizowane', 't_c': {}, 't_f': {}, 't_o': {'cs': 'Modernizace a rozšíření v podmínkách aktivní továrny: ekologická zóna, technologické zámky, základy pro výrobní linky\nECO: Plocha zóny: 2 101 m². Demoliční práce, zemní práce, železobetonové spodní desky pro technologická zařízení surovin, ocelové konstrukce, technologické a kanalizační instalace. CNP1: Výstavba systému technologických zámků, montáž rychlobrán, požárních přepážek, vzduchotechnických instalací a vnitřního zabezpečení dopravy. Tucznawa: Vyztužené základy pro automatizované linky na výrobu brzdových kotoučů, stavební práce a modernizaci průmyslové infrastruktury.', 'de': 'Modernisierungen und Erweiterungen unter den Bedingungen einer aktiven Fabrik: Umweltzone, Technologieschleusen, Fundamente für Produktionslinien\nECO: Zonenfläche: 2.101 m². Abbrucharbeiten, Erdarbeiten, Bodenplatten aus Stahlbeton für technologische Geräte zur Rohstoffrückgewinnung, Stahlkonstruktionen, Technologie- und Abwasseranlagen. CNP1: Bau eines Systems technologischer Schleusen, Installation von Schnelllauftoren, Brandschutzwänden, Lüftungsanlagen und interner Transportsicherung. Tucznawa: Verstärkte Fundamente für automatisierte Produktionslinien für Bremsscheiben, Bauarbeiten und Modernisierung der industriellen Infrastruktur.', 'en': 'Modernizations and expansions in the conditions of an active factory: ecological zone, technological locks, foundations for production lines\nECO: Zone area: 2,101 m². Demolition works, earthworks, reinforced concrete bottom slabs for raw material recovery technological devices, steel structures, technological and sewage installations. CNP1: Construction of a system of technological locks, installation of high-speed gates, fire partitions, ventilation installations and internal transport security. Tucznawa: Reinforced foundations for automated brake disc production lines, construction works and modernization of industrial infrastructure.', 'hu': 'Korszerűsítések, bővítések aktív gyár körülményei között: ökológiai zóna, technológiai zárak, gyártósorok alapjai\nECO: Zóna területe: 2101 m². Bontási munkák, földmunka, vasbeton fenéklemezek nyersanyag-visszanyerő technológiai eszközökhöz, acélszerkezetekhez, technológiai és szennyvízbeépítésekhez. CNP1: Technológiai zárrendszer kiépítése, gyorskapuk, tűzvédelmi válaszfalak, szellőztető berendezések és belső közlekedésbiztonság szerelése. Tucznawa: Megerősített alapok automatizált féktárcsa gyártósorokhoz, építési munkákhoz és az ipari infrastruktúra korszerűsítéséhez.', 'sk': 'Modernizácie a rozšírenia v podmienkach aktívneho závodu: ekologická zóna, technologické zámky, základy pre výrobné linky\nECO: Plocha zóny: 2 101 m². Búracie práce, zemné práce, železobetónové spodné dosky pre technologické zariadenia zhodnocovania surovín, oceľové konštrukcie, technologické a kanalizačné zariadenia. CNP1: Vybudovanie systému technologických uzáverov, montáž rýchlobežných brán, protipožiarnych priečok, vzduchotechnických inštalácií a vnútorného zabezpečenia dopravy. Tucznawa: Zosilnené základy pre automatizované linky na výrobu brzdových kotúčov, stavebné práce a modernizáciu priemyselnej infraštruktúry.', 'uk': 'Модернізація та розширення в умовах діючого заводу: екологічна зона, технологічні шлюзи, фундаменти для виробничих ліній\nЕКО: Площа зони: 2101 м². Демонтажні роботи, земляні роботи, залізобетонні плити днища технологічних пристроїв відновлення сировини, металоконструкції, технологічні та каналізаційні установки. CNP1: Будівництво системи технологічних шлюзів, встановлення швидкісних воріт, протипожежних перегородок, вентиляційних установок та внутрішньої транспортної безпеки. Tucznawa: Посилені фундаменти для автоматизованих ліній виробництва гальмівних дисків, будівельні роботи та модернізація промислової інфраструктури.'}, 't_s': {}, 't_t': {}, 'title': 'Brembo Poland Dąbrowa Górnicza', 'type': 'realizacja-zrealizow'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo', 'gallery': [], 'hero': '/static/img/mbt/logos/zielona-dolina.png', 'latitude': None, 'logo': '/static/img/mbt/logos/zielona-dolina.png', 'longitude': None, 'opis': 'Osiedle mieszkaniowe (5 budynków wielorodzinnych + 20 domów)\nKompleksowa budowa osiedla: 5 budynków mieszkalnych wielorodzinnych z podziemnymi halami garażowymi oraz 20 domów jednorodzinnych w zabudowie bliźniaczej. Pełna infrastruktura inżynieryjna (wod-kan, deszczowa ze zbiornikami retencyjnymi, gaz, prąd), drogi osiedlowe, chodniki, miejsca postojowe i tereny zielone.', 'order': 43, 'slug': 'invest-tdj-estate-zabrze-zielona-dolina-4', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {'cs': 'Rezidenční nemovitost (5 vícegeneračních domů + 20 domů)\nKomplexní výstavba sídliště: 5 bytových domů s podzemními garážemi a 20 rodinných dvojdomů. Kompletní inženýrská infrastruktura (voda a kanalizace, dešťová voda s retenčními nádržemi, plyn, elektřina), obytné komunikace, chodníky, parkovací místa a zelené plochy.', 'de': 'Wohnsiedlung (5 Mehrfamilienhäuser + 20 Häuser)\nKomplexer Bau einer Wohnsiedlung: 5 Mehrfamilienhäuser mit Tiefgaragen und 20 Einfamilien-Doppelhäuser. Vollständige technische Infrastruktur (Wasser und Abwasser, Regenwasser mit Rückhaltebecken, Gas, Strom), Anliegerstraßen, Gehwege, Parkplätze und Grünflächen.', 'en': 'Residential estate (5 multi-family buildings + 20 houses)\nComprehensive construction of a housing estate: 5 multi-family residential buildings with underground garages and 20 single-family semi-detached houses. Full engineering infrastructure (water and sewage, stormwater with retention tanks, gas, electricity), residential roads, sidewalks, parking spaces and green areas.', 'hu': 'Lakótelep (5 többlakásos épület + 20 ház)\nLakótelep átfogó építése: 5 db többlakásos mélygarázsos lakóház és 20 db családi házas ikerház. Teljes műszaki infrastruktúra (víz és szennyvíz, csapadékvíz visszatartó tartályokkal, gáz, villany), lakóutak, járdák, parkolóhelyek és zöldfelületek.', 'sk': 'Obytný dom (5 rodinných domov + 20 domov)\nKomplexná výstavba sídliska: 5 bytových domov s podzemnými garážami a 20 rodinných dvojdomov. Kompletná inžinierska infraštruktúra (voda a kanalizácia, dažďová voda s retenčnými nádržami, plyn, elektrina), obytné komunikácie, chodníky, parkovacie miesta a zelené plochy.', 'uk': 'Житловий масив (5 багатоквартирних будинків + 20 будинків)\nКомплексне будівництво житлового масиву: 5 багатоквартирних житлових будинків з підземними гаражами та 20 одноквартирних будинків. Повна інженерна інфраструктура (вода та каналізація, дощоприймачі з відстійниками, газ, світло), житлові дороги, тротуари, паркомісця та зелені зони.'}, 't_s': {}, 't_t': {}, 'title': 'Invest TDJ Estate Zabrze (Zielona Dolina 4)', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Generalne Wykonawstwo („pod klucz”)', 'gallery': [], 'hero': 'https://media.mbt.pl/uploads/1491284b28df.webp', 'latitude': None, 'logo': 'https://media.mbt.pl/uploads/1491284b28df.webp', 'longitude': None, 'opis': 'Zakład produkcyjny ultralekkich samolotów z hangarem lotniczym\nHala produkcyjno-hangarowa: ok. 2 100 m² wraz z budynkiem biurowo-socjalnym dla kadry inżynieryjnej. Trwała konstrukcja nośna z prefabrykatów żelbetowych przygotowana pod montaż statków powietrznych, płyta przedhangarowa, strefy manewrowe i infrastruktura techniczna.', 'order': 44, 'slug': 'artus-aircraft', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {'cs': 'Závod na výrobu ultralehkých letadel s leteckým hangárem\nVýrobní a hangárová hala: cca. 2 100 m² s kancelářskou a sociální budovou pro technický personál. Odolná nosná konstrukce z prefabrikovaných železobetonových prvků připravených pro montáž letadel, předhangárové desky, manévrovacích zón a technické infrastruktury.', 'de': 'Produktionsanlage für Ultraleichtflugzeuge mit Flugzeughangar\nProduktions- und Hangarhalle: ca. 2.100 m² mit Büro- und Sozialgebäude für Ingenieurpersonal. Langlebige Tragkonstruktion aus vorgefertigten Stahlbetonelementen, vorbereitet für die Montage von Flugzeugen, Vorhangarplatte, Manövrierzonen und technischer Infrastruktur.', 'en': 'Ultralight aircraft production plant with an aircraft hangar\nProduction and hangar hall: approx. 2,100 m² with an office and social building for engineering staff. Durable supporting structure made of prefabricated reinforced concrete elements prepared for the assembly of aircraft, pre-hangar slab, maneuvering zones and technical infrastructure.', 'hu': 'Ultrakönnyű repülőgépgyártó üzem repülőgép hangárral\nGyártó és hangárcsarnok: kb. 2100 m² iroda és szociális épület a mérnökök számára. Tartós tartószerkezet előregyártott vasbeton elemekből, repülőgépek összeszerelésére előkészítve, előhangár födém, manőverező zóna és műszaki infrastruktúra.', 'sk': 'Závod na výrobu ultraľahkých lietadiel s leteckým hangárom\nVýrobná a hangárová hala: cca. 2 100 m² s kancelárskou a sociálnou budovou pre inžiniersky personál. Odolná nosná konštrukcia z prefabrikovaných železobetónových prvkov pripravených na montáž lietadiel, predhangárovej dosky, manévrovacích zón a technickej infraštruktúry.', 'uk': 'Завод з виробництва надлегких літаків з авіаційним ангаром\nВиробничо-ангарний зал: бл. 2100 м² з офісно-соціальним корпусом для інженерного персоналу. Міцна несуча конструкція зі збірних залізобетонних елементів, підготовлених для монтажу літаків, передангарної плити, зон маневрування та технічної інфраструктури.'}, 't_s': {}, 't_t': {}, 'title': 'Artus Aircraft', 'type': 'realizacja-w-trakcie'},
+ {'czas': '', 'formula': 'Zaprojektuj i Wybuduj (pod klucz)', 'gallery': [], 'hero': 'https://media.mbt.pl/uploads/4fe7e40eb483.webp', 'latitude': None, 'logo': 'https://media.mbt.pl/uploads/4fe7e40eb483.webp', 'longitude': None, 'opis': 'Wielofunkcyjny obiekt sportowy z garażem podziemnym\nPowierzchnia hali sportowej: ponad 1 170 m². 2 turniejowe korty do padla, strefa badmintona (5 boisk), strefa tenisa stołowego (8 stołów), 4-rzędowa trybuna teleskopowa. Przeszklony łącznik z gmachem SWFiS, kondygnacja podziemna z garażem na 41 stanowisk i podgrzewaną rampą, dach z dźwigarów z drewna klejonego, instalacja fotowoltaiczna OZE, promienniki wodne i system BMS.', 'order': 45, 'slug': 'centrum-sportow-rakietowych-ue-wroclaw', 'status': 'W trakcie realizacji', 't_c': {}, 't_f': {}, 't_o': {'cs': 'Multifunkční sportovní areál s podzemní garáží\nPlocha sportovní haly: přes 1 170 m². 2 turnajové padelové kurty, badmintonová zóna (5 kurtů), zóna stolního tenisu (8 stolů), 4-řadá teleskopická tribuna. Skleněná spojka s budovou SWFiS, podzemní podlaží s garáží pro 41 aut a vyhřívanou rampou, střecha z lepených dřevěných nosníků, fotovoltaická instalace z obnovitelných zdrojů, ohřívače vody a systém BMS.', 'de': 'Eine multifunktionale Sportanlage mit Tiefgarage\nSporthallenfläche: über 1.170 m². 2 Turnier-Padelplätze, Badminton-Bereich (5 Plätze), Tischtennis-Bereich (8 Tische), 4-reihige Teleskoptribüne. Eine Glasverbindung mit dem SWFiS-Gebäude, ein Untergeschoss mit einer Garage für 41 Autos und einer beheizten Rampe, ein Dach aus verleimten Holzträgern, eine Photovoltaikanlage für erneuerbare Energien, Warmwasserbereiter und ein BMS-System.', 'en': 'A multifunctional sports facility with an underground garage\nSports hall area: over 1,170 m². 2 tournament padel courts, badminton zone (5 courts), table tennis zone (8 tables), 4-row telescopic tribune. A glass connector with the SWFiS building, an underground floor with a garage for 41 cars and a heated ramp, a roof made of glued timber girders, a renewable energy photovoltaic installation, water heaters and a BMS system.', 'hu': 'Multifunkcionális sportlétesítmény mélygarázzsal\nA sportcsarnok területe: több mint 1170 m². 2 verseny padel pálya, tollaslabda zóna (5 pálya), asztalitenisz zóna (8 asztal), 4 soros teleszkópos tribün. Üvegcsatlakozó az SWFiS épülettel, földalatti 41 gépkocsi befogadására alkalmas garázzsal és fűtött rámpával, ragasztott fatartókból készült tető, megújuló energiás fotovoltaikus installáció, vízmelegítők és BMS rendszer.', 'sk': 'Multifunkčný športový areál s podzemnou garážou\nPlocha športovej haly: viac ako 1 170 m². 2 turnajové padelové kurty, bedmintonová zóna (5 kurtov), \u200b\u200bstolnotenisová zóna (8 stolov), 4-radová teleskopická tribúna. Sklenená spojka s budovou SWFiS, podzemné podlažie s garážou pre 41 áut a vyhrievanou rampou, strecha z lepených drevených nosníkov, fotovoltaická inštalácia obnoviteľnej energie, ohrievače vody a BMS systém.', 'uk': 'Багатофункціональна спортивна споруда з підземним гаражем\nПлоща спортивного залу: понад 1170 м². 2 турнірних корти для падел, зона бадмінтону (5 кортів), зона настільного тенісу (8 столів), 4-х рядна телескопічна трибуна. Скляний з’єднувач з будівлею SWFiS, підземний поверх з гаражем на 41 машину та рампою з підігрівом, дах із клеєних дерев’яних балок, фотоелектрична установка з відновлюваних джерел енергії, водонагрівачі та система BMS.'}, 't_s': {}, 't_t': {}, 'title': 'Centrum Sportów Rakietowych UE Wrocław', 'type': 'realizacja-w-trakcie'}]
 
 SECTORS = [{'icon': 'ri-building-2-line',
   'image': 'https://media.mbt.pl/uploads/a8d6d2908191.webp',
