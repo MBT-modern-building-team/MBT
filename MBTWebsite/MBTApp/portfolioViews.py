@@ -139,7 +139,7 @@ def _resized_image(src, width):
 def potencjal_img(request):
     """Zmniejsza zdjęcie na potrzeby eksportu PDF. Tylko lokalnie (DEBUG) lub dla personelu; adres z białej listy."""
     user = getattr(request, 'user', None)
-    if not (settings.DEBUG or (user is not None and user.is_staff)):
+    if not settings.DEBUG:
         raise Http404()
     try:
         width = max(100, min(int(request.GET.get('w', 800)), 2000))
@@ -216,8 +216,8 @@ def _download_pdf(request, lang):
 def potencjal(request):
     public = page_is_public()
     user = getattr(request, 'user', None)
-    if not (public or settings.DEBUG or (user is not None and user.is_staff)):
-        raise Http404()
+    if not (public or settings.DEBUG):
+        raise Http404()  # na produkcji niewidoczna dla nikogo (także personelu), dopóki PORTFOLIO_PAGE_PUBLIC nie jest włączone
     lang = request.LANGUAGE_CODE
     ctx = portfolio.build_context(lang)
     try:
@@ -236,7 +236,7 @@ def potencjal(request):
         'site': mbt_orm.get_site(lang),
         'breadcrumb': True,  # własny hero zamiast globalnego breadcrumb-a
         'pdf_mode': request.GET.get('pdf') == '1',  # eksport do PDF: bez lazy-load, wszystkie realizacje
-        'show_pdf_button': settings.DEBUG or bool(user is not None and user.is_staff),
+        'show_pdf_button': settings.DEBUG,
     })
     if ctx['pdf_mode']:
         can_download = settings.DEBUG and bool(portfolio_pdf.chrome_path())

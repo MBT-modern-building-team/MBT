@@ -11,8 +11,8 @@ def page_is_public():
     """Czy podstrona /potencjal-i-referencje/ jest widoczna dla wszystkich.
 
     Domyślnie NIE (404 dla odwiedzających, brak w sitemapie). Włączenie: zmienna środowiskowa
-    PORTFOLIO_PAGE_PUBLIC=1 (np. w Vercel). Zawsze widoczna lokalnie (DEBUG) i dla zalogowanego
-    personelu (admin), żeby można ją oglądać przed publikacją.
+    PORTFOLIO_PAGE_PUBLIC=1 (np. w Vercel). Poza tym widoczna wyłącznie lokalnie (DEBUG);
+    na produkcji nie widzi jej nikt, także zalogowany personel.
     """
     return os.getenv('PORTFOLIO_PAGE_PUBLIC', '').strip().lower() in ('1', 'true', 'yes', 'on')
 

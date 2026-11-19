@@ -123,10 +123,15 @@ class PortfolioPageHiddenTests(TestCase):
         sitemap = self.client.get('/sitemap.xml', HTTP_HOST='localhost').content.decode()
         self.assertNotIn('potencjal-i-referencje', sitemap)
 
-    def test_visible_for_staff_with_noindex(self):
+    def test_hidden_for_staff_too_in_production(self):
         from django.contrib.auth import get_user_model
         user = get_user_model().objects.create_user('staff', password='x', is_staff=True)
         self.client.force_login(user)
+        for path in ('/potencjal-i-referencje/', '/potencjal-i-referencje/?pdf=1', '/potencjal-i-referencje/img/?u=%2Fstatic%2Fimg%2Fmbt%2Flogos%2Fbrembo.png'):
+            self.assertEqual(self.client.get(path, HTTP_HOST='localhost').status_code, 404, path)
+
+    @override_settings(DEBUG=True)
+    def test_visible_locally_with_noindex(self):
         resp = self.client.get('/potencjal-i-referencje/', HTTP_HOST='localhost')
         self.assertEqual(resp.status_code, 200)
         self.assertIn('noindex', resp['X-Robots-Tag'])
