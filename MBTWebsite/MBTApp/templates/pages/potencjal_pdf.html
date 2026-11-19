@@ -296,10 +296,6 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 </div>{% include 'pages/_pot_pdf_foot.html' with n=forloop.counter|add:8 %}</section>
 {% endfor %}
 
-{# ---------- Zakończenie ---------- #}
-<section class="slide end"><div class="stripes" aria-hidden="true"><i></i><i></i><i></i></div>
-  <div><img src="/static/img/mbt/logo-with-name-white.svg" alt="MBT Modern Building Team"><h2>{{ p.slogan }}</h2><p>mbt.pl</p></div>
-</section>
 {% if print_now %}<script>window.addEventListener('load',function(){setTimeout(function(){window.print()},1500)})</script>{% endif %}
 </body>
 </html>
