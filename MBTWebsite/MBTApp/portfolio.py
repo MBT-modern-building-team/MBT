@@ -130,10 +130,17 @@ def _clean(value):
     return value
 
 
-@lru_cache(maxsize=1)
+_RAW_CACHE = {'mtime': None, 'data': None}
+
+
 def _raw():
-    with open(JSON_PATH, encoding='utf-8') as f:
-        return json.load(f)
+    """Dane z portfolio_mbt.json; przeładowywane po zmianie pliku (serwer deweloperski nie widzi zmian w JSON)."""
+    mtime = os.path.getmtime(JSON_PATH)
+    if _RAW_CACHE['mtime'] != mtime:
+        with open(JSON_PATH, encoding='utf-8') as f:
+            _RAW_CACHE['data'] = json.load(f)
+        _RAW_CACHE['mtime'] = mtime
+    return _RAW_CACHE['data']
 
 
 # Ręczne tłumaczenia nazw, które tłumacz maszynowy psuje (np. dubluje „Project Manager”).
