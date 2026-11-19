@@ -46,6 +46,15 @@ NEW_RECORDS = {
 }
 # Jednorazowe poprawki nazw w CMS (dalej o nazwach decyduje CMS).
 TITLE_FIXES = {'ponar-wadowice': 'Ponar Wadowice S.A.'}
+# Poprawki pisowni w tekstach realizacji w CMS (tytuły, opisy, tłumaczenia): (wzorzec regex, zamiana).
+TEXT_FIXES = [
+    (r'lkocholi', 'lkoholi'),                 # Warmet „Hurtownia Alkoholi”
+    (r'Zielona góra', 'Zielona Góra'),        # BTS Development Park Zielona Góra
+    (r'\bBrzesk\b', 'Brzesko'),               # CANPACK … Brzesko
+    (r'\b(?:CanPack|Canpack)\b', 'CANPACK'),  # jednolity zapis marki
+]
+# Zmiany slugów (stary -> nowy); nowy slug jest już na produkcji.
+SLUG_FIXES = {'warmet-hurtownia-alkocholi': 'warmet-hurtownia-alkoholi'}
 # Kadrowanie zdjęć osób (object-position), gdy twarz nie jest u góry kadru.
 PHOTO_POS = {'michal-swoboda': '50% 45%'}
 # Województwo dla realizacji z CMS, których nie ma w portfolio_mbt.json (wykres województw ma sumować się do liczby realizacji).

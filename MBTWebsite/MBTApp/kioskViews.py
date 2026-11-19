@@ -95,7 +95,7 @@ def kiosk_view(request):
     # Zaufane marki (logotypy)
     trusted_brands = [
         {'name': 'Kompania Piwowarska', 'logo': '/static/img/mbt/trusted-us-kompania-piwowarska.svg'},
-        {'name': 'Canpack', 'logo': '/static/img/mbt/trusted-us-canpack.svg'},
+        {'name': 'CANPACK', 'logo': '/static/img/mbt/trusted-us-canpack.svg'},
         {'name': 'Browar Zamkowy Racibórz', 'logo': '/static/img/mbt/trusted-us-browar-zamkowy.svg'},
         {'name': 'DL Invest Group', 'logo': '/static/img/mbt/trusted-us-dl-invest-group.svg'},
         {'name': 'Huber+Suhner', 'logo': '/static/img/mbt/trusted-us-huber-suhner.svg'},
