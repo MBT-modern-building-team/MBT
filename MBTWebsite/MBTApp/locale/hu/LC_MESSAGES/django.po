@@ -2285,3 +2285,6 @@ msgstr "PDF letöltése"
 
 msgid "Przychody"
 msgstr "Árbevétel"
+
+msgid "%(n)s z %(total)s realizacji jest w toku."
+msgstr "%(total)s referenciából %(n)s folyamatban van."

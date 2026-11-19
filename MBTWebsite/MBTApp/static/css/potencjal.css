@@ -276,3 +276,13 @@ body>*:not(main){display:none!important}
 .pot-group-h{break-after:avoid}
 .pot-person,.pot-proj,.pot-card,.pot-chart,.pot-tools li,.pot-method li,.pot-comp li{box-shadow:none!important;border:1px solid #D6E3FF}
 }
+
+/* sprawdzeni podwykonawcy */
+.pot-subs{display:flex;gap:28px;align-items:flex-start;margin-top:56px;background:var(--t2);border-left:6px solid var(--or);border-radius:16px;padding:34px 38px}
+.pot-subs-ic{font-size:44px;color:var(--navy);line-height:1}
+.pot-subs .pot-h3{margin-bottom:10px}
+.pot-subs-lead{font:600 19px/1.5 var(--body-font,sans-serif);color:var(--ttl);margin:0 0 12px}
+.pot-subs p{margin:0 0 10px}
+.pot-subs .pot-list{margin:8px 0 12px}
+.pot-subs-close{font-weight:600;color:var(--ttl)}
+@media (max-width:575px){.pot-subs{flex-direction:column;padding:24px}}

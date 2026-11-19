@@ -2288,3 +2288,6 @@ msgstr "Завантажити PDF"
 
 msgid "Przychody"
 msgstr "Виручка"
+
+msgid "%(n)s z %(total)s realizacji jest w toku."
+msgstr "%(n)s із %(total)s реалізацій у процесі."

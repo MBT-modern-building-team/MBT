@@ -51,6 +51,15 @@ h3.sub{font-size:23px;margin-bottom:12px}
 .prof .card{padding:14px 24px}.prof .card h3{margin-bottom:6px;font-size:20px}
 .prof .capital{padding:18px 32px}.prof .capital .row{padding:4px 0}.prof .capital dd{font-size:28px}.prof .capital .sum dd{font-size:32px}
 .prof .spec{column-count:2;column-gap:28px}.prof .spec li{break-inside:avoid}
+.subs{display:grid;grid-template-columns:1fr 1.7fr;gap:40px;margin-top:18px;background:#fff;border-left:7px solid var(--or);border-radius:16px;padding:16px 32px}
+.subs-l i{font-size:28px;color:var(--navy)}
+.subs-l h3{font-size:26px;margin:2px 0 6px}
+.subs-l .lead{font:600 16.5px/1.4 "Noto Sans",sans-serif;color:var(--ink)}
+.subs-r{font-size:15px;line-height:1.45}
+.subs-r ul{margin:8px 0}
+.subs-r li{position:relative;padding:1px 0 1px 24px;font-weight:600;color:var(--ink)}
+.subs-r li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:8px;background:var(--or);clip-path:polygon(30% 0,100% 0,70% 100%,0 100%)}
+.subs-r .close{font-weight:600;color:var(--navy)}
 /* okładka */
 .cover{background:var(--navy) center/cover no-repeat}
 .cover::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(2,20,50,.93) 0%,rgba(2,20,50,.78) 55%,rgba(2,20,50,.55) 100%)}
@@ -126,18 +135,18 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 
 /* organigram */
 .org-top{display:flex;justify-content:center;gap:70px;position:relative}
-.org-top::before{content:"";position:absolute;left:calc(50% - 35px);width:70px;top:66px;height:2px;background:rgba(43,63,214,.35)}
-.org-dir{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;margin-top:30px;position:relative}
+.org-top::before{content:"";position:absolute;left:calc(50% - 35px);width:70px;top:54px;height:2px;background:rgba(43,63,214,.35)}
+.org-dir{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;margin-top:26px;position:relative}
 .org-dir::before{content:"";position:absolute;left:calc(100%/12);right:calc(100%/12);top:-18px;height:2px;background:rgba(43,63,214,.35)}
 .org-dir>li{position:relative}
 .org-dir>li::before{content:"";position:absolute;left:50%;top:-18px;width:2px;height:18px;background:rgba(43,63,214,.35)}
-.org-top::after{content:"";position:absolute;left:calc(50% - 1px);top:66px;bottom:-12px;width:2px;background:rgba(43,63,214,.35)}
+.org-top::after{content:"";position:absolute;left:calc(50% - 1px);top:54px;bottom:-12px;width:2px;background:rgba(43,63,214,.35)}
 .person{background:#fff;border:1px solid var(--t3);border-radius:12px}
 .person .ph{border-radius:11px 11px 0 0;overflow:hidden}
 .person .ph{height:98px;background:var(--t2)}
 .person .ph img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 .person .ph div{height:100%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font:700 40px "Technor",sans-serif}
-.person.big{width:250px}.person.big .ph{height:132px}
+.person.big{width:250px}.person.big .ph{height:108px}
 .person .nm{padding:10px 12px 12px;border-top:4px solid var(--or)}
 .person .nm strong{display:block;color:var(--ink);font:700 16px/1.2 "Technor",sans-serif}
 .person .nm span{display:block;font-size:13px;color:var(--or-txt);font-style:italic;line-height:1.3;margin-top:2px}
@@ -259,6 +268,8 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
   <div class="reports"><div class="lbl">{% trans 'Pod kierownictwem' %}: {{ m.name }}</div>
     <ul>{% for r in m.reports %}<li class="person"><div class="ph">{% if r.photo %}<img src="{{ r.photo }}" style="object-position:{{ r.photo_pos }}" alt="{{ r.name }}">{% else %}<div>{{ r.initials }}</div>{% endif %}</div><div class="nm"><strong>{{ r.name }}</strong><span>{{ r.role }}</span></div></li>{% endfor %}</ul></div>
   {% endif %}{% endfor %}
+  <div class="subs"><div class="subs-l"><i class="ri-team-line"></i><h3>{{ p.subs.title }}</h3><p class="lead">{{ p.subs.lead }}</p></div>
+    <div class="subs-r"><p>{{ p.subs.text }}</p><ul>{% for x in p.subs.points %}<li>{{ x }}</li>{% endfor %}</ul><p class="close">{{ p.subs.closing }}</p></div></div>
 </div>{% include 'pages/_pot_pdf_foot.html' with n=5 %}</section>
 
 {# ---------- 6. Kadra techniczna ---------- #}
@@ -299,7 +310,7 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 {# ---------- Realizacje ---------- #}
 {% for slide in project_slides %}
 <section class="slide{% if forloop.counter0|divisibleby:2 %} tint{% endif %}"><div class="in">
-  <div class="head" style="margin-bottom:14px"><p class="kick">{% trans 'REALIZACJE' %}</p><h2 class="title" style="font-size:34px;margin-top:8px">{% if forloop.first %}{{ p.texts.realizacje_h2 }}{% else %}{{ p.texts.realizacje_h2 }} <span style="color:#9ca3af;font-size:24px">· {{ forloop.counter }}/{{ project_slides|length }}</span>{% endif %}</h2></div>
+  <div class="head" style="margin-bottom:14px"><p class="kick">{% trans 'REALIZACJE' %}</p><h2 class="title" style="font-size:34px;margin-top:8px">{% if forloop.first %}{{ p.texts.realizacje_h2 }} <span style="color:#6b7280;font-size:20px;font-weight:600">· {{ p.in_progress_note }}</span>{% else %}{{ p.texts.realizacje_h2 }} <span style="color:#9ca3af;font-size:24px">· {{ forloop.counter }}/{{ project_slides|length }}</span>{% endif %}</h2></div>
   {% for row in slide %}
   <div class="row">
     {% if row.show_head %}<h3 class="sec-h">{% if row.code %}<span>{{ row.code }}</span>{% endif %}{{ row.name }}</h3>{% endif %}

@@ -2288,3 +2288,6 @@ msgstr "Download PDF"
 
 msgid "Przychody"
 msgstr "Revenue"
+
+msgid "%(n)s z %(total)s realizacji jest w toku."
+msgstr "%(n)s of %(total)s projects are in progress."

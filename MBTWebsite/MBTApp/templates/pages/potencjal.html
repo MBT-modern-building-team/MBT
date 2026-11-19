@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118u">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118w">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot{% if pdf_mode %} pot-pdfmode{% endif %}">
@@ -171,6 +171,16 @@
                 </ul>
             </li>
         </ul>
+        <div class="pot-subs">
+            <i class="ri-team-line pot-subs-ic" aria-hidden="true"></i>
+            <div>
+                <h3 class="pot-h3">{{ p.subs.title }}</h3>
+                <p class="pot-subs-lead">{{ p.subs.lead }}</p>
+                <p>{{ p.subs.text }}</p>
+                <ul class="pot-list">{% for x in p.subs.points %}<li>{{ x }}</li>{% endfor %}</ul>
+                <p class="pot-subs-close">{{ p.subs.closing }}</p>
+            </div>
+        </div>
         {% if p.site_crew %}<p class="pot-note pot-note--accent"><i class="ri-hard-hat-line" aria-hidden="true"></i> {{ p.site_crew }}</p>{% endif %}
     </div>
 </section>
@@ -269,6 +279,7 @@
             <h2 id="pot-proj-h" class="pot-h2">{{ p.texts.realizacje_h2 }}</h2>
             <span class="pot-bar" aria-hidden="true"></span>
             <p class="pot-lead">{{ p.texts.realizacje_lead }}</p>
+            <p class="pot-lead pot-lead--sm"><strong>{{ p.in_progress_note }}</strong></p>
         </header>
 
         <div class="pot-filter" id="pot-filter" role="group" aria-label="{% trans 'Filtr sektorów' %}" hidden>

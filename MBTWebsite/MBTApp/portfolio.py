@@ -106,7 +106,7 @@ EXISTING_SLUGS = {
 # Kto gdzie stoi w sekcji „Struktura” (kolejność = kolejność na stronie).
 TREE_TOP = ['tomasz-kalisz', 'jacek-lewandowski']
 TREE_DIRECTORS = ['jakub-walczak', 'amelia-mzyk', 'krzysztof-filipowski', 'katarzyna-knabel', 'marek-latos', 'piotr-burda']
-TREE_REPORTS = {'jakub-walczak': ['bartlomiej-potuczko', 'dariusz-kudelko', 'michal-swoboda']}
+TREE_REPORTS = {}  # podwładni nie są pokazywani w strukturze
 
 
 def _clean(value):
@@ -381,6 +381,7 @@ def build_context(lang='pl'):
             'stats': stats,
             'total': total,
             'in_progress': in_progress,
+            'in_progress_note': _gettext('%(n)s z %(total)s realizacji jest w toku.') % {'n': in_progress, 'total': total},
             'sectors': [g for g in by_sector.values() if g['count']],
             'sector_bars': _bars(sector_counter),
             'voiv_bars': _bars(sorted(voiv_counter.items(), key=lambda kv: (-kv[1], kv[0])), _voiv_label),
@@ -402,6 +403,8 @@ def build_context(lang='pl'):
             'backup': t(tech.get('zaplecze')),
             'own_equipment': t(tech.get('wykaz_sprzetu_wlasnego')),
             'exec_tech': [t(x) for x in tech['technologie_wykonawcze']],
+            'subs': {'title': t(d['podwykonawcy']['tytul']), 'lead': t(d['podwykonawcy']['lead']), 'text': t(d['podwykonawcy']['tekst']),
+                     'points': [t(x) for x in d['podwykonawcy']['punkty']], 'closing': t(d['podwykonawcy']['zamkniecie'])},
             'methodology': [{'name': x['nazwa'], 'desc': t(x['opis'])} for x in tech['metodyka']],
         },
     }

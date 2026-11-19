@@ -70,7 +70,7 @@
     ],
     "wyroznienia": [
       "Diamenty Forbesa 2026",
-      "Gazele Biznesu"
+      "Gazele Biznesu 2024, 2025"
     ],
     "czlonkostwa": [
       "Regionalna Izba Gospodarcza w Katowicach",
@@ -1347,5 +1347,16 @@
     "weryfikacja metraży Stokado Bemowo",
     "potwierdzenie udźwigu suwnic Fiołka Racibórz",
     "statusy realizacji (w toku: Wessper Rzezawa, LMS Gdańsk)"
-  ]
+  ],
+  "podwykonawcy": {
+    "tytul": "Sprawdzeni podwykonawcy",
+    "lead": "Podwykonawców dobieramy na podstawie realizacji: pracujemy z firmami, które już dowiozły termin i jakość.",
+    "tekst": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
+    "punkty": [
+      "Koordynacja branż w ramach jednego harmonogramu",
+      "Nadzór kierownika budowy nad jakością i odbiorami",
+      "Jeden partner i jedno miejsce odpowiedzialności dla inwestora"
+    ],
+    "zamkniecie": "Dzięki temu inwestor nie musi sam składać zespołu wykonawców. Budujemy bez komplikacji."
+  }
 }

@@ -2285,3 +2285,6 @@ msgstr "PDF herunterladen"
 
 msgid "Przychody"
 msgstr "Umsatz"
+
+msgid "%(n)s z %(total)s realizacji jest w toku."
+msgstr "%(n)s von %(total)s Projekten sind in Ausführung."

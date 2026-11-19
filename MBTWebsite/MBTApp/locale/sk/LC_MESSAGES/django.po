@@ -2285,3 +2285,6 @@ msgstr "Stiahnuť PDF"
 
 msgid "Przychody"
 msgstr "Tržby"
+
+msgid "%(n)s z %(total)s realizacji jest w toku."
+msgstr "%(n)s z %(total)s realizácií prebieha."
