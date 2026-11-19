@@ -2285,3 +2285,6 @@ msgstr "Led by"
 
 msgid "Pobierz PDF"
 msgstr "Download PDF"
+
+msgid "Przychody"
+msgstr "Revenue"

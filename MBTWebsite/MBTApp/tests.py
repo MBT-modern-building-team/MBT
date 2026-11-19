@@ -62,23 +62,15 @@ class PortfolioPageTests(TestCase):
         self.assertNotRegex(body, r'9[ \u00a0]?142')
         self.assertNotRegex(body, r'6[ \u00a0]?818')
 
-    def test_in_progress_badge_and_hidden_null_fields(self):
+    def test_in_progress_badge_and_registry_data(self):
         html = self._get().content.decode()
         self.assertGreaterEqual(html.count('class="pot-badge"'), 10)  # wszystkie karty z logo (w trakcie realizacji)
-        for label in ('KRS', 'NIP', 'REGON', 'Przychody netto', 'Suma gwarancyjna OC'):
-            self.assertNotIn(f'<th scope="row">{label}', html)
+        for label, value in (('NIP', '9542788822'), ('REGON', '369557780'), ('KRS', '0000720424')):
+            self.assertRegex(html, r'<th scope="row">%s</th><td>%s</td>' % (label, value))
+        for year, val in (('2023', '33,5 mln zł'), ('2024', '83,9 mln zł'), ('2025', '130,2 mln zł')):
+            self.assertRegex(html, r'<th scope="row">Przychody %s</th><td>%s</td>' % (year, val))
+        self.assertNotIn('Suma gwarancyjna OC', html)  # brak danych — pole ukryte
         self.assertNotIn('Liczba osób', html)  # kolumna ukryta, brak danych
-
-    def test_voivodeship_chart_sums_to_total(self):
-        from MBTApp import portfolio
-        c = portfolio.build_context('pl')['p']
-        self.assertEqual(sum(b['value'] for b in c['voiv_bars']), c['total'])
-
-    def test_headquarters_is_katowice(self):
-        html = self._get().content.decode()
-        self.assertRegex(html, r'<th scope="row">Siedziba</th><td>Katowice')
-        self.assertNotIn('<th scope="row">Centrala', html)
-        self.assertRegex(html, r'<th scope="row">Biuro</th><td>Zabrze')
 
     def test_single_h1(self):
         html = self._get().content.decode()

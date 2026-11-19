@@ -2285,3 +2285,6 @@ msgstr "Під керівництвом"
 
 msgid "Pobierz PDF"
 msgstr "Завантажити PDF"
+
+msgid "Przychody"
+msgstr "Виручка"

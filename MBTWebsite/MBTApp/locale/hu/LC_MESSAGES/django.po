@@ -2282,3 +2282,6 @@ msgstr "Vezeti"
 
 msgid "Pobierz PDF"
 msgstr "PDF letöltése"
+
+msgid "Przychody"
+msgstr "Árbevétel"

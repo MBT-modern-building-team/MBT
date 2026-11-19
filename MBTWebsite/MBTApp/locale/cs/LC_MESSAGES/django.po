@@ -2282,3 +2282,6 @@ msgstr "Pod vedením"
 
 msgid "Pobierz PDF"
 msgstr "Stáhnout PDF"
+
+msgid "Przychody"
+msgstr "Tržby"

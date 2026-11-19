@@ -10,9 +10,9 @@
     "na_rynku_od": 2005,
     "prezes_zarzadu": "Tomasz Kalisz",
     "rejestr": {
-      "krs": null,
-      "nip": null,
-      "regon": null
+      "krs": "0000720424",
+      "nip": "9542788822",
+      "regon": "369557780"
     },
     "kapital": {
       "podstawowy": {
@@ -29,9 +29,9 @@
     },
     "finanse": {
       "przychody_netto": {
-        "2023": null,
-        "2024": null,
-        "2025": null
+        "2023": "33,5 mln zł",
+        "2024": "83,9 mln zł",
+        "2025": "130,2 mln zł"
       },
       "oc_suma_gwarancyjna": null,
       "limity_gwarancji_kontraktowych": null

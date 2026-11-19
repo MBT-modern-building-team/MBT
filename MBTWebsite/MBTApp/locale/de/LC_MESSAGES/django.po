@@ -2282,3 +2282,6 @@ msgstr "Unter der Leitung von"
 
 msgid "Pobierz PDF"
 msgstr "PDF herunterladen"
+
+msgid "Przychody"
+msgstr "Umsatz"

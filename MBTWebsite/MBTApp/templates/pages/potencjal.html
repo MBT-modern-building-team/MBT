@@ -86,7 +86,7 @@
             <h3 class="pot-h3">{% trans 'Sytuacja ekonomiczno-finansowa' %}</h3>
             <table class="pot-table">
                 <tbody>
-                    {% for year, val in p.finance.revenue.items %}<tr><th scope="row">{% trans 'Przychody netto' %} {{ year }}</th><td>{{ val }}</td></tr>{% endfor %}
+                    {% for year, val in p.finance.revenue.items %}<tr><th scope="row">{% trans 'Przychody' %} {{ year }}</th><td>{{ val }}</td></tr>{% endfor %}
                     {% if p.finance.oc %}<tr><th scope="row">{% trans 'Suma gwarancyjna OC' %}</th><td>{{ p.finance.oc }}</td></tr>{% endif %}
                     {% if p.finance.guarantees %}<tr><th scope="row">{% trans 'Limity gwarancji kontraktowych' %}</th><td>{{ p.finance.guarantees }}</td></tr>{% endif %}
                 </tbody>

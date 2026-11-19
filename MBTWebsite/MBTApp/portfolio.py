@@ -309,7 +309,7 @@ def build_context(lang='pl'):
     }
     reg = firma.get('rejestr') or {}
     register_rows = [(k, v) for k, v in [
-        ('KRS', _clean(reg.get('krs'))), ('NIP', _clean(reg.get('nip'))), ('REGON', _clean(reg.get('regon')))] if v]
+        ('NIP', _clean(reg.get('nip'))), ('REGON', _clean(reg.get('regon'))), ('KRS', _clean(reg.get('krs')))] if v]
     fin = firma.get('finanse') or {}
     revenue = {y: v for y, v in (fin.get('przychody_netto') or {}).items() if _clean(v)}
     finance = {
