@@ -40,7 +40,7 @@ h3.sub{font-size:23px;margin-bottom:12px}
 .kpis{display:flex;gap:26px;margin-top:22px}.kpis li{flex:1;background:var(--navy);border-radius:14px;padding:14px 26px;border-bottom:6px solid var(--or);display:flex;align-items:baseline;gap:14px}.kpis strong{font:700 44px/1 "Technor",sans-serif;color:#fff}.kpis span{color:rgba(255,255,255,.85);font-size:18px}
 /* okładka */
 .cover{background:var(--navy) center/cover no-repeat}
-.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(2,20,50,.93) 0%,rgba(2,20,50,.72) 55%,rgba(2,20,50,.35) 100%)}
+.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(2,20,50,.93) 0%,rgba(2,20,50,.78) 55%,rgba(2,20,50,.55) 100%)}
 .cover .stripes i{position:absolute;top:0;bottom:0;right:0;width:520px}
 .cover .stripes i:nth-child(1){background:rgba(120,134,255,.35);clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)}
 .cover .stripes i:nth-child(2){background:var(--blue);clip-path:polygon(66% 0,80% 0,40% 100%,26% 100%)}
@@ -166,7 +166,6 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 
 {# ---------- 1. Okładka ---------- #}
 <section class="slide cover" style="background-image:url('{{ photos.gw_hero }}')">
-  <div class="stripes" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="in">
     <img class="logo" src="/static/img/mbt/logo-with-name-white.svg" alt="MBT Modern Building Team">
     <div style="margin-top:110px"><span class="badge">{{ p.texts.hero_kicker }}</span></div>
