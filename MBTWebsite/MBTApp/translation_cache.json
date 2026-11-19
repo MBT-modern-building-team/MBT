@@ -773,6 +773,12 @@
 "target": "sk",
 "translated": "Diamanty Forbes 2026"
 },
+"0b1fcde279fbe5714d17dbccdd8f6ab8": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru.",
+"source": "pl",
+"target": "cs",
+"translated": "Projektový manažer je zodpovědný za každou investici: koordinuje celý investiční proces, sleduje rozpočet a harmonogram, koordinuje odvětví a subdodavatele a vede projekt od přípravy až po přijetí."
+},
 "0b2ea34eedbcfef0db80caf10062324c": {
 "original": "Dolnośląska Izba Gospodarcza",
 "source": "pl",
@@ -1090,6 +1096,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "keresztdokkolni"
+},
+"10f4d4934c7573b28d8c172b8b338b87": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru.",
+"source": "pl",
+"target": "de",
+"translated": "Der Projektmanager ist für jede Investition verantwortlich: Er koordiniert den gesamten Investitionsprozess, überwacht Budget und Zeitplan, koordiniert Industrien und Subunternehmer und leitet das Projekt von der Vorbereitung bis zur Abnahme."
 },
 "10f68f7e68dd25cc093b0a1230c6f886": {
 "original": "Dział Przygotowania Produkcji",
@@ -8879,6 +8891,12 @@
 "target": "cs",
 "translated": "PVC a EPDM membrány"
 },
+"839c1788fece96006e1e6641483eba34": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru.",
+"source": "pl",
+"target": "en",
+"translated": "The Project Manager is responsible for each investment: he coordinates the entire investment process, monitors the budget and schedule, coordinates industries and subcontractors, and leads the project from preparation to acceptance."
+},
 "839e0e4ed01dc188e4c55bd8b5b1a05f": {
 "original": "garaż 41 miejsc",
 "source": "pl",
@@ -12893,6 +12911,12 @@
 "target": "cs",
 "translated": "20 domů"
 },
+"c156570d702540a696a7432405754918": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru.",
+"source": "pl",
+"target": "hu",
+"translated": "A projektmenedzser felelős minden beruházásért: koordinálja a teljes beruházási folyamatot, figyelemmel kíséri a költségvetést és az ütemezést, koordinálja az iparágakat és az alvállalkozókat, valamint vezeti a projektet az előkészítéstől az átvételig."
+},
 "c1637a207455cd359a259e038ec5ac5b": {
 "original": "Gazele Biznesu",
 "source": "pl",
@@ -14429,6 +14453,12 @@
 "target": "en",
 "translated": "retention"
 },
+"d9f08660754e8ad60b27a3691e9b3f12": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru.",
+"source": "pl",
+"target": "sk",
+"translated": "Projektový manažér je zodpovedný za každú investíciu: koordinuje celý investičný proces, monitoruje rozpočet a harmonogram, koordinuje odvetvia a subdodávateľov a vedie projekt od prípravy až po prijatie."
+},
 "d9f568aa94648c965e8c0f55c8010274": {
 "original": "ok. 6 300 m² p.u.",
 "source": "pl",
@@ -14746,6 +14776,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Autóipar – márkakereskedések és szervizközpontok (ASO)"
+},
+"deb307f82a88b05199fce9f56929b38d": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru.",
+"source": "pl",
+"target": "uk",
+"translated": "Менеджер проекту несе відповідальність за кожну інвестицію: він координує весь інвестиційний процес, стежить за бюджетом і графіком, координує галузі та субпідрядників і веде проект від підготовки до прийняття."
 },
 "ded0558b7eb08001edd4a8885cfa4d7a": {
 "original": "Dyrektor Działu Realizacji",
