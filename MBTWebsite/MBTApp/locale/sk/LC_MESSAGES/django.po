@@ -2288,3 +2288,6 @@ msgstr "Tržby"
 
 msgid "%(n)s z %(total)s realizacji jest w toku."
 msgstr "%(n)s z %(total)s realizácií prebieha."
+
+msgid "Nasze kierownictwo"
+msgstr "Naše vedenie"

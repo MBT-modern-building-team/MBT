@@ -2288,3 +2288,6 @@ msgstr "Umsatz"
 
 msgid "%(n)s z %(total)s realizacji jest w toku."
 msgstr "%(n)s von %(total)s Projekten sind in Ausführung."
+
+msgid "Nasze kierownictwo"
+msgstr "Unsere Führung"

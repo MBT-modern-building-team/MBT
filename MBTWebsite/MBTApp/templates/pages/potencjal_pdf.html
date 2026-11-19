@@ -263,7 +263,7 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 
 {# ---------- 5. Struktura ---------- #}
 <section class="slide tint orgs"><div class="in">
-  <div class="head" style="margin-bottom:22px"><p class="kick">{% trans 'STRUKTURA ORGANIZACYJNA' %}</p><h2 class="title">{% trans 'Zarząd i dyrekcja' %}</h2><span class="bar"></span></div>
+  <div class="head" style="margin-bottom:22px"><h2 class="title">{% trans 'Nasze kierownictwo' %}</h2><span class="bar"></span></div>
   <ul class="org-top">{% for m in p.board %}<li class="person big"><div class="ph">{% if m.photo %}<img src="{{ m.photo }}" style="object-position:{{ m.photo_pos }}" alt="{{ m.name }}">{% else %}<div>{{ m.initials }}</div>{% endif %}</div><div class="nm"><strong>{{ m.name }}</strong><span>{{ m.role }}</span></div></li>{% endfor %}</ul>
   <ul class="org-dir">{% for m in p.directors %}<li class="person"><div class="ph">{% if m.photo %}<img src="{{ m.photo }}" style="object-position:{{ m.photo_pos }}" alt="{{ m.name }}">{% else %}<div>{{ m.initials }}</div>{% endif %}</div><div class="nm"><strong>{{ m.name }}</strong><span>{{ m.role }}</span></div></li>{% endfor %}</ul>
   {% for m in p.directors %}{% if m.reports %}
