@@ -298,7 +298,7 @@
         "kolumna_desktop": "prawa"
       }
     ],
-    "kadra_budow": "Kierownicy Budowy z uprawnieniami bez ograniczeń w specjalności konstrukcyjno-budowlanej (członkowie OIIB), Inżynierowie Budowy i Kierownicy Robót."
+    "kadra_budow": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, prowadzi projekt od przygotowania do odbioru i jest jednym punktem kontaktu dla Inwestora."
   },
   "kadra": [
     {
@@ -475,13 +475,8 @@
   ],
   "kadra_techniczna": [
     {
-      "stanowisko": "Project Manager",
-      "kwalifikacje": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych; odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji",
-      "liczba_osob": null
-    },
-    {
-      "stanowisko": "Kierownik Projektu",
-      "kwalifikacje": "Wykształcenie techniczne w zakresie budownictwa, doświadczenie na stanowiskach Inżyniera Budowy i Kierownika Robót; prowadzi projekt od przygotowania do odbioru, koordynuje branże i podwykonawców",
+      "stanowisko": "Project Manager / Kierownik Projektu",
+      "kwalifikacje": "Wykształcenie wyższe techniczne w zakresie budownictwa, doświadczenie w prowadzeniu inwestycji przemysłowych oraz na stanowiskach Inżyniera Budowy, Kierownika Robót i Kierownika Budowy; zarządza całym procesem inwestycyjnym: odpowiada za budżet, harmonogram i kontakt z Inwestorem na całym etapie realizacji, prowadzi projekt od przygotowania do odbioru, koordynuje branże, podwykonawców i harmonogram",
       "liczba_osob": null
     },
     {

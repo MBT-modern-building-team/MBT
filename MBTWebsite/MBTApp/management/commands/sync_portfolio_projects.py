@@ -23,6 +23,8 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('--dry-run', action='store_true', help='Tylko pokaż, co by się zmieniło.')
+        parser.add_argument('--create-only', action='store_true',
+                            help='Tylko tworzy brakujące realizacje (bez poprawek pisowni i bez usuwania).')
         parser.add_argument('--fixes-only', action='store_true',
                             help='Tylko poprawki pisowni, nazw i slugów (bez tworzenia i usuwania realizacji).')
 
@@ -34,6 +36,7 @@ class Command(BaseCommand):
         created = deleted = 0
 
         fixes_only = options['fixes_only']
+        create_only = options['create_only']
         for nr, logo in ({} if fixes_only else portfolio.NEW_RECORDS).items():
             r = data[nr]
             slugs = portfolio.EXISTING_SLUGS[nr]
@@ -52,7 +55,7 @@ class Command(BaseCommand):
                 )
                 order += 1
 
-        for slug, title in portfolio.TITLE_FIXES.items():
+        for slug, title in ({} if create_only else portfolio.TITLE_FIXES).items():
             qs = Project.objects.filter(slug=slug).exclude(title=title)
             if qs.exists():
                 self.stdout.write(f'{tag}nazwa: {slug} -> {title}')
@@ -67,7 +70,7 @@ class Command(BaseCommand):
                 text = rx.sub(rep, text)
             return text
 
-        for old, new in portfolio.SLUG_FIXES.items():
+        for old, new in ({} if create_only else portfolio.SLUG_FIXES).items():
             qs = Project.objects.filter(slug=old)
             if qs.exists() and not Project.objects.filter(slug=new).exists():
                 self.stdout.write(f'{tag}slug: {old} -> {new}')
@@ -75,7 +78,7 @@ class Command(BaseCommand):
                     qs.update(slug=new)
         text_fields = ('title', 'opis', 'czas', 'formula', 'status')
         dict_fields = ('t_title', 't_opis', 't_czas', 't_formula', 't_status')
-        for p in Project.objects.all():
+        for p in ([] if create_only else Project.objects.all()):
             changed = []
             for f in text_fields:
                 val = getattr(p, f) or ''
@@ -94,7 +97,7 @@ class Command(BaseCommand):
                 if not dry:
                     p.save(update_fields=changed)
 
-        for slug in ([] if fixes_only else portfolio.REMOVED_SLUGS):
+        for slug in ([] if (fixes_only or create_only) else portfolio.REMOVED_SLUGS):
             qs = Project.objects.filter(slug=slug)
             if qs.exists():
                 deleted += qs.count()

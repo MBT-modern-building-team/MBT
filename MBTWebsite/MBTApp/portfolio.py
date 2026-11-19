@@ -136,11 +136,24 @@ def _raw():
         return json.load(f)
 
 
+# Ręczne tłumaczenia nazw, które tłumacz maszynowy psuje (np. dubluje „Project Manager”).
+MANUAL_TR = {
+    'Project Manager / Kierownik Projektu': {
+        'en': 'Project Manager', 'de': 'Projektleiter / Project Manager', 'cs': 'Project Manager / Vedoucí projektu',
+        'sk': 'Project Manager / Vedúci projektu', 'hu': 'Projektmenedzser / Projektvezető',
+        'uk': 'Project Manager / Керівник проєкту',
+    },
+}
+
+
 def _tr(text, lang):
     """Tłumaczenie z cache; brak wpisu = oryginał PL (fallback)."""
     text = _clean(text)
     if not text or lang == 'pl':
         return text
+    manual = MANUAL_TR.get(text, {}).get(lang)
+    if manual:
+        return manual
     return translate(text, 'pl', lang)
 
 
