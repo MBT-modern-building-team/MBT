@@ -61,7 +61,12 @@ h3.sub{font-size:23px;margin-bottom:12px}
 .subs-r li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:8px;background:var(--or);clip-path:polygon(30% 0,100% 0,70% 100%,0 100%)}
 .subs-r .close{font-weight:600;color:var(--navy)}
 .tech table{font-size:15.5px}.tech tbody th{width:27%}.tech th,.tech td{padding:5px 14px}.tech .card{padding:12px 18px}.tech .sub{font-size:20px;margin-bottom:8px}.tech .cards-side{font-size:15px}
-.orgs .in{padding-top:38px}.orgs .head{margin-bottom:14px!important}.orgs .title{font-size:38px}.orgs .person.big .ph{height:88px}.orgs .org-dir .ph{height:80px}.orgs .org-dir{margin-top:22px}.orgs .org-top::before,.orgs .org-top::after{top:44px}.orgs .subs{margin-top:14px;padding:12px 30px}.orgs .orgnote{margin-top:12px;padding:10px 22px;font-size:15.5px}
+.orgs .person.big{width:290px}.orgs .person.big .ph{height:192px}.orgs .org-dir .ph{height:152px}.orgs .org-top::before,.orgs .org-top::after{top:112px}.orgs .org-dir{margin-top:42px}.orgs .person.big .nm strong{font-size:19px}.orgs .person.big .nm span{font-size:14px}
+.tech-slide .in{padding-top:36px}.tech-slide .head{margin-bottom:12px}.tech-slide .title{font-size:38px}
+.subs-wide{margin-top:14px;padding:10px 28px;gap:30px;grid-template-columns:1fr 2.2fr}
+.subs-wide .subs-l i{font-size:24px}.subs-wide .subs-l h3{font-size:22px;margin:0 0 4px}.subs-wide .subs-l .lead{font-size:14.5px;line-height:1.35}
+.subs-wide .subs-r{font-size:14px;line-height:1.4}.subs-wide .subs-r ul{display:flex;flex-wrap:wrap;gap:0 22px;margin:4px 0}
+.subs-wide .subs-r li{padding:1px 0 1px 22px}.subs-wide .subs-r p{margin:0}
 /* okładka */
 .cover{background:var(--navy) center/cover no-repeat}
 .cover::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(2,20,50,.93) 0%,rgba(2,20,50,.78) 55%,rgba(2,20,50,.55) 100%)}
@@ -270,13 +275,10 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
   <div class="reports"><div class="lbl">{% trans 'Pod kierownictwem' %}: {{ m.name }}</div>
     <ul>{% for r in m.reports %}<li class="person"><div class="ph">{% if r.photo %}<img src="{{ r.photo }}" style="object-position:{{ r.photo_pos }}" alt="{{ r.name }}">{% else %}<div>{{ r.initials }}</div>{% endif %}</div><div class="nm"><strong>{{ r.name }}</strong><span>{{ r.role }}</span></div></li>{% endfor %}</ul></div>
   {% endif %}{% endfor %}
-  <div class="subs"><div class="subs-l"><i class="ri-team-line"></i><h3>{{ p.subs.title }}</h3><p class="lead">{{ p.subs.lead }}</p></div>
-    <div class="subs-r"><p>{{ p.subs.text }}</p><ul>{% for x in p.subs.points %}<li>{{ x }}</li>{% endfor %}</ul><p class="close">{{ p.subs.closing }}</p></div></div>
-  {% if p.site_crew %}<p class="note orgnote"><i class="ri-hard-hat-line" style="color:var(--or-txt)"></i> {{ p.site_crew }}</p>{% endif %}
 </div>{% include 'pages/_pot_pdf_foot.html' with n=5 %}</section>
 
 {# ---------- 6. Kadra techniczna ---------- #}
-<section class="slide"><div class="in">
+<section class="slide tech-slide"><div class="in">
   <div class="head"><p class="kick">{% trans 'KADRA TECHNICZNA I SPOSÓB REALIZACJI' %}</p><h2 class="title">{% trans 'Kadra techniczna' %}</h2><span class="bar"></span></div>
   <div class="cols2 tech" style="grid-template-columns:2.5fr 1fr;align-items:start;gap:26px">
     <div class="card"><table>
@@ -288,6 +290,8 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
       {% if p.warranty %}<div class="card" style="background:var(--t2);border:0"><h3 class="sub"><i class="ri-tools-line" style="color:var(--or-txt)"></i> {% trans 'Gwarancja' %}</h3>{{ p.warranty }}</div>{% endif %}
     </div>
   </div>
+  <div class="subs subs-wide"><div class="subs-l"><i class="ri-team-line"></i><h3>{{ p.subs.title }}</h3><p class="lead">{{ p.subs.lead }}</p></div>
+    <div class="subs-r"><p>{{ p.subs.text }}</p><ul>{% for x in p.subs.points %}<li>{{ x }}</li>{% endfor %}</ul><p class="close">{{ p.subs.closing }}</p></div></div>
 </div>{% include 'pages/_pot_pdf_foot.html' with n=6 %}</section>
 
 {# ---------- 7. Sposób realizacji ---------- #}

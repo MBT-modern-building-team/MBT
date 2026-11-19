@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118x">
+<link rel="stylesheet" href="/static/css/potencjal.css?v=20261118y">
 <script type="application/ld+json">{{ json_ld_org }}</script>
 <script type="application/ld+json">{{ json_ld_breadcrumbs }}</script>
 <div class="pot{% if pdf_mode %} pot-pdfmode{% endif %}">
@@ -170,17 +170,6 @@
                 </ul>
             </li>
         </ul>
-        <div class="pot-subs">
-            <i class="ri-team-line pot-subs-ic" aria-hidden="true"></i>
-            <div>
-                <h3 class="pot-h3">{{ p.subs.title }}</h3>
-                <p class="pot-subs-lead">{{ p.subs.lead }}</p>
-                <p>{{ p.subs.text }}</p>
-                <ul class="pot-list">{% for x in p.subs.points %}<li>{{ x }}</li>{% endfor %}</ul>
-                <p class="pot-subs-close">{{ p.subs.closing }}</p>
-            </div>
-        </div>
-        {% if p.site_crew %}<p class="pot-note pot-note--accent"><i class="ri-hard-hat-line" aria-hidden="true"></i> {{ p.site_crew }}</p>{% endif %}
     </div>
 </section>
 
@@ -213,6 +202,17 @@
                     {% endfor %}
                 </tbody>
             </table>
+        </div>
+
+        <div class="pot-subs pot-subs--after">
+            <i class="ri-team-line pot-subs-ic" aria-hidden="true"></i>
+            <div>
+                <h3 class="pot-h3">{{ p.subs.title }}</h3>
+                <p class="pot-subs-lead">{{ p.subs.lead }}</p>
+                <p>{{ p.subs.text }}</p>
+                <ul class="pot-list">{% for x in p.subs.points %}<li>{{ x }}</li>{% endfor %}</ul>
+                <p class="pot-subs-close">{{ p.subs.closing }}</p>
+            </div>
         </div>
 
         <div class="pot-grid pot-grid--2 pot-card--mt">

@@ -286,3 +286,5 @@ body>*:not(main){display:none!important}
 .pot-subs .pot-list{margin:8px 0 12px}
 .pot-subs-close{font-weight:600;color:var(--ttl)}
 @media (max-width:575px){.pot-subs{flex-direction:column;padding:24px}}
+
+.pot-subs--after{margin-top:40px}

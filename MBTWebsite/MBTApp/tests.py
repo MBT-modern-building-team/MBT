@@ -132,3 +132,82 @@ class PortfolioPageHiddenTests(TestCase):
         resp = self.client.get('/potencjal-i-referencje/', HTTP_HOST='localhost')
         self.assertEqual(resp.status_code, 200)
         self.assertIn('noindex', resp['X-Robots-Tag'])
+
+
+@override_settings(SECURE_SSL_REDIRECT=False, ALLOWED_HOSTS=['*'])
+class PortfolioContentTests(TestCase):
+    """Treść strony Potencjał (odtworzone testy: siedziba, województwa, tłumaczenia, pisownia, struktura)."""
+
+    def setUp(self):
+        patcher = mock.patch.dict(os.environ, {'PORTFOLIO_PAGE_PUBLIC': '1'})
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def _html(self, lang='pl'):
+        path = '/potencjal-i-referencje/' if lang == 'pl' else f'/{lang}/potencjal-i-referencje/'
+        return self.client.get(path, HTTP_HOST='localhost').content.decode()
+
+    def test_headquarters_is_katowice(self):
+        html = self._html()
+        self.assertRegex(html, r'<th scope="row">Siedziba</th><td>Katowice')
+        self.assertNotIn('<th scope="row">Centrala', html)
+        self.assertRegex(html, r'<th scope="row">Biuro</th><td>Zabrze')
+
+    def test_voivodeship_chart_sums_to_total(self):
+        from MBTApp import portfolio
+        c = portfolio.build_context('pl')['p']
+        self.assertEqual(sum(b['value'] for b in c['voiv_bars']), c['total'])
+
+    def test_in_progress_note_and_gazele_year(self):
+        html = self._html()
+        m = re.search(r'<strong>(\d+) z (\d+) realizacji jest w toku\.</strong>', html)
+        self.assertIsNotNone(m)
+        self.assertEqual(int(m.group(2)), html.count('class="pot-proj-name"'))
+        self.assertEqual(int(m.group(1)), html.count('class="pot-badge"'))
+        self.assertIn('Gazele Biznesu 2024, 2025', html)
+
+    def test_technical_staff_row_and_subcontractors_placement(self):
+        html = self._html()
+        self.assertIn('<th scope="row">Project Manager / Kierownik Projektu</th>', html)
+        self.assertNotIn('<th scope="row">Project Manager</th>', html)
+        i_leadership = html.index('Nasze kierownictwo')
+        i_pm = html.index('Project Manager / Kierownik Projektu')
+        i_bhp = html.index('Specjalista ds. BHP</th>')
+        i_subs = html.index('Sprawdzeni podwykonawcy')
+        self.assertTrue(i_leadership < i_pm < i_bhp < i_subs)
+        self.assertNotIn('Za każdą inwestycję odpowiada Project Manager', html)
+        self.assertNotIn('Kierownicy Budowy z uprawnieniami bez ograniczeń', html)
+        self.assertNotIn('[DO UZUPE', html)
+
+    def test_structure_heading_and_no_reports(self):
+        html = self._html()
+        self.assertIn('>Nasze kierownictwo</h2>', html)
+        self.assertNotIn('STRUKTURA ORGANIZACYJNA', html)
+        body = re.sub(r'<(script|style).*?</\1>', '', html, flags=re.S)
+        for name in ('Potuczko', 'Kudełko', 'Swoboda'):
+            self.assertNotIn(name, body)
+
+    def test_project_titles_spelling(self):
+        from MBTApp import mbt_orm
+        titles = ' | '.join(p['title'] for p in mbt_orm.get_projects('pl'))
+        for bad in ('Alkocholi', 'Zielona góra', 'CanPack', 'Canpack'):
+            self.assertNotIn(bad, titles)
+        self.assertNotRegex(titles, r'Brzesk\b')
+        self.assertIn('Alkoholi', titles)
+
+    def test_block_translations_apply_idempotently(self):
+        from MBTApp import portfolio
+        raw = {r['nr']: r for r in portfolio._raw()['realizacje']}
+        pl_block = portfolio.project_description(raw[9], '')
+        out = portfolio.apply_block_translations({}, 9, pl_block)
+        self.assertEqual(sorted(out), ['cs', 'de', 'en', 'hu', 'sk', 'uk'])
+        once = portfolio.apply_block_translations({'en': 'Old translated spec'}, 9, pl_block + '\nStara specyfikacja')
+        twice = portfolio.apply_block_translations(once, 9, pl_block + '\nStara specyfikacja')
+        self.assertEqual(once, twice)
+        self.assertTrue(once['en'].endswith('Old translated spec'))
+        self.assertEqual(portfolio.apply_block_translations({}, 9, pl_block + '\nStara specyfikacja'), {})
+
+    def test_translated_ui_in_every_language(self):
+        for code, needle in (('en', 'Our leadership'), ('de', 'Unsere Führung'), ('cs', 'Naše vedení'),
+                             ('sk', 'Naše vedenie'), ('hu', 'Vezetőségünk'), ('uk', 'Наше керівництво')):
+            self.assertIn(needle, self._html(code), code)
