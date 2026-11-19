@@ -219,6 +219,39 @@ def project_description(r, old_opis=''):
     return '\n'.join(parts + ([old_opis] if old_opis else []))
 
 
+def _block_translations():
+    """{nr(str): {lang: "typ\\nparametry"}} — tłumaczenia dopisków z portfolio_translations.json."""
+    try:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'portfolio_translations.json'), encoding='utf-8') as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def apply_block_translations(t_dict, nr, pl_opis):
+    """Dopisuje przetłumaczony blok (typ + parametry) na początek tłumaczeń opisu realizacji.
+
+    * jest tłumaczenie starego opisu -> blok trafia przed nie (jeśli jeszcze go tam nie ma),
+    * brak tłumaczenia, a opis PL to sam blok (nowe rekordy) -> tłumaczenie = blok,
+    * brak tłumaczenia i stary opis PL -> bez zmian (fallback na polski, bez mieszania języków).
+    Zwraca nowy słownik (nie modyfikuje wejściowego).
+    """
+    out = dict(t_dict or {})
+    raw = {r['nr']: r for r in _raw()['realizacje']}
+    r = raw.get(nr)
+    if not r:
+        return out
+    pl_block = project_description(r, '')
+    for lang, block in (_block_translations().get(str(nr)) or {}).items():
+        old = (out.get(lang) or '').strip()
+        if old:
+            if not old.startswith(block):
+                out[lang] = block + '\n' + old
+        elif (pl_opis or '').strip() == pl_block:
+            out[lang] = block
+    return out
+
+
 def _thumb(project):
     """Zdjęcie z /realizacje/ (to samo co lista realizacji: hero, a gdy brak — pierwsze z galerii)."""
     project = project or {}

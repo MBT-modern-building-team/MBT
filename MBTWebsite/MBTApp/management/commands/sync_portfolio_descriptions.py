@@ -33,11 +33,18 @@ class Command(BaseCommand):
                 self.stderr.write(f'brak rekordu w bazie: {slugs}')
                 continue
             new = portfolio.project_description(r, p.opis)
-            if new == (p.opis or '').strip():
+            fields = []
+            if new != (p.opis or '').strip():
+                fields.append('opis')
+            new_t = portfolio.apply_block_translations(p.t_opis, r['nr'], new)
+            if new_t != (p.t_opis or {}):
+                fields.append('t_opis')
+            if not fields:
                 continue
             changed += 1
-            self.stdout.write(f'{"[dry] " if dry else ""}{p.slug}: opis zaktualizowany')
+            self.stdout.write(f'{"[dry] " if dry else ""}{p.slug}: {", ".join(fields)} zaktualizowane')
             if not dry:
                 p.opis = new
-                p.save(update_fields=['opis'])
+                p.t_opis = new_t
+                p.save(update_fields=['opis', 't_opis'])
         self.stdout.write(self.style.SUCCESS(f'Zmienione: {changed}, bez rekordu w bazie: {missing}'))
