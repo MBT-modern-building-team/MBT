@@ -9,6 +9,12 @@
   'use strict';
 
   var activeUploads = 0;
+  // Pliki wgrane na R2, ale formularz jeszcze nie zapisany — ostrzegamy przed wyjściem ze strony
+  var unsavedUploads = false;
+
+  function show(el, visible) {
+    if (el) el.hidden = !visible;
+  }
 
   /* --- Pobieranie tokenu CSRF --- */
   function getCookie(name) {
@@ -47,7 +53,7 @@
           notice.className = 'mbt-submit-lock-notice';
           row.insertBefore(notice, row.firstChild);
         }
-        notice.textContent = '⏳ Trwa przesyłanie zdjęć na Cloudflare R2... Przycisk Zapisz jest zablokowany do zakończenia wgrywania.';
+        notice.textContent = 'Trwa wgrywanie plików — zapis będzie możliwy po jego zakończeniu.';
       } else {
         if (notice) notice.remove();
       }
@@ -57,7 +63,7 @@
       if (activeUploads > 0) {
         btn.disabled = true;
         if (!btn.dataset.origTitle) btn.dataset.origTitle = btn.title || '';
-        btn.title = 'Trwa wgrywanie zdjęć na Cloudflare R2... Poczekaj przed kliknięciem Zapisz';
+        btn.title = 'Trwa wgrywanie plików — poczekaj z zapisem';
       } else {
         btn.disabled = false;
         btn.title = btn.dataset.origTitle || '';
@@ -81,12 +87,12 @@
     if (!banner) return;
 
     if (status === 'idle') {
-      banner.style.display = 'none';
+      banner.hidden = true;
       banner.dataset.r2Status = 'idle';
       return;
     }
 
-    banner.style.display = 'flex';
+    banner.hidden = false;
     banner.dataset.r2Status = status; // 'uploading' | 'success' | 'error'
 
     var titleEl = banner.querySelector('.mbt-r2-banner-title');
@@ -98,11 +104,11 @@
     var progressWrap = banner.querySelector('.mbt-r2-progress-wrap');
     var progressBar = banner.querySelector('.mbt-r2-progress-bar');
     if (progressWrap && progressBar) {
-      if (typeof progressPct === 'number' && progressPct >= 0) {
-        progressWrap.style.display = 'block';
+      if (status === 'uploading' && typeof progressPct === 'number' && progressPct >= 0) {
+        progressWrap.hidden = false;
         progressBar.style.width = Math.min(100, Math.round(progressPct)) + '%';
       } else {
-        progressWrap.style.display = 'none';
+        progressWrap.hidden = true;
       }
     }
   }
@@ -240,10 +246,11 @@
   function updateCount(wrap) {
     var thumbs = wrap.querySelectorAll('.mbt-gallery-thumb-wrap');
     var countEl = wrap.querySelector('.mbt-gallery-count');
+    var n = thumbs.length;
     if (countEl) {
-      var n = thumbs.length;
       countEl.textContent = n + (n === 1 ? ' zdjęcie' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? ' zdjęcia' : ' zdjęć'));
     }
+    show(wrap.querySelector('.mbt-gallery-thumbs > .mbt-upload-empty'), n === 0);
   }
 
   function syncJson(wrap) {
@@ -261,8 +268,7 @@
 
   function addThumb(wrap, url) {
     var thumbs = wrap.querySelector('.mbt-gallery-thumbs');
-    var empty = wrap.querySelector('.mbt-upload-empty');
-    if (empty) empty.remove();
+    var empty = thumbs.querySelector('.mbt-upload-empty');
 
     var t = document.createElement('div');
     t.className = 'mbt-gallery-thumb-wrap';
@@ -273,23 +279,57 @@
     img.src = url;
     img.className = 'mbt-gallery-thumb';
     img.alt = '';
+    img.loading = 'lazy';
+    img.draggable = false;
 
     var handle = document.createElement('span');
     handle.className = 'mbt-gallery-drag-handle';
     handle.textContent = '⠿';
+    handle.setAttribute('aria-hidden', 'true');
 
     var btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'mbt-gallery-remove';
     btn.title = 'Usuń zdjęcie';
+    btn.setAttribute('aria-label', 'Usuń zdjęcie');
     btn.textContent = '×';
 
     t.appendChild(img);
     t.appendChild(handle);
     t.appendChild(btn);
-    thumbs.appendChild(t);
+    if (empty) {
+      thumbs.insertBefore(t, empty);
+    } else {
+      thumbs.appendChild(t);
+    }
     return t;
   }
+
+  function rebuildFromJson(wrap) {
+    var json = wrap.querySelector('.mbt-gallery-json');
+    if (!json) return;
+    var urls;
+    try {
+      urls = JSON.parse(json.value || '[]');
+    } catch (e) {
+      json.classList.add('mbt-invalid');
+      return;
+    }
+    json.classList.remove('mbt-invalid');
+    if (!Array.isArray(urls)) return;
+    wrap.querySelectorAll('.mbt-gallery-thumb-wrap').forEach(function (t) { t.remove(); });
+    urls.forEach(function (u) {
+      if (typeof u === 'string' && u) addThumb(wrap, u);
+    });
+    updateCount(wrap);
+  }
+
+  document.addEventListener('change', function (e) {
+    if (e.target && e.target.classList && e.target.classList.contains('mbt-gallery-json')) {
+      var wrap = e.target.closest('.mbt-gallery');
+      if (wrap) rebuildFromJson(wrap);
+    }
+  });
 
   /* --- Drag & Drop w Galerii --- */
   var dragEl = null;
@@ -303,16 +343,20 @@
     e.dataTransfer.setData('text/plain', '');
   });
 
+  function sameGallery(el) {
+    return el && dragEl && el.closest('.mbt-gallery') === dragEl.closest('.mbt-gallery');
+  }
+
   document.addEventListener('dragover', function (e) {
     var t = e.target.closest('.mbt-gallery-thumbs');
-    if (!t || !dragEl) return;
+    if (!t || !dragEl || !sameGallery(t)) return;
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
   });
 
   document.addEventListener('drop', function (e) {
     var wrap = e.target.closest('.mbt-gallery-thumbs');
-    if (!wrap || !dragEl) return;
+    if (!wrap || !dragEl || !sameGallery(wrap)) return;
     e.preventDefault();
     var target = e.target.closest('.mbt-gallery-thumb-wrap');
     if (target && target !== dragEl) {
@@ -324,7 +368,12 @@
         target.before(dragEl);
       }
     } else if (!target) {
-      wrap.appendChild(dragEl);
+      var emptyEl = wrap.querySelector('.mbt-upload-empty');
+      if (emptyEl) {
+        wrap.insertBefore(dragEl, emptyEl);
+      } else {
+        wrap.appendChild(dragEl);
+      }
     }
     dragEl.classList.remove('mbt-dragging');
     dragEl = null;
@@ -410,53 +459,42 @@
   /* --- Cropper modal --- */
   function openCropper(file, aspectRatio, onCrop, onCancel) {
     var overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.85)';
-    overlay.style.zIndex = '999999';
-    overlay.style.display = 'flex';
-    overlay.style.flexDirection = 'column';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
+    overlay.className = 'mbt-cropper-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Kadrowanie zdjęcia');
+
+    var title = document.createElement('div');
+    title.className = 'mbt-cropper-title';
+    title.textContent = 'Wykadruj zdjęcie';
 
     var imgWrap = document.createElement('div');
-    imgWrap.style.width = '80%';
-    imgWrap.style.height = '75%';
-    imgWrap.style.backgroundColor = '#1e293b';
-    imgWrap.style.marginBottom = '20px';
-    imgWrap.style.borderRadius = '8px';
-    imgWrap.style.overflow = 'hidden';
+    imgWrap.className = 'mbt-cropper-stage';
 
     var img = document.createElement('img');
-    img.style.maxWidth = '100%';
-    img.style.maxHeight = '100%';
+    img.alt = '';
     imgWrap.appendChild(img);
 
     var btnWrap = document.createElement('div');
-    var btnSave = document.createElement('button');
-    btnSave.textContent = 'Zapisz i wgraj na R2';
-    btnSave.className = 'button default';
-    btnSave.style.padding = '10px 24px';
-    btnSave.style.marginRight = '12px';
-    btnSave.style.cursor = 'pointer';
-    btnSave.style.fontWeight = 'bold';
-    btnSave.type = 'button';
+    btnWrap.className = 'mbt-cropper-actions';
 
     var btnCancel = document.createElement('button');
     btnCancel.textContent = 'Anuluj';
-    btnCancel.className = 'button';
-    btnCancel.style.padding = '10px 20px';
-    btnCancel.style.cursor = 'pointer';
+    btnCancel.className = 'button mbt-cropper-cancel';
     btnCancel.type = 'button';
 
-    btnWrap.appendChild(btnSave);
+    var btnSave = document.createElement('button');
+    btnSave.textContent = 'Zatwierdź i wgraj';
+    btnSave.className = 'button default';
+    btnSave.type = 'button';
+
     btnWrap.appendChild(btnCancel);
+    btnWrap.appendChild(btnSave);
+    overlay.appendChild(title);
     overlay.appendChild(imgWrap);
     overlay.appendChild(btnWrap);
     document.body.appendChild(overlay);
+    document.body.classList.add('mbt-modal-open');
 
     var cropper = null;
     var reader = new FileReader();
@@ -470,25 +508,40 @@
         cropperOptions.aspectRatio = parseFloat(aspectRatio);
       }
       cropper = new Cropper(img, cropperOptions);
+      btnSave.focus();
     };
     reader.readAsDataURL(file);
 
     function close() {
+      document.removeEventListener('keydown', onKey);
+      document.body.classList.remove('mbt-modal-open');
       if (cropper) cropper.destroy();
       if (overlay.parentNode) document.body.removeChild(overlay);
     }
 
-    btnCancel.addEventListener('click', function () {
+    function cancel() {
       close();
       if (onCancel) onCancel();
-    });
+    }
+
+    function onKey(e) {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        cancel();
+      }
+    }
+    document.addEventListener('keydown', onKey);
+
+    btnCancel.addEventListener('click', cancel);
 
     btnSave.addEventListener('click', function () {
       if (!cropper) return;
+      btnSave.disabled = true;
       var baseName = (file.name || 'image').replace(/\.[^/.]+$/, '');
       cropper.getCroppedCanvas({
         maxWidth: 1920,
         maxHeight: 1920,
+        fillColor: '#fff',
       }).toBlob(function (blob) {
         if (!blob) {
           close();
@@ -511,15 +564,12 @@
 
     var isVideo = file.type.indexOf('video') === 0;
     var urlInput = wrap.querySelector('[data-url-input="1"]');
-    var imgEl = wrap.querySelector('.mbt-upload-img');
-    var videoEl = wrap.querySelector('.mbt-upload-video');
-    var emptyEl = wrap.querySelector('.mbt-upload-empty');
 
     startUpload();
     setBannerStatus(
       wrap,
       'uploading',
-      'Trwa przesyłanie na Cloudflare R2... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+      'Wgrywanie pliku… Poczekaj z zapisem.',
       file.name + ' (' + (file.size / 1024).toFixed(0) + ' KB)',
       10
     );
@@ -531,7 +581,7 @@
         setBannerStatus(
           wrap,
           'uploading',
-          'Trwa przesyłanie na Cloudflare R2 (' + Math.round(pct) + '%)... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+          'Wgrywanie pliku… ' + Math.round(pct) + '%',
           file.name + ' (' + (file.size / 1024).toFixed(0) + ' KB)',
           pct
         );
@@ -542,16 +592,8 @@
           urlInput.value = url;
           urlInput.dispatchEvent(new Event('change', { bubbles: true }));
         }
-        if (isVideo && videoEl) {
-          videoEl.src = url;
-          videoEl.controls = true;
-          videoEl.style.display = '';
-          if (emptyEl) emptyEl.style.display = 'none';
-        } else if (imgEl) {
-          imgEl.src = url;
-          imgEl.style.display = '';
-          if (emptyEl) emptyEl.style.display = 'none';
-        }
+        setPreview(wrap, url);
+        unsavedUploads = true;
 
         // Czyścimy plik z inputa — formularz zapisze lekki URL z urlInput!
         input.value = '';
@@ -559,7 +601,7 @@
         setBannerStatus(
           wrap,
           'success',
-          isVideo ? '✓ Film został wgrany na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.' : '✓ Zdjęcie zostało wgrane na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.',
+          isVideo ? 'Film wgrany. Kliknij „Zapisz”, aby zatwierdzić zmianę.' : 'Zdjęcie wgrane. Kliknij „Zapisz”, aby zatwierdzić zmianę.',
           url,
           100
         );
@@ -571,7 +613,7 @@
         setBannerStatus(
           wrap,
           'error',
-          '❌ Błąd podczas wgrywania na Cloudflare R2',
+          'Nie udało się wgrać pliku',
           errMsg,
           0
         );
@@ -596,7 +638,7 @@
     setBannerStatus(
       wrap,
       'uploading',
-      'Wgrywanie na Cloudflare R2: plik 1 z ' + totalFiles + '... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+      'Wgrywanie: plik 1 z ' + totalFiles + '… Poczekaj z zapisem.',
       files[0].name,
       5
     );
@@ -608,8 +650,8 @@
         setBannerStatus(
           wrap,
           'success',
-          '✓ Wszystkie zdjęcia (' + successCount + ') zostały pomyślnie wgrane na Cloudflare R2! MOŻESZ TERAZ ZAPISAĆ ZMIANY.',
-          'Wszystkie miniatury zostały zaktualizowane o docelowe linki media.mbt.pl.',
+          'Wgrano ' + successCount + ' z ' + totalFiles + '. Kliknij „Zapisz”, aby zatwierdzić galerię.',
+          'Kolejność możesz jeszcze zmienić, przeciągając miniatury.',
           100
         );
         finishUpload();
@@ -623,7 +665,7 @@
       setBannerStatus(
         wrap,
         'uploading',
-        'Wgrywanie na Cloudflare R2: plik ' + fileNum + ' z ' + totalFiles + ' (' + Math.round(baseProgress) + '%)... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+        'Wgrywanie: plik ' + fileNum + ' z ' + totalFiles + ' (' + Math.round(baseProgress) + '%)… Poczekaj z zapisem.',
         currentFile.name + ' (' + (currentFile.size / 1024).toFixed(0) + ' KB)',
         baseProgress
       );
@@ -638,7 +680,7 @@
             setBannerStatus(
               wrap,
               'uploading',
-              'Wgrywanie na Cloudflare R2: plik ' + fileNum + ' z ' + totalFiles + ' (' + Math.round(totalPct) + '%)... Proszę czekać, NIE klikaj jeszcze Zapisz.',
+              'Wgrywanie: plik ' + fileNum + ' z ' + totalFiles + ' (' + Math.round(totalPct) + '%)… Poczekaj z zapisem.',
               currentFile.name,
               totalPct
             );
@@ -649,6 +691,7 @@
             syncJson(wrap);
             updateCount(wrap);
             successCount++;
+            unsavedUploads = true;
 
             currentIndex++;
             uploadNext();
@@ -658,7 +701,7 @@
             setBannerStatus(
               wrap,
               'error',
-              '❌ Błąd wgrywania pliku ' + currentFile.name + ' na Cloudflare R2',
+              'Nie udało się wgrać pliku ' + currentFile.name,
               errMsg + ' (Wgrano pomyślnie ' + successCount + ' z ' + totalFiles + ' zdjęć).',
               0
             );
@@ -711,35 +754,153 @@
     }
   });
 
+  /* --- Podgląd (zdjęcie / film) w pojedynczym polu uploadu --- */
+  function setPreview(wrap, url) {
+    var videoEl = wrap.querySelector('.mbt-upload-video');
+    var imgEl = wrap.querySelector('.mbt-upload-img');
+    var emptyEl = wrap.querySelector('.mbt-upload-empty');
+    var clearBtn = wrap.querySelector('[data-mbt-clear]');
+    var media = videoEl || imgEl;
+    if (url) {
+      if (media) {
+        media.src = url;
+        show(media, true);
+      }
+      show(emptyEl, false);
+      show(clearBtn, true);
+    } else {
+      if (media) {
+        media.removeAttribute('src');
+        if (videoEl) videoEl.load();
+        show(media, false);
+      }
+      show(emptyEl, true);
+      show(clearBtn, false);
+    }
+  }
+
   /* --- Podgląd na żywo przy wklejeniu lub wpisaniu adresu URL --- */
   document.addEventListener('input', function (e) {
     if (e.target && e.target.getAttribute('data-url-input') === '1') {
       var wrap = e.target.closest('.mbt-upload');
       if (!wrap) return;
-      var val = (e.target.value || '').trim();
-      var videoEl = wrap.querySelector('.mbt-upload-video');
-      var imgEl = wrap.querySelector('.mbt-upload-img');
-      var emptyEl = wrap.querySelector('.mbt-upload-empty');
-      if (val) {
-        if (videoEl) {
-          videoEl.src = val;
-          videoEl.style.display = '';
-        } else if (imgEl) {
-          imgEl.src = val;
-          imgEl.style.display = '';
-        }
-        if (emptyEl) emptyEl.style.display = 'none';
-      }
+      setPreview(wrap, (e.target.value || '').trim());
     }
+  });
+
+  /* --- Przycisk „Usuń" w pojedynczym polu --- */
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-mbt-clear]');
+    if (!btn) return;
+    var wrap = btn.closest('.mbt-upload');
+    if (!wrap) return;
+    var urlInput = wrap.querySelector('[data-url-input="1"]');
+    if (urlInput) {
+      urlInput.value = '';
+      urlInput.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+    setPreview(wrap, '');
+    setBannerStatus(wrap, 'idle');
+  });
+
+  /* --- Przeciąganie plików z dysku na pole uploadu / galerię --- */
+  function hasFiles(e) {
+    var types = e.dataTransfer && e.dataTransfer.types;
+    if (!types) return false;
+    for (var i = 0; i < types.length; i++) {
+      if (types[i] === 'Files') return true;
+    }
+    return false;
+  }
+
+  document.addEventListener('dragover', function (e) {
+    if (dragEl || !hasFiles(e)) return;
+    var zone = e.target.closest('[data-mbt-dropzone]');
+    if (!zone) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy';
+    zone.classList.add('is-dragover');
+  });
+
+  document.addEventListener('dragleave', function (e) {
+    var zone = e.target.closest('[data-mbt-dropzone]');
+    if (zone && !zone.contains(e.relatedTarget)) zone.classList.remove('is-dragover');
+  });
+
+  document.addEventListener('drop', function (e) {
+    if (dragEl || !hasFiles(e)) return;
+    var zone = e.target.closest('[data-mbt-dropzone]');
+    if (!zone) return;
+    e.preventDefault();
+    zone.classList.remove('is-dragover');
+    var input = zone.querySelector('input.mbt-upload-file');
+    if (!input || activeUploads > 0 && !input.multiple) return;
+    var accept = input.getAttribute('accept') || '';
+    var wantVideo = accept.indexOf('video') !== -1;
+    var dropped = Array.prototype.filter.call(e.dataTransfer.files, function (f) {
+      return wantVideo ? f.type.indexOf('video') === 0 : f.type.indexOf('image') === 0;
+    });
+    if (!dropped.length) {
+      setBannerStatus(zone, 'error', 'Nieobsługiwany typ pliku', wantVideo ? 'Przeciągnij plik wideo (MP4 / WebM).' : 'Przeciągnij plik graficzny (JPG, PNG, WebP).');
+      return;
+    }
+    if (!input.multiple) dropped = dropped.slice(0, 1);
+    try {
+      var dt = new DataTransfer();
+      dropped.forEach(function (f) { dt.items.add(f); });
+      input.files = dt.files;
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    } catch (err) {
+      setBannerStatus(zone, 'error', 'Przeglądarka nie obsługuje przeciągania plików', 'Użyj przycisku wyboru pliku.');
+    }
+  });
+
+  // Upuszczenie pliku poza strefą nie może otworzyć go w karcie (utrata formularza)
+  window.addEventListener('dragover', function (e) {
+    if (hasFiles(e) && !e.target.closest('[data-mbt-dropzone]')) e.preventDefault();
+  });
+  window.addEventListener('drop', function (e) {
+    if (hasFiles(e) && !e.target.closest('[data-mbt-dropzone]')) e.preventDefault();
   });
 
   /* --- Zabezpieczenie przed przedwczesnym wysłaniem formularza --- */
   document.addEventListener('submit', function (e) {
     if (activeUploads > 0) {
       e.preventDefault();
-      alert('⚠️ Trwa przesyłanie zdjęć na Cloudflare R2!\n\nProszę poczekać na zakończenie wgrywania (zielony baner) przed zapisaniem formularza.');
+      alert('⚠️ Trwa przesyłanie plików.\n\nPoczekaj na zakończenie wgrywania (zielony komunikat), a potem zapisz formularz.');
       return false;
     }
+    unsavedUploads = false;
+  });
+
+  /* --- Ostrzeżenie przed opuszczeniem strony z niezapisanymi uploadami --- */
+  window.addEventListener('beforeunload', function (e) {
+    if (activeUploads > 0 || unsavedUploads) {
+      e.preventDefault();
+      e.returnValue = '';
+    }
+  });
+
+  /* --- Tłumaczenia: licznik wypełnionych języków na żywo --- */
+  function updateTrStatus(wrap) {
+    var fields = wrap.querySelectorAll('.mbt-tr-row input, .mbt-tr-row textarea');
+    var filled = 0;
+    fields.forEach(function (f) {
+      var has = (f.value || '').trim() !== '';
+      if (has) filled++;
+      f.closest('.mbt-tr-row').classList.toggle('is-filled', has);
+    });
+    var st = wrap.querySelector('[data-mbt-tr-status]');
+    if (st) {
+      st.textContent = filled + '/' + fields.length + ' języków';
+      st.classList.toggle('is-full', filled === fields.length);
+      st.classList.toggle('is-empty', filled === 0);
+    }
+  }
+
+  document.addEventListener('input', function (e) {
+    var wrap = e.target && e.target.closest && e.target.closest('[data-mbt-tr]');
+    if (wrap) updateTrStatus(wrap);
   });
 
   /* --- Inicjalizacja przy załadowaniu DOM --- */
@@ -747,5 +908,6 @@
     document.querySelectorAll('.mbt-gallery').forEach(function (wrap) {
       updateCount(wrap);
     });
+    document.querySelectorAll('[data-mbt-tr]').forEach(updateTrStatus);
   });
 })();

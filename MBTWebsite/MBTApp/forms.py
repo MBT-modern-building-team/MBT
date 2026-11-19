@@ -75,12 +75,12 @@ class UploadImageWidget(AdminFileWidget):
         css = {
             'all': (
                 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css',
-                '/static/admin/css/mbt-admin.css?v=13',
+                '/static/admin/css/mbt-admin.css?v=14',
             )
         }
         js = (
             'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js',
-            '/static/admin/js/upload_image.js?v=13',
+            '/static/admin/js/upload_image.js?v=14',
         )
 
     def __init__(self, *args, **kwargs):
@@ -133,8 +133,8 @@ class UploadVideoWidget(AdminFileWidget):
 
     class Media:
         # Pełna ścieżka od "/" — Django Media nie encoduje wtedy query stringa
-        css = {'all': ('/static/admin/css/mbt-admin.css?v=13',)}
-        js = ('/static/admin/js/upload_image.js?v=13',)
+        css = {'all': ('/static/admin/css/mbt-admin.css?v=14',)}
+        js = ('/static/admin/js/upload_image.js?v=14',)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -196,8 +196,8 @@ class GalleryUploadWidget(forms.Textarea):
 
     class Media:
         # Pełna ścieżka od "/" — Django Media nie encoduje wtedy query stringa
-        css = {'all': ('/static/admin/css/mbt-admin.css?v=13',)}
-        js = ('/static/admin/js/upload_image.js?v=13',)
+        css = {'all': ('/static/admin/css/mbt-admin.css?v=14',)}
+        js = ('/static/admin/js/upload_image.js?v=14',)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -259,6 +259,92 @@ class GalleryField(forms.JSONField):
         if value == []:
             return []
         return super().to_python(value)
+
+
+# ---------------------------------------------------------------------------
+# Widget: tłumaczenia (osobne pole dla każdego języka zamiast surowego JSON-a)
+# ---------------------------------------------------------------------------
+
+TRANSLATION_LANGS = (
+    ('en', 'English', 'EN'),
+    ('de', 'Deutsch', 'DE'),
+    ('cs', 'Čeština', 'CS'),
+    ('sk', 'Slovenčina', 'SK'),
+    ('hu', 'Magyar', 'HU'),
+    ('uk', 'Українська', 'UK'),
+)
+
+
+class TranslationsWidget(forms.Widget):
+    """Pola {lang: tekst} renderowane jako osobne inputy/textarea per język.
+
+    Zapisuje do JSONField słownik tylko z wypełnionymi językami — puste pole
+    oznacza „pokaż tekst polski" (zachowanie bez zmian względem starego JSON-a).
+    Klucze spoza listy języków (gdyby ktoś je dopisał ręcznie) są zachowywane.
+    """
+
+    template_name = 'admin/widgets/translations.html'
+
+    class Media:
+        css = {'all': ('/static/admin/css/mbt-admin.css?v=14',)}
+        js = ('/static/admin/js/upload_image.js?v=14',)
+
+    def __init__(self, multiline=False, attrs=None):
+        self.multiline = multiline
+        super().__init__(attrs)
+
+    @staticmethod
+    def _to_dict(value):
+        if isinstance(value, dict):
+            return value
+        if isinstance(value, str) and value.strip():
+            try:
+                parsed = json.loads(value)
+            except (TypeError, ValueError):
+                return {}
+            return parsed if isinstance(parsed, dict) else {}
+        return {}
+
+    def get_context(self, name, value, attrs):
+        ctx = super().get_context(name, value, attrs)
+        data = self._to_dict(value)
+        langs = []
+        for code, label, short in TRANSLATION_LANGS:
+            langs.append({
+                'code': code,
+                'label': label,
+                'short': short,
+                'name': f'{name}__{code}',
+                'id': f'{ctx["widget"]["attrs"].get("id", "id_" + name)}__{code}',
+                'value': data.get(code, '') or '',
+            })
+        known = {c for c, _, _ in TRANSLATION_LANGS}
+        ctx['widget']['langs'] = langs
+        ctx['widget']['multiline'] = self.multiline
+        ctx['widget']['filled'] = sum(1 for lang in langs if str(lang['value']).strip())
+        ctx['widget']['total'] = len(langs)
+        ctx['widget']['extra_json'] = json.dumps(
+            {k: v for k, v in data.items() if k not in known}, ensure_ascii=False
+        )
+        return ctx
+
+    def value_from_datadict(self, data, files, name):
+        try:
+            result = json.loads(data.get(f'{name}__extra', '') or '{}')
+            if not isinstance(result, dict):
+                result = {}
+        except (TypeError, ValueError):
+            result = {}
+        for code, _, _ in TRANSLATION_LANGS:
+            text = (data.get(f'{name}__{code}') or '').strip()
+            if text:
+                result[code] = text
+            else:
+                result.pop(code, None)
+        return json.dumps(result, ensure_ascii=False)
+
+    def value_omitted_from_data(self, data, files, name):
+        return not any(f'{name}__{code}' in data for code, _, _ in TRANSLATION_LANGS)
 
 
 # ---------------------------------------------------------------------------

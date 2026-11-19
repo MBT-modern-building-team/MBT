@@ -1,41 +1,41 @@
 {% load i18n static %}
-<div class="mbt-gallery">
+<div class="mbt-gallery" data-mbt-dropzone>
   <div class="mbt-gallery-head">
-    <span class="mbt-gallery-count" data-count="0">0 zdjęć</span>
-  </div>
-  <div class="mbt-gallery-thumbs" data-sortable="1">
-    {% for url in widget.gallery_urls %}
-      <div class="mbt-gallery-thumb-wrap" draggable="true" data-url="{{ url }}">
-        <img src="{{ url }}" alt="" class="mbt-gallery-thumb">
-        <span class="mbt-gallery-drag-handle">⠿</span>
-        <button type="button" class="mbt-gallery-remove" title="Usuń zdjęcie">×</button>
-      </div>
-    {% empty %}
-      <span class="mbt-upload-empty">Brak zdjęć — wybierz pliki poniżej</span>
-    {% endfor %}
-  </div>
-  <div class="mbt-upload-controls">
+    <span class="mbt-gallery-count">{{ widget.gallery_urls|length }} zdj.</span>
     <label class="mbt-upload-btn">
       Dodaj zdjęcia…
       <input type="file" name="{{ widget.file_name }}" accept="image/*" multiple
              class="mbt-upload-file" data-gallery="1">
     </label>
-    <span class="mbt-upload-hint">Przeciągaj miniatury, aby zmienić kolejność. Nowe pliki dodasz przyciskiem obok.</span>
+  </div>
+  <div class="mbt-gallery-thumbs" data-sortable="1">
+    {% for url in widget.gallery_urls %}
+      <div class="mbt-gallery-thumb-wrap" draggable="true" data-url="{{ url }}">
+        <img src="{{ url }}" alt="" class="mbt-gallery-thumb" loading="lazy" draggable="false">
+        <span class="mbt-gallery-drag-handle" aria-hidden="true">⠿</span>
+        <button type="button" class="mbt-gallery-remove" title="Usuń zdjęcie" aria-label="Usuń zdjęcie">×</button>
+      </div>
+    {% endfor %}
+    <span class="mbt-upload-empty"{% if widget.gallery_urls %} hidden{% endif %}>Brak zdjęć — dodaj je przyciskiem albo przeciągnij pliki tutaj.</span>
   </div>
 
-  <div class="mbt-r2-banner" data-r2-status="idle" style="display: none;">
+  <div class="mbt-r2-banner" data-r2-status="idle" hidden>
     <div class="mbt-r2-banner-main">
-      <span class="mbt-r2-banner-icon"></span>
+      <span class="mbt-r2-banner-icon" aria-hidden="true"></span>
       <div class="mbt-r2-banner-text-wrap">
         <span class="mbt-r2-banner-title"></span>
         <span class="mbt-r2-banner-detail"></span>
       </div>
     </div>
-    <div class="mbt-r2-progress-wrap" style="display: none;">
+    <div class="mbt-r2-progress-wrap" hidden>
       <div class="mbt-r2-progress-bar" style="width: 0%;"></div>
     </div>
   </div>
-  <textarea name="{{ widget.name }}" rows="3" class="vLargeTextField mbt-gallery-json"
-            data-json="1" style="width:100%;font-family:monospace;font-size:12px;">{{ widget.value|default:'' }}</textarea>
-  <p class="help">Kolejność zdjęć = kolejność na stronie. Zmienisz ją przeciągając miniatury (drag &amp; drop).</p>
+
+  <p class="mbt-upload-hint">Kolejność miniatur = kolejność na stronie. Przeciągnij miniaturę, aby ją przesunąć.</p>
+  <details class="mbt-gallery-advanced">
+    <summary>Edycja zaawansowana (lista adresów URL)</summary>
+    <textarea name="{{ widget.name }}" rows="4" class="vLargeTextField mbt-gallery-json"
+              data-json="1" spellcheck="false">{{ widget.value|default:'' }}</textarea>
+  </details>
 </div>

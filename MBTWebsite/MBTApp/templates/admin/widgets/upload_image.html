@@ -1,32 +1,33 @@
 {% load i18n static %}
-<div class="mbt-upload">
+<div class="mbt-upload" data-mbt-dropzone>
   <div class="mbt-upload-preview">
-    {% if widget.current_url %}
-      <img src="{{ widget.current_url }}" alt="podgląd" class="mbt-upload-img">
-    {% else %}
-      <span class="mbt-upload-empty">Brak zdjęcia</span>
-    {% endif %}
+    <img src="{{ widget.current_url|default:'' }}" alt="podgląd" class="mbt-upload-img"{% if not widget.current_url %} hidden{% endif %}>
+    <span class="mbt-upload-empty"{% if widget.current_url %} hidden{% endif %}>Brak zdjęcia</span>
   </div>
   <div class="mbt-upload-controls">
-    <label class="mbt-upload-btn">
-      Wybierz plik…
-      <input type="file" name="{{ widget.file_name }}" accept="image/*" class="mbt-upload-file" data-preview="1"
-             data-crop="{{ widget.data_crop }}"
-             {% if widget.data_aspect_ratio %}data-aspect-ratio="{{ widget.data_aspect_ratio }}"{% endif %}>
-    </label>
+    <div class="mbt-upload-actions">
+      <label class="mbt-upload-btn">
+        Wybierz plik…
+        <input type="file" name="{{ widget.file_name }}" accept="image/*" class="mbt-upload-file" data-preview="1"
+               data-crop="{{ widget.data_crop }}"
+               {% if widget.data_aspect_ratio %}data-aspect-ratio="{{ widget.data_aspect_ratio }}"{% endif %}>
+      </label>
+      <button type="button" class="mbt-upload-clear" data-mbt-clear{% if not widget.current_url %} hidden{% endif %}>Usuń</button>
+    </div>
+    <span class="mbt-upload-hint">albo przeciągnij plik tutaj, albo wklej adres URL:</span>
     <input type="text" name="{{ widget.name }}" value="{{ widget.current_url|default:'' }}"
-           class="mbt-upload-url vTextField" data-url-input="1">
+           class="mbt-upload-url vTextField" data-url-input="1" placeholder="https://…">
   </div>
 
-  <div class="mbt-r2-banner" data-r2-status="idle" style="display: none;">
+  <div class="mbt-r2-banner" data-r2-status="idle" hidden>
     <div class="mbt-r2-banner-main">
-      <span class="mbt-r2-banner-icon"></span>
+      <span class="mbt-r2-banner-icon" aria-hidden="true"></span>
       <div class="mbt-r2-banner-text-wrap">
         <span class="mbt-r2-banner-title"></span>
         <span class="mbt-r2-banner-detail"></span>
       </div>
     </div>
-    <div class="mbt-r2-progress-wrap" style="display: none;">
+    <div class="mbt-r2-progress-wrap" hidden>
       <div class="mbt-r2-progress-bar" style="width: 0%;"></div>
     </div>
   </div>

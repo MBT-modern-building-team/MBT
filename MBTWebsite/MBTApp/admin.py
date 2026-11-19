@@ -4,7 +4,12 @@ Wejdź na /admin (login: superuser). Zdjęcia wgrywasz przyciskiem
 „Wybierz plik…" — bez wpisywania ścieżek (lokalnie: MEDIA/uploads,
 na Vercel: Vercel Blob).
 """
+import types
+
 from django.contrib import admin
+from django.db import models as dj_models
+from django.utils.html import format_html
+
 from MBTApp import models
 from MBTApp import forms as mbt_forms
 
@@ -12,11 +17,84 @@ admin.site.site_header = 'MBT — panel zarządzania'
 admin.site.site_title = 'MBT CMS'
 admin.site.index_title = 'Zarządzaj treścią strony'
 
+TR_DESCRIPTION = 'Wpisz tłumaczenie w polu danego języka. Puste pole = na stronie pokaże się tekst polski.'
+
+
+# ============================================================
+# Grupowanie modeli na stronie głównej panelu i w menu bocznym
+# ============================================================
+
+ADMIN_GROUPS = (
+    ('Treści strony', ('Project', 'Article', 'Sector', 'Job', 'Reference', 'Award')),
+    ('Zespół i handlowcy', ('Worker', 'SalesRepresentative')),
+    ('Dane firmy i zdjęcia', ('SiteConfig', 'SitePhotos')),
+    ('Oznakowanie budowy', ('BannerTemplate', 'BannerDownload', 'UserProfile')),
+)
+
+_original_get_app_list = admin.site.get_app_list
+
+
+def _grouped_app_list(self, request, app_label=None):
+    app_list = _original_get_app_list(request, app_label)
+    if app_label:
+        return app_list
+    result = []
+    for app in app_list:
+        if app['app_label'] != 'MBTApp':
+            result.append(app)
+            continue
+        by_name = {m['object_name']: m for m in app['models']}
+        used = set()
+        for group_name, names in ADMIN_GROUPS:
+            group_models = [by_name[n] for n in names if n in by_name]
+            if not group_models:
+                continue
+            used.update(m['object_name'] for m in group_models)
+            result.append({**app, 'name': group_name, 'models': group_models})
+        rest = [m for m in app['models'] if m['object_name'] not in used]
+        if rest:
+            result.append({**app, 'name': 'Inne', 'models': rest})
+    # Grupy MBT na górze, „Uwierzytelnianie" (auth) na końcu
+    return sorted(result, key=lambda a: a['app_label'] != 'MBTApp')
+
+
+admin.site.get_app_list = types.MethodType(_grouped_app_list, admin.site)
+
+
+def _thumb(url, round_=False):
+    if not url:
+        return format_html('<span class="mbt-thumb mbt-thumb--empty">—</span>')
+    return format_html(
+        '<img src="{}" alt="" loading="lazy" class="mbt-thumb{}">',
+        url, ' mbt-thumb--round' if round_ else '',
+    )
+
+
+class MBTModelAdmin(admin.ModelAdmin):
+    """Wspólna baza: pola t_* (JSON {lang: tekst}) edytowane osobnymi polami per język."""
+
+    list_per_page = 50
+    save_on_top = False
+
+    def formfield_for_dbfield(self, db_field, request, **kwargs):
+        formfield = super().formfield_for_dbfield(db_field, request, **kwargs)
+        if (formfield is not None and isinstance(db_field, dj_models.JSONField)
+                and db_field.name.startswith('t_')):
+            try:
+                base = db_field.model._meta.get_field(db_field.name[2:])
+                multiline = isinstance(base, dj_models.TextField)
+            except Exception:
+                multiline = True
+            formfield.widget = mbt_forms.TranslationsWidget(multiline=multiline)
+            formfield.help_text = ''
+        return formfield
+
 
 @admin.register(models.Project)
-class ProjectAdmin(admin.ModelAdmin):
+class ProjectAdmin(MBTModelAdmin):
     form = mbt_forms.ProjectForm
-    list_display = ('title', 'type', 'status', 'order')
+    list_display = ('miniatura', 'title', 'type', 'status', 'order')
+    list_display_links = ('miniatura', 'title')
     list_filter = ('type', 'status')
     search_fields = ('title', 'slug', 'opis')
     prepopulated_fields = {'slug': ('title',)}
@@ -28,7 +106,7 @@ class ProjectAdmin(admin.ModelAdmin):
         ('Tłumaczenia (en/cs/sk/de/hu)', {
             'classes': ('collapse',),
             'fields': ('t_title', 't_status', 't_czas', 't_formula', 't_opis'),
-            'description': 'JSON {lang: text}. Puste = pokaż tekst polski. Format: {"en":"...","de":"...","cs":"...","sk":"...","hu":"..."}.',
+            'description': TR_DESCRIPTION,
         }),
         ('Zdjęcia', {
             'fields': ('hero', 'logo', 'gallery'),
@@ -37,9 +115,13 @@ class ProjectAdmin(admin.ModelAdmin):
         ('Porządek', {'fields': ('order',)}),
     )
 
+    @admin.display(description='')
+    def miniatura(self, obj):
+        return _thumb(obj.hero)
+
 
 @admin.register(models.Job)
-class JobAdmin(admin.ModelAdmin):
+class JobAdmin(MBTModelAdmin):
     list_display = ('title', 'order')
     search_fields = ('title', 'text')
     prepopulated_fields = {'slug': ('title',)}
@@ -49,16 +131,17 @@ class JobAdmin(admin.ModelAdmin):
         ('Tłumaczenia (en/cs/sk/de/hu)', {
             'classes': ('collapse',),
             'fields': ('t_title', 't_text'),
-            'description': 'JSON {lang: text}. Puste = pokaż tekst polski.',
+            'description': TR_DESCRIPTION,
         }),
         ('Porządek', {'fields': ('order',)}),
     )
 
 
 @admin.register(models.Worker)
-class WorkerAdmin(admin.ModelAdmin):
+class WorkerAdmin(MBTModelAdmin):
     form = mbt_forms.WorkerForm
-    list_display = ('name', 'position', 'order')
+    list_display = ('miniatura', 'name', 'position', 'order')
+    list_display_links = ('miniatura', 'name')
     search_fields = ('name', 'position')
     list_editable = ('order',)
     fieldsets = (
@@ -66,16 +149,21 @@ class WorkerAdmin(admin.ModelAdmin):
         ('Tłumaczenia (en/cs/sk/de/hu)', {
             'classes': ('collapse',),
             'fields': ('t_position', 't_opis'),
-            'description': 'JSON {lang: text}. Puste = pokaż tekst polski.',
+            'description': TR_DESCRIPTION,
         }),
         ('Porządek', {'fields': ('order',)}),
     )
 
+    @admin.display(description='')
+    def miniatura(self, obj):
+        return _thumb(obj.photo, round_=True)
+
 
 @admin.register(models.SalesRepresentative)
-class SalesRepresentativeAdmin(admin.ModelAdmin):
+class SalesRepresentativeAdmin(MBTModelAdmin):
     form = mbt_forms.SalesRepresentativeForm
-    list_display = ('name', 'position', 'email', 'phone', 'order')
+    list_display = ('miniatura', 'name', 'position', 'email', 'phone', 'order')
+    list_display_links = ('miniatura', 'name')
     search_fields = ('name', 'position', 'email', 'phone')
     list_editable = ('order',)
     fieldsets = (
@@ -83,14 +171,18 @@ class SalesRepresentativeAdmin(admin.ModelAdmin):
         ('Tłumaczenia (en/cs/sk/de/hu)', {
             'classes': ('collapse',),
             'fields': ('t_position',),
-            'description': 'JSON {lang: text}. Puste = pokaż tekst polski.',
+            'description': TR_DESCRIPTION,
         }),
         ('Porządek', {'fields': ('order',)}),
     )
 
+    @admin.display(description='')
+    def miniatura(self, obj):
+        return _thumb(obj.photo, round_=True)
+
 
 @admin.register(models.Reference)
-class ReferenceAdmin(admin.ModelAdmin):
+class ReferenceAdmin(MBTModelAdmin):
     list_display = ('firma', 'osoba', 'stanowisko', 'order')
     search_fields = ('firma', 'osoba', 'tresc')
     list_editable = ('order',)
@@ -99,17 +191,19 @@ class ReferenceAdmin(admin.ModelAdmin):
         ('Tłumaczenia (en/cs/sk/de/hu)', {
             'classes': ('collapse',),
             'fields': ('t_osoba', 't_stanowisko', 't_tresc'),
-            'description': 'JSON {lang: text}. Puste = pokaż tekst polski.',
+            'description': TR_DESCRIPTION,
         }),
         ('Porządek', {'fields': ('order',)}),
     )
 
 
 @admin.register(models.Article)
-class ArticleAdmin(admin.ModelAdmin):
+class ArticleAdmin(MBTModelAdmin):
     form = mbt_forms.ArticleForm
-    list_display = ('title', 'published', 'created')
+    list_display = ('miniatura', 'title', 'published', 'created')
+    list_display_links = ('miniatura', 'title')
     list_filter = ('published',)
+    date_hierarchy = 'created'
     search_fields = ('title', 'text')
     prepopulated_fields = {'slug': ('title',)}
     list_editable = ('published',)
@@ -118,14 +212,18 @@ class ArticleAdmin(admin.ModelAdmin):
         ('Tłumaczenia (en/cs/sk/de/hu)', {
             'classes': ('collapse',),
             'fields': ('t_title', 't_excerpt', 't_text'),
-            'description': 'JSON {lang: text}. Puste = pokaż tekst polski.',
+            'description': TR_DESCRIPTION,
         }),
         ('Porządek', {'fields': ('order',)}),
     )
 
+    @admin.display(description='')
+    def miniatura(self, obj):
+        return _thumb(obj.image)
+
 
 @admin.register(models.SiteConfig)
-class SiteConfigAdmin(admin.ModelAdmin):
+class SiteConfigAdmin(MBTModelAdmin):
     """Dane firmy — jeden rekord (id=1), edytujesz wszystko w jednym miejscu."""
 
     form = mbt_forms.SiteConfigForm
@@ -151,6 +249,23 @@ class SiteConfigAdmin(admin.ModelAdmin):
         ('Strona główna — film w tle', {'fields': ('hero_video',),
                                           'description': 'Opcjonalny film MP4 odtwarzany w pętli w tle sekcji hero (górny baner) strony głównej. Jeśli pole puste — pozostaje obecne zdjęcie.'}),
         ('Social media', {'fields': ('social_linkedin', 'social_youtube', 'social_facebook', 'social_instagram')}),
+        ('Tłumaczenia — strona główna (hero)', {
+            'classes': ('collapse',),
+            'fields': ('t_hero_subtitle', 't_hero_title1', 't_hero_title2', 't_hero_text'),
+            'description': TR_DESCRIPTION,
+        }),
+        ('Tłumaczenia — liczniki', {
+            'classes': ('collapse',),
+            'fields': ('t_counter_years_label', 't_counter_projects_label',
+                       't_counter_ontime_label', 't_counter_brands_label'),
+            'description': TR_DESCRIPTION,
+        }),
+        ('Tłumaczenia — kontakt, biura i opis firmy', {
+            'classes': ('collapse',),
+            'fields': ('t_hours', 't_hours_long', 't_office_zabrze', 't_office_katowice',
+                       't_office_krakow', 't_tagline', 't_about_short'),
+            'description': TR_DESCRIPTION,
+        }),
     )
 
     def has_add_permission(self, request):
@@ -168,7 +283,7 @@ class SiteConfigAdmin(admin.ModelAdmin):
 
 
 @admin.register(models.SitePhotos)
-class SitePhotosAdmin(admin.ModelAdmin):
+class SitePhotosAdmin(MBTModelAdmin):
     """Zdjęcia strony — podmieniaj z poziomu CMS (upload na R2)."""
 
     form = mbt_forms.SitePhotosForm
@@ -224,7 +339,7 @@ class SitePhotosAdmin(admin.ModelAdmin):
 # ============================================================
 
 @admin.register(models.BannerTemplate)
-class BannerTemplateAdmin(admin.ModelAdmin):
+class BannerTemplateAdmin(MBTModelAdmin):
     list_display = ('title', 'size', 'is_personalized', 'is_active', 'order', 'created')
     list_filter = ('is_active', 'size', 'is_personalized')
     search_fields = ('title', 'slug', 'description')
@@ -242,12 +357,13 @@ class BannerTemplateAdmin(admin.ModelAdmin):
         ('Tłumaczenia (wielojęzyczne)', {
             'classes': ('collapse',),
             'fields': ('t_title', 't_description'),
+            'description': TR_DESCRIPTION,
         }),
     )
 
 
 @admin.register(models.BannerDownload)
-class BannerDownloadAdmin(admin.ModelAdmin):
+class BannerDownloadAdmin(MBTModelAdmin):
     list_display = ('user_email', 'template_title_snapshot', 'downloaded_at', 'ip_address')
     list_filter = ('downloaded_at',)
     search_fields = ('user_email', 'template_title_snapshot', 'user__username')
@@ -264,22 +380,30 @@ class BannerDownloadAdmin(admin.ModelAdmin):
 
 
 @admin.register(models.UserProfile)
-class UserProfileAdmin(admin.ModelAdmin):
+class UserProfileAdmin(MBTModelAdmin):
     list_display = ('user', 'is_kierownik', 'must_change_password', 'last_password_change')
     list_filter = ('is_kierownik', 'must_change_password')
     search_fields = ('user__username', 'user__email')
+
+
 @admin.register(models.Award)
-class AwardAdmin(admin.ModelAdmin):
+class AwardAdmin(MBTModelAdmin):
     form = mbt_forms.AwardForm
-    list_display = ('name', 'order', 'is_active')
+    list_display = ('miniatura', 'name', 'order', 'is_active')
+    list_display_links = ('miniatura', 'name')
     list_editable = ('order', 'is_active')
     search_fields = ('name',)
 
+    @admin.display(description='')
+    def miniatura(self, obj):
+        return _thumb(obj.image)
+
 
 @admin.register(models.Sector)
-class SectorAdmin(admin.ModelAdmin):
+class SectorAdmin(MBTModelAdmin):
     form = mbt_forms.SectorForm
-    list_display = ('title', 'view_name', 'slug', 'order')
+    list_display = ('miniatura', 'title', 'view_name', 'slug', 'order')
+    list_display_links = ('miniatura', 'title')
     list_editable = ('order',)
     search_fields = ('title', 'opis')
     fieldsets = (
@@ -287,6 +411,11 @@ class SectorAdmin(admin.ModelAdmin):
         ('Tłumaczenia (en/cs/sk/de/hu)', {
             'classes': ('collapse',),
             'fields': ('t_title', 't_opis'),
+            'description': TR_DESCRIPTION,
         }),
         ('Porządek', {'fields': ('order',)}),
     )
+
+    @admin.display(description='')
+    def miniatura(self, obj):
+        return _thumb(obj.image)

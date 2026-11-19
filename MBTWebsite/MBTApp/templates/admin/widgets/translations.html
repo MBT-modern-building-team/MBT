@@ -1,0 +1,22 @@
+<div class="mbt-tr" data-mbt-tr>
+  <div class="mbt-tr-head">
+    <span class="mbt-tr-status{% if widget.filled == widget.total %} is-full{% elif widget.filled == 0 %} is-empty{% endif %}"
+          data-mbt-tr-status>{{ widget.filled }}/{{ widget.total }} języków</span>
+    <span class="mbt-tr-hint">Puste pole = na stronie pokaże się tekst polski.</span>
+  </div>
+  <div class="mbt-tr-grid{% if widget.multiline %} is-multiline{% endif %}">
+    {% for lang in widget.langs %}
+      <label class="mbt-tr-row" for="{{ lang.id }}">
+        <span class="mbt-tr-lang" title="{{ lang.label }}">{{ lang.short }}</span>
+        {% if widget.multiline %}
+          <textarea id="{{ lang.id }}" name="{{ lang.name }}" rows="3" class="vLargeTextField"
+                    lang="{{ lang.code }}" placeholder="{{ lang.label }}">{{ lang.value }}</textarea>
+        {% else %}
+          <input type="text" id="{{ lang.id }}" name="{{ lang.name }}" value="{{ lang.value }}"
+                 class="vTextField" lang="{{ lang.code }}" placeholder="{{ lang.label }}">
+        {% endif %}
+      </label>
+    {% endfor %}
+  </div>
+  <input type="hidden" name="{{ widget.name }}__extra" value="{{ widget.extra_json }}">
+</div>
