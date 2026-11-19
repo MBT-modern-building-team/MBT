@@ -1511,6 +1511,12 @@
 "target": "sk",
 "translated": "Finančný riaditeľ"
 },
+"164f71d321e9a2043b83fd876bbf486a": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru oraz uzyskania pozwolenia na użytkowanie.",
+"source": "pl",
+"target": "hu",
+"translated": "A projektmenedzser felelős minden beruházásért: koordinálja a teljes beruházási folyamatot, figyelemmel kíséri a költségvetést és az ütemezést, koordinálja az iparágakat és az alvállalkozókat, valamint vezeti a projektet az előkészítéstől az átvételig és a használatbavételi engedély megszerzéséig."
+},
 "165c7b0b277682dc8b484aae7d97ebfa": {
 "original": "Każdą realizację prowadzimy z firmami, które znamy z poprzednich budów. Za całość odpowiada nasz zespół: kierownik budowy koordynuje prace branż, pilnuje harmonogramu i odbiorów, a inwestor ma jednego partnera i jedno miejsce odpowiedzialności.",
 "source": "pl",
@@ -3725,6 +3731,12 @@
 "target": "hu",
 "translated": "Vasbeton szerkezetek"
 },
+"34e8bdbe6faf7755d02958c2e61465d3": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru oraz uzyskania pozwolenia na użytkowanie.",
+"source": "pl",
+"target": "sk",
+"translated": "Projektový manažér je zodpovedný za každú investíciu: koordinuje celý investičný proces, monitoruje rozpočet a harmonogram, koordinuje odvetvia a subdodávateľov a vedie projekt od prípravy až po kolaudáciu a získanie kolaudačného rozhodnutia."
+},
 "35223bac8513f53fc0a56bd9ef4ce7c3": {
 "original": "Modernizacje i rozbudowy w warunkach czynnej fabryki: strefa ekologiczna, śluzy technologiczne, fundamenty pod linie produkcyjne",
 "source": "pl",
@@ -3742,6 +3754,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "Pivovar Ratiboř"
+},
+"355701f9e3193c82081e09f7e2c9bc0b": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru oraz uzyskania pozwolenia na użytkowanie.",
+"source": "pl",
+"target": "uk",
+"translated": "Керівник проекту несе відповідальність за кожну інвестицію: він координує весь інвестиційний процес, контролює бюджет і графік, координує галузі та субпідрядників, а також веде проект від підготовки до прийняття та отримання дозволу на використання."
 },
 "356487fac5a9925aec7cf04ada231b46": {
 "original": "CANPACK BSS Excellence Centre - Brzesko",
@@ -8986,6 +9004,12 @@
 "source": "pl",
 "target": "cs",
 "translated": "Dohody s investory a subdodavateli"
+},
+"8515489aca5d87acd7a6592ec9b03bf2": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru oraz uzyskania pozwolenia na użytkowanie.",
+"source": "pl",
+"target": "de",
+"translated": "Der Projektmanager ist für jede Investition verantwortlich: Er koordiniert den gesamten Investitionsprozess, überwacht Budget und Zeitplan, koordiniert Industrien und Subunternehmer und leitet das Projekt von der Vorbereitung bis zur Abnahme und Einholung einer Nutzungsgenehmigung."
 },
 "8527f4e62a39fde9f9f85db093e6e790": {
 "original": "Dział Administracji",
@@ -16595,6 +16619,12 @@
 "target": "de",
 "translated": "4 Etagen + Garagen"
 },
+"f726f61d56b0496de43e37c653daa0c3": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru oraz uzyskania pozwolenia na użytkowanie.",
+"source": "pl",
+"target": "en",
+"translated": "The Project Manager is responsible for each investment: he coordinates the entire investment process, monitors the budget and schedule, coordinates industries and subcontractors, and leads the project from preparation to acceptance and obtaining an occupancy permit."
+},
 "f72e365c97e8dc511b73c705e8d69b15": {
 "original": "HALO Kraków! Jesteśmy jeszcze bliżej Was! 🏗️ Nowy oddział MBT oficjalnie otwarty!",
 "source": "pl",
@@ -16984,6 +17014,12 @@
 "source": "pl",
 "target": "hu",
 "translated": "Kétszintes ipari akkumulátorgyártó üzem"
+},
+"fdb5c29cb8b7942a213060ce23f9aa7a": {
+"original": "Za każdą inwestycję odpowiada Project Manager: koordynuje cały proces inwestycyjny, pilnuje budżetu i harmonogramu, koordynuje branże i podwykonawców oraz prowadzi projekt od przygotowania do odbioru oraz uzyskania pozwolenia na użytkowanie.",
+"source": "pl",
+"target": "cs",
+"translated": "Projektový manažer je zodpovědný za každou investici: koordinuje celý investiční proces, sleduje rozpočet a harmonogram, koordinuje odvětví a subdodavatele a vede projekt od přípravy až po kolaudaci a získání kolaudačního souhlasu."
 },
 "fdd85bd74fa3c3c8984429a41de57a03": {
 "original": "Wielokondygnacyjny budynek komórek lokatorskich self-storage o podwyższonym standardzie bezpieczeństwa. Indywidualne boksy magazynowe, strefa biura obsługi klienta (BOK), windy towarowo-osobowe, systemy kontroli dostępu 24/7, monitoring CCTV i zadaszona strefa rozładunkowa.",

@@ -61,6 +61,7 @@ h3.sub{font-size:23px;margin-bottom:12px}
 .subs-r li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:8px;background:var(--or);clip-path:polygon(30% 0,100% 0,70% 100%,0 100%)}
 .subs-r .close{font-weight:600;color:var(--navy)}
 .tech table{font-size:15.5px}.tech tbody th{width:27%}.tech th,.tech td{padding:5px 14px}.tech .card{padding:12px 18px}.tech .sub{font-size:20px;margin-bottom:8px}.tech .cards-side{font-size:15px}
+.orgs .in{padding-top:38px}.orgs .head{margin-bottom:14px!important}.orgs .title{font-size:38px}.orgs .person.big .ph{height:88px}.orgs .org-dir .ph{height:80px}.orgs .org-dir{margin-top:22px}.orgs .org-top::before,.orgs .org-top::after{top:44px}.orgs .subs{margin-top:14px;padding:12px 30px}.orgs .orgnote{margin-top:12px;padding:10px 22px;font-size:15.5px}
 /* okładka */
 .cover{background:var(--navy) center/cover no-repeat}
 .cover::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(2,20,50,.93) 0%,rgba(2,20,50,.78) 55%,rgba(2,20,50,.55) 100%)}
@@ -261,7 +262,7 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 </div>{% include 'pages/_pot_pdf_foot.html' with n=4 %}</section>
 
 {# ---------- 5. Struktura ---------- #}
-<section class="slide tint"><div class="in">
+<section class="slide tint orgs"><div class="in">
   <div class="head" style="margin-bottom:22px"><p class="kick">{% trans 'STRUKTURA ORGANIZACYJNA' %}</p><h2 class="title">{% trans 'Zarząd i dyrekcja' %}</h2><span class="bar"></span></div>
   <ul class="org-top">{% for m in p.board %}<li class="person big"><div class="ph">{% if m.photo %}<img src="{{ m.photo }}" style="object-position:{{ m.photo_pos }}" alt="{{ m.name }}">{% else %}<div>{{ m.initials }}</div>{% endif %}</div><div class="nm"><strong>{{ m.name }}</strong><span>{{ m.role }}</span></div></li>{% endfor %}</ul>
   <ul class="org-dir">{% for m in p.directors %}<li class="person"><div class="ph">{% if m.photo %}<img src="{{ m.photo }}" style="object-position:{{ m.photo_pos }}" alt="{{ m.name }}">{% else %}<div>{{ m.initials }}</div>{% endif %}</div><div class="nm"><strong>{{ m.name }}</strong><span>{{ m.role }}</span></div></li>{% endfor %}</ul>
@@ -271,6 +272,7 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
   {% endif %}{% endfor %}
   <div class="subs"><div class="subs-l"><i class="ri-team-line"></i><h3>{{ p.subs.title }}</h3><p class="lead">{{ p.subs.lead }}</p></div>
     <div class="subs-r"><p>{{ p.subs.text }}</p><ul>{% for x in p.subs.points %}<li>{{ x }}</li>{% endfor %}</ul><p class="close">{{ p.subs.closing }}</p></div></div>
+  {% if p.site_crew %}<p class="note orgnote"><i class="ri-hard-hat-line" style="color:var(--or-txt)"></i> {{ p.site_crew }}</p>{% endif %}
 </div>{% include 'pages/_pot_pdf_foot.html' with n=5 %}</section>
 
 {# ---------- 6. Kadra techniczna ---------- #}
@@ -286,7 +288,6 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
       {% if p.warranty %}<div class="card" style="background:var(--t2);border:0"><h3 class="sub"><i class="ri-tools-line" style="color:var(--or-txt)"></i> {% trans 'Gwarancja' %}</h3>{{ p.warranty }}</div>{% endif %}
     </div>
   </div>
-  {% if p.site_crew %}<p class="note" style="margin-top:12px;padding:12px 24px;font-size:17px"><i class="ri-hard-hat-line" style="color:var(--or-txt)"></i> {{ p.site_crew }}</p>{% endif %}
 </div>{% include 'pages/_pot_pdf_foot.html' with n=6 %}</section>
 
 {# ---------- 7. Sposób realizacji ---------- #}
