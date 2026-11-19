@@ -31,6 +31,7 @@ urlpatterns = [
 
     # Potencjał i referencje (portfolio prekwalifikacyjne)
     path('potencjal-i-referencje/', portfolioViews.potencjal, name='portfolio'),
+    path('potencjal-i-referencje/img/', portfolioViews.potencjal_img, name='portfolioImg'),
 
     # Blog / Artykuły
     path('blog/', newsViews.blog, name='blog'),

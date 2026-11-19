@@ -2279,3 +2279,6 @@ msgstr "KOMPETENCIÁK"
 
 msgid "Pod kierownictwem"
 msgstr "Vezeti"
+
+msgid "Pobierz PDF"
+msgstr "PDF letöltése"

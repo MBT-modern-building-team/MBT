@@ -158,14 +158,15 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 .end .stripes i:nth-child(2){background:var(--blue);clip-path:polygon(60% 0,74% 0,100% 100%,86% 100%)}
 .end .stripes i:nth-child(3){background:var(--or);clip-path:polygon(78% 0,83% 0,100% 100%,95% 100%)}
 .printbar{position:fixed;top:14px;right:18px;z-index:9;background:#fff;border-radius:12px;padding:12px 18px;box-shadow:0 6px 20px rgba(0,0,0,.25);font:600 14px "Noto Sans",sans-serif}
+.printbar .dl{margin-left:12px;background:var(--navy);color:#fff;border-radius:8px;padding:9px 16px;font:600 14px "Noto Sans",sans-serif;text-decoration:none}
 .printbar button{margin-left:12px;background:var(--navy);color:#fff;border:0;border-radius:8px;padding:8px 16px;font:600 14px "Noto Sans",sans-serif;cursor:pointer}
 </style>
 </head>
 <body>
-<div class="printbar noprint">{% trans 'Format 16:9, poziomo' %}<button type="button" onclick="window.print()">{% trans 'Zapisz jako PDF' %}</button></div>
+<div class="printbar noprint">{% trans 'Format 16:9, poziomo' %}{% if can_download %}<a class="dl" href="?pdf=1&amp;download=1">{% trans 'Pobierz PDF' %}</a>{% else %}<button type="button" onclick="window.print()">{% trans 'Zapisz jako PDF' %}</button>{% endif %}</div>
 
 {# ---------- 1. Okładka ---------- #}
-<section class="slide cover" style="background-image:url('{{ photos.gw_hero }}')">
+<section class="slide cover" style="background-image:url('{{ pdf_cover|default:photos.gw_hero }}')">
   <div class="in">
     <img class="logo" src="/static/img/mbt/logo-with-name-white.svg" alt="MBT Modern Building Team">
     <div style="margin-top:110px"><span class="badge">{{ p.texts.hero_kicker }}</span></div>
@@ -296,6 +297,6 @@ thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radi
 </div>{% include 'pages/_pot_pdf_foot.html' with n=forloop.counter|add:8 %}</section>
 {% endfor %}
 
-{% if print_now %}<script>window.addEventListener('load',function(){setTimeout(function(){window.print()},1500)})</script>{% endif %}
+{% if print_now and not can_download %}<script>window.addEventListener('load',function(){setTimeout(function(){window.print()},1500)})</script>{% endif %}
 </body>
 </html>

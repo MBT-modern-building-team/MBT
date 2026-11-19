@@ -2282,3 +2282,6 @@ msgstr "КОМПЕТЕНЦІЇ"
 
 msgid "Pod kierownictwem"
 msgstr "Під керівництвом"
+
+msgid "Pobierz PDF"
+msgstr "Завантажити PDF"
