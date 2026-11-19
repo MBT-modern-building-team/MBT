@@ -48,6 +48,8 @@ NEW_RECORDS = {
 TITLE_FIXES = {'ponar-wadowice': 'Ponar Wadowice S.A.'}
 # Kadrowanie zdjęć osób (object-position), gdy twarz nie jest u góry kadru.
 PHOTO_POS = {'michal-swoboda': '50% 45%'}
+# Województwo dla realizacji z CMS, których nie ma w portfolio_mbt.json (wykres województw ma sumować się do liczby realizacji).
+VOIVODESHIP_BY_SLUG = {'toto-glogoczow': 'małopolskie'}
 OTHER_SECTOR = 'inne'  # realizacje z CMS bez przypisanego sektora w danych
 # Nowe rekordy oznaczone jako „W trakcie realizacji” (jak pozostałe karty z logo).
 IN_PROGRESS_NEW = {9, 14, 17, 31, 50, 51}
@@ -261,7 +263,7 @@ def build_context(lang='pl'):
             # Plakietka „W realizacji”: realizacja w trakcie w CMS (tam z logo klienta) albo status w danych.
             'in_progress': in_prog,
             'params': params,
-            'voivodeship': r.get('wojewodztwo'),
+            'voivodeship': r.get('wojewodztwo') or VOIVODESHIP_BY_SLUG.get(ex['slug']),
             'url': reverse('realizacjaDetail', args=[ex['slug']]),
             'thumb': _thumb(ex),
             'contain': ex.get('type') == 'realizacja-w-trakcie' or '/logos/' in (ex.get('hero') or ''),

@@ -69,6 +69,11 @@ class PortfolioPageTests(TestCase):
             self.assertNotIn(f'<th scope="row">{label}', html)
         self.assertNotIn('Liczba osób', html)  # kolumna ukryta, brak danych
 
+    def test_voivodeship_chart_sums_to_total(self):
+        from MBTApp import portfolio
+        c = portfolio.build_context('pl')['p']
+        self.assertEqual(sum(b['value'] for b in c['voiv_bars']), c['total'])
+
     def test_headquarters_is_katowice(self):
         html = self._get().content.decode()
         self.assertRegex(html, r'<th scope="row">Siedziba</th><td>Katowice')
