@@ -66,7 +66,7 @@
                         {% if p.legal_form %}<tr><th scope="row">{% trans 'Forma prawna' %}</th><td>{{ p.legal_form }}</td></tr>{% endif %}
                         {% if p.president %}<tr><th scope="row">{% trans 'Prezes Zarządu' %}</th><td>{{ p.president }}</td></tr>{% endif %}
                         {% for label, value in p.register_rows %}<tr><th scope="row">{{ label }}</th><td>{{ value }}</td></tr>{% endfor %}
-                        {% for o in p.offices %}<tr><th scope="row">{% if o.typ == 'Centrala' %}{% trans 'Centrala' %}{% else %}{% trans 'Biuro' %}{% endif %}</th><td>{{ o.miasto }}, {{ o.adres }}</td></tr>{% endfor %}
+                        {% for o in p.offices %}<tr><th scope="row">{% if o.typ == 'Siedziba' %}{% trans 'Siedziba' %}{% else %}{% trans 'Biuro' %}{% endif %}</th><td>{{ o.miasto }}, {{ o.adres }}</td></tr>{% endfor %}
                     </tbody>
                 </table>
             </div>

@@ -22,7 +22,7 @@ SITE_URL = 'https://mbt.pl'
 def _json_ld(request, ctx, lang):
     p = ctx['p']
     c = p['contact']
-    hq = next((o for o in p['offices'] if o.get('typ') == 'Centrala'), p['offices'][0])
+    hq = next((o for o in p['offices'] if o.get('typ') == 'Siedziba'), p['offices'][0])
     page_url = SITE_URL + request.path
     org = {
         '@context': 'https://schema.org',

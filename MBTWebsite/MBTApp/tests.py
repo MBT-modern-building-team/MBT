@@ -69,6 +69,12 @@ class PortfolioPageTests(TestCase):
             self.assertNotIn(f'<th scope="row">{label}', html)
         self.assertNotIn('Liczba osób', html)  # kolumna ukryta, brak danych
 
+    def test_headquarters_is_katowice(self):
+        html = self._get().content.decode()
+        self.assertRegex(html, r'<th scope="row">Siedziba</th><td>Katowice')
+        self.assertNotIn('<th scope="row">Centrala', html)
+        self.assertRegex(html, r'<th scope="row">Biuro</th><td>Zabrze')
+
     def test_single_h1(self):
         html = self._get().content.decode()
         self.assertEqual(html.count('<h1'), 1)

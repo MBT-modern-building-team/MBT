@@ -38,14 +38,14 @@
     },
     "biura": [
       {
-        "typ": "Centrala",
-        "miasto": "Zabrze",
-        "adres": "ul. Roosevelta 81"
+        "typ": "Siedziba",
+        "miasto": "Katowice",
+        "adres": "ul. Jankego 176/1A"
       },
       {
         "typ": "Biuro",
-        "miasto": "Katowice",
-        "adres": "ul. Jankego 176/1A"
+        "miasto": "Zabrze",
+        "adres": "ul. Roosevelta 81"
       },
       {
         "typ": "Biuro",
